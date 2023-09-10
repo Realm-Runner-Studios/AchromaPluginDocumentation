@@ -1,0 +1,97 @@
+.TH "Achroma.AchromaItem" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaItem
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static string \fBGetItemSpriteName\fP (int id)"
+.br
+.RI "Returns item sprite name to be found in the asset bundle\&. "
+.ti -1c
+.RI "static \fBAchromaItemType\fP \fBGetItemByName\fP (string name)"
+.br
+.RI "Returns the Item based on its name\&. "
+.ti -1c
+.RI "static \fBAchromaItemType\fP \fBGetItemById\fP (int id)"
+.br
+.RI "Returns the Item based on its id\&. "
+.ti -1c
+.RI "static void \fBGetItemSprite\fP (int item, bool transparent, UnityAction< bool, string, Sprite > callback)"
+.br
+.RI "Gets the sprite for a given item id in the array\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBAchromaItemType\fP Achroma\&.AchromaItem\&.GetItemById (int id)\fC [static]\fP"
+
+.PP
+Returns the Item based on its id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP Item's id
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBAchroma\fP Item
+.RE
+.PP
+
+.SS "static \fBAchromaItemType\fP Achroma\&.AchromaItem\&.GetItemByName (string name)\fC [static]\fP"
+
+.PP
+Returns the Item based on its name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP Item's name
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBAchroma\fP Item
+.RE
+.PP
+
+.SS "static void Achroma\&.AchromaItem\&.GetItemSprite (int item, bool transparent, UnityAction< bool, string, Sprite > callback)\fC [static]\fP"
+
+.PP
+Gets the sprite for a given item id in the array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIitem\fP avatar id in the array
+.br
+\fItransparent\fP if transparent is true, it will look for PNG versions of the character
+.br
+\fIcallback\fP result callback with a success flat, an error message and the instance of the instantiated sprite
+.RE
+.PP
+
+.SS "static string Achroma\&.AchromaItem\&.GetItemSpriteName (int id)\fC [static]\fP"
+
+.PP
+Returns item sprite name to be found in the asset bundle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP Id in the item array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns name of the sprite in the asset bundle file
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

@@ -1,0 +1,16 @@
+<map id="AchromaAPI.AchromaInstance.CheckForUpdates" name="AchromaAPI.AchromaInstance.CheckForUpdates">
+<area shape="rect" id="Node000001" title="Checks if the user has the latest version installed. If the user has an outdated version,..." alt="" coords="5,137,211,178"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a7032324784b1c707ba3d0db75e7f9b7c" title="Checks if the user has the latest version installed. If the user has an outdated version,..." alt="" coords="259,88,503,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,136,250,129,251,135,212,142"/>
+<area shape="rect" id="Node000006" href="$class_achroma_1_1_achroma_manager.html#a9da982e1b6bb0676daa31316949e642a" title="Method to load everything that&#39;s needed to call Achroma plugin features." alt="" coords="276,169,486,210"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="211,167,261,173,260,178,211,172"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="330,88,327,78,336,69,354,63,381,61,411,64,428,70,426,75,410,69,381,67,355,69,339,73,333,79,335,87"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_remote_config_manager.html#a8871381f26adaaea9baff1c8df1f46c7" title="Returns the string name of a Remote Config. The name may vary according to the platfrom." alt="" coords="566,5,780,46"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="452,85,550,56,581,48,582,53,552,62,453,90"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_database_controller.html#a80d74680852fff23abc3a4fb12a57e16" title="Opens the App store address to allow the user to update the app." alt="" coords="551,71,795,111"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="503,98,536,96,536,102,503,104"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_u_i_controller.html#a3c7be0cda2d569b14f41c8eb8fbc8206" title="This method shows the loading screen." alt="" coords="572,136,774,177"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="504,126,558,135,557,140,503,131"/>
+<area shape="rect" id="Node000007" href="$class_achroma_1_1_achroma_parent_controller.html#a9b7cd6b8a910602b1472e2d5be3b8bf8" title="This method loads a scene synchronously and returns a callback when the scene is ended loading." alt="" coords="560,201,786,242"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="487,199,546,205,545,210,486,204"/>
+</map>

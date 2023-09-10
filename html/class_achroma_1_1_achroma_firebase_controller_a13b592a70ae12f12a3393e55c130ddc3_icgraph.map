@@ -1,0 +1,7 @@
+<map id="Achroma.AchromaFirebaseController.GetUserByIdTask" name="Achroma.AchromaFirebaseController.GetUserByIdTask">
+<area shape="rect" id="Node000001" title="Gets the user by their id." alt="" coords="584,5,822,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_firebase_controller.html#ad4be9fd22886adbfe2f47458604cc232" title="Gets the user by their id." alt="" coords="298,5,536,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="569,28,536,28,536,23,569,23"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_database_controller.html#aada7e17663e8859aea32cc58cf2548a9" title="Gets the user by their id." alt="" coords="5,5,250,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="283,28,250,28,250,23,283,23"/>
+</map>

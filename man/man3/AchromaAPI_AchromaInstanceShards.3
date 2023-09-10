@@ -1,0 +1,64 @@
+.TH "AchromaAPI.AchromaInstanceShards" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AchromaAPI.AchromaInstanceShards \- Singleton with methods related to the shards animation, like gaining and losing\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBShowShardsGained\fP (int value, float sourcePosition=\-1\&.6f, float distance=3, UnityAction callback=null)"
+.br
+.RI "Shows the animation of the shards being gained (moving from the top-down) "
+.ti -1c
+.RI "static void \fBShowShardsLost\fP (int value, float sourcePosition=1\&.2f, float distance=\-4, UnityAction callback=null)"
+.br
+.RI "Shows the animation of shards being lost, moving from bottom up\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Singleton with methods related to the shards animation, like gaining and losing\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static void AchromaAPI\&.AchromaInstanceShards\&.ShowShardsGained (int value, float sourcePosition = \fC\-1::6f\fP, float distance = \fC3\fP, UnityAction callback = \fCnull\fP)\fC [static]\fP"
+
+.PP
+Shows the animation of the shards being gained (moving from the top-down) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP How many shards you want to animate
+.br
+\fIsourcePosition\fP The y point coordinate where the shards will be spawned
+.br
+\fIdistance\fP The y point coordinate where the shards will be 'atracted'and collide 
+.br
+\fIcallback\fP The callback when the animation is finished
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceShards\&.ShowShardsLost (int value, float sourcePosition = \fC1::2f\fP, float distance = \fC\-4\fP, UnityAction callback = \fCnull\fP)\fC [static]\fP"
+
+.PP
+Shows the animation of shards being lost, moving from bottom up\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP 
+.br
+\fIdistance\fP The y point coordinate where the shards will be 'atracted'and collide 
+.br
+\fIcallback\fP The callback when the animation is finished
+.br
+\fIcallback\fP The callback when the animation is finished
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

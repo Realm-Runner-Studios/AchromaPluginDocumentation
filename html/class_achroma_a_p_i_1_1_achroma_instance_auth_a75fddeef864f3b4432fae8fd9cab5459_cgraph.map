@@ -1,0 +1,27 @@
+<map id="AchromaAPI.AchromaInstanceAuth.SignIn" name="AchromaAPI.AchromaInstanceAuth.SignIn">
+<area shape="rect" id="Node000001" title="API method to log in. This will load the necessary scenes and call login." alt="" coords="5,169,207,210"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_u_i.html#a4d7af87961aff56977293aa66a647dd0" title="Hides the loading screen." alt="" coords="255,136,457,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,174,240,169,241,174,208,179"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_manager.html#a9da982e1b6bb0676daa31316949e642a" title="Method to load everything that&#39;s needed to call Achroma plugin features." alt="" coords="505,251,715,291"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="146,208,197,232,255,251,315,262,375,269,490,273,490,278,375,274,314,267,254,256,195,237,144,213"/>
+<area shape="rect" id="Node000006" href="$class_achroma_a_p_i_1_1_achroma_instance_u_i.html#a5bd76307b1990d97eaea4e1a19d8e5bf" title="Shows the Home Button." alt="" coords="255,201,457,242"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="207,200,241,204,240,210,207,205"/>
+<area shape="rect" id="Node000008" href="$class_achroma_1_1_achroma_u_i_controller.html#a8d6ba5e26f1bba2bb00cc8c425172d98" title="Exposed method to login." alt="" coords="255,71,457,111"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="150,166,254,122,274,114,276,119,256,127,152,171"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_u_i_controller.html#a4f97bc2bbf977d72c33ab1e96d288158" title="This method cancel and closes the loading screen." alt="" coords="509,136,711,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="457,154,494,154,494,159,457,159"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="426,175,458,187,563,241,560,245,456,192,424,180"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_parent_controller.html#a9b7cd6b8a910602b1472e2d5be3b8bf8" title="This method loads a scene synchronously and returns a callback when the scene is ended loading." alt="" coords="763,251,990,291"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="716,268,749,268,749,274,716,274"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="458,239,491,245,490,250,456,244"/>
+<area shape="rect" id="Node000007" href="$class_achroma_1_1_achroma_u_i_controller.html#a5f6e6c337a25f1bd1de111182f9a367d" title="Method that shows the home button on the bottom of the screen, in case it has been allowed to do so." alt="" coords="775,156,978,197"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="457,210,760,184,761,189,457,216"/>
+<area shape="poly" id="edge14_Node000008_Node000003" title=" " alt="" coords="439,109,515,129,513,134,437,115"/>
+<area shape="rect" id="Node000009" href="$class_achroma_1_1_achroma_u_i_controller.html#ab83448b3151bee2d1b3cf828e0ff8100" title="This method will close the UI with Login/Register information." alt="" coords="509,71,711,111"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="457,88,494,88,494,94,457,94"/>
+<area shape="rect" id="Node000011" href="$class_achroma_1_1_achroma_u_i_controller.html#af212f90f23c7b3f9586d503b80ca1990" title="Method to hide the Home button from the screen." alt="" coords="509,5,711,46"/>
+<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="437,67,513,48,515,53,439,73"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="678,109,716,122,798,148,796,153,715,127,676,114"/>
+<area shape="rect" id="Node000010" href="$class_achroma_popup_window.html#a4ac6afb2fe9e1c4362775117db24605b" title="The Coroutine that will move the UI element down." alt="" coords="772,78,981,104"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="712,88,757,88,757,94,712,94"/>
+</map>

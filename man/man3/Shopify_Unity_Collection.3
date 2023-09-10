@@ -1,0 +1,138 @@
+.TH "Shopify.Unity.Collection" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Collection \- A collection represents a grouping of products that a shop owner can create to organize them or make their shops easier to browse\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.Node\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCollection\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "string \fBdescription\fP (string alias=null)"
+.br
+.RI "Stripped description of the collection, single line with HTML tags removed\&. "
+.ti -1c
+.RI "string \fBdescriptionHtml\fP ()"
+.br
+.RI "The description of the collection, complete with HTML formatting\&. "
+.ti -1c
+.RI "string \fBhandle\fP ()"
+.br
+.RI "A human-friendly unique string for the collection automatically generated from its title\&. Limit of 255 characters\&. "
+.ti -1c
+.RI "string \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBImage\fP \fBimage\fP (string alias=null)"
+.br
+.RI "Image associated with the collection\&. "
+.ti -1c
+.RI "\fBProductConnection\fP \fBproducts\fP (string alias=null)"
+.br
+.RI "List of products in the collection\&. "
+.ti -1c
+.RI "string \fBtitle\fP ()"
+.br
+.RI "The collection’s name\&. Limit of 255 characters\&. "
+.ti -1c
+.RI "DateTime? \fBupdatedAt\fP ()"
+.br
+.RI "The date and time when the collection was last modified\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A collection represents a grouping of products that a shop owner can create to organize them or make their shops easier to browse\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Collection\&.Collection (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Collection
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "string Shopify\&.Unity\&.Collection\&.description (string alias = \fCnull\fP)"
+
+.PP
+Stripped description of the collection, single line with HTML tags removed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.Collection\&.id ()"
+
+.PP
+Globally unique identifier\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Node\fP\&.
+.SS "\fBImage\fP Shopify\&.Unity\&.Collection\&.image (string alias = \fCnull\fP)"
+
+.PP
+Image associated with the collection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBProductConnection\fP Shopify\&.Unity\&.Collection\&.products (string alias = \fCnull\fP)"
+
+.PP
+List of products in the collection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

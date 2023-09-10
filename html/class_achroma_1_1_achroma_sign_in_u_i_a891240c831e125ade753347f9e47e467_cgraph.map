@@ -1,0 +1,9 @@
+<map id="Achroma.AchromaSignInUI.ProcessGogleSignIn" name="Achroma.AchromaSignInUI.ProcessGogleSignIn">
+<area shape="rect" id="Node000001" title="This method calls the login method using Apple." alt="" coords="5,71,190,111"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#ad1281e7865819c89471d70eb458f753c" title="This method will stop any Firebase operation." alt="" coords="238,5,482,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,67,261,48,262,53,183,73"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_u_i_controller.html#a4f97bc2bbf977d72c33ab1e96d288158" title="This method cancel and closes the loading screen." alt="" coords="259,71,461,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,88,244,88,244,94,190,94"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_u_i_controller.html#a3c7be0cda2d569b14f41c8eb8fbc8206" title="This method shows the loading screen." alt="" coords="259,136,461,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="183,109,262,129,261,134,181,115"/>
+</map>

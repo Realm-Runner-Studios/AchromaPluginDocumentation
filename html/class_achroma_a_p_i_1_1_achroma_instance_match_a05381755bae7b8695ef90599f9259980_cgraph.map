@@ -1,0 +1,5 @@
+<map id="AchromaAPI.AchromaInstanceMatch.AddLocalPlayerToCurrentMatch" name="AchromaAPI.AchromaInstanceMatch.AddLocalPlayerToCurrentMatch">
+<area shape="rect" id="Node000001" title="Adds the local player to the match." alt="" coords="5,5,251,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a4db967ef31c2ace7a92460fb8637466e" title="Adds the local player to the match." alt="" coords="299,5,543,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,23,283,23,283,28,251,28"/>
+</map>

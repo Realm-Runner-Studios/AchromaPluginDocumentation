@@ -1,0 +1,25 @@
+<map id="Achroma.AchromaDatabaseController.AppleSignInFromiOS" name="Achroma.AchromaDatabaseController.AppleSignInFromiOS">
+<area shape="rect" id="Node000001" title="Method that signs in to Apple from an Apple device." alt="" coords="5,201,250,242"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_firebase_controller.html#af2e8160be8b10e299bf9e09788382822" title="Method that signs in to Apple from an Apple device." alt="" coords="301,5,539,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,199,205,129,248,90,296,57,310,50,312,55,299,61,251,94,208,133,147,203"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_database_controller.html#aff64aab13b1d82d01669f0d5783f481c" title="Gets friends data" alt="" coords="298,71,542,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,199,220,160,297,122,318,114,320,119,299,127,223,165,161,203"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_database_controller.html#a85e4fb83fbe91c323abe7155581beb72" title="Method to get current user data and store it to a UserData variable." alt="" coords="298,136,542,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,198,311,178,312,183,222,203"/>
+<area shape="rect" id="Node000007" href="$class_achroma_1_1_achroma_firebase_controller.html#a4c57ab20c42decb71d88600f0fe29485" title="Method to initialize Firebase." alt="" coords="301,201,539,242"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="250,219,286,219,286,224,250,224"/>
+<area shape="rect" id="Node000008" href="$class_achroma_1_1_achroma_database_controller.html#a87a74899ec8cdf24cbba363b4762c3b3" title="Loads the database references to the tables the app uses." alt="" coords="298,267,542,307"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="222,240,312,260,311,265,221,245"/>
+<area shape="rect" id="Node000010" href="$class_achroma_1_1_achroma_database_controller.html#aedd3a3bf10a86289dc099e698efb024b" title="Method to update Firebase with the user&#39;s updates." alt="" coords="298,332,542,373"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="161,240,223,279,299,317,320,324,318,329,297,321,220,283,158,245"/>
+<area shape="rect" id="Node000012" href="$class_achroma_1_1_achroma_database_controller.html#ab5da1f53e571d5a2cd734bc09e2c4f6f" title="Sets the email for Apple login." alt="" coords="298,397,542,438"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="147,241,208,310,251,349,299,382,312,389,310,394,296,387,248,353,205,314,143,244"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_firebase_controller.html#aa082ff5778b71f9a5788ec3f7a7d7d1c" title="Method to get current user data and store it to a UserData variable." alt="" coords="590,104,828,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="542,140,575,136,575,142,543,145"/>
+<area shape="rect" id="Node000006" href="$class_achroma_1_1_achroma_u_i_controller.html#a3c7be0cda2d569b14f41c8eb8fbc8206" title="This method shows the loading screen." alt="" coords="608,169,810,210"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="543,168,593,174,593,179,542,173"/>
+<area shape="rect" id="Node000009" href="$class_achroma_1_1_achroma_firebase_controller.html#aacb8303ac3668e017ae46483eef84f15" title="Loads the references to the used tables in the app." alt="" coords="590,267,828,307"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="542,284,575,284,575,290,542,290"/>
+<area shape="rect" id="Node000011" href="$class_achroma_1_1_achroma_firebase_controller.html#aeaebd8d6f8b4ae1933dded34b8c18a61" title="Method to push the user data to Firebase using Json serialization." alt="" coords="590,332,828,373"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="542,350,575,350,575,355,542,355"/>
+</map>

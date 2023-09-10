@@ -1,0 +1,764 @@
+.TH "Shopify.Unity.GraphQL.MutationQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.MutationQuery \- MutationQuery is the root mutation builder\&. All Storefront API mutation queries are built off of MutationQuery\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMutationQuery\fP ()"
+.br
+.RI "MutationQuery constructor accepts no parameters but it will create a root mutation builder\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutAttributesUpdate\fP (CheckoutAttributesUpdatePayloadDelegate buildQuery, string checkoutId, \fBCheckoutAttributesUpdateInput\fP input, string alias=null)"
+.br
+.RI "Updates the attributes of a checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutAttributesUpdateV2\fP (CheckoutAttributesUpdateV2payloadDelegate buildQuery, string checkoutId, \fBCheckoutAttributesUpdateV2input\fP input, string alias=null)"
+.br
+.RI "Updates the attributes of a checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutCompleteFree\fP (CheckoutCompleteFreePayloadDelegate buildQuery, string checkoutId, string alias=null)"
+.br
+.RI "Completes a checkout without providing payment information\&. You can use this mutation for free items or items whose purchase price is covered by a gift card\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutCompleteWithCreditCard\fP (CheckoutCompleteWithCreditCardPayloadDelegate buildQuery, string checkoutId, \fBCreditCardPaymentInput\fP payment, string alias=null)"
+.br
+.RI "Completes a checkout using a credit card token from \fBShopify\fP's Vault\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutCompleteWithCreditCardV2\fP (CheckoutCompleteWithCreditCardV2payloadDelegate buildQuery, string checkoutId, \fBCreditCardPaymentInputV2\fP payment, string alias=null)"
+.br
+.RI "Completes a checkout using a credit card token from \fBShopify\fP's card vault\&. Before you can complete checkouts using CheckoutCompleteWithCreditCardV2, you need to \fC\fIrequest payment processing\fP\fP\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutCompleteWithTokenizedPayment\fP (CheckoutCompleteWithTokenizedPaymentPayloadDelegate buildQuery, string checkoutId, \fBTokenizedPaymentInput\fP payment, string alias=null)"
+.br
+.RI "Completes a checkout with a tokenized payment\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutCompleteWithTokenizedPaymentV2\fP (CheckoutCompleteWithTokenizedPaymentV2payloadDelegate buildQuery, string checkoutId, \fBTokenizedPaymentInputV2\fP payment, string alias=null)"
+.br
+.RI "Completes a checkout with a tokenized payment\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutCreate\fP (CheckoutCreatePayloadDelegate buildQuery, \fBCheckoutCreateInput\fP input, string alias=null)"
+.br
+.RI "Creates a new checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutCustomerAssociate\fP (CheckoutCustomerAssociatePayloadDelegate buildQuery, string checkoutId, string customerAccessToken, string alias=null)"
+.br
+.RI "Associates a customer to the checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutCustomerAssociateV2\fP (CheckoutCustomerAssociateV2payloadDelegate buildQuery, string checkoutId, string customerAccessToken, string alias=null)"
+.br
+.RI "Associates a customer to the checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutCustomerDisassociate\fP (CheckoutCustomerDisassociatePayloadDelegate buildQuery, string checkoutId, string alias=null)"
+.br
+.RI "Disassociates the current checkout customer from the checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutCustomerDisassociateV2\fP (CheckoutCustomerDisassociateV2payloadDelegate buildQuery, string checkoutId, string alias=null)"
+.br
+.RI "Disassociates the current checkout customer from the checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutDiscountCodeApply\fP (CheckoutDiscountCodeApplyPayloadDelegate buildQuery, string discountCode, string checkoutId, string alias=null)"
+.br
+.RI "Applies a discount to an existing checkout using a discount code\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutDiscountCodeApplyV2\fP (CheckoutDiscountCodeApplyV2payloadDelegate buildQuery, string discountCode, string checkoutId, string alias=null)"
+.br
+.RI "Applies a discount to an existing checkout using a discount code\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutDiscountCodeRemove\fP (CheckoutDiscountCodeRemovePayloadDelegate buildQuery, string checkoutId, string alias=null)"
+.br
+.RI "Removes the applied discount from an existing checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutEmailUpdate\fP (CheckoutEmailUpdatePayloadDelegate buildQuery, string checkoutId, string email, string alias=null)"
+.br
+.RI "Updates the email on an existing checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutEmailUpdateV2\fP (CheckoutEmailUpdateV2payloadDelegate buildQuery, string checkoutId, string email, string alias=null)"
+.br
+.RI "Updates the email on an existing checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutGiftCardApply\fP (CheckoutGiftCardApplyPayloadDelegate buildQuery, string giftCardCode, string checkoutId, string alias=null)"
+.br
+.RI "Applies a gift card to an existing checkout using a gift card code\&. This will replace all currently applied gift cards\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutGiftCardRemove\fP (CheckoutGiftCardRemovePayloadDelegate buildQuery, string appliedGiftCardId, string checkoutId, string alias=null)"
+.br
+.RI "Removes an applied gift card from the checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutGiftCardRemoveV2\fP (CheckoutGiftCardRemoveV2payloadDelegate buildQuery, string appliedGiftCardId, string checkoutId, string alias=null)"
+.br
+.RI "Removes an applied gift card from the checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutGiftCardsAppend\fP (CheckoutGiftCardsAppendPayloadDelegate buildQuery, List< string > giftCardCodes, string checkoutId, string alias=null)"
+.br
+.RI "Appends gift cards to an existing checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutLineItemsAdd\fP (CheckoutLineItemsAddPayloadDelegate buildQuery, List< \fBCheckoutLineItemInput\fP > lineItems, string checkoutId, string alias=null)"
+.br
+.RI "Adds a list of line items to a checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutLineItemsRemove\fP (CheckoutLineItemsRemovePayloadDelegate buildQuery, string checkoutId, List< string > lineItemIds, string alias=null)"
+.br
+.RI "Removes line items from an existing checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutLineItemsReplace\fP (CheckoutLineItemsReplacePayloadDelegate buildQuery, List< \fBCheckoutLineItemInput\fP > lineItems, string checkoutId, string alias=null)"
+.br
+.RI "Sets a list of line items to a checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutLineItemsUpdate\fP (CheckoutLineItemsUpdatePayloadDelegate buildQuery, string checkoutId, List< \fBCheckoutLineItemUpdateInput\fP > lineItems, string alias=null)"
+.br
+.RI "Updates line items on a checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutShippingAddressUpdate\fP (CheckoutShippingAddressUpdatePayloadDelegate buildQuery, \fBMailingAddressInput\fP shippingAddress, string checkoutId, string alias=null)"
+.br
+.RI "Updates the shipping address of an existing checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutShippingAddressUpdateV2\fP (CheckoutShippingAddressUpdateV2payloadDelegate buildQuery, \fBMailingAddressInput\fP shippingAddress, string checkoutId, string alias=null)"
+.br
+.RI "Updates the shipping address of an existing checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcheckoutShippingLineUpdate\fP (CheckoutShippingLineUpdatePayloadDelegate buildQuery, string checkoutId, string shippingRateHandle, string alias=null)"
+.br
+.RI "Updates the shipping lines on an existing checkout\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerAccessTokenCreate\fP (CustomerAccessTokenCreatePayloadDelegate buildQuery, \fBCustomerAccessTokenCreateInput\fP input, string alias=null)"
+.br
+.RI "Creates a customer access token\&. The customer access token is required to modify the customer object in any way\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerAccessTokenDelete\fP (CustomerAccessTokenDeletePayloadDelegate buildQuery, string customerAccessToken, string alias=null)"
+.br
+.RI "Permanently destroys a customer access token\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerAccessTokenRenew\fP (CustomerAccessTokenRenewPayloadDelegate buildQuery, string customerAccessToken, string alias=null)"
+.br
+.RI "Renews a customer access token\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerActivate\fP (CustomerActivatePayloadDelegate buildQuery, string id, \fBCustomerActivateInput\fP input, string alias=null)"
+.br
+.RI "Activates a customer\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerAddressCreate\fP (CustomerAddressCreatePayloadDelegate buildQuery, string customerAccessToken, \fBMailingAddressInput\fP address, string alias=null)"
+.br
+.RI "Creates a new address for a customer\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerAddressDelete\fP (CustomerAddressDeletePayloadDelegate buildQuery, string id, string customerAccessToken, string alias=null)"
+.br
+.RI "Permanently deletes the address of an existing customer\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerAddressUpdate\fP (CustomerAddressUpdatePayloadDelegate buildQuery, string customerAccessToken, string id, \fBMailingAddressInput\fP address, string alias=null)"
+.br
+.RI "Updates the address of an existing customer\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerCreate\fP (CustomerCreatePayloadDelegate buildQuery, \fBCustomerCreateInput\fP input, string alias=null)"
+.br
+.RI "Creates a new customer\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerDefaultAddressUpdate\fP (CustomerDefaultAddressUpdatePayloadDelegate buildQuery, string customerAccessToken, string addressId, string alias=null)"
+.br
+.RI "Updates the default address of an existing customer\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerRecover\fP (CustomerRecoverPayloadDelegate buildQuery, string email, string alias=null)"
+.br
+.RI "Sends a reset password email to the customer, as the first step in the reset password process\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerReset\fP (CustomerResetPayloadDelegate buildQuery, string id, \fBCustomerResetInput\fP input, string alias=null)"
+.br
+.RI "Resets a customer’s password with a token received from \fCCustomerRecover\fP\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerResetByUrl\fP (CustomerResetByUrlPayloadDelegate buildQuery, string resetUrl, string password, string alias=null)"
+.br
+.RI "Resets a customer’s password with the reset password url received from \fCCustomerRecover\fP\&. "
+.ti -1c
+.RI "\fBMutationQuery\fP \fBcustomerUpdate\fP (CustomerUpdatePayloadDelegate buildQuery, string customerAccessToken, \fBCustomerUpdateInput\fP customer, string alias=null)"
+.br
+.RI "Updates an existing customer\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Will return a GraphQL query\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+MutationQuery is the root mutation builder\&. All Storefront API mutation queries are built off of MutationQuery\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutAttributesUpdate (CheckoutAttributesUpdatePayloadDelegate buildQuery, string checkoutId, \fBCheckoutAttributesUpdateInput\fP input, string alias = \fCnull\fP)"
+
+.PP
+Updates the attributes of a checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutAttributesUpdateV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.br
+\fIinput\fP The fields used to update a checkout's attributes\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutAttributesUpdateV2 (CheckoutAttributesUpdateV2payloadDelegate buildQuery, string checkoutId, \fBCheckoutAttributesUpdateV2input\fP input, string alias = \fCnull\fP)"
+
+.PP
+Updates the attributes of a checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.br
+\fIinput\fP The checkout attributes to update\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutCompleteFree (CheckoutCompleteFreePayloadDelegate buildQuery, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Completes a checkout without providing payment information\&. You can use this mutation for free items or items whose purchase price is covered by a gift card\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutCompleteWithCreditCard (CheckoutCompleteWithCreditCardPayloadDelegate buildQuery, string checkoutId, \fBCreditCardPaymentInput\fP payment, string alias = \fCnull\fP)"
+
+.PP
+Completes a checkout using a credit card token from \fBShopify\fP's Vault\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutCompleteWithCreditCardV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.br
+\fIpayment\fP The credit card info to apply as a payment\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutCompleteWithCreditCardV2 (CheckoutCompleteWithCreditCardV2payloadDelegate buildQuery, string checkoutId, \fBCreditCardPaymentInputV2\fP payment, string alias = \fCnull\fP)"
+
+.PP
+Completes a checkout using a credit card token from \fBShopify\fP's card vault\&. Before you can complete checkouts using CheckoutCompleteWithCreditCardV2, you need to \fC\fIrequest payment processing\fP\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.br
+\fIpayment\fP The credit card info to apply as a payment\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutCompleteWithTokenizedPayment (CheckoutCompleteWithTokenizedPaymentPayloadDelegate buildQuery, string checkoutId, \fBTokenizedPaymentInput\fP payment, string alias = \fCnull\fP)"
+
+.PP
+Completes a checkout with a tokenized payment\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutCompleteWithTokenizedPaymentV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.br
+\fIpayment\fP The info to apply as a tokenized payment\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutCompleteWithTokenizedPaymentV2 (CheckoutCompleteWithTokenizedPaymentV2payloadDelegate buildQuery, string checkoutId, \fBTokenizedPaymentInputV2\fP payment, string alias = \fCnull\fP)"
+
+.PP
+Completes a checkout with a tokenized payment\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutCompleteWithTokenizedPaymentV3\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.br
+\fIpayment\fP The info to apply as a tokenized payment\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutCreate (CheckoutCreatePayloadDelegate buildQuery, \fBCheckoutCreateInput\fP input, string alias = \fCnull\fP)"
+
+.PP
+Creates a new checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinput\fP The fields used to create a checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutCustomerAssociate (CheckoutCustomerAssociatePayloadDelegate buildQuery, string checkoutId, string customerAccessToken, string alias = \fCnull\fP)"
+
+.PP
+Associates a customer to the checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutCustomerAssociateV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.br
+\fIcustomerAccessToken\fP The customer access token of the customer to associate\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutCustomerAssociateV2 (CheckoutCustomerAssociateV2payloadDelegate buildQuery, string checkoutId, string customerAccessToken, string alias = \fCnull\fP)"
+
+.PP
+Associates a customer to the checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.br
+\fIcustomerAccessToken\fP The customer access token of the customer to associate\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutCustomerDisassociate (CheckoutCustomerDisassociatePayloadDelegate buildQuery, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Disassociates the current checkout customer from the checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutCustomerDisassociateV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutCustomerDisassociateV2 (CheckoutCustomerDisassociateV2payloadDelegate buildQuery, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Disassociates the current checkout customer from the checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutDiscountCodeApply (CheckoutDiscountCodeApplyPayloadDelegate buildQuery, string discountCode, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Applies a discount to an existing checkout using a discount code\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutDiscountCodeApplyV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIdiscountCode\fP The discount code to apply to the checkout\&. 
+.br
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutDiscountCodeApplyV2 (CheckoutDiscountCodeApplyV2payloadDelegate buildQuery, string discountCode, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Applies a discount to an existing checkout using a discount code\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdiscountCode\fP The discount code to apply to the checkout\&. 
+.br
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutDiscountCodeRemove (CheckoutDiscountCodeRemovePayloadDelegate buildQuery, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Removes the applied discount from an existing checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutEmailUpdate (CheckoutEmailUpdatePayloadDelegate buildQuery, string checkoutId, string email, string alias = \fCnull\fP)"
+
+.PP
+Updates the email on an existing checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutEmailUpdateV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.br
+\fIemail\fP The email to update the checkout with\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutEmailUpdateV2 (CheckoutEmailUpdateV2payloadDelegate buildQuery, string checkoutId, string email, string alias = \fCnull\fP)"
+
+.PP
+Updates the email on an existing checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.br
+\fIemail\fP The email to update the checkout with\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutGiftCardApply (CheckoutGiftCardApplyPayloadDelegate buildQuery, string giftCardCode, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Applies a gift card to an existing checkout using a gift card code\&. This will replace all currently applied gift cards\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutGiftCardsAppend\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIgiftCardCode\fP The code of the gift card to apply on the checkout\&. 
+.br
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutGiftCardRemove (CheckoutGiftCardRemovePayloadDelegate buildQuery, string appliedGiftCardId, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Removes an applied gift card from the checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutGiftCardRemoveV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIappliedGiftCardId\fP The ID of the Applied Gift Card to remove from the Checkout\&. 
+.br
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutGiftCardRemoveV2 (CheckoutGiftCardRemoveV2payloadDelegate buildQuery, string appliedGiftCardId, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Removes an applied gift card from the checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIappliedGiftCardId\fP The ID of the Applied Gift Card to remove from the Checkout\&. 
+.br
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutGiftCardsAppend (CheckoutGiftCardsAppendPayloadDelegate buildQuery, List< string > giftCardCodes, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Appends gift cards to an existing checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgiftCardCodes\fP A list of gift card codes to append to the checkout\&. 
+.br
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutLineItemsAdd (CheckoutLineItemsAddPayloadDelegate buildQuery, List< \fBCheckoutLineItemInput\fP > lineItems, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Adds a list of line items to a checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlineItems\fP A list of line item objects to add to the checkout\&. 
+.br
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutLineItemsRemove (CheckoutLineItemsRemovePayloadDelegate buildQuery, string checkoutId, List< string > lineItemIds, string alias = \fCnull\fP)"
+
+.PP
+Removes line items from an existing checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The checkout on which to remove line items\&. 
+.br
+\fIlineItemIds\fP Line item ids to remove\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutLineItemsReplace (CheckoutLineItemsReplacePayloadDelegate buildQuery, List< \fBCheckoutLineItemInput\fP > lineItems, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Sets a list of line items to a checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlineItems\fP A list of line item objects to set on the checkout\&. 
+.br
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutLineItemsUpdate (CheckoutLineItemsUpdatePayloadDelegate buildQuery, string checkoutId, List< \fBCheckoutLineItemUpdateInput\fP > lineItems, string alias = \fCnull\fP)"
+
+.PP
+Updates line items on a checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The checkout on which to update line items\&. 
+.br
+\fIlineItems\fP Line items to update\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutShippingAddressUpdate (CheckoutShippingAddressUpdatePayloadDelegate buildQuery, \fBMailingAddressInput\fP shippingAddress, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Updates the shipping address of an existing checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutShippingAddressUpdateV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIshippingAddress\fP The shipping address to where the line items will be shipped\&. 
+.br
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutShippingAddressUpdateV2 (CheckoutShippingAddressUpdateV2payloadDelegate buildQuery, \fBMailingAddressInput\fP shippingAddress, string checkoutId, string alias = \fCnull\fP)"
+
+.PP
+Updates the shipping address of an existing checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshippingAddress\fP The shipping address to where the line items will be shipped\&. 
+.br
+\fIcheckoutId\fP The ID of the checkout\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.checkoutShippingLineUpdate (CheckoutShippingLineUpdatePayloadDelegate buildQuery, string checkoutId, string shippingRateHandle, string alias = \fCnull\fP)"
+
+.PP
+Updates the shipping lines on an existing checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcheckoutId\fP The ID of the checkout\&. 
+.br
+\fIshippingRateHandle\fP A unique identifier to a Checkout’s shipping provider, price, and title combination, enabling the customer to select the availableShippingRates\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerAccessTokenCreate (CustomerAccessTokenCreatePayloadDelegate buildQuery, \fBCustomerAccessTokenCreateInput\fP input, string alias = \fCnull\fP)"
+
+.PP
+Creates a customer access token\&. The customer access token is required to modify the customer object in any way\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinput\fP The fields used to create a customer access token\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerAccessTokenDelete (CustomerAccessTokenDeletePayloadDelegate buildQuery, string customerAccessToken, string alias = \fCnull\fP)"
+
+.PP
+Permanently destroys a customer access token\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustomerAccessToken\fP The access token used to identify the customer\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerAccessTokenRenew (CustomerAccessTokenRenewPayloadDelegate buildQuery, string customerAccessToken, string alias = \fCnull\fP)"
+
+.PP
+Renews a customer access token\&. Access token renewal must happen \fIbefore\fP a token expires\&. If a token has already expired, a new one should be created instead via \fCcustomerAccessTokenCreate\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustomerAccessToken\fP The access token used to identify the customer\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerActivate (CustomerActivatePayloadDelegate buildQuery, string id, \fBCustomerActivateInput\fP input, string alias = \fCnull\fP)"
+
+.PP
+Activates a customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP Specifies the customer to activate\&. 
+.br
+\fIinput\fP The fields used to activate a customer\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerAddressCreate (CustomerAddressCreatePayloadDelegate buildQuery, string customerAccessToken, \fBMailingAddressInput\fP address, string alias = \fCnull\fP)"
+
+.PP
+Creates a new address for a customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustomerAccessToken\fP The access token used to identify the customer\&. 
+.br
+\fIaddress\fP The customer mailing address to create\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerAddressDelete (CustomerAddressDeletePayloadDelegate buildQuery, string id, string customerAccessToken, string alias = \fCnull\fP)"
+
+.PP
+Permanently deletes the address of an existing customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP Specifies the address to delete\&. 
+.br
+\fIcustomerAccessToken\fP The access token used to identify the customer\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerAddressUpdate (CustomerAddressUpdatePayloadDelegate buildQuery, string customerAccessToken, string id, \fBMailingAddressInput\fP address, string alias = \fCnull\fP)"
+
+.PP
+Updates the address of an existing customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustomerAccessToken\fP The access token used to identify the customer\&. 
+.br
+\fIid\fP Specifies the customer address to update\&. 
+.br
+\fIaddress\fP The customer’s mailing address\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerCreate (CustomerCreatePayloadDelegate buildQuery, \fBCustomerCreateInput\fP input, string alias = \fCnull\fP)"
+
+.PP
+Creates a new customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinput\fP The fields used to create a new customer\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerDefaultAddressUpdate (CustomerDefaultAddressUpdatePayloadDelegate buildQuery, string customerAccessToken, string addressId, string alias = \fCnull\fP)"
+
+.PP
+Updates the default address of an existing customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustomerAccessToken\fP The access token used to identify the customer\&. 
+.br
+\fIaddressId\fP ID of the address to set as the new default for the customer\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerRecover (CustomerRecoverPayloadDelegate buildQuery, string email, string alias = \fCnull\fP)"
+
+.PP
+Sends a reset password email to the customer, as the first step in the reset password process\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIemail\fP The email address of the customer to recover\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerReset (CustomerResetPayloadDelegate buildQuery, string id, \fBCustomerResetInput\fP input, string alias = \fCnull\fP)"
+
+.PP
+Resets a customer’s password with a token received from \fCCustomerRecover\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP Specifies the customer to reset\&. 
+.br
+\fIinput\fP The fields used to reset a customer’s password\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerResetByUrl (CustomerResetByUrlPayloadDelegate buildQuery, string resetUrl, string password, string alias = \fCnull\fP)"
+
+.PP
+Resets a customer’s password with the reset password url received from \fCCustomerRecover\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresetUrl\fP The customer's reset password url\&. 
+.br
+\fIpassword\fP New password that will be set as part of the reset password process\&. 
+.RE
+.PP
+
+.SS "\fBMutationQuery\fP Shopify\&.Unity\&.GraphQL\&.MutationQuery\&.customerUpdate (CustomerUpdatePayloadDelegate buildQuery, string customerAccessToken, \fBCustomerUpdateInput\fP customer, string alias = \fCnull\fP)"
+
+.PP
+Updates an existing customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustomerAccessToken\fP The access token used to identify the customer\&. 
+.br
+\fIcustomer\fP The customer object input\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

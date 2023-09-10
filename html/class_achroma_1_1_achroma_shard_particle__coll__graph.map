@@ -1,0 +1,8 @@
+<map id="Achroma.AchromaShardParticle" name="Achroma.AchromaShardParticle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,169,213,195"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="48,5,159,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,46,111,169,106,169,102,46"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_shard_attraction.html" title=" " alt="" coords="125,80,344,106"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="139,36,214,78,211,82,136,41"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,117,128,171,125,166,204,112"/>
+</map>

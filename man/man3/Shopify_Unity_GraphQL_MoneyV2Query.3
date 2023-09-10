@@ -1,0 +1,57 @@
+.TH "Shopify.Unity.GraphQL.MoneyV2Query" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.MoneyV2Query \- A monetary value with currency\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMoneyV2Query\fP (StringBuilder query)"
+.br
+.RI "MoneyV2Query is used to build queries\&. Typically MoneyV2Query will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBMoneyV2Query\fP \fBamount\fP ()"
+.br
+.RI "Decimal money amount\&. "
+.ti -1c
+.RI "\fBMoneyV2Query\fP \fBcurrencyCode\fP ()"
+.br
+.RI "Currency of the money\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A monetary value with currency\&. 
+
+To format currencies, combine this type's amount and currencyCode fields with your client's locale\&.
+.PP
+For example, in JavaScript you could use Intl\&.NumberFormat:
+.PP
+.PP
+.nf
+new Intl\&.NumberFormat(locale, {
+style: 'currency',
+currency: currencyCode
+})\&.format(amount);
+.fi
+.PP
+.PP
+Other formatting libraries include:
+.PP
+.IP "\(bu" 2
+iOS - \fCNumberFormatter\fP
+.IP "\(bu" 2
+Android - \fCNumberFormat\fP
+.IP "\(bu" 2
+PHP - \fCNumberFormatter\fP
+.PP
+.PP
+For a more general solution, the [Unicode CLDR number formatting database] is available with many implementations (such as \fCTwitterCldr\fP)\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

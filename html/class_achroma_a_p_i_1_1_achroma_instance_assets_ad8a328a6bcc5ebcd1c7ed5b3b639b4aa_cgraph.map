@@ -1,0 +1,11 @@
+<map id="AchromaAPI.AchromaInstanceAssets.GetLocationSpriteAnimationById" name="AchromaAPI.AchromaInstanceAssets.GetLocationSpriteAnimationById">
+<area shape="rect" id="Node000001" title="Returns location sprite animation by giving an id." alt="" coords="5,39,261,79"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_location.html#aba0c162f59ffcb788d6dc5b863015073" title="Gets the sprite for a given location id in the array." alt="" coords="309,39,491,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,56,294,56,294,62,261,62"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_location.html#a84ecac6f22ada7185009c81be1b0da68" title="Returns location sprite name to be found in the asset bundle." alt="" coords="556,5,738,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="491,44,541,37,541,43,492,49"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_asset_manager.html#a419fc2d427990cc742d38f80b677cb5c" title="Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the obj..." alt="" coords="539,71,755,111"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="492,68,524,72,524,78,491,73"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_control_file.html#a85f83e5119719e8c5a98d443275849fe" title="Returns the character from the Control File with all its data." alt="" coords="803,5,1000,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="739,23,788,23,788,28,739,28"/>
+</map>

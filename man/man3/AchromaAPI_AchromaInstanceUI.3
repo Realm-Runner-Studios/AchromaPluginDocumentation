@@ -1,0 +1,220 @@
+.TH "AchromaAPI.AchromaInstanceUI" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AchromaAPI.AchromaInstanceUI \- Singleton with standardized UI elements like messages, loading screens, etc\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBShowSuccessMessage\fP (string message, UnityAction< int > result=null)"
+.br
+.RI "Shows simple message with a success title and an OK button\&. "
+.ti -1c
+.RI "static void \fBShowErrorMessage\fP (string message, UnityAction< int > result=null)"
+.br
+.RI "Shows simple message with a error title and an OK button\&. "
+.ti -1c
+.RI "static void \fBShowWarningMessage\fP (string message, UnityAction< int > result=null)"
+.br
+.RI "Shows simple message with a error title and an OK button\&. "
+.ti -1c
+.RI "static void \fBShowQuestionMessage\fP (string message, UnityAction< int > result)"
+.br
+.RI "Shows simple message with a question title and an YES and NO buttons for the user to select\&. "
+.ti -1c
+.RI "static void \fBAddNotification\fP (string message, Color color, \fBAchromaNotificationSprite\fP sprite)"
+.br
+.RI "Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed\&. "
+.ti -1c
+.RI "static void \fBAddUserNotification\fP (string message)"
+.br
+.RI "Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed\&. "
+.ti -1c
+.RI "static void \fBAddShardNotification\fP (string message)"
+.br
+.RI "Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed\&. "
+.ti -1c
+.RI "static void \fBSetAllowHomeButton\fP (bool value, UnityAction< bool, string > callback)"
+.br
+.ti -1c
+.RI "static void \fBShowHomeButton\fP (\fBAchromaHomeButton\&.AchromaHomeButtonOption\fP[] options=null, UnityAction< bool, string > callback=null)"
+.br
+.RI "Shows the Home Button\&. "
+.ti -1c
+.RI "static void \fBHideHomeButton\fP ()"
+.br
+.RI "Hides the Home Button\&. "
+.ti -1c
+.RI "static void \fBLoadBackground\fP (Transform parent, UnityAction< bool, string > callback)"
+.br
+.RI "This will create a menu background\&. "
+.ti -1c
+.RI "static void \fBShowLoading\fP (string loadingMessage, float delay=0\&.1f, UnityAction cancelAction=null)"
+.br
+.RI "Shows a loading screen with a custom message\&. "
+.ti -1c
+.RI "static void \fBHideLoading\fP ()"
+.br
+.RI "Hides the loading screen\&. "
+.ti -1c
+.RI "static void \fBShowSavingIndicator\fP ()"
+.br
+.RI "Shows the small floppy disk icon on the top of the screen to indicate data has been saved\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBAllowHomeButton\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "static \fBAchromaHomeButton\&.AchromaHomeButtonOption\fP[] \fBHomeButtonSideOptions\fP\fC [set]\fP"
+.br
+.RI "The current mode the user might be in\&. This will determine which options are available when the user sees the home button\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Singleton with standardized UI elements like messages, loading screens, etc\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.AddNotification (string message, Color color, \fBAchromaNotificationSprite\fP sprite)\fC [static]\fP"
+
+.PP
+Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessage\fP Message
+.br
+\fIcolor\fP Color of the text
+.br
+\fIsprite\fP Reference to the sprite in the Notification sprite sheet
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.AddShardNotification (string message)\fC [static]\fP"
+
+.PP
+Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessage\fP Message
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.AddUserNotification (string message)\fC [static]\fP"
+
+.PP
+Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessage\fP Message
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.LoadBackground (Transform parent, UnityAction< bool, string > callback)\fC [static]\fP"
+
+.PP
+This will create a menu background\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIprogress\fP The callback to indicate the download progress if needed
+.br
+\fIparent\fP The parent to which the object will be created on
+.br
+\fIcallback\fP Callback with a success flag and error message (if any)
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.ShowErrorMessage (string message, UnityAction< int > result = \fCnull\fP)\fC [static]\fP"
+
+.PP
+Shows simple message with a error title and an OK button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessage\fP The message to appear in the message body
+.br
+\fIresult\fP The callback when the user taps on the OK button (optional) 
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.ShowHomeButton (\fBAchromaHomeButton::AchromaHomeButtonOption\fP[] options = \fCnull\fP, UnityAction< bool, string > callback = \fCnull\fP)\fC [static]\fP"
+
+.PP
+Shows the Home Button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIoptions\fP The list of buttons that will appear beside the home button
+.br
+\fIcallback\fP A callback with a success flag and an error message (if any)
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.ShowLoading (string loadingMessage, float delay = \fC0::1f\fP, UnityAction cancelAction = \fCnull\fP)\fC [static]\fP"
+
+.PP
+Shows a loading screen with a custom message\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIloadingMessage\fP 
+.br
+\fIdelay\fP a delay to show message
+.br
+\fIcancelAction\fP callback if the user wants to cancel the loading
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.ShowQuestionMessage (string message, UnityAction< int > result)\fC [static]\fP"
+
+.PP
+Shows simple message with a question title and an YES and NO buttons for the user to select\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessage\fP The message to appear in the message body
+.br
+\fIresult\fP The callback when the user taps on the YES or NO buttons 
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.ShowSuccessMessage (string message, UnityAction< int > result = \fCnull\fP)\fC [static]\fP"
+
+.PP
+Shows simple message with a success title and an OK button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessage\fP The message to appear in the message body
+.br
+\fIresult\fP The callback when the user taps on the OK button (optional) 
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.ShowWarningMessage (string message, UnityAction< int > result = \fCnull\fP)\fC [static]\fP"
+
+.PP
+Shows simple message with a error title and an OK button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessage\fP The message to appear in the message body
+.br
+\fIresult\fP The callback when the user taps on the OK button (optional) 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

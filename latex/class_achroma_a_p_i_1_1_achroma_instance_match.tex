@@ -1,0 +1,338 @@
+\doxysection{Achroma\+API.\+Achroma\+Instance\+Match Class Reference}
+\hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match}{}\label{class_achroma_a_p_i_1_1_achroma_instance_match}\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+
+
+Singleton with methods related to the Companion match.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_a188b25cfcd07b36fd79aecfbd085f014}{New\+Match}} (string session\+Name, Achroma\+Database\+Controller.\+Companion\+Game\+Type game\+Type)
+\begin{DoxyCompactList}\small\item\em Adds a new match to Firebase\textquotesingle{}s match table. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_aaa3647eb1e2ce7940c1167ef94f1e616}{Update\+Player\+Character}} (int character)
+\begin{DoxyCompactList}\small\item\em Updates the avatar of the current plyer so the other players can see the change. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_a3c96ff4e496235ca9a8a79e10207a054}{Remove\+Local\+Player\+From\+Current\+Match}} (Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em User removes themselves from the match. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_a05381755bae7b8695ef90599f9259980}{Add\+Local\+Player\+To\+Current\+Match}} (Achroma\+Database\+Controller.\+Companion\+Game\+Type game\+Type, Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Adds the local player to the match. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_a49e6fd762c14137bd545bcb860db07bf}{Save\+Match\+Data}} (string session\+Name="{}"{}, Unity\+Action$<$ bool, string $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Pushes the match data to Firebase. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_ad47ac13587daddb85bbc7f79b2dc6215}\label{class_achroma_a_p_i_1_1_achroma_instance_match_ad47ac13587daddb85bbc7f79b2dc6215} 
+static void {\bfseries Un\+Watch\+Match} ()
+\begin{DoxyCompactList}\small\item\em Detaches the listener for the current match. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_ae793020bf013b30555c9eea711a67431}{Watch\+Match}} (Unity\+Action$<$ string $>$ result)
+\begin{DoxyCompactList}\small\item\em Adds a listener to the match. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_a4fe70e7b7909bfa5fc13f54d46867bbd}{Refresh\+Match}} (string session\+Name, bool show\+Loading=true, Unity\+Action$<$ bool, string, string $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em Forces an update to the local match data by retrieving it from the database. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_a281f8f20e1cbc35ea293ac76ef9713b4}{Get\+Match\+Data}} (string session\+Name, Unity\+Action$<$ bool, string, \mbox{\hyperlink{class_achroma_1_1_match_data}{Match\+Data}} $>$ result)
+\begin{DoxyCompactList}\small\item\em Based on a session id, it gives back the Match\+Data object. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{class_achroma_1_1_match_player}{Match\+Player}} $>$ \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_a1ed3f6c8f1c76afc44ea04276cfec968}{Get\+Oponents}} ()
+\begin{DoxyCompactList}\small\item\em Gets a list of opponents. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_a1ea02aa26e5ecc62bb25a90252134e6d}{Get\+Current\+Season\+Name}} (Unity\+Action$<$ string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the current season name from the seasons table. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_a60b0cd954c08a3a8c820925b685574c0}{Get\+Match\+Code}} (Unity\+Action$<$ string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets a unique match code. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a1609fdde34a2ae6b3732d49e3ec39d6d}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a1609fdde34a2ae6b3732d49e3ec39d6d} 
+static void {\bfseries Add\+To\+User\+Total\+Matches} ()
+\begin{DoxyCompactList}\small\item\em Adds to the number of matches played by the user. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_aba7338c56c330122af2a01fbc8d0e68c}{Update\+User\+Wins}} (string winner, string win\+Type, Unity\+Action callback)
+\begin{DoxyCompactList}\small\item\em Updates the user\textquotesingle{}s game\+Stats with the win. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a6b6dcf1ce3d5913155578ac99f90e93f}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a6b6dcf1ce3d5913155578ac99f90e93f} 
+static bool {\bfseries Am\+IMatch\+Host}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Responds the question if the current user is the host of match. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a503d38bdf7dfb4876da5f3ed0e7741c0}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a503d38bdf7dfb4876da5f3ed0e7741c0} 
+static \mbox{\hyperlink{class_achroma_1_1_match_data}{Match\+Data}} {\bfseries match\+Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Exposes the match data object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton with methods related to the Companion match. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a05381755bae7b8695ef90599f9259980}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a05381755bae7b8695ef90599f9259980} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!AddLocalPlayerToCurrentMatch@{AddLocalPlayerToCurrentMatch}}
+\index{AddLocalPlayerToCurrentMatch@{AddLocalPlayerToCurrentMatch}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{AddLocalPlayerToCurrentMatch()}{AddLocalPlayerToCurrentMatch()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Add\+Local\+Player\+To\+Current\+Match (\begin{DoxyParamCaption}\item[{Achroma\+Database\+Controller\+::\+Companion\+Game\+Type}]{game\+Type,  }\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds the local player to the match. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Type} & The type of match in question\\
+\hline
+{\em result} & The callback with success feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a05381755bae7b8695ef90599f9259980_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a1ea02aa26e5ecc62bb25a90252134e6d}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a1ea02aa26e5ecc62bb25a90252134e6d} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!GetCurrentSeasonName@{GetCurrentSeasonName}}
+\index{GetCurrentSeasonName@{GetCurrentSeasonName}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{GetCurrentSeasonName()}{GetCurrentSeasonName()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Get\+Current\+Season\+Name (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current season name from the seasons table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a1ea02aa26e5ecc62bb25a90252134e6d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a60b0cd954c08a3a8c820925b685574c0}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a60b0cd954c08a3a8c820925b685574c0} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!GetMatchCode@{GetMatchCode}}
+\index{GetMatchCode@{GetMatchCode}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{GetMatchCode()}{GetMatchCode()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Get\+Match\+Code (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets a unique match code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & Returns the match code\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a60b0cd954c08a3a8c820925b685574c0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a281f8f20e1cbc35ea293ac76ef9713b4}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a281f8f20e1cbc35ea293ac76ef9713b4} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!GetMatchData@{GetMatchData}}
+\index{GetMatchData@{GetMatchData}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{GetMatchData()}{GetMatchData()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Get\+Match\+Data (\begin{DoxyParamCaption}\item[{string}]{session\+Name,  }\item[{Unity\+Action$<$ bool, string, \mbox{\hyperlink{class_achroma_1_1_match_data}{Match\+Data}} $>$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Based on a session id, it gives back the Match\+Data object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Name} & Session id\\
+\hline
+{\em result} & the success feedback and Match\+Data object\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a281f8f20e1cbc35ea293ac76ef9713b4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a1ed3f6c8f1c76afc44ea04276cfec968}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a1ed3f6c8f1c76afc44ea04276cfec968} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!GetOponents@{GetOponents}}
+\index{GetOponents@{GetOponents}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{GetOponents()}{GetOponents()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{class_achroma_1_1_match_player}{Match\+Player}} $>$ Achroma\+API.\+Achroma\+Instance\+Match.\+Get\+Oponents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets a list of opponents. 
+
+\begin{DoxyReturn}{Returns}
+List of player\textquotesingle{}s opponents
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a1ed3f6c8f1c76afc44ea04276cfec968_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a188b25cfcd07b36fd79aecfbd085f014}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a188b25cfcd07b36fd79aecfbd085f014} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!NewMatch@{NewMatch}}
+\index{NewMatch@{NewMatch}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{NewMatch()}{NewMatch()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+New\+Match (\begin{DoxyParamCaption}\item[{string}]{session\+Name,  }\item[{Achroma\+Database\+Controller\+::\+Companion\+Game\+Type}]{game\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a new match to Firebase\textquotesingle{}s match table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Name} & The unique match id\\
+\hline
+{\em game\+Type} & The type of match in question\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a188b25cfcd07b36fd79aecfbd085f014_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a4fe70e7b7909bfa5fc13f54d46867bbd}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a4fe70e7b7909bfa5fc13f54d46867bbd} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!RefreshMatch@{RefreshMatch}}
+\index{RefreshMatch@{RefreshMatch}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{RefreshMatch()}{RefreshMatch()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Refresh\+Match (\begin{DoxyParamCaption}\item[{string}]{session\+Name,  }\item[{bool}]{show\+Loading = {\ttfamily true},  }\item[{Unity\+Action$<$ bool, string, string $>$}]{callback = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Forces an update to the local match data by retrieving it from the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Name} & Session id\\
+\hline
+{\em show\+Loading} & If true, shows the loading screen\\
+\hline
+{\em callback} & Success/\+Failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a4fe70e7b7909bfa5fc13f54d46867bbd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a3c96ff4e496235ca9a8a79e10207a054}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a3c96ff4e496235ca9a8a79e10207a054} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!RemoveLocalPlayerFromCurrentMatch@{RemoveLocalPlayerFromCurrentMatch}}
+\index{RemoveLocalPlayerFromCurrentMatch@{RemoveLocalPlayerFromCurrentMatch}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{RemoveLocalPlayerFromCurrentMatch()}{RemoveLocalPlayerFromCurrentMatch()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Remove\+Local\+Player\+From\+Current\+Match (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+User removes themselves from the match. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a3c96ff4e496235ca9a8a79e10207a054_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a49e6fd762c14137bd545bcb860db07bf}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a49e6fd762c14137bd545bcb860db07bf} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!SaveMatchData@{SaveMatchData}}
+\index{SaveMatchData@{SaveMatchData}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{SaveMatchData()}{SaveMatchData()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Save\+Match\+Data (\begin{DoxyParamCaption}\item[{string}]{session\+Name = {\ttfamily "{}"{}},  }\item[{Unity\+Action$<$ bool, string $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pushes the match data to Firebase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Name} & Session Id, if null, will use the match\+Data object in memory\\
+\hline
+{\em result} & Success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a49e6fd762c14137bd545bcb860db07bf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_aaa3647eb1e2ce7940c1167ef94f1e616}\label{class_achroma_a_p_i_1_1_achroma_instance_match_aaa3647eb1e2ce7940c1167ef94f1e616} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!UpdatePlayerCharacter@{UpdatePlayerCharacter}}
+\index{UpdatePlayerCharacter@{UpdatePlayerCharacter}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{UpdatePlayerCharacter()}{UpdatePlayerCharacter()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Update\+Player\+Character (\begin{DoxyParamCaption}\item[{int}]{character }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the avatar of the current plyer so the other players can see the change. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & the new avatar id\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_aaa3647eb1e2ce7940c1167ef94f1e616_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_aba7338c56c330122af2a01fbc8d0e68c}\label{class_achroma_a_p_i_1_1_achroma_instance_match_aba7338c56c330122af2a01fbc8d0e68c} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!UpdateUserWins@{UpdateUserWins}}
+\index{UpdateUserWins@{UpdateUserWins}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{UpdateUserWins()}{UpdateUserWins()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Update\+User\+Wins (\begin{DoxyParamCaption}\item[{string}]{winner,  }\item[{string}]{win\+Type,  }\item[{Unity\+Action}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the user\textquotesingle{}s game\+Stats with the win. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner} & the userid of the winner\\
+\hline
+{\em win\+Type} & The type of win, chroma / achrom\\
+\hline
+{\em callback} & The feedback result\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_aba7338c56c330122af2a01fbc8d0e68c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_ae793020bf013b30555c9eea711a67431}\label{class_achroma_a_p_i_1_1_achroma_instance_match_ae793020bf013b30555c9eea711a67431} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!WatchMatch@{WatchMatch}}
+\index{WatchMatch@{WatchMatch}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{WatchMatch()}{WatchMatch()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Watch\+Match (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ string $>$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a listener to the match. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_ae793020bf013b30555c9eea711a67431_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Match.\+cs\end{DoxyCompactItemize}

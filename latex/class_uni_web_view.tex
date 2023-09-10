@@ -1,0 +1,2016 @@
+\doxysection{Uni\+Web\+View Class Reference}
+\hypertarget{class_uni_web_view}{}\label{class_uni_web_view}\index{UniWebView@{UniWebView}}
+
+
+Main class of \doxylink{class_uni_web_view}{Uni\+Web\+View}. Any {\ttfamily Game\+Object} instance with this script can represent a webview object in the scene. Use this class to create, load, show and interact with a general-\/purpose web view.  
+
+
+
+
+Inheritance diagram for Uni\+Web\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_uni_web_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Uni\+Web\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_uni_web_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_a409b75de07feeda59ad19243535cd15c}{Page\+Started\+Delegate}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View, string url)
+\begin{DoxyCompactList}\small\item\em Delegate for page started event. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_a47e17b8872a726c8018f45b5f79b6952}{Page\+Finished\+Delegate}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View, int status\+Code, string url)
+\begin{DoxyCompactList}\small\item\em Delegate for page finished event. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_ab6a874ed5148aefb5851602afd8dc890}{Page\+Error\+Received\+Delegate}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View, int error\+Code, string error\+Message)
+\begin{DoxyCompactList}\small\item\em Delegate for page error received event. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_a4eb19a12dfcd3fe1f88dce91105290f5}{Page\+Progress\+Changed\+Delegate}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View, float progress)
+\begin{DoxyCompactList}\small\item\em Delegate for page progress changed event. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_a06169a0801055170343560210038e66a}{Message\+Received\+Delegate}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View, \mbox{\hyperlink{struct_uni_web_view_message}{Uni\+Web\+View\+Message}} message)
+\begin{DoxyCompactList}\small\item\em Delegate for message received event. \end{DoxyCompactList}\item 
+delegate bool \mbox{\hyperlink{class_uni_web_view_a4e82b8553c652e524dd1763e7ec51ff2}{Should\+Close\+Delegate}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View)
+\begin{DoxyCompactList}\small\item\em Delegate for should close event. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_a4612a1570570293cb815a476f0957858}{Orientation\+Changed\+Delegate}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View, Screen\+Orientation orientation)
+\begin{DoxyCompactList}\small\item\em Delegate for orientation changed event. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_a8a02a2c576d338456c7b309733c2b754}{On\+Web\+Content\+Process\+Terminated\+Delegate}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View)
+\begin{DoxyCompactList}\small\item\em Delegate for content loading terminated event. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_a707e1145b79bd42716c02a19a34ec667}{File\+Download\+Started}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View, string remote\+Url, string file\+Name)
+\begin{DoxyCompactList}\small\item\em Delegate for file download task starting event. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_a9ded8b60d9e43ccd02c2932925dfe4cc}{File\+Download\+Finished}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View, int error\+Code, string remote\+Url, string disk\+Path)
+\begin{DoxyCompactList}\small\item\em Delegate for file download task finishing event. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_a5b0b7cc5f07df3a4100d2bd3d988d90c}{Capture\+Snapshot\+Finished}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View, int error\+Code, string disk\+Path)
+\begin{DoxyCompactList}\small\item\em Delegate for capturing snapshot finished event. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_affd82b353a1299a7edf220f3c78972ac}{Multiple\+Window\+Opened\+Delegate}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View, string multiple\+Window\+Id)
+\begin{DoxyCompactList}\small\item\em Delegate for multiple window opening event. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_af88e77787614ca81cce9d63b959bdeec}{Multiple\+Window\+Closed\+Delegate}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View, string multiple\+Window\+Id)
+\begin{DoxyCompactList}\small\item\em Delegate for multiple window closing event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a5c683d677fd0fbe4bb9f848e1e08a161}{Update\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Updates and sets current frame of web view to match the setting. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a866aba9666e94e861fbc3d34414d412a}{Load}} (string url, bool skip\+Encoding=false, string read\+Access\+URL=null)
+\begin{DoxyCompactList}\small\item\em Loads a url in current web view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a0e81df6eb1a1ca3dde16dab52d42c23d}{Load\+HTMLString}} (string html\+String, string base\+Url, bool skip\+Encoding=false)
+\begin{DoxyCompactList}\small\item\em Loads an HTML string in current web view. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_a26affd5bd72d77b9f2af8b05f7bc98ba}\label{class_uni_web_view_a26affd5bd72d77b9f2af8b05f7bc98ba} 
+void {\bfseries Reload} ()
+\begin{DoxyCompactList}\small\item\em Reloads the current page. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_a40af85fa089d921e650c1be9e96c2132}\label{class_uni_web_view_a40af85fa089d921e650c1be9e96c2132} 
+void {\bfseries Stop} ()
+\begin{DoxyCompactList}\small\item\em Stops loading all resources on the current page. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_ae8cfac3a40da1becc3707fe1f5404996}\label{class_uni_web_view_ae8cfac3a40da1becc3707fe1f5404996} 
+void {\bfseries Go\+Back} ()
+\begin{DoxyCompactList}\small\item\em Navigates to the back item in the back-\/forward list. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_a88663cd5e3dc1c3644b193673254a6c5}\label{class_uni_web_view_a88663cd5e3dc1c3644b193673254a6c5} 
+void {\bfseries Go\+Forward} ()
+\begin{DoxyCompactList}\small\item\em Navigates to the forward item in the back-\/forward list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_afcfe6abe80b4d5586d6af630f368b433}{Set\+Open\+Links\+In\+External\+Browser}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets whether the link clicking in the web view should open the page in an external browser. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_uni_web_view_a42abf43f5601954e4bf4ed23e7dd9175}{Show}} (bool fade=false, Uni\+Web\+View\+Transition\+Edge edge=Uni\+Web\+View\+Transition\+Edge.\+None, float duration=0.\+4f, Action completion\+Handler=null)
+\begin{DoxyCompactList}\small\item\em Sets the web view visible on screen. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_a45d3187fdd0b1caf87c9313c5973a349}\label{class_uni_web_view_a45d3187fdd0b1caf87c9313c5973a349} 
+bool {\bfseries \+\_\+\+Show} (bool fade=false, Uni\+Web\+View\+Transition\+Edge edge=Uni\+Web\+View\+Transition\+Edge.\+None, float duration=0.\+4f, bool use\+Async=false, Action completion\+Handler=null)
+\item 
+bool \mbox{\hyperlink{class_uni_web_view_aeb568e89957981cb1f259ade52774f60}{Hide}} (bool fade=false, Uni\+Web\+View\+Transition\+Edge edge=Uni\+Web\+View\+Transition\+Edge.\+None, float duration=0.\+4f, Action completion\+Handler=null)
+\begin{DoxyCompactList}\small\item\em Sets the web view invisible from screen. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_ab90b7219245a99bc5a9c4c08d62f89a2}\label{class_uni_web_view_ab90b7219245a99bc5a9c4c08d62f89a2} 
+bool {\bfseries \+\_\+\+Hide} (bool fade=false, Uni\+Web\+View\+Transition\+Edge edge=Uni\+Web\+View\+Transition\+Edge.\+None, float duration=0.\+4f, bool use\+Async=false, Action completion\+Handler=null)
+\item 
+bool \mbox{\hyperlink{class_uni_web_view_ad377321fb21c688d928f84f932e88b3b}{Animate\+To}} (Rect frame, float duration, float delay=0.\+0f, Action completion\+Handler=null)
+\begin{DoxyCompactList}\small\item\em Animates the web view from current position and size to another position and size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a2620408755d2b992a53031b26833c20e}{Add\+Java\+Script}} (string js\+String, Action$<$ \mbox{\hyperlink{class_uni_web_view_native_result_payload}{Uni\+Web\+View\+Native\+Result\+Payload}} $>$ completion\+Handler=null)
+\begin{DoxyCompactList}\small\item\em Adds a Java\+Script to current page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a87c66c7b2fecde9944c3e0692b20c39e}{Evaluate\+Java\+Script}} (string js\+String, Action$<$ \mbox{\hyperlink{class_uni_web_view_native_result_payload}{Uni\+Web\+View\+Native\+Result\+Payload}} $>$ completion\+Handler=null)
+\begin{DoxyCompactList}\small\item\em Evaluates a Java\+Script string on current page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a785e560917f32efe65d91874c632f7d5}{Add\+Url\+Scheme}} (string scheme)
+\begin{DoxyCompactList}\small\item\em Adds a url scheme to \doxylink{class_uni_web_view}{Uni\+Web\+View} message system interpreter. All following url navigation to this scheme will be sent as a message to \doxylink{class_uni_web_view}{Uni\+Web\+View} instead. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_afee77e21eabf8b078933803d0b729f63}{Remove\+Url\+Scheme}} (string scheme)
+\begin{DoxyCompactList}\small\item\em Removes a url scheme from \doxylink{class_uni_web_view}{Uni\+Web\+View} message system interpreter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a5cf1ff85e5f67aa5ee0b86599e0487a9}{Add\+Ssl\+Exception\+Domain}} (string domain)
+\begin{DoxyCompactList}\small\item\em Adds a domain to the SSL checking white list. If you are trying to access a web site with untrusted or expired certification, the web view will prevent its loading. If you could confirm that this site is trusted, you can add the domain as an SSL exception, so you could visit it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_ae7ca507a259afd04c6f618dfd6fad47b}{Remove\+Ssl\+Exception\+Domain}} (string domain)
+\begin{DoxyCompactList}\small\item\em Removes a domain from the SSL checking white list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a613cf4db6adec637634bc203504865e4}{Set\+Header\+Field}} (string key, string value)
+\begin{DoxyCompactList}\small\item\em Sets a customized header field for web view requests. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a81241b0fa0ac2033c67d72f4cb321e72}{Set\+User\+Agent}} (string agent)
+\begin{DoxyCompactList}\small\item\em Sets the user agent used in the web view. If the string is null or empty, the system default value will be used. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_uni_web_view_aff0d4d94915a2a7d1cc62c02eace9d93}{Get\+User\+Agent}} ()
+\begin{DoxyCompactList}\small\item\em Gets the user agent string currently used in web view. If a customized user agent is not set, the default user agent in current platform will be returned. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_aec755de6988bcfe2172ab3c3da6a19b1}{Set\+Content\+Inset\+Adjustment\+Behavior}} (Uni\+Web\+View\+Content\+Inset\+Adjustment\+Behavior behavior)
+\begin{DoxyCompactList}\small\item\em Sets the adjustment behavior which indicates how safe area insets are added to the adjusted content inset. It is a wrapper of {\ttfamily content\+Inset\+Adjustment\+Behavior} on i\+OS. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a93365b0f7f234eb23b73d51260d63704}{Set\+Allow\+File\+Access}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets whether loading a local file is allowed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a98364587039bba2d9fff75c85ac17ecd}{Set\+Allow\+File\+Access\+From\+File\+URLs}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets whether file access from file URLs is allowed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_af628de57369932c440ffd5e9b2a0473c}{Set\+Accept\+Third\+Party\+Cookies}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets whether the \doxylink{class_uni_web_view}{Uni\+Web\+View} should allow third party cookies to be set. By default, on Android, the third party cookies are disallowed due to security reason. Setting this to {\ttfamily true} will allow the cookie manager to accept third party cookies you set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_aebac3b00d73d83c3972fdb22b3add45d}{Clean\+Cache}} ()
+\begin{DoxyCompactList}\small\item\em Cleans web view cache. This removes cached local data of web view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a20f4e618bcbe1365211e6916dbd661a0}{Set\+Show\+Spinner\+While\+Loading}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets whether to show a loading indicator while the loading is in progress. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_ab6204619f8b97f4e2f9afee8aa00de18}{Set\+Spinner\+Text}} (string text)
+\begin{DoxyCompactList}\small\item\em Sets the text displayed in the loading indicator, if {\ttfamily Set\+Show\+Spinner\+While\+Loading} is set to {\ttfamily true}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_ae054fefd38553c6e6d819b8d5e9fbb94}{Set\+Horizontal\+Scroll\+Bar\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Sets whether the horizontal scroll bar should show when the web content beyonds web view bounds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_ae753ca3ecbf16e30b2eafe3b1e2d3ce2}{Set\+Vertical\+Scroll\+Bar\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Sets whether the vertical scroll bar should show when the web content beyonds web view bounds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a63ce8e6c16d0f7baca9d6c5430e2dbb3}{Set\+Bounces\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Sets whether the web view should show with a bounces effect when scrolling to page edge. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_ae0e17778a582e4d984e7728d2429928f}{Set\+Zoom\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Sets whether the web view supports zoom gesture to change content size. Default is {\ttfamily false}, which means the zoom gesture is not supported. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_adde7950b686fd86f396a55f011422347}{Add\+Permission\+Trust\+Domain}} (string domain)
+\begin{DoxyCompactList}\small\item\em Adds a trusted domain to white list and allow permission requests from the domain. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a3d22a83671b24e61431052b14fb32561}{Remove\+Permission\+Trust\+Domain}} (string domain)
+\begin{DoxyCompactList}\small\item\em Removes a trusted domain from white list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a913dc6984f8154a64adbde493b201ada}{Set\+Back\+Button\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Sets whether the device back button should be enabled to execute "{}go back"{} or "{}closing"{} operation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a72180d6f70e111a05b0df7865dc882e1}{Set\+Use\+Wide\+View\+Port}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets whether the web view should enable support for the "{}viewport"{} HTML meta tag or should use a wide viewport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a58f462745a9f8a5a7efbcbba4cb69bee}{Set\+Load\+With\+Overview\+Mode}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets whether the web view loads pages in overview mode, that is, zooms out the content to fit on screen by width. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_ad39031f0c1a5be9eabeb9ab4db25fad1}{Set\+Show\+Toolbar}} (bool show, bool animated=false, bool on\+Top=true, bool adjust\+Inset=false)
+\begin{DoxyCompactList}\small\item\em Sets whether to show a toolbar which contains navigation buttons and Done button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a84ee91648a6bdeb179b44c10c7cbf7e5}{Set\+Toolbar\+Done\+Button\+Text}} (string text)
+\begin{DoxyCompactList}\small\item\em Sets the done button text in toolbar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a51b0cab07885c01adc6b6de5c6e7e7bb}{Set\+Toolbar\+Go\+Back\+Button\+Text}} (string text)
+\begin{DoxyCompactList}\small\item\em Sets the go back button text in toolbar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_ae7d61cac9d6e5076cdfa9fd93414ae41}{Set\+Toolbar\+Go\+Forward\+Button\+Text}} (string text)
+\begin{DoxyCompactList}\small\item\em Sets the go forward button text in toolbar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a09ebecb1ebf27d511d69a15d252d3e24}{Set\+Toolbar\+Tint\+Color}} (Color color)
+\begin{DoxyCompactList}\small\item\em Sets the background tint color for the toolbar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a405145ec3efe98bed67276dbf9c559fa}{Set\+Toolbar\+Text\+Color}} (Color color)
+\begin{DoxyCompactList}\small\item\em Sets the button text color for the toolbar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a92344bbc1af7a3e0042f775cb0a1a3a4}{Set\+Show\+Toolbar\+Navigation\+Buttons}} (bool show)
+\begin{DoxyCompactList}\small\item\em Sets the visibility of navigation buttons, such as "{}\+Go Back"{} and "{}\+Go Forward"{}, on toolbar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a176998e5ba2ec1aee21807850254f2ce}{Set\+User\+Interaction\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Sets whether the web view can receive user interaction or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a7b1f9f88374602b3819c2bd2a666a2bf}{Set\+Transparency\+Clicking\+Through\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Sets whether the web view should pass through clicks at clear pixels to Unity scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a9f5d475b22f87c1655ae0c8e57b3cf0e}{Set\+Window\+User\+Resize\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Enables user resizing for web view window. By default, you can only set the window size by setting its frame on mac Editor. By enabling user resizing, you would be able to resize the window by dragging its border as a normal mac\+OS window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a916bbeb884eda538b0f2afd56f2f8492}{Get\+HTMLContent}} (Action$<$ string $>$ handler)
+\begin{DoxyCompactList}\small\item\em Gets the HTML content from current page by accessing its outer\+HTML with Java\+Script. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a4d2b1fe0d5a7950d8a92d06c20c48fe6}{Set\+Allow\+Back\+Forward\+Navigation\+Gestures}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets whether horizontal swipe gestures should trigger back-\/forward list navigation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a714cbc3ffdb6c32e5d997a21c7501992}{Set\+Allow\+HTTPAuth\+Pop\+Up\+Window}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets whether a prompt alert should be displayed for collection username and password when the web view receives an HTTP authentication challenge (HTTP Basic or HTTP Digest) from server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a1ab70c58ee311fa811e82ceb58343f59}{Set\+Callout\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Sets whether a callout (context) menu should be displayed when user long tapping on certain web view content. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_abd12abffe69cad41969969c8dfcc570f}\label{class_uni_web_view_abd12abffe69cad41969969c8dfcc570f} 
+void {\bfseries Set\+Support\+Multiple\+Windows} (bool enabled)
+\item 
+void \mbox{\hyperlink{class_uni_web_view_a4b43e74b024d4992a1ecbb845a5ea65f}{Set\+Support\+Multiple\+Windows}} (bool enabled, bool allow\+Java\+Script\+Opening)
+\begin{DoxyCompactList}\small\item\em Sets whether the web view should support a pop up web view triggered by user in a new tab. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_af3fb4d7b30f6f19f0c0772a04b35e9bb}{Set\+Default\+Font\+Size}} (int size)
+\begin{DoxyCompactList}\small\item\em Sets the default font size used in the web view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a3017f63e64b125c6dcbfc334bf8f39ff}{Set\+Text\+Zoom}} (int text\+Zoom)
+\begin{DoxyCompactList}\small\item\em Sets the text zoom used in the web view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a52c6025b03d272be16cd703dc59a46c5}{Set\+Drag\+Interaction\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Sets whether the drag interaction should be enabled on i\+OS. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a8ab604a09e6784d6b64cc7c797ceba5b}{Print}} ()
+\begin{DoxyCompactList}\small\item\em Prints current page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_ac1921e828905e647dfdde3521c1030ed}{Capture\+Snapshot}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Capture the content of web view and store it to the cache path on disk with the given file name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_ac4af7915a24e93e9a33bc58b1f261cd8}{Scroll\+To}} (int x, int y, bool animated)
+\begin{DoxyCompactList}\small\item\em Scrolls the web view to a certain point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a3d38a660709000cabb1bfcdbb54f66e4}{Add\+Download\+URL}} (string url\+String, Uni\+Web\+View\+Download\+Matching\+Type type=Uni\+Web\+View\+Download\+Matching\+Type.\+Exact\+Value)
+\begin{DoxyCompactList}\small\item\em Adds the URL to download inspecting list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_ada30f705c75215769c10d20c69eb774b}{Remove\+Download\+URL}} (string url\+String, Uni\+Web\+View\+Download\+Matching\+Type type=Uni\+Web\+View\+Download\+Matching\+Type.\+Exact\+Value)
+\begin{DoxyCompactList}\small\item\em Removes the URL from download inspecting list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a44b30d3cdfd3886322bfce6580577228}{Add\+Download\+MIMEType}} (string MIMEType, Uni\+Web\+View\+Download\+Matching\+Type type=Uni\+Web\+View\+Download\+Matching\+Type.\+Exact\+Value)
+\begin{DoxyCompactList}\small\item\em Adds the MIME type to download inspecting list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a30c1933659a044b7abbe063f93c9fdc8}{Remove\+Download\+MIMETypes}} (string MIMEType, Uni\+Web\+View\+Download\+Matching\+Type type=Uni\+Web\+View\+Download\+Matching\+Type.\+Exact\+Value)
+\begin{DoxyCompactList}\small\item\em Removes the MIME type from download inspecting list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_ab9a9378aef1e74e797b153f4542f79df}{Set\+Allow\+User\+Choose\+Action\+After\+Downloading}} (bool allowed)
+\begin{DoxyCompactList}\small\item\em Sets whether allowing users to choose the way to handle the downloaded file. Default is {\ttfamily true}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_ac75efbc2a7a59f040fdad1b56fc1cdb1}{Set\+Download\+Event\+For\+Context\+Menu\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Sets whether the {\ttfamily On\+File\+Download\+Started} and {\ttfamily On\+File\+Download\+Finished} events should be raised even for an image saving action triggered by the callout (context) menu on Android. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_a1c6b2b68403a78e88ca74947ee7f742b}{Set\+Immersive\+Mode\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Sets whether the web view should behave in immersive mode, that is, hides the status bar and navigation bar with a sticky style. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_a1877ca44123a3ecd426b54c1903f25fe}{Key\+Code\+Received\+Delegate}} (\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}} web\+View, int key\+Code)
+\begin{DoxyCompactList}\small\item\em Delegate for code keycode received event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_uni_web_view_ab08048536446984a4e7061dd1d7fde64}{Set\+Allow\+Auto\+Play}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets allow auto play for current web view. By default, users need to touch the play button to start playing a media resource. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uni_web_view_a646edf1106856513cad4e89fbbb7465b}{Set\+Allow\+Inline\+Play}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets allow inline play for current web view. By default, on i\+OS, the video can only be played in a new full screen view. By setting this to {\ttfamily true}, you could play a video inline the page, instead of opening a new full screen window. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uni_web_view_aab244ebe8b29bfd291f812a9f930a6a5}{Set\+Allow\+Universal\+Access\+From\+File\+URLs}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets allow universal access from file URLs. By default, on i\+OS, the {\ttfamily WKWeb\+View} forbids any load of local files through AJAX even when opening a local HTML file. It checks the CORS rules and fails at web view level. This is useful when you want access these files by setting the {\ttfamily allow\+Universal\+Access\+From\+File\+URLs} key of web view configuration. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uni_web_view_aad157cd33ef5c05abf57ffe7c2f11239}{Set\+Enable\+Keyboard\+Avoidance}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets whether the web view area should avoid soft keyboard. It {\ttfamily true}, when the keyboard shows up, the web views content view will resize itself to avoid keyboard overlap the web content. Otherwise, the web view will not resize and just leave the content below under the soft keyboard. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uni_web_view_a3f5288c5bd382c289880e3fc75753523}{Set\+Java\+Script\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Sets whether Java\+Script should be enabled in current web view. Default is enabled. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uni_web_view_a536a848177e52c0ab7e639db0f7ffa0c}{Set\+Allow\+Java\+Script\+Open\+Window}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Sets whether Java\+Script can open windows without user interaction. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uni_web_view_aec961d6739e203e8a267c30957f3cb9e}{Clear\+Cookies}} ()
+\begin{DoxyCompactList}\small\item\em Clears all cookies from web view. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uni_web_view_a28659fe6c9730c691cb60b304d83f131}{Set\+Cookie}} (string url, string cookie, bool skip\+Encoding=false)
+\begin{DoxyCompactList}\small\item\em Sets a cookie for a certain url. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_uni_web_view_a4db834fd06ac4bb1e55d0283467531fd}{Get\+Cookie}} (string url, string key, bool skip\+Encoding=false)
+\begin{DoxyCompactList}\small\item\em Gets the cookie value under a url and key. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uni_web_view_af2b18fc85539cf9a45faf1a85d0015d4}{Remove\+Cookies}} (string url, bool skip\+Encoding=false)
+\begin{DoxyCompactList}\small\item\em Removes all the cookies under a url. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uni_web_view_a252a511b06dd6515d2d916084dc2e73a}{Remove\+Cooke}} (string url, string key, bool skip\+Encoding=false)
+\begin{DoxyCompactList}\small\item\em Removes the certain cookie under a url for the specified key. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uni_web_view_a0be131e37a8c06d38cb94ceff35f5949}{Clear\+Http\+Auth\+Username\+Password}} (string host, string realm)
+\begin{DoxyCompactList}\small\item\em Clears any saved credentials for HTTP authentication for both Basic and Digest. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uni_web_view_abc899d96df494b9ed05b35775a5979eb}{Set\+Web\+Contents\+Debugging\+Enabled}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Enables debugging of web contents. You could inspect of the content of a web view by using a browser development tool of Chrome for Android or Safari for mac\+OS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_uni_web_view_a4f882182743d07e2a6e62c63b33786d2}\label{class_uni_web_view_a4f882182743d07e2a6e62c63b33786d2} 
+Rect {\bfseries Frame}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the frame of current web view. The value is based on current {\ttfamily Screen.\+width} and {\ttfamily Screen.\+height}. The first two values of {\ttfamily Rect} is {\ttfamily x} and {\ttfamily y} position and the followed two {\ttfamily width} and {\ttfamily height}. \end{DoxyCompactList}\item 
+Rect\+Transform \mbox{\hyperlink{class_uni_web_view_ab939bf72b09bdb2a58a7a83f7b77991a}{Reference\+Rect\+Transform}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A reference rect transform which the web view should change its position and size to. Set it to a Unity UI element (which contains a {\ttfamily Rect\+Transform}) under a canvas to determine the web view frame by a certain UI element. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_ace585fa88d8caef09c7d240bed5bcb44}\label{class_uni_web_view_ace585fa88d8caef09c7d240bed5bcb44} 
+string {\bfseries Url}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The url of current loaded web page. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_uni_web_view_a3b5a22bdf6b77a3cecc6f57ba92cd6aa}{Is\+Web\+View\+Supported}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether the web view is supported in current runtime or not. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_a975d1f78d79dedc4e9c9e1dcb7579227}\label{class_uni_web_view_a975d1f78d79dedc4e9c9e1dcb7579227} 
+bool {\bfseries Can\+Go\+Back}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets whether there is a back page in the back-\/forward list that can be navigated to. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_af7054fa822187f759fca7fdaa0640ced}\label{class_uni_web_view_af7054fa822187f759fca7fdaa0640ced} 
+bool {\bfseries Can\+Go\+Forward}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets whether there is a forward page in the back-\/forward list that can be navigated to. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_accad05d57b4920978473daa5e0883d3e}\label{class_uni_web_view_accad05d57b4920978473daa5e0883d3e} 
+Color {\bfseries Background\+Color}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the background color of web view. The default value is {\ttfamily Color.\+white}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_uni_web_view_a58e5720795cc9effd31d4d97a1cf9ac6}{Alpha}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the alpha value of the whole web view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_uni_web_view_a409b75de07feeda59ad19243535cd15c}{Page\+Started\+Delegate}} \mbox{\hyperlink{class_uni_web_view_a9d8d6b0536a59d813aad693a5beee0b7}{On\+Page\+Started}}
+\begin{DoxyCompactList}\small\item\em Raised when the web view starts loading a url. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_uni_web_view_a47e17b8872a726c8018f45b5f79b6952}{Page\+Finished\+Delegate}} \mbox{\hyperlink{class_uni_web_view_a0fb6111ed06fe9addd2954d0bef09000}{On\+Page\+Finished}}
+\begin{DoxyCompactList}\small\item\em Raised when the web view finished to load a url successfully. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_a228aa0e4a1fef6fc797dad5e163513e3}\label{class_uni_web_view_a228aa0e4a1fef6fc797dad5e163513e3} 
+\mbox{\hyperlink{class_uni_web_view_ab6a874ed5148aefb5851602afd8dc890}{Page\+Error\+Received\+Delegate}} {\bfseries On\+Page\+Error\+Received}
+\begin{DoxyCompactList}\small\item\em Raised when an error encountered during the loading process. Such as the "{}host not found"{} error or "{}no Internet connection"{} error will raise this event. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_a653fdcca6eb19a786ce24dfaf4094857}\label{class_uni_web_view_a653fdcca6eb19a786ce24dfaf4094857} 
+\mbox{\hyperlink{class_uni_web_view_a4eb19a12dfcd3fe1f88dce91105290f5}{Page\+Progress\+Changed\+Delegate}} {\bfseries On\+Page\+Progress\+Changed}
+\begin{DoxyCompactList}\small\item\em Raised when the loading progress value changes in current web view. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_uni_web_view_a06169a0801055170343560210038e66a}{Message\+Received\+Delegate}} \mbox{\hyperlink{class_uni_web_view_aae59e208286dbe0d7f00dd5c79de1eee}{On\+Message\+Received}}
+\begin{DoxyCompactList}\small\item\em Raised when a message from web view is received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_uni_web_view_a4e82b8553c652e524dd1763e7ec51ff2}{Should\+Close\+Delegate}} \mbox{\hyperlink{class_uni_web_view_acffe8c4d0fc2b036a8e3effbc176c109}{On\+Should\+Close}}
+\begin{DoxyCompactList}\small\item\em Raised when the web view is about to close itself. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_afbca1812c2d19f0bf7f5851874112078}\label{class_uni_web_view_afbca1812c2d19f0bf7f5851874112078} 
+\mbox{\hyperlink{class_uni_web_view_a4612a1570570293cb815a476f0957858}{Orientation\+Changed\+Delegate}} {\bfseries On\+Orientation\+Changed}
+\begin{DoxyCompactList}\small\item\em Raised when the screen orientation is changed. It is a good time to set the web view frame if you need to support multiple orientations in your game. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_a79dace1c251954e6b92015510f3849f1}\label{class_uni_web_view_a79dace1c251954e6b92015510f3849f1} 
+\mbox{\hyperlink{class_uni_web_view_a8a02a2c576d338456c7b309733c2b754}{On\+Web\+Content\+Process\+Terminated\+Delegate}} {\bfseries On\+Web\+Content\+Process\+Terminated}
+\begin{DoxyCompactList}\small\item\em Raised when on i\+OS, when system calls {\ttfamily web\+View\+Web\+Content\+Process\+Did\+Terminate} method. It is usually due to a low memory when loading the web content and leave you a blank white screen. You need to free as much as memory you could and then do a page reload. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_a9baa12be09020f14a848ad74b97bd7e7}\label{class_uni_web_view_a9baa12be09020f14a848ad74b97bd7e7} 
+\mbox{\hyperlink{class_uni_web_view_a707e1145b79bd42716c02a19a34ec667}{File\+Download\+Started}} {\bfseries On\+File\+Download\+Started}
+\begin{DoxyCompactList}\small\item\em Raised when a file download task starts. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_a97f93b90d81ac2b9f148a4d478d0470e}\label{class_uni_web_view_a97f93b90d81ac2b9f148a4d478d0470e} 
+\mbox{\hyperlink{class_uni_web_view_a9ded8b60d9e43ccd02c2932925dfe4cc}{File\+Download\+Finished}} {\bfseries On\+File\+Download\+Finished}
+\begin{DoxyCompactList}\small\item\em Raised when a file download task finishes with either an error or success. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_abaea807eb994ff39752a488761605c15}\label{class_uni_web_view_abaea807eb994ff39752a488761605c15} 
+\mbox{\hyperlink{class_uni_web_view_a5b0b7cc5f07df3a4100d2bd3d988d90c}{Capture\+Snapshot\+Finished}} {\bfseries On\+Capture\+Snapshot\+Finished}
+\begin{DoxyCompactList}\small\item\em Raised when an image captured and stored in a cache path on disk. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_a224ad25a6371fb16283481b7ce5956b3}\label{class_uni_web_view_a224ad25a6371fb16283481b7ce5956b3} 
+\mbox{\hyperlink{class_uni_web_view_affd82b353a1299a7edf220f3c78972ac}{Multiple\+Window\+Opened\+Delegate}} {\bfseries On\+Multiple\+Window\+Opened}
+\begin{DoxyCompactList}\small\item\em Raised when a new window is opened. This happens when you enable the {\ttfamily Set\+Support\+Multiple\+Windows} and open a new pop-\/up window. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_aee86d1e48fb33888caf78fc99c6b892c}\label{class_uni_web_view_aee86d1e48fb33888caf78fc99c6b892c} 
+\mbox{\hyperlink{class_uni_web_view_af88e77787614ca81cce9d63b959bdeec}{Multiple\+Window\+Closed\+Delegate}} {\bfseries On\+Multiple\+Window\+Closed}
+\begin{DoxyCompactList}\small\item\em Raised when the multiple window is closed. This happens when the pop-\/up window is closed by navigation operation or by a invocation of {\ttfamily close()} on the page. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_uni_web_view_a1877ca44123a3ecd426b54c1903f25fe}{Key\+Code\+Received\+Delegate}} \mbox{\hyperlink{class_uni_web_view_af97b7d32a1ab2cce1ec573d54a126ee3}{On\+Key\+Code\+Received}}
+\begin{DoxyCompactList}\small\item\em Raised when a key (like back button or volume up) on the device is pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main class of \doxylink{class_uni_web_view}{Uni\+Web\+View}. Any {\ttfamily Game\+Object} instance with this script can represent a webview object in the scene. Use this class to create, load, show and interact with a general-\/purpose web view. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_uni_web_view_a44b30d3cdfd3886322bfce6580577228}\label{class_uni_web_view_a44b30d3cdfd3886322bfce6580577228} 
+\index{UniWebView@{UniWebView}!AddDownloadMIMEType@{AddDownloadMIMEType}}
+\index{AddDownloadMIMEType@{AddDownloadMIMEType}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{AddDownloadMIMEType()}{AddDownloadMIMEType()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Add\+Download\+MIMEType (\begin{DoxyParamCaption}\item[{string}]{MIMEType,  }\item[{Uni\+Web\+View\+Download\+Matching\+Type}]{type = {\ttfamily UniWebViewDownloadMatchingType\+:\+:ExactValue} }\end{DoxyParamCaption})}
+
+
+
+Adds the MIME type to download inspecting list. 
+
+If a response is received in main frame and its MIME type is already in the inspecting list, a download task will be triggered. Check "{}\+Download Files"{} guide for more.
+
+This method only works on i\+OS and mac\+OS Editor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em MIMEType} & The inspected MIME type of the response.\\
+\hline
+{\em type} & The download matching type used to match the MIME type. Default is {\ttfamily Exact\+Value}.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a3d38a660709000cabb1bfcdbb54f66e4}\label{class_uni_web_view_a3d38a660709000cabb1bfcdbb54f66e4} 
+\index{UniWebView@{UniWebView}!AddDownloadURL@{AddDownloadURL}}
+\index{AddDownloadURL@{AddDownloadURL}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{AddDownloadURL()}{AddDownloadURL()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Add\+Download\+URL (\begin{DoxyParamCaption}\item[{string}]{url\+String,  }\item[{Uni\+Web\+View\+Download\+Matching\+Type}]{type = {\ttfamily UniWebViewDownloadMatchingType\+:\+:ExactValue} }\end{DoxyParamCaption})}
+
+
+
+Adds the URL to download inspecting list. 
+
+If a response is received in main frame and its URL is already in the inspecting list, a download task will be triggered. Check "{}\+Download Files"{} guide for more.
+
+This method only works on i\+OS and mac\+OS Editor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url\+String} & The inspected URL.\\
+\hline
+{\em type} & The download matching type used to match the URL. Default is {\ttfamily Exact\+Value}.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a2620408755d2b992a53031b26833c20e}\label{class_uni_web_view_a2620408755d2b992a53031b26833c20e} 
+\index{UniWebView@{UniWebView}!AddJavaScript@{AddJavaScript}}
+\index{AddJavaScript@{AddJavaScript}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{AddJavaScript()}{AddJavaScript()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Add\+Java\+Script (\begin{DoxyParamCaption}\item[{string}]{js\+String,  }\item[{Action$<$ \mbox{\hyperlink{class_uni_web_view_native_result_payload}{Uni\+Web\+View\+Native\+Result\+Payload}} $>$}]{completion\+Handler = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Adds a Java\+Script to current page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em js\+String} & The Java\+Script code to add. It should be a valid Java\+Script statement string.\\
+\hline
+{\em completion\+Handler} & Called when adding Java\+Script operation finishes. Default is {\ttfamily null}.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_adde7950b686fd86f396a55f011422347}\label{class_uni_web_view_adde7950b686fd86f396a55f011422347} 
+\index{UniWebView@{UniWebView}!AddPermissionTrustDomain@{AddPermissionTrustDomain}}
+\index{AddPermissionTrustDomain@{AddPermissionTrustDomain}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{AddPermissionTrustDomain()}{AddPermissionTrustDomain()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Add\+Permission\+Trust\+Domain (\begin{DoxyParamCaption}\item[{string}]{domain }\end{DoxyParamCaption})}
+
+
+
+Adds a trusted domain to white list and allow permission requests from the domain. 
+
+You only need this on Android devices with system before 6.\+0 when a site needs the location or camera permission. It will allow the permission gets approved so you could access the corresponding devices. From Android 6.\+0, the permission requests method is changed and this is not needed anymore.
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain} & The domain to add to the white list.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a5cf1ff85e5f67aa5ee0b86599e0487a9}\label{class_uni_web_view_a5cf1ff85e5f67aa5ee0b86599e0487a9} 
+\index{UniWebView@{UniWebView}!AddSslExceptionDomain@{AddSslExceptionDomain}}
+\index{AddSslExceptionDomain@{AddSslExceptionDomain}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{AddSslExceptionDomain()}{AddSslExceptionDomain()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Add\+Ssl\+Exception\+Domain (\begin{DoxyParamCaption}\item[{string}]{domain }\end{DoxyParamCaption})}
+
+
+
+Adds a domain to the SSL checking white list. If you are trying to access a web site with untrusted or expired certification, the web view will prevent its loading. If you could confirm that this site is trusted, you can add the domain as an SSL exception, so you could visit it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain} & The domain to add. It should not contain any scheme or path part in url.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_uni_web_view_a5cf1ff85e5f67aa5ee0b86599e0487a9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_uni_web_view_a785e560917f32efe65d91874c632f7d5}\label{class_uni_web_view_a785e560917f32efe65d91874c632f7d5} 
+\index{UniWebView@{UniWebView}!AddUrlScheme@{AddUrlScheme}}
+\index{AddUrlScheme@{AddUrlScheme}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{AddUrlScheme()}{AddUrlScheme()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Add\+Url\+Scheme (\begin{DoxyParamCaption}\item[{string}]{scheme }\end{DoxyParamCaption})}
+
+
+
+Adds a url scheme to \doxylink{class_uni_web_view}{Uni\+Web\+View} message system interpreter. All following url navigation to this scheme will be sent as a message to \doxylink{class_uni_web_view}{Uni\+Web\+View} instead. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scheme} & The url scheme to add. It should not contain "{}\+://"{} part. You could even add "{}http"{} and/or "{}https"{} to prevent all resource loading on the page. "{}uniwebview"{} is added by default. Nothing will happen if you try to add a duplicated scheme.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_uni_web_view_a785e560917f32efe65d91874c632f7d5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_uni_web_view_ad377321fb21c688d928f84f932e88b3b}\label{class_uni_web_view_ad377321fb21c688d928f84f932e88b3b} 
+\index{UniWebView@{UniWebView}!AnimateTo@{AnimateTo}}
+\index{AnimateTo@{AnimateTo}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{AnimateTo()}{AnimateTo()}}
+{\footnotesize\ttfamily bool Uni\+Web\+View.\+Animate\+To (\begin{DoxyParamCaption}\item[{Rect}]{frame,  }\item[{float}]{duration,  }\item[{float}]{delay = {\ttfamily 0\+:\+:0f},  }\item[{Action}]{completion\+Handler = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Animates the web view from current position and size to another position and size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & The new {\ttfamily Frame} which the web view should be.\\
+\hline
+{\em duration} & Duration of the animation.\\
+\hline
+{\em delay} & Delay before the animation begins. Default is {\ttfamily 0.\+0f}, which means the animation will start immediately.\\
+\hline
+{\em completion\+Handler} & Completion handler which will be called when animation finishes. Default is {\ttfamily null}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_uni_web_view_ac1921e828905e647dfdde3521c1030ed}\label{class_uni_web_view_ac1921e828905e647dfdde3521c1030ed} 
+\index{UniWebView@{UniWebView}!CaptureSnapshot@{CaptureSnapshot}}
+\index{CaptureSnapshot@{CaptureSnapshot}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{CaptureSnapshot()}{CaptureSnapshot()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Capture\+Snapshot (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Capture the content of web view and store it to the cache path on disk with the given file name. 
+
+When the capturing finishes, {\ttfamily On\+Capture\+Snapshot\+Finished} event will be raised, with an error code to indicate whether the operation succeeded and an accessible disk path of the image.
+
+The captured image will be stored as a PNG file under the {\ttfamily file\+Name} in app\textquotesingle{}s cache folder. If a file with the same file name already exists, it will be overridden by the new captured image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The file name to which the captured image is stored to, for example "{}screenshot.\+png"{}. If empty, \doxylink{class_uni_web_view}{Uni\+Web\+View} will pick a random UUID with "{}png"{} file extension as the file name. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a5b0b7cc5f07df3a4100d2bd3d988d90c}\label{class_uni_web_view_a5b0b7cc5f07df3a4100d2bd3d988d90c} 
+\index{UniWebView@{UniWebView}!CaptureSnapshotFinished@{CaptureSnapshotFinished}}
+\index{CaptureSnapshotFinished@{CaptureSnapshotFinished}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{CaptureSnapshotFinished()}{CaptureSnapshotFinished()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+Capture\+Snapshot\+Finished (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View,  }\item[{int}]{error\+Code,  }\item[{string}]{disk\+Path }\end{DoxyParamCaption})}
+
+
+
+Delegate for capturing snapshot finished event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which raises this event.\\
+\hline
+{\em error\+Code} & The error code of the event. If the snapshot is captured and stored without a problem, the error code is 0. Any other number indicates an error happened. In most cases, the screenshot capturing only fails due to lack of disk storage. \\
+\hline
+{\em disk\+Path} & An accessible disk path to the captured snapshot image. If an error happens, it is an empty string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_aebac3b00d73d83c3972fdb22b3add45d}\label{class_uni_web_view_aebac3b00d73d83c3972fdb22b3add45d} 
+\index{UniWebView@{UniWebView}!CleanCache@{CleanCache}}
+\index{CleanCache@{CleanCache}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{CleanCache()}{CleanCache()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Clean\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cleans web view cache. This removes cached local data of web view. 
+
+If you need to clear all cookies, use {\ttfamily Clear\+Cookies} instead. \Hypertarget{class_uni_web_view_aec961d6739e203e8a267c30957f3cb9e}\label{class_uni_web_view_aec961d6739e203e8a267c30957f3cb9e} 
+\index{UniWebView@{UniWebView}!ClearCookies@{ClearCookies}}
+\index{ClearCookies@{ClearCookies}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{ClearCookies()}{ClearCookies()}}
+{\footnotesize\ttfamily static void Uni\+Web\+View.\+Clear\+Cookies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clears all cookies from web view. 
+
+This will clear cookies from all domains in the web view and previous. If you only need to remove cookies from a certain domain, use {\ttfamily Set\+Cookie} instead. \Hypertarget{class_uni_web_view_a0be131e37a8c06d38cb94ceff35f5949}\label{class_uni_web_view_a0be131e37a8c06d38cb94ceff35f5949} 
+\index{UniWebView@{UniWebView}!ClearHttpAuthUsernamePassword@{ClearHttpAuthUsernamePassword}}
+\index{ClearHttpAuthUsernamePassword@{ClearHttpAuthUsernamePassword}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{ClearHttpAuthUsernamePassword()}{ClearHttpAuthUsernamePassword()}}
+{\footnotesize\ttfamily static void Uni\+Web\+View.\+Clear\+Http\+Auth\+Username\+Password (\begin{DoxyParamCaption}\item[{string}]{host,  }\item[{string}]{realm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clears any saved credentials for HTTP authentication for both Basic and Digest. 
+
+On both i\+OS and Android, the user input credentials will be stored permanently across session. It could prevent your users to input username and password again until they changed. If you need the credentials only living in a shorter lifetime, call this method at proper timing.
+
+On i\+OS, it will clear the credentials immediately and completely from both disk and network cache. On Android, it only clears from disk database, the authentication might be still cached in the network stack and will not be removed until next session (app restarting).
+
+The client logout mechanism should be implemented by the Web site designer (such as server sending a HTTP 401 for invalidating credentials).
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & The host to which the credentials apply. It should not contain any thing like scheme or path part.\\
+\hline
+{\em realm} & The realm to which the credentials apply.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a87c66c7b2fecde9944c3e0692b20c39e}\label{class_uni_web_view_a87c66c7b2fecde9944c3e0692b20c39e} 
+\index{UniWebView@{UniWebView}!EvaluateJavaScript@{EvaluateJavaScript}}
+\index{EvaluateJavaScript@{EvaluateJavaScript}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{EvaluateJavaScript()}{EvaluateJavaScript()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Evaluate\+Java\+Script (\begin{DoxyParamCaption}\item[{string}]{js\+String,  }\item[{Action$<$ \mbox{\hyperlink{class_uni_web_view_native_result_payload}{Uni\+Web\+View\+Native\+Result\+Payload}} $>$}]{completion\+Handler = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Evaluates a Java\+Script string on current page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em js\+String} & The Java\+Script string to evaluate.\\
+\hline
+{\em completion\+Handler} & Called when evaluating Java\+Script operation finishes. Default is {\ttfamily null}.\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_uni_web_view_a87c66c7b2fecde9944c3e0692b20c39e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_uni_web_view_a9ded8b60d9e43ccd02c2932925dfe4cc}\label{class_uni_web_view_a9ded8b60d9e43ccd02c2932925dfe4cc} 
+\index{UniWebView@{UniWebView}!FileDownloadFinished@{FileDownloadFinished}}
+\index{FileDownloadFinished@{FileDownloadFinished}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{FileDownloadFinished()}{FileDownloadFinished()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+File\+Download\+Finished (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View,  }\item[{int}]{error\+Code,  }\item[{string}]{remote\+Url,  }\item[{string}]{disk\+Path }\end{DoxyParamCaption})}
+
+
+
+Delegate for file download task finishing event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which raises this event.\\
+\hline
+{\em error\+Code} & The error code of the download task result. Value {\ttfamily 0} means the download finishes without a problem. Any other non-\/{\ttfamily 0} value indicates an issue. The detail meaning of the error code depends on system. On i\+OS, it is usually the {\ttfamily error\+Code} of the received {\ttfamily NSURLError}. On Android, the value usually represents an {\ttfamily ERROR\+\_\+\texorpdfstring{$\ast$}{*}} value in {\ttfamily Download\+Manager}. \\
+\hline
+{\em remote\+Url} & The remote URL of this download task.\\
+\hline
+{\em disk\+Path} & The file path of the downloaded file. On i\+OS, the downloader file is in a temporary folder of your app sandbox. On Android, it is in the "{}\+Download"{} folder of your app. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a707e1145b79bd42716c02a19a34ec667}\label{class_uni_web_view_a707e1145b79bd42716c02a19a34ec667} 
+\index{UniWebView@{UniWebView}!FileDownloadStarted@{FileDownloadStarted}}
+\index{FileDownloadStarted@{FileDownloadStarted}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{FileDownloadStarted()}{FileDownloadStarted()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+File\+Download\+Started (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View,  }\item[{string}]{remote\+Url,  }\item[{string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Delegate for file download task starting event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which raises this event.\\
+\hline
+{\em remote\+Url} & The remote URL of this download task. This is also the download URL for the task.\\
+\hline
+{\em file\+Name} & The file name which user chooses to use.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a4db834fd06ac4bb1e55d0283467531fd}\label{class_uni_web_view_a4db834fd06ac4bb1e55d0283467531fd} 
+\index{UniWebView@{UniWebView}!GetCookie@{GetCookie}}
+\index{GetCookie@{GetCookie}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{GetCookie()}{GetCookie()}}
+{\footnotesize\ttfamily static string Uni\+Web\+View.\+Get\+Cookie (\begin{DoxyParamCaption}\item[{string}]{url,  }\item[{string}]{key,  }\item[{bool}]{skip\+Encoding = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the cookie value under a url and key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The url (domain) where the target cookie is.\\
+\hline
+{\em key} & The key for target cookie value.\\
+\hline
+{\em skip\+Encoding} & Whether \doxylink{class_uni_web_view}{Uni\+Web\+View} should skip encoding the url or not. If set to {\ttfamily false}, \doxylink{class_uni_web_view}{Uni\+Web\+View} will try to encode the url parameter before using it. Otherwise, your original url string will be used to get the cookie if it is valid. Default is {\ttfamily false}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value of the target cookie under url.
+\end{DoxyReturn}
+\Hypertarget{class_uni_web_view_a916bbeb884eda538b0f2afd56f2f8492}\label{class_uni_web_view_a916bbeb884eda538b0f2afd56f2f8492} 
+\index{UniWebView@{UniWebView}!GetHTMLContent@{GetHTMLContent}}
+\index{GetHTMLContent@{GetHTMLContent}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{GetHTMLContent()}{GetHTMLContent()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Get\+HTMLContent (\begin{DoxyParamCaption}\item[{Action$<$ string $>$}]{handler }\end{DoxyParamCaption})}
+
+
+
+Gets the HTML content from current page by accessing its outer\+HTML with Java\+Script. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & Called after the Java\+Script executed. The parameter string is the content read from page.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_uni_web_view_a916bbeb884eda538b0f2afd56f2f8492_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_uni_web_view_aff0d4d94915a2a7d1cc62c02eace9d93}\label{class_uni_web_view_aff0d4d94915a2a7d1cc62c02eace9d93} 
+\index{UniWebView@{UniWebView}!GetUserAgent@{GetUserAgent}}
+\index{GetUserAgent@{GetUserAgent}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{GetUserAgent()}{GetUserAgent()}}
+{\footnotesize\ttfamily string Uni\+Web\+View.\+Get\+User\+Agent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the user agent string currently used in web view. If a customized user agent is not set, the default user agent in current platform will be returned. 
+
+\begin{DoxyReturn}{Returns}
+The user agent string in use.
+\end{DoxyReturn}
+\Hypertarget{class_uni_web_view_aeb568e89957981cb1f259ade52774f60}\label{class_uni_web_view_aeb568e89957981cb1f259ade52774f60} 
+\index{UniWebView@{UniWebView}!Hide@{Hide}}
+\index{Hide@{Hide}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{Hide()}{Hide()}}
+{\footnotesize\ttfamily bool Uni\+Web\+View.\+Hide (\begin{DoxyParamCaption}\item[{bool}]{fade = {\ttfamily false},  }\item[{Uni\+Web\+View\+Transition\+Edge}]{edge = {\ttfamily UniWebViewTransitionEdge\+:\+:None},  }\item[{float}]{duration = {\ttfamily 0\+:\+:4f},  }\item[{Action}]{completion\+Handler = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Sets the web view invisible from screen. 
+
+If you pass {\ttfamily false} and {\ttfamily Uni\+Web\+View\+Transition\+Edge.\+None} to the first two parameters, it means no animation will be applied when hiding. So the {\ttfamily duration} parameter will not be taken into account. Otherwise, when either or both {\ttfamily fade} and {\ttfamily edge} set, the hiding operation will be animated.
+
+Regardless there is an animation or not, the {\ttfamily completion\+Handler} will be called if not {\ttfamily null} when the web view hiding finishes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fade} & Whether hide with a fade in animation. Default is {\ttfamily false}.\\
+\hline
+{\em edge} & The edge from which the web view hiding. It simulates a modal effect when hiding a web view. Default is {\ttfamily Uni\+Web\+View\+Transition\+Edge.\+None}.\\
+\hline
+{\em duration} & Duration of hiding animation. Default is {\ttfamily 0.\+4f}.\\
+\hline
+{\em completion\+Handler} & Completion handler which will be called when hiding finishes. Default is {\ttfamily null}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool value indicates whether the hiding operation started.
+\end{DoxyReturn}
+\Hypertarget{class_uni_web_view_a1877ca44123a3ecd426b54c1903f25fe}\label{class_uni_web_view_a1877ca44123a3ecd426b54c1903f25fe} 
+\index{UniWebView@{UniWebView}!KeyCodeReceivedDelegate@{KeyCodeReceivedDelegate}}
+\index{KeyCodeReceivedDelegate@{KeyCodeReceivedDelegate}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{KeyCodeReceivedDelegate()}{KeyCodeReceivedDelegate()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+Key\+Code\+Received\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View,  }\item[{int}]{key\+Code }\end{DoxyParamCaption})}
+
+
+
+Delegate for code keycode received event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which raises this event.\\
+\hline
+{\em key\+Code} & The key code of pressed key. See \href{https://developer.android.com/reference/android/view/KeyEvent.html\#KEYCODE_0}{\texttt{ Android API for keycode}} to know the possible values.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a866aba9666e94e861fbc3d34414d412a}\label{class_uni_web_view_a866aba9666e94e861fbc3d34414d412a} 
+\index{UniWebView@{UniWebView}!Load@{Load}}
+\index{Load@{Load}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Load (\begin{DoxyParamCaption}\item[{string}]{url,  }\item[{bool}]{skip\+Encoding = {\ttfamily false},  }\item[{string}]{read\+Access\+URL = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Loads a url in current web view. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The url to be loaded. This url should start with {\ttfamily \href{http://}{\texttt{ http\+://}}} or {\ttfamily \href{https://}{\texttt{ https\+://}}} scheme. You could even load a non-\/ascii url text if it is valid.\\
+\hline
+{\em skip\+Encoding} & Whether \doxylink{class_uni_web_view}{Uni\+Web\+View} should skip encoding the url or not. If set to {\ttfamily false}, \doxylink{class_uni_web_view}{Uni\+Web\+View} will try to encode the url parameter before loading it. Otherwise, your original url string will be used as the url if it is valid. Default is {\ttfamily false}. \\
+\hline
+{\em read\+Access\+URL} & The URL to allow read access to. This parameter is only used when loading from the filesystem in i\+OS, and passed to {\ttfamily load\+File\+URL\+:allowing\+Read\+Access\+To\+URL\+:} method of Web\+Kit. By default, the parent folder of the {\ttfamily url} parameter will be read accessible. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a0e81df6eb1a1ca3dde16dab52d42c23d}\label{class_uni_web_view_a0e81df6eb1a1ca3dde16dab52d42c23d} 
+\index{UniWebView@{UniWebView}!LoadHTMLString@{LoadHTMLString}}
+\index{LoadHTMLString@{LoadHTMLString}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{LoadHTMLString()}{LoadHTMLString()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Load\+HTMLString (\begin{DoxyParamCaption}\item[{string}]{html\+String,  }\item[{string}]{base\+Url,  }\item[{bool}]{skip\+Encoding = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Loads an HTML string in current web view. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em html\+String} & The HTML string to use as the contents of the webpage.\\
+\hline
+{\em base\+Url} & The url to use as the page\textquotesingle{}s base url.\\
+\hline
+{\em skip\+Encoding} & Whether \doxylink{class_uni_web_view}{Uni\+Web\+View} should skip encoding the base\+Url or not. If set to {\ttfamily false}, \doxylink{class_uni_web_view}{Uni\+Web\+View} will try to encode the base\+Url parameter before using it. Otherwise, your original url string will be used as the base\+Url if it is valid. Default is {\ttfamily false}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a06169a0801055170343560210038e66a}\label{class_uni_web_view_a06169a0801055170343560210038e66a} 
+\index{UniWebView@{UniWebView}!MessageReceivedDelegate@{MessageReceivedDelegate}}
+\index{MessageReceivedDelegate@{MessageReceivedDelegate}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{MessageReceivedDelegate()}{MessageReceivedDelegate()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+Message\+Received\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View,  }\item[{\mbox{\hyperlink{struct_uni_web_view_message}{Uni\+Web\+View\+Message}}}]{message }\end{DoxyParamCaption})}
+
+
+
+Delegate for message received event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which raises this event.\\
+\hline
+{\em message} & Message received from web view.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_af88e77787614ca81cce9d63b959bdeec}\label{class_uni_web_view_af88e77787614ca81cce9d63b959bdeec} 
+\index{UniWebView@{UniWebView}!MultipleWindowClosedDelegate@{MultipleWindowClosedDelegate}}
+\index{MultipleWindowClosedDelegate@{MultipleWindowClosedDelegate}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{MultipleWindowClosedDelegate()}{MultipleWindowClosedDelegate()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+Multiple\+Window\+Closed\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View,  }\item[{string}]{multiple\+Window\+Id }\end{DoxyParamCaption})}
+
+
+
+Delegate for multiple window closing event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which closes the multiple window.\\
+\hline
+{\em multiple\+Window\+Id} & The identifier of the closed window.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_affd82b353a1299a7edf220f3c78972ac}\label{class_uni_web_view_affd82b353a1299a7edf220f3c78972ac} 
+\index{UniWebView@{UniWebView}!MultipleWindowOpenedDelegate@{MultipleWindowOpenedDelegate}}
+\index{MultipleWindowOpenedDelegate@{MultipleWindowOpenedDelegate}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{MultipleWindowOpenedDelegate()}{MultipleWindowOpenedDelegate()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+Multiple\+Window\+Opened\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View,  }\item[{string}]{multiple\+Window\+Id }\end{DoxyParamCaption})}
+
+
+
+Delegate for multiple window opening event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which opens the new multiple (pop-\/up) window.\\
+\hline
+{\em multiple\+Window\+Id} & The identifier of the opened new window.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a8a02a2c576d338456c7b309733c2b754}\label{class_uni_web_view_a8a02a2c576d338456c7b309733c2b754} 
+\index{UniWebView@{UniWebView}!OnWebContentProcessTerminatedDelegate@{OnWebContentProcessTerminatedDelegate}}
+\index{OnWebContentProcessTerminatedDelegate@{OnWebContentProcessTerminatedDelegate}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{OnWebContentProcessTerminatedDelegate()}{OnWebContentProcessTerminatedDelegate()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+On\+Web\+Content\+Process\+Terminated\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View }\end{DoxyParamCaption})}
+
+
+
+Delegate for content loading terminated event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which raises this event.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a4612a1570570293cb815a476f0957858}\label{class_uni_web_view_a4612a1570570293cb815a476f0957858} 
+\index{UniWebView@{UniWebView}!OrientationChangedDelegate@{OrientationChangedDelegate}}
+\index{OrientationChangedDelegate@{OrientationChangedDelegate}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{OrientationChangedDelegate()}{OrientationChangedDelegate()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+Orientation\+Changed\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View,  }\item[{Screen\+Orientation}]{orientation }\end{DoxyParamCaption})}
+
+
+
+Delegate for orientation changed event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which raises this event.\\
+\hline
+{\em orientation} & The screen orientation for current state.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_ab6a874ed5148aefb5851602afd8dc890}\label{class_uni_web_view_ab6a874ed5148aefb5851602afd8dc890} 
+\index{UniWebView@{UniWebView}!PageErrorReceivedDelegate@{PageErrorReceivedDelegate}}
+\index{PageErrorReceivedDelegate@{PageErrorReceivedDelegate}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{PageErrorReceivedDelegate()}{PageErrorReceivedDelegate()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+Page\+Error\+Received\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View,  }\item[{int}]{error\+Code,  }\item[{string}]{error\+Message }\end{DoxyParamCaption})}
+
+
+
+Delegate for page error received event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which raises this event.\\
+\hline
+{\em error\+Code} & The error code which indicates the error type. It can be different from systems and platforms. \\
+\hline
+{\em error\+Message} & The error message which indicates the error.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a47e17b8872a726c8018f45b5f79b6952}\label{class_uni_web_view_a47e17b8872a726c8018f45b5f79b6952} 
+\index{UniWebView@{UniWebView}!PageFinishedDelegate@{PageFinishedDelegate}}
+\index{PageFinishedDelegate@{PageFinishedDelegate}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{PageFinishedDelegate()}{PageFinishedDelegate()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+Page\+Finished\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View,  }\item[{int}]{status\+Code,  }\item[{string}]{url }\end{DoxyParamCaption})}
+
+
+
+Delegate for page finished event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which raises this event.\\
+\hline
+{\em status\+Code} & HTTP status code received from response.\\
+\hline
+{\em url} & The url which the web view loaded.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a4eb19a12dfcd3fe1f88dce91105290f5}\label{class_uni_web_view_a4eb19a12dfcd3fe1f88dce91105290f5} 
+\index{UniWebView@{UniWebView}!PageProgressChangedDelegate@{PageProgressChangedDelegate}}
+\index{PageProgressChangedDelegate@{PageProgressChangedDelegate}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{PageProgressChangedDelegate()}{PageProgressChangedDelegate()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+Page\+Progress\+Changed\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View,  }\item[{float}]{progress }\end{DoxyParamCaption})}
+
+
+
+Delegate for page progress changed event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which raises this event.\\
+\hline
+{\em progress} & A value indicates the loading progress of current page. It is a value between 0.\+0f and 1.\+0f.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a409b75de07feeda59ad19243535cd15c}\label{class_uni_web_view_a409b75de07feeda59ad19243535cd15c} 
+\index{UniWebView@{UniWebView}!PageStartedDelegate@{PageStartedDelegate}}
+\index{PageStartedDelegate@{PageStartedDelegate}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{PageStartedDelegate()}{PageStartedDelegate()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View.\+Page\+Started\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View,  }\item[{string}]{url }\end{DoxyParamCaption})}
+
+
+
+Delegate for page started event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which raises this event.\\
+\hline
+{\em url} & The url which the web view is about to load.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a8ab604a09e6784d6b64cc7c797ceba5b}\label{class_uni_web_view_a8ab604a09e6784d6b64cc7c797ceba5b} 
+\index{UniWebView@{UniWebView}!Print@{Print}}
+\index{Print@{Print}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints current page. 
+
+By calling this method, a native print preview panel will be brought up on i\+OS and Android. This method does nothing on mac\+OS editor. On i\+OS and Android, the web view does not support Java\+Script (window.\+print()), you can only initialize a print job from Unity by this method. \Hypertarget{class_uni_web_view_a252a511b06dd6515d2d916084dc2e73a}\label{class_uni_web_view_a252a511b06dd6515d2d916084dc2e73a} 
+\index{UniWebView@{UniWebView}!RemoveCooke@{RemoveCooke}}
+\index{RemoveCooke@{RemoveCooke}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{RemoveCooke()}{RemoveCooke()}}
+{\footnotesize\ttfamily static void Uni\+Web\+View.\+Remove\+Cooke (\begin{DoxyParamCaption}\item[{string}]{url,  }\item[{string}]{key,  }\item[{bool}]{skip\+Encoding = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Removes the certain cookie under a url for the specified key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The url (domain) where the cookies is under.\\
+\hline
+{\em key} & The key for target cookie.\\
+\hline
+{\em skip\+Encoding} & Whether \doxylink{class_uni_web_view}{Uni\+Web\+View} should skip encoding the url or not. If set to {\ttfamily false}, \doxylink{class_uni_web_view}{Uni\+Web\+View} will try to encode the url parameter before using it. Otherwise, your original url string will be used to get the cookie if it is valid. Default is {\ttfamily false}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_af2b18fc85539cf9a45faf1a85d0015d4}\label{class_uni_web_view_af2b18fc85539cf9a45faf1a85d0015d4} 
+\index{UniWebView@{UniWebView}!RemoveCookies@{RemoveCookies}}
+\index{RemoveCookies@{RemoveCookies}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{RemoveCookies()}{RemoveCookies()}}
+{\footnotesize\ttfamily static void Uni\+Web\+View.\+Remove\+Cookies (\begin{DoxyParamCaption}\item[{string}]{url,  }\item[{bool}]{skip\+Encoding = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Removes all the cookies under a url. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The url (domain) where the cookies is under.\\
+\hline
+{\em skip\+Encoding} & Whether \doxylink{class_uni_web_view}{Uni\+Web\+View} should skip encoding the url or not. If set to {\ttfamily false}, \doxylink{class_uni_web_view}{Uni\+Web\+View} will try to encode the url parameter before using it. Otherwise, your original url string will be used to get the cookie if it is valid. Default is {\ttfamily false}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a30c1933659a044b7abbe063f93c9fdc8}\label{class_uni_web_view_a30c1933659a044b7abbe063f93c9fdc8} 
+\index{UniWebView@{UniWebView}!RemoveDownloadMIMETypes@{RemoveDownloadMIMETypes}}
+\index{RemoveDownloadMIMETypes@{RemoveDownloadMIMETypes}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{RemoveDownloadMIMETypes()}{RemoveDownloadMIMETypes()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Remove\+Download\+MIMETypes (\begin{DoxyParamCaption}\item[{string}]{MIMEType,  }\item[{Uni\+Web\+View\+Download\+Matching\+Type}]{type = {\ttfamily UniWebViewDownloadMatchingType\+:\+:ExactValue} }\end{DoxyParamCaption})}
+
+
+
+Removes the MIME type from download inspecting list. 
+
+If a response is received in main frame and its MIME type is already in the inspecting list, a download task will be triggered. Check "{}\+Download Files"{} guide for more.
+
+This method only works on i\+OS and mac\+OS Editor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em MIMEType} & The inspected MIME type of the response.\\
+\hline
+{\em type} & The download matching type used to match the MIME type. Default is {\ttfamily Exact\+Value}.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_ada30f705c75215769c10d20c69eb774b}\label{class_uni_web_view_ada30f705c75215769c10d20c69eb774b} 
+\index{UniWebView@{UniWebView}!RemoveDownloadURL@{RemoveDownloadURL}}
+\index{RemoveDownloadURL@{RemoveDownloadURL}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{RemoveDownloadURL()}{RemoveDownloadURL()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Remove\+Download\+URL (\begin{DoxyParamCaption}\item[{string}]{url\+String,  }\item[{Uni\+Web\+View\+Download\+Matching\+Type}]{type = {\ttfamily UniWebViewDownloadMatchingType\+:\+:ExactValue} }\end{DoxyParamCaption})}
+
+
+
+Removes the URL from download inspecting list. 
+
+If a response is received in main frame and its URL is already in the inspecting list, a download task will be triggered. Check "{}\+Download Files"{} guide for more.
+
+This method only works on i\+OS and mac\+OS Editor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url\+String} & The inspected URL.\\
+\hline
+{\em type} & The download matching type used to match the URL. Default is {\ttfamily Exact\+Value}.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a3d22a83671b24e61431052b14fb32561}\label{class_uni_web_view_a3d22a83671b24e61431052b14fb32561} 
+\index{UniWebView@{UniWebView}!RemovePermissionTrustDomain@{RemovePermissionTrustDomain}}
+\index{RemovePermissionTrustDomain@{RemovePermissionTrustDomain}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{RemovePermissionTrustDomain()}{RemovePermissionTrustDomain()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Remove\+Permission\+Trust\+Domain (\begin{DoxyParamCaption}\item[{string}]{domain }\end{DoxyParamCaption})}
+
+
+
+Removes a trusted domain from white list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain} & The domain to remove from white list.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_ae7ca507a259afd04c6f618dfd6fad47b}\label{class_uni_web_view_ae7ca507a259afd04c6f618dfd6fad47b} 
+\index{UniWebView@{UniWebView}!RemoveSslExceptionDomain@{RemoveSslExceptionDomain}}
+\index{RemoveSslExceptionDomain@{RemoveSslExceptionDomain}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{RemoveSslExceptionDomain()}{RemoveSslExceptionDomain()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Remove\+Ssl\+Exception\+Domain (\begin{DoxyParamCaption}\item[{string}]{domain }\end{DoxyParamCaption})}
+
+
+
+Removes a domain from the SSL checking white list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain} & The domain to remove. It should not contain any scheme or path part in url.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_uni_web_view_ae7ca507a259afd04c6f618dfd6fad47b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_uni_web_view_afee77e21eabf8b078933803d0b729f63}\label{class_uni_web_view_afee77e21eabf8b078933803d0b729f63} 
+\index{UniWebView@{UniWebView}!RemoveUrlScheme@{RemoveUrlScheme}}
+\index{RemoveUrlScheme@{RemoveUrlScheme}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{RemoveUrlScheme()}{RemoveUrlScheme()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Remove\+Url\+Scheme (\begin{DoxyParamCaption}\item[{string}]{scheme }\end{DoxyParamCaption})}
+
+
+
+Removes a url scheme from \doxylink{class_uni_web_view}{Uni\+Web\+View} message system interpreter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scheme} & The url scheme to remove. Nothing will happen if the scheme is not in the message system.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_uni_web_view_afee77e21eabf8b078933803d0b729f63_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_uni_web_view_ac4af7915a24e93e9a33bc58b1f261cd8}\label{class_uni_web_view_ac4af7915a24e93e9a33bc58b1f261cd8} 
+\index{UniWebView@{UniWebView}!ScrollTo@{ScrollTo}}
+\index{ScrollTo@{ScrollTo}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{ScrollTo()}{ScrollTo()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Scroll\+To (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{bool}]{animated }\end{DoxyParamCaption})}
+
+
+
+Scrolls the web view to a certain point. 
+
+Use 0 for both {\ttfamily x} and {\ttfamily y} value to scroll the web view to its origin. In a normal vertical web page, it is equivalent as scrolling to top.
+
+You can use the {\ttfamily animated} parameter to control whether scrolling the page with or without animation. This parameter only works on i\+OS and Android. On mac\+OS editor, the scrolling always happens without animation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X value of the target scrolling point.\\
+\hline
+{\em y} & Y value of the target scrolling point.\\
+\hline
+{\em animated} & If {\ttfamily true}, the scrolling happens with animation. Otherwise, it happens without animation and the content is set directly. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_af628de57369932c440ffd5e9b2a0473c}\label{class_uni_web_view_af628de57369932c440ffd5e9b2a0473c} 
+\index{UniWebView@{UniWebView}!SetAcceptThirdPartyCookies@{SetAcceptThirdPartyCookies}}
+\index{SetAcceptThirdPartyCookies@{SetAcceptThirdPartyCookies}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetAcceptThirdPartyCookies()}{SetAcceptThirdPartyCookies()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Accept\+Third\+Party\+Cookies (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Sets whether the \doxylink{class_uni_web_view}{Uni\+Web\+View} should allow third party cookies to be set. By default, on Android, the third party cookies are disallowed due to security reason. Setting this to {\ttfamily true} will allow the cookie manager to accept third party cookies you set. 
+
+This method only works for Android. On i\+OS, this method does nothing and the third party cookies are always allowed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & Whether the third party cookies should be allowed.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_ab08048536446984a4e7061dd1d7fde64}\label{class_uni_web_view_ab08048536446984a4e7061dd1d7fde64} 
+\index{UniWebView@{UniWebView}!SetAllowAutoPlay@{SetAllowAutoPlay}}
+\index{SetAllowAutoPlay@{SetAllowAutoPlay}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetAllowAutoPlay()}{SetAllowAutoPlay()}}
+{\footnotesize\ttfamily static void Uni\+Web\+View.\+Set\+Allow\+Auto\+Play (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets allow auto play for current web view. By default, users need to touch the play button to start playing a media resource. 
+
+By setting this to {\ttfamily true}, you can start the playing automatically through corresponding media tag attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & A flag indicates whether autoplaying of media is allowed or not.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a4d2b1fe0d5a7950d8a92d06c20c48fe6}\label{class_uni_web_view_a4d2b1fe0d5a7950d8a92d06c20c48fe6} 
+\index{UniWebView@{UniWebView}!SetAllowBackForwardNavigationGestures@{SetAllowBackForwardNavigationGestures}}
+\index{SetAllowBackForwardNavigationGestures@{SetAllowBackForwardNavigationGestures}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetAllowBackForwardNavigationGestures()}{SetAllowBackForwardNavigationGestures()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Allow\+Back\+Forward\+Navigation\+Gestures (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Sets whether horizontal swipe gestures should trigger back-\/forward list navigation. 
+
+By setting with {\ttfamily true}, users can swipe from screen edge to perform a back or forward navigation. This method only works on i\+OS and mac\+OS Editor. Default is {\ttfamily false}.
+
+On Android, the screen navigation gestures are simulating the traditional back button and it is enabled by default. To disable gesture navigation on Android, you have to also disable the device back button. See {\ttfamily Set\+Back\+Button\+Enabled} for that purpose.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & The value indicates whether a swipe gestures driven navigation should be allowed. Default is {\ttfamily false}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a93365b0f7f234eb23b73d51260d63704}\label{class_uni_web_view_a93365b0f7f234eb23b73d51260d63704} 
+\index{UniWebView@{UniWebView}!SetAllowFileAccess@{SetAllowFileAccess}}
+\index{SetAllowFileAccess@{SetAllowFileAccess}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetAllowFileAccess()}{SetAllowFileAccess()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Allow\+File\+Access (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Sets whether loading a local file is allowed. 
+
+If set to {\ttfamily false}, any load from a file URL {\ttfamily \href{file://}{\texttt{ file\+://}}} for {\ttfamily Load} method will be rejected and trigger an {\ttfamily On\+Page\+Error\+Received} event. That means you cannot load a web page from any local file. If you are not going to load any local files, setting it to {\ttfamily false} helps to reduce the interface of web view and improve the security.
+
+By default, it is {\ttfamily true} and the local file URL loading is allowed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & Whether the local file access by web view loading is allowed or not.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a98364587039bba2d9fff75c85ac17ecd}\label{class_uni_web_view_a98364587039bba2d9fff75c85ac17ecd} 
+\index{UniWebView@{UniWebView}!SetAllowFileAccessFromFileURLs@{SetAllowFileAccessFromFileURLs}}
+\index{SetAllowFileAccessFromFileURLs@{SetAllowFileAccessFromFileURLs}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetAllowFileAccessFromFileURLs()}{SetAllowFileAccessFromFileURLs()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Allow\+File\+Access\+From\+File\+URLs (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Sets whether file access from file URLs is allowed. 
+
+By setting with {\ttfamily true}, access to file URLs inside the web view will be enabled and you could access sub-\/resources or make cross origin requests from local HTML files.
+
+On i\+OS, it uses some "{}hidden"{} way by setting {\ttfamily allow\+File\+Access\+From\+File\+URLs} in config preferences for Web\+Kit. So it is possible that it stops working in a future version.
+
+On Android, it sets the {\ttfamily Web\+Settings.\+set\+Allow\+File\+Access\+From\+File\+URLs} for the current web view.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & Whether the file access inside web view from file URLs is allowed or not.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a714cbc3ffdb6c32e5d997a21c7501992}\label{class_uni_web_view_a714cbc3ffdb6c32e5d997a21c7501992} 
+\index{UniWebView@{UniWebView}!SetAllowHTTPAuthPopUpWindow@{SetAllowHTTPAuthPopUpWindow}}
+\index{SetAllowHTTPAuthPopUpWindow@{SetAllowHTTPAuthPopUpWindow}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetAllowHTTPAuthPopUpWindow()}{SetAllowHTTPAuthPopUpWindow()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Allow\+HTTPAuth\+Pop\+Up\+Window (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Sets whether a prompt alert should be displayed for collection username and password when the web view receives an HTTP authentication challenge (HTTP Basic or HTTP Digest) from server. 
+
+By setting with {\ttfamily false}, no prompt will be shown and the user cannot login with input credentials. In this case, you can only access this page by providing username and password through the URL like\+: "{}http\+://username\+:password@example.\+com"{}. If the username and password does not match, normally an error with 401 as status code would be returned (this behavior depends on the server implementation). If set with {\ttfamily true}, a prompt will be shown when there is no credentials provided or it is not correct in the URL.
+
+Default is {\ttfamily true}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & Whether a prompt alert should be shown for HTTP authentication challenge or not.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a646edf1106856513cad4e89fbbb7465b}\label{class_uni_web_view_a646edf1106856513cad4e89fbbb7465b} 
+\index{UniWebView@{UniWebView}!SetAllowInlinePlay@{SetAllowInlinePlay}}
+\index{SetAllowInlinePlay@{SetAllowInlinePlay}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetAllowInlinePlay()}{SetAllowInlinePlay()}}
+{\footnotesize\ttfamily static void Uni\+Web\+View.\+Set\+Allow\+Inline\+Play (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets allow inline play for current web view. By default, on i\+OS, the video can only be played in a new full screen view. By setting this to {\ttfamily true}, you could play a video inline the page, instead of opening a new full screen window. 
+
+This only works for i\+OS and mac\+OS Editor. On Android, you could play videos inline by default and calling this method does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & A flag indicates whether inline playing of media is allowed or not.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a536a848177e52c0ab7e639db0f7ffa0c}\label{class_uni_web_view_a536a848177e52c0ab7e639db0f7ffa0c} 
+\index{UniWebView@{UniWebView}!SetAllowJavaScriptOpenWindow@{SetAllowJavaScriptOpenWindow}}
+\index{SetAllowJavaScriptOpenWindow@{SetAllowJavaScriptOpenWindow}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetAllowJavaScriptOpenWindow()}{SetAllowJavaScriptOpenWindow()}}
+{\footnotesize\ttfamily static void Uni\+Web\+View.\+Set\+Allow\+Java\+Script\+Open\+Window (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets whether Java\+Script can open windows without user interaction. 
+
+By setting this to {\ttfamily true}, an automatically Java\+Script navigation will be allowed in the web view.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & Whether Java\+Script could open window automatically.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_aab244ebe8b29bfd291f812a9f930a6a5}\label{class_uni_web_view_aab244ebe8b29bfd291f812a9f930a6a5} 
+\index{UniWebView@{UniWebView}!SetAllowUniversalAccessFromFileURLs@{SetAllowUniversalAccessFromFileURLs}}
+\index{SetAllowUniversalAccessFromFileURLs@{SetAllowUniversalAccessFromFileURLs}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetAllowUniversalAccessFromFileURLs()}{SetAllowUniversalAccessFromFileURLs()}}
+{\footnotesize\ttfamily static void Uni\+Web\+View.\+Set\+Allow\+Universal\+Access\+From\+File\+URLs (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets allow universal access from file URLs. By default, on i\+OS, the {\ttfamily WKWeb\+View} forbids any load of local files through AJAX even when opening a local HTML file. It checks the CORS rules and fails at web view level. This is useful when you want access these files by setting the {\ttfamily allow\+Universal\+Access\+From\+File\+URLs} key of web view configuration. 
+
+On i\+OS and mac\+OS Editor. It uses some "{}hidden"{} way by setting {\ttfamily allow\+Universal\+Access\+From\+File\+URLs} in config for Web\+Kit. So it is possible that it stops working in a future version.
+
+On Android, it sets the {\ttfamily Web\+Settings.\+set\+Allow\+Universal\+Access\+From\+File\+URLs} and any later-\/created web views uses that value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & A flag indicates whether the universal access for files are allowed or not.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_ab9a9378aef1e74e797b153f4542f79df}\label{class_uni_web_view_ab9a9378aef1e74e797b153f4542f79df} 
+\index{UniWebView@{UniWebView}!SetAllowUserChooseActionAfterDownloading@{SetAllowUserChooseActionAfterDownloading}}
+\index{SetAllowUserChooseActionAfterDownloading@{SetAllowUserChooseActionAfterDownloading}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetAllowUserChooseActionAfterDownloading()}{SetAllowUserChooseActionAfterDownloading()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Allow\+User\+Choose\+Action\+After\+Downloading (\begin{DoxyParamCaption}\item[{bool}]{allowed }\end{DoxyParamCaption})}
+
+
+
+Sets whether allowing users to choose the way to handle the downloaded file. Default is {\ttfamily true}. 
+
+On i\+OS, the downloaded file will be stored in a temporary folder. Setting this to {\ttfamily true} will show a system default share sheet and give the user a chance to send and store the file to another location (such as the File app or i\+Cloud).
+
+On mac\+OS Editor, setting this to {\ttfamily true} will allow \doxylink{class_uni_web_view}{Uni\+Web\+View} to open the file in Finder.
+
+This method does not have any effect on Android. On Android, the file is downloaded to the Download folder.
+
+
+\begin{DoxyParams}{Parameters}
+{\em allowed} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a913dc6984f8154a64adbde493b201ada}\label{class_uni_web_view_a913dc6984f8154a64adbde493b201ada} 
+\index{UniWebView@{UniWebView}!SetBackButtonEnabled@{SetBackButtonEnabled}}
+\index{SetBackButtonEnabled@{SetBackButtonEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetBackButtonEnabled()}{SetBackButtonEnabled()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Back\+Button\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Sets whether the device back button should be enabled to execute "{}go back"{} or "{}closing"{} operation. 
+
+On Android, the device back button in navigation bar will navigate users to a back page. If there is no any back page avaliable, the back button clicking will try to raise a {\ttfamily On\+Should\+Close} event and try to close the web view if {\ttfamily true} is return from the event. If the {\ttfamily On\+Should\+Close} is not listened, the web view will be closed and the \doxylink{class_uni_web_view}{Uni\+Web\+View} component will be destroyed to release using resource.
+
+Listen to {\ttfamily On\+Key\+Code\+Received} if you need to disable the back button, but still want to get the back button key pressing event.
+
+Default is enabled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether the back button should perform go back or closing operation to web view.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a63ce8e6c16d0f7baca9d6c5430e2dbb3}\label{class_uni_web_view_a63ce8e6c16d0f7baca9d6c5430e2dbb3} 
+\index{UniWebView@{UniWebView}!SetBouncesEnabled@{SetBouncesEnabled}}
+\index{SetBouncesEnabled@{SetBouncesEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetBouncesEnabled()}{SetBouncesEnabled()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Bounces\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Sets whether the web view should show with a bounces effect when scrolling to page edge. 
+
+This only works on mobile platforms. It will do nothing on mac\+OS Editor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether the bounces effect should be applied or not.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a1ab70c58ee311fa811e82ceb58343f59}\label{class_uni_web_view_a1ab70c58ee311fa811e82ceb58343f59} 
+\index{UniWebView@{UniWebView}!SetCalloutEnabled@{SetCalloutEnabled}}
+\index{SetCalloutEnabled@{SetCalloutEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetCalloutEnabled()}{SetCalloutEnabled()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Callout\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Sets whether a callout (context) menu should be displayed when user long tapping on certain web view content. 
+
+When enabled, when user long presses an image or link in the web page, a context menu would be show up to ask user\textquotesingle{}s action. On i\+OS, it is a action sheet to ask whether opening the target link or saving the image. On Android it is a pop up dialog to ask whether saving the image to local disk. On i\+OS, the preview page triggered by force touch on i\+OS is also considered as a callout menu.
+
+Default is {\ttfamily true}, means that the callout menu will be displayed. Call this method with {\ttfamily false} to disable it on the web view.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether a callout menu should be displayed when user long pressing or force touching a certain web page element. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_aec755de6988bcfe2172ab3c3da6a19b1}\label{class_uni_web_view_aec755de6988bcfe2172ab3c3da6a19b1} 
+\index{UniWebView@{UniWebView}!SetContentInsetAdjustmentBehavior@{SetContentInsetAdjustmentBehavior}}
+\index{SetContentInsetAdjustmentBehavior@{SetContentInsetAdjustmentBehavior}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetContentInsetAdjustmentBehavior()}{SetContentInsetAdjustmentBehavior()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Content\+Inset\+Adjustment\+Behavior (\begin{DoxyParamCaption}\item[{Uni\+Web\+View\+Content\+Inset\+Adjustment\+Behavior}]{behavior }\end{DoxyParamCaption})}
+
+
+
+Sets the adjustment behavior which indicates how safe area insets are added to the adjusted content inset. It is a wrapper of {\ttfamily content\+Inset\+Adjustment\+Behavior} on i\+OS. 
+
+It only works on i\+OS 11 and above. You need to call this method as soon as you create a web view, before you call any other methods related to web view layout (like {\ttfamily Show} or {\ttfamily Set\+Show\+Toolbar}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em behavior} & The behavior for determining the adjusted content offsets.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a28659fe6c9730c691cb60b304d83f131}\label{class_uni_web_view_a28659fe6c9730c691cb60b304d83f131} 
+\index{UniWebView@{UniWebView}!SetCookie@{SetCookie}}
+\index{SetCookie@{SetCookie}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetCookie()}{SetCookie()}}
+{\footnotesize\ttfamily static void Uni\+Web\+View.\+Set\+Cookie (\begin{DoxyParamCaption}\item[{string}]{url,  }\item[{string}]{cookie,  }\item[{bool}]{skip\+Encoding = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets a cookie for a certain url. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The url to which cookie will be set.\\
+\hline
+{\em cookie} & The cookie string to set.\\
+\hline
+{\em skip\+Encoding} & Whether \doxylink{class_uni_web_view}{Uni\+Web\+View} should skip encoding the url or not. If set to {\ttfamily false}, \doxylink{class_uni_web_view}{Uni\+Web\+View} will try to encode the url parameter before using it. Otherwise, your original url string will be used to set the cookie if it is valid. Default is {\ttfamily false}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_af3fb4d7b30f6f19f0c0772a04b35e9bb}\label{class_uni_web_view_af3fb4d7b30f6f19f0c0772a04b35e9bb} 
+\index{UniWebView@{UniWebView}!SetDefaultFontSize@{SetDefaultFontSize}}
+\index{SetDefaultFontSize@{SetDefaultFontSize}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetDefaultFontSize()}{SetDefaultFontSize()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Default\+Font\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Sets the default font size used in the web view. 
+
+On Android, the web view font size can be affected by the system font scale setting. Use this method to set the font size in a more reasonable way, by giving the web view another default font size with the system font scale considered. It can removes or reduces the effect of system font scale when displaying the web content.
+
+This method only works on Android. On i\+OS, this method does nothing since the web view will respect the font size setting in your CSS styles.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The target default font size set to the web view.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_ac75efbc2a7a59f040fdad1b56fc1cdb1}\label{class_uni_web_view_ac75efbc2a7a59f040fdad1b56fc1cdb1} 
+\index{UniWebView@{UniWebView}!SetDownloadEventForContextMenuEnabled@{SetDownloadEventForContextMenuEnabled}}
+\index{SetDownloadEventForContextMenuEnabled@{SetDownloadEventForContextMenuEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetDownloadEventForContextMenuEnabled()}{SetDownloadEventForContextMenuEnabled()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Download\+Event\+For\+Context\+Menu\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Sets whether the {\ttfamily On\+File\+Download\+Started} and {\ttfamily On\+File\+Download\+Finished} events should be raised even for an image saving action triggered by the callout (context) menu on Android. 
+
+By default, the image saving goes through a different route and it does not trigger the {\ttfamily On\+File\+Download\+Started} and {\ttfamily On\+File\+Download\+Finished} events like other normal download tasks. Setting this with enabled with {\ttfamily true} if you also need to get notified when user long-\/presses on the image and taps "{}\+Save Image"{} button. By default, the image will be saved to the Downloads directory and you can get the path from the parameter of {\ttfamily On\+File\+Download\+Finished} event.
+
+This only works on Android. On i\+OS, there is no way to get a callback or any event from the "{}\+Add to Photos"{} button in the callout menu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether the context menu image saving action triggers the download related events.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a52c6025b03d272be16cd703dc59a46c5}\label{class_uni_web_view_a52c6025b03d272be16cd703dc59a46c5} 
+\index{UniWebView@{UniWebView}!SetDragInteractionEnabled@{SetDragInteractionEnabled}}
+\index{SetDragInteractionEnabled@{SetDragInteractionEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetDragInteractionEnabled()}{SetDragInteractionEnabled()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Drag\+Interaction\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Sets whether the drag interaction should be enabled on i\+OS. 
+
+From i\+OS 11, the i\+Pad web view supports the drag interaction when user long presses an image, link or text. Setting this to {\ttfamily false} would disable the drag feather on the web view.
+
+This method only works on i\+OS. It does nothing on Android or mac\+OS editor. Default is {\ttfamily true}, which means drag interaction on i\+Pad is enabled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether the drag interaction should be enabled. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_aad157cd33ef5c05abf57ffe7c2f11239}\label{class_uni_web_view_aad157cd33ef5c05abf57ffe7c2f11239} 
+\index{UniWebView@{UniWebView}!SetEnableKeyboardAvoidance@{SetEnableKeyboardAvoidance}}
+\index{SetEnableKeyboardAvoidance@{SetEnableKeyboardAvoidance}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetEnableKeyboardAvoidance()}{SetEnableKeyboardAvoidance()}}
+{\footnotesize\ttfamily static void Uni\+Web\+View.\+Set\+Enable\+Keyboard\+Avoidance (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets whether the web view area should avoid soft keyboard. It {\ttfamily true}, when the keyboard shows up, the web views content view will resize itself to avoid keyboard overlap the web content. Otherwise, the web view will not resize and just leave the content below under the soft keyboard. 
+
+This method is only for Android. On i\+OS, the keyboard avoidance is built into the system directly and there is no way to change its behavior.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & Whether the keyboard should avoid web view content.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a613cf4db6adec637634bc203504865e4}\label{class_uni_web_view_a613cf4db6adec637634bc203504865e4} 
+\index{UniWebView@{UniWebView}!SetHeaderField@{SetHeaderField}}
+\index{SetHeaderField@{SetHeaderField}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetHeaderField()}{SetHeaderField()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Header\+Field (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{string}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets a customized header field for web view requests. 
+
+The header field will be used for all subsequence request. Pass {\ttfamily null} as value to unset a header field.
+
+Some reserved headers like user agent are not be able to override by setting here, use the {\ttfamily Set\+User\+Agent} method for them instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key of customized header field.\\
+\hline
+{\em value} & The value of customized header field. {\ttfamily null} if you want to unset the field.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_uni_web_view_a613cf4db6adec637634bc203504865e4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_uni_web_view_ae054fefd38553c6e6d819b8d5e9fbb94}\label{class_uni_web_view_ae054fefd38553c6e6d819b8d5e9fbb94} 
+\index{UniWebView@{UniWebView}!SetHorizontalScrollBarEnabled@{SetHorizontalScrollBarEnabled}}
+\index{SetHorizontalScrollBarEnabled@{SetHorizontalScrollBarEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetHorizontalScrollBarEnabled()}{SetHorizontalScrollBarEnabled()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Horizontal\+Scroll\+Bar\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Sets whether the horizontal scroll bar should show when the web content beyonds web view bounds. 
+
+This only works on mobile platforms. It will do nothing on mac\+OS Editor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether enable the scroll bar or not.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a1c6b2b68403a78e88ca74947ee7f742b}\label{class_uni_web_view_a1c6b2b68403a78e88ca74947ee7f742b} 
+\index{UniWebView@{UniWebView}!SetImmersiveModeEnabled@{SetImmersiveModeEnabled}}
+\index{SetImmersiveModeEnabled@{SetImmersiveModeEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetImmersiveModeEnabled()}{SetImmersiveModeEnabled()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Immersive\+Mode\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Sets whether the web view should behave in immersive mode, that is, hides the status bar and navigation bar with a sticky style. 
+
+This method is only for Android. Default is enabled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a3f5288c5bd382c289880e3fc75753523}\label{class_uni_web_view_a3f5288c5bd382c289880e3fc75753523} 
+\index{UniWebView@{UniWebView}!SetJavaScriptEnabled@{SetJavaScriptEnabled}}
+\index{SetJavaScriptEnabled@{SetJavaScriptEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetJavaScriptEnabled()}{SetJavaScriptEnabled()}}
+{\footnotesize\ttfamily static void Uni\+Web\+View.\+Set\+Java\+Script\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets whether Java\+Script should be enabled in current web view. Default is enabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether Java\+Script should be enabled.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a58f462745a9f8a5a7efbcbba4cb69bee}\label{class_uni_web_view_a58f462745a9f8a5a7efbcbba4cb69bee} 
+\index{UniWebView@{UniWebView}!SetLoadWithOverviewMode@{SetLoadWithOverviewMode}}
+\index{SetLoadWithOverviewMode@{SetLoadWithOverviewMode}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetLoadWithOverviewMode()}{SetLoadWithOverviewMode()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Load\+With\+Overview\+Mode (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Sets whether the web view loads pages in overview mode, that is, zooms out the content to fit on screen by width. 
+
+This method is only for Android. Default is disabled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_afcfe6abe80b4d5586d6af630f368b433}\label{class_uni_web_view_afcfe6abe80b4d5586d6af630f368b433} 
+\index{UniWebView@{UniWebView}!SetOpenLinksInExternalBrowser@{SetOpenLinksInExternalBrowser}}
+\index{SetOpenLinksInExternalBrowser@{SetOpenLinksInExternalBrowser}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetOpenLinksInExternalBrowser()}{SetOpenLinksInExternalBrowser()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Open\+Links\+In\+External\+Browser (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Sets whether the link clicking in the web view should open the page in an external browser. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & The flag indicates whether a link should be opened externally.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a20f4e618bcbe1365211e6916dbd661a0}\label{class_uni_web_view_a20f4e618bcbe1365211e6916dbd661a0} 
+\index{UniWebView@{UniWebView}!SetShowSpinnerWhileLoading@{SetShowSpinnerWhileLoading}}
+\index{SetShowSpinnerWhileLoading@{SetShowSpinnerWhileLoading}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetShowSpinnerWhileLoading()}{SetShowSpinnerWhileLoading()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Show\+Spinner\+While\+Loading (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Sets whether to show a loading indicator while the loading is in progress. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & Whether an indicator should show.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_ad39031f0c1a5be9eabeb9ab4db25fad1}\label{class_uni_web_view_ad39031f0c1a5be9eabeb9ab4db25fad1} 
+\index{UniWebView@{UniWebView}!SetShowToolbar@{SetShowToolbar}}
+\index{SetShowToolbar@{SetShowToolbar}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetShowToolbar()}{SetShowToolbar()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Show\+Toolbar (\begin{DoxyParamCaption}\item[{bool}]{show,  }\item[{bool}]{animated = {\ttfamily false},  }\item[{bool}]{on\+Top = {\ttfamily true},  }\item[{bool}]{adjust\+Inset = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Sets whether to show a toolbar which contains navigation buttons and Done button. 
+
+You could choose to show or hide the tool bar. By configuring the {\ttfamily animated} and {\ttfamily on\+Top} parameters, you can control the animating and position of the toolbar. If the toolbar is overlapping with some part of your web view, pass {\ttfamily adjust\+Inset} with {\ttfamily true} to have the web view relocating itself to avoid the overlap.
+
+This method is only for i\+OS. The toolbar is hidden by default.
+
+
+\begin{DoxyParams}{Parameters}
+{\em show} & Whether the toolbar should show or hide.\\
+\hline
+{\em animated} & Whether the toolbar state changing should be with animation. Default is {\ttfamily false}.\\
+\hline
+{\em on\+Top} & Whether the toolbar should snap to top of screen or to bottom of screen. Default is {\ttfamily true}\\
+\hline
+{\em adjust\+Inset} & Whether the toolbar transition should also adjust web view position and size if overlapped. Default is {\ttfamily false}\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a92344bbc1af7a3e0042f775cb0a1a3a4}\label{class_uni_web_view_a92344bbc1af7a3e0042f775cb0a1a3a4} 
+\index{UniWebView@{UniWebView}!SetShowToolbarNavigationButtons@{SetShowToolbarNavigationButtons}}
+\index{SetShowToolbarNavigationButtons@{SetShowToolbarNavigationButtons}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetShowToolbarNavigationButtons()}{SetShowToolbarNavigationButtons()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Show\+Toolbar\+Navigation\+Buttons (\begin{DoxyParamCaption}\item[{bool}]{show }\end{DoxyParamCaption})}
+
+
+
+Sets the visibility of navigation buttons, such as "{}\+Go Back"{} and "{}\+Go Forward"{}, on toolbar. 
+
+By default, \doxylink{class_uni_web_view}{Uni\+Web\+View} will show the "{}\+Go Back"{} and "{}\+Go Forward"{} navigation buttons on the toolbar. Users can use these buttons to perform go back or go forward action just like in a browser. If the navigation model is not for your case, call this method with {\ttfamily false} as {\ttfamily show} parameter to hide them.
+
+This method is only for i\+OS, since there is no toolbar on Android.
+
+
+\begin{DoxyParams}{Parameters}
+{\em show} & Whether the navigation buttons on the toolbar should show or hide.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_ab6204619f8b97f4e2f9afee8aa00de18}\label{class_uni_web_view_ab6204619f8b97f4e2f9afee8aa00de18} 
+\index{UniWebView@{UniWebView}!SetSpinnerText@{SetSpinnerText}}
+\index{SetSpinnerText@{SetSpinnerText}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetSpinnerText()}{SetSpinnerText()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Spinner\+Text (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Sets the text displayed in the loading indicator, if {\ttfamily Set\+Show\+Spinner\+While\+Loading} is set to {\ttfamily true}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The text to display while loading indicator visible. Default is "{}\+Loading..."{}\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a4b43e74b024d4992a1ecbb845a5ea65f}\label{class_uni_web_view_a4b43e74b024d4992a1ecbb845a5ea65f} 
+\index{UniWebView@{UniWebView}!SetSupportMultipleWindows@{SetSupportMultipleWindows}}
+\index{SetSupportMultipleWindows@{SetSupportMultipleWindows}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetSupportMultipleWindows()}{SetSupportMultipleWindows()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Support\+Multiple\+Windows (\begin{DoxyParamCaption}\item[{bool}]{enabled,  }\item[{bool}]{allow\+Java\+Script\+Opening }\end{DoxyParamCaption})}
+
+
+
+Sets whether the web view should support a pop up web view triggered by user in a new tab. 
+
+In a general web browser (such as Google Chrome or Safari), a URL with {\ttfamily target="{}\+\_\+blank"{}} attribute is intended to be opened in a new tab. However, in the context of web view, there is no way to handle new tabs without proper configurations. Due to that, by default \doxylink{class_uni_web_view}{Uni\+Web\+View} will ignore the {\ttfamily target="{}\+\_\+blank"{}} and try to open the page in the same web view if that kind of link is pressed.
+
+It works for most cases, but if this is a problem to your app logic, you can change this behavior by calling this method with {\ttfamily enabled} set to {\ttfamily true}. It enables the "{}opening in new tab"{} behavior in a limited way, by adding the new tab web view above to the current web view, with the same size and position. When the opened new tab is closed, it will be removed from the view hierarchy automatically.
+
+By default, only user triggered action is allowed to open a new window for security reason. That means, if you are using some Java\+Script like {\ttfamily window.\+open}, unless you set {\ttfamily allow\+Java\+Script\+Opening} to {\ttfamily true}, it won\textquotesingle{}t work. This default behavior prevents any other third party Java\+Script code from opening a window arbitrarily.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether to support multiple windows. If {\ttfamily true}, the {\ttfamily target="{}\+\_\+blank"{}} link will be opened in a new web view. Default is {\ttfamily false}. \\
+\hline
+{\em allow\+Java\+Script\+Opening} & Whether to support open the new window with Java\+Script by {\ttfamily window.\+open}. Setting this to {\ttfamily true} means any Java\+Script code, even from third party (in an iframe or a library on the page), can open a new window. Use it as your risk. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a3017f63e64b125c6dcbfc334bf8f39ff}\label{class_uni_web_view_a3017f63e64b125c6dcbfc334bf8f39ff} 
+\index{UniWebView@{UniWebView}!SetTextZoom@{SetTextZoom}}
+\index{SetTextZoom@{SetTextZoom}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetTextZoom()}{SetTextZoom()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Text\+Zoom (\begin{DoxyParamCaption}\item[{int}]{text\+Zoom }\end{DoxyParamCaption})}
+
+
+
+Sets the text zoom used in the web view. 
+
+On Android, this method call {\ttfamily Web\+Settings.\+set\+Text\+Zoom} to the the text zoom used in the web view.
+
+This method only works on Android.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Zoom} & The text zoom in percent.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a84ee91648a6bdeb179b44c10c7cbf7e5}\label{class_uni_web_view_a84ee91648a6bdeb179b44c10c7cbf7e5} 
+\index{UniWebView@{UniWebView}!SetToolbarDoneButtonText@{SetToolbarDoneButtonText}}
+\index{SetToolbarDoneButtonText@{SetToolbarDoneButtonText}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetToolbarDoneButtonText()}{SetToolbarDoneButtonText()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Toolbar\+Done\+Button\+Text (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Sets the done button text in toolbar. 
+
+By default, \doxylink{class_uni_web_view}{Uni\+Web\+View} will show a "{}\+Done"{} button at right size in the toolbar. You could change its title by passing a text.
+
+This method is only for i\+OS, since there is no toolbar on Android.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The text needed to be set as done button title.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a51b0cab07885c01adc6b6de5c6e7e7bb}\label{class_uni_web_view_a51b0cab07885c01adc6b6de5c6e7e7bb} 
+\index{UniWebView@{UniWebView}!SetToolbarGoBackButtonText@{SetToolbarGoBackButtonText}}
+\index{SetToolbarGoBackButtonText@{SetToolbarGoBackButtonText}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetToolbarGoBackButtonText()}{SetToolbarGoBackButtonText()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Toolbar\+Go\+Back\+Button\+Text (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Sets the go back button text in toolbar. 
+
+By default, \doxylink{class_uni_web_view}{Uni\+Web\+View} will show a back arrow at the left side in the toolbar. You could change its text.
+
+This method is only for i\+OS and mac\+OS Editor, since there is no toolbar on Android.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The text needed to be set as go back button.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_ae7d61cac9d6e5076cdfa9fd93414ae41}\label{class_uni_web_view_ae7d61cac9d6e5076cdfa9fd93414ae41} 
+\index{UniWebView@{UniWebView}!SetToolbarGoForwardButtonText@{SetToolbarGoForwardButtonText}}
+\index{SetToolbarGoForwardButtonText@{SetToolbarGoForwardButtonText}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetToolbarGoForwardButtonText()}{SetToolbarGoForwardButtonText()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Toolbar\+Go\+Forward\+Button\+Text (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Sets the go forward button text in toolbar. 
+
+By default, \doxylink{class_uni_web_view}{Uni\+Web\+View} will show a forward arrow at the left side in the toolbar. You could change its text.
+
+This method is only for i\+OS and mac\+OS Editor, since there is no toolbar on Android.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The text needed to be set as go forward button.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a405145ec3efe98bed67276dbf9c559fa}\label{class_uni_web_view_a405145ec3efe98bed67276dbf9c559fa} 
+\index{UniWebView@{UniWebView}!SetToolbarTextColor@{SetToolbarTextColor}}
+\index{SetToolbarTextColor@{SetToolbarTextColor}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetToolbarTextColor()}{SetToolbarTextColor()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Toolbar\+Text\+Color (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the button text color for the toolbar. 
+
+By default, \doxylink{class_uni_web_view}{Uni\+Web\+View} uses the default text color on i\+OS, which is blue for most cases. You can change it by setting a new opaque color.
+
+This method is only for i\+OS, since there is no toolbar on Android.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color should be used for the button text of the toolbar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a09ebecb1ebf27d511d69a15d252d3e24}\label{class_uni_web_view_a09ebecb1ebf27d511d69a15d252d3e24} 
+\index{UniWebView@{UniWebView}!SetToolbarTintColor@{SetToolbarTintColor}}
+\index{SetToolbarTintColor@{SetToolbarTintColor}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetToolbarTintColor()}{SetToolbarTintColor()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Toolbar\+Tint\+Color (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the background tint color for the toolbar. 
+
+By default, \doxylink{class_uni_web_view}{Uni\+Web\+View} uses a default half-\/transparent i\+OS standard background for toolbar. You can change it by setting a new opaque color.
+
+This method is only for i\+OS, since there is no toolbar on Android.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color should be used for the background tint of the toolbar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a7b1f9f88374602b3819c2bd2a666a2bf}\label{class_uni_web_view_a7b1f9f88374602b3819c2bd2a666a2bf} 
+\index{UniWebView@{UniWebView}!SetTransparencyClickingThroughEnabled@{SetTransparencyClickingThroughEnabled}}
+\index{SetTransparencyClickingThroughEnabled@{SetTransparencyClickingThroughEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetTransparencyClickingThroughEnabled()}{SetTransparencyClickingThroughEnabled()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Transparency\+Clicking\+Through\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Sets whether the web view should pass through clicks at clear pixels to Unity scene. 
+
+Setting this method is a pre-\/condition for the whole passing-\/through feature to work. To allow your touch passing through to Unity scene, the following conditions should be met at the same time\+: \begin{DoxyVerb}1. This method is called with `true` and the web view accepts passing-through clicks.
+2. The web view has a transparent background in body style for its content by CSS.
+3. The web view itself has a transparent background color by setting `BackgroundColor` with a clear color.
+\end{DoxyVerb}
+ Then, when user clicks on the clear pixel on the web view, the touch events will not be handled by the web view. Instead, these events are passed to Unity scene. By using this feature, it is possible to create a native UI with the web view.
+
+Only clicks on transparent part on the web view will be delivered to Unity scene. The web view still intercepts and handles other touches on visible pixels on the web view.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether the transparency clicking through feature should be enabled in this web view.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a81241b0fa0ac2033c67d72f4cb321e72}\label{class_uni_web_view_a81241b0fa0ac2033c67d72f4cb321e72} 
+\index{UniWebView@{UniWebView}!SetUserAgent@{SetUserAgent}}
+\index{SetUserAgent@{SetUserAgent}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetUserAgent()}{SetUserAgent()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+User\+Agent (\begin{DoxyParamCaption}\item[{string}]{agent }\end{DoxyParamCaption})}
+
+
+
+Sets the user agent used in the web view. If the string is null or empty, the system default value will be used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & The new user agent string to use.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a176998e5ba2ec1aee21807850254f2ce}\label{class_uni_web_view_a176998e5ba2ec1aee21807850254f2ce} 
+\index{UniWebView@{UniWebView}!SetUserInteractionEnabled@{SetUserInteractionEnabled}}
+\index{SetUserInteractionEnabled@{SetUserInteractionEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetUserInteractionEnabled()}{SetUserInteractionEnabled()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+User\+Interaction\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Sets whether the web view can receive user interaction or not. 
+
+By setting this to {\ttfamily false}, the web view will not accept any user touch event so your users cannot tap links or scroll the page.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether the user interaction should be enabled or not.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a72180d6f70e111a05b0df7865dc882e1}\label{class_uni_web_view_a72180d6f70e111a05b0df7865dc882e1} 
+\index{UniWebView@{UniWebView}!SetUseWideViewPort@{SetUseWideViewPort}}
+\index{SetUseWideViewPort@{SetUseWideViewPort}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetUseWideViewPort()}{SetUseWideViewPort()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Use\+Wide\+View\+Port (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Sets whether the web view should enable support for the "{}viewport"{} HTML meta tag or should use a wide viewport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & Whether to enable support for the viewport meta tag.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_ae753ca3ecbf16e30b2eafe3b1e2d3ce2}\label{class_uni_web_view_ae753ca3ecbf16e30b2eafe3b1e2d3ce2} 
+\index{UniWebView@{UniWebView}!SetVerticalScrollBarEnabled@{SetVerticalScrollBarEnabled}}
+\index{SetVerticalScrollBarEnabled@{SetVerticalScrollBarEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetVerticalScrollBarEnabled()}{SetVerticalScrollBarEnabled()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Vertical\+Scroll\+Bar\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Sets whether the vertical scroll bar should show when the web content beyonds web view bounds. 
+
+This only works on mobile platforms. It will do nothing on mac\+OS Editor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether enable the scroll bar or not.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_abc899d96df494b9ed05b35775a5979eb}\label{class_uni_web_view_abc899d96df494b9ed05b35775a5979eb} 
+\index{UniWebView@{UniWebView}!SetWebContentsDebuggingEnabled@{SetWebContentsDebuggingEnabled}}
+\index{SetWebContentsDebuggingEnabled@{SetWebContentsDebuggingEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetWebContentsDebuggingEnabled()}{SetWebContentsDebuggingEnabled()}}
+{\footnotesize\ttfamily static void Uni\+Web\+View.\+Set\+Web\+Contents\+Debugging\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enables debugging of web contents. You could inspect of the content of a web view by using a browser development tool of Chrome for Android or Safari for mac\+OS. 
+
+This method is only for Android and mac\+OS Editor. On i\+OS, you do not need additional step. You could open Safari\textquotesingle{}s developer tools to debug a web view on i\+OS.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether the content debugging should be enabled.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a9f5d475b22f87c1655ae0c8e57b3cf0e}\label{class_uni_web_view_a9f5d475b22f87c1655ae0c8e57b3cf0e} 
+\index{UniWebView@{UniWebView}!SetWindowUserResizeEnabled@{SetWindowUserResizeEnabled}}
+\index{SetWindowUserResizeEnabled@{SetWindowUserResizeEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetWindowUserResizeEnabled()}{SetWindowUserResizeEnabled()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Window\+User\+Resize\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Enables user resizing for web view window. By default, you can only set the window size by setting its frame on mac Editor. By enabling user resizing, you would be able to resize the window by dragging its border as a normal mac\+OS window. 
+
+This method only works for mac\+OS for debugging purpose. It does nothing on i\+OS and Android.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether the window could be able to be resized by cursor.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_ae0e17778a582e4d984e7728d2429928f}\label{class_uni_web_view_ae0e17778a582e4d984e7728d2429928f} 
+\index{UniWebView@{UniWebView}!SetZoomEnabled@{SetZoomEnabled}}
+\index{SetZoomEnabled@{SetZoomEnabled}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{SetZoomEnabled()}{SetZoomEnabled()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Set\+Zoom\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Sets whether the web view supports zoom gesture to change content size. Default is {\ttfamily false}, which means the zoom gesture is not supported. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether the zoom gesture is allowed or not.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_a4e82b8553c652e524dd1763e7ec51ff2}\label{class_uni_web_view_a4e82b8553c652e524dd1763e7ec51ff2} 
+\index{UniWebView@{UniWebView}!ShouldCloseDelegate@{ShouldCloseDelegate}}
+\index{ShouldCloseDelegate@{ShouldCloseDelegate}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{ShouldCloseDelegate()}{ShouldCloseDelegate()}}
+{\footnotesize\ttfamily delegate bool Uni\+Web\+View.\+Should\+Close\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view}{Uni\+Web\+View}}}]{web\+View }\end{DoxyParamCaption})}
+
+
+
+Delegate for should close event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+View} & The web view component which raises this event.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the web view should be closed and destroyed.
+\end{DoxyReturn}
+\Hypertarget{class_uni_web_view_a42abf43f5601954e4bf4ed23e7dd9175}\label{class_uni_web_view_a42abf43f5601954e4bf4ed23e7dd9175} 
+\index{UniWebView@{UniWebView}!Show@{Show}}
+\index{Show@{Show}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{Show()}{Show()}}
+{\footnotesize\ttfamily bool Uni\+Web\+View.\+Show (\begin{DoxyParamCaption}\item[{bool}]{fade = {\ttfamily false},  }\item[{Uni\+Web\+View\+Transition\+Edge}]{edge = {\ttfamily UniWebViewTransitionEdge\+:\+:None},  }\item[{float}]{duration = {\ttfamily 0\+:\+:4f},  }\item[{Action}]{completion\+Handler = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Sets the web view visible on screen. 
+
+If you pass {\ttfamily false} and {\ttfamily Uni\+Web\+View\+Transition\+Edge.\+None} to the first two parameters, it means no animation will be applied when showing. So the {\ttfamily duration} parameter will not be taken into account. Otherwise, when either or both {\ttfamily fade} and {\ttfamily edge} set, the showing operation will be animated.
+
+Regardless of there is an animation or not, the {\ttfamily completion\+Handler} will be called if not {\ttfamily null} when the web view showing finishes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fade} & Whether show with a fade in animation. Default is {\ttfamily false}.\\
+\hline
+{\em edge} & The edge from which the web view showing. It simulates a modal effect when showing a web view. Default is {\ttfamily Uni\+Web\+View\+Transition\+Edge.\+None}.\\
+\hline
+{\em duration} & Duration of the showing animation. Default is {\ttfamily 0.\+4f}.\\
+\hline
+{\em completion\+Handler} & Completion handler which will be called when showing finishes. Default is {\ttfamily null}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool value indicates whether the showing operation started.
+\end{DoxyReturn}
+\Hypertarget{class_uni_web_view_a5c683d677fd0fbe4bb9f848e1e08a161}\label{class_uni_web_view_a5c683d677fd0fbe4bb9f848e1e08a161} 
+\index{UniWebView@{UniWebView}!UpdateFrame@{UpdateFrame}}
+\index{UpdateFrame@{UpdateFrame}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{UpdateFrame()}{UpdateFrame()}}
+{\footnotesize\ttfamily void Uni\+Web\+View.\+Update\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates and sets current frame of web view to match the setting. 
+
+This is useful if the {\ttfamily reference\+Rect\+Transform} is changed and you need to sync the frame change to the web view. This method follows the frame determining rules. 
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_uni_web_view_a58e5720795cc9effd31d4d97a1cf9ac6}\label{class_uni_web_view_a58e5720795cc9effd31d4d97a1cf9ac6} 
+\index{UniWebView@{UniWebView}!Alpha@{Alpha}}
+\index{Alpha@{Alpha}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{Alpha}{Alpha}}
+{\footnotesize\ttfamily float Uni\+Web\+View.\+Alpha\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the alpha value of the whole web view. 
+
+You can make the game scene behind web view visible to make the web view transparent.
+
+Default is {\ttfamily 1.\+0f}, which means totally opaque. Set it to {\ttfamily 0.\+0f} will make the web view totally transparent. \Hypertarget{class_uni_web_view_a3b5a22bdf6b77a3cecc6f57ba92cd6aa}\label{class_uni_web_view_a3b5a22bdf6b77a3cecc6f57ba92cd6aa} 
+\index{UniWebView@{UniWebView}!IsWebViewSupported@{IsWebViewSupported}}
+\index{IsWebViewSupported@{IsWebViewSupported}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{IsWebViewSupported}{IsWebViewSupported}}
+{\footnotesize\ttfamily bool Uni\+Web\+View.\+Is\+Web\+View\+Supported\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Whether the web view is supported in current runtime or not. 
+
+On some certain Android customized builds, the manufacturer prefers not containing the web view package in the system or blocks the web view package from being installed. If this happens, using of any web view related APIs will throw a {\ttfamily Missing\+Web\+View\+Package\+Exception} exception.
+
+Use this method to check whether the web view is available on the current running system. If this parameter returns {\ttfamily false}, you should not use the web view.
+
+This property always returns {\ttfamily true} on other supported platforms, such as i\+OS or mac\+OS editor. It only performs runtime checking on Android. On other not supported platforms such as Windows or Linux, it always returns {\ttfamily false}.
+
+Returns {\ttfamily true} if web view is supported on the current platform. Otherwise, {\ttfamily false}.\Hypertarget{class_uni_web_view_ab939bf72b09bdb2a58a7a83f7b77991a}\label{class_uni_web_view_ab939bf72b09bdb2a58a7a83f7b77991a} 
+\index{UniWebView@{UniWebView}!ReferenceRectTransform@{ReferenceRectTransform}}
+\index{ReferenceRectTransform@{ReferenceRectTransform}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{ReferenceRectTransform}{ReferenceRectTransform}}
+{\footnotesize\ttfamily Rect\+Transform Uni\+Web\+View.\+Reference\+Rect\+Transform\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A reference rect transform which the web view should change its position and size to. Set it to a Unity UI element (which contains a {\ttfamily Rect\+Transform}) under a canvas to determine the web view frame by a certain UI element. 
+
+By using this, you could get benefit from \href{https://docs.unity3d.com/Manual/HOWTO-UIMultiResolution.html}{\texttt{ Multiple Resolutions UI}}. 
+
+\doxysubsection{Event Documentation}
+\Hypertarget{class_uni_web_view_af97b7d32a1ab2cce1ec573d54a126ee3}\label{class_uni_web_view_af97b7d32a1ab2cce1ec573d54a126ee3} 
+\index{UniWebView@{UniWebView}!OnKeyCodeReceived@{OnKeyCodeReceived}}
+\index{OnKeyCodeReceived@{OnKeyCodeReceived}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{OnKeyCodeReceived}{OnKeyCodeReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_uni_web_view_a1877ca44123a3ecd426b54c1903f25fe}{Key\+Code\+Received\+Delegate}} Uni\+Web\+View.\+On\+Key\+Code\+Received}
+
+
+
+Raised when a key (like back button or volume up) on the device is pressed. 
+
+This event only raised on Android. It is useful when you disabled the back button but still need to get the back button event. On i\+OS, user\textquotesingle{}s key action is not avaliable and this event will never be raised. \Hypertarget{class_uni_web_view_aae59e208286dbe0d7f00dd5c79de1eee}\label{class_uni_web_view_aae59e208286dbe0d7f00dd5c79de1eee} 
+\index{UniWebView@{UniWebView}!OnMessageReceived@{OnMessageReceived}}
+\index{OnMessageReceived@{OnMessageReceived}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{OnMessageReceived}{OnMessageReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_uni_web_view_a06169a0801055170343560210038e66a}{Message\+Received\+Delegate}} Uni\+Web\+View.\+On\+Message\+Received}
+
+
+
+Raised when a message from web view is received. 
+
+Generally, the message comes from a navigation to a scheme which is observed by current web view. You could use {\ttfamily Add\+Url\+Scheme} and {\ttfamily Remove\+Url\+Scheme} to manipulate the scheme list.
+
+"{}uniwebview\+://"{} scheme is default in the list, so a clicking on link starting with "{}uniwebview\+://"{} will raise this event, if it is not removed. \Hypertarget{class_uni_web_view_a0fb6111ed06fe9addd2954d0bef09000}\label{class_uni_web_view_a0fb6111ed06fe9addd2954d0bef09000} 
+\index{UniWebView@{UniWebView}!OnPageFinished@{OnPageFinished}}
+\index{OnPageFinished@{OnPageFinished}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{OnPageFinished}{OnPageFinished}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_uni_web_view_a47e17b8872a726c8018f45b5f79b6952}{Page\+Finished\+Delegate}} Uni\+Web\+View.\+On\+Page\+Finished}
+
+
+
+Raised when the web view finished to load a url successfully. 
+
+This method will be invoked when a valid response received from the url, regardless of the response status. If a url loading fails before reaching to the server and getting a response, {\ttfamily On\+Page\+Error\+Received} will be raised instead. \Hypertarget{class_uni_web_view_a9d8d6b0536a59d813aad693a5beee0b7}\label{class_uni_web_view_a9d8d6b0536a59d813aad693a5beee0b7} 
+\index{UniWebView@{UniWebView}!OnPageStarted@{OnPageStarted}}
+\index{OnPageStarted@{OnPageStarted}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{OnPageStarted}{OnPageStarted}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_uni_web_view_a409b75de07feeda59ad19243535cd15c}{Page\+Started\+Delegate}} Uni\+Web\+View.\+On\+Page\+Started}
+
+
+
+Raised when the web view starts loading a url. 
+
+This event will be invoked for both url loading with {\ttfamily Load} method or by a link navigating from page. \Hypertarget{class_uni_web_view_acffe8c4d0fc2b036a8e3effbc176c109}\label{class_uni_web_view_acffe8c4d0fc2b036a8e3effbc176c109} 
+\index{UniWebView@{UniWebView}!OnShouldClose@{OnShouldClose}}
+\index{OnShouldClose@{OnShouldClose}!UniWebView@{UniWebView}}
+\doxysubsubsection{\texorpdfstring{OnShouldClose}{OnShouldClose}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_uni_web_view_a4e82b8553c652e524dd1763e7ec51ff2}{Should\+Close\+Delegate}} Uni\+Web\+View.\+On\+Should\+Close}
+
+
+
+Raised when the web view is about to close itself. 
+
+This event is raised when the users close the web view by Back button on Android, Done button on i\+OS, or Close button on Unity Editor. It gives a chance to make final decision whether the web view should be closed and destroyed. You can also clean all related resources you created (such as a reference to the web view) in this event. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Uni\+Web\+View/\+Script/Uni\+Web\+View.\+cs\end{DoxyCompactItemize}

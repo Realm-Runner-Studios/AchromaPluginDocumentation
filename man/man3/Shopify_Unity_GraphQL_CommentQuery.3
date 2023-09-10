@@ -1,0 +1,53 @@
+.TH "Shopify.Unity.GraphQL.CommentQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.CommentQuery \- A comment on an article\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCommentQuery\fP (StringBuilder query)"
+.br
+.RI "CommentQuery is used to build queries\&. Typically CommentQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBCommentQuery\fP \fBauthor\fP (CommentAuthorDelegate buildQuery)"
+.br
+.RI "The comment’s author\&. "
+.ti -1c
+.RI "\fBCommentQuery\fP \fBcontent\fP (long? truncateAt=null, string alias=null)"
+.br
+.RI "Stripped content of the comment, single line with HTML tags removed\&. "
+.ti -1c
+.RI "\fBCommentQuery\fP \fBcontentHtml\fP ()"
+.br
+.RI "The content of the comment, complete with HTML formatting\&. "
+.ti -1c
+.RI "\fBCommentQuery\fP \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A comment on an article\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCommentQuery\fP Shopify\&.Unity\&.GraphQL\&.CommentQuery\&.content (long? truncateAt = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+Stripped content of the comment, single line with HTML tags removed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItruncateAt\fP Truncates string after the given length\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

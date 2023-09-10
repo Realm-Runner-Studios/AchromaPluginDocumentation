@@ -1,0 +1,9 @@
+<map id="UnitySignInWithApple" name="UnitySignInWithApple">
+<area shape="rect" id="Node000001" title=" " alt="" coords="256,63,405,88"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="67,5,146,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,29,208,41,279,59,278,65,207,46,160,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="17,55,196,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,73,255,73,255,78,211,78"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,121,208,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,113,283,86,284,92,193,118"/>
+</map>

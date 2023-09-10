@@ -1,0 +1,7 @@
+<map id="Achroma.AchromaSceneController.LoadPreviousScene" name="Achroma.AchromaSceneController.LoadPreviousScene">
+<area shape="rect" id="Node000001" title="This method calls the scene that called the current scene back." alt="" coords="5,39,231,79"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_u_i_controller.html#a4f97bc2bbf977d72c33ab1e96d288158" title="This method cancel and closes the loading screen." alt="" coords="290,5,493,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,43,275,37,276,42,231,48"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_scene_controller.html#aba510fb3486d906d95e6a16e00169b2b" title="This static method loads the scene asynchronously and returns the operation so the loading progress c..." alt="" coords="279,71,504,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,70,264,73,264,79,231,75"/>
+</map>

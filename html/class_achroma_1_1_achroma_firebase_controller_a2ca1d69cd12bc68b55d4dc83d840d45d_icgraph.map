@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaFirebaseController.EmailSignIn" name="Achroma.AchromaFirebaseController.EmailSignIn">
+<area shape="rect" id="Node000001" title="This method calls the login method using email and password." alt="" coords="298,5,536,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a765dd443290a3abe4ba21860dfebe4ca" title="This method calls the login method using email and password." alt="" coords="5,5,250,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,28,250,28,250,23,283,23"/>
+</map>

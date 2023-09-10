@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaDatabaseController.UpdateUserWins" name="Achroma.AchromaDatabaseController.UpdateUserWins">
+<area shape="rect" id="Node000001" title="Updates the user&#39;s gameStats with the win." alt="" coords="5,5,250,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a5da47b29fb19dc245f218dbab1c92fec" title="Gets the Achrometer tier (&#45;6 .. 6)" alt="" coords="298,5,542,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,23,283,23,283,28,250,28"/>
+</map>

@@ -1,0 +1,87 @@
+.TH "Shopify.Unity.SDK.INativeCheckout" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.SDK.INativeCheckout
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBCanShowPaymentSetup\fP (\fBPaymentSettings\fP paymentSettings)"
+.br
+.RI "Check whether the device supports displaying a native wallet application to setup the user's payment card\&. "
+.ti -1c
+.RI "void \fBShowPaymentSetup\fP ()"
+.br
+.RI "Invokes a native method that will prompt the user to setup the user's payment card via the native wallet application\&. "
+.ti -1c
+.RI "void \fBCanCheckout\fP (\fBPaymentSettings\fP paymentSettings, CanCheckoutWithNativePayCallback callback)"
+.br
+.RI "Check whether the device supports making a native payment given the Shop's payment settings\&. "
+.ti -1c
+.RI "void \fBCheckout\fP (string key, \fBShopMetadata\fP shopMetadata, CheckoutSuccessCallback success, CheckoutCancelCallback canceled, CheckoutFailureCallback failure)"
+.br
+.RI "Display the native payment sheet to perform a native payment\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void Shopify\&.Unity\&.SDK\&.INativeCheckout\&.CanCheckout (\fBPaymentSettings\fP paymentSettings, CanCheckoutWithNativePayCallback callback)"
+
+.PP
+Check whether the device supports making a native payment given the Shop's payment settings\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpaymentSettings\fP The Shop's payment settings
+.br
+\fIcallback\fP The callback that will deliver the result to tha caller
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if the device supports making a native payment
+.RE
+.PP
+
+.SS "bool Shopify\&.Unity\&.SDK\&.INativeCheckout\&.CanShowPaymentSetup (\fBPaymentSettings\fP paymentSettings)"
+
+.PP
+Check whether the device supports displaying a native wallet application to setup the user's payment card\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpaymentSettings\fP The Shop's payment settings
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if the device supports displaying a native wallet application
+.RE
+.PP
+
+.SS "void Shopify\&.Unity\&.SDK\&.INativeCheckout\&.Checkout (string key, \fBShopMetadata\fP shopMetadata, CheckoutSuccessCallback success, CheckoutCancelCallback canceled, CheckoutFailureCallback failure)"
+
+.PP
+Display the native payment sheet to perform a native payment\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP The public key that is used for encrypting a native payment's token data
+.br
+\fIshopMetadata\fP The shop's metadata containing name and payment settings
+.br
+\fIsuccess\fP The closure that is invoked upon success of the payment
+.br
+\fIcanceled\fP The closure that is invoked upon cancelation of the payment
+.br
+\fIfailure\fP The closure that is invoked upon failure of the payment
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

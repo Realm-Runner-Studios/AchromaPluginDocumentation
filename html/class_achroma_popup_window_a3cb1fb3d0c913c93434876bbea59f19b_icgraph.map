@@ -1,0 +1,5 @@
+<map id="AchromaPopupWindow.FadeIn" name="AchromaPopupWindow.FadeIn">
+<area shape="rect" id="Node000001" title="The method that will move the UI element up." alt="" coords="256,13,455,39"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_u_i_controller.html#a994100a07b0d048658262ae59cb469f8" title="Shows the login UI" alt="" coords="5,5,208,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,28,208,28,208,23,241,23"/>
+</map>

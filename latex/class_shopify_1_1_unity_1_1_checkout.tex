@@ -1,0 +1,260 @@
+\doxysection{Shopify.\+Unity.\+Checkout Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_checkout}{}\label{class_shopify_1_1_unity_1_1_checkout}\index{Shopify.Unity.Checkout@{Shopify.Unity.Checkout}}
+
+
+A container for all the information required to checkout items and pay.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Checkout\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Checkout\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_a056e9b0f8e71a8bdfd3c6dabf9740a5f}{Checkout}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a72bfae6bc880d6441621fcb4df941a49}\label{class_shopify_1_1_unity_1_1_checkout_a72bfae6bc880d6441621fcb4df941a49} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_applied_gift_card}{Applied\+Gift\+Card}} $>$ {\bfseries applied\+Gift\+Cards} ()
+\begin{DoxyCompactList}\small\item\em The gift cards used on the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a71d57dd00fc8933a4aa6acdcba890e38}\label{class_shopify_1_1_unity_1_1_checkout_a71d57dd00fc8933a4aa6acdcba890e38} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_available_shipping_rates}{Available\+Shipping\+Rates}} {\bfseries available\+Shipping\+Rates} ()
+\begin{DoxyCompactList}\small\item\em The available shipping rates for this Checkout. Should only be used when checkout {\ttfamily requires\+Shipping} is {\ttfamily true} and the shipping address is valid. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a4ec211f66cc0aa9784a2d5e88da70c2e}\label{class_shopify_1_1_unity_1_1_checkout_a4ec211f66cc0aa9784a2d5e88da70c2e} 
+Date\+Time? {\bfseries completed\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the checkout was completed. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a2edd60f0a3a9d75d0138408178498889}\label{class_shopify_1_1_unity_1_1_checkout_a2edd60f0a3a9d75d0138408178498889} 
+Date\+Time? {\bfseries created\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the checkout was created. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a8155226a5d194a07ae7eedec88dc4833}\label{class_shopify_1_1_unity_1_1_checkout_a8155226a5d194a07ae7eedec88dc4833} 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} {\bfseries currency\+Code} ()
+\begin{DoxyCompactList}\small\item\em The currency code for the Checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a03cb1d6fbb37d8716d2b177c7db68a83}\label{class_shopify_1_1_unity_1_1_checkout_a03cb1d6fbb37d8716d2b177c7db68a83} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_attribute}{Attribute}} $>$ {\bfseries custom\+Attributes} ()
+\begin{DoxyCompactList}\small\item\em A list of extra information that is added to the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer}{Customer}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_a8788d4d83bcb837264cb8511f2e4a198}{customer}} ()
+\begin{DoxyCompactList}\small\item\em The customer associated with the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_discount_application_connection}{Discount\+Application\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_ab240f5471c3eae92213cc43612d50a4c}{discount\+Applications}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Discounts that have been applied on the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a8d4595ae219c7fa377580ce1e67b5f2d}\label{class_shopify_1_1_unity_1_1_checkout_a8d4595ae219c7fa377580ce1e67b5f2d} 
+string {\bfseries email} ()
+\begin{DoxyCompactList}\small\item\em The email attached to this checkout. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_a8b31b3a74e78592ed6e530852037d32c}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_connection}{Checkout\+Line\+Item\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_ad396d521088415908575eed8f4b4b4fd}{line\+Items}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em A list of line item objects, each one containing information about an item in the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a59c6d1f7927f510de84e4dae1f237eb4}\label{class_shopify_1_1_unity_1_1_checkout_a59c6d1f7927f510de84e4dae1f237eb4} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries line\+Items\+Subtotal\+Price} ()
+\begin{DoxyCompactList}\small\item\em The sum of all the prices of all the items in the checkout. Duties, taxes, shipping and discounts excluded. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_ade02ae9370388efce7f0c81bcefee797}\label{class_shopify_1_1_unity_1_1_checkout_ade02ae9370388efce7f0c81bcefee797} 
+string {\bfseries note} ()
+\begin{DoxyCompactList}\small\item\em The note associated with the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a9dc8eca45e52bf08260789397f9d2d26}\label{class_shopify_1_1_unity_1_1_checkout_a9dc8eca45e52bf08260789397f9d2d26} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_order}{Order}} {\bfseries order} ()
+\begin{DoxyCompactList}\small\item\em The resulting order from a paid checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a5b4ad18915afb145484056acf3f8e7b6}\label{class_shopify_1_1_unity_1_1_checkout_a5b4ad18915afb145484056acf3f8e7b6} 
+string {\bfseries order\+Status\+Url} ()
+\begin{DoxyCompactList}\small\item\em The Order Status Page for this Checkout, null when checkout is not completed. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_aa1eaacf21d6797acd8d835de4bd061c6}{payment\+Due}} ()
+\begin{DoxyCompactList}\small\item\em The amount left to be paid. This is equal to the cost of the line items, taxes and shipping minus discounts and gift cards. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_adc34dd603edaeda333ae0732b41ccac8}\label{class_shopify_1_1_unity_1_1_checkout_adc34dd603edaeda333ae0732b41ccac8} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries payment\+Due\+V2} ()
+\begin{DoxyCompactList}\small\item\em The amount left to be paid. This is equal to the cost of the line items, duties, taxes and shipping minus discounts and gift cards. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_af2ca3301090c4e51158a95ee3ea23800}\label{class_shopify_1_1_unity_1_1_checkout_af2ca3301090c4e51158a95ee3ea23800} 
+bool {\bfseries ready} ()
+\begin{DoxyCompactList}\small\item\em Whether or not the Checkout is ready and can be completed. Checkouts may have asynchronous operations that can take time to finish. If you want to complete a checkout or ensure all the fields are populated and up to date, polling is required until the value is true. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a70bae396d0628a389555a57f7e759b32}\label{class_shopify_1_1_unity_1_1_checkout_a70bae396d0628a389555a57f7e759b32} 
+bool {\bfseries requires\+Shipping} ()
+\begin{DoxyCompactList}\small\item\em States whether or not the fulfillment requires shipping. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a7c301ff697a46f3dd2e44a65af6d15df}\label{class_shopify_1_1_unity_1_1_checkout_a7c301ff697a46f3dd2e44a65af6d15df} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address}{Mailing\+Address}} {\bfseries shipping\+Address} ()
+\begin{DoxyCompactList}\small\item\em The shipping address to where the line items will be shipped. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a0df634f8a1b8edae48cfa3a5e535d931}\label{class_shopify_1_1_unity_1_1_checkout_a0df634f8a1b8edae48cfa3a5e535d931} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_discount_allocation}{Discount\+Allocation}} $>$ {\bfseries shipping\+Discount\+Allocations} ()
+\begin{DoxyCompactList}\small\item\em The discounts that have been allocated onto the shipping line by discount applications. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_aec7a32b90c4045ab44001a63cfdf0ce6}\label{class_shopify_1_1_unity_1_1_checkout_aec7a32b90c4045ab44001a63cfdf0ce6} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shipping_rate}{Shipping\+Rate}} {\bfseries shipping\+Line} ()
+\begin{DoxyCompactList}\small\item\em Once a shipping rate is selected by the customer it is transitioned to a {\ttfamily shipping\+\_\+line} object. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_a1d5423ee4fbeb61232a63832d806e35a}{subtotal\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Price of the checkout before shipping and taxes. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_ab4fa56a6ef460f5985d875e3f473520f}\label{class_shopify_1_1_unity_1_1_checkout_ab4fa56a6ef460f5985d875e3f473520f} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries subtotal\+Price\+V2} ()
+\begin{DoxyCompactList}\small\item\em Price of the checkout before duties, shipping and taxes. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_aaa5300140cd0790218d569543e0be2ed}\label{class_shopify_1_1_unity_1_1_checkout_aaa5300140cd0790218d569543e0be2ed} 
+bool {\bfseries tax\+Exempt} ()
+\begin{DoxyCompactList}\small\item\em Specifies if the Checkout is tax exempt. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a73e8c6b399cb728ca8e81c405936ce80}\label{class_shopify_1_1_unity_1_1_checkout_a73e8c6b399cb728ca8e81c405936ce80} 
+bool {\bfseries taxes\+Included} ()
+\begin{DoxyCompactList}\small\item\em Specifies if taxes are included in the line item and shipping line prices. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_a393c3057f031c7a221e463d004decb88}{total\+Price}} ()
+\begin{DoxyCompactList}\small\item\em The sum of all the prices of all the items in the checkout, taxes and discounts included. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a845ba042a0cc80abe5d077dd7a0220a9}\label{class_shopify_1_1_unity_1_1_checkout_a845ba042a0cc80abe5d077dd7a0220a9} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries total\+Price\+V2} ()
+\begin{DoxyCompactList}\small\item\em The sum of all the prices of all the items in the checkout, duties, taxes and discounts included. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_a722ecdb79640a013dcf3bd18dacf3461}{total\+Tax}} ()
+\begin{DoxyCompactList}\small\item\em The sum of all the taxes applied to the line items and shipping lines in the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_ac4c710076e49d02d5a80fee3a219aef4}\label{class_shopify_1_1_unity_1_1_checkout_ac4c710076e49d02d5a80fee3a219aef4} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries total\+Tax\+V2} ()
+\begin{DoxyCompactList}\small\item\em The sum of all the taxes applied to the line items and shipping lines in the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a7ea01431b042406dad9b7ee66f424da7}\label{class_shopify_1_1_unity_1_1_checkout_a7ea01431b042406dad9b7ee66f424da7} 
+Date\+Time? {\bfseries updated\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the checkout was last updated. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a1cdb6c9c1691f5485fb72fc664ec7f11}\label{class_shopify_1_1_unity_1_1_checkout_a1cdb6c9c1691f5485fb72fc664ec7f11} 
+string {\bfseries web\+Url} ()
+\begin{DoxyCompactList}\small\item\em The url pointing to the checkout accessible from the web. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a08a9b33b5019a09426b3724c726b8a4d}\label{class_shopify_1_1_unity_1_1_checkout_a08a9b33b5019a09426b3724c726b8a4d} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A container for all the information required to checkout items and pay. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a056e9b0f8e71a8bdfd3c6dabf9740a5f}\label{class_shopify_1_1_unity_1_1_checkout_a056e9b0f8e71a8bdfd3c6dabf9740a5f} 
+\index{Shopify.Unity.Checkout@{Shopify.Unity.Checkout}!Checkout@{Checkout}}
+\index{Checkout@{Checkout}!Shopify.Unity.Checkout@{Shopify.Unity.Checkout}}
+\doxysubsubsection{\texorpdfstring{Checkout()}{Checkout()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Checkout.\+Checkout (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Checkout\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a8788d4d83bcb837264cb8511f2e4a198}\label{class_shopify_1_1_unity_1_1_checkout_a8788d4d83bcb837264cb8511f2e4a198} 
+\index{Shopify.Unity.Checkout@{Shopify.Unity.Checkout}!customer@{customer}}
+\index{customer@{customer}!Shopify.Unity.Checkout@{Shopify.Unity.Checkout}}
+\doxysubsubsection{\texorpdfstring{customer()}{customer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer}{Customer}} Shopify.\+Unity.\+Checkout.\+customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The customer associated with the checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000004}{Deprecated}}]This field will always return null. If you have an authentication token for the customer, you can use the {\ttfamily customer} field on the query root to retrieve it. \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_ab240f5471c3eae92213cc43612d50a4c}\label{class_shopify_1_1_unity_1_1_checkout_ab240f5471c3eae92213cc43612d50a4c} 
+\index{Shopify.Unity.Checkout@{Shopify.Unity.Checkout}!discountApplications@{discountApplications}}
+\index{discountApplications@{discountApplications}!Shopify.Unity.Checkout@{Shopify.Unity.Checkout}}
+\doxysubsubsection{\texorpdfstring{discountApplications()}{discountApplications()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_discount_application_connection}{Discount\+Application\+Connection}} Shopify.\+Unity.\+Checkout.\+discount\+Applications (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Discounts that have been applied on the checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a8b31b3a74e78592ed6e530852037d32c}\label{class_shopify_1_1_unity_1_1_checkout_a8b31b3a74e78592ed6e530852037d32c} 
+\index{Shopify.Unity.Checkout@{Shopify.Unity.Checkout}!id@{id}}
+\index{id@{id}!Shopify.Unity.Checkout@{Shopify.Unity.Checkout}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Checkout.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_ad396d521088415908575eed8f4b4b4fd}\label{class_shopify_1_1_unity_1_1_checkout_ad396d521088415908575eed8f4b4b4fd} 
+\index{Shopify.Unity.Checkout@{Shopify.Unity.Checkout}!lineItems@{lineItems}}
+\index{lineItems@{lineItems}!Shopify.Unity.Checkout@{Shopify.Unity.Checkout}}
+\doxysubsubsection{\texorpdfstring{lineItems()}{lineItems()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_connection}{Checkout\+Line\+Item\+Connection}} Shopify.\+Unity.\+Checkout.\+line\+Items (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+A list of line item objects, each one containing information about an item in the checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_aa1eaacf21d6797acd8d835de4bd061c6}\label{class_shopify_1_1_unity_1_1_checkout_aa1eaacf21d6797acd8d835de4bd061c6} 
+\index{Shopify.Unity.Checkout@{Shopify.Unity.Checkout}!paymentDue@{paymentDue}}
+\index{paymentDue@{paymentDue}!Shopify.Unity.Checkout@{Shopify.Unity.Checkout}}
+\doxysubsubsection{\texorpdfstring{paymentDue()}{paymentDue()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Checkout.\+payment\+Due (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The amount left to be paid. This is equal to the cost of the line items, taxes and shipping minus discounts and gift cards. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000005}{Deprecated}}]Use {\ttfamily payment\+Due\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a1d5423ee4fbeb61232a63832d806e35a}\label{class_shopify_1_1_unity_1_1_checkout_a1d5423ee4fbeb61232a63832d806e35a} 
+\index{Shopify.Unity.Checkout@{Shopify.Unity.Checkout}!subtotalPrice@{subtotalPrice}}
+\index{subtotalPrice@{subtotalPrice}!Shopify.Unity.Checkout@{Shopify.Unity.Checkout}}
+\doxysubsubsection{\texorpdfstring{subtotalPrice()}{subtotalPrice()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Checkout.\+subtotal\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Price of the checkout before shipping and taxes. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000006}{Deprecated}}]Use {\ttfamily subtotal\+Price\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a393c3057f031c7a221e463d004decb88}\label{class_shopify_1_1_unity_1_1_checkout_a393c3057f031c7a221e463d004decb88} 
+\index{Shopify.Unity.Checkout@{Shopify.Unity.Checkout}!totalPrice@{totalPrice}}
+\index{totalPrice@{totalPrice}!Shopify.Unity.Checkout@{Shopify.Unity.Checkout}}
+\doxysubsubsection{\texorpdfstring{totalPrice()}{totalPrice()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Checkout.\+total\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The sum of all the prices of all the items in the checkout, taxes and discounts included. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000007}{Deprecated}}]Use {\ttfamily total\+Price\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_a722ecdb79640a013dcf3bd18dacf3461}\label{class_shopify_1_1_unity_1_1_checkout_a722ecdb79640a013dcf3bd18dacf3461} 
+\index{Shopify.Unity.Checkout@{Shopify.Unity.Checkout}!totalTax@{totalTax}}
+\index{totalTax@{totalTax}!Shopify.Unity.Checkout@{Shopify.Unity.Checkout}}
+\doxysubsubsection{\texorpdfstring{totalTax()}{totalTax()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Checkout.\+total\+Tax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The sum of all the taxes applied to the line items and shipping lines in the checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000008}{Deprecated}}]Use {\ttfamily total\+Tax\+V2} instead \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Checkout.\+cs\end{DoxyCompactItemize}

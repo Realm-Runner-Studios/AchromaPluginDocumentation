@@ -1,0 +1,82 @@
+.TH "Achroma.AchromaNewsUI" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaNewsUI
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBAchromaPopupWindow\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBShow\fP (UnityAction result=null)"
+.br
+.ti -1c
+.RI "override void \fBFadeIn\fP (UnityAction result)"
+.br
+.RI "The method that will move the UI element up\&. "
+.ti -1c
+.RI "void \fBClose\fP ()"
+.br
+.ti -1c
+.RI "override void \fBUpdate\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBAchromaPopupWindow\fP
+.in +1c
+.ti -1c
+.RI "void \fBHide\fP ()"
+.br
+.RI "This will set the element position to the bottom, making it disappear from the screen\&. "
+.ti -1c
+.RI "virtual void \fBFadeOut\fP (UnityAction result=null)"
+.br
+.RI "The Coroutine that will move the UI element down\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "Button \fBcloseButton\fP"
+.br
+.ti -1c
+.RI "RectTransform \fBcontent\fP"
+.br
+.ti -1c
+.RI "GameObject \fBnewsPrefab\fP"
+.br
+.in -1c
+
+Public Attributes inherited from \fBAchromaPopupWindow\fP
+.in +1c
+.ti -1c
+.RI "float \fBspeed\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "override void Achroma\&.AchromaNewsUI\&.FadeIn (UnityAction result)\fC [virtual]\fP"
+
+.PP
+The method that will move the UI element up\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresukt\fP The callback method that will be called once the element is on the top position
+.RE
+.PP
+
+.PP
+Reimplemented from \fBAchromaPopupWindow\fP\&.
+.SS "override void Achroma\&.AchromaNewsUI\&.Update ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBAchromaPopupWindow\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

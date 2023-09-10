@@ -1,0 +1,289 @@
+\doxysection{Achroma.\+Achroma\+Location Class Reference}
+\hypertarget{class_achroma_1_1_achroma_location}{}\label{class_achroma_1_1_achroma_location}\index{Achroma.AchromaLocation@{Achroma.AchromaLocation}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_achroma_1_1_achroma_location_a84ecac6f22ada7185009c81be1b0da68}{Get\+Location\+Sprite\+Name}} (int location)
+\begin{DoxyCompactList}\small\item\em Returns location sprite name to be found in the asset bundle. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_1_1_achroma_location_a0767f725a8407f9d0a4f2039816e85e1}{Get\+Location\+Story}} (int location)
+\begin{DoxyCompactList}\small\item\em Returns the story linked to the location. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_1_1_achroma_location_aa65454128465a337daa3b0f863082d9a}{Get\+Location\+Name}} (int location)
+\begin{DoxyCompactList}\small\item\em Returns the name of the location. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_1_1_achroma_location_a70d937c8c9e1ef1a9fe694da36ccdc52}{Get\+Location\+Sprite}} (int location, bool transparent, Unity\+Action$<$ bool, string, Sprite $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the sprite for a given avatar id in the array. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_1_1_achroma_location_aba0c162f59ffcb788d6dc5b863015073}{Get\+Location\+Animation}} (int location, Unity\+Action$<$ bool, string, Game\+Object $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the sprite for a given location id in the array. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_1_1_achroma_location_a755564db259bd4bdcf1d3b7a51e759f9}{Get\+Location\+Animation}} (string location, Unity\+Action$<$ bool, string, Game\+Object $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the sprite for a given location name in the array. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_1_1_achroma_location_a5cc1df67dcd56fe309da8e49e90745fa}{Get\+Location\+Sprite}} (string location, Unity\+Action$<$ bool, string, Sprite $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the sprite for a given location name in the array. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_achroma_1_1_location}{Location}} \mbox{\hyperlink{class_achroma_1_1_achroma_location_ad1bff3432bd6bc3b4b52dc24a24f5551}{Get\+Location\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the location from the Control File with all its data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_achroma_1_1_location}{Location}} \mbox{\hyperlink{class_achroma_1_1_achroma_location_ac1d5c9cc95ada9b361c45a9a8bbf0405}{Get\+Location\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Returns the location from the Control File with all its data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_1_1_achroma_location_aba0c162f59ffcb788d6dc5b863015073}\label{class_achroma_1_1_achroma_location_aba0c162f59ffcb788d6dc5b863015073} 
+\index{Achroma.AchromaLocation@{Achroma.AchromaLocation}!GetLocationAnimation@{GetLocationAnimation}}
+\index{GetLocationAnimation@{GetLocationAnimation}!Achroma.AchromaLocation@{Achroma.AchromaLocation}}
+\doxysubsubsection{\texorpdfstring{GetLocationAnimation()}{GetLocationAnimation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Achroma.\+Achroma\+Location.\+Get\+Location\+Animation (\begin{DoxyParamCaption}\item[{int}]{location,  }\item[{Unity\+Action$<$ bool, string, Game\+Object $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the sprite for a given location id in the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & location id in the array\\
+\hline
+{\em callback} & result callback with a success flat, an error message and the instance of the instantiated sprite\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_aba0c162f59ffcb788d6dc5b863015073_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_aba0c162f59ffcb788d6dc5b863015073_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_location_a755564db259bd4bdcf1d3b7a51e759f9}\label{class_achroma_1_1_achroma_location_a755564db259bd4bdcf1d3b7a51e759f9} 
+\index{Achroma.AchromaLocation@{Achroma.AchromaLocation}!GetLocationAnimation@{GetLocationAnimation}}
+\index{GetLocationAnimation@{GetLocationAnimation}!Achroma.AchromaLocation@{Achroma.AchromaLocation}}
+\doxysubsubsection{\texorpdfstring{GetLocationAnimation()}{GetLocationAnimation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Achroma.\+Achroma\+Location.\+Get\+Location\+Animation (\begin{DoxyParamCaption}\item[{string}]{location,  }\item[{Unity\+Action$<$ bool, string, Game\+Object $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the sprite for a given location name in the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & location name in the array\\
+\hline
+{\em callback} & result callback with a success flat, an error message and the instance of the instantiated sprite\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_a755564db259bd4bdcf1d3b7a51e759f9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_location_ac1d5c9cc95ada9b361c45a9a8bbf0405}\label{class_achroma_1_1_achroma_location_ac1d5c9cc95ada9b361c45a9a8bbf0405} 
+\index{Achroma.AchromaLocation@{Achroma.AchromaLocation}!GetLocationById@{GetLocationById}}
+\index{GetLocationById@{GetLocationById}!Achroma.AchromaLocation@{Achroma.AchromaLocation}}
+\doxysubsubsection{\texorpdfstring{GetLocationById()}{GetLocationById()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_achroma_1_1_location}{Location}} Achroma.\+Achroma\+Location.\+Get\+Location\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the location from the Control File with all its data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the location\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the Location type with all the related data to the Location
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_ac1d5c9cc95ada9b361c45a9a8bbf0405_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_ac1d5c9cc95ada9b361c45a9a8bbf0405_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_location_ad1bff3432bd6bc3b4b52dc24a24f5551}\label{class_achroma_1_1_achroma_location_ad1bff3432bd6bc3b4b52dc24a24f5551} 
+\index{Achroma.AchromaLocation@{Achroma.AchromaLocation}!GetLocationByName@{GetLocationByName}}
+\index{GetLocationByName@{GetLocationByName}!Achroma.AchromaLocation@{Achroma.AchromaLocation}}
+\doxysubsubsection{\texorpdfstring{GetLocationByName()}{GetLocationByName()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_achroma_1_1_location}{Location}} Achroma.\+Achroma\+Location.\+Get\+Location\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the location from the Control File with all its data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the location\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the Location type with all the related data to the Location
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_ad1bff3432bd6bc3b4b52dc24a24f5551_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_ad1bff3432bd6bc3b4b52dc24a24f5551_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_location_aa65454128465a337daa3b0f863082d9a}\label{class_achroma_1_1_achroma_location_aa65454128465a337daa3b0f863082d9a} 
+\index{Achroma.AchromaLocation@{Achroma.AchromaLocation}!GetLocationName@{GetLocationName}}
+\index{GetLocationName@{GetLocationName}!Achroma.AchromaLocation@{Achroma.AchromaLocation}}
+\doxysubsubsection{\texorpdfstring{GetLocationName()}{GetLocationName()}}
+{\footnotesize\ttfamily static string Achroma.\+Achroma\+Location.\+Get\+Location\+Name (\begin{DoxyParamCaption}\item[{int}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the name of the location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & Id in the location array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the location\textquotesingle{}s name
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_aa65454128465a337daa3b0f863082d9a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_location_a70d937c8c9e1ef1a9fe694da36ccdc52}\label{class_achroma_1_1_achroma_location_a70d937c8c9e1ef1a9fe694da36ccdc52} 
+\index{Achroma.AchromaLocation@{Achroma.AchromaLocation}!GetLocationSprite@{GetLocationSprite}}
+\index{GetLocationSprite@{GetLocationSprite}!Achroma.AchromaLocation@{Achroma.AchromaLocation}}
+\doxysubsubsection{\texorpdfstring{GetLocationSprite()}{GetLocationSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Achroma.\+Achroma\+Location.\+Get\+Location\+Sprite (\begin{DoxyParamCaption}\item[{int}]{location,  }\item[{bool}]{transparent,  }\item[{Unity\+Action$<$ bool, string, Sprite $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the sprite for a given avatar id in the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & location id in the array\\
+\hline
+{\em transparent} & If true, it will get PNG instead of the JPG version\\
+\hline
+{\em callback} & result callback with a success flat, an error message and the instance of the instantiated sprite\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_a70d937c8c9e1ef1a9fe694da36ccdc52_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_a70d937c8c9e1ef1a9fe694da36ccdc52_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_location_a5cc1df67dcd56fe309da8e49e90745fa}\label{class_achroma_1_1_achroma_location_a5cc1df67dcd56fe309da8e49e90745fa} 
+\index{Achroma.AchromaLocation@{Achroma.AchromaLocation}!GetLocationSprite@{GetLocationSprite}}
+\index{GetLocationSprite@{GetLocationSprite}!Achroma.AchromaLocation@{Achroma.AchromaLocation}}
+\doxysubsubsection{\texorpdfstring{GetLocationSprite()}{GetLocationSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Achroma.\+Achroma\+Location.\+Get\+Location\+Sprite (\begin{DoxyParamCaption}\item[{string}]{location,  }\item[{Unity\+Action$<$ bool, string, Sprite $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the sprite for a given location name in the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & location name in the array\\
+\hline
+{\em callback} & result callback with a success flat, an error message and the instance of the instantiated sprite\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_a5cc1df67dcd56fe309da8e49e90745fa_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_location_a84ecac6f22ada7185009c81be1b0da68}\label{class_achroma_1_1_achroma_location_a84ecac6f22ada7185009c81be1b0da68} 
+\index{Achroma.AchromaLocation@{Achroma.AchromaLocation}!GetLocationSpriteName@{GetLocationSpriteName}}
+\index{GetLocationSpriteName@{GetLocationSpriteName}!Achroma.AchromaLocation@{Achroma.AchromaLocation}}
+\doxysubsubsection{\texorpdfstring{GetLocationSpriteName()}{GetLocationSpriteName()}}
+{\footnotesize\ttfamily static string Achroma.\+Achroma\+Location.\+Get\+Location\+Sprite\+Name (\begin{DoxyParamCaption}\item[{int}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns location sprite name to be found in the asset bundle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & Id in the location array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns name of the sprite in the asset bundle file
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_a84ecac6f22ada7185009c81be1b0da68_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_a84ecac6f22ada7185009c81be1b0da68_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_location_a0767f725a8407f9d0a4f2039816e85e1}\label{class_achroma_1_1_achroma_location_a0767f725a8407f9d0a4f2039816e85e1} 
+\index{Achroma.AchromaLocation@{Achroma.AchromaLocation}!GetLocationStory@{GetLocationStory}}
+\index{GetLocationStory@{GetLocationStory}!Achroma.AchromaLocation@{Achroma.AchromaLocation}}
+\doxysubsubsection{\texorpdfstring{GetLocationStory()}{GetLocationStory()}}
+{\footnotesize\ttfamily static string Achroma.\+Achroma\+Location.\+Get\+Location\+Story (\begin{DoxyParamCaption}\item[{int}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the story linked to the location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar} & Id in the location array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the story id
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_location_a0767f725a8407f9d0a4f2039816e85e1_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Data Schemes/Achroma\+Location\+Data\+Model.\+cs\end{DoxyCompactItemize}

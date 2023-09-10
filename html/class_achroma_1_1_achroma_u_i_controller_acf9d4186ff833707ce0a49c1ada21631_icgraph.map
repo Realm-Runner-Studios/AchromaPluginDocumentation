@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaUIController.LoadMenuBackground" name="Achroma.AchromaUIController.LoadMenuBackground">
+<area shape="rect" id="Node000001" title="This will load the background from the asset bundle to avoid embedding the background images to the p..." alt="" coords="255,5,457,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_u_i.html#a29cb5418a29491f2c88bc6bbd743d94b" title="This will create a menu background." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,28,207,28,207,23,240,23"/>
+</map>

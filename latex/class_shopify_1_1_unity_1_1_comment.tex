@@ -1,0 +1,107 @@
+\doxysection{Shopify.\+Unity.\+Comment Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_comment}{}\label{class_shopify_1_1_unity_1_1_comment}\index{Shopify.Unity.Comment@{Shopify.Unity.Comment}}
+
+
+A comment on an article.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Comment\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Comment\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_comment_acd91fa1a49f3017882a3c9a182559850}{Comment}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_comment_ae221c0586a3891f2f8507e9c73f299df}\label{class_shopify_1_1_unity_1_1_comment_ae221c0586a3891f2f8507e9c73f299df} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_comment_author}{Comment\+Author}} {\bfseries author} ()
+\begin{DoxyCompactList}\small\item\em The comment’s author. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_comment_afcc88e77edf271ad3fa339bf86c8a8c8}{content}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Stripped content of the comment, single line with HTML tags removed. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_comment_aa7d5ad8ecb80d2e941e5dedb7a312c34}\label{class_shopify_1_1_unity_1_1_comment_aa7d5ad8ecb80d2e941e5dedb7a312c34} 
+string {\bfseries content\+Html} ()
+\begin{DoxyCompactList}\small\item\em The content of the comment, complete with HTML formatting. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_comment_aec587dff8d7664474d0d8c287135d689}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_comment_a37ed6ea9e942d8f10fe96821edd0aa4c}\label{class_shopify_1_1_unity_1_1_comment_a37ed6ea9e942d8f10fe96821edd0aa4c} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A comment on an article. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_comment_acd91fa1a49f3017882a3c9a182559850}\label{class_shopify_1_1_unity_1_1_comment_acd91fa1a49f3017882a3c9a182559850} 
+\index{Shopify.Unity.Comment@{Shopify.Unity.Comment}!Comment@{Comment}}
+\index{Comment@{Comment}!Shopify.Unity.Comment@{Shopify.Unity.Comment}}
+\doxysubsubsection{\texorpdfstring{Comment()}{Comment()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Comment.\+Comment (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Comment\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_comment_afcc88e77edf271ad3fa339bf86c8a8c8}\label{class_shopify_1_1_unity_1_1_comment_afcc88e77edf271ad3fa339bf86c8a8c8} 
+\index{Shopify.Unity.Comment@{Shopify.Unity.Comment}!content@{content}}
+\index{content@{content}!Shopify.Unity.Comment@{Shopify.Unity.Comment}}
+\doxysubsubsection{\texorpdfstring{content()}{content()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Comment.\+content (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Stripped content of the comment, single line with HTML tags removed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_comment_aec587dff8d7664474d0d8c287135d689}\label{class_shopify_1_1_unity_1_1_comment_aec587dff8d7664474d0d8c287135d689} 
+\index{Shopify.Unity.Comment@{Shopify.Unity.Comment}!id@{id}}
+\index{id@{id}!Shopify.Unity.Comment@{Shopify.Unity.Comment}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Comment.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Comment.\+cs\end{DoxyCompactItemize}

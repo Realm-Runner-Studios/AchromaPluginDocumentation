@@ -1,0 +1,122 @@
+.TH "Shopify.Unity.UnknownDisplayableError" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.UnknownDisplayableError \- UnknownDisplayableError is a response object\&. With UnknownDisplayableError\&.Create you'll be able instantiate objects implementing DisplayableError\&. \fCUnknownDisplayableError\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+CheckoutUserError 
+.IP "\(bu" 2
+CustomerUserError 
+.IP "\(bu" 2
+UserError 
+.PP
+ 
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.DisplayableError\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUnknownDisplayableError\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "List< string > \fBfield\fP ()"
+.br
+.RI "Path to the input field which caused the error\&. "
+.ti -1c
+.RI "string \fBmessage\fP ()"
+.br
+.RI "The error message\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBDisplayableError\fP \fBCreate\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Instantiate objects implementing DisplayableError\&. Possible types are: 
+.PD 0
+.IP "\(bu" 2
+CheckoutUserError 
+.IP "\(bu" 2
+CustomerUserError 
+.IP "\(bu" 2
+UserError 
+.PP
+"
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+UnknownDisplayableError is a response object\&. With UnknownDisplayableError\&.Create you'll be able instantiate objects implementing DisplayableError\&. \fCUnknownDisplayableError\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+CheckoutUserError 
+.IP "\(bu" 2
+CustomerUserError 
+.IP "\(bu" 2
+UserError 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.UnknownDisplayableError\&.UnknownDisplayableError (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for DisplayableError
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "List< string > Shopify\&.Unity\&.UnknownDisplayableError\&.field ()"
+
+.PP
+Path to the input field which caused the error\&. 
+.PP
+Implements \fBShopify\&.Unity\&.DisplayableError\fP\&.
+.SS "string Shopify\&.Unity\&.UnknownDisplayableError\&.message ()"
+
+.PP
+The error message\&. 
+.PP
+Implements \fBShopify\&.Unity\&.DisplayableError\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaDatabaseController.RefreshMatch" name="Achroma.AchromaDatabaseController.RefreshMatch">
+<area shape="rect" id="Node000001" title="Forces an update to the local match data by retrieving it from the database." alt="" coords="255,5,499,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_match.html#a4fe70e7b7909bfa5fc13f54d46867bbd" title="Forces an update to the local match data by retrieving it from the database." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,28,207,28,207,23,240,23"/>
+</map>

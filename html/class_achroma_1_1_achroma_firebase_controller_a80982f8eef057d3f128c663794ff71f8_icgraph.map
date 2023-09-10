@@ -1,0 +1,7 @@
+<map id="Achroma.AchromaFirebaseController.RemoveMatchChangedListener" name="Achroma.AchromaFirebaseController.RemoveMatchChangedListener">
+<area shape="rect" id="Node000001" title="Removes the listener from the match." alt="" coords="547,5,785,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a13005b360c72b2bbd911f209182604c6" title="Detaches the listener for the current match." alt="" coords="255,5,499,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="532,28,499,28,499,23,532,23"/>
+<area shape="rect" id="Node000003" href="$class_achroma_a_p_i_1_1_achroma_instance_match.html#ad47ac13587daddb85bbc7f79b2dc6215" title="Detaches the listener for the current match." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="240,28,207,28,207,23,240,23"/>
+</map>

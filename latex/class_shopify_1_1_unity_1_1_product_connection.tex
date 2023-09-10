@@ -1,0 +1,108 @@
+\doxysection{Shopify.\+Unity.\+Product\+Connection Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_product_connection}{}\label{class_shopify_1_1_unity_1_1_product_connection}\index{Shopify.Unity.ProductConnection@{Shopify.Unity.ProductConnection}}
+
+
+An auto-\/generated type for paginating through multiple Products. . Product\+Connection can be cast to {\ttfamily List$<$\+Product$>$}.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Product\+Connection\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Product\+Connection\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_connection_afc04925da7856e689adafa7475782b32}{Product\+Connection}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_connection_af1e19981c76b641d39309fc9477c9094}\label{class_shopify_1_1_unity_1_1_product_connection_af1e19981c76b641d39309fc9477c9094} 
+IEnumerator {\bfseries Get\+Enumerator} ()
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_connection_a8298938f4e0c63bb4c79c3e38484f0f6}\label{class_shopify_1_1_unity_1_1_product_connection_a8298938f4e0c63bb4c79c3e38484f0f6} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_edge}{Product\+Edge}} $>$ {\bfseries edges} ()
+\begin{DoxyCompactList}\small\item\em A list of edges. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_connection_afb26e3e735e5924d47069a22c9ce8b3a}\label{class_shopify_1_1_unity_1_1_product_connection_afb26e3e735e5924d47069a22c9ce8b3a} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_page_info}{Page\+Info}} {\bfseries page\+Info} ()
+\begin{DoxyCompactList}\small\item\em Information to aid in pagination. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_connection_ad94a943d4092596ef2c65fa1836b3144}\label{class_shopify_1_1_unity_1_1_product_connection_ad94a943d4092596ef2c65fa1836b3144} 
+object {\bfseries Clone} ()
+\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_connection_ad5e52e70c20c78af7d08c18f9ad039ed}{Add\+From\+Connection}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_connection}{Product\+Connection}} connection)
+\begin{DoxyCompactList}\small\item\em This is a utility function that allows you to append newly queried data from a connection into this one. The passed in Connection will be appended into this Connection. The {\ttfamily edges} will receive all new {\ttfamily nodes}, and both the {\ttfamily cursors} and {\ttfamily page\+Info} will be updated based on the passed Connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_connection_a6bfd64f5d9b3fbef7029106150a1cbd5}\label{class_shopify_1_1_unity_1_1_product_connection_a6bfd64f5d9b3fbef7029106150a1cbd5} 
+static {\bfseries operator List$<$ Product $>$} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_connection}{Product\+Connection}} connection)
+\begin{DoxyCompactList}\small\item\em Adds the ability to cast Product\+Connection to {\ttfamily List$<$\+Product$>$}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_connection_a11f6fdafc39c4589c8af55c44750160c}\label{class_shopify_1_1_unity_1_1_product_connection_a11f6fdafc39c4589c8af55c44750160c} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}} $>$ {\bfseries Nodes}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An auto-\/generated type for paginating through multiple Products. . Product\+Connection can be cast to {\ttfamily List$<$\+Product$>$}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_connection_afc04925da7856e689adafa7475782b32}\label{class_shopify_1_1_unity_1_1_product_connection_afc04925da7856e689adafa7475782b32} 
+\index{Shopify.Unity.ProductConnection@{Shopify.Unity.ProductConnection}!ProductConnection@{ProductConnection}}
+\index{ProductConnection@{ProductConnection}!Shopify.Unity.ProductConnection@{Shopify.Unity.ProductConnection}}
+\doxysubsubsection{\texorpdfstring{ProductConnection()}{ProductConnection()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Product\+Connection.\+Product\+Connection (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Product\+Connection\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_connection_ad5e52e70c20c78af7d08c18f9ad039ed}\label{class_shopify_1_1_unity_1_1_product_connection_ad5e52e70c20c78af7d08c18f9ad039ed} 
+\index{Shopify.Unity.ProductConnection@{Shopify.Unity.ProductConnection}!AddFromConnection@{AddFromConnection}}
+\index{AddFromConnection@{AddFromConnection}!Shopify.Unity.ProductConnection@{Shopify.Unity.ProductConnection}}
+\doxysubsubsection{\texorpdfstring{AddFromConnection()}{AddFromConnection()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Product\+Connection.\+Add\+From\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_connection}{Product\+Connection}}}]{connection }\end{DoxyParamCaption})}
+
+
+
+This is a utility function that allows you to append newly queried data from a connection into this one. The passed in Connection will be appended into this Connection. The {\ttfamily edges} will receive all new {\ttfamily nodes}, and both the {\ttfamily cursors} and {\ttfamily page\+Info} will be updated based on the passed Connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & response\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Product\+Connection.\+cs\end{DoxyCompactItemize}

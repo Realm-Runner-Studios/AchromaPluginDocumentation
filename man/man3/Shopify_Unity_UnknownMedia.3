@@ -1,0 +1,138 @@
+.TH "Shopify.Unity.UnknownMedia" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.UnknownMedia \- UnknownMedia is a response object\&. With UnknownMedia\&.Create you'll be able instantiate objects implementing Media\&. \fCUnknownMedia\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+ExternalVideo 
+.IP "\(bu" 2
+MediaImage 
+.IP "\(bu" 2
+Model3d 
+.IP "\(bu" 2
+Video 
+.PP
+ 
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.Media\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUnknownMedia\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "string \fBalt\fP ()"
+.br
+.RI "A word or phrase to share the nature or contents of a media\&. "
+.ti -1c
+.RI "\fBMediaContentType\fP \fBmediaContentType\fP ()"
+.br
+.RI "The media content type\&. "
+.ti -1c
+.RI "\fBImage\fP \fBpreviewImage\fP ()"
+.br
+.RI "The preview image for the media\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBMedia\fP \fBCreate\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Instantiate objects implementing Media\&. Possible types are: 
+.PD 0
+.IP "\(bu" 2
+ExternalVideo 
+.IP "\(bu" 2
+MediaImage 
+.IP "\(bu" 2
+Model3d 
+.IP "\(bu" 2
+Video 
+.PP
+"
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+UnknownMedia is a response object\&. With UnknownMedia\&.Create you'll be able instantiate objects implementing Media\&. \fCUnknownMedia\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+ExternalVideo 
+.IP "\(bu" 2
+MediaImage 
+.IP "\(bu" 2
+Model3d 
+.IP "\(bu" 2
+Video 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.UnknownMedia\&.UnknownMedia (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Media
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "string Shopify\&.Unity\&.UnknownMedia\&.alt ()"
+
+.PP
+A word or phrase to share the nature or contents of a media\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Media\fP\&.
+.SS "\fBMediaContentType\fP Shopify\&.Unity\&.UnknownMedia\&.mediaContentType ()"
+
+.PP
+The media content type\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Media\fP\&.
+.SS "\fBImage\fP Shopify\&.Unity\&.UnknownMedia\&.previewImage ()"
+
+.PP
+The preview image for the media\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Media\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

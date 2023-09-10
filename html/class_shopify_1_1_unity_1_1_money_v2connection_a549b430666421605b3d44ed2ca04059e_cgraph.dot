@@ -1,0 +1,11 @@
+digraph "Shopify.Unity.MoneyV2connection.AddFromConnection"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Shopify.Unity.MoneyV2connection.\lAddFromConnection",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="This is a utility function that allows you to append newly queried data from a connection into this o..."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Shopify.Unity.MoneyV2connection.edges",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_shopify_1_1_unity_1_1_money_v2connection.html#aae15e3198f5d52cf70ac19f320dd8c46",tooltip="A list of edges."];
+}

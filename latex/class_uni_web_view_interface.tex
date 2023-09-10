@@ -1,0 +1,229 @@
+\doxysection{Uni\+Web\+View\+Interface Class Reference}
+\hypertarget{class_uni_web_view_interface}{}\label{class_uni_web_view_interface}\index{UniWebViewInterface@{UniWebViewInterface}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_uni_web_view_interface_ae3ce0945be0200a197ae02f8e1b9fa91}\label{class_uni_web_view_interface_ae3ce0945be0200a197ae02f8e1b9fa91} 
+static void {\bfseries Set\+Log\+Level} (int level)
+\item 
+\Hypertarget{class_uni_web_view_interface_af97c41843de47c3a8c6a75bb45d11c73}\label{class_uni_web_view_interface_af97c41843de47c3a8c6a75bb45d11c73} 
+static void {\bfseries Init} (string name, int x, int y, int width, int height)
+\item 
+\Hypertarget{class_uni_web_view_interface_a3db9dde061600312fb920a7495afe19b}\label{class_uni_web_view_interface_a3db9dde061600312fb920a7495afe19b} 
+static void {\bfseries Destroy} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_a8ae15036fd1bf88614e2f87e3bb4758e}\label{class_uni_web_view_interface_a8ae15036fd1bf88614e2f87e3bb4758e} 
+static void {\bfseries Load} (string name, string url, bool skip\+Encoding, string read\+Access\+URL)
+\item 
+\Hypertarget{class_uni_web_view_interface_a5192f4fb639e8bbfb7b9f8ba1e1a6d4f}\label{class_uni_web_view_interface_a5192f4fb639e8bbfb7b9f8ba1e1a6d4f} 
+static void {\bfseries Load\+HTMLString} (string name, string html, string base\+Url, bool skip\+Encoding)
+\item 
+\Hypertarget{class_uni_web_view_interface_aa3dc649df88949a014ef1ad03563e1b7}\label{class_uni_web_view_interface_aa3dc649df88949a014ef1ad03563e1b7} 
+static void {\bfseries Reload} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_ad68b26a9d2935d2bfa8f76911c476e65}\label{class_uni_web_view_interface_ad68b26a9d2935d2bfa8f76911c476e65} 
+static void {\bfseries Stop} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_a845e08a324021960274e536f39decb2e}\label{class_uni_web_view_interface_a845e08a324021960274e536f39decb2e} 
+static string {\bfseries Get\+Url} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_a98b7497c23d00b09505555384a5a8c21}\label{class_uni_web_view_interface_a98b7497c23d00b09505555384a5a8c21} 
+static void {\bfseries Set\+Frame} (string name, int x, int y, int width, int height)
+\item 
+\Hypertarget{class_uni_web_view_interface_a3657937fbe80467d514a12be0fc758f3}\label{class_uni_web_view_interface_a3657937fbe80467d514a12be0fc758f3} 
+static void {\bfseries Set\+Position} (string name, int x, int y)
+\item 
+\Hypertarget{class_uni_web_view_interface_a4687d4f09bbe356e50803eeaefb69e10}\label{class_uni_web_view_interface_a4687d4f09bbe356e50803eeaefb69e10} 
+static void {\bfseries Set\+Size} (string name, int width, int height)
+\item 
+\Hypertarget{class_uni_web_view_interface_ab897f1afee0dae4064ecad6fa9e04b5f}\label{class_uni_web_view_interface_ab897f1afee0dae4064ecad6fa9e04b5f} 
+static bool {\bfseries Show} (string name, bool fade, int edge, float duration, bool use\+Async, string identifier)
+\item 
+\Hypertarget{class_uni_web_view_interface_a910c5d8a77a971b63bb2dc00688be975}\label{class_uni_web_view_interface_a910c5d8a77a971b63bb2dc00688be975} 
+static bool {\bfseries Hide} (string name, bool fade, int edge, float duration, bool use\+Async, string identifier)
+\item 
+\Hypertarget{class_uni_web_view_interface_a2097c76342d34ffa5104c8a046fdf0fa}\label{class_uni_web_view_interface_a2097c76342d34ffa5104c8a046fdf0fa} 
+static bool {\bfseries Animate\+To} (string name, int x, int y, int width, int height, float duration, float delay, string identifier)
+\item 
+\Hypertarget{class_uni_web_view_interface_a6cf38e20b0b9f6796b8ddd354ccde85c}\label{class_uni_web_view_interface_a6cf38e20b0b9f6796b8ddd354ccde85c} 
+static void {\bfseries Add\+Java\+Script} (string name, string js\+String, string identifier)
+\item 
+\Hypertarget{class_uni_web_view_interface_accdcd3d85fc6679149a3d1d4b5419dfe}\label{class_uni_web_view_interface_accdcd3d85fc6679149a3d1d4b5419dfe} 
+static void {\bfseries Evaluate\+Java\+Script} (string name, string js\+String, string identifier)
+\item 
+\Hypertarget{class_uni_web_view_interface_a1755b069bec6519bced31a566d53db96}\label{class_uni_web_view_interface_a1755b069bec6519bced31a566d53db96} 
+static void {\bfseries Add\+Url\+Scheme} (string name, string scheme)
+\item 
+\Hypertarget{class_uni_web_view_interface_aed7ed955ba4c8ea09b82285791a2551d}\label{class_uni_web_view_interface_aed7ed955ba4c8ea09b82285791a2551d} 
+static void {\bfseries Remove\+Url\+Scheme} (string name, string scheme)
+\item 
+\Hypertarget{class_uni_web_view_interface_ac33afd9aeca963cace88979142a744cb}\label{class_uni_web_view_interface_ac33afd9aeca963cace88979142a744cb} 
+static void {\bfseries Add\+Ssl\+Exception\+Domain} (string name, string domain)
+\item 
+\Hypertarget{class_uni_web_view_interface_af031ca8e2722ee8c5227fa4cd4216ee7}\label{class_uni_web_view_interface_af031ca8e2722ee8c5227fa4cd4216ee7} 
+static void {\bfseries Remove\+Ssl\+Exception\+Domain} (string name, string domain)
+\item 
+\Hypertarget{class_uni_web_view_interface_aabd71b88a1d13ce50b60fdb2999a6eac}\label{class_uni_web_view_interface_aabd71b88a1d13ce50b60fdb2999a6eac} 
+static void {\bfseries Set\+Header\+Field} (string name, string key, string value)
+\item 
+\Hypertarget{class_uni_web_view_interface_a2b3383bc3b4c0f067e0d4dec3fcf88cb}\label{class_uni_web_view_interface_a2b3383bc3b4c0f067e0d4dec3fcf88cb} 
+static void {\bfseries Set\+User\+Agent} (string name, string user\+Agent)
+\item 
+\Hypertarget{class_uni_web_view_interface_a7400e2b1ea24be6adf475a7792b88ebf}\label{class_uni_web_view_interface_a7400e2b1ea24be6adf475a7792b88ebf} 
+static string {\bfseries Get\+User\+Agent} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_a875d7117e2defb7623bc366f6c7e03a3}\label{class_uni_web_view_interface_a875d7117e2defb7623bc366f6c7e03a3} 
+static void {\bfseries Set\+Allow\+Auto\+Play} (bool flag)
+\item 
+\Hypertarget{class_uni_web_view_interface_adbe56504432f4454d2b1f460b84967d3}\label{class_uni_web_view_interface_adbe56504432f4454d2b1f460b84967d3} 
+static void {\bfseries Set\+Allow\+Inline\+Play} (bool flag)
+\item 
+\Hypertarget{class_uni_web_view_interface_a766da5df531632415e91395dc03b7acd}\label{class_uni_web_view_interface_a766da5df531632415e91395dc03b7acd} 
+static void {\bfseries Set\+Allow\+Java\+Script\+Open\+Window} (bool flag)
+\item 
+\Hypertarget{class_uni_web_view_interface_a786b81cb54ec4aa3e0bef32b2d53d8ef}\label{class_uni_web_view_interface_a786b81cb54ec4aa3e0bef32b2d53d8ef} 
+static void {\bfseries Set\+Allow\+File\+Access} (string name, bool flag)
+\item 
+\Hypertarget{class_uni_web_view_interface_a6b7095d6bf8640595c7ff25da21b6691}\label{class_uni_web_view_interface_a6b7095d6bf8640595c7ff25da21b6691} 
+static void {\bfseries Set\+Allow\+File\+Access\+From\+File\+URLs} (string name, bool flag)
+\item 
+\Hypertarget{class_uni_web_view_interface_acfb9369cc13c161198874dbfb926eeca}\label{class_uni_web_view_interface_acfb9369cc13c161198874dbfb926eeca} 
+static void {\bfseries Set\+Allow\+Universal\+Access\+From\+File\+URLs} (bool flag)
+\item 
+\Hypertarget{class_uni_web_view_interface_a4b95ce68d068d650b6bd1e1c4ee248c0}\label{class_uni_web_view_interface_a4b95ce68d068d650b6bd1e1c4ee248c0} 
+static void {\bfseries Set\+Java\+Script\+Enabled} (bool flag)
+\item 
+\Hypertarget{class_uni_web_view_interface_a8a83010603ee949b79fc0c51af732d44}\label{class_uni_web_view_interface_a8a83010603ee949b79fc0c51af732d44} 
+static void {\bfseries Clean\+Cache} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_af7503f1a21904780359bccc9ecbeb4be}\label{class_uni_web_view_interface_af7503f1a21904780359bccc9ecbeb4be} 
+static void {\bfseries Clear\+Cookies} ()
+\item 
+\Hypertarget{class_uni_web_view_interface_ad7927e1a94a94720992bbe458668411f}\label{class_uni_web_view_interface_ad7927e1a94a94720992bbe458668411f} 
+static void {\bfseries Set\+Cookie} (string url, string cookie, bool skip\+Encoding)
+\item 
+\Hypertarget{class_uni_web_view_interface_a3577835e84095edd2f21f0228cbe95b8}\label{class_uni_web_view_interface_a3577835e84095edd2f21f0228cbe95b8} 
+static void {\bfseries Remove\+Cookies} (string url, bool skip\+Encoding)
+\item 
+\Hypertarget{class_uni_web_view_interface_a65801aaec137c080e5e68a10b7ac6f32}\label{class_uni_web_view_interface_a65801aaec137c080e5e68a10b7ac6f32} 
+static void {\bfseries Remove\+Cookie} (string url, string key, bool skip\+Encoding)
+\item 
+\Hypertarget{class_uni_web_view_interface_af460192378c01c3dc64a8e352a5e13c1}\label{class_uni_web_view_interface_af460192378c01c3dc64a8e352a5e13c1} 
+static string {\bfseries Get\+Cookie} (string url, string key, bool skip\+Encoding)
+\item 
+\Hypertarget{class_uni_web_view_interface_a219f9fff5d238f628c17d59c13b5c532}\label{class_uni_web_view_interface_a219f9fff5d238f628c17d59c13b5c532} 
+static void {\bfseries Clear\+Http\+Auth\+Username\+Password} (string host, string realm)
+\item 
+\Hypertarget{class_uni_web_view_interface_acea75aeab0bf343335e33b319495cac8}\label{class_uni_web_view_interface_acea75aeab0bf343335e33b319495cac8} 
+static void {\bfseries Set\+Background\+Color} (string name, float r, float g, float b, float a)
+\item 
+\Hypertarget{class_uni_web_view_interface_a9fe179d305bd5623d0691c3a4c4600ed}\label{class_uni_web_view_interface_a9fe179d305bd5623d0691c3a4c4600ed} 
+static void {\bfseries Set\+Web\+View\+Alpha} (string name, float alpha)
+\item 
+\Hypertarget{class_uni_web_view_interface_aa852e1dfc52268de29a4bd6df081b827}\label{class_uni_web_view_interface_aa852e1dfc52268de29a4bd6df081b827} 
+static float {\bfseries Get\+Web\+View\+Alpha} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_a1aba08a2e18e45853e973bf711fed388}\label{class_uni_web_view_interface_a1aba08a2e18e45853e973bf711fed388} 
+static void {\bfseries Set\+Show\+Spinner\+While\+Loading} (string name, bool show)
+\item 
+\Hypertarget{class_uni_web_view_interface_af5dcccf5240db41eec77a70c487ffc8b}\label{class_uni_web_view_interface_af5dcccf5240db41eec77a70c487ffc8b} 
+static void {\bfseries Set\+Spinner\+Text} (string name, string text)
+\item 
+\Hypertarget{class_uni_web_view_interface_ad1425b2376ffa47cadd9a76cc569c14d}\label{class_uni_web_view_interface_ad1425b2376ffa47cadd9a76cc569c14d} 
+static bool {\bfseries Can\+Go\+Back} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_a79575232831db170e15dd42875ff1ff0}\label{class_uni_web_view_interface_a79575232831db170e15dd42875ff1ff0} 
+static bool {\bfseries Can\+Go\+Forward} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_a4547dd9c2a002400b9d165e57c5bb17f}\label{class_uni_web_view_interface_a4547dd9c2a002400b9d165e57c5bb17f} 
+static void {\bfseries Go\+Back} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_ab922032492e4235f6ebdda7c46bd9bb2}\label{class_uni_web_view_interface_ab922032492e4235f6ebdda7c46bd9bb2} 
+static void {\bfseries Go\+Forward} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_a1d65a22fcbe655900de5684a61487547}\label{class_uni_web_view_interface_a1d65a22fcbe655900de5684a61487547} 
+static void {\bfseries Set\+Open\+Links\+In\+External\+Browser} (string name, bool flag)
+\item 
+\Hypertarget{class_uni_web_view_interface_acaccd17e8a0b5aaff786eada6b869c73}\label{class_uni_web_view_interface_acaccd17e8a0b5aaff786eada6b869c73} 
+static void {\bfseries Set\+Horizontal\+Scroll\+Bar\+Enabled} (string name, bool enabled)
+\item 
+\Hypertarget{class_uni_web_view_interface_a2862794dd8ad9c9c7c80f4c9b3a42afd}\label{class_uni_web_view_interface_a2862794dd8ad9c9c7c80f4c9b3a42afd} 
+static void {\bfseries Set\+Vertical\+Scroll\+Bar\+Enabled} (string name, bool enabled)
+\item 
+\Hypertarget{class_uni_web_view_interface_ab85e56cec536f1fb42f9119448725535}\label{class_uni_web_view_interface_ab85e56cec536f1fb42f9119448725535} 
+static void {\bfseries Set\+Bounces\+Enabled} (string name, bool enabled)
+\item 
+\Hypertarget{class_uni_web_view_interface_a227cebb4ea982e224ac5d2a00dee0c6d}\label{class_uni_web_view_interface_a227cebb4ea982e224ac5d2a00dee0c6d} 
+static void {\bfseries Set\+Zoom\+Enabled} (string name, bool enabled)
+\item 
+\Hypertarget{class_uni_web_view_interface_a5c82fa3398fa27546ea75cbb07d99c6b}\label{class_uni_web_view_interface_a5c82fa3398fa27546ea75cbb07d99c6b} 
+static void {\bfseries Set\+Show\+Toolbar} (string name, bool show, bool animated, bool on\+Top, bool adjust\+Inset)
+\item 
+\Hypertarget{class_uni_web_view_interface_a4cc6aae4376994b24cf3e85af154ec87}\label{class_uni_web_view_interface_a4cc6aae4376994b24cf3e85af154ec87} 
+static void {\bfseries Set\+Toolbar\+Done\+Button\+Text} (string name, string text)
+\item 
+\Hypertarget{class_uni_web_view_interface_a3450affd21028896854e129055d18700}\label{class_uni_web_view_interface_a3450affd21028896854e129055d18700} 
+static void {\bfseries Set\+Toolbar\+Go\+Back\+Button\+Text} (string name, string text)
+\item 
+\Hypertarget{class_uni_web_view_interface_ac9250d0747660b55911be1f0b2713ca7}\label{class_uni_web_view_interface_ac9250d0747660b55911be1f0b2713ca7} 
+static void {\bfseries Set\+Toolbar\+Go\+Forward\+Button\+Text} (string name, string text)
+\item 
+\Hypertarget{class_uni_web_view_interface_ac53bb22d45ad839ab16781f0095602be}\label{class_uni_web_view_interface_ac53bb22d45ad839ab16781f0095602be} 
+static void {\bfseries Set\+Toolbar\+Tint\+Color} (string name, float r, float g, float b)
+\item 
+\Hypertarget{class_uni_web_view_interface_a2db1bccdc911bd8be4e6ffe4bdcd5903}\label{class_uni_web_view_interface_a2db1bccdc911bd8be4e6ffe4bdcd5903} 
+static void {\bfseries Set\+Toolbar\+Text\+Color} (string name, float r, float g, float b)
+\item 
+\Hypertarget{class_uni_web_view_interface_a2a1dc77f7e37df743c266a84ea01d296}\label{class_uni_web_view_interface_a2a1dc77f7e37df743c266a84ea01d296} 
+static void {\bfseries Set\+User\+Interaction\+Enabled} (string name, bool enabled)
+\item 
+\Hypertarget{class_uni_web_view_interface_aa6919500b64e33a1c3f4df3e7f41d04d}\label{class_uni_web_view_interface_aa6919500b64e33a1c3f4df3e7f41d04d} 
+static void {\bfseries Set\+Transparency\+Clicking\+Through\+Enabled} (string name, bool enabled)
+\item 
+\Hypertarget{class_uni_web_view_interface_aba2ba7e5b5848c521ab75cf36f658768}\label{class_uni_web_view_interface_aba2ba7e5b5848c521ab75cf36f658768} 
+static void {\bfseries Set\+Web\+Contents\+Debugging\+Enabled} (bool enabled)
+\item 
+\Hypertarget{class_uni_web_view_interface_a13a051a63fb884708ee2cbfedefc0330}\label{class_uni_web_view_interface_a13a051a63fb884708ee2cbfedefc0330} 
+static void {\bfseries Set\+Allow\+HTTPAuth\+Pop\+Up\+Window} (string name, bool flag)
+\item 
+\Hypertarget{class_uni_web_view_interface_af4b8cc5fd7a2e00e4d211dfdf2bb312b}\label{class_uni_web_view_interface_af4b8cc5fd7a2e00e4d211dfdf2bb312b} 
+static void {\bfseries Print} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_abd248657d9d09208d1a65eef74ee0bbd}\label{class_uni_web_view_interface_abd248657d9d09208d1a65eef74ee0bbd} 
+static void {\bfseries Capture\+Snapshot} (string name, string filename)
+\item 
+\Hypertarget{class_uni_web_view_interface_a3a41227dc1adf7f910dbd868c93689ca}\label{class_uni_web_view_interface_a3a41227dc1adf7f910dbd868c93689ca} 
+static void {\bfseries Set\+Callout\+Enabled} (string name, bool flag)
+\item 
+\Hypertarget{class_uni_web_view_interface_a856dc565abdd61d0c660a4bcdcf30fa9}\label{class_uni_web_view_interface_a856dc565abdd61d0c660a4bcdcf30fa9} 
+static void {\bfseries Set\+Support\+Multiple\+Windows} (string name, bool enabled, bool allow\+Java\+Script\+Opening)
+\item 
+\Hypertarget{class_uni_web_view_interface_a4586954f2d9b1b790da9039932c245e5}\label{class_uni_web_view_interface_a4586954f2d9b1b790da9039932c245e5} 
+static void {\bfseries Set\+Drag\+Interaction\+Enabled} (string name, bool flag)
+\item 
+\Hypertarget{class_uni_web_view_interface_a69ea50dba179059145ec3d553134ed3c}\label{class_uni_web_view_interface_a69ea50dba179059145ec3d553134ed3c} 
+static void {\bfseries Scroll\+To} (string name, int x, int y, bool animated)
+\item 
+\Hypertarget{class_uni_web_view_interface_a62f2cf4645fae69838c7f0d1fca10152}\label{class_uni_web_view_interface_a62f2cf4645fae69838c7f0d1fca10152} 
+static float {\bfseries Native\+Screen\+Width} ()
+\item 
+\Hypertarget{class_uni_web_view_interface_a6ff41a3a3cd6544880ad80c6c8fda4bb}\label{class_uni_web_view_interface_a6ff41a3a3cd6544880ad80c6c8fda4bb} 
+static float {\bfseries Native\+Screen\+Height} ()
+\item 
+\Hypertarget{class_uni_web_view_interface_a96d5249abd51aa91da350e2af253f005}\label{class_uni_web_view_interface_a96d5249abd51aa91da350e2af253f005} 
+static void {\bfseries Safe\+Browsing\+Init} (string name, string url)
+\item 
+\Hypertarget{class_uni_web_view_interface_ab6d5413cc414d376f2bc89ea02fde47a}\label{class_uni_web_view_interface_ab6d5413cc414d376f2bc89ea02fde47a} 
+static void {\bfseries Safe\+Browsing\+Set\+Toolbar\+Color} (string name, float r, float g, float b)
+\item 
+\Hypertarget{class_uni_web_view_interface_aca3f97247992265e90c16b53276f2191}\label{class_uni_web_view_interface_aca3f97247992265e90c16b53276f2191} 
+static void {\bfseries Safe\+Browsing\+Show} (string name)
+\item 
+\Hypertarget{class_uni_web_view_interface_a8989c3f9e1fcfe57d0da1285eaf9a2c7}\label{class_uni_web_view_interface_a8989c3f9e1fcfe57d0da1285eaf9a2c7} 
+static void {\bfseries Check\+Platform} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Uni\+Web\+View/\+Interface/Uni\+Web\+View\+Placeholder.\+cs\end{DoxyCompactItemize}

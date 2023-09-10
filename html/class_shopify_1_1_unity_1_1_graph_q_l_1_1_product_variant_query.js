@@ -1,0 +1,25 @@
+var class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query =
+[
+    [ "ProductVariantQuery", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#ad705369d0abb6fca7b3cf0c2d0700745", null ],
+    [ "available", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#aabb1b8806a75f1a383eceb83faa97f1f", null ],
+    [ "availableForSale", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#aa8a3b02ee6bbeb150ffb9e691f257a85", null ],
+    [ "compareAtPrice", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#ad7c19eaf00ae16de86fa882cf62e136c", null ],
+    [ "compareAtPriceV2", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#a6f8077b13305cadf3a604009f3f7f1d9", null ],
+    [ "id", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#a9ac92cded1a0a6f898d54d93575586e3", null ],
+    [ "image", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#a66298e9b6da3c88135bb7a87b42f4463", null ],
+    [ "metafield", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#a1827b5a0b109f1dac7f6b19ed9935411", null ],
+    [ "metafields", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#af106c74e3f9f3ef310f87e4263255cda", null ],
+    [ "presentmentPrices", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#a2f43c9815305f450480e678960df1f03", null ],
+    [ "presentmentUnitPrices", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#a96fc87c2e2e4dd892fac72f7fc91c597", null ],
+    [ "price", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#ac012b883f83c2ac026d20ae60a39fd01", null ],
+    [ "priceV2", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#a06438a9ca735096897dc7d04a0254fe3", null ],
+    [ "product", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#ae9ed92a17b87ecd7ab193a8e0c7fc474", null ],
+    [ "requiresShipping", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#aa0dadf0a645787d9350ed25dc31b58e1", null ],
+    [ "selectedOptions", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#aa30112fa9dd8e74c9284b98a760fd7ee", null ],
+    [ "sku", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#a17919751fda32fcec5adbbf1b37afab3", null ],
+    [ "title", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#a2cb7a90cf616456d8e4cafeccb8e03a3", null ],
+    [ "unitPrice", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#a1e2ae805503713437c1e8f11a2f551ef", null ],
+    [ "unitPriceMeasurement", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#a00071c093f22f1df93dee8b47d1627a0", null ],
+    [ "weight", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#af2eee3a9c10d948dd326de9132cbad88", null ],
+    [ "weightUnit", "class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query.html#a3a69c6c6ac812fc2f3bdf8b887f35dd8", null ]
+];

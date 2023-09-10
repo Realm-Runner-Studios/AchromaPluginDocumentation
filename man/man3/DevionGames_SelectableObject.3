@@ -1,0 +1,107 @@
+.TH "DevionGames.SelectableObject" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DevionGames.SelectableObject
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBDevionGames\&.CallbackHandler\fP, and \fBDevionGames\&.ISelectable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBOnSelect\fP ()"
+.br
+.ti -1c
+.RI "void \fBOnDeselect\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "void \fBRegisterListener\fP (string eventID, UnityAction< \fBCallbackEventData\fP > call)"
+.br
+.ti -1c
+.RI "void \fBRemoveListener\fP (string eventID, UnityAction< \fBCallbackEventData\fP > call)"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static \fBSelectableObject\fP \fBcurrent\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBAwake\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBStart\fP ()"
+.br
+.in -1c
+
+Protected Member Functions inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "void \fBExecute\fP (string eventID, \fBCallbackEventData\fP eventData)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "Vector3 \fBposition\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "override string[] \fBCallbacks\fP\fC [get]\fP"
+.br
+.in -1c
+
+Properties inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "string[] \fBCallbacks\fP\fC [get]\fP"
+.br
+.in -1c
+
+Properties inherited from \fBDevionGames\&.ISelectable\fP
+.in +1c
+.ti -1c
+.RI "bool \fBenabled\fP\fC [get]\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Public Attributes inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "List< \fBCallbackHandler\&.Entry\fP > \fBdelegates\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void DevionGames\&.SelectableObject\&.OnDeselect ()"
+
+.PP
+Implements \fBDevionGames\&.ISelectable\fP\&.
+.SS "void DevionGames\&.SelectableObject\&.OnSelect ()"
+
+.PP
+Implements \fBDevionGames\&.ISelectable\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "Vector3 DevionGames\&.SelectableObject\&.position\fC [get]\fP"
+
+.PP
+Implements \fBDevionGames\&.ISelectable\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

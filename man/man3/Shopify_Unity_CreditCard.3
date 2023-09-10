@@ -1,0 +1,97 @@
+.TH "Shopify.Unity.CreditCard" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.CreditCard \- Credit card information used for a payment\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, and ICloneable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCreditCard\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "string \fBbrand\fP ()"
+.br
+.RI "The brand of the credit card\&. "
+.ti -1c
+.RI "long? \fBexpiryMonth\fP ()"
+.br
+.RI "The expiry month of the credit card\&. "
+.ti -1c
+.RI "long? \fBexpiryYear\fP ()"
+.br
+.RI "The expiry year of the credit card\&. "
+.ti -1c
+.RI "string \fBfirstDigits\fP ()"
+.br
+.RI "The credit card's BIN number\&. "
+.ti -1c
+.RI "string \fBfirstName\fP ()"
+.br
+.RI "The first name of the card holder\&. "
+.ti -1c
+.RI "string \fBlastDigits\fP ()"
+.br
+.RI "The last 4 digits of the credit card\&. "
+.ti -1c
+.RI "string \fBlastName\fP ()"
+.br
+.RI "The last name of the card holder\&. "
+.ti -1c
+.RI "string \fBmaskedNumber\fP ()"
+.br
+.RI "The masked credit card number with only the last 4 digits displayed\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Credit card information used for a payment\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.CreditCard\&.CreditCard (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for CreditCard
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

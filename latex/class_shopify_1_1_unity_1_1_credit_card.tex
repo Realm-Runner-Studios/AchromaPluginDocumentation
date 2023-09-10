@@ -1,0 +1,89 @@
+\doxysection{Shopify.\+Unity.\+Credit\+Card Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_credit_card}{}\label{class_shopify_1_1_unity_1_1_credit_card}\index{Shopify.Unity.CreditCard@{Shopify.Unity.CreditCard}}
+
+
+Credit card information used for a payment.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Credit\+Card\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Credit\+Card\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_credit_card_ad9ce3c0db5e34b425baafcd00dacec23}{Credit\+Card}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_credit_card_ab07ecc4fee26ea910065f773ac95947a}\label{class_shopify_1_1_unity_1_1_credit_card_ab07ecc4fee26ea910065f773ac95947a} 
+string {\bfseries brand} ()
+\begin{DoxyCompactList}\small\item\em The brand of the credit card. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_credit_card_a3984ff269fb50a5d5e1c319b3dba0f10}\label{class_shopify_1_1_unity_1_1_credit_card_a3984ff269fb50a5d5e1c319b3dba0f10} 
+long? {\bfseries expiry\+Month} ()
+\begin{DoxyCompactList}\small\item\em The expiry month of the credit card. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_credit_card_a8b6e34450b5980d434ceef4851f395e0}\label{class_shopify_1_1_unity_1_1_credit_card_a8b6e34450b5980d434ceef4851f395e0} 
+long? {\bfseries expiry\+Year} ()
+\begin{DoxyCompactList}\small\item\em The expiry year of the credit card. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_credit_card_a4bca2e9458a9b588a688048154c12152}\label{class_shopify_1_1_unity_1_1_credit_card_a4bca2e9458a9b588a688048154c12152} 
+string {\bfseries first\+Digits} ()
+\begin{DoxyCompactList}\small\item\em The credit card\textquotesingle{}s BIN number. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_credit_card_ab37e269c0981db8d57dad4bb6aac7a04}\label{class_shopify_1_1_unity_1_1_credit_card_ab37e269c0981db8d57dad4bb6aac7a04} 
+string {\bfseries first\+Name} ()
+\begin{DoxyCompactList}\small\item\em The first name of the card holder. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_credit_card_ab85a9c0ed9800234e89ac3389e449864}\label{class_shopify_1_1_unity_1_1_credit_card_ab85a9c0ed9800234e89ac3389e449864} 
+string {\bfseries last\+Digits} ()
+\begin{DoxyCompactList}\small\item\em The last 4 digits of the credit card. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_credit_card_acedd6379bb4859f91a1195ad5ab034fd}\label{class_shopify_1_1_unity_1_1_credit_card_acedd6379bb4859f91a1195ad5ab034fd} 
+string {\bfseries last\+Name} ()
+\begin{DoxyCompactList}\small\item\em The last name of the card holder. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_credit_card_a169f89e811a45d77ce2d16dbf2fbfcd1}\label{class_shopify_1_1_unity_1_1_credit_card_a169f89e811a45d77ce2d16dbf2fbfcd1} 
+string {\bfseries masked\+Number} ()
+\begin{DoxyCompactList}\small\item\em The masked credit card number with only the last 4 digits displayed. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_credit_card_aedcd815dbaa4642d8af89e9997a3bfd2}\label{class_shopify_1_1_unity_1_1_credit_card_aedcd815dbaa4642d8af89e9997a3bfd2} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Credit card information used for a payment. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_credit_card_ad9ce3c0db5e34b425baafcd00dacec23}\label{class_shopify_1_1_unity_1_1_credit_card_ad9ce3c0db5e34b425baafcd00dacec23} 
+\index{Shopify.Unity.CreditCard@{Shopify.Unity.CreditCard}!CreditCard@{CreditCard}}
+\index{CreditCard@{CreditCard}!Shopify.Unity.CreditCard@{Shopify.Unity.CreditCard}}
+\doxysubsubsection{\texorpdfstring{CreditCard()}{CreditCard()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Credit\+Card.\+Credit\+Card (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Credit\+Card\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Credit\+Card.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,18 @@
+digraph "Shopify.Unity.GraphQL.ImageQuery.transformedSrc"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Shopify.Unity.GraphQL.Image\lQuery.transformedSrc",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="The location of the transformed image as a URL."];
+  Node1 -> Node2 [id="edge6_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Shopify.Unity.SDK.Arguments.Add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_shopify_1_1_unity_1_1_s_d_k_1_1_arguments.html#abef16f302c9cace9158afd6dd9f1443a",tooltip="Adds an argument."];
+  Node2 -> Node3 [id="edge7_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Shopify.Unity.SDK.InputValue\lToString.Get",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_shopify_1_1_unity_1_1_s_d_k_1_1_input_value_to_string.html#a9e322e30591200883a1bd0ea67f28bf7",tooltip="Converts a C# value/object to a GraphQL string value/object."];
+  Node3 -> Node4 [id="edge8_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Shopify.Unity.SDK.InputValue\lToString.GetList",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_shopify_1_1_unity_1_1_s_d_k_1_1_input_value_to_string.html#a85551896f4b72b9c5a12f79527837600",tooltip="Returns a string representing a GraphQL list from a C# iteratable object implementing IList."];
+  Node4 -> Node3 [id="edge9_Node000004_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge10_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Shopify.Unity.SDK.Arguments.\lToString",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_shopify_1_1_unity_1_1_s_d_k_1_1_arguments.html#af3b78af577470733593464dd4ebd344c",tooltip="Returns a string that is the a GraphQL argument list."];
+}

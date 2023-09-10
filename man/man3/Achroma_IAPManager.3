@@ -1,0 +1,71 @@
+.TH "Achroma.IAPManager" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.IAPManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour, and IDetailedStoreListener\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "async void \fBInitialize\fP (List< \fBAchromaPurchaseOption\fP > purchaseOptions, UnityAction< bool, string > callback)"
+.br
+.ti -1c
+.RI "\fBAchromaPurchaseOption\fP \fBGetPurchaseOption\fP (int index)"
+.br
+.ti -1c
+.RI "\fBAchromaPurchaseOption\fP \fBGetPurchaseOptionByString\fP (string id)"
+.br
+.ti -1c
+.RI "void \fBInitializePurchasing\fP ()"
+.br
+.ti -1c
+.RI "bool \fBIsInitialized\fP ()"
+.br
+.ti -1c
+.RI "void \fBBuy\fP (string ProductId, UnityAction< bool, string > result)"
+.br
+.ti -1c
+.RI "void \fBRestorePurchases\fP ()"
+.br
+.ti -1c
+.RI "void \fBOnInitialized\fP (IStoreController controller, IExtensionProvider extensions)"
+.br
+.ti -1c
+.RI "void \fBOnInitializeFailed\fP (InitializationFailureReason error)"
+.br
+.ti -1c
+.RI "PurchaseProcessingResult \fBProcessPurchase\fP (PurchaseEventArgs args)"
+.br
+.ti -1c
+.RI "void \fBOnPurchaseFailed\fP (Product product, PurchaseFailureReason failureReason)"
+.br
+.ti -1c
+.RI "void \fBOnInitializeFailed\fP (InitializationFailureReason error, string message)"
+.br
+.ti -1c
+.RI "void \fBOnPurchaseFailed\fP (Product product, PurchaseFailureDescription failureDescription)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBenvironment\fP = 'production'"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "static \fBIAPManager\fP \fBInstance\fP\fC [get]\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

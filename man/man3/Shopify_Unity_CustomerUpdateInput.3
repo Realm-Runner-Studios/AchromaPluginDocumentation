@@ -1,0 +1,154 @@
+.TH "Shopify.Unity.CustomerUpdateInput" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.CustomerUpdateInput \- Specifies the fields required to update the Customer information\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.InputBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCustomerUpdateInput\fP (string \fBfirstName\fP=null, string \fBlastName\fP=null, string \fBemail\fP=null, string \fBphone\fP=null, string \fBpassword\fP=null, bool? \fBacceptsMarketing\fP=null)"
+.br
+.ti -1c
+.RI "\fBCustomerUpdateInput\fP (Dictionary< string, object > dataJSON)"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.InputBase\fP
+.in +1c
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Returns a string representing a GraphQL input object\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "const string \fBfirstNameFieldKey\fP = 'firstName'"
+.br
+.ti -1c
+.RI "const string \fBlastNameFieldKey\fP = 'lastName'"
+.br
+.ti -1c
+.RI "const string \fBemailFieldKey\fP = 'email'"
+.br
+.ti -1c
+.RI "const string \fBphoneFieldKey\fP = 'phone'"
+.br
+.ti -1c
+.RI "const string \fBpasswordFieldKey\fP = 'password'"
+.br
+.ti -1c
+.RI "const string \fBacceptsMarketingFieldKey\fP = 'acceptsMarketing'"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBfirstName\fP\fC [get, set]\fP"
+.br
+.RI "The customer’s first name\&. "
+.ti -1c
+.RI "string \fBlastName\fP\fC [get, set]\fP"
+.br
+.RI "The customer’s last name\&. "
+.ti -1c
+.RI "string \fBemail\fP\fC [get, set]\fP"
+.br
+.RI "The customer’s email\&. "
+.ti -1c
+.RI "string \fBphone\fP\fC [get, set]\fP"
+.br
+.RI "A unique phone number for the customer\&. "
+.ti -1c
+.RI "string \fBpassword\fP\fC [get, set]\fP"
+.br
+.RI "The login password used by the customer\&. "
+.ti -1c
+.RI "bool? \fBacceptsMarketing\fP\fC [get, set]\fP"
+.br
+.RI "Indicates whether the customer has consented to be sent marketing material via email\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.InputBase\fP
+.in +1c
+.ti -1c
+.RI "void \fBSet\fP (string key, object value)"
+.br
+.ti -1c
+.RI "object \fBGet\fP (string key)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Specifies the fields required to update the Customer information\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.CustomerUpdateInput\&.CustomerUpdateInput (string firstName = \fCnull\fP, string lastName = \fCnull\fP, string email = \fCnull\fP, string phone = \fCnull\fP, string password = \fCnull\fP, bool? acceptsMarketing = \fCnull\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirstName\fP The customer’s first name\&. 
+.br
+\fIlastName\fP The customer’s last name\&. 
+.br
+\fIemail\fP The customer’s email\&. 
+.br
+\fIphone\fP A unique phone number for the customer\&.
+.RE
+.PP
+Formatted using E\&.164 standard\&. For example, \fI+16135551111\fP\&. To remove the phone number, specify \fCnull\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpassword\fP The login password used by the customer\&. 
+.br
+\fIacceptsMarketing\fP Indicates whether the customer has consented to be sent marketing material via email\&. 
+.RE
+.PP
+
+.SS "Shopify\&.Unity\&.CustomerUpdateInput\&.CustomerUpdateInput (Dictionary< string, object > dataJSON)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirstName\fP The customer’s first name\&. 
+.br
+\fIlastName\fP The customer’s last name\&. 
+.br
+\fIemail\fP The customer’s email\&. 
+.br
+\fIphone\fP A unique phone number for the customer\&.
+.RE
+.PP
+Formatted using E\&.164 standard\&. For example, \fI+16135551111\fP\&. To remove the phone number, specify \fCnull\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpassword\fP The login password used by the customer\&. 
+.br
+\fIacceptsMarketing\fP Indicates whether the customer has consented to be sent marketing material via email\&. 
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "string Shopify\&.Unity\&.CustomerUpdateInput\&.phone\fC [get]\fP, \fC [set]\fP"
+
+.PP
+A unique phone number for the customer\&. Formatted using E\&.164 standard\&. For example, \fI+16135551111\fP\&. To remove the phone number, specify \fCnull\fP\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

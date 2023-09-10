@@ -1,0 +1,51 @@
+.TH "Achroma.AchromaManager" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBAchroma\&.AchromaParentController\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBLoadAchromaPlugin\fP (UnityAction< bool, string > result)"
+.br
+.RI "Method to load everything that's needed to call \fBAchroma\fP plugin features\&. "
+.in -1c
+
+Public Member Functions inherited from \fBAchroma\&.AchromaParentController\fP
+.in +1c
+.ti -1c
+.RI "void \fBLoadScene\fP (string sceneName, string message, Object instanceToCheckExistance=null, LoadSceneMode sceneMode=LoadSceneMode\&.Single, UnityAction result=null, bool forceReload=false, bool hideLoadingScreenAfterLoaded=true)"
+.br
+.RI "This method loads a scene synchronously and returns a callback when the scene is ended loading\&. "
+.ti -1c
+.RI "void \fBUnloadScene\fP (string name)"
+.br
+.RI "This method simply unloads a scene\&. "
+.ti -1c
+.RI "void \fBLoadPreviousScene\fP (string message)"
+.br
+.RI "This method calls the scene that called the current scene back\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void Achroma\&.AchromaManager\&.LoadAchromaPlugin (UnityAction< bool, string > result)"
+
+.PP
+Method to load everything that's needed to call \fBAchroma\fP plugin features\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP callback function, returns success flag, field name (in case of error) and error message (if any)
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

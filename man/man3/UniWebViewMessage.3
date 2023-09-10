@@ -1,0 +1,65 @@
+.TH "UniWebViewMessage" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UniWebViewMessage \- A structure represents a message from webview\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUniWebViewMessage\fP (string rawMessage)"
+.br
+.RI "Initializes a new instance of the \fC\fBUniWebViewMessage\fP\fP struct\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBRawMessage\fP\fC [get]\fP"
+.br
+.RI "Gets the raw message\&. It is the original url which initialized this message\&. "
+.ti -1c
+.RI "string \fBScheme\fP\fC [get]\fP"
+.br
+.RI "The url scheme of this \fBUniWebViewMessage\fP\&. 'uniwebview' was added to message scheme list by default\&. You can add your own scheme by using \fC\fBUniWebView\&.AddUrlScheme\fP\fP\&. "
+.ti -1c
+.RI "string \fBPath\fP\fC [get]\fP"
+.br
+.RI "The path of this \fBUniWebViewMessage\fP\&. This will be the decoded value for the path of original url\&. "
+.ti -1c
+.RI "Dictionary< string, string > \fBArgs\fP\fC [get]\fP"
+.br
+.RI "The arguments of this \fBUniWebViewMessage\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A structure represents a message from webview\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "UniWebViewMessage\&.UniWebViewMessage (string rawMessage)"
+
+.PP
+Initializes a new instance of the \fC\fBUniWebViewMessage\fP\fP struct\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrawMessage\fP Raw message which will be parsed to a \fBUniWebViewMessage\fP\&.
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "Dictionary<string, string> UniWebViewMessage\&.Args\fC [get]\fP"
+
+.PP
+The arguments of this \fBUniWebViewMessage\fP\&. When received url 'uniwebview://yourPath?param1=value1&param2=value2', the args is a Dictionary with: Args['param1'] = value1, Args['param2'] = value2
+.PP
+Both the key and valud will be url decoded from the original url\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

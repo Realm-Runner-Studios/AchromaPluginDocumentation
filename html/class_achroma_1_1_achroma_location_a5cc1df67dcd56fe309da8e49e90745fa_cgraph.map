@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaLocation.GetLocationSprite" name="Achroma.AchromaLocation.GetLocationSprite">
+<area shape="rect" id="Node000001" title="Gets the sprite for a given location name in the array." alt="" coords="5,5,188,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_asset_manager.html#aaca5b4e4b5dace44e0fbced0dcc7d69b" title="Instantiate a sprite from an Asset Bundle, given the name of the asset bundle and the name of the obj..." alt="" coords="236,5,452,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,23,221,23,221,28,188,28"/>
+</map>

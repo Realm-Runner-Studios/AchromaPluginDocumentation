@@ -1,0 +1,2856 @@
+.TH "Shopify.Unity" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBApiVersion\fP"
+.br
+.RI "A version of the API\&. "
+.ti -1c
+.RI "class \fBAppliedGiftCard\fP"
+.br
+.RI "Details about the gift card used on the checkout\&. "
+.ti -1c
+.RI "class \fBArticle\fP"
+.br
+.RI "An article in an online store blog\&. "
+.ti -1c
+.RI "class \fBArticleAuthor\fP"
+.br
+.RI "The author of an article\&. "
+.ti -1c
+.RI "class \fBArticleConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Articles\&. \&. ArticleConnection can be cast to \fCList<Article>\fP\&. "
+.ti -1c
+.RI "class \fBArticleEdge\fP"
+.br
+.RI "An auto-generated type which holds one Article and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBAttribute\fP"
+.br
+.RI "Represents a generic custom attribute\&. "
+.ti -1c
+.RI "class \fBAttributeInput\fP"
+.br
+.RI "Specifies the input fields required for an attribute\&. "
+.ti -1c
+.RI "class \fBAutomaticDiscountApplication\fP"
+.br
+.RI "Automatic discount applications capture the intentions of a discount that was automatically applied\&. "
+.ti -1c
+.RI "class \fBAvailableShippingRates\fP"
+.br
+.RI "A collection of available shipping rates for a checkout\&. "
+.ti -1c
+.RI "class \fBBlog\fP"
+.br
+.RI "An online store blog\&. "
+.ti -1c
+.RI "class \fBBlogConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Blogs\&. \&. BlogConnection can be cast to \fCList<Blog>\fP\&. "
+.ti -1c
+.RI "class \fBBlogEdge\fP"
+.br
+.RI "An auto-generated type which holds one Blog and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBCart\fP"
+.br
+.RI "Manages line items for an order\&. Can also be used to generate a web checkout link to check out in browser\&. "
+.ti -1c
+.RI "class \fBCartState\fP"
+.br
+.RI "Internal state class for a Cart\&. "
+.ti -1c
+.RI "class \fBCheckout\fP"
+.br
+.RI "A container for all the information required to checkout items and pay\&. "
+.ti -1c
+.RI "class \fBCheckoutAttributesUpdateInput\fP"
+.br
+.RI "Specifies the fields required to update a checkout's attributes\&. "
+.ti -1c
+.RI "class \fBCheckoutAttributesUpdatePayload\fP"
+.br
+.RI "Return type for \fCcheckoutAttributesUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutAttributesUpdateV2input\fP"
+.br
+.RI "Specifies the fields required to update a checkout's attributes\&. "
+.ti -1c
+.RI "class \fBCheckoutAttributesUpdateV2payload\fP"
+.br
+.RI "Return type for \fCcheckoutAttributesUpdateV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCompleteFreePayload\fP"
+.br
+.RI "Return type for \fCcheckoutCompleteFree\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCompleteWithCreditCardPayload\fP"
+.br
+.RI "Return type for \fCcheckoutCompleteWithCreditCard\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCompleteWithCreditCardV2payload\fP"
+.br
+.RI "Return type for \fCcheckoutCompleteWithCreditCardV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCompleteWithTokenizedPaymentPayload\fP"
+.br
+.RI "Return type for \fCcheckoutCompleteWithTokenizedPayment\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCompleteWithTokenizedPaymentV2payload\fP"
+.br
+.RI "Return type for \fCcheckoutCompleteWithTokenizedPaymentV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCreateInput\fP"
+.br
+.RI "Specifies the fields required to create a checkout\&. "
+.ti -1c
+.RI "class \fBCheckoutCreatePayload\fP"
+.br
+.RI "Return type for \fCcheckoutCreate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCustomerAssociatePayload\fP"
+.br
+.RI "Return type for \fCcheckoutCustomerAssociate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCustomerAssociateV2payload\fP"
+.br
+.RI "Return type for \fCcheckoutCustomerAssociateV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCustomerDisassociatePayload\fP"
+.br
+.RI "Return type for \fCcheckoutCustomerDisassociate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCustomerDisassociateV2payload\fP"
+.br
+.RI "Return type for \fCcheckoutCustomerDisassociateV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutDiscountCodeApplyPayload\fP"
+.br
+.RI "Return type for \fCcheckoutDiscountCodeApply\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutDiscountCodeApplyV2payload\fP"
+.br
+.RI "Return type for \fCcheckoutDiscountCodeApplyV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutDiscountCodeRemovePayload\fP"
+.br
+.RI "Return type for \fCcheckoutDiscountCodeRemove\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutEmailUpdatePayload\fP"
+.br
+.RI "Return type for \fCcheckoutEmailUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutEmailUpdateV2payload\fP"
+.br
+.RI "Return type for \fCcheckoutEmailUpdateV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutGiftCardApplyPayload\fP"
+.br
+.RI "Return type for \fCcheckoutGiftCardApply\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutGiftCardRemovePayload\fP"
+.br
+.RI "Return type for \fCcheckoutGiftCardRemove\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutGiftCardRemoveV2payload\fP"
+.br
+.RI "Return type for \fCcheckoutGiftCardRemoveV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutGiftCardsAppendPayload\fP"
+.br
+.RI "Return type for \fCcheckoutGiftCardsAppend\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItem\fP"
+.br
+.RI "A single line item in the checkout, grouped by variant and attributes\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple CheckoutLineItems\&. \&. CheckoutLineItemConnection can be cast to \fCList<CheckoutLineItem>\fP\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemEdge\fP"
+.br
+.RI "An auto-generated type which holds one CheckoutLineItem and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemInput\fP"
+.br
+.RI "Specifies the input fields to create a line item on a checkout\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemsAddPayload\fP"
+.br
+.RI "Return type for \fCcheckoutLineItemsAdd\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemsRemovePayload\fP"
+.br
+.RI "Return type for \fCcheckoutLineItemsRemove\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemsReplacePayload\fP"
+.br
+.RI "Return type for \fCcheckoutLineItemsReplace\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemsUpdatePayload\fP"
+.br
+.RI "Return type for \fCcheckoutLineItemsUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemUpdateInput\fP"
+.br
+.RI "Specifies the input fields to update a line item on the checkout\&. "
+.ti -1c
+.RI "class \fBCheckoutShippingAddressUpdatePayload\fP"
+.br
+.RI "Return type for \fCcheckoutShippingAddressUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutShippingAddressUpdateV2payload\fP"
+.br
+.RI "Return type for \fCcheckoutShippingAddressUpdateV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutShippingLineUpdatePayload\fP"
+.br
+.RI "Return type for \fCcheckoutShippingLineUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutUserError\fP"
+.br
+.RI "Represents an error that happens during execution of a checkout mutation\&. "
+.ti -1c
+.RI "class \fBCollection\fP"
+.br
+.RI "A collection represents a grouping of products that a shop owner can create to organize them or make their shops easier to browse\&. "
+.ti -1c
+.RI "class \fBCollectionConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Collections\&. \&. CollectionConnection can be cast to \fCList<Collection>\fP\&. "
+.ti -1c
+.RI "class \fBCollectionEdge\fP"
+.br
+.RI "An auto-generated type which holds one Collection and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBComment\fP"
+.br
+.RI "A comment on an article\&. "
+.ti -1c
+.RI "class \fBCommentAuthor\fP"
+.br
+.RI "The author of a comment\&. "
+.ti -1c
+.RI "class \fBCommentConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Comments\&. \&. CommentConnection can be cast to \fCList<Comment>\fP\&. "
+.ti -1c
+.RI "class \fBCommentEdge\fP"
+.br
+.RI "An auto-generated type which holds one Comment and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBCreditCard\fP"
+.br
+.RI "Credit card information used for a payment\&. "
+.ti -1c
+.RI "class \fBCreditCardPaymentInput\fP"
+.br
+.RI "Specifies the fields required to complete a checkout with a \fBShopify\fP vaulted credit card payment\&. "
+.ti -1c
+.RI "class \fBCreditCardPaymentInputV2\fP"
+.br
+.RI "Specifies the fields required to complete a checkout with a \fBShopify\fP vaulted credit card payment\&. "
+.ti -1c
+.RI "class \fBCustomer\fP"
+.br
+.RI "A customer represents a customer account with the shop\&. Customer accounts store contact information for the customer, saving logged-in customers the trouble of having to provide it at every checkout\&. "
+.ti -1c
+.RI "class \fBCustomerAccessToken\fP"
+.br
+.RI "A CustomerAccessToken represents the unique token required to make modifications to the customer object\&. "
+.ti -1c
+.RI "class \fBCustomerAccessTokenCreateInput\fP"
+.br
+.RI "Specifies the input fields required to create a customer access token\&. "
+.ti -1c
+.RI "class \fBCustomerAccessTokenCreatePayload\fP"
+.br
+.RI "Return type for \fCcustomerAccessTokenCreate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerAccessTokenDeletePayload\fP"
+.br
+.RI "Return type for \fCcustomerAccessTokenDelete\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerAccessTokenRenewPayload\fP"
+.br
+.RI "Return type for \fCcustomerAccessTokenRenew\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerActivateInput\fP"
+.br
+.RI "Specifies the input fields required to activate a customer\&. "
+.ti -1c
+.RI "class \fBCustomerActivatePayload\fP"
+.br
+.RI "Return type for \fCcustomerActivate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerAddressCreatePayload\fP"
+.br
+.RI "Return type for \fCcustomerAddressCreate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerAddressDeletePayload\fP"
+.br
+.RI "Return type for \fCcustomerAddressDelete\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerAddressUpdatePayload\fP"
+.br
+.RI "Return type for \fCcustomerAddressUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerCreateInput\fP"
+.br
+.RI "Specifies the fields required to create a new customer\&. "
+.ti -1c
+.RI "class \fBCustomerCreatePayload\fP"
+.br
+.RI "Return type for \fCcustomerCreate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerDefaultAddressUpdatePayload\fP"
+.br
+.RI "Return type for \fCcustomerDefaultAddressUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerRecoverPayload\fP"
+.br
+.RI "Return type for \fCcustomerRecover\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerResetByUrlPayload\fP"
+.br
+.RI "Return type for \fCcustomerResetByUrl\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerResetInput\fP"
+.br
+.RI "Specifies the fields required to reset a customer’s password\&. "
+.ti -1c
+.RI "class \fBCustomerResetPayload\fP"
+.br
+.RI "Return type for \fCcustomerReset\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerUpdateInput\fP"
+.br
+.RI "Specifies the fields required to update the Customer information\&. "
+.ti -1c
+.RI "class \fBCustomerUpdatePayload\fP"
+.br
+.RI "Return type for \fCcustomerUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerUserError\fP"
+.br
+.RI "Represents an error that happens during execution of a customer mutation\&. "
+.ti -1c
+.RI "class \fBDiscountAllocation\fP"
+.br
+.RI "An amount discounting the line that has been allocated by a discount\&. "
+.ti -1c
+.RI "interface \fBDiscountApplication\fP"
+.br
+.RI "Discount applications capture the intentions of a discount source at the time of application\&. "
+.ti -1c
+.RI "class \fBDiscountApplicationConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple DiscountApplications\&. \&. DiscountApplicationConnection can be cast to \fCList<DiscountApplication>\fP\&. "
+.ti -1c
+.RI "class \fBDiscountApplicationEdge\fP"
+.br
+.RI "An auto-generated type which holds one DiscountApplication and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBDiscountCodeApplication\fP"
+.br
+.RI "Discount code applications capture the intentions of a discount code at the time that it is applied\&. "
+.ti -1c
+.RI "interface \fBDisplayableError\fP"
+.br
+.RI "Represents an error in the input of a mutation\&. "
+.ti -1c
+.RI "class \fBDomain\fP"
+.br
+.RI "Represents a web address\&. "
+.ti -1c
+.RI "class \fBExternalVideo\fP"
+.br
+.RI "Represents a video hosted outside of \fBShopify\fP\&. "
+.ti -1c
+.RI "class \fBFulfillment\fP"
+.br
+.RI "Represents a single fulfillment in an order\&. "
+.ti -1c
+.RI "class \fBFulfillmentLineItem\fP"
+.br
+.RI "Represents a single line item in a fulfillment\&. There is at most one fulfillment line item for each order line item\&. "
+.ti -1c
+.RI "class \fBFulfillmentLineItemConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple FulfillmentLineItems\&. \&. FulfillmentLineItemConnection can be cast to \fCList<FulfillmentLineItem>\fP\&. "
+.ti -1c
+.RI "class \fBFulfillmentLineItemEdge\fP"
+.br
+.RI "An auto-generated type which holds one FulfillmentLineItem and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBFulfillmentTrackingInfo\fP"
+.br
+.RI "Tracking information associated with the fulfillment\&. "
+.ti -1c
+.RI "interface \fBHasMetafields\fP"
+.br
+.RI "Represents information about the metafields associated to the specified resource\&. "
+.ti -1c
+.RI "class \fBImage\fP"
+.br
+.RI "Represents an image resource\&. "
+.ti -1c
+.RI "class \fBImageConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Images\&. \&. ImageConnection can be cast to \fCList<Image>\fP\&. "
+.ti -1c
+.RI "class \fBImageEdge\fP"
+.br
+.RI "An auto-generated type which holds one Image and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBMailingAddress\fP"
+.br
+.RI "Represents a mailing address for customers and shipping\&. "
+.ti -1c
+.RI "class \fBMailingAddressConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple MailingAddresses\&. \&. MailingAddressConnection can be cast to \fCList<MailingAddress>\fP\&. "
+.ti -1c
+.RI "class \fBMailingAddressEdge\fP"
+.br
+.RI "An auto-generated type which holds one MailingAddress and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBMailingAddressInput\fP"
+.br
+.RI "Specifies the fields accepted to create or update a mailing address\&. "
+.ti -1c
+.RI "class \fBManualDiscountApplication\fP"
+.br
+.RI "Manual discount applications capture the intentions of a discount that was manually created\&. "
+.ti -1c
+.RI "interface \fBMedia\fP"
+.br
+.RI "Represents a media interface\&. "
+.ti -1c
+.RI "class \fBMediaConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Media\&. \&. MediaConnection can be cast to \fCList<Media>\fP\&. "
+.ti -1c
+.RI "class \fBMediaEdge\fP"
+.br
+.RI "An auto-generated type which holds one Media and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBMediaImage\fP"
+.br
+.RI "Represents a \fBShopify\fP hosted image\&. "
+.ti -1c
+.RI "class \fBMetafield\fP"
+.br
+.RI "Metafields represent custom metadata attached to a resource\&. Metafields can be sorted into namespaces and are comprised of keys, values, and value types\&. "
+.ti -1c
+.RI "class \fBMetafieldConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Metafields\&. \&. MetafieldConnection can be cast to \fCList<Metafield>\fP\&. "
+.ti -1c
+.RI "class \fBMetafieldEdge\fP"
+.br
+.RI "An auto-generated type which holds one Metafield and a cursor during pagination\&. "
+.ti -1c
+.RI "interface \fBMetafieldParentResource\fP"
+.br
+.RI "A resource that the metafield belongs to\&. "
+.ti -1c
+.RI "class \fBModel3d\fP"
+.br
+.RI "Represents a \fBShopify\fP hosted 3D model\&. "
+.ti -1c
+.RI "class \fBModel3dSource\fP"
+.br
+.RI "Represents a source for a \fBShopify\fP hosted 3d model\&. "
+.ti -1c
+.RI "class \fBMoneyInput\fP"
+.br
+.RI "Specifies the fields for a monetary value with currency\&. "
+.ti -1c
+.RI "class \fBMoneyV2\fP"
+.br
+.RI "A monetary value with currency\&. "
+.ti -1c
+.RI "class \fBMoneyV2connection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple MoneyV2s\&. \&. MoneyV2connection can be cast to \fCList<MoneyV2>\fP\&. "
+.ti -1c
+.RI "class \fBMoneyV2edge\fP"
+.br
+.RI "An auto-generated type which holds one MoneyV2 and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBMutation\fP"
+.br
+.RI "The schema’s entry-point for mutations\&. This acts as the public, top-level API from which all mutation queries must start\&. "
+.ti -1c
+.RI "interface \fBNode\fP"
+.br
+.RI "An object with an ID to support global identification\&. "
+.ti -1c
+.RI "class \fBNoMatchingVariantException\fP"
+.br
+.RI "This exception is thrown when interacting with a cart to add, update, or delete line items and no matching variant could be found\&. "
+.ti -1c
+.RI "class \fBOrder\fP"
+.br
+.RI "An order is a customer’s completed request to purchase one or more products from a shop\&. An order is created when a customer completes the checkout process, during which time they provides an email address, billing address and payment information\&. "
+.ti -1c
+.RI "class \fBOrderConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Orders\&. \&. OrderConnection can be cast to \fCList<Order>\fP\&. "
+.ti -1c
+.RI "class \fBOrderEdge\fP"
+.br
+.RI "An auto-generated type which holds one Order and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBOrderLineItem\fP"
+.br
+.RI "Represents a single line in an order\&. There is one line item for each distinct product variant\&. "
+.ti -1c
+.RI "class \fBOrderLineItemConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple OrderLineItems\&. \&. OrderLineItemConnection can be cast to \fCList<OrderLineItem>\fP\&. "
+.ti -1c
+.RI "class \fBOrderLineItemEdge\fP"
+.br
+.RI "An auto-generated type which holds one OrderLineItem and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBPage\fP"
+.br
+.RI "\fBShopify\fP merchants can create pages to hold static HTML content\&. Each Page object represents a custom page on the online store\&. "
+.ti -1c
+.RI "class \fBPageConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Pages\&. \&. PageConnection can be cast to \fCList<Page>\fP\&. "
+.ti -1c
+.RI "class \fBPageEdge\fP"
+.br
+.RI "An auto-generated type which holds one Page and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBPageInfo\fP"
+.br
+.RI "Information about pagination in a connection\&. "
+.ti -1c
+.RI "class \fBPayment\fP"
+.br
+.RI "A payment applied to a checkout\&. "
+.ti -1c
+.RI "class \fBPaymentSettings\fP"
+.br
+.RI "Settings related to payments\&. "
+.ti -1c
+.RI "class \fBPricingPercentageValue\fP"
+.br
+.RI "The value of the percentage pricing object\&. "
+.ti -1c
+.RI "interface \fBPricingValue\fP"
+.br
+.RI "The price value (fixed or percentage) for a discount application\&. "
+.ti -1c
+.RI "class \fBProduct\fP"
+.br
+.RI "A product represents an individual item for sale in a \fBShopify\fP store\&. Products are often physical, but they don't have to be\&. For example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty)\&. "
+.ti -1c
+.RI "class \fBProductConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Products\&. \&. ProductConnection can be cast to \fCList<Product>\fP\&. "
+.ti -1c
+.RI "class \fBProductEdge\fP"
+.br
+.RI "An auto-generated type which holds one Product and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBProductOption\fP"
+.br
+.RI "Product property names like 'Size', 'Color', and 'Material' that the customers can select\&. Variants are selected based on permutations of these options\&. 255 characters limit each\&. "
+.ti -1c
+.RI "class \fBProductPriceRange\fP"
+.br
+.RI "The price range of the product\&. "
+.ti -1c
+.RI "class \fBProductPriceRangeConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple ProductPriceRanges\&. \&. ProductPriceRangeConnection can be cast to \fCList<ProductPriceRange>\fP\&. "
+.ti -1c
+.RI "class \fBProductPriceRangeEdge\fP"
+.br
+.RI "An auto-generated type which holds one ProductPriceRange and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBProductVariant\fP"
+.br
+.RI "A product variant represents a different version of a product, such as differing sizes or differing colors\&. "
+.ti -1c
+.RI "class \fBProductVariantConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple ProductVariants\&. \&. ProductVariantConnection can be cast to \fCList<ProductVariant>\fP\&. "
+.ti -1c
+.RI "class \fBProductVariantEdge\fP"
+.br
+.RI "An auto-generated type which holds one ProductVariant and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBProductVariantPricePair\fP"
+.br
+.RI "The compare-at price and price of a variant sharing a currency\&. "
+.ti -1c
+.RI "class \fBProductVariantPricePairConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple ProductVariantPricePairs\&. \&. ProductVariantPricePairConnection can be cast to \fCList<ProductVariantPricePair>\fP\&. "
+.ti -1c
+.RI "class \fBProductVariantPricePairEdge\fP"
+.br
+.RI "An auto-generated type which holds one ProductVariantPricePair and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBQueryRoot\fP"
+.br
+.RI "The schema’s entry-point for queries\&. This acts as the public, top-level API from which all queries must start\&. "
+.ti -1c
+.RI "class \fBScriptDiscountApplication\fP"
+.br
+.RI "Script discount applications capture the intentions of a discount that was created by a \fBShopify\fP Script\&. "
+.ti -1c
+.RI "class \fBSelectedOption\fP"
+.br
+.RI "Properties used by customers to select a product variant\&. Products can have multiple options, like different sizes or colors\&. "
+.ti -1c
+.RI "class \fBSelectedOptionInput\fP"
+.br
+.RI "Specifies the input fields required for a selected option\&. "
+.ti -1c
+.RI "class \fBSeo\fP"
+.br
+.RI "SEO information\&. "
+.ti -1c
+.RI "struct \fBShippingFields\fP"
+.br
+.RI "Wraps around a shipping address and shipping identifier\&. Used for sending the final checkout fields in one GraphQL query\&. "
+.ti -1c
+.RI "class \fBShippingRate\fP"
+.br
+.RI "A shipping rate to be applied to a checkout\&. "
+.ti -1c
+.RI "class \fBShop\fP"
+.br
+.RI "Shop represents a collection of the general settings and information about the shop\&. "
+.ti -1c
+.RI "class \fBShopifyBuy\fP"
+.br
+.RI "Is the main entry point for the \fBShopify\fP SDK for Unity\&. Using  you'll create a client which can create queries on the Storefront API\&. ShopifyClient 
+.PP
+can also be used to create a Cart 
+.PP
+\&. "
+.ti -1c
+.RI "class \fBShopifyClient\fP"
+.br
+.RI "\fBShopifyClient \fP is the entry point to communicate with the \fBShopify\fP Storefront API\&. \fBShopifyClient \fP also has functionality to easily generate and send queries to receive information about products, collections, and has the ability to create checkouts\&. "
+.ti -1c
+.RI "class \fBShopifyError\fP"
+.br
+.RI "A class describing an error that has occurred within the SDK\&. "
+.ti -1c
+.RI "struct \fBShopMetadata\fP"
+.br
+.RI "Data struct containing metadata associated with a Shop\&. "
+.ti -1c
+.RI "class \fBShopPolicy\fP"
+.br
+.RI "Policy that a merchant has configured for their store, such as their refund or privacy policy\&. "
+.ti -1c
+.RI "class \fBStringConnection\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Strings\&. \&. StringConnection can be cast to \fCList<String>\fP\&. "
+.ti -1c
+.RI "class \fBStringEdge\fP"
+.br
+.RI "An auto-generated type which holds one String and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBTokenizedPaymentInput\fP"
+.br
+.RI "Specifies the fields required to complete a checkout with a tokenized payment\&. "
+.ti -1c
+.RI "class \fBTokenizedPaymentInputV2\fP"
+.br
+.RI "Specifies the fields required to complete a checkout with a tokenized payment\&. "
+.ti -1c
+.RI "class \fBTransaction\fP"
+.br
+.RI "An object representing exchange of money for a product or service\&. "
+.ti -1c
+.RI "class \fBUnitPriceMeasurement\fP"
+.br
+.RI "The measurement used to calculate a unit price for a product variant (e\&.g\&. $9\&.99 / 100ml)\&. "
+.ti -1c
+.RI "class \fBUnknownDiscountApplication\fP"
+.br
+.RI "UnknownDiscountApplication is a response object\&. With UnknownDiscountApplication\&.Create you'll be able instantiate objects implementing DiscountApplication\&. \fCUnknownDiscountApplication\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+AutomaticDiscountApplication 
+.IP "\(bu" 2
+DiscountCodeApplication 
+.IP "\(bu" 2
+ManualDiscountApplication 
+.IP "\(bu" 2
+ScriptDiscountApplication 
+.PP
+"
+.ti -1c
+.RI "class \fBUnknownDisplayableError\fP"
+.br
+.RI "UnknownDisplayableError is a response object\&. With UnknownDisplayableError\&.Create you'll be able instantiate objects implementing DisplayableError\&. \fCUnknownDisplayableError\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+CheckoutUserError 
+.IP "\(bu" 2
+CustomerUserError 
+.IP "\(bu" 2
+UserError 
+.PP
+"
+.ti -1c
+.RI "class \fBUnknownHasMetafields\fP"
+.br
+.RI "UnknownHasMetafields is a response object\&. With UnknownHasMetafields\&.Create you'll be able instantiate objects implementing HasMetafields\&. \fCUnknownHasMetafields\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+Product 
+.IP "\(bu" 2
+ProductVariant 
+.PP
+"
+.ti -1c
+.RI "class \fBUnknownMedia\fP"
+.br
+.RI "UnknownMedia is a response object\&. With UnknownMedia\&.Create you'll be able instantiate objects implementing Media\&. \fCUnknownMedia\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+ExternalVideo 
+.IP "\(bu" 2
+MediaImage 
+.IP "\(bu" 2
+Model3d 
+.IP "\(bu" 2
+Video 
+.PP
+"
+.ti -1c
+.RI "class \fBUnknownMetafieldParentResource\fP"
+.br
+.RI "A resource that the metafield belongs to\&. "
+.ti -1c
+.RI "class \fBUnknownNode\fP"
+.br
+.RI "UnknownNode is a response object\&. With UnknownNode\&.Create you'll be able instantiate objects implementing Node\&. \fCUnknownNode\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+AppliedGiftCard 
+.IP "\(bu" 2
+Article 
+.IP "\(bu" 2
+Blog 
+.IP "\(bu" 2
+Checkout 
+.IP "\(bu" 2
+CheckoutLineItem 
+.IP "\(bu" 2
+Collection 
+.IP "\(bu" 2
+Comment 
+.IP "\(bu" 2
+ExternalVideo 
+.IP "\(bu" 2
+MailingAddress 
+.IP "\(bu" 2
+MediaImage 
+.IP "\(bu" 2
+Metafield 
+.IP "\(bu" 2
+Model3d 
+.IP "\(bu" 2
+Order 
+.IP "\(bu" 2
+Page 
+.IP "\(bu" 2
+Payment 
+.IP "\(bu" 2
+Product 
+.IP "\(bu" 2
+ProductOption 
+.IP "\(bu" 2
+ProductVariant 
+.IP "\(bu" 2
+ShopPolicy 
+.IP "\(bu" 2
+Video 
+.PP
+"
+.ti -1c
+.RI "class \fBUnknownPricingValue\fP"
+.br
+.RI "The price value (fixed or percentage) for a discount application\&. "
+.ti -1c
+.RI "class \fBUserError\fP"
+.br
+.RI "Represents an error in the input of a mutation\&. "
+.ti -1c
+.RI "class \fBVersionInformation\fP"
+.br
+.ti -1c
+.RI "class \fBVideo\fP"
+.br
+.RI "Represents a \fBShopify\fP hosted video\&. "
+.ti -1c
+.RI "class \fBVideoSource\fP"
+.br
+.RI "Represents a source for a \fBShopify\fP hosted video\&. "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBArticleSortKeys\fP { \fBUNKNOWN\fP, \fBAUTHOR\fP, \fBBLOG_TITLE\fP, \fBID\fP, \fBPUBLISHED_AT\fP, \fBRELEVANCE\fP, \fBTITLE\fP, \fBUPDATED_AT\fP }"
+.br
+.RI "The set of valid sort keys for the Article query\&. "
+.ti -1c
+.RI "enum \fBBlogSortKeys\fP { \fBUNKNOWN\fP, \fBHANDLE\fP, \fBID\fP, \fBRELEVANCE\fP, \fBTITLE\fP }"
+.br
+.RI "The set of valid sort keys for the Blog query\&. "
+.ti -1c
+.RI "enum \fBCardBrand\fP { \fBUNKNOWN\fP, \fBAMERICAN_EXPRESS\fP, \fBDINERS_CLUB\fP, \fBDISCOVER\fP, \fBJCB\fP, \fBMASTERCARD\fP, \fBVISA\fP }"
+.br
+.RI "Card brand, such as Visa or Mastercard, which can be used for payments\&. "
+.ti -1c
+.RI "enum \fBCheckoutErrorCode\fP { \fBUNKNOWN\fP, \fBALREADY_COMPLETED\fP, \fBBAD_DOMAIN\fP, \fBBLANK\fP, \fBCART_DOES_NOT_MEET_DISCOUNT_REQUIREMENTS_NOTICE\fP, \fBCUSTOMER_ALREADY_USED_ONCE_PER_CUSTOMER_DISCOUNT_NOTICE\fP, \fBDISCOUNT_DISABLED\fP, \fBDISCOUNT_EXPIRED\fP, \fBDISCOUNT_LIMIT_REACHED\fP, \fBDISCOUNT_NOT_FOUND\fP, \fBEMPTY\fP, \fBGIFT_CARD_ALREADY_APPLIED\fP, \fBGIFT_CARD_CODE_INVALID\fP, \fBGIFT_CARD_CURRENCY_MISMATCH\fP, \fBGIFT_CARD_DEPLETED\fP, \fBGIFT_CARD_DISABLED\fP, \fBGIFT_CARD_EXPIRED\fP, \fBGIFT_CARD_NOT_FOUND\fP, \fBGIFT_CARD_UNUSABLE\fP, \fBGREATER_THAN_OR_EQUAL_TO\fP, \fBINVALID\fP, \fBINVALID_FOR_COUNTRY\fP, \fBINVALID_FOR_COUNTRY_AND_PROVINCE\fP, \fBINVALID_PROVINCE_IN_COUNTRY\fP, \fBINVALID_REGION_IN_COUNTRY\fP, \fBINVALID_STATE_IN_COUNTRY\fP, \fBLESS_THAN\fP, \fBLESS_THAN_OR_EQUAL_TO\fP, \fBLINE_ITEM_NOT_FOUND\fP, \fBLOCKED\fP, \fBMISSING_PAYMENT_INPUT\fP, \fBNOT_ENOUGH_IN_STOCK\fP, \fBNOT_SUPPORTED\fP, \fBPRESENT\fP, \fBSHIPPING_RATE_EXPIRED\fP, \fBTOO_LONG\fP, \fBTOTAL_PRICE_MISMATCH\fP, \fBUNABLE_TO_APPLY\fP }"
+.br
+.RI "Possible error codes that could be returned by CheckoutUserError\&. "
+.ti -1c
+.RI "enum \fBCollectionSortKeys\fP { \fBUNKNOWN\fP, \fBID\fP, \fBRELEVANCE\fP, \fBTITLE\fP, \fBUPDATED_AT\fP }"
+.br
+.RI "The set of valid sort keys for the Collection query\&. "
+.ti -1c
+.RI "enum \fBCountryCode\fP { \fBUNKNOWN\fP, \fBAD\fP, \fBAE\fP, \fBAF\fP, \fBAG\fP, \fBAI\fP, \fBAL\fP, \fBAM\fP, \fBAN\fP, \fBAO\fP, \fBAR\fP, \fBAT\fP, \fBAU\fP, \fBAW\fP, \fBAX\fP, \fBAZ\fP, \fBBA\fP, \fBBB\fP, \fBBD\fP, \fBBE\fP, \fBBF\fP, \fBBG\fP, \fBBH\fP, \fBBI\fP, \fBBJ\fP, \fBBL\fP, \fBBM\fP, \fBBN\fP, \fBBO\fP, \fBBQ\fP, \fBBR\fP, \fBBS\fP, \fBBT\fP, \fBBV\fP, \fBBW\fP, \fBBY\fP, \fBBZ\fP, \fBCA\fP, \fBCC\fP, \fBCD\fP, \fBCF\fP, \fBCG\fP, \fBCH\fP, \fBCI\fP, \fBCK\fP, \fBCL\fP, \fBCM\fP, \fBCN\fP, \fBCO\fP, \fBCR\fP, \fBCU\fP, \fBCV\fP, \fBCW\fP, \fBCX\fP, \fBCY\fP, \fBCZ\fP, \fBDE\fP, \fBDJ\fP, \fBDK\fP, \fBDM\fP, \fBDO\fP, \fBDZ\fP, \fBEC\fP, \fBEE\fP, \fBEG\fP, \fBEH\fP, \fBER\fP, \fBES\fP, \fBET\fP, \fBFI\fP, \fBFJ\fP, \fBFK\fP, \fBFO\fP, \fBFR\fP, \fBGA\fP, \fBGB\fP, \fBGD\fP, \fBGE\fP, \fBGF\fP, \fBGG\fP, \fBGH\fP, \fBGI\fP, \fBGL\fP, \fBGM\fP, \fBGN\fP, \fBGP\fP, \fBGQ\fP, \fBGR\fP, \fBGS\fP, \fBGT\fP, \fBGW\fP, \fBGY\fP, \fBHK\fP, \fBHM\fP, \fBHN\fP, \fBHR\fP, \fBHT\fP, \fBHU\fP, \fBID\fP, \fBIE\fP, \fBIL\fP, \fBIM\fP, \fBIN\fP, \fBIO\fP, \fBIQ\fP, \fBIR\fP, \fBIS\fP, \fBIT\fP, \fBJE\fP, \fBJM\fP, \fBJO\fP, \fBJP\fP, \fBKE\fP, \fBKG\fP, \fBKH\fP, \fBKI\fP, \fBKM\fP, \fBKN\fP, \fBKP\fP, \fBKR\fP, \fBKW\fP, \fBKY\fP, \fBKZ\fP, \fBLA\fP, \fBLB\fP, \fBLC\fP, \fBLI\fP, \fBLK\fP, \fBLR\fP, \fBLS\fP, \fBLT\fP, \fBLU\fP, \fBLV\fP, \fBLY\fP, \fBMA\fP, \fBMC\fP, \fBMD\fP, \fBME\fP, \fBMF\fP, \fBMG\fP, \fBMK\fP, \fBML\fP, \fBMM\fP, \fBMN\fP, \fBMO\fP, \fBMQ\fP, \fBMR\fP, \fBMS\fP, \fBMT\fP, \fBMU\fP, \fBMV\fP, \fBMW\fP, \fBMX\fP, \fBMY\fP, \fBMZ\fP, \fBNA\fP, \fBNC\fP, \fBNE\fP, \fBNF\fP, \fBNG\fP, \fBNI\fP, \fBNL\fP, \fBNO\fP, \fBNP\fP, \fBNR\fP, \fBNU\fP, \fBNZ\fP, \fBOM\fP, \fBPA\fP, \fBPE\fP, \fBPF\fP, \fBPG\fP, \fBPH\fP, \fBPK\fP, \fBPL\fP, \fBPM\fP, \fBPN\fP, \fBPS\fP, \fBPT\fP, \fBPY\fP, \fBQA\fP, \fBRE\fP, \fBRO\fP, \fBRS\fP, \fBRU\fP, \fBRW\fP, \fBSA\fP, \fBSB\fP, \fBSC\fP, \fBSD\fP, \fBSE\fP, \fBSG\fP, \fBSH\fP, \fBSI\fP, \fBSJ\fP, \fBSK\fP, \fBSL\fP, \fBSM\fP, \fBSN\fP, \fBSO\fP, \fBSR\fP, \fBSS\fP, \fBST\fP, \fBSV\fP, \fBSX\fP, \fBSY\fP, \fBSZ\fP, \fBTC\fP, \fBTD\fP, \fBTF\fP, \fBTG\fP, \fBTH\fP, \fBTJ\fP, \fBTK\fP, \fBTL\fP, \fBTM\fP, \fBTN\fP, \fBTO\fP, \fBTR\fP, \fBTT\fP, \fBTV\fP, \fBTW\fP, \fBTZ\fP, \fBUA\fP, \fBUG\fP, \fBUM\fP, \fBUS\fP, \fBUY\fP, \fBUZ\fP, \fBVA\fP, \fBVC\fP, \fBVE\fP, \fBVG\fP, \fBVN\fP, \fBVU\fP, \fBWF\fP, \fBWS\fP, \fBXK\fP, \fBYE\fP, \fBYT\fP, \fBZA\fP, \fBZM\fP, \fBZW\fP }"
+.br
+.RI "ISO 3166-1 alpha-2 country codes with some differences\&. "
+.ti -1c
+.RI "enum \fBCropRegion\fP { \fBUNKNOWN\fP, \fBBOTTOM\fP, \fBCENTER\fP, \fBLEFT\fP, \fBRIGHT\fP, \fBTOP\fP }"
+.br
+.RI "The part of the image that should remain after cropping\&. "
+.ti -1c
+.RI "enum \fBCurrencyCode\fP { \fBUNKNOWN\fP, \fBAED\fP, \fBAFN\fP, \fBALL\fP, \fBAMD\fP, \fBANG\fP, \fBAOA\fP, \fBARS\fP, \fBAUD\fP, \fBAWG\fP, \fBAZN\fP, \fBBAM\fP, \fBBBD\fP, \fBBDT\fP, \fBBGN\fP, \fBBHD\fP, \fBBIF\fP, \fBBMD\fP, \fBBND\fP, \fBBOB\fP, \fBBRL\fP, \fBBSD\fP, \fBBTN\fP, \fBBWP\fP, \fBBZD\fP, \fBCAD\fP, \fBCDF\fP, \fBCHF\fP, \fBCLP\fP, \fBCNY\fP, \fBCOP\fP, \fBCRC\fP, \fBCVE\fP, \fBCZK\fP, \fBDJF\fP, \fBDKK\fP, \fBDOP\fP, \fBDZD\fP, \fBEGP\fP, \fBETB\fP, \fBEUR\fP, \fBFJD\fP, \fBFKP\fP, \fBGBP\fP, \fBGEL\fP, \fBGHS\fP, \fBGIP\fP, \fBGMD\fP, \fBGNF\fP, \fBGTQ\fP, \fBGYD\fP, \fBHKD\fP, \fBHNL\fP, \fBHRK\fP, \fBHTG\fP, \fBHUF\fP, \fBIDR\fP, \fBILS\fP, \fBINR\fP, \fBIQD\fP, \fBIRR\fP, \fBISK\fP, \fBJEP\fP, \fBJMD\fP, \fBJOD\fP, \fBJPY\fP, \fBKES\fP, \fBKGS\fP, \fBKHR\fP, \fBKMF\fP, \fBKRW\fP, \fBKWD\fP, \fBKYD\fP, \fBKZT\fP, \fBLAK\fP, \fBLBP\fP, \fBLKR\fP, \fBLRD\fP, \fBLSL\fP, \fBLTL\fP, \fBLVL\fP, \fBLYD\fP, \fBMAD\fP, \fBMDL\fP, \fBMGA\fP, \fBMKD\fP, \fBMMK\fP, \fBMNT\fP, \fBMOP\fP, \fBMUR\fP, \fBMVR\fP, \fBMWK\fP, \fBMXN\fP, \fBMYR\fP, \fBMZN\fP, \fBNAD\fP, \fBNGN\fP, \fBNIO\fP, \fBNOK\fP, \fBNPR\fP, \fBNZD\fP, \fBOMR\fP, \fBPAB\fP, \fBPEN\fP, \fBPGK\fP, \fBPHP\fP, \fBPKR\fP, \fBPLN\fP, \fBPYG\fP, \fBQAR\fP, \fBRON\fP, \fBRSD\fP, \fBRUB\fP, \fBRWF\fP, \fBSAR\fP, \fBSBD\fP, \fBSCR\fP, \fBSDG\fP, \fBSEK\fP, \fBSGD\fP, \fBSHP\fP, \fBSLL\fP, \fBSRD\fP, \fBSSP\fP, \fBSTD\fP, \fBSYP\fP, \fBSZL\fP, \fBTHB\fP, \fBTJS\fP, \fBTMT\fP, \fBTND\fP, \fBTOP\fP, \fBTRY\fP, \fBTTD\fP, \fBTWD\fP, \fBTZS\fP, \fBUAH\fP, \fBUGX\fP, \fBUSD\fP, \fBUYU\fP, \fBUZS\fP, \fBVND\fP, \fBVUV\fP, \fBWST\fP, \fBXAF\fP, \fBXCD\fP, \fBXOF\fP, \fBXPF\fP, \fBYER\fP, \fBZAR\fP, \fBZMW\fP }"
+.br
+.RI "Currency codes\&. "
+.ti -1c
+.RI "enum \fBCustomerErrorCode\fP { \fBUNKNOWN\fP, \fBALREADY_ENABLED\fP, \fBBLANK\fP, \fBCONTAINS_HTML_TAGS\fP, \fBCONTAINS_URL\fP, \fBCUSTOMER_DISABLED\fP, \fBINVALID\fP, \fBNOT_FOUND\fP, \fBPASSWORD_STARTS_OR_ENDS_WITH_WHITESPACE\fP, \fBTAKEN\fP, \fBTOKEN_INVALID\fP, \fBTOO_LONG\fP, \fBTOO_SHORT\fP, \fBUNIDENTIFIED_CUSTOMER\fP }"
+.br
+.RI "Possible error codes that could be returned by CustomerUserError\&. "
+.ti -1c
+.RI "enum \fBDigitalWallet\fP { \fBUNKNOWN\fP, \fBANDROID_PAY\fP, \fBAPPLE_PAY\fP, \fBGOOGLE_PAY\fP, \fBSHOPIFY_PAY\fP }"
+.br
+.RI "Digital wallet, such as Apple Pay, which can be used for accelerated checkouts\&. "
+.ti -1c
+.RI "enum \fBDiscountApplicationAllocationMethod\fP { \fBUNKNOWN\fP, \fBACROSS\fP, \fBEACH\fP }"
+.br
+.RI "The method by which the discount's value is allocated onto its entitled lines\&. "
+.ti -1c
+.RI "enum \fBDiscountApplicationTargetSelection\fP { \fBUNKNOWN\fP, \fBALL\fP, \fBENTITLED\fP, \fBEXPLICIT\fP }"
+.br
+.RI "Which lines on the order that the discount is allocated over, of the type defined by the Discount Application's target_type\&. "
+.ti -1c
+.RI "enum \fBDiscountApplicationTargetType\fP { \fBUNKNOWN\fP, \fBLINE_ITEM\fP, \fBSHIPPING_LINE\fP }"
+.br
+.RI "The type of line (i\&.e\&. line item or shipping line) on an order that the discount is applicable towards\&. "
+.ti -1c
+.RI "enum \fBImageContentType\fP { \fBUNKNOWN\fP, \fBJPG\fP, \fBPNG\fP, \fBWEBP\fP }"
+.br
+.RI "List of supported image content types\&. "
+.ti -1c
+.RI "enum \fBMediaContentType\fP { \fBUNKNOWN\fP, \fBEXTERNAL_VIDEO\fP, \fBIMAGE\fP, \fBMODEL_3D\fP, \fBVIDEO\fP }"
+.br
+.RI "The possible content types for a media object\&. "
+.ti -1c
+.RI "enum \fBMetafieldValueType\fP { \fBUNKNOWN\fP, \fBINTEGER\fP, \fBJSON_STRING\fP, \fBSTRING\fP }"
+.br
+.RI "Metafield value types\&. "
+.ti -1c
+.RI "enum \fBOrderSortKeys\fP { \fBUNKNOWN\fP, \fBID\fP, \fBPROCESSED_AT\fP, \fBRELEVANCE\fP, \fBTOTAL_PRICE\fP }"
+.br
+.RI "The set of valid sort keys for the Order query\&. "
+.ti -1c
+.RI "enum \fBPageSortKeys\fP { \fBUNKNOWN\fP, \fBID\fP, \fBRELEVANCE\fP, \fBTITLE\fP, \fBUPDATED_AT\fP }"
+.br
+.RI "The set of valid sort keys for the Page query\&. "
+.ti -1c
+.RI "enum \fBProductCollectionSortKeys\fP { \fBUNKNOWN\fP, \fBBEST_SELLING\fP, \fBCOLLECTION_DEFAULT\fP, \fBCREATED\fP, \fBID\fP, \fBMANUAL\fP, \fBPRICE\fP, \fBRELEVANCE\fP, \fBTITLE\fP }"
+.br
+.RI "The set of valid sort keys for the ProductCollection query\&. "
+.ti -1c
+.RI "enum \fBProductImageSortKeys\fP { \fBUNKNOWN\fP, \fBCREATED_AT\fP, \fBID\fP, \fBPOSITION\fP, \fBRELEVANCE\fP }"
+.br
+.RI "The set of valid sort keys for the ProductImage query\&. "
+.ti -1c
+.RI "enum \fBProductSortKeys\fP { \fBUNKNOWN\fP, \fBBEST_SELLING\fP, \fBCREATED_AT\fP, \fBID\fP, \fBPRICE\fP, \fBPRODUCT_TYPE\fP, \fBRELEVANCE\fP, \fBTITLE\fP, \fBUPDATED_AT\fP, \fBVENDOR\fP }"
+.br
+.RI "The set of valid sort keys for the Product query\&. "
+.ti -1c
+.RI "enum \fBProductVariantSortKeys\fP { \fBUNKNOWN\fP, \fBID\fP, \fBPOSITION\fP, \fBRELEVANCE\fP, \fBSKU\fP, \fBTITLE\fP }"
+.br
+.RI "The set of valid sort keys for the ProductVariant query\&. "
+.ti -1c
+.RI "enum \fBTransactionKind\fP { \fBUNKNOWN\fP, \fBAUTHORIZATION\fP, \fBCAPTURE\fP, \fBCHANGE\fP, \fBEMV_AUTHORIZATION\fP, \fBSALE\fP }"
+.br
+.RI "The different kinds of order transactions\&. "
+.ti -1c
+.RI "enum \fBTransactionStatus\fP { \fBUNKNOWN\fP, \fBERROR\fP, \fBFAILURE\fP, \fBPENDING\fP, \fBSUCCESS\fP }"
+.br
+.RI "Transaction statuses describe the status of a transaction\&. "
+.ti -1c
+.RI "enum \fBUnitPriceMeasurementMeasuredType\fP { \fBUNKNOWN\fP, \fBAREA\fP, \fBLENGTH\fP, \fBVOLUME\fP, \fBWEIGHT\fP }"
+.br
+.RI "The accepted types of unit of measurement\&. "
+.ti -1c
+.RI "enum \fBUnitPriceMeasurementMeasuredUnit\fP { \fBUNKNOWN\fP, \fBCL\fP, \fBCM\fP, \fBG\fP, \fBKG\fP, \fBL\fP, \fBM\fP, \fBM2\fP, \fBM3\fP, \fBMG\fP, \fBML\fP, \fBMM\fP }"
+.br
+.RI "The valid units of measurement for a unit price measurement\&. "
+.ti -1c
+.RI "enum \fBWeightUnit\fP { \fBUNKNOWN\fP, \fBGRAMS\fP, \fBKILOGRAMS\fP, \fBOUNCES\fP, \fBPOUNDS\fP }"
+.br
+.RI "Units of measurement for weight\&. "
+.in -1c
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBShopify\&.Unity\&.ArticleSortKeys\fP"
+
+.PP
+The set of valid sort keys for the Article query\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIAUTHOR \fP\fP
+Sort by the \fCauthor\fP value\&. 
+.TP
+\fB\fIBLOG_TITLE \fP\fP
+Sort by the \fCblog_title\fP value\&. 
+.TP
+\fB\fIID \fP\fP
+Sort by the \fCid\fP value\&. 
+.TP
+\fB\fIPUBLISHED_AT \fP\fP
+Sort by the \fCpublished_at\fP value\&. 
+.TP
+\fB\fIRELEVANCE \fP\fP
+During a search (i\&.e\&. when the \fCquery\fP parameter has been specified on the connection) this sorts the results by relevance to the search term(s)\&. When no search query is specified, this sort key is not deterministic and should not be used\&. 
+.TP
+\fB\fITITLE \fP\fP
+Sort by the \fCtitle\fP value\&. 
+.TP
+\fB\fIUPDATED_AT \fP\fP
+Sort by the \fCupdated_at\fP value\&. 
+.SS "enum \fBShopify\&.Unity\&.BlogSortKeys\fP"
+
+.PP
+The set of valid sort keys for the Blog query\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIHANDLE \fP\fP
+Sort by the \fChandle\fP value\&. 
+.TP
+\fB\fIID \fP\fP
+Sort by the \fCid\fP value\&. 
+.TP
+\fB\fIRELEVANCE \fP\fP
+During a search (i\&.e\&. when the \fCquery\fP parameter has been specified on the connection) this sorts the results by relevance to the search term(s)\&. When no search query is specified, this sort key is not deterministic and should not be used\&. 
+.TP
+\fB\fITITLE \fP\fP
+Sort by the \fCtitle\fP value\&. 
+.SS "enum \fBShopify\&.Unity\&.CardBrand\fP"
+
+.PP
+Card brand, such as Visa or Mastercard, which can be used for payments\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIAMERICAN_EXPRESS \fP\fP
+American Express\&. 
+.TP
+\fB\fIDINERS_CLUB \fP\fP
+Diners Club\&. 
+.TP
+\fB\fIDISCOVER \fP\fP
+Discover\&. 
+.TP
+\fB\fIJCB \fP\fP
+JCB\&. 
+.TP
+\fB\fIMASTERCARD \fP\fP
+Mastercard\&. 
+.TP
+\fB\fIVISA \fP\fP
+Visa\&. 
+.SS "enum \fBShopify\&.Unity\&.CheckoutErrorCode\fP"
+
+.PP
+Possible error codes that could be returned by CheckoutUserError\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIALREADY_COMPLETED \fP\fP
+Checkout is already completed\&. 
+.TP
+\fB\fIBAD_DOMAIN \fP\fP
+Input email contains an invalid domain name\&. 
+.TP
+\fB\fIBLANK \fP\fP
+Input value is blank\&. 
+.TP
+\fB\fICART_DOES_NOT_MEET_DISCOUNT_REQUIREMENTS_NOTICE \fP\fP
+Cart does not meet discount requirements notice\&. 
+.TP
+\fB\fICUSTOMER_ALREADY_USED_ONCE_PER_CUSTOMER_DISCOUNT_NOTICE \fP\fP
+Customer already used once per customer discount notice\&. 
+.TP
+\fB\fIDISCOUNT_DISABLED \fP\fP
+Discount disabled\&. 
+.TP
+\fB\fIDISCOUNT_EXPIRED \fP\fP
+Discount expired\&. 
+.TP
+\fB\fIDISCOUNT_LIMIT_REACHED \fP\fP
+Discount limit reached\&. 
+.TP
+\fB\fIDISCOUNT_NOT_FOUND \fP\fP
+Discount not found\&. 
+.TP
+\fB\fIEMPTY \fP\fP
+Checkout is already completed\&. 
+.TP
+\fB\fIGIFT_CARD_ALREADY_APPLIED \fP\fP
+Gift card has already been applied\&. 
+.TP
+\fB\fIGIFT_CARD_CODE_INVALID \fP\fP
+Gift card code is invalid\&. 
+.TP
+\fB\fIGIFT_CARD_CURRENCY_MISMATCH \fP\fP
+Gift card currency does not match checkout currency\&. 
+.TP
+\fB\fIGIFT_CARD_DEPLETED \fP\fP
+Gift card has no funds left\&. 
+.TP
+\fB\fIGIFT_CARD_DISABLED \fP\fP
+Gift card is disabled\&. 
+.TP
+\fB\fIGIFT_CARD_EXPIRED \fP\fP
+Gift card is expired\&. 
+.TP
+\fB\fIGIFT_CARD_NOT_FOUND \fP\fP
+Gift card was not found\&. 
+.TP
+\fB\fIGIFT_CARD_UNUSABLE \fP\fP
+Gift card cannot be applied to a checkout that contains a gift card\&. 
+.TP
+\fB\fIGREATER_THAN_OR_EQUAL_TO \fP\fP
+Input value should be greater than or equal to minimum allowed value\&. 
+.TP
+\fB\fIINVALID \fP\fP
+Input value is invalid\&. 
+.TP
+\fB\fIINVALID_FOR_COUNTRY \fP\fP
+Input Zip is invalid for country provided\&. 
+.TP
+\fB\fIINVALID_FOR_COUNTRY_AND_PROVINCE \fP\fP
+Input Zip is invalid for country and province provided\&. 
+.TP
+\fB\fIINVALID_PROVINCE_IN_COUNTRY \fP\fP
+Invalid province in country\&. 
+.TP
+\fB\fIINVALID_REGION_IN_COUNTRY \fP\fP
+Invalid region in country\&. 
+.TP
+\fB\fIINVALID_STATE_IN_COUNTRY \fP\fP
+Invalid state in country\&. 
+.TP
+\fB\fILESS_THAN \fP\fP
+Input value should be less than maximum allowed value\&. 
+.TP
+\fB\fILESS_THAN_OR_EQUAL_TO \fP\fP
+Input value should be less or equal to maximum allowed value\&. 
+.TP
+\fB\fILINE_ITEM_NOT_FOUND \fP\fP
+Line item was not found in checkout\&. 
+.TP
+\fB\fILOCKED \fP\fP
+Checkout is locked\&. 
+.TP
+\fB\fIMISSING_PAYMENT_INPUT \fP\fP
+Missing payment input\&. 
+.TP
+\fB\fINOT_ENOUGH_IN_STOCK \fP\fP
+Not enough in stock\&. 
+.TP
+\fB\fINOT_SUPPORTED \fP\fP
+Input value is not supported\&. 
+.TP
+\fB\fIPRESENT \fP\fP
+Input value is not present\&. 
+.TP
+\fB\fISHIPPING_RATE_EXPIRED \fP\fP
+Shipping rate expired\&. 
+.TP
+\fB\fITOO_LONG \fP\fP
+Input value is too long\&. 
+.TP
+\fB\fITOTAL_PRICE_MISMATCH \fP\fP
+The amount of the payment does not match the value to be paid\&. 
+.TP
+\fB\fIUNABLE_TO_APPLY \fP\fP
+Unable to apply discount\&. 
+.SS "enum \fBShopify\&.Unity\&.CollectionSortKeys\fP"
+
+.PP
+The set of valid sort keys for the Collection query\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIID \fP\fP
+Sort by the \fCid\fP value\&. 
+.TP
+\fB\fIRELEVANCE \fP\fP
+During a search (i\&.e\&. when the \fCquery\fP parameter has been specified on the connection) this sorts the results by relevance to the search term(s)\&. When no search query is specified, this sort key is not deterministic and should not be used\&. 
+.TP
+\fB\fITITLE \fP\fP
+Sort by the \fCtitle\fP value\&. 
+.TP
+\fB\fIUPDATED_AT \fP\fP
+Sort by the \fCupdated_at\fP value\&. 
+.SS "enum \fBShopify\&.Unity\&.CountryCode\fP"
+
+.PP
+ISO 3166-1 alpha-2 country codes with some differences\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIAD \fP\fP
+Andorra\&. 
+.TP
+\fB\fIAE \fP\fP
+United Arab Emirates\&. 
+.TP
+\fB\fIAF \fP\fP
+Afghanistan\&. 
+.TP
+\fB\fIAG \fP\fP
+Antigua & Barbuda\&. 
+.TP
+\fB\fIAI \fP\fP
+Anguilla\&. 
+.TP
+\fB\fIAL \fP\fP
+Albania\&. 
+.TP
+\fB\fIAM \fP\fP
+Armenia\&. 
+.TP
+\fB\fIAN \fP\fP
+Netherlands Antilles\&. 
+.TP
+\fB\fIAO \fP\fP
+Angola\&. 
+.TP
+\fB\fIAR \fP\fP
+Argentina\&. 
+.TP
+\fB\fIAT \fP\fP
+Austria\&. 
+.TP
+\fB\fIAU \fP\fP
+Australia\&. 
+.TP
+\fB\fIAW \fP\fP
+Aruba\&. 
+.TP
+\fB\fIAX \fP\fP
+Åland Islands\&. 
+.TP
+\fB\fIAZ \fP\fP
+Azerbaijan\&. 
+.TP
+\fB\fIBA \fP\fP
+Bosnia & Herzegovina\&. 
+.TP
+\fB\fIBB \fP\fP
+Barbados\&. 
+.TP
+\fB\fIBD \fP\fP
+Bangladesh\&. 
+.TP
+\fB\fIBE \fP\fP
+Belgium\&. 
+.TP
+\fB\fIBF \fP\fP
+Burkina Faso\&. 
+.TP
+\fB\fIBG \fP\fP
+Bulgaria\&. 
+.TP
+\fB\fIBH \fP\fP
+Bahrain\&. 
+.TP
+\fB\fIBI \fP\fP
+Burundi\&. 
+.TP
+\fB\fIBJ \fP\fP
+Benin\&. 
+.TP
+\fB\fIBL \fP\fP
+St\&. Barthélemy\&. 
+.TP
+\fB\fIBM \fP\fP
+Bermuda\&. 
+.TP
+\fB\fIBN \fP\fP
+Brunei\&. 
+.TP
+\fB\fIBO \fP\fP
+Bolivia\&. 
+.TP
+\fB\fIBQ \fP\fP
+Caribbean Netherlands\&. 
+.TP
+\fB\fIBR \fP\fP
+Brazil\&. 
+.TP
+\fB\fIBS \fP\fP
+Bahamas\&. 
+.TP
+\fB\fIBT \fP\fP
+Bhutan\&. 
+.TP
+\fB\fIBV \fP\fP
+Bouvet Island\&. 
+.TP
+\fB\fIBW \fP\fP
+Botswana\&. 
+.TP
+\fB\fIBY \fP\fP
+Belarus\&. 
+.TP
+\fB\fIBZ \fP\fP
+Belize\&. 
+.TP
+\fB\fICA \fP\fP
+Canada\&. 
+.TP
+\fB\fICC \fP\fP
+Cocos (Keeling) Islands\&. 
+.TP
+\fB\fICD \fP\fP
+Congo - Kinshasa\&. 
+.TP
+\fB\fICF \fP\fP
+Central African Republic\&. 
+.TP
+\fB\fICG \fP\fP
+Congo - Brazzaville\&. 
+.TP
+\fB\fICH \fP\fP
+Switzerland\&. 
+.TP
+\fB\fICI \fP\fP
+Côte d’Ivoire\&. 
+.TP
+\fB\fICK \fP\fP
+Cook Islands\&. 
+.TP
+\fB\fICL \fP\fP
+Chile\&. 
+.TP
+\fB\fICM \fP\fP
+Cameroon\&. 
+.TP
+\fB\fICN \fP\fP
+China\&. 
+.TP
+\fB\fICO \fP\fP
+Colombia\&. 
+.TP
+\fB\fICR \fP\fP
+Costa Rica\&. 
+.TP
+\fB\fICU \fP\fP
+Cuba\&. 
+.TP
+\fB\fICV \fP\fP
+Cape Verde\&. 
+.TP
+\fB\fICW \fP\fP
+Curaçao\&. 
+.TP
+\fB\fICX \fP\fP
+Christmas Island\&. 
+.TP
+\fB\fICY \fP\fP
+Cyprus\&. 
+.TP
+\fB\fICZ \fP\fP
+Czechia\&. 
+.TP
+\fB\fIDE \fP\fP
+Germany\&. 
+.TP
+\fB\fIDJ \fP\fP
+Djibouti\&. 
+.TP
+\fB\fIDK \fP\fP
+Denmark\&. 
+.TP
+\fB\fIDM \fP\fP
+Dominica\&. 
+.TP
+\fB\fIDO \fP\fP
+Dominican Republic\&. 
+.TP
+\fB\fIDZ \fP\fP
+Algeria\&. 
+.TP
+\fB\fIEC \fP\fP
+Ecuador\&. 
+.TP
+\fB\fIEE \fP\fP
+Estonia\&. 
+.TP
+\fB\fIEG \fP\fP
+Egypt\&. 
+.TP
+\fB\fIEH \fP\fP
+Western Sahara\&. 
+.TP
+\fB\fIER \fP\fP
+Eritrea\&. 
+.TP
+\fB\fIES \fP\fP
+Spain\&. 
+.TP
+\fB\fIET \fP\fP
+Ethiopia\&. 
+.TP
+\fB\fIFI \fP\fP
+Finland\&. 
+.TP
+\fB\fIFJ \fP\fP
+Fiji\&. 
+.TP
+\fB\fIFK \fP\fP
+Falkland Islands\&. 
+.TP
+\fB\fIFO \fP\fP
+Faroe Islands\&. 
+.TP
+\fB\fIFR \fP\fP
+France\&. 
+.TP
+\fB\fIGA \fP\fP
+Gabon\&. 
+.TP
+\fB\fIGB \fP\fP
+United Kingdom\&. 
+.TP
+\fB\fIGD \fP\fP
+Grenada\&. 
+.TP
+\fB\fIGE \fP\fP
+Georgia\&. 
+.TP
+\fB\fIGF \fP\fP
+French Guiana\&. 
+.TP
+\fB\fIGG \fP\fP
+Guernsey\&. 
+.TP
+\fB\fIGH \fP\fP
+Ghana\&. 
+.TP
+\fB\fIGI \fP\fP
+Gibraltar\&. 
+.TP
+\fB\fIGL \fP\fP
+Greenland\&. 
+.TP
+\fB\fIGM \fP\fP
+Gambia\&. 
+.TP
+\fB\fIGN \fP\fP
+Guinea\&. 
+.TP
+\fB\fIGP \fP\fP
+Guadeloupe\&. 
+.TP
+\fB\fIGQ \fP\fP
+Equatorial Guinea\&. 
+.TP
+\fB\fIGR \fP\fP
+Greece\&. 
+.TP
+\fB\fIGS \fP\fP
+South Georgia & South Sandwich Islands\&. 
+.TP
+\fB\fIGT \fP\fP
+Guatemala\&. 
+.TP
+\fB\fIGW \fP\fP
+Guinea-Bissau\&. 
+.TP
+\fB\fIGY \fP\fP
+Guyana\&. 
+.TP
+\fB\fIHK \fP\fP
+Hong Kong SAR\&. 
+.TP
+\fB\fIHM \fP\fP
+Heard & McDonald Islands\&. 
+.TP
+\fB\fIHN \fP\fP
+Honduras\&. 
+.TP
+\fB\fIHR \fP\fP
+Croatia\&. 
+.TP
+\fB\fIHT \fP\fP
+Haiti\&. 
+.TP
+\fB\fIHU \fP\fP
+Hungary\&. 
+.TP
+\fB\fIID \fP\fP
+Indonesia\&. 
+.TP
+\fB\fIIE \fP\fP
+Ireland\&. 
+.TP
+\fB\fIIL \fP\fP
+Israel\&. 
+.TP
+\fB\fIIM \fP\fP
+Isle of Man\&. 
+.TP
+\fB\fIIN \fP\fP
+India\&. 
+.TP
+\fB\fIIO \fP\fP
+British Indian Ocean Territory\&. 
+.TP
+\fB\fIIQ \fP\fP
+Iraq\&. 
+.TP
+\fB\fIIR \fP\fP
+Iran\&. 
+.TP
+\fB\fIIS \fP\fP
+Iceland\&. 
+.TP
+\fB\fIIT \fP\fP
+Italy\&. 
+.TP
+\fB\fIJE \fP\fP
+Jersey\&. 
+.TP
+\fB\fIJM \fP\fP
+Jamaica\&. 
+.TP
+\fB\fIJO \fP\fP
+Jordan\&. 
+.TP
+\fB\fIJP \fP\fP
+Japan\&. 
+.TP
+\fB\fIKE \fP\fP
+Kenya\&. 
+.TP
+\fB\fIKG \fP\fP
+Kyrgyzstan\&. 
+.TP
+\fB\fIKH \fP\fP
+Cambodia\&. 
+.TP
+\fB\fIKI \fP\fP
+Kiribati\&. 
+.TP
+\fB\fIKM \fP\fP
+Comoros\&. 
+.TP
+\fB\fIKN \fP\fP
+St\&. Kitts & Nevis\&. 
+.TP
+\fB\fIKP \fP\fP
+North Korea\&. 
+.TP
+\fB\fIKR \fP\fP
+South Korea\&. 
+.TP
+\fB\fIKW \fP\fP
+Kuwait\&. 
+.TP
+\fB\fIKY \fP\fP
+Cayman Islands\&. 
+.TP
+\fB\fIKZ \fP\fP
+Kazakhstan\&. 
+.TP
+\fB\fILA \fP\fP
+Laos\&. 
+.TP
+\fB\fILB \fP\fP
+Lebanon\&. 
+.TP
+\fB\fILC \fP\fP
+St\&. Lucia\&. 
+.TP
+\fB\fILI \fP\fP
+Liechtenstein\&. 
+.TP
+\fB\fILK \fP\fP
+Sri Lanka\&. 
+.TP
+\fB\fILR \fP\fP
+Liberia\&. 
+.TP
+\fB\fILS \fP\fP
+Lesotho\&. 
+.TP
+\fB\fILT \fP\fP
+Lithuania\&. 
+.TP
+\fB\fILU \fP\fP
+Luxembourg\&. 
+.TP
+\fB\fILV \fP\fP
+Latvia\&. 
+.TP
+\fB\fILY \fP\fP
+Libya\&. 
+.TP
+\fB\fIMA \fP\fP
+Morocco\&. 
+.TP
+\fB\fIMC \fP\fP
+Monaco\&. 
+.TP
+\fB\fIMD \fP\fP
+Moldova\&. 
+.TP
+\fB\fIME \fP\fP
+Montenegro\&. 
+.TP
+\fB\fIMF \fP\fP
+St\&. Martin\&. 
+.TP
+\fB\fIMG \fP\fP
+Madagascar\&. 
+.TP
+\fB\fIMK \fP\fP
+North Macedonia\&. 
+.TP
+\fB\fIML \fP\fP
+Mali\&. 
+.TP
+\fB\fIMM \fP\fP
+Myanmar (Burma)\&. 
+.TP
+\fB\fIMN \fP\fP
+Mongolia\&. 
+.TP
+\fB\fIMO \fP\fP
+Macao SAR\&. 
+.TP
+\fB\fIMQ \fP\fP
+Martinique\&. 
+.TP
+\fB\fIMR \fP\fP
+Mauritania\&. 
+.TP
+\fB\fIMS \fP\fP
+Montserrat\&. 
+.TP
+\fB\fIMT \fP\fP
+Malta\&. 
+.TP
+\fB\fIMU \fP\fP
+Mauritius\&. 
+.TP
+\fB\fIMV \fP\fP
+Maldives\&. 
+.TP
+\fB\fIMW \fP\fP
+Malawi\&. 
+.TP
+\fB\fIMX \fP\fP
+Mexico\&. 
+.TP
+\fB\fIMY \fP\fP
+Malaysia\&. 
+.TP
+\fB\fIMZ \fP\fP
+Mozambique\&. 
+.TP
+\fB\fINA \fP\fP
+Namibia\&. 
+.TP
+\fB\fINC \fP\fP
+New Caledonia\&. 
+.TP
+\fB\fINE \fP\fP
+Niger\&. 
+.TP
+\fB\fINF \fP\fP
+Norfolk Island\&. 
+.TP
+\fB\fING \fP\fP
+Nigeria\&. 
+.TP
+\fB\fINI \fP\fP
+Nicaragua\&. 
+.TP
+\fB\fINL \fP\fP
+Netherlands\&. 
+.TP
+\fB\fINO \fP\fP
+Norway\&. 
+.TP
+\fB\fINP \fP\fP
+Nepal\&. 
+.TP
+\fB\fINR \fP\fP
+Nauru\&. 
+.TP
+\fB\fINU \fP\fP
+Niue\&. 
+.TP
+\fB\fINZ \fP\fP
+New Zealand\&. 
+.TP
+\fB\fIOM \fP\fP
+Oman\&. 
+.TP
+\fB\fIPA \fP\fP
+Panama\&. 
+.TP
+\fB\fIPE \fP\fP
+Peru\&. 
+.TP
+\fB\fIPF \fP\fP
+French Polynesia\&. 
+.TP
+\fB\fIPG \fP\fP
+Papua New Guinea\&. 
+.TP
+\fB\fIPH \fP\fP
+Philippines\&. 
+.TP
+\fB\fIPK \fP\fP
+Pakistan\&. 
+.TP
+\fB\fIPL \fP\fP
+Poland\&. 
+.TP
+\fB\fIPM \fP\fP
+St\&. Pierre & Miquelon\&. 
+.TP
+\fB\fIPN \fP\fP
+Pitcairn Islands\&. 
+.TP
+\fB\fIPS \fP\fP
+Palestinian Territories\&. 
+.TP
+\fB\fIPT \fP\fP
+Portugal\&. 
+.TP
+\fB\fIPY \fP\fP
+Paraguay\&. 
+.TP
+\fB\fIQA \fP\fP
+Qatar\&. 
+.TP
+\fB\fIRE \fP\fP
+Réunion\&. 
+.TP
+\fB\fIRO \fP\fP
+Romania\&. 
+.TP
+\fB\fIRS \fP\fP
+Serbia\&. 
+.TP
+\fB\fIRU \fP\fP
+Russia\&. 
+.TP
+\fB\fIRW \fP\fP
+Rwanda\&. 
+.TP
+\fB\fISA \fP\fP
+Saudi Arabia\&. 
+.TP
+\fB\fISB \fP\fP
+Solomon Islands\&. 
+.TP
+\fB\fISC \fP\fP
+Seychelles\&. 
+.TP
+\fB\fISD \fP\fP
+Sudan\&. 
+.TP
+\fB\fISE \fP\fP
+Sweden\&. 
+.TP
+\fB\fISG \fP\fP
+Singapore\&. 
+.TP
+\fB\fISH \fP\fP
+St\&. Helena\&. 
+.TP
+\fB\fISI \fP\fP
+Slovenia\&. 
+.TP
+\fB\fISJ \fP\fP
+Svalbard & Jan Mayen\&. 
+.TP
+\fB\fISK \fP\fP
+Slovakia\&. 
+.TP
+\fB\fISL \fP\fP
+Sierra Leone\&. 
+.TP
+\fB\fISM \fP\fP
+San Marino\&. 
+.TP
+\fB\fISN \fP\fP
+Senegal\&. 
+.TP
+\fB\fISO \fP\fP
+Somalia\&. 
+.TP
+\fB\fISR \fP\fP
+Suriname\&. 
+.TP
+\fB\fISS \fP\fP
+South Sudan\&. 
+.TP
+\fB\fIST \fP\fP
+São Tomé & Príncipe\&. 
+.TP
+\fB\fISV \fP\fP
+El Salvador\&. 
+.TP
+\fB\fISX \fP\fP
+Sint Maarten\&. 
+.TP
+\fB\fISY \fP\fP
+Syria\&. 
+.TP
+\fB\fISZ \fP\fP
+Eswatini\&. 
+.TP
+\fB\fITC \fP\fP
+Turks & Caicos Islands\&. 
+.TP
+\fB\fITD \fP\fP
+Chad\&. 
+.TP
+\fB\fITF \fP\fP
+French Southern Territories\&. 
+.TP
+\fB\fITG \fP\fP
+Togo\&. 
+.TP
+\fB\fITH \fP\fP
+Thailand\&. 
+.TP
+\fB\fITJ \fP\fP
+Tajikistan\&. 
+.TP
+\fB\fITK \fP\fP
+Tokelau\&. 
+.TP
+\fB\fITL \fP\fP
+Timor-Leste\&. 
+.TP
+\fB\fITM \fP\fP
+Turkmenistan\&. 
+.TP
+\fB\fITN \fP\fP
+Tunisia\&. 
+.TP
+\fB\fITO \fP\fP
+Tonga\&. 
+.TP
+\fB\fITR \fP\fP
+Turkey\&. 
+.TP
+\fB\fITT \fP\fP
+Trinidad & Tobago\&. 
+.TP
+\fB\fITV \fP\fP
+Tuvalu\&. 
+.TP
+\fB\fITW \fP\fP
+Taiwan\&. 
+.TP
+\fB\fITZ \fP\fP
+Tanzania\&. 
+.TP
+\fB\fIUA \fP\fP
+Ukraine\&. 
+.TP
+\fB\fIUG \fP\fP
+Uganda\&. 
+.TP
+\fB\fIUM \fP\fP
+U\&.S\&. Outlying Islands\&. 
+.TP
+\fB\fIUS \fP\fP
+United States\&. 
+.TP
+\fB\fIUY \fP\fP
+Uruguay\&. 
+.TP
+\fB\fIUZ \fP\fP
+Uzbekistan\&. 
+.TP
+\fB\fIVA \fP\fP
+Vatican City\&. 
+.TP
+\fB\fIVC \fP\fP
+St\&. Vincent & Grenadines\&. 
+.TP
+\fB\fIVE \fP\fP
+Venezuela\&. 
+.TP
+\fB\fIVG \fP\fP
+British Virgin Islands\&. 
+.TP
+\fB\fIVN \fP\fP
+Vietnam\&. 
+.TP
+\fB\fIVU \fP\fP
+Vanuatu\&. 
+.TP
+\fB\fIWF \fP\fP
+Wallis & Futuna\&. 
+.TP
+\fB\fIWS \fP\fP
+Samoa\&. 
+.TP
+\fB\fIXK \fP\fP
+Kosovo\&. 
+.TP
+\fB\fIYE \fP\fP
+Yemen\&. 
+.TP
+\fB\fIYT \fP\fP
+Mayotte\&. 
+.TP
+\fB\fIZA \fP\fP
+South Africa\&. 
+.TP
+\fB\fIZM \fP\fP
+Zambia\&. 
+.TP
+\fB\fIZW \fP\fP
+Zimbabwe\&. 
+.SS "enum \fBShopify\&.Unity\&.CropRegion\fP"
+
+.PP
+The part of the image that should remain after cropping\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIBOTTOM \fP\fP
+Keep the bottom of the image\&. 
+.TP
+\fB\fICENTER \fP\fP
+Keep the center of the image\&. 
+.TP
+\fB\fILEFT \fP\fP
+Keep the left of the image\&. 
+.TP
+\fB\fIRIGHT \fP\fP
+Keep the right of the image\&. 
+.TP
+\fB\fITOP \fP\fP
+Keep the top of the image\&. 
+.SS "enum \fBShopify\&.Unity\&.CurrencyCode\fP"
+
+.PP
+Currency codes\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIAED \fP\fP
+United Arab Emirates Dirham (AED)\&. 
+.TP
+\fB\fIAFN \fP\fP
+Afghan Afghani (AFN)\&. 
+.TP
+\fB\fIALL \fP\fP
+Albanian Lek (ALL)\&. 
+.TP
+\fB\fIAMD \fP\fP
+Armenian Dram (AMD)\&. 
+.TP
+\fB\fIANG \fP\fP
+Netherlands Antillean Guilder\&. 
+.TP
+\fB\fIAOA \fP\fP
+Angolan Kwanza (AOA)\&. 
+.TP
+\fB\fIARS \fP\fP
+Argentine Pesos (ARS)\&. 
+.TP
+\fB\fIAUD \fP\fP
+Australian Dollars (AUD)\&. 
+.TP
+\fB\fIAWG \fP\fP
+Aruban Florin (AWG)\&. 
+.TP
+\fB\fIAZN \fP\fP
+Azerbaijani Manat (AZN)\&. 
+.TP
+\fB\fIBAM \fP\fP
+Bosnia and Herzegovina Convertible Mark (BAM)\&. 
+.TP
+\fB\fIBBD \fP\fP
+Barbadian Dollar (BBD)\&. 
+.TP
+\fB\fIBDT \fP\fP
+Bangladesh Taka (BDT)\&. 
+.TP
+\fB\fIBGN \fP\fP
+Bulgarian Lev (BGN)\&. 
+.TP
+\fB\fIBHD \fP\fP
+Bahraini Dinar (BHD)\&. 
+.TP
+\fB\fIBIF \fP\fP
+Burundian Franc (BIF)\&. 
+.TP
+\fB\fIBMD \fP\fP
+Bermudian Dollar (BMD)\&. 
+.TP
+\fB\fIBND \fP\fP
+Brunei Dollar (BND)\&. 
+.TP
+\fB\fIBOB \fP\fP
+Bolivian Boliviano (BOB)\&. 
+.TP
+\fB\fIBRL \fP\fP
+Brazilian Real (BRL)\&. 
+.TP
+\fB\fIBSD \fP\fP
+Bahamian Dollar (BSD)\&. 
+.TP
+\fB\fIBTN \fP\fP
+Bhutanese Ngultrum (BTN)\&. 
+.TP
+\fB\fIBWP \fP\fP
+Botswana Pula (BWP)\&. 
+.TP
+\fB\fIBZD \fP\fP
+Belize Dollar (BZD)\&. 
+.TP
+\fB\fICAD \fP\fP
+Canadian Dollars (CAD)\&. 
+.TP
+\fB\fICDF \fP\fP
+Congolese franc (CDF)\&. 
+.TP
+\fB\fICHF \fP\fP
+Swiss Francs (CHF)\&. 
+.TP
+\fB\fICLP \fP\fP
+Chilean Peso (CLP)\&. 
+.TP
+\fB\fICNY \fP\fP
+Chinese Yuan Renminbi (CNY)\&. 
+.TP
+\fB\fICOP \fP\fP
+Colombian Peso (COP)\&. 
+.TP
+\fB\fICRC \fP\fP
+Costa Rican Colones (CRC)\&. 
+.TP
+\fB\fICVE \fP\fP
+Cape Verdean escudo (CVE)\&. 
+.TP
+\fB\fICZK \fP\fP
+Czech Koruny (CZK)\&. 
+.TP
+\fB\fIDJF \fP\fP
+Djiboutian Franc (DJF)\&. 
+.TP
+\fB\fIDKK \fP\fP
+Danish Kroner (DKK)\&. 
+.TP
+\fB\fIDOP \fP\fP
+Dominican Peso (DOP)\&. 
+.TP
+\fB\fIDZD \fP\fP
+Algerian Dinar (DZD)\&. 
+.TP
+\fB\fIEGP \fP\fP
+Egyptian Pound (EGP)\&. 
+.TP
+\fB\fIETB \fP\fP
+Ethiopian Birr (ETB)\&. 
+.TP
+\fB\fIEUR \fP\fP
+Euro (EUR)\&. 
+.TP
+\fB\fIFJD \fP\fP
+Fijian Dollars (FJD)\&. 
+.TP
+\fB\fIFKP \fP\fP
+Falkland Islands Pounds (FKP)\&. 
+.TP
+\fB\fIGBP \fP\fP
+United Kingdom Pounds (GBP)\&. 
+.TP
+\fB\fIGEL \fP\fP
+Georgian Lari (GEL)\&. 
+.TP
+\fB\fIGHS \fP\fP
+Ghanaian Cedi (GHS)\&. 
+.TP
+\fB\fIGIP \fP\fP
+Gibraltar Pounds (GIP)\&. 
+.TP
+\fB\fIGMD \fP\fP
+Gambian Dalasi (GMD)\&. 
+.TP
+\fB\fIGNF \fP\fP
+Guinean Franc (GNF)\&. 
+.TP
+\fB\fIGTQ \fP\fP
+Guatemalan Quetzal (GTQ)\&. 
+.TP
+\fB\fIGYD \fP\fP
+Guyanese Dollar (GYD)\&. 
+.TP
+\fB\fIHKD \fP\fP
+Hong Kong Dollars (HKD)\&. 
+.TP
+\fB\fIHNL \fP\fP
+Honduran Lempira (HNL)\&. 
+.TP
+\fB\fIHRK \fP\fP
+Croatian Kuna (HRK)\&. 
+.TP
+\fB\fIHTG \fP\fP
+Haitian Gourde (HTG)\&. 
+.TP
+\fB\fIHUF \fP\fP
+Hungarian Forint (HUF)\&. 
+.TP
+\fB\fIIDR \fP\fP
+Indonesian Rupiah (IDR)\&. 
+.TP
+\fB\fIILS \fP\fP
+Israeli New Shekel (NIS)\&. 
+.TP
+\fB\fIINR \fP\fP
+Indian Rupees (INR)\&. 
+.TP
+\fB\fIIQD \fP\fP
+Iraqi Dinar (IQD)\&. 
+.TP
+\fB\fIIRR \fP\fP
+Iranian Rial (IRR)\&. 
+.TP
+\fB\fIISK \fP\fP
+Icelandic Kronur (ISK)\&. 
+.TP
+\fB\fIJEP \fP\fP
+Jersey Pound\&. 
+.TP
+\fB\fIJMD \fP\fP
+Jamaican Dollars (JMD)\&. 
+.TP
+\fB\fIJOD \fP\fP
+Jordanian Dinar (JOD)\&. 
+.TP
+\fB\fIJPY \fP\fP
+Japanese Yen (JPY)\&. 
+.TP
+\fB\fIKES \fP\fP
+Kenyan Shilling (KES)\&. 
+.TP
+\fB\fIKGS \fP\fP
+Kyrgyzstani Som (KGS)\&. 
+.TP
+\fB\fIKHR \fP\fP
+Cambodian Riel\&. 
+.TP
+\fB\fIKMF \fP\fP
+Comorian Franc (KMF)\&. 
+.TP
+\fB\fIKRW \fP\fP
+South Korean Won (KRW)\&. 
+.TP
+\fB\fIKWD \fP\fP
+Kuwaiti Dinar (KWD)\&. 
+.TP
+\fB\fIKYD \fP\fP
+Cayman Dollars (KYD)\&. 
+.TP
+\fB\fIKZT \fP\fP
+Kazakhstani Tenge (KZT)\&. 
+.TP
+\fB\fILAK \fP\fP
+Laotian Kip (LAK)\&. 
+.TP
+\fB\fILBP \fP\fP
+Lebanese Pounds (LBP)\&. 
+.TP
+\fB\fILKR \fP\fP
+Sri Lankan Rupees (LKR)\&. 
+.TP
+\fB\fILRD \fP\fP
+Liberian Dollar (LRD)\&. 
+.TP
+\fB\fILSL \fP\fP
+Lesotho Loti (LSL)\&. 
+.TP
+\fB\fILTL \fP\fP
+Lithuanian Litai (LTL)\&. 
+.TP
+\fB\fILVL \fP\fP
+Latvian Lati (LVL)\&. 
+.TP
+\fB\fILYD \fP\fP
+Libyan Dinar (LYD)\&. 
+.TP
+\fB\fIMAD \fP\fP
+Moroccan Dirham\&. 
+.TP
+\fB\fIMDL \fP\fP
+Moldovan Leu (MDL)\&. 
+.TP
+\fB\fIMGA \fP\fP
+Malagasy Ariary (MGA)\&. 
+.TP
+\fB\fIMKD \fP\fP
+Macedonia Denar (MKD)\&. 
+.TP
+\fB\fIMMK \fP\fP
+Burmese Kyat (MMK)\&. 
+.TP
+\fB\fIMNT \fP\fP
+Mongolian Tugrik\&. 
+.TP
+\fB\fIMOP \fP\fP
+Macanese Pataca (MOP)\&. 
+.TP
+\fB\fIMUR \fP\fP
+Mauritian Rupee (MUR)\&. 
+.TP
+\fB\fIMVR \fP\fP
+Maldivian Rufiyaa (MVR)\&. 
+.TP
+\fB\fIMWK \fP\fP
+Malawian Kwacha (MWK)\&. 
+.TP
+\fB\fIMXN \fP\fP
+Mexican Pesos (MXN)\&. 
+.TP
+\fB\fIMYR \fP\fP
+Malaysian Ringgits (MYR)\&. 
+.TP
+\fB\fIMZN \fP\fP
+Mozambican Metical\&. 
+.TP
+\fB\fINAD \fP\fP
+Namibian Dollar\&. 
+.TP
+\fB\fINGN \fP\fP
+Nigerian Naira (NGN)\&. 
+.TP
+\fB\fINIO \fP\fP
+Nicaraguan Córdoba (NIO)\&. 
+.TP
+\fB\fINOK \fP\fP
+Norwegian Kroner (NOK)\&. 
+.TP
+\fB\fINPR \fP\fP
+Nepalese Rupee (NPR)\&. 
+.TP
+\fB\fINZD \fP\fP
+New Zealand Dollars (NZD)\&. 
+.TP
+\fB\fIOMR \fP\fP
+Omani Rial (OMR)\&. 
+.TP
+\fB\fIPAB \fP\fP
+Panamian Balboa (PAB)\&. 
+.TP
+\fB\fIPEN \fP\fP
+Peruvian Nuevo Sol (PEN)\&. 
+.TP
+\fB\fIPGK \fP\fP
+Papua New Guinean Kina (PGK)\&. 
+.TP
+\fB\fIPHP \fP\fP
+Philippine Peso (PHP)\&. 
+.TP
+\fB\fIPKR \fP\fP
+Pakistani Rupee (PKR)\&. 
+.TP
+\fB\fIPLN \fP\fP
+Polish Zlotych (PLN)\&. 
+.TP
+\fB\fIPYG \fP\fP
+Paraguayan Guarani (PYG)\&. 
+.TP
+\fB\fIQAR \fP\fP
+Qatari Rial (QAR)\&. 
+.TP
+\fB\fIRON \fP\fP
+Romanian Lei (RON)\&. 
+.TP
+\fB\fIRSD \fP\fP
+Serbian dinar (RSD)\&. 
+.TP
+\fB\fIRUB \fP\fP
+Russian Rubles (RUB)\&. 
+.TP
+\fB\fIRWF \fP\fP
+Rwandan Franc (RWF)\&. 
+.TP
+\fB\fISAR \fP\fP
+Saudi Riyal (SAR)\&. 
+.TP
+\fB\fISBD \fP\fP
+Solomon Islands Dollar (SBD)\&. 
+.TP
+\fB\fISCR \fP\fP
+Seychellois Rupee (SCR)\&. 
+.TP
+\fB\fISDG \fP\fP
+Sudanese Pound (SDG)\&. 
+.TP
+\fB\fISEK \fP\fP
+Swedish Kronor (SEK)\&. 
+.TP
+\fB\fISGD \fP\fP
+Singapore Dollars (SGD)\&. 
+.TP
+\fB\fISHP \fP\fP
+Saint Helena Pounds (SHP)\&. 
+.TP
+\fB\fISLL \fP\fP
+Sierra Leonean Leone (SLL)\&. 
+.TP
+\fB\fISRD \fP\fP
+Surinamese Dollar (SRD)\&. 
+.TP
+\fB\fISSP \fP\fP
+South Sudanese Pound (SSP)\&. 
+.TP
+\fB\fISTD \fP\fP
+Sao Tome And Principe Dobra (STD)\&. 
+.TP
+\fB\fISYP \fP\fP
+Syrian Pound (SYP)\&. 
+.TP
+\fB\fISZL \fP\fP
+Swazi Lilangeni (SZL)\&. 
+.TP
+\fB\fITHB \fP\fP
+Thai baht (THB)\&. 
+.TP
+\fB\fITJS \fP\fP
+Tajikistani Somoni (TJS)\&. 
+.TP
+\fB\fITMT \fP\fP
+Turkmenistani Manat (TMT)\&. 
+.TP
+\fB\fITND \fP\fP
+Tunisian Dinar (TND)\&. 
+.TP
+\fB\fITOP \fP\fP
+Tongan Pa'anga (TOP)\&. 
+.TP
+\fB\fITRY \fP\fP
+Turkish Lira (TRY)\&. 
+.TP
+\fB\fITTD \fP\fP
+Trinidad and Tobago Dollars (TTD)\&. 
+.TP
+\fB\fITWD \fP\fP
+Taiwan Dollars (TWD)\&. 
+.TP
+\fB\fITZS \fP\fP
+Tanzanian Shilling (TZS)\&. 
+.TP
+\fB\fIUAH \fP\fP
+Ukrainian Hryvnia (UAH)\&. 
+.TP
+\fB\fIUGX \fP\fP
+Ugandan Shilling (UGX)\&. 
+.TP
+\fB\fIUSD \fP\fP
+United States Dollars (USD)\&. 
+.TP
+\fB\fIUYU \fP\fP
+Uruguayan Pesos (UYU)\&. 
+.TP
+\fB\fIUZS \fP\fP
+Uzbekistan som (UZS)\&. 
+.TP
+\fB\fIVND \fP\fP
+Vietnamese đồng (VND)\&. 
+.TP
+\fB\fIVUV \fP\fP
+Vanuatu Vatu (VUV)\&. 
+.TP
+\fB\fIWST \fP\fP
+Samoan Tala (WST)\&. 
+.TP
+\fB\fIXAF \fP\fP
+Central African CFA Franc (XAF)\&. 
+.TP
+\fB\fIXCD \fP\fP
+East Caribbean Dollar (XCD)\&. 
+.TP
+\fB\fIXOF \fP\fP
+West African CFA franc (XOF)\&. 
+.TP
+\fB\fIXPF \fP\fP
+CFP Franc (XPF)\&. 
+.TP
+\fB\fIYER \fP\fP
+Yemeni Rial (YER)\&. 
+.TP
+\fB\fIZAR \fP\fP
+South African Rand (ZAR)\&. 
+.TP
+\fB\fIZMW \fP\fP
+Zambian Kwacha (ZMW)\&. 
+.SS "enum \fBShopify\&.Unity\&.CustomerErrorCode\fP"
+
+.PP
+Possible error codes that could be returned by CustomerUserError\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIALREADY_ENABLED \fP\fP
+Customer already enabled\&. 
+.TP
+\fB\fIBLANK \fP\fP
+Input value is blank\&. 
+.TP
+\fB\fICONTAINS_HTML_TAGS \fP\fP
+Input contains HTML tags\&. 
+.TP
+\fB\fICONTAINS_URL \fP\fP
+Input contains URL\&. 
+.TP
+\fB\fICUSTOMER_DISABLED \fP\fP
+Customer is disabled\&. 
+.TP
+\fB\fIINVALID \fP\fP
+Input value is invalid\&. 
+.TP
+\fB\fINOT_FOUND \fP\fP
+Address does not exist\&. 
+.TP
+\fB\fIPASSWORD_STARTS_OR_ENDS_WITH_WHITESPACE \fP\fP
+Input password starts or ends with whitespace\&. 
+.TP
+\fB\fITAKEN \fP\fP
+Input value is already taken\&. 
+.TP
+\fB\fITOKEN_INVALID \fP\fP
+Invalid activation token\&. 
+.TP
+\fB\fITOO_LONG \fP\fP
+Input value is too long\&. 
+.TP
+\fB\fITOO_SHORT \fP\fP
+Input value is too short\&. 
+.TP
+\fB\fIUNIDENTIFIED_CUSTOMER \fP\fP
+Unidentified customer\&. 
+.SS "enum \fBShopify\&.Unity\&.DigitalWallet\fP"
+
+.PP
+Digital wallet, such as Apple Pay, which can be used for accelerated checkouts\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIANDROID_PAY \fP\fP
+Android Pay\&. 
+.TP
+\fB\fIAPPLE_PAY \fP\fP
+Apple Pay\&. 
+.TP
+\fB\fIGOOGLE_PAY \fP\fP
+\fBGoogle\fP Pay\&. 
+.TP
+\fB\fISHOPIFY_PAY \fP\fP
+\fBShopify\fP Pay\&. 
+.SS "enum \fBShopify\&.Unity\&.DiscountApplicationAllocationMethod\fP"
+
+.PP
+The method by which the discount's value is allocated onto its entitled lines\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIACROSS \fP\fP
+The value is spread across all entitled lines\&. 
+.TP
+\fB\fIEACH \fP\fP
+The value is applied onto every entitled line\&. 
+.SS "enum \fBShopify\&.Unity\&.DiscountApplicationTargetSelection\fP"
+
+.PP
+Which lines on the order that the discount is allocated over, of the type defined by the Discount Application's target_type\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIALL \fP\fP
+The discount is allocated onto all the lines\&. 
+.TP
+\fB\fIENTITLED \fP\fP
+The discount is allocated onto only the lines it is entitled for\&. 
+.TP
+\fB\fIEXPLICIT \fP\fP
+The discount is allocated onto explicitly chosen lines\&. 
+.SS "enum \fBShopify\&.Unity\&.DiscountApplicationTargetType\fP"
+
+.PP
+The type of line (i\&.e\&. line item or shipping line) on an order that the discount is applicable towards\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fILINE_ITEM \fP\fP
+The discount applies onto line items\&. 
+.TP
+\fB\fISHIPPING_LINE \fP\fP
+The discount applies onto shipping lines\&. 
+.SS "enum \fBShopify\&.Unity\&.ImageContentType\fP"
+
+.PP
+List of supported image content types\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIJPG \fP\fP
+A JPG image\&. 
+.TP
+\fB\fIPNG \fP\fP
+A PNG image\&. 
+.TP
+\fB\fIWEBP \fP\fP
+A WEBP image\&. 
+.SS "enum \fBShopify\&.Unity\&.MediaContentType\fP"
+
+.PP
+The possible content types for a media object\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIEXTERNAL_VIDEO \fP\fP
+An externally hosted video\&. 
+.TP
+\fB\fIIMAGE \fP\fP
+A \fBShopify\fP hosted image\&. 
+.TP
+\fB\fIMODEL_3D \fP\fP
+A 3d model\&. 
+.TP
+\fB\fIVIDEO \fP\fP
+A \fBShopify\fP hosted video\&. 
+.SS "enum \fBShopify\&.Unity\&.MetafieldValueType\fP"
+
+.PP
+Metafield value types\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIINTEGER \fP\fP
+An integer metafield\&. 
+.TP
+\fB\fIJSON_STRING \fP\fP
+A json string metafield\&. 
+.TP
+\fB\fISTRING \fP\fP
+A string metafield\&. 
+.SS "enum \fBShopify\&.Unity\&.OrderSortKeys\fP"
+
+.PP
+The set of valid sort keys for the Order query\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIID \fP\fP
+Sort by the \fCid\fP value\&. 
+.TP
+\fB\fIPROCESSED_AT \fP\fP
+Sort by the \fCprocessed_at\fP value\&. 
+.TP
+\fB\fIRELEVANCE \fP\fP
+During a search (i\&.e\&. when the \fCquery\fP parameter has been specified on the connection) this sorts the results by relevance to the search term(s)\&. When no search query is specified, this sort key is not deterministic and should not be used\&. 
+.TP
+\fB\fITOTAL_PRICE \fP\fP
+Sort by the \fCtotal_price\fP value\&. 
+.SS "enum \fBShopify\&.Unity\&.PageSortKeys\fP"
+
+.PP
+The set of valid sort keys for the Page query\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIID \fP\fP
+Sort by the \fCid\fP value\&. 
+.TP
+\fB\fIRELEVANCE \fP\fP
+During a search (i\&.e\&. when the \fCquery\fP parameter has been specified on the connection) this sorts the results by relevance to the search term(s)\&. When no search query is specified, this sort key is not deterministic and should not be used\&. 
+.TP
+\fB\fITITLE \fP\fP
+Sort by the \fCtitle\fP value\&. 
+.TP
+\fB\fIUPDATED_AT \fP\fP
+Sort by the \fCupdated_at\fP value\&. 
+.SS "enum \fBShopify\&.Unity\&.ProductCollectionSortKeys\fP"
+
+.PP
+The set of valid sort keys for the ProductCollection query\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIBEST_SELLING \fP\fP
+Sort by the \fCbest-selling\fP value\&. 
+.TP
+\fB\fICOLLECTION_DEFAULT \fP\fP
+Sort by the \fCcollection-default\fP value\&. 
+.TP
+\fB\fICREATED \fP\fP
+Sort by the \fCcreated\fP value\&. 
+.TP
+\fB\fIID \fP\fP
+Sort by the \fCid\fP value\&. 
+.TP
+\fB\fIMANUAL \fP\fP
+Sort by the \fCmanual\fP value\&. 
+.TP
+\fB\fIPRICE \fP\fP
+Sort by the \fCprice\fP value\&. 
+.TP
+\fB\fIRELEVANCE \fP\fP
+During a search (i\&.e\&. when the \fCquery\fP parameter has been specified on the connection) this sorts the results by relevance to the search term(s)\&. When no search query is specified, this sort key is not deterministic and should not be used\&. 
+.TP
+\fB\fITITLE \fP\fP
+Sort by the \fCtitle\fP value\&. 
+.SS "enum \fBShopify\&.Unity\&.ProductImageSortKeys\fP"
+
+.PP
+The set of valid sort keys for the ProductImage query\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fICREATED_AT \fP\fP
+Sort by the \fCcreated_at\fP value\&. 
+.TP
+\fB\fIID \fP\fP
+Sort by the \fCid\fP value\&. 
+.TP
+\fB\fIPOSITION \fP\fP
+Sort by the \fCposition\fP value\&. 
+.TP
+\fB\fIRELEVANCE \fP\fP
+During a search (i\&.e\&. when the \fCquery\fP parameter has been specified on the connection) this sorts the results by relevance to the search term(s)\&. When no search query is specified, this sort key is not deterministic and should not be used\&. 
+.SS "enum \fBShopify\&.Unity\&.ProductSortKeys\fP"
+
+.PP
+The set of valid sort keys for the Product query\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIBEST_SELLING \fP\fP
+Sort by the \fCbest_selling\fP value\&. 
+.TP
+\fB\fICREATED_AT \fP\fP
+Sort by the \fCcreated_at\fP value\&. 
+.TP
+\fB\fIID \fP\fP
+Sort by the \fCid\fP value\&. 
+.TP
+\fB\fIPRICE \fP\fP
+Sort by the \fCprice\fP value\&. 
+.TP
+\fB\fIPRODUCT_TYPE \fP\fP
+Sort by the \fCproduct_type\fP value\&. 
+.TP
+\fB\fIRELEVANCE \fP\fP
+During a search (i\&.e\&. when the \fCquery\fP parameter has been specified on the connection) this sorts the results by relevance to the search term(s)\&. When no search query is specified, this sort key is not deterministic and should not be used\&. 
+.TP
+\fB\fITITLE \fP\fP
+Sort by the \fCtitle\fP value\&. 
+.TP
+\fB\fIUPDATED_AT \fP\fP
+Sort by the \fCupdated_at\fP value\&. 
+.TP
+\fB\fIVENDOR \fP\fP
+Sort by the \fCvendor\fP value\&. 
+.SS "enum \fBShopify\&.Unity\&.ProductVariantSortKeys\fP"
+
+.PP
+The set of valid sort keys for the ProductVariant query\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIID \fP\fP
+Sort by the \fCid\fP value\&. 
+.TP
+\fB\fIPOSITION \fP\fP
+Sort by the \fCposition\fP value\&. 
+.TP
+\fB\fIRELEVANCE \fP\fP
+During a search (i\&.e\&. when the \fCquery\fP parameter has been specified on the connection) this sorts the results by relevance to the search term(s)\&. When no search query is specified, this sort key is not deterministic and should not be used\&. 
+.TP
+\fB\fISKU \fP\fP
+Sort by the \fCsku\fP value\&. 
+.TP
+\fB\fITITLE \fP\fP
+Sort by the \fCtitle\fP value\&. 
+.SS "enum \fBShopify\&.Unity\&.TransactionKind\fP"
+
+.PP
+The different kinds of order transactions\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIAUTHORIZATION \fP\fP
+An amount reserved against the cardholder's funding source\&. Money does not change hands until the authorization is captured\&. 
+.TP
+\fB\fICAPTURE \fP\fP
+A transfer of the money that was reserved during the authorization stage\&. 
+.TP
+\fB\fICHANGE \fP\fP
+Money returned to the customer when they have paid too much\&. 
+.TP
+\fB\fIEMV_AUTHORIZATION \fP\fP
+An authorization for a payment taken with an EMV credit card reader\&. 
+.TP
+\fB\fISALE \fP\fP
+An authorization and capture performed together in a single step\&. 
+.SS "enum \fBShopify\&.Unity\&.TransactionStatus\fP"
+
+.PP
+Transaction statuses describe the status of a transaction\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIERROR \fP\fP
+There was an error while processing the transaction\&. 
+.TP
+\fB\fIFAILURE \fP\fP
+The transaction failed\&. 
+.TP
+\fB\fIPENDING \fP\fP
+The transaction is pending\&. 
+.TP
+\fB\fISUCCESS \fP\fP
+The transaction succeeded\&. 
+.SS "enum \fBShopify\&.Unity\&.UnitPriceMeasurementMeasuredType\fP"
+
+.PP
+The accepted types of unit of measurement\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIAREA \fP\fP
+Unit of measurements representing areas\&. 
+.TP
+\fB\fILENGTH \fP\fP
+Unit of measurements representing lengths\&. 
+.TP
+\fB\fIVOLUME \fP\fP
+Unit of measurements representing volumes\&. 
+.TP
+\fB\fIWEIGHT \fP\fP
+Unit of measurements representing weights\&. 
+.SS "enum \fBShopify\&.Unity\&.UnitPriceMeasurementMeasuredUnit\fP"
+
+.PP
+The valid units of measurement for a unit price measurement\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fICL \fP\fP
+100 centiliters equals 1 liter\&. 
+.TP
+\fB\fICM \fP\fP
+100 centimeters equals 1 meter\&. 
+.TP
+\fB\fIG \fP\fP
+Metric system unit of weight\&. 
+.TP
+\fB\fIKG \fP\fP
+1 kilogram equals 1000 grams\&. 
+.TP
+\fB\fIL \fP\fP
+Metric system unit of volume\&. 
+.TP
+\fB\fIM \fP\fP
+Metric system unit of length\&. 
+.TP
+\fB\fIM2 \fP\fP
+Metric system unit of area\&. 
+.TP
+\fB\fIM3 \fP\fP
+1 cubic meter equals 1000 liters\&. 
+.TP
+\fB\fIMG \fP\fP
+1000 milligrams equals 1 gram\&. 
+.TP
+\fB\fIML \fP\fP
+1000 milliliters equals 1 liter\&. 
+.TP
+\fB\fIMM \fP\fP
+1000 millimeters equals 1 meter\&. 
+.SS "enum \fBShopify\&.Unity\&.WeightUnit\fP"
+
+.PP
+Units of measurement for weight\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUNKNOWN \fP\fP
+If the SDK is not up to date with the schema in the Storefront API, it is possible to have enum values returned that are unknown to the SDK\&. In this case the value will actually be UNKNOWN\&. 
+.TP
+\fB\fIGRAMS \fP\fP
+Metric system unit of mass\&. 
+.TP
+\fB\fIKILOGRAMS \fP\fP
+1 kilogram equals 1000 grams\&. 
+.TP
+\fB\fIOUNCES \fP\fP
+Imperial system unit of mass\&. 
+.TP
+\fB\fIPOUNDS \fP\fP
+1 pound equals 16 ounces\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

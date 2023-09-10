@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaDatabaseController.AppleSignInFromiOS" name="Achroma.AchromaDatabaseController.AppleSignInFromiOS">
+<area shape="rect" id="Node000001" title="Method that signs in to Apple from an Apple device." alt="" coords="238,5,482,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_sign_in_u_i.html#a21cceb3c00842102faa86f7957e5a703" title="This method calls the login method using Apple." alt="" coords="5,5,190,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,28,190,28,190,23,223,23"/>
+</map>

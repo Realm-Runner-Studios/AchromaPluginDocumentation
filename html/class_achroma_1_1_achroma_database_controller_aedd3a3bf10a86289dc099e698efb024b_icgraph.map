@@ -1,0 +1,17 @@
+<map id="Achroma.AchromaDatabaseController.PushUserData" name="Achroma.AchromaDatabaseController.PushUserData">
+<area shape="rect" id="Node000001" title="Method to update Firebase with the user&#39;s updates." alt="" coords="530,169,774,210"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_story.html#abc0d0d81733304250e1b987796f964fc" title="Adds a new step to the story." alt="" coords="259,5,461,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="618,161,557,110,520,84,481,61,451,49,453,44,483,57,523,79,560,106,621,157"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_database_controller.html#a02bc8095f4c161c5b4f24248330bb2cf" title="Method that signs in to Apple from an Android device." alt="" coords="238,71,482,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="586,166,481,127,441,114,442,109,483,122,588,161"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_database_controller.html#a344a2985784742079272d23bd6456e07" title="Method that signs in to Apple from an Apple device." alt="" coords="238,136,482,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="515,177,482,173,483,168,516,171"/>
+<area shape="rect" id="Node000006" href="$class_achroma_1_1_achroma_database_controller.html#a765dd443290a3abe4ba21860dfebe4ca" title="This method calls the login method using email and password." alt="" coords="238,201,482,242"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="516,207,483,211,482,206,515,202"/>
+<area shape="rect" id="Node000007" href="$class_achroma_a_p_i_1_1_achroma_instance_database.html#a182de23aa9294da397d2be79474bb742" title="Uploads user data to the database." alt="" coords="259,267,461,307"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="587,218,483,256,442,269,440,264,481,251,585,213"/>
+<area shape="rect" id="Node000008" href="$class_achroma_a_p_i_1_1_achroma_instance_story.html#aebbd2c35cf126d2dca17d857a1ea2289" title="Sets the Character and the Relic for a give story." alt="" coords="252,332,468,373"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="621,222,560,273,523,299,483,321,453,334,451,329,481,317,520,294,557,268,618,218"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_sign_in_u_i.html#a21cceb3c00842102faa86f7957e5a703" title="This method calls the login method using Apple." alt="" coords="5,136,190,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="223,159,190,159,190,154,223,154"/>
+</map>

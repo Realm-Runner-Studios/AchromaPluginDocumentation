@@ -1,0 +1,311 @@
+\doxysection{Achroma\+API.\+Achroma\+Instance\+UI Class Reference}
+\hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i}{}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i}\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+
+
+Singleton with standardized UI elements like messages, loading screens, etc.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_acd3f915e6cce9460bdb1fa1bd1350a1a}{Show\+Success\+Message}} (string message, Unity\+Action$<$ int $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Shows simple message with a success title and an OK button. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_a6cb246984b5f40134e107801a2427e50}{Show\+Error\+Message}} (string message, Unity\+Action$<$ int $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Shows simple message with a error title and an OK button. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_a41e3ce9bd94c297f0b34e9bf1ee9a229}{Show\+Warning\+Message}} (string message, Unity\+Action$<$ int $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Shows simple message with a error title and an OK button. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_a66f4a3d2fc47d796785abd6e0b2b09e3}{Show\+Question\+Message}} (string message, Unity\+Action$<$ int $>$ result)
+\begin{DoxyCompactList}\small\item\em Shows simple message with a question title and an YES and NO buttons for the user to select. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_a1ccf60994d29191786c4659a4bc9c177}{Add\+Notification}} (string message, Color color, \mbox{\hyperlink{namespace_achroma_a3f19ddc6bae7c9b4927134d2d25fe408}{Achroma\+Notification\+Sprite}} sprite)
+\begin{DoxyCompactList}\small\item\em Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_abadf90faa9529ccf623285305e7b97c6}{Add\+User\+Notification}} (string message)
+\begin{DoxyCompactList}\small\item\em Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_a6cac1944e9fcadbd5c79eaab36424c73}{Add\+Shard\+Notification}} (string message)
+\begin{DoxyCompactList}\small\item\em Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a1a853a6ce8782bd7e1574f0b15e6e193}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a1a853a6ce8782bd7e1574f0b15e6e193} 
+static void {\bfseries Set\+Allow\+Home\+Button} (bool value, Unity\+Action$<$ bool, string $>$ callback)
+\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_a5bd76307b1990d97eaea4e1a19d8e5bf}{Show\+Home\+Button}} (\mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button.\+Achroma\+Home\+Button\+Option}}\mbox{[}$\,$\mbox{]} options=null, Unity\+Action$<$ bool, string $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em Shows the Home Button. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a03a3bc646668e64cae668a6e51daf09d}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a03a3bc646668e64cae668a6e51daf09d} 
+static void {\bfseries Hide\+Home\+Button} ()
+\begin{DoxyCompactList}\small\item\em Hides the Home Button. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_a29cb5418a29491f2c88bc6bbd743d94b}{Load\+Background}} (Transform parent, Unity\+Action$<$ bool, string $>$ callback)
+\begin{DoxyCompactList}\small\item\em This will create a menu background. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_ad461325c05edddc648f0c391efa33833}{Show\+Loading}} (string loading\+Message, float delay=0.\+1f, Unity\+Action cancel\+Action=null)
+\begin{DoxyCompactList}\small\item\em Shows a loading screen with a custom message. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a4d7af87961aff56977293aa66a647dd0}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a4d7af87961aff56977293aa66a647dd0} 
+static void {\bfseries Hide\+Loading} ()
+\begin{DoxyCompactList}\small\item\em Hides the loading screen. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_adf78d371cda88e273240ccaa43b11883}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_adf78d371cda88e273240ccaa43b11883} 
+static void {\bfseries Show\+Saving\+Indicator} ()
+\begin{DoxyCompactList}\small\item\em Shows the small floppy disk icon on the top of the screen to indicate data has been saved. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_aa3bb8f133683d1a6b913c1abd4086429}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_aa3bb8f133683d1a6b913c1abd4086429} 
+static bool {\bfseries Allow\+Home\+Button}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_ad2ed809c4d0a7cf125d898a3852f0ea4}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_ad2ed809c4d0a7cf125d898a3852f0ea4} 
+static \mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button.\+Achroma\+Home\+Button\+Option}}\mbox{[}$\,$\mbox{]} {\bfseries Home\+Button\+Side\+Options}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current mode the user might be in. This will determine which options are available when the user sees the home button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton with standardized UI elements like messages, loading screens, etc. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a1ccf60994d29191786c4659a4bc9c177}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a1ccf60994d29191786c4659a4bc9c177} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!AddNotification@{AddNotification}}
+\index{AddNotification@{AddNotification}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{AddNotification()}{AddNotification()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Add\+Notification (\begin{DoxyParamCaption}\item[{string}]{message,  }\item[{Color}]{color,  }\item[{\mbox{\hyperlink{namespace_achroma_a3f19ddc6bae7c9b4927134d2d25fe408}{Achroma\+Notification\+Sprite}}}]{sprite }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message\\
+\hline
+{\em color} & Color of the text\\
+\hline
+{\em sprite} & Reference to the sprite in the Notification sprite sheet\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_a1ccf60994d29191786c4659a4bc9c177_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a6cac1944e9fcadbd5c79eaab36424c73}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a6cac1944e9fcadbd5c79eaab36424c73} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!AddShardNotification@{AddShardNotification}}
+\index{AddShardNotification@{AddShardNotification}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{AddShardNotification()}{AddShardNotification()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Add\+Shard\+Notification (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_a6cac1944e9fcadbd5c79eaab36424c73_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_abadf90faa9529ccf623285305e7b97c6}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_abadf90faa9529ccf623285305e7b97c6} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!AddUserNotification@{AddUserNotification}}
+\index{AddUserNotification@{AddUserNotification}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{AddUserNotification()}{AddUserNotification()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Add\+User\+Notification (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_abadf90faa9529ccf623285305e7b97c6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a29cb5418a29491f2c88bc6bbd743d94b}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a29cb5418a29491f2c88bc6bbd743d94b} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!LoadBackground@{LoadBackground}}
+\index{LoadBackground@{LoadBackground}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{LoadBackground()}{LoadBackground()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Load\+Background (\begin{DoxyParamCaption}\item[{Transform}]{parent,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This will create a menu background. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em progress} & The callback to indicate the download progress if needed\\
+\hline
+{\em parent} & The parent to which the object will be created on\\
+\hline
+{\em callback} & Callback with a success flag and error message (if any)\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_a29cb5418a29491f2c88bc6bbd743d94b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a6cb246984b5f40134e107801a2427e50}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a6cb246984b5f40134e107801a2427e50} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!ShowErrorMessage@{ShowErrorMessage}}
+\index{ShowErrorMessage@{ShowErrorMessage}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{ShowErrorMessage()}{ShowErrorMessage()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Show\+Error\+Message (\begin{DoxyParamCaption}\item[{string}]{message,  }\item[{Unity\+Action$<$ int $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows simple message with a error title and an OK button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to appear in the message body\\
+\hline
+{\em result} & The callback when the user taps on the OK button (optional) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_a6cb246984b5f40134e107801a2427e50_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a5bd76307b1990d97eaea4e1a19d8e5bf}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a5bd76307b1990d97eaea4e1a19d8e5bf} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!ShowHomeButton@{ShowHomeButton}}
+\index{ShowHomeButton@{ShowHomeButton}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{ShowHomeButton()}{ShowHomeButton()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Show\+Home\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button\+::\+Achroma\+Home\+Button\+Option}}\mbox{[}$\,$\mbox{]}}]{options = {\ttfamily null},  }\item[{Unity\+Action$<$ bool, string $>$}]{callback = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows the Home Button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & The list of buttons that will appear beside the home button\\
+\hline
+{\em callback} & A callback with a success flag and an error message (if any)\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_a5bd76307b1990d97eaea4e1a19d8e5bf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_a5bd76307b1990d97eaea4e1a19d8e5bf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_ad461325c05edddc648f0c391efa33833}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_ad461325c05edddc648f0c391efa33833} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!ShowLoading@{ShowLoading}}
+\index{ShowLoading@{ShowLoading}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{ShowLoading()}{ShowLoading()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Show\+Loading (\begin{DoxyParamCaption}\item[{string}]{loading\+Message,  }\item[{float}]{delay = {\ttfamily 0\+:\+:1f},  }\item[{Unity\+Action}]{cancel\+Action = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows a loading screen with a custom message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loading\+Message} & \\
+\hline
+{\em delay} & a delay to show message\\
+\hline
+{\em cancel\+Action} & callback if the user wants to cancel the loading\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_ad461325c05edddc648f0c391efa33833_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a66f4a3d2fc47d796785abd6e0b2b09e3}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a66f4a3d2fc47d796785abd6e0b2b09e3} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!ShowQuestionMessage@{ShowQuestionMessage}}
+\index{ShowQuestionMessage@{ShowQuestionMessage}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{ShowQuestionMessage()}{ShowQuestionMessage()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Show\+Question\+Message (\begin{DoxyParamCaption}\item[{string}]{message,  }\item[{Unity\+Action$<$ int $>$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows simple message with a question title and an YES and NO buttons for the user to select. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to appear in the message body\\
+\hline
+{\em result} & The callback when the user taps on the YES or NO buttons \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_a66f4a3d2fc47d796785abd6e0b2b09e3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_acd3f915e6cce9460bdb1fa1bd1350a1a}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_acd3f915e6cce9460bdb1fa1bd1350a1a} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!ShowSuccessMessage@{ShowSuccessMessage}}
+\index{ShowSuccessMessage@{ShowSuccessMessage}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{ShowSuccessMessage()}{ShowSuccessMessage()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Show\+Success\+Message (\begin{DoxyParamCaption}\item[{string}]{message,  }\item[{Unity\+Action$<$ int $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows simple message with a success title and an OK button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to appear in the message body\\
+\hline
+{\em result} & The callback when the user taps on the OK button (optional) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_acd3f915e6cce9460bdb1fa1bd1350a1a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a41e3ce9bd94c297f0b34e9bf1ee9a229}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a41e3ce9bd94c297f0b34e9bf1ee9a229} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!ShowWarningMessage@{ShowWarningMessage}}
+\index{ShowWarningMessage@{ShowWarningMessage}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{ShowWarningMessage()}{ShowWarningMessage()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Show\+Warning\+Message (\begin{DoxyParamCaption}\item[{string}]{message,  }\item[{Unity\+Action$<$ int $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows simple message with a error title and an OK button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to appear in the message body\\
+\hline
+{\em result} & The callback when the user taps on the OK button (optional) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_a41e3ce9bd94c297f0b34e9bf1ee9a229_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+UI.\+cs\end{DoxyCompactItemize}

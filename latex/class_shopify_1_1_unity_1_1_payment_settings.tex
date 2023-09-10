@@ -1,0 +1,86 @@
+\doxysection{Shopify.\+Unity.\+Payment\+Settings Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_payment_settings}{}\label{class_shopify_1_1_unity_1_1_payment_settings}\index{Shopify.Unity.PaymentSettings@{Shopify.Unity.PaymentSettings}}
+
+
+Settings related to payments.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Payment\+Settings\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Payment\+Settings\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_payment_settings_a423fd2e917045e2eeda3fe82e190f814}{Payment\+Settings}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_settings_a81bf33436d0e35c9ca0c234792627991}\label{class_shopify_1_1_unity_1_1_payment_settings_a81bf33436d0e35c9ca0c234792627991} 
+List$<$ \mbox{\hyperlink{namespace_shopify_1_1_unity_a09b6f1a20bdb64d15e3fb8359f7ced9a}{Card\+Brand}} $>$ {\bfseries accepted\+Card\+Brands} ()
+\begin{DoxyCompactList}\small\item\em List of the card brands which the shop accepts. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_settings_a4b4839b450effc4fd5e409c7a057e22b}\label{class_shopify_1_1_unity_1_1_payment_settings_a4b4839b450effc4fd5e409c7a057e22b} 
+string {\bfseries card\+Vault\+Url} ()
+\begin{DoxyCompactList}\small\item\em The url pointing to the endpoint to vault credit cards. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_settings_a9b8b20435942cca2d1bd148b118cae27}\label{class_shopify_1_1_unity_1_1_payment_settings_a9b8b20435942cca2d1bd148b118cae27} 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_a4ac2ce915c4dff60a384bb28448ea8c7}{Country\+Code}} {\bfseries country\+Code} ()
+\begin{DoxyCompactList}\small\item\em The country where the shop is located. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_settings_a3d8d6c4894a79e9a0cd3df4bcd2bde72}\label{class_shopify_1_1_unity_1_1_payment_settings_a3d8d6c4894a79e9a0cd3df4bcd2bde72} 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} {\bfseries currency\+Code} ()
+\begin{DoxyCompactList}\small\item\em The three-\/letter code for the shop\textquotesingle{}s primary currency. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_settings_a1ac1d8cd0063094b38d97957d47106e9}\label{class_shopify_1_1_unity_1_1_payment_settings_a1ac1d8cd0063094b38d97957d47106e9} 
+List$<$ \mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} $>$ {\bfseries enabled\+Presentment\+Currencies} ()
+\begin{DoxyCompactList}\small\item\em A list of enabled currencies (ISO 4217 format) that the shop accepts. Merchants can enable currencies from their \doxylink{namespace_shopify}{Shopify} Payments settings in the \doxylink{namespace_shopify}{Shopify} admin. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_settings_a74fdb0819440d0e7818a8d2e59a4c186}\label{class_shopify_1_1_unity_1_1_payment_settings_a74fdb0819440d0e7818a8d2e59a4c186} 
+string {\bfseries shopify\+Payments\+Account\+Id} ()
+\begin{DoxyCompactList}\small\item\em The shop’s \doxylink{namespace_shopify}{Shopify} Payments account id. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_settings_af6292c2c3fcfe865553aa9f191d99a34}\label{class_shopify_1_1_unity_1_1_payment_settings_af6292c2c3fcfe865553aa9f191d99a34} 
+List$<$ \mbox{\hyperlink{namespace_shopify_1_1_unity_ae0b290d34c3c31410d1a17511d2fe70b}{Digital\+Wallet}} $>$ {\bfseries supported\+Digital\+Wallets} ()
+\begin{DoxyCompactList}\small\item\em List of the digital wallets which the shop supports. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_settings_a2bfcc29457d2c36d3d4ae4081e67db5a}\label{class_shopify_1_1_unity_1_1_payment_settings_a2bfcc29457d2c36d3d4ae4081e67db5a} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Settings related to payments. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_settings_a423fd2e917045e2eeda3fe82e190f814}\label{class_shopify_1_1_unity_1_1_payment_settings_a423fd2e917045e2eeda3fe82e190f814} 
+\index{Shopify.Unity.PaymentSettings@{Shopify.Unity.PaymentSettings}!PaymentSettings@{PaymentSettings}}
+\index{PaymentSettings@{PaymentSettings}!Shopify.Unity.PaymentSettings@{Shopify.Unity.PaymentSettings}}
+\doxysubsubsection{\texorpdfstring{PaymentSettings()}{PaymentSettings()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Payment\+Settings.\+Payment\+Settings (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Payment\+Settings\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Payment\+Settings.\+cs\end{DoxyCompactItemize}

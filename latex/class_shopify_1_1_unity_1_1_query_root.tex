@@ -1,0 +1,331 @@
+\doxysection{Shopify.\+Unity.\+Query\+Root Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_query_root}{}\label{class_shopify_1_1_unity_1_1_query_root}\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+
+
+The schema’s entry-\/point for queries. This acts as the public, top-\/level API from which all queries must start.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Query\+Root\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Query\+Root\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_a16ffe103e088a2a84eb918ad791a7e73}{Query\+Root}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_article_connection}{Article\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_a9412d927f884c75aa0a17f2640b9ddb4}{articles}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop\textquotesingle{}s articles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_blog}{Blog}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_abc7421795bcc4557cf00fdb6022e29e0}{blog\+By\+Handle}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a blog by its handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_blog_connection}{Blog\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_af0f8aab0400155f0eeb1f8250f10a4b0}{blogs}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop\textquotesingle{}s blogs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection}{Collection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_ad7b83da0e698a3675e105f9f6a893b46}{collection\+By\+Handle}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a collection by its handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection_connection}{Collection\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_aaed6b1d348dcaff7f6ef7582996bb0ff}{collections}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop’s collections. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer}{Customer}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_a4ee847962af5f01d18d1d9b79fd4aeab}{customer}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a customer by its access token. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node}{Node}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_a219462d6ec71dcdeb47a44cd69582cf5}{node}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Returns a specific node by ID. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node}{Node}} $>$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_a1fb31fc70bc0c7b448e985d3abd3a772}{nodes}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Returns the list of nodes with the given IDs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_page}{Page}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_ab10da62b11bce9c7b5e4b29e9ff0e481}{page\+By\+Handle}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a page by its handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_page_connection}{Page\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_aec8a65755ac24888efd42006637acd31}{pages}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop\textquotesingle{}s pages. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_ab896218bc442eb5dce852a19637b977a}{product\+By\+Handle}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a product by its handle. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}} $>$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_a6ad4898ac2cf00cb2ef685c903d51570}{product\+Recommendations}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Find recommended products related to a given {\ttfamily product\+\_\+id}. To learn more about how recommendations are generated, see \href{https://help.shopify.com/themes/development/recommended-products}{\texttt{ {\itshape Showing product recommendations on product pages}}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_string_connection}{String\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_aec7c7893067c2de6a1cde907396790e0}{product\+Tags}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Tags added to products. Additional access scope required\+: unauthenticated\+\_\+read\+\_\+product\+\_\+tags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_string_connection}{String\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_a9fa7976191ff7e9020213873a0357c12}{product\+Types}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of product types for the shop\textquotesingle{}s products that are published to your app. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_connection}{Product\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_query_root_a3ae6d175db761b18a3ac29b28d70bb69}{products}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop’s products. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_ab5d6925d6ffc820bd3d11a7c0d6be084}\label{class_shopify_1_1_unity_1_1_query_root_ab5d6925d6ffc820bd3d11a7c0d6be084} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_api_version}{Api\+Version}} $>$ {\bfseries public\+Api\+Versions} ()
+\begin{DoxyCompactList}\small\item\em The list of public Storefront API versions, including supported, release candidate and unstable versions. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_aa1d135ef1ed79060a885c98bdda5f587}\label{class_shopify_1_1_unity_1_1_query_root_aa1d135ef1ed79060a885c98bdda5f587} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop}{Shop}} {\bfseries shop} ()
+\begin{DoxyCompactList}\small\item\em The shop associated with the storefront access token. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_a466e095a806a75027cb155f1bb026cfd}\label{class_shopify_1_1_unity_1_1_query_root_a466e095a806a75027cb155f1bb026cfd} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The schema’s entry-\/point for queries. This acts as the public, top-\/level API from which all queries must start. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_a16ffe103e088a2a84eb918ad791a7e73}\label{class_shopify_1_1_unity_1_1_query_root_a16ffe103e088a2a84eb918ad791a7e73} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!QueryRoot@{QueryRoot}}
+\index{QueryRoot@{QueryRoot}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{QueryRoot()}{QueryRoot()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Query\+Root.\+Query\+Root (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Query\+Root\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_a9412d927f884c75aa0a17f2640b9ddb4}\label{class_shopify_1_1_unity_1_1_query_root_a9412d927f884c75aa0a17f2640b9ddb4} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!articles@{articles}}
+\index{articles@{articles}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{articles()}{articles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_article_connection}{Article\+Connection}} Shopify.\+Unity.\+Query\+Root.\+articles (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop\textquotesingle{}s articles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_abc7421795bcc4557cf00fdb6022e29e0}\label{class_shopify_1_1_unity_1_1_query_root_abc7421795bcc4557cf00fdb6022e29e0} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!blogByHandle@{blogByHandle}}
+\index{blogByHandle@{blogByHandle}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{blogByHandle()}{blogByHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_blog}{Blog}} Shopify.\+Unity.\+Query\+Root.\+blog\+By\+Handle (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a blog by its handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_af0f8aab0400155f0eeb1f8250f10a4b0}\label{class_shopify_1_1_unity_1_1_query_root_af0f8aab0400155f0eeb1f8250f10a4b0} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!blogs@{blogs}}
+\index{blogs@{blogs}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{blogs()}{blogs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_blog_connection}{Blog\+Connection}} Shopify.\+Unity.\+Query\+Root.\+blogs (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop\textquotesingle{}s blogs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_ad7b83da0e698a3675e105f9f6a893b46}\label{class_shopify_1_1_unity_1_1_query_root_ad7b83da0e698a3675e105f9f6a893b46} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!collectionByHandle@{collectionByHandle}}
+\index{collectionByHandle@{collectionByHandle}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{collectionByHandle()}{collectionByHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection}{Collection}} Shopify.\+Unity.\+Query\+Root.\+collection\+By\+Handle (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a collection by its handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_aaed6b1d348dcaff7f6ef7582996bb0ff}\label{class_shopify_1_1_unity_1_1_query_root_aaed6b1d348dcaff7f6ef7582996bb0ff} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!collections@{collections}}
+\index{collections@{collections}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{collections()}{collections()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection_connection}{Collection\+Connection}} Shopify.\+Unity.\+Query\+Root.\+collections (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop’s collections. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_a4ee847962af5f01d18d1d9b79fd4aeab}\label{class_shopify_1_1_unity_1_1_query_root_a4ee847962af5f01d18d1d9b79fd4aeab} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!customer@{customer}}
+\index{customer@{customer}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{customer()}{customer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer}{Customer}} Shopify.\+Unity.\+Query\+Root.\+customer (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a customer by its access token. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_a219462d6ec71dcdeb47a44cd69582cf5}\label{class_shopify_1_1_unity_1_1_query_root_a219462d6ec71dcdeb47a44cd69582cf5} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!node@{node}}
+\index{node@{node}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{node()}{node()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node}{Node}} Shopify.\+Unity.\+Query\+Root.\+node (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Returns a specific node by ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_a1fb31fc70bc0c7b448e985d3abd3a772}\label{class_shopify_1_1_unity_1_1_query_root_a1fb31fc70bc0c7b448e985d3abd3a772} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!nodes@{nodes}}
+\index{nodes@{nodes}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{nodes()}{nodes()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node}{Node}} $>$ Shopify.\+Unity.\+Query\+Root.\+nodes (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Returns the list of nodes with the given IDs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_ab10da62b11bce9c7b5e4b29e9ff0e481}\label{class_shopify_1_1_unity_1_1_query_root_ab10da62b11bce9c7b5e4b29e9ff0e481} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!pageByHandle@{pageByHandle}}
+\index{pageByHandle@{pageByHandle}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{pageByHandle()}{pageByHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_page}{Page}} Shopify.\+Unity.\+Query\+Root.\+page\+By\+Handle (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a page by its handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_aec8a65755ac24888efd42006637acd31}\label{class_shopify_1_1_unity_1_1_query_root_aec8a65755ac24888efd42006637acd31} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!pages@{pages}}
+\index{pages@{pages}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{pages()}{pages()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_page_connection}{Page\+Connection}} Shopify.\+Unity.\+Query\+Root.\+pages (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop\textquotesingle{}s pages. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_ab896218bc442eb5dce852a19637b977a}\label{class_shopify_1_1_unity_1_1_query_root_ab896218bc442eb5dce852a19637b977a} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!productByHandle@{productByHandle}}
+\index{productByHandle@{productByHandle}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{productByHandle()}{productByHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}} Shopify.\+Unity.\+Query\+Root.\+product\+By\+Handle (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a product by its handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_a6ad4898ac2cf00cb2ef685c903d51570}\label{class_shopify_1_1_unity_1_1_query_root_a6ad4898ac2cf00cb2ef685c903d51570} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!productRecommendations@{productRecommendations}}
+\index{productRecommendations@{productRecommendations}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{productRecommendations()}{productRecommendations()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}} $>$ Shopify.\+Unity.\+Query\+Root.\+product\+Recommendations (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find recommended products related to a given {\ttfamily product\+\_\+id}. To learn more about how recommendations are generated, see \href{https://help.shopify.com/themes/development/recommended-products}{\texttt{ {\itshape Showing product recommendations on product pages}}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_a3ae6d175db761b18a3ac29b28d70bb69}\label{class_shopify_1_1_unity_1_1_query_root_a3ae6d175db761b18a3ac29b28d70bb69} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!products@{products}}
+\index{products@{products}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{products()}{products()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_connection}{Product\+Connection}} Shopify.\+Unity.\+Query\+Root.\+products (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop’s products. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_aec7c7893067c2de6a1cde907396790e0}\label{class_shopify_1_1_unity_1_1_query_root_aec7c7893067c2de6a1cde907396790e0} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!productTags@{productTags}}
+\index{productTags@{productTags}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{productTags()}{productTags()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_string_connection}{String\+Connection}} Shopify.\+Unity.\+Query\+Root.\+product\+Tags (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Tags added to products. Additional access scope required\+: unauthenticated\+\_\+read\+\_\+product\+\_\+tags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_query_root_a9fa7976191ff7e9020213873a0357c12}\label{class_shopify_1_1_unity_1_1_query_root_a9fa7976191ff7e9020213873a0357c12} 
+\index{Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}!productTypes@{productTypes}}
+\index{productTypes@{productTypes}!Shopify.Unity.QueryRoot@{Shopify.Unity.QueryRoot}}
+\doxysubsubsection{\texorpdfstring{productTypes()}{productTypes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_string_connection}{String\+Connection}} Shopify.\+Unity.\+Query\+Root.\+product\+Types (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of product types for the shop\textquotesingle{}s products that are published to your app. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Query\+Root.\+cs\end{DoxyCompactItemize}

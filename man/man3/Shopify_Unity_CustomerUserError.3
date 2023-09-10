@@ -1,0 +1,91 @@
+.TH "Shopify.Unity.CustomerUserError" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.CustomerUserError \- Represents an error that happens during execution of a customer mutation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.DisplayableError\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCustomerUserError\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "\fBCustomerErrorCode\fP? \fBcode\fP ()"
+.br
+.RI "Error code to uniquely identify the error\&. "
+.ti -1c
+.RI "List< string > \fBfield\fP ()"
+.br
+.RI "Path to the input field which caused the error\&. "
+.ti -1c
+.RI "string \fBmessage\fP ()"
+.br
+.RI "The error message\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents an error that happens during execution of a customer mutation\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.CustomerUserError\&.CustomerUserError (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for CustomerUserError
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "List< string > Shopify\&.Unity\&.CustomerUserError\&.field ()"
+
+.PP
+Path to the input field which caused the error\&. 
+.PP
+Implements \fBShopify\&.Unity\&.DisplayableError\fP\&.
+.SS "string Shopify\&.Unity\&.CustomerUserError\&.message ()"
+
+.PP
+The error message\&. 
+.PP
+Implements \fBShopify\&.Unity\&.DisplayableError\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

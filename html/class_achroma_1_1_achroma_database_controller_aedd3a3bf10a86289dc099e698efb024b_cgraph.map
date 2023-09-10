@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaDatabaseController.PushUserData" name="Achroma.AchromaDatabaseController.PushUserData">
+<area shape="rect" id="Node000001" title="Method to update Firebase with the user&#39;s updates." alt="" coords="5,5,250,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_firebase_controller.html#aeaebd8d6f8b4ae1933dded34b8c18a61" title="Method to push the user data to Firebase using Json serialization." alt="" coords="298,5,536,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,23,282,23,282,28,250,28"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaDatabaseController.GetMatchData" name="Achroma.AchromaDatabaseController.GetMatchData">
+<area shape="rect" id="Node000001" title="Based on a session id, it gives back the MatchData object." alt="" coords="5,5,250,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_firebase_controller.html#af26f0efa5f2b9be6502515156efb3d56" title="Gets the json of a match given the session id." alt="" coords="298,5,536,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,23,282,23,282,28,250,28"/>
+</map>

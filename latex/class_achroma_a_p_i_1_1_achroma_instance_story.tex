@@ -1,0 +1,427 @@
+\doxysection{Achroma\+API.\+Achroma\+Instance\+Story Class Reference}
+\hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story}{}\label{class_achroma_a_p_i_1_1_achroma_instance_story}\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+
+
+Singleton with methods related to the Adventure Mode.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_a6d1bf06fa41ae43a8717b92cfac3341d}\label{class_achroma_a_p_i_1_1_achroma_instance_story_a6d1bf06fa41ae43a8717b92cfac3341d} 
+static Achroma\+Story {\bfseries Get\+User\+Avatar\+Story} ()
+\begin{DoxyCompactList}\small\item\em Returns the avatar to the host application. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_achroma_1_1_achroma_story_progress}{Achroma\+Story\+Progress}} \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_a8c7fdf2c6dce02fb55ee78bcf09c615a}{Get\+User\+Story\+Progress}} (string story)
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s progress given a story. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_ab675e6a4665126ded38a0f5194e21606}{Get\+User\+Story\+Progress\+Count}} (string story)
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s progress count given a story. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_aba97922075193bd19f328f3d328c4e43}{Get\+User\+Last\+Story\+Step}} (string story)
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s last step in the story. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_ae4f0f89e9567611e7e31c9e4508bee60}\label{class_achroma_a_p_i_1_1_achroma_instance_story_ae4f0f89e9567611e7e31c9e4508bee60} 
+static string {\bfseries Get\+User\+Last\+Update\+On\+Story} (string story)
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s last update date. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_ae97f9ebf62e8346d744a41c398c5087c}{Go\+Back\+In\+Story}} (string story, Unity\+Action$<$ bool, string, string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Goest back in time in the story mode. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_a097385cf91695516807c624d2cb383d1}{Clear\+Story\+Progress}} (string story, Unity\+Action$<$ bool, string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Clears the progress for a given story. This should be called when the story reinitiated. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_abc0d0d81733304250e1b987796f964fc}{Add\+Story\+Step}} (string story, string story\+Step\+Id, int character, int relic, Unity\+Action$<$ bool, string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Adds a new step to the story. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_ae1eae488b66a7441cdd531f34a20118e}\label{class_achroma_a_p_i_1_1_achroma_instance_story_ae1eae488b66a7441cdd531f34a20118e} 
+static bool {\bfseries Get\+User\+Debug\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Returns the if the user has debug mode privilege. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_a30ea5ee42cca74a781ec190af1cbe87c}{Add\+Story\+Shards}} (int shards, string story\+Step\+Id, Unity\+Action$<$ bool, string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Adds shards to the user. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_ad931a670e4d0b889b02b6245baa62910}{Get\+Story\+Relic}} (string story)
+\begin{DoxyCompactList}\small\item\em Returns the relic chosen by the user for a given story. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_aef70a821db09ee0b8daed3629962a3c0}{Get\+Story\+Chracter}} (string story)
+\begin{DoxyCompactList}\small\item\em Returns the character chosen by the user for a given story. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_aebbd2c35cf126d2dca17d857a1ea2289}{Set\+Story\+Character\+And\+Relic}} (string story\+Id, int story\+Charater, int story\+Relic, Unity\+Action$<$ bool, string $>$callback)
+\begin{DoxyCompactList}\small\item\em Sets the Character and the Relic for a give story. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_a56f5f2bfd3de12194bf9d27bc63975b8}{Get\+Story\+Milestone\+Value}} (string story, string milestone)
+\begin{DoxyCompactList}\small\item\em Returns the milestone value for a given story (characters, locations and objects visited) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_ac71bb652d5565aed88cfbc9c055cebcb}{Update\+Story\+Milestone\+Value}} (string story, string name, int value, Unity\+Action$<$ string, int $>$ callback)
+\begin{DoxyCompactList}\small\item\em Updates the variable inside a story and returns the value to the user. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_a5a4b1feb13f817b9e48af114e320bb2a}{Update\+Story\+Variable\+Value}} (string story, string name, int value, Unity\+Action$<$ string, int $>$ callback)
+\begin{DoxyCompactList}\small\item\em Updates the variable inside a story and returns the value to the user. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_a89eb30c8da92d0d568c264df279cf5f5}{Reset\+Story\+Variable}} (string story, string name, Unity\+Action$<$ string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Resets the variable for a give story. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_story_a251159c9833cf8e437748560e2f0f099}{Get\+Story\+Variable\+Value}} (string story, string variable)
+\begin{DoxyCompactList}\small\item\em Returns the variable value for a given story. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton with methods related to the Adventure Mode. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_a30ea5ee42cca74a781ec190af1cbe87c}\label{class_achroma_a_p_i_1_1_achroma_instance_story_a30ea5ee42cca74a781ec190af1cbe87c} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!AddStoryShards@{AddStoryShards}}
+\index{AddStoryShards@{AddStoryShards}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{AddStoryShards()}{AddStoryShards()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Story.\+Add\+Story\+Shards (\begin{DoxyParamCaption}\item[{int}]{shards,  }\item[{string}]{story\+Step\+Id,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds shards to the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shards} & Shards to add\\
+\hline
+{\em story\+Step\+Id} & The story step related to this gain\\
+\hline
+{\em callback} & The callback indicating success or failure\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_story_a30ea5ee42cca74a781ec190af1cbe87c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_abc0d0d81733304250e1b987796f964fc}\label{class_achroma_a_p_i_1_1_achroma_instance_story_abc0d0d81733304250e1b987796f964fc} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!AddStoryStep@{AddStoryStep}}
+\index{AddStoryStep@{AddStoryStep}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{AddStoryStep()}{AddStoryStep()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Story.\+Add\+Story\+Step (\begin{DoxyParamCaption}\item[{string}]{story,  }\item[{string}]{story\+Step\+Id,  }\item[{int}]{character,  }\item[{int}]{relic,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a new step to the story. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & The related story\\
+\hline
+{\em story\+Step\+Id} & The step id in question\\
+\hline
+{\em callback} & Success/\+Failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_story_abc0d0d81733304250e1b987796f964fc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_a097385cf91695516807c624d2cb383d1}\label{class_achroma_a_p_i_1_1_achroma_instance_story_a097385cf91695516807c624d2cb383d1} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!ClearStoryProgress@{ClearStoryProgress}}
+\index{ClearStoryProgress@{ClearStoryProgress}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{ClearStoryProgress()}{ClearStoryProgress()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Story.\+Clear\+Story\+Progress (\begin{DoxyParamCaption}\item[{string}]{story,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clears the progress for a given story. This should be called when the story reinitiated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & The related story\\
+\hline
+{\em callback} & Success/\+Failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_story_a097385cf91695516807c624d2cb383d1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_aef70a821db09ee0b8daed3629962a3c0}\label{class_achroma_a_p_i_1_1_achroma_instance_story_aef70a821db09ee0b8daed3629962a3c0} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!GetStoryChracter@{GetStoryChracter}}
+\index{GetStoryChracter@{GetStoryChracter}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{GetStoryChracter()}{GetStoryChracter()}}
+{\footnotesize\ttfamily static int Achroma\+API.\+Achroma\+Instance\+Story.\+Get\+Story\+Chracter (\begin{DoxyParamCaption}\item[{string}]{story }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the character chosen by the user for a given story. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the character
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_story_aef70a821db09ee0b8daed3629962a3c0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_a56f5f2bfd3de12194bf9d27bc63975b8}\label{class_achroma_a_p_i_1_1_achroma_instance_story_a56f5f2bfd3de12194bf9d27bc63975b8} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!GetStoryMilestoneValue@{GetStoryMilestoneValue}}
+\index{GetStoryMilestoneValue@{GetStoryMilestoneValue}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{GetStoryMilestoneValue()}{GetStoryMilestoneValue()}}
+{\footnotesize\ttfamily static int Achroma\+API.\+Achroma\+Instance\+Story.\+Get\+Story\+Milestone\+Value (\begin{DoxyParamCaption}\item[{string}]{story,  }\item[{string}]{milestone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the milestone value for a given story (characters, locations and objects visited) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & The story chapter CH, CC, DR, FL, WW\\
+\hline
+{\em milestone} & The milestone name that comes from weaver and has to do with what the user has seen/picked/met\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_story_a56f5f2bfd3de12194bf9d27bc63975b8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_ad931a670e4d0b889b02b6245baa62910}\label{class_achroma_a_p_i_1_1_achroma_instance_story_ad931a670e4d0b889b02b6245baa62910} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!GetStoryRelic@{GetStoryRelic}}
+\index{GetStoryRelic@{GetStoryRelic}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{GetStoryRelic()}{GetStoryRelic()}}
+{\footnotesize\ttfamily static int Achroma\+API.\+Achroma\+Instance\+Story.\+Get\+Story\+Relic (\begin{DoxyParamCaption}\item[{string}]{story }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the relic chosen by the user for a given story. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the relic
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_story_ad931a670e4d0b889b02b6245baa62910_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_a251159c9833cf8e437748560e2f0f099}\label{class_achroma_a_p_i_1_1_achroma_instance_story_a251159c9833cf8e437748560e2f0f099} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!GetStoryVariableValue@{GetStoryVariableValue}}
+\index{GetStoryVariableValue@{GetStoryVariableValue}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{GetStoryVariableValue()}{GetStoryVariableValue()}}
+{\footnotesize\ttfamily static int Achroma\+API.\+Achroma\+Instance\+Story.\+Get\+Story\+Variable\+Value (\begin{DoxyParamCaption}\item[{string}]{story,  }\item[{string}]{variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the variable value for a given story. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & The story chapter CH, CC, DR, FL, WW\\
+\hline
+{\em variable} & The variable name that comes from weaver\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_story_a251159c9833cf8e437748560e2f0f099_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_aba97922075193bd19f328f3d328c4e43}\label{class_achroma_a_p_i_1_1_achroma_instance_story_aba97922075193bd19f328f3d328c4e43} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!GetUserLastStoryStep@{GetUserLastStoryStep}}
+\index{GetUserLastStoryStep@{GetUserLastStoryStep}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{GetUserLastStoryStep()}{GetUserLastStoryStep()}}
+{\footnotesize\ttfamily static string Achroma\+API.\+Achroma\+Instance\+Story.\+Get\+User\+Last\+Story\+Step (\begin{DoxyParamCaption}\item[{string}]{story }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the user\textquotesingle{}s last step in the story. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & The related story (CH, FL, DR, etc)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_a8c7fdf2c6dce02fb55ee78bcf09c615a}\label{class_achroma_a_p_i_1_1_achroma_instance_story_a8c7fdf2c6dce02fb55ee78bcf09c615a} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!GetUserStoryProgress@{GetUserStoryProgress}}
+\index{GetUserStoryProgress@{GetUserStoryProgress}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{GetUserStoryProgress()}{GetUserStoryProgress()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_achroma_1_1_achroma_story_progress}{Achroma\+Story\+Progress}} Achroma\+API.\+Achroma\+Instance\+Story.\+Get\+User\+Story\+Progress (\begin{DoxyParamCaption}\item[{string}]{story }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the user\textquotesingle{}s progress given a story. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & The related story (CH, FL, DR, etc)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_ab675e6a4665126ded38a0f5194e21606}\label{class_achroma_a_p_i_1_1_achroma_instance_story_ab675e6a4665126ded38a0f5194e21606} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!GetUserStoryProgressCount@{GetUserStoryProgressCount}}
+\index{GetUserStoryProgressCount@{GetUserStoryProgressCount}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{GetUserStoryProgressCount()}{GetUserStoryProgressCount()}}
+{\footnotesize\ttfamily static int Achroma\+API.\+Achroma\+Instance\+Story.\+Get\+User\+Story\+Progress\+Count (\begin{DoxyParamCaption}\item[{string}]{story }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the user\textquotesingle{}s progress count given a story. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & The related story (CH, FL, DR, etc)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_ae97f9ebf62e8346d744a41c398c5087c}\label{class_achroma_a_p_i_1_1_achroma_instance_story_ae97f9ebf62e8346d744a41c398c5087c} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!GoBackInStory@{GoBackInStory}}
+\index{GoBackInStory@{GoBackInStory}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{GoBackInStory()}{GoBackInStory()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Story.\+Go\+Back\+In\+Story (\begin{DoxyParamCaption}\item[{string}]{story,  }\item[{Unity\+Action$<$ bool, string, string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Goest back in time in the story mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & The story chapter \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_story_ae97f9ebf62e8346d744a41c398c5087c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_a89eb30c8da92d0d568c264df279cf5f5}\label{class_achroma_a_p_i_1_1_achroma_instance_story_a89eb30c8da92d0d568c264df279cf5f5} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!ResetStoryVariable@{ResetStoryVariable}}
+\index{ResetStoryVariable@{ResetStoryVariable}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{ResetStoryVariable()}{ResetStoryVariable()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Story.\+Reset\+Story\+Variable (\begin{DoxyParamCaption}\item[{string}]{story,  }\item[{string}]{name,  }\item[{Unity\+Action$<$ string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Resets the variable for a give story. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & The story chapted\\
+\hline
+{\em name} & The variable name\\
+\hline
+{\em callback} & The success/failure callback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_story_a89eb30c8da92d0d568c264df279cf5f5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_aebbd2c35cf126d2dca17d857a1ea2289}\label{class_achroma_a_p_i_1_1_achroma_instance_story_aebbd2c35cf126d2dca17d857a1ea2289} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!SetStoryCharacterAndRelic@{SetStoryCharacterAndRelic}}
+\index{SetStoryCharacterAndRelic@{SetStoryCharacterAndRelic}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{SetStoryCharacterAndRelic()}{SetStoryCharacterAndRelic()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Story.\+Set\+Story\+Character\+And\+Relic (\begin{DoxyParamCaption}\item[{string}]{story\+Id,  }\item[{int}]{story\+Charater,  }\item[{int}]{story\+Relic,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the Character and the Relic for a give story. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story\+Id} & The story id (CH, DR, FL, WW, CC)\\
+\hline
+{\em story\+Charater} & The character id selected for the story\\
+\hline
+{\em story\+Relic} & The item id selected\\
+\hline
+{\em callback} & The success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_story_aebbd2c35cf126d2dca17d857a1ea2289_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_ac71bb652d5565aed88cfbc9c055cebcb}\label{class_achroma_a_p_i_1_1_achroma_instance_story_ac71bb652d5565aed88cfbc9c055cebcb} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!UpdateStoryMilestoneValue@{UpdateStoryMilestoneValue}}
+\index{UpdateStoryMilestoneValue@{UpdateStoryMilestoneValue}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{UpdateStoryMilestoneValue()}{UpdateStoryMilestoneValue()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Story.\+Update\+Story\+Milestone\+Value (\begin{DoxyParamCaption}\item[{string}]{story,  }\item[{string}]{name,  }\item[{int}]{value,  }\item[{Unity\+Action$<$ string, int $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the variable inside a story and returns the value to the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & The story chapted\\
+\hline
+{\em name} & The variable name\\
+\hline
+{\em value} & The value\\
+\hline
+{\em callback} & The success/failure callback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_story_ac71bb652d5565aed88cfbc9c055cebcb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_story_a5a4b1feb13f817b9e48af114e320bb2a}\label{class_achroma_a_p_i_1_1_achroma_instance_story_a5a4b1feb13f817b9e48af114e320bb2a} 
+\index{AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}!UpdateStoryVariableValue@{UpdateStoryVariableValue}}
+\index{UpdateStoryVariableValue@{UpdateStoryVariableValue}!AchromaAPI.AchromaInstanceStory@{AchromaAPI.AchromaInstanceStory}}
+\doxysubsubsection{\texorpdfstring{UpdateStoryVariableValue()}{UpdateStoryVariableValue()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Story.\+Update\+Story\+Variable\+Value (\begin{DoxyParamCaption}\item[{string}]{story,  }\item[{string}]{name,  }\item[{int}]{value,  }\item[{Unity\+Action$<$ string, int $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the variable inside a story and returns the value to the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story} & The story chapted\\
+\hline
+{\em name} & The variable name\\
+\hline
+{\em value} & The value\\
+\hline
+{\em callback} & The success/failure callback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_story_a5a4b1feb13f817b9e48af114e320bb2a_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Story.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+User\+Story.\+cs\end{DoxyCompactItemize}

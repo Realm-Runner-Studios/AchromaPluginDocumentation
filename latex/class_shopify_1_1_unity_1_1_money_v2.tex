@@ -1,0 +1,96 @@
+\doxysection{Shopify.\+Unity.\+Money\+V2 Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_money_v2}{}\label{class_shopify_1_1_unity_1_1_money_v2}\index{Shopify.Unity.MoneyV2@{Shopify.Unity.MoneyV2}}
+
+
+A monetary value with currency.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Money\+V2\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Money\+V2\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2_a8dbeca59137c1345f23bade9d655cdf6}{Money\+V2}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_money_v2_ad9d368f3d902005c9ba518d85796f7dd}\label{class_shopify_1_1_unity_1_1_money_v2_ad9d368f3d902005c9ba518d85796f7dd} 
+decimal {\bfseries amount} ()
+\begin{DoxyCompactList}\small\item\em Decimal money amount. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_money_v2_a12546fc4e2d21ddc0bbfdc934fdc0a52}\label{class_shopify_1_1_unity_1_1_money_v2_a12546fc4e2d21ddc0bbfdc934fdc0a52} 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} {\bfseries currency\+Code} ()
+\begin{DoxyCompactList}\small\item\em Currency of the money. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_money_v2_a872e2c6370d43d3d82a0502436d714a8}\label{class_shopify_1_1_unity_1_1_money_v2_a872e2c6370d43d3d82a0502436d714a8} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A monetary value with currency. 
+
+To format currencies, combine this type\textquotesingle{}s amount and currency\+Code fields with your client\textquotesingle{}s locale.
+
+For example, in Java\+Script you could use Intl.\+Number\+Format\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{new\ Intl.NumberFormat(locale,\ \{}
+\DoxyCodeLine{style:\ 'currency',}
+\DoxyCodeLine{currency:\ currencyCode}
+\DoxyCodeLine{\}).format(amount);}
+
+\end{DoxyCode}
+
+
+Other formatting libraries include\+:
+
+
+\begin{DoxyItemize}
+\item i\+OS -\/ \href{https://developer.apple.com/documentation/foundation/numberformatter}{\texttt{ Number\+Formatter}}
+\item Android -\/ \href{https://developer.android.com/reference/java/text/NumberFormat.html}{\texttt{ Number\+Format}}
+\item PHP -\/ \href{http://php.net/manual/en/class.numberformatter.php}{\texttt{ Number\+Formatter}}
+\end{DoxyItemize}
+
+For a more general solution, the \mbox{[}Unicode CLDR number formatting database\mbox{]} is available with many implementations (such as \href{https://github.com/twitter/twitter-cldr-rb}{\texttt{ Twitter\+Cldr}}). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_money_v2_a8dbeca59137c1345f23bade9d655cdf6}\label{class_shopify_1_1_unity_1_1_money_v2_a8dbeca59137c1345f23bade9d655cdf6} 
+\index{Shopify.Unity.MoneyV2@{Shopify.Unity.MoneyV2}!MoneyV2@{MoneyV2}}
+\index{MoneyV2@{MoneyV2}!Shopify.Unity.MoneyV2@{Shopify.Unity.MoneyV2}}
+\doxysubsubsection{\texorpdfstring{MoneyV2()}{MoneyV2()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Money\+V2.\+Money\+V2 (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Money\+V2\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Money\+V2.\+cs\end{DoxyCompactItemize}

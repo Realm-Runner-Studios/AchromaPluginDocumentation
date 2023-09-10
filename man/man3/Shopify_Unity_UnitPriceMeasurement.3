@@ -1,0 +1,85 @@
+.TH "Shopify.Unity.UnitPriceMeasurement" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.UnitPriceMeasurement \- The measurement used to calculate a unit price for a product variant (e\&.g\&. $9\&.99 / 100ml)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, and ICloneable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUnitPriceMeasurement\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "\fBUnitPriceMeasurementMeasuredType\fP? \fBmeasuredType\fP ()"
+.br
+.RI "The type of unit of measurement for the unit price measurement\&. "
+.ti -1c
+.RI "\fBUnitPriceMeasurementMeasuredUnit\fP? \fBquantityUnit\fP ()"
+.br
+.RI "The quantity unit for the unit price measurement\&. "
+.ti -1c
+.RI "double \fBquantityValue\fP ()"
+.br
+.RI "The quantity value for the unit price measurement\&. "
+.ti -1c
+.RI "\fBUnitPriceMeasurementMeasuredUnit\fP? \fBreferenceUnit\fP ()"
+.br
+.RI "The reference unit for the unit price measurement\&. "
+.ti -1c
+.RI "long \fBreferenceValue\fP ()"
+.br
+.RI "The reference value for the unit price measurement\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The measurement used to calculate a unit price for a product variant (e\&.g\&. $9\&.99 / 100ml)\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.UnitPriceMeasurement\&.UnitPriceMeasurement (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for UnitPriceMeasurement
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

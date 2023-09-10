@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['cancel_0',['Cancel',['../class_achroma_loading_u_i.html#a8101129da05efaa25004bb8b4df5374b',1,'AchromaLoadingUI']]],
+  ['canceloperations_1',['CancelOperations',['../class_achroma_1_1_achroma_database_controller.html#ad1281e7865819c89471d70eb458f753c',1,'Achroma::AchromaDatabaseController']]],
+  ['cancelsignin_2',['CancelSignIn',['../class_achroma_1_1_achroma_firebase_controller.html#abe79572b7963bda4d2bc68e5f41c07ca',1,'Achroma::AchromaFirebaseController']]],
+  ['capturesnapshot_3',['CaptureSnapshot',['../class_uni_web_view.html#ac1921e828905e647dfdde3521c1030ed',1,'UniWebView']]],
+  ['capturesnapshotfinished_4',['CaptureSnapshotFinished',['../class_uni_web_view.html#a5b0b7cc5f07df3a4100d2bd3d988d90c',1,'UniWebView']]],
+  ['characteravatar_5',['CharacterAvatar',['../struct_achroma_1_1_character_avatar.html#a6f0795dfc8c07162f7b43a81e65abd44',1,'Achroma::CharacterAvatar']]],
+  ['checkforupdates_6',['checkforupdates',['../class_achroma_1_1_achroma_database_controller.html#a7032324784b1c707ba3d0db75e7f9b7c',1,'Achroma.AchromaDatabaseController.CheckForUpdates()'],['../class_achroma_a_p_i_1_1_achroma_instance.html#af3821af509fedf5a7572f5bff84510da',1,'AchromaAPI.AchromaInstance.CheckForUpdates()']]],
+  ['cleancache_7',['CleanCache',['../class_uni_web_view.html#aebac3b00d73d83c3972fdb22b3add45d',1,'UniWebView']]],
+  ['clearcookies_8',['ClearCookies',['../class_uni_web_view.html#aec961d6739e203e8a267c30957f3cb9e',1,'UniWebView']]],
+  ['clearhttpauthusernamepassword_9',['ClearHttpAuthUsernamePassword',['../class_uni_web_view.html#a0be131e37a8c06d38cb94ceff35f5949',1,'UniWebView']]],
+  ['clearstoryprogress_10',['ClearStoryProgress',['../class_achroma_a_p_i_1_1_achroma_instance_story.html#a097385cf91695516807c624d2cb383d1',1,'AchromaAPI::AchromaInstanceStory']]],
+  ['close_11',['Close',['../class_achroma_1_1_achroma_home_button.html#a5bc7d4cc7989aba935b228d81e5d2417',1,'Achroma::AchromaHomeButton']]],
+  ['closemessage_12',['CloseMessage',['../class_achroma_1_1_achroma_u_i_controller.html#ad5ef72e06c412fcba728f803a3611bbb',1,'Achroma::AchromaUIController']]],
+  ['closesigninui_13',['CloseSignInUI',['../class_achroma_1_1_achroma_u_i_controller.html#ab83448b3151bee2d1b3cf828e0ff8100',1,'Achroma::AchromaUIController']]],
+  ['create_14',['Create',['../class_uni_web_view_safe_browsing.html#a9d5991e3234fd927a80748b1b11bf35f',1,'UniWebViewSafeBrowsing']]],
+  ['critical_15',['Critical',['../class_uni_web_view_logger.html#abb0d3b3f645b881edb7147760211f31e',1,'UniWebViewLogger']]]
+];

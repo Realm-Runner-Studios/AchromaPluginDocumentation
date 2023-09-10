@@ -1,0 +1,183 @@
+.TH "Achroma.GameAchievement" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.GameAchievement
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBGameAchievementState\fP { \fBNotCompleted\fP, \fBPartiallyCompleted\fP, \fBCompleted\fP }"
+.br
+.ti -1c
+.RI "enum \fBGameAchievementOperation\fP { \fBAdd\fP, \fBSubtract\fP, \fBUpdate\fP }"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static string \fBGetAchievementTitle\fP (string name)"
+.br
+.ti -1c
+.RI "static int \fBGetAchievementCompletionValue\fP (string name)"
+.br
+.ti -1c
+.RI "static string \fBGetAchievementSprite\fP (string name, int value)"
+.br
+.ti -1c
+.RI "static string \fBGetAchievementDescription\fP (string name)"
+.br
+.ti -1c
+.RI "static \fBAchievement\fP \fBGetAchievementByName\fP (string name)"
+.br
+.ti -1c
+.RI "static void \fBUpdateAchievement\fP (string name, int value, bool pushToDB=true, GameAchievementOperation operation=GameAchievementOperation\&.Update, UnityAction callback=null)"
+.br
+.ti -1c
+.RI "static void \fBUpdateVictoryAchievements\fP (UnityAction callback=null)"
+.br
+.ti -1c
+.RI "static void \fBUpdateAdventureDeathAchievement\fP ()"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static Color \fBUNLOCKED_COLOR\fP = new Color((float)(163\&.0f / 255\&.0f), (float)(243\&.0f / 255\&.0f), (float)(136 / 255\&.0f))"
+.br
+.ti -1c
+.RI "const string \fBWELCOME\fP = 'Welcome'"
+.br
+.ti -1c
+.RI "const string \fBBIGSPENDER\fP = 'BigSpender'"
+.br
+.ti -1c
+.RI "const string \fBCHROMAVICTORY\fP = 'ChromaVictory'"
+.br
+.ti -1c
+.RI "const string \fBCHROMAVICTORY2\fP = 'ChromaVictory2'"
+.br
+.ti -1c
+.RI "const string \fBCHROMAVICTORY3\fP = 'ChromaVictory3'"
+.br
+.ti -1c
+.RI "const string \fBCHROMAVICTORY4\fP = 'ChromaVictory4'"
+.br
+.ti -1c
+.RI "const string \fBACHROMVICTORY\fP = 'AchromVictory'"
+.br
+.ti -1c
+.RI "const string \fBACHROMVICTORY2\fP = 'AchromVictory2'"
+.br
+.ti -1c
+.RI "const string \fBACHROMVICTORY3\fP = 'AchromVictory3'"
+.br
+.ti -1c
+.RI "const string \fBACHROMVICTORY4\fP = 'AchromVictory4'"
+.br
+.ti -1c
+.RI "const string \fBGRACIOUSHOST\fP = 'GraciousHost'"
+.br
+.ti -1c
+.RI "const string \fBJOINTHEFUN\fP = 'JoinTheFun'"
+.br
+.ti -1c
+.RI "const string \fBLOOKATME\fP = 'LookAtMe'"
+.br
+.ti -1c
+.RI "const string \fBFIRSTLEGENDARY\fP = 'FirstLegendary'"
+.br
+.ti -1c
+.RI "const string \fBNEWSLETTERREADER\fP = 'NewsletterReader'"
+.br
+.ti -1c
+.RI "const string \fBDISCORDMEMBER\fP = 'DiscordMember'"
+.br
+.ti -1c
+.RI "const string \fBCURDLEHILLCOLLECTOR\fP = 'CurdleHillCollector'"
+.br
+.ti -1c
+.RI "const string \fBNORSOCOLLECTOR\fP = 'NorsoCollector'"
+.br
+.ti -1c
+.RI "const string \fBFLUTTERBYCOLLECTOR\fP = 'FlutterbyCollector'"
+.br
+.ti -1c
+.RI "const string \fBREALMRUNNERSCOLLECTOR\fP = 'RealmRunnersCollector'"
+.br
+.ti -1c
+.RI "const string \fBDRACOCOLLECTOR\fP = 'DracoCollector'"
+.br
+.ti -1c
+.RI "const string \fBCHAPTER1COLLECTOR\fP = 'Chapter1Collector'"
+.br
+.ti -1c
+.RI "const string \fBCANVASMASTER\fP = 'CanvasMaster'"
+.br
+.ti -1c
+.RI "const string \fBHEROESMASTER\fP = 'HeroesMaster'"
+.br
+.ti -1c
+.RI "const string \fBADDFRIEND\fP = 'AddaFriend'"
+.br
+.ti -1c
+.RI "const string \fBMAGUSELITEENDING\fP = 'ReachMagusEliteEnding'"
+.br
+.ti -1c
+.RI "const string \fBOCCULTISTENDING\fP = 'ReachOccultistEnding'"
+.br
+.ti -1c
+.RI "const string \fBVONRUTHROENDING\fP = 'ReachVonRuthroEnding'"
+.br
+.ti -1c
+.RI "const string \fBCOLLECTEDMILESTONES\fP = '100%collection(Rare)'"
+.br
+.ti -1c
+.RI "const string \fBCOLLECTALLRELICPOWERS\fP = 'Collectedall5RelicPowers\&.'"
+.br
+.ti -1c
+.RI "const string \fBSTARTADVENTURE\fP = 'Startanadventure\&.'"
+.br
+.ti -1c
+.RI "const string \fBUSETIMESTEP\fP = 'UseTimestep'"
+.br
+.ti -1c
+.RI "const string \fBUSEREVEAL\fP = 'UseReveal'"
+.br
+.ti -1c
+.RI "const string \fBUSEREVIVE\fP = 'UseRevive'"
+.br
+.ti -1c
+.RI "const string \fBUSECHROMAFLARE\fP = 'UseChromaFlare'"
+.br
+.ti -1c
+.RI "const string \fBUSECHROMATICSHIELD\fP = 'UseChromaticShield'"
+.br
+.ti -1c
+.RI "const string \fBUSEACHROMSURGE\fP = 'UseAchromSurge'"
+.br
+.ti -1c
+.RI "const string \fBYOUDIED\fP = 'YouDied'"
+.br
+.ti -1c
+.RI "const string \fBYOUDIED2\fP = 'YouDied2'"
+.br
+.ti -1c
+.RI "const string \fBYOUDIED3\fP = 'YouDied3'"
+.br
+.ti -1c
+.RI "const string \fBYOUDIED4\fP = 'YouDied4'"
+.br
+.ti -1c
+.RI "static \fBAchievement\fP[] \fBachievements\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

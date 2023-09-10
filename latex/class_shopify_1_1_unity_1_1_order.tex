@@ -1,0 +1,253 @@
+\doxysection{Shopify.\+Unity.\+Order Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_order}{}\label{class_shopify_1_1_unity_1_1_order}\index{Shopify.Unity.Order@{Shopify.Unity.Order}}
+
+
+An order is a customer’s completed request to purchase one or more products from a shop. An order is created when a customer completes the checkout process, during which time they provides an email address, billing address and payment information.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Order\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Order\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_af09d849ae7bdf3de8e00fa37b3eadbcc}{Order}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a7c60ce67c09277b4df8fb36d3c065c90}\label{class_shopify_1_1_unity_1_1_order_a7c60ce67c09277b4df8fb36d3c065c90} 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} {\bfseries currency\+Code} ()
+\begin{DoxyCompactList}\small\item\em The code of the currency used for the payment. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_ac0c71a8058203f3de738fc80c5651bdf}\label{class_shopify_1_1_unity_1_1_order_ac0c71a8058203f3de738fc80c5651bdf} 
+string {\bfseries customer\+Locale} ()
+\begin{DoxyCompactList}\small\item\em The locale code in which this specific order happened. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a1308546680d4be32c66e9a6bae10d1b1}\label{class_shopify_1_1_unity_1_1_order_a1308546680d4be32c66e9a6bae10d1b1} 
+string {\bfseries customer\+Url} ()
+\begin{DoxyCompactList}\small\item\em The unique URL that the customer can use to access the order. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_discount_application_connection}{Discount\+Application\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_a7b0369f10506b08050c4777b0604d38f}{discount\+Applications}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Discounts that have been applied on the order. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_ae72d57c80c6fd828e294c474b18e0982}\label{class_shopify_1_1_unity_1_1_order_ae72d57c80c6fd828e294c474b18e0982} 
+string {\bfseries email} ()
+\begin{DoxyCompactList}\small\item\em The customer\textquotesingle{}s email address. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_ad7bfeddba414b39a579a17b1099bfa75}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_line_item_connection}{Order\+Line\+Item\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_ac21e0b185f15829fe5710edbb474956e}{line\+Items}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the order’s line items. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a9c06ebba1634f7b401456e76d549c737}\label{class_shopify_1_1_unity_1_1_order_a9c06ebba1634f7b401456e76d549c737} 
+string {\bfseries name} ()
+\begin{DoxyCompactList}\small\item\em Unique identifier for the order that appears on the order. For example, \+\_\+\#1000\+\_\+ or \+\_\+\+Store1001. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a2e1245a226aadf59e07e9f8ea33112e8}\label{class_shopify_1_1_unity_1_1_order_a2e1245a226aadf59e07e9f8ea33112e8} 
+long {\bfseries order\+Number} ()
+\begin{DoxyCompactList}\small\item\em A unique numeric identifier for the order for use by shop owner and customer. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a93bf762dbfe3126814a4ffb598c3f8b8}\label{class_shopify_1_1_unity_1_1_order_a93bf762dbfe3126814a4ffb598c3f8b8} 
+string {\bfseries phone} ()
+\begin{DoxyCompactList}\small\item\em The customer\textquotesingle{}s phone number for receiving SMS notifications. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a51b52d430a95210f3cc3aef8c9fb3438}\label{class_shopify_1_1_unity_1_1_order_a51b52d430a95210f3cc3aef8c9fb3438} 
+Date\+Time? {\bfseries processed\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the order was imported. This value can be set to dates in the past when importing from other systems. If no value is provided, it will be auto-\/generated based on current date and time. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_adf199d3bbe2adbafbfb7340fcde46fd4}\label{class_shopify_1_1_unity_1_1_order_adf199d3bbe2adbafbfb7340fcde46fd4} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address}{Mailing\+Address}} {\bfseries shipping\+Address} ()
+\begin{DoxyCompactList}\small\item\em The address to where the order will be shipped. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a68813a4358fd3dfa20686b4749aa81bb}\label{class_shopify_1_1_unity_1_1_order_a68813a4358fd3dfa20686b4749aa81bb} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_discount_allocation}{Discount\+Allocation}} $>$ {\bfseries shipping\+Discount\+Allocations} ()
+\begin{DoxyCompactList}\small\item\em The discounts that have been allocated onto the shipping line by discount applications. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a362f71cec51eb5d428a12a357253f8b9}\label{class_shopify_1_1_unity_1_1_order_a362f71cec51eb5d428a12a357253f8b9} 
+string {\bfseries status\+Url} ()
+\begin{DoxyCompactList}\small\item\em The unique URL for the order\textquotesingle{}s status page. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_a96136c1e2b47dabec001d04780f8e3af}{subtotal\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Price of the order before shipping and taxes. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a3b4ffb7afbd338531b9a19d1c70aeee0}\label{class_shopify_1_1_unity_1_1_order_a3b4ffb7afbd338531b9a19d1c70aeee0} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries subtotal\+Price\+V2} ()
+\begin{DoxyCompactList}\small\item\em Price of the order before duties, shipping and taxes. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_fulfillment}{Fulfillment}} $>$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_af801f734c65a5d23dac6924c08ecdfd5}{successful\+Fulfillments}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the order’s successful fulfillments. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_a4f8a3ea71abbfac4a5ce11e4825ce709}{total\+Price}} ()
+\begin{DoxyCompactList}\small\item\em The sum of all the prices of all the items in the order, taxes and discounts included (must be positive). \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_ae27ef04404c99e659f132278bb88ecbe}\label{class_shopify_1_1_unity_1_1_order_ae27ef04404c99e659f132278bb88ecbe} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries total\+Price\+V2} ()
+\begin{DoxyCompactList}\small\item\em The sum of all the prices of all the items in the order, duties, taxes and discounts included (must be positive). \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_a43e2a820bdec77c497a2e5b077808ab5}{total\+Refunded}} ()
+\begin{DoxyCompactList}\small\item\em The total amount that has been refunded. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a25548fd1b6ff83679de9de7dac6b5aed}\label{class_shopify_1_1_unity_1_1_order_a25548fd1b6ff83679de9de7dac6b5aed} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries total\+Refunded\+V2} ()
+\begin{DoxyCompactList}\small\item\em The total amount that has been refunded. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_a58c5a7fd8796347f0b4a2bb461fb8e27}{total\+Shipping\+Price}} ()
+\begin{DoxyCompactList}\small\item\em The total cost of shipping. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a2f288505c90f8637244ec42a6db9f91e}\label{class_shopify_1_1_unity_1_1_order_a2f288505c90f8637244ec42a6db9f91e} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries total\+Shipping\+Price\+V2} ()
+\begin{DoxyCompactList}\small\item\em The total cost of shipping. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_a7aefd30e4911ad5fc15d1c97a2313219}{total\+Tax}} ()
+\begin{DoxyCompactList}\small\item\em The total cost of taxes. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a2481797b87d64164d294df93d41e4cbc}\label{class_shopify_1_1_unity_1_1_order_a2481797b87d64164d294df93d41e4cbc} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries total\+Tax\+V2} ()
+\begin{DoxyCompactList}\small\item\em The total cost of taxes. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a38fcf63eb8473dcf78543b00963a4079}\label{class_shopify_1_1_unity_1_1_order_a38fcf63eb8473dcf78543b00963a4079} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An order is a customer’s completed request to purchase one or more products from a shop. An order is created when a customer completes the checkout process, during which time they provides an email address, billing address and payment information. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_order_af09d849ae7bdf3de8e00fa37b3eadbcc}\label{class_shopify_1_1_unity_1_1_order_af09d849ae7bdf3de8e00fa37b3eadbcc} 
+\index{Shopify.Unity.Order@{Shopify.Unity.Order}!Order@{Order}}
+\index{Order@{Order}!Shopify.Unity.Order@{Shopify.Unity.Order}}
+\doxysubsubsection{\texorpdfstring{Order()}{Order()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Order.\+Order (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Order\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a7b0369f10506b08050c4777b0604d38f}\label{class_shopify_1_1_unity_1_1_order_a7b0369f10506b08050c4777b0604d38f} 
+\index{Shopify.Unity.Order@{Shopify.Unity.Order}!discountApplications@{discountApplications}}
+\index{discountApplications@{discountApplications}!Shopify.Unity.Order@{Shopify.Unity.Order}}
+\doxysubsubsection{\texorpdfstring{discountApplications()}{discountApplications()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_discount_application_connection}{Discount\+Application\+Connection}} Shopify.\+Unity.\+Order.\+discount\+Applications (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Discounts that have been applied on the order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_order_ad7bfeddba414b39a579a17b1099bfa75}\label{class_shopify_1_1_unity_1_1_order_ad7bfeddba414b39a579a17b1099bfa75} 
+\index{Shopify.Unity.Order@{Shopify.Unity.Order}!id@{id}}
+\index{id@{id}!Shopify.Unity.Order@{Shopify.Unity.Order}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Order.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_order_ac21e0b185f15829fe5710edbb474956e}\label{class_shopify_1_1_unity_1_1_order_ac21e0b185f15829fe5710edbb474956e} 
+\index{Shopify.Unity.Order@{Shopify.Unity.Order}!lineItems@{lineItems}}
+\index{lineItems@{lineItems}!Shopify.Unity.Order@{Shopify.Unity.Order}}
+\doxysubsubsection{\texorpdfstring{lineItems()}{lineItems()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_line_item_connection}{Order\+Line\+Item\+Connection}} Shopify.\+Unity.\+Order.\+line\+Items (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the order’s line items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a96136c1e2b47dabec001d04780f8e3af}\label{class_shopify_1_1_unity_1_1_order_a96136c1e2b47dabec001d04780f8e3af} 
+\index{Shopify.Unity.Order@{Shopify.Unity.Order}!subtotalPrice@{subtotalPrice}}
+\index{subtotalPrice@{subtotalPrice}!Shopify.Unity.Order@{Shopify.Unity.Order}}
+\doxysubsubsection{\texorpdfstring{subtotalPrice()}{subtotalPrice()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Order.\+subtotal\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Price of the order before shipping and taxes. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000140}{Deprecated}}]Use {\ttfamily subtotal\+Price\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_order_af801f734c65a5d23dac6924c08ecdfd5}\label{class_shopify_1_1_unity_1_1_order_af801f734c65a5d23dac6924c08ecdfd5} 
+\index{Shopify.Unity.Order@{Shopify.Unity.Order}!successfulFulfillments@{successfulFulfillments}}
+\index{successfulFulfillments@{successfulFulfillments}!Shopify.Unity.Order@{Shopify.Unity.Order}}
+\doxysubsubsection{\texorpdfstring{successfulFulfillments()}{successfulFulfillments()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_fulfillment}{Fulfillment}} $>$ Shopify.\+Unity.\+Order.\+successful\+Fulfillments (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the order’s successful fulfillments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a4f8a3ea71abbfac4a5ce11e4825ce709}\label{class_shopify_1_1_unity_1_1_order_a4f8a3ea71abbfac4a5ce11e4825ce709} 
+\index{Shopify.Unity.Order@{Shopify.Unity.Order}!totalPrice@{totalPrice}}
+\index{totalPrice@{totalPrice}!Shopify.Unity.Order@{Shopify.Unity.Order}}
+\doxysubsubsection{\texorpdfstring{totalPrice()}{totalPrice()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Order.\+total\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The sum of all the prices of all the items in the order, taxes and discounts included (must be positive). 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000141}{Deprecated}}]Use {\ttfamily total\+Price\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a43e2a820bdec77c497a2e5b077808ab5}\label{class_shopify_1_1_unity_1_1_order_a43e2a820bdec77c497a2e5b077808ab5} 
+\index{Shopify.Unity.Order@{Shopify.Unity.Order}!totalRefunded@{totalRefunded}}
+\index{totalRefunded@{totalRefunded}!Shopify.Unity.Order@{Shopify.Unity.Order}}
+\doxysubsubsection{\texorpdfstring{totalRefunded()}{totalRefunded()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Order.\+total\+Refunded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The total amount that has been refunded. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000142}{Deprecated}}]Use {\ttfamily total\+Refunded\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a58c5a7fd8796347f0b4a2bb461fb8e27}\label{class_shopify_1_1_unity_1_1_order_a58c5a7fd8796347f0b4a2bb461fb8e27} 
+\index{Shopify.Unity.Order@{Shopify.Unity.Order}!totalShippingPrice@{totalShippingPrice}}
+\index{totalShippingPrice@{totalShippingPrice}!Shopify.Unity.Order@{Shopify.Unity.Order}}
+\doxysubsubsection{\texorpdfstring{totalShippingPrice()}{totalShippingPrice()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Order.\+total\+Shipping\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The total cost of shipping. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000143}{Deprecated}}]Use {\ttfamily total\+Shipping\+Price\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_order_a7aefd30e4911ad5fc15d1c97a2313219}\label{class_shopify_1_1_unity_1_1_order_a7aefd30e4911ad5fc15d1c97a2313219} 
+\index{Shopify.Unity.Order@{Shopify.Unity.Order}!totalTax@{totalTax}}
+\index{totalTax@{totalTax}!Shopify.Unity.Order@{Shopify.Unity.Order}}
+\doxysubsubsection{\texorpdfstring{totalTax()}{totalTax()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Order.\+total\+Tax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The total cost of taxes. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000144}{Deprecated}}]Use {\ttfamily total\+Tax\+V2} instead \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Order.\+cs\end{DoxyCompactItemize}

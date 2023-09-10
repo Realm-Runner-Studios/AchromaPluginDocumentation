@@ -1,0 +1,111 @@
+.TH "Shopify.Unity.SDK.QueryLoader" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.SDK.QueryLoader \- Abstracts creating and sending queries and mutations via a BaseLoader\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBQueryLoader\fP (\fBBaseLoader\fP loader)"
+.br
+.RI "Accepts the BaseLoader 
+.PP
+, which will do network communcation to send GraphQL queries\&. "
+.ti -1c
+.RI "void \fBQuery\fP (QueryRootDelegate buildQuery, QueryResponseHandler callback)"
+.br
+.RI "Generates GraphQL queries\&. "
+.ti -1c
+.RI "void \fBQuery\fP (\fBQueryRootQuery\fP query, QueryResponseHandler callback)"
+.br
+.RI "Sends GraphQL queries to the GraphQL endpoint\&. "
+.ti -1c
+.RI "void \fBMutation\fP (MutationDelegate buildQuery, MutationResponseHandler callback)"
+.br
+.RI "Generates GraphQL mutations\&. "
+.ti -1c
+.RI "void \fBMutation\fP (\fBMutationQuery\fP query, MutationResponseHandler callback)"
+.br
+.RI "Sends GraphQL mutations to a GraphQL endpoint\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Abstracts creating and sending queries and mutations via a BaseLoader\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.SDK\&.QueryLoader\&.QueryLoader (\fBBaseLoader\fP loader)"
+
+.PP
+Accepts the BaseLoader 
+.PP
+, which will do network communcation to send GraphQL queries\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIloader\fP will perform network communication to send GraphQL queries to a GraphQL endpoint
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Shopify\&.Unity\&.SDK\&.QueryLoader\&.Mutation (MutationDelegate buildQuery, MutationResponseHandler callback)"
+
+.PP
+Generates GraphQL mutations\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbuildQuery\fP Delegate to build a mutation query
+.br
+\fIcallback\fP callback that receives the mutation response
+.RE
+.PP
+
+.SS "void Shopify\&.Unity\&.SDK\&.QueryLoader\&.Mutation (\fBMutationQuery\fP query, MutationResponseHandler callback)"
+
+.PP
+Sends GraphQL mutations to a GraphQL endpoint\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIquery\fP mutation to be sent to GraphQL endpoint
+.br
+\fIcallback\fP callback that receives the mutation response
+.RE
+.PP
+
+.SS "void Shopify\&.Unity\&.SDK\&.QueryLoader\&.Query (QueryRootDelegate buildQuery, QueryResponseHandler callback)"
+
+.PP
+Generates GraphQL queries\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbuildQuery\fP Delegate to build query
+.br
+\fIcallback\fP callback that receives the query response
+.RE
+.PP
+
+.SS "void Shopify\&.Unity\&.SDK\&.QueryLoader\&.Query (\fBQueryRootQuery\fP query, QueryResponseHandler callback)"
+
+.PP
+Sends GraphQL queries to the GraphQL endpoint\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIquery\fP query to be sent to the GraphQL endpoint
+.br
+\fIcallback\fP callback that receives the query response
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

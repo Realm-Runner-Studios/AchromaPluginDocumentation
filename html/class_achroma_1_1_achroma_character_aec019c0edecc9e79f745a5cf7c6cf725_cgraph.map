@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaCharacter.GetCharacterBackgroundById" name="Achroma.AchromaCharacter.GetCharacterBackgroundById">
+<area shape="rect" id="Node000001" title="Returns background based on character id." alt="" coords="5,5,201,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_control_file.html#a1ea313946783cbc2c9125d755c56957c" title="Returns the character from the Control File with all its data." alt="" coords="249,5,445,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,23,234,23,234,28,201,28"/>
+</map>

@@ -1,0 +1,94 @@
+.TH "Shopify.Unity.ShippingRate" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.ShippingRate \- A shipping rate to be applied to a checkout\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, and ICloneable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShippingRate\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "string \fBhandle\fP ()"
+.br
+.RI "Human-readable unique identifier for this shipping rate\&. "
+.ti -1c
+.RI "decimal \fBprice\fP ()"
+.br
+.RI "Price of this shipping rate\&. "
+.ti -1c
+.RI "\fBMoneyV2\fP \fBpriceV2\fP ()"
+.br
+.RI "Price of this shipping rate\&. "
+.ti -1c
+.RI "string \fBtitle\fP ()"
+.br
+.RI "Title of this shipping rate\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A shipping rate to be applied to a checkout\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.ShippingRate\&.ShippingRate (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for ShippingRate
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "decimal Shopify\&.Unity\&.ShippingRate\&.price ()"
+
+.PP
+Price of this shipping rate\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCpriceV2\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

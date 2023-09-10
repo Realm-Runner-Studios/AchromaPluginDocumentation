@@ -1,0 +1,93 @@
+\doxysection{Shopify.\+Unity.\+SDK.\+Unity\+Loader Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_unity_loader}{}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_unity_loader}\index{Shopify.Unity.SDK.UnityLoader@{Shopify.Unity.SDK.UnityLoader}}
+
+
+Performs network communication to send Graph\+QL queries between Unity and a \doxylink{namespace_shopify}{Shopify} Graph\+QL endpoint.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+SDK.\+Unity\+Loader\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+SDK.\+Unity\+Loader\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_unity_loader_aadd8e5343103528706f370bd8b67ab5a}{Unity\+Loader}} (string domain, string access\+Token, string locale=null)
+\item 
+override void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_unity_loader_a3dd2b0127029955ff22ff36bc2d805d9}{Load}} (string query, Loader\+Response\+Handler callback)
+\begin{DoxyCompactList}\small\item\em Send a query to the Storefront API. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_unity_loader_ae84acccd19b52cfc9d3f34d7208b2db1}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_unity_loader_ae84acccd19b52cfc9d3f34d7208b2db1} 
+override void {\bfseries Set\+Header} (string key, string value)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_unity_loader_a7e18886a4d7a7be371b198579c719929}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_unity_loader_a7e18886a4d7a7be371b198579c719929} 
+override string {\bfseries SDKVariant\+Name} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader}{Shopify.\+Unity.\+SDK.\+Base\+Loader}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Base\+Loader} (string domain, string access\+Token, string locale=null)
+\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a63fe8f10bde183cfc0cc269b3ad76e7f}{Load}} (string query, Loader\+Response\+Handler callback)
+\begin{DoxyCompactList}\small\item\em Sends the Graph\+QL query to the Graph\+QL endpoint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a0a98c14a644449b5fcf0db0e236940cb}{Set\+Header}} (string key, string value)
+\begin{DoxyCompactList}\small\item\em Assigns a custom header field to the loader. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_aef4c2a43c9dd245a5e94d61b43237ff5}{SDKVariant\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the loader\textquotesingle{}s X-\/\+SDK-\/\+Variant header value. Required by a Base\+Loader implementation to let the server know who is sending the request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader}{Shopify.\+Unity.\+SDK.\+Base\+Loader}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries Domain}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Domain of a \doxylink{namespace_shopify}{Shopify} store. \end{DoxyCompactList}\item 
+string {\bfseries Access\+Token}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Access token used to communicate with a \doxylink{namespace_shopify}{Shopify} store. \end{DoxyCompactList}\item 
+string {\bfseries Locale}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Locale for translated content of supported types and fields. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Performs network communication to send Graph\+QL queries between Unity and a \doxylink{namespace_shopify}{Shopify} Graph\+QL endpoint. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_unity_loader_aadd8e5343103528706f370bd8b67ab5a}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_unity_loader_aadd8e5343103528706f370bd8b67ab5a} 
+\index{Shopify.Unity.SDK.UnityLoader@{Shopify.Unity.SDK.UnityLoader}!UnityLoader@{UnityLoader}}
+\index{UnityLoader@{UnityLoader}!Shopify.Unity.SDK.UnityLoader@{Shopify.Unity.SDK.UnityLoader}}
+\doxysubsubsection{\texorpdfstring{UnityLoader()}{UnityLoader()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+SDK.\+Unity\+Loader.\+Unity\+Loader (\begin{DoxyParamCaption}\item[{string}]{domain,  }\item[{string}]{access\+Token,  }\item[{string}]{locale = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain} & \doxylink{namespace_shopify}{Shopify} store domain that you\textquotesingle{}d like to query on\\
+\hline
+{\em access\+Token} & access token used to communicate with the \doxylink{namespace_shopify}{Shopify} Store\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_unity_loader_a3dd2b0127029955ff22ff36bc2d805d9}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_unity_loader_a3dd2b0127029955ff22ff36bc2d805d9} 
+\index{Shopify.Unity.SDK.UnityLoader@{Shopify.Unity.SDK.UnityLoader}!Load@{Load}}
+\index{Load@{Load}!Shopify.Unity.SDK.UnityLoader@{Shopify.Unity.SDK.UnityLoader}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily override void Shopify.\+Unity.\+SDK.\+Unity\+Loader.\+Load (\begin{DoxyParamCaption}\item[{string}]{query,  }\item[{Loader\+Response\+Handler}]{callback }\end{DoxyParamCaption})}
+
+
+
+Send a query to the Storefront API. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & Query that will be sent to the Storefront API\\
+\hline
+{\em callback} & callback that receives a response\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+SDK/Unity\+Loader.\+cs\end{DoxyCompactItemize}

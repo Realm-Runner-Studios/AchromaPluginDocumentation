@@ -1,0 +1,235 @@
+\doxysection{Shopify.\+Unity.\+Cart Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_cart}{}\label{class_shopify_1_1_unity_1_1_cart}\index{Shopify.Unity.Cart@{Shopify.Unity.Cart}}
+
+
+Manages line items for an order. Can also be used to generate a web checkout link to check out in browser.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_cart_a83ee6e32d803d5c60f54af65c9c8139b}{Cart}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client}{Shopify\+Client}} client)
+\begin{DoxyCompactList}\small\item\em Constructs a new cart using a Shopify\+Client 
+
+. Typically, carts won\textquotesingle{}t be instantiated directly, but will rather be instatiated using Shopify\+Buy.\+Client().Cart() 
+
+. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_a943988a56cc24156854cd13456a8edb4}\label{class_shopify_1_1_unity_1_1_cart_a943988a56cc24156854cd13456a8edb4} 
+void {\bfseries Reset} ()
+\begin{DoxyCompactList}\small\item\em Resets the cart by removing all line items and resets all internal state. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_aad56823f43045f9d676c6a894b325e6f}\label{class_shopify_1_1_unity_1_1_cart_aad56823f43045f9d676c6a894b325e6f} 
+decimal {\bfseries Subtotal} ()
+\begin{DoxyCompactList}\small\item\em Returns the current sub total for the cart. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_cart_a88a9770fb0fd4b5ba5870a9dbbb7b2e5}{Get\+Web\+Checkout\+Link}} (Get\+Web\+Checkout\+Link\+Success\+Callback success, Get\+Web\+Checkout\+Link\+Failure\+Callback failure)
+\begin{DoxyCompactList}\small\item\em Returns the web URL for checking out the contents of this Cart. For presenting the user with a web view that loads this URL see \doxylink{}{Checkout\+With\+Web\+View}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_cart_a932016a2ba26278e5cf6f2492d231936}{Checkout\+With\+Web\+View}} (Checkout\+Success\+Callback success, Checkout\+Cancel\+Callback cancelled, Checkout\+Failure\+Callback failure)
+\begin{DoxyCompactList}\small\item\em Launches a platform-\/specific web view screen with the Cart\textquotesingle{}s web checkout link loaded. This can be used to perform a cart checkout from within your application instead of being directed to an external web application. Typically this can be used as a fallback measure in cases where the user\textquotesingle{}s device doesn\textquotesingle{}t support native pay methods. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_cart_af9df57cf27df2d789df7fcc3cdf4564c}{Checkout\+With\+Native\+Pay}} (string key, Checkout\+Success\+Callback success, Checkout\+Cancel\+Callback cancelled, Checkout\+Failure\+Callback failure)
+\begin{DoxyCompactList}\small\item\em Launches a platform-\/specific native pay UI for checking out the Cart\textquotesingle{}s contents. Currently supported native pay options include\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_cart_a2ebb6884850e2a4249d060abc7a61669}{Can\+Show\+Native\+Pay\+Setup}} (Can\+Show\+Native\+Pay\+Setup\+Callback callback)
+\begin{DoxyCompactList}\small\item\em Determine whether the user can be shown to setup their native payment solution. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_cart_a820bed32a127c7272100a36531a9ae35}{Show\+Native\+Pay\+Setup}} ()
+\begin{DoxyCompactList}\small\item\em Launch a native payment app to prompt the user to setup their payment card. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_cart_a48acc54111176f8a7b63b98d9067d6d9}{Can\+Checkout\+With\+Native\+Pay}} (Can\+Checkout\+With\+Native\+Pay\+Callback callback)
+\begin{DoxyCompactList}\small\item\em Determine whether the user can checkout by paying with their native payment solution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_a1a0f29106f9c12d332ec256464db7a10}\label{class_shopify_1_1_unity_1_1_cart_a1a0f29106f9c12d332ec256464db7a10} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items}{Cart\+Line\+Items}} {\bfseries Line\+Items}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Current line items 
+
+for this Cart 
+
+. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_user_error}{Checkout\+User\+Error}} $>$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_cart_ad53b4fd6b451f0c4f683c04e5d420357}{User\+Errors}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A list of all the user errors with the current checkout. For example, when a user enters invalid information in a field during checkout, the API will return a list of user errors which gets stored here. In general, a failure callback is invoked and the developer can reference this field to handle these issues. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_abaeb107623990ad5b15553ad831214f4}\label{class_shopify_1_1_unity_1_1_cart_abaeb107623990ad5b15553ad831214f4} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout}{Checkout}} {\bfseries Current\+Checkout}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages line items for an order. Can also be used to generate a web checkout link to check out in browser. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_a83ee6e32d803d5c60f54af65c9c8139b}\label{class_shopify_1_1_unity_1_1_cart_a83ee6e32d803d5c60f54af65c9c8139b} 
+\index{Shopify.Unity.Cart@{Shopify.Unity.Cart}!Cart@{Cart}}
+\index{Cart@{Cart}!Shopify.Unity.Cart@{Shopify.Unity.Cart}}
+\doxysubsubsection{\texorpdfstring{Cart()}{Cart()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Cart.\+Cart (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client}{Shopify\+Client}}}]{client }\end{DoxyParamCaption})}
+
+
+
+Constructs a new cart using a Shopify\+Client 
+
+. Typically, carts won\textquotesingle{}t be instantiated directly, but will rather be instatiated using Shopify\+Buy.\+Client().Cart() 
+
+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & client associated with this cart\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ creates\ a\ cart\ using\ a\ ShopifyClient\ and\ checks\ how\ many\ line\ items\ it\ has}}
+\DoxyCodeLine{\textcolor{comment}{//\ (spoiler:\ it\ has\ 0\ line\ items\ since\ the\ cart\ was\ just\ created).}}
+\DoxyCodeLine{ShopifyClient\ client\ =\ \textcolor{keyword}{new}\ ShopifyClient(accessToken,\ shopDomain);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Cart\ cart\ =\ \textcolor{keyword}{new}\ Cart(client);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Debug.Log(cart.LineItems.All().Count);}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_a48acc54111176f8a7b63b98d9067d6d9}\label{class_shopify_1_1_unity_1_1_cart_a48acc54111176f8a7b63b98d9067d6d9} 
+\index{Shopify.Unity.Cart@{Shopify.Unity.Cart}!CanCheckoutWithNativePay@{CanCheckoutWithNativePay}}
+\index{CanCheckoutWithNativePay@{CanCheckoutWithNativePay}!Shopify.Unity.Cart@{Shopify.Unity.Cart}}
+\doxysubsubsection{\texorpdfstring{CanCheckoutWithNativePay()}{CanCheckoutWithNativePay()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Cart.\+Can\+Checkout\+With\+Native\+Pay (\begin{DoxyParamCaption}\item[{Can\+Checkout\+With\+Native\+Pay\+Callback}]{callback }\end{DoxyParamCaption})}
+
+
+
+Determine whether the user can checkout by paying with their native payment solution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & Closure that is invoked with the result. True is returned if the user is able to pay with their native payment solution \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_a2ebb6884850e2a4249d060abc7a61669}\label{class_shopify_1_1_unity_1_1_cart_a2ebb6884850e2a4249d060abc7a61669} 
+\index{Shopify.Unity.Cart@{Shopify.Unity.Cart}!CanShowNativePaySetup@{CanShowNativePaySetup}}
+\index{CanShowNativePaySetup@{CanShowNativePaySetup}!Shopify.Unity.Cart@{Shopify.Unity.Cart}}
+\doxysubsubsection{\texorpdfstring{CanShowNativePaySetup()}{CanShowNativePaySetup()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Cart.\+Can\+Show\+Native\+Pay\+Setup (\begin{DoxyParamCaption}\item[{Can\+Show\+Native\+Pay\+Setup\+Callback}]{callback }\end{DoxyParamCaption})}
+
+
+
+Determine whether the user can be shown to setup their native payment solution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & Closure that is invoked with the result. True is returned if the user can be shown a native payment app to setup their payment card \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 1
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_af9df57cf27df2d789df7fcc3cdf4564c}\label{class_shopify_1_1_unity_1_1_cart_af9df57cf27df2d789df7fcc3cdf4564c} 
+\index{Shopify.Unity.Cart@{Shopify.Unity.Cart}!CheckoutWithNativePay@{CheckoutWithNativePay}}
+\index{CheckoutWithNativePay@{CheckoutWithNativePay}!Shopify.Unity.Cart@{Shopify.Unity.Cart}}
+\doxysubsubsection{\texorpdfstring{CheckoutWithNativePay()}{CheckoutWithNativePay()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Cart.\+Checkout\+With\+Native\+Pay (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{Checkout\+Success\+Callback}]{success,  }\item[{Checkout\+Cancel\+Callback}]{cancelled,  }\item[{Checkout\+Failure\+Callback}]{failure }\end{DoxyParamCaption})}
+
+
+
+Launches a platform-\/specific native pay UI for checking out the Cart\textquotesingle{}s contents. Currently supported native pay options include\+: 
+
+
+\begin{DoxyItemize}
+\item i\+OS\+: Launches Apple Pay.
+\end{DoxyItemize}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Platform\+Not\+Supported\+Exception} & Thrown when invoking this method on an unsupported platform.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Vendor-\/specific key for identifying the merchant. For i\+OS devices this is the merchant ID.\\
+\hline
+{\em success} & called whenever the checkout process has completed successfully.\\
+\hline
+{\em cancelled} & called whenever the user cancels out of the native pay flow.\\
+\hline
+{\em failure} & called whenever an error or failure is encountered during native pay.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_a932016a2ba26278e5cf6f2492d231936}\label{class_shopify_1_1_unity_1_1_cart_a932016a2ba26278e5cf6f2492d231936} 
+\index{Shopify.Unity.Cart@{Shopify.Unity.Cart}!CheckoutWithWebView@{CheckoutWithWebView}}
+\index{CheckoutWithWebView@{CheckoutWithWebView}!Shopify.Unity.Cart@{Shopify.Unity.Cart}}
+\doxysubsubsection{\texorpdfstring{CheckoutWithWebView()}{CheckoutWithWebView()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Cart.\+Checkout\+With\+Web\+View (\begin{DoxyParamCaption}\item[{Checkout\+Success\+Callback}]{success,  }\item[{Checkout\+Cancel\+Callback}]{cancelled,  }\item[{Checkout\+Failure\+Callback}]{failure }\end{DoxyParamCaption})}
+
+
+
+Launches a platform-\/specific web view screen with the Cart\textquotesingle{}s web checkout link loaded. This can be used to perform a cart checkout from within your application instead of being directed to an external web application. Typically this can be used as a fallback measure in cases where the user\textquotesingle{}s device doesn\textquotesingle{}t support native pay methods. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & called when the web checkout screen has been dismissed and the checkout was successful.\\
+\hline
+{\em cancelled} & called when the web checkout screen was dismissed before completing a checkout.\\
+\hline
+{\em failure} & called when an error was encountered after the web checkout screen has been dismissed.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 3
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_a88a9770fb0fd4b5ba5870a9dbbb7b2e5}\label{class_shopify_1_1_unity_1_1_cart_a88a9770fb0fd4b5ba5870a9dbbb7b2e5} 
+\index{Shopify.Unity.Cart@{Shopify.Unity.Cart}!GetWebCheckoutLink@{GetWebCheckoutLink}}
+\index{GetWebCheckoutLink@{GetWebCheckoutLink}!Shopify.Unity.Cart@{Shopify.Unity.Cart}}
+\doxysubsubsection{\texorpdfstring{GetWebCheckoutLink()}{GetWebCheckoutLink()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Cart.\+Get\+Web\+Checkout\+Link (\begin{DoxyParamCaption}\item[{Get\+Web\+Checkout\+Link\+Success\+Callback}]{success,  }\item[{Get\+Web\+Checkout\+Link\+Failure\+Callback}]{failure }\end{DoxyParamCaption})}
+
+
+
+Returns the web URL for checking out the contents of this Cart. For presenting the user with a web view that loads this URL see \doxylink{}{Checkout\+With\+Web\+View}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & called when the checkout url was successfully generated.\\
+\hline
+{\em failure} & called when generating the checkout url failed.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_a820bed32a127c7272100a36531a9ae35}\label{class_shopify_1_1_unity_1_1_cart_a820bed32a127c7272100a36531a9ae35} 
+\index{Shopify.Unity.Cart@{Shopify.Unity.Cart}!ShowNativePaySetup@{ShowNativePaySetup}}
+\index{ShowNativePaySetup@{ShowNativePaySetup}!Shopify.Unity.Cart@{Shopify.Unity.Cart}}
+\doxysubsubsection{\texorpdfstring{ShowNativePaySetup()}{ShowNativePaySetup()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Cart.\+Show\+Native\+Pay\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Launch a native payment app to prompt the user to setup their payment card. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Platform\+Not\+Supported\+Exception} & Thrown when the device does not support this feature\\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+% FIG 6
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_ad53b4fd6b451f0c4f683c04e5d420357}\label{class_shopify_1_1_unity_1_1_cart_ad53b4fd6b451f0c4f683c04e5d420357} 
+\index{Shopify.Unity.Cart@{Shopify.Unity.Cart}!UserErrors@{UserErrors}}
+\index{UserErrors@{UserErrors}!Shopify.Unity.Cart@{Shopify.Unity.Cart}}
+\doxysubsubsection{\texorpdfstring{UserErrors}{UserErrors}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_user_error}{Checkout\+User\+Error}}$>$ Shopify.\+Unity.\+Cart.\+User\+Errors\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+A list of all the user errors with the current checkout. For example, when a user enters invalid information in a field during checkout, the API will return a list of user errors which gets stored here. In general, a failure callback is invoked and the developer can reference this field to handle these issues. 
+
+\begin{DoxyReturn}{Returns}
+A list of user errors
+\end{DoxyReturn}
+for this Cart 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/Cart.\+cs\end{DoxyCompactItemize}

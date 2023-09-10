@@ -1,0 +1,344 @@
+.TH "Shopify.Unity.GraphQL.ShopQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.ShopQuery \- Shop represents a collection of the general settings and information about the shop\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShopQuery\fP (StringBuilder query)"
+.br
+.RI "ShopQuery is used to build queries\&. Typically ShopQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBarticles\fP (ArticleConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBArticleSortKeys\fP? sortKey=null, string queryValue=null, string alias=null)"
+.br
+.RI "List of the shop' articles\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBblogs\fP (BlogConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBBlogSortKeys\fP? sortKey=null, string queryValue=null, string alias=null)"
+.br
+.RI "List of the shop' blogs\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBcollectionByHandle\fP (CollectionDelegate buildQuery, string handle, string alias=null)"
+.br
+.RI "Find a collection by its handle\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBcollections\fP (CollectionConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBCollectionSortKeys\fP? sortKey=null, string queryValue=null, string alias=null)"
+.br
+.RI "List of the shop’s collections\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBcurrencyCode\fP ()"
+.br
+.RI "The three-letter code for the currency that the shop accepts\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBdescription\fP ()"
+.br
+.RI "A description of the shop\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBmoneyFormat\fP ()"
+.br
+.RI "A string representing the way currency is formatted when the currency isn’t specified\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBname\fP ()"
+.br
+.RI "The shop’s name\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBpaymentSettings\fP (PaymentSettingsDelegate buildQuery)"
+.br
+.RI "Settings related to payments\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBprimaryDomain\fP (DomainDelegate buildQuery)"
+.br
+.RI "The shop’s primary domain\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBprivacyPolicy\fP (ShopPolicyDelegate buildQuery)"
+.br
+.RI "The shop’s privacy policy\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBproductByHandle\fP (ProductDelegate buildQuery, string handle, string alias=null)"
+.br
+.RI "Find a product by its handle\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBproductTags\fP (StringConnectionDelegate buildQuery, long first, string alias=null)"
+.br
+.RI "A list of tags that have been added to products\&. Additional access scope required: unauthenticated_read_product_tags\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBproductTypes\fP (StringConnectionDelegate buildQuery, long first, string alias=null)"
+.br
+.RI "List of the shop’s product types\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBproducts\fP (ProductConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBProductSortKeys\fP? sortKey=null, string queryValue=null, string alias=null)"
+.br
+.RI "List of the shop’s products\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBrefundPolicy\fP (ShopPolicyDelegate buildQuery)"
+.br
+.RI "The shop’s refund policy\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBshipsToCountries\fP ()"
+.br
+.RI "Countries that the shop ships to\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBshopifyPaymentsAccountId\fP ()"
+.br
+.RI "The shop’s \fBShopify\fP Payments account id\&. "
+.ti -1c
+.RI "\fBShopQuery\fP \fBtermsOfService\fP (ShopPolicyDelegate buildQuery)"
+.br
+.RI "The shop’s terms of service\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Shop represents a collection of the general settings and information about the shop\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBShopQuery\fP Shopify\&.Unity\&.GraphQL\&.ShopQuery\&.articles (ArticleConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBArticleSortKeys\fP? sortKey = \fCnull\fP, string queryValue = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the shop' articles\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.articles\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.br
+\fIquery\fP Supported filter parameters:
+.IP "\(bu" 2
+\fCauthor\fP
+.IP "\(bu" 2
+\fCblog_title\fP
+.IP "\(bu" 2
+\fCcreated_at\fP
+.IP "\(bu" 2
+\fCtag\fP
+.IP "\(bu" 2
+\fCupdated_at\fP
+.PP
+.RE
+.PP
+See the detailed \fCsearch syntax\fP for more information about using filters\&. 
+.SS "\fBShopQuery\fP Shopify\&.Unity\&.GraphQL\&.ShopQuery\&.blogs (BlogConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBBlogSortKeys\fP? sortKey = \fCnull\fP, string queryValue = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the shop' blogs\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.blogs\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.br
+\fIquery\fP Supported filter parameters:
+.IP "\(bu" 2
+\fCcreated_at\fP
+.IP "\(bu" 2
+\fChandle\fP
+.IP "\(bu" 2
+\fCtitle\fP
+.IP "\(bu" 2
+\fCupdated_at\fP
+.PP
+.RE
+.PP
+See the detailed \fCsearch syntax\fP for more information about using filters\&. 
+.SS "\fBShopQuery\fP Shopify\&.Unity\&.GraphQL\&.ShopQuery\&.collectionByHandle (CollectionDelegate buildQuery, string handle, string alias = \fCnull\fP)"
+
+.PP
+Find a collection by its handle\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.collectionByHandle\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIhandle\fP The handle of the collection\&. 
+.RE
+.PP
+
+.SS "\fBShopQuery\fP Shopify\&.Unity\&.GraphQL\&.ShopQuery\&.collections (CollectionConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBCollectionSortKeys\fP? sortKey = \fCnull\fP, string queryValue = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the shop’s collections\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.collections\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.br
+\fIquery\fP Supported filter parameters:
+.IP "\(bu" 2
+\fCcollection_type\fP
+.IP "\(bu" 2
+\fCtitle\fP
+.IP "\(bu" 2
+\fCupdated_at\fP
+.PP
+.RE
+.PP
+See the detailed \fCsearch syntax\fP for more information about using filters\&. 
+.SS "\fBShopQuery\fP Shopify\&.Unity\&.GraphQL\&.ShopQuery\&.currencyCode ()"
+
+.PP
+The three-letter code for the currency that the shop accepts\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCpaymentSettings\fP instead 
+.RE
+.PP
+
+.SS "\fBShopQuery\fP Shopify\&.Unity\&.GraphQL\&.ShopQuery\&.productByHandle (ProductDelegate buildQuery, string handle, string alias = \fCnull\fP)"
+
+.PP
+Find a product by its handle\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.productByHandle\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIhandle\fP The handle of the product\&. 
+.RE
+.PP
+
+.SS "\fBShopQuery\fP Shopify\&.Unity\&.GraphQL\&.ShopQuery\&.products (ProductConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBProductSortKeys\fP? sortKey = \fCnull\fP, string queryValue = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the shop’s products\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.products\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.br
+\fIquery\fP Supported filter parameters:
+.IP "\(bu" 2
+\fCavailable_for_sale\fP
+.IP "\(bu" 2
+\fCcreated_at\fP
+.IP "\(bu" 2
+\fCproduct_type\fP
+.IP "\(bu" 2
+\fCtag\fP
+.IP "\(bu" 2
+\fCtitle\fP
+.IP "\(bu" 2
+\fCupdated_at\fP
+.IP "\(bu" 2
+\fCvariants\&.price\fP
+.IP "\(bu" 2
+\fCvendor\fP
+.PP
+.RE
+.PP
+See the detailed \fCsearch syntax\fP for more information about using filters\&. 
+.SS "\fBShopQuery\fP Shopify\&.Unity\&.GraphQL\&.ShopQuery\&.productTags (StringConnectionDelegate buildQuery, long first, string alias = \fCnull\fP)"
+
+.PP
+A list of tags that have been added to products\&. Additional access scope required: unauthenticated_read_product_tags\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.productTags\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.RE
+.PP
+
+.SS "\fBShopQuery\fP Shopify\&.Unity\&.GraphQL\&.ShopQuery\&.productTypes (StringConnectionDelegate buildQuery, long first, string alias = \fCnull\fP)"
+
+.PP
+List of the shop’s product types\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.productTypes\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.RE
+.PP
+
+.SS "\fBShopQuery\fP Shopify\&.Unity\&.GraphQL\&.ShopQuery\&.shopifyPaymentsAccountId ()"
+
+.PP
+The shop’s \fBShopify\fP Payments account id\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCpaymentSettings\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

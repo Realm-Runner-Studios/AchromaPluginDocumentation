@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaDatabaseController.AppleLogin" name="Achroma.AchromaDatabaseController.AppleLogin">
+<area shape="rect" id="Node000001" title="Invoke login and provide a custom callback when login is completed. When a custom trigger is used,..." alt="" coords="298,5,542,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a351387b527c8156ec632e6e40de35b64" title="Invoke login and trigger onAppleLogin or onAppleError event when login is completed." alt="" coords="5,5,250,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,28,250,28,250,23,283,23"/>
+</map>

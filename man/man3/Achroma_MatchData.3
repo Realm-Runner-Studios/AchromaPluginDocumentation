@@ -1,0 +1,96 @@
+.TH "Achroma.MatchData" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.MatchData
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMatchData\fP (string Id, string dateTime, string Host, int Status, bool Hero, bool RPG, bool Ranked)"
+.br
+.ti -1c
+.RI "string \fBGetJson\fP ()"
+.br
+.ti -1c
+.RI "void \fBAddPlayer\fP (\fBMatchPlayer\fP player)"
+.br
+.ti -1c
+.RI "void \fBRemovePlayer\fP (string userId)"
+.br
+.ti -1c
+.RI "int \fBGetPlayerBalance\fP (string userId)"
+.br
+.ti -1c
+.RI "void \fBUpdatePlayerBalance\fP (string userId, int balance)"
+.br
+.ti -1c
+.RI "void \fBUpdatePlayerAvatar\fP (string userId, int character)"
+.br
+.ti -1c
+.RI "bool \fBCheckIfPlayersForfeitedTheGame\fP ()"
+.br
+.ti -1c
+.RI "void \fBCheckIfGameIsOver\fP (UnityAction< bool, \fBMatchPlayer\fP, int > result)"
+.br
+.ti -1c
+.RI "bool \fBUserIsInTheMatch\fP (string userId)"
+.br
+.ti -1c
+.RI "void \fBFindWinner\fP (UnityAction< \fBMatchPlayer\fP, bool, bool > result)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBid\fP"
+.br
+.ti -1c
+.RI "string \fBstartTime\fP"
+.br
+.ti -1c
+.RI "string \fBendTime\fP"
+.br
+.ti -1c
+.RI "string \fBhost\fP"
+.br
+.ti -1c
+.RI "int \fBstatus\fP"
+.br
+.ti -1c
+.RI "string \fBturnPlayer\fP"
+.br
+.ti -1c
+.RI "List< \fBMatchPlayer\fP > \fBplayers\fP"
+.br
+.ti -1c
+.RI "string \fBrematchId\fP"
+.br
+.ti -1c
+.RI "bool \fBhero\fP"
+.br
+.ti -1c
+.RI "bool \fBrpg\fP"
+.br
+.ti -1c
+.RI "string \fBwinner\fP"
+.br
+.ti -1c
+.RI "string \fBwinType\fP"
+.br
+.ti -1c
+.RI "bool \fBranked\fP = true"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void Achroma\&.MatchData\&.FindWinner (UnityAction< \fBMatchPlayer\fP, bool, bool > result)"
+If there's no winner by achieving 30 or 40, I need to look if there's one left player if balance other than zero
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

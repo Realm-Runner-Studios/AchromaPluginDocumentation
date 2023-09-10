@@ -1,0 +1,52 @@
+.TH "Shopify.Unity.SDK.DefaultCheckoutQueries" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.SDK.DefaultCheckoutQueries
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBCreate\fP (\fBMutationQuery\fP query, List< \fBCheckoutLineItemInput\fP > lineItems)"
+.br
+.ti -1c
+.RI "void \fBCheckoutCompleteWithTokenizedPaymentV2\fP (\fBMutationQuery\fP query, string checkoutId, \fBTokenizedPaymentInputV2\fP tokenizedPaymentInputV2)"
+.br
+.ti -1c
+.RI "void \fBPoll\fP (\fBQueryRootQuery\fP query, string checkoutId)"
+.br
+.ti -1c
+.RI "void \fBCompleted\fP (\fBQueryRootQuery\fP query, string checkoutId)"
+.br
+.ti -1c
+.RI "void \fBPaymentPoll\fP (\fBQueryRootQuery\fP query, string paymentId)"
+.br
+.ti -1c
+.RI "void \fBAvailableShippingRatesPoll\fP (\fBQueryRootQuery\fP query, string checkoutId)"
+.br
+.ti -1c
+.RI "void \fBLineItemsRemove\fP (\fBMutationQuery\fP query, string checkoutId, List< string > lineItemIds)"
+.br
+.ti -1c
+.RI "void \fBLineItemsAdd\fP (\fBMutationQuery\fP query, string checkoutId, List< \fBCheckoutLineItemInput\fP > lineItems)"
+.br
+.ti -1c
+.RI "void \fBCheckoutLineItemsPage\fP (\fBQueryRootQuery\fP query, string checkoutId, int first=250, string after=null)"
+.br
+.ti -1c
+.RI "void \fBShippingAddressUpdate\fP (\fBMutationQuery\fP query, string checkoutId, \fBMailingAddressInput\fP shippingAddress)"
+.br
+.ti -1c
+.RI "void \fBEmailUpdate\fP (\fBMutationQuery\fP query, string checkoutId, String email)"
+.br
+.ti -1c
+.RI "void \fBShippingLineUpdate\fP (\fBMutationQuery\fP query, string checkoutId, String shippingRateHandle)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

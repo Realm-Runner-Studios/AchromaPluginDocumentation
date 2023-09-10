@@ -1,0 +1,7 @@
+<map id="Achroma.AchromaDatabaseController.GetHeroForCharacter" name="Achroma.AchromaDatabaseController.GetHeroForCharacter">
+<area shape="rect" id="Node000001" title="Gets the hero power from the database based on an avatar." alt="" coords="5,5,250,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_character.html#aa811a79deb32f0dac28ca4721ba86ac3" title="Returns the character&#39;s card id." alt="" coords="298,5,487,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,23,283,23,283,28,250,28"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_control_file.html#a1ea313946783cbc2c9125d755c56957c" title="Returns the character from the Control File with all its data." alt="" coords="535,5,731,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="487,23,520,23,520,28,487,28"/>
+</map>

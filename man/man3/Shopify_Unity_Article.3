@@ -1,0 +1,192 @@
+.TH "Shopify.Unity.Article" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Article \- An article in an online store blog\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.Node\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBArticle\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "\fBArticleAuthor\fP \fBauthor\fP ()"
+.br
+.RI "The article's author\&. "
+.ti -1c
+.RI "\fBArticleAuthor\fP \fBauthorV2\fP ()"
+.br
+.RI "The article's author\&. "
+.ti -1c
+.RI "\fBBlog\fP \fBblog\fP ()"
+.br
+.RI "The blog that the article belongs to\&. "
+.ti -1c
+.RI "\fBCommentConnection\fP \fBcomments\fP (string alias=null)"
+.br
+.RI "List of comments posted on the article\&. "
+.ti -1c
+.RI "string \fBcontent\fP (string alias=null)"
+.br
+.RI "Stripped content of the article, single line with HTML tags removed\&. "
+.ti -1c
+.RI "string \fBcontentHtml\fP ()"
+.br
+.RI "The content of the article, complete with HTML formatting\&. "
+.ti -1c
+.RI "string \fBexcerpt\fP (string alias=null)"
+.br
+.RI "Stripped excerpt of the article, single line with HTML tags removed\&. "
+.ti -1c
+.RI "string \fBexcerptHtml\fP ()"
+.br
+.RI "The excerpt of the article, complete with HTML formatting\&. "
+.ti -1c
+.RI "string \fBhandle\fP ()"
+.br
+.RI "A human-friendly unique string for the Article automatically generated from its title\&. "
+.ti -1c
+.RI "string \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBImage\fP \fBimage\fP (string alias=null)"
+.br
+.RI "The image associated with the article\&. "
+.ti -1c
+.RI "DateTime? \fBpublishedAt\fP ()"
+.br
+.RI "The date and time when the article was published\&. "
+.ti -1c
+.RI "\fBSeo\fP \fBseo\fP ()"
+.br
+.RI "The article’s SEO information\&. "
+.ti -1c
+.RI "List< string > \fBtags\fP ()"
+.br
+.RI "A categorization that a article can be tagged with\&. "
+.ti -1c
+.RI "string \fBtitle\fP ()"
+.br
+.RI "The article’s name\&. "
+.ti -1c
+.RI "string \fBurl\fP ()"
+.br
+.RI "The url pointing to the article accessible from the web\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+An article in an online store blog\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Article\&.Article (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Article
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBArticleAuthor\fP Shopify\&.Unity\&.Article\&.author ()"
+
+.PP
+The article's author\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCauthorV2\fP instead 
+.RE
+.PP
+
+.SS "\fBCommentConnection\fP Shopify\&.Unity\&.Article\&.comments (string alias = \fCnull\fP)"
+
+.PP
+List of comments posted on the article\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.Article\&.content (string alias = \fCnull\fP)"
+
+.PP
+Stripped content of the article, single line with HTML tags removed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.Article\&.excerpt (string alias = \fCnull\fP)"
+
+.PP
+Stripped excerpt of the article, single line with HTML tags removed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.Article\&.id ()"
+
+.PP
+Globally unique identifier\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Node\fP\&.
+.SS "\fBImage\fP Shopify\&.Unity\&.Article\&.image (string alias = \fCnull\fP)"
+
+.PP
+The image associated with the article\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

@@ -1,0 +1,117 @@
+\doxysection{Shopify.\+Unity.\+SDK.\+Cart\+Line\+Item Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}\index{Shopify.Unity.SDK.CartLineItem@{Shopify.Unity.SDK.CartLineItem}}
+
+
+A line item on an order. A line item is defined by a variant id and the quantity of that variant that you\textquotesingle{}ll be ordering. Custom Attributes are used to define customizations or any additional meta data on the line item.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a47b78f56b06bb7dc51f9ee3c3a2e0b33}{Cart\+Line\+Item}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant}{Product\+Variant}} variant, Line\+Item\+Change\+Handler on\+Change, long quantity=1, IDictionary$<$ string, string $>$ custom\+Attributes=null)
+\begin{DoxyCompactList}\small\item\em Used internally by the SDK to construct a Cart\+Line\+Item. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a21e91bdf9a6000c1d31e16f7fbba4843}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a21e91bdf9a6000c1d31e16f7fbba4843} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input}{Checkout\+Line\+Item\+Input}} {\bfseries Get\+Checkout\+Line\+Item\+Input} ()
+\begin{DoxyCompactList}\small\item\em Will convert this Cart\+Line\+Item to a Checkout\+Line\+Item\+Input. This is used internally by the sdk for the checkout process. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_af66f23b4d153db528e7fe538a0ae3a17}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_af66f23b4d153db528e7fe538a0ae3a17} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_update_input}{Checkout\+Line\+Item\+Update\+Input}} {\bfseries Get\+Checkout\+Line\+Item\+Update\+Input} ()
+\begin{DoxyCompactList}\small\item\em Will convert this Cart\+Line\+Item to a Checkout\+Line\+Item\+Update\+Input. This is used internally by the sdk for the checkout process. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_ab02e3d4abc8670e50b2a0f83b3d1248a}{operator Checkout\+Line\+Item\+Input}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}} line\+Item)
+\begin{DoxyCompactList}\small\item\em Will convert a Cart\+Line\+Item to a Checkout\+Line\+Item\+Input. These are used internally by the sdk for the checkout process. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a4cb189fbceac59ef24a5a3e1c424151c}{operator Checkout\+Line\+Item\+Update\+Input}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}} line\+Item)
+\begin{DoxyCompactList}\small\item\em Will convert a Cart\+Line\+Item to a Checkout\+Line\+Item\+Update\+Input. These are used internally by the sdk for the checkout process. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a31a17b5688eeb063fc54412e01298d5d}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a31a17b5688eeb063fc54412e01298d5d} 
+string {\bfseries ID} = null
+\begin{DoxyCompactList}\small\item\em The ID variable is used internally by the SDK and will be used to associate checkout line item\textquotesingle{}s to Cart\+Line\+Item\textquotesingle{}s. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a94b26591159fb60f5c21c2559d88d9fb}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a94b26591159fb60f5c21c2559d88d9fb} 
+string {\bfseries Variant\+Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em All products have variants which are used to create orders. eg. A variant id could be associated to a Small Blue T-\/\+Shirt where another variant id could be associated to a Large Red T-\/\+Shirt. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_aa7fcb8e546674ec7bd2121b8b4b2b007}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_aa7fcb8e546674ec7bd2121b8b4b2b007} 
+decimal {\bfseries Price}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The product variant’s price. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a94cdb0b0b467d60b4674530f7e347515}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a94cdb0b0b467d60b4674530f7e347515} 
+long {\bfseries Quantity}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The quantity or count of items for the line item. eg. 3 Red T-\/\+Shirts. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a9cbb8cc226f513b0d02b4f58402173e1}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a9cbb8cc226f513b0d02b4f58402173e1} 
+IDictionary$<$ string, string $>$ {\bfseries Custom\+Attributes}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Custom Attributes for the line item. Custom attributes are used to add customization information or meta data to a line item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A line item on an order. A line item is defined by a variant id and the quantity of that variant that you\textquotesingle{}ll be ordering. Custom Attributes are used to define customizations or any additional meta data on the line item. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a47b78f56b06bb7dc51f9ee3c3a2e0b33}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a47b78f56b06bb7dc51f9ee3c3a2e0b33} 
+\index{Shopify.Unity.SDK.CartLineItem@{Shopify.Unity.SDK.CartLineItem}!CartLineItem@{CartLineItem}}
+\index{CartLineItem@{CartLineItem}!Shopify.Unity.SDK.CartLineItem@{Shopify.Unity.SDK.CartLineItem}}
+\doxysubsubsection{\texorpdfstring{CartLineItem()}{CartLineItem()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+SDK.\+Cart\+Line\+Item.\+Cart\+Line\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant}{Product\+Variant}}}]{variant,  }\item[{Line\+Item\+Change\+Handler}]{on\+Change,  }\item[{long}]{quantity = {\ttfamily 1},  }\item[{IDictionary$<$ string, string $>$}]{custom\+Attributes = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Used internally by the SDK to construct a Cart\+Line\+Item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variant} & The variant this Cart\+Line\+Item will be associated to\\
+\hline
+{\em on\+Change} & This function will be called whenever the Cart\+Line\+Item is modified\\
+\hline
+{\em quantity} & The count of items to be ordered\\
+\hline
+{\em custom\+Attributes} & Custom attributes for this line item used to customize and add meta data\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_ab02e3d4abc8670e50b2a0f83b3d1248a}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_ab02e3d4abc8670e50b2a0f83b3d1248a} 
+\index{Shopify.Unity.SDK.CartLineItem@{Shopify.Unity.SDK.CartLineItem}!operator CheckoutLineItemInput@{operator CheckoutLineItemInput}}
+\index{operator CheckoutLineItemInput@{operator CheckoutLineItemInput}!Shopify.Unity.SDK.CartLineItem@{Shopify.Unity.SDK.CartLineItem}}
+\doxysubsubsection{\texorpdfstring{operator CheckoutLineItemInput()}{operator CheckoutLineItemInput()}}
+{\footnotesize\ttfamily static Shopify.\+Unity.\+SDK.\+Cart\+Line\+Item.\+operator \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input}{Checkout\+Line\+Item\+Input}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}}}]{line\+Item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [static]}}
+
+
+
+Will convert a Cart\+Line\+Item to a Checkout\+Line\+Item\+Input. These are used internally by the sdk for the checkout process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+Item} & The Cart\+Line\+Item to be converted\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 1
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a4cb189fbceac59ef24a5a3e1c424151c}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item_a4cb189fbceac59ef24a5a3e1c424151c} 
+\index{Shopify.Unity.SDK.CartLineItem@{Shopify.Unity.SDK.CartLineItem}!operator CheckoutLineItemUpdateInput@{operator CheckoutLineItemUpdateInput}}
+\index{operator CheckoutLineItemUpdateInput@{operator CheckoutLineItemUpdateInput}!Shopify.Unity.SDK.CartLineItem@{Shopify.Unity.SDK.CartLineItem}}
+\doxysubsubsection{\texorpdfstring{operator CheckoutLineItemUpdateInput()}{operator CheckoutLineItemUpdateInput()}}
+{\footnotesize\ttfamily static Shopify.\+Unity.\+SDK.\+Cart\+Line\+Item.\+operator \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_update_input}{Checkout\+Line\+Item\+Update\+Input}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}}}]{line\+Item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [static]}}
+
+
+
+Will convert a Cart\+Line\+Item to a Checkout\+Line\+Item\+Update\+Input. These are used internally by the sdk for the checkout process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+Item} & The Cart\+Line\+Item to be converted\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+SDK/Cart\+Line\+Items.\+cs\end{DoxyCompactItemize}

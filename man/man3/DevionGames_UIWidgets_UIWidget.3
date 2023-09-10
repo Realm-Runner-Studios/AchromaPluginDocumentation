@@ -1,0 +1,184 @@
+.TH "DevionGames.UIWidgets.UIWidget" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DevionGames.UIWidgets.UIWidget
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBDevionGames\&.CallbackHandler\fP\&.
+.PP
+Inherited by \fBDevionGames\&.UIWidgets\&.Chat\fP, \fBDevionGames\&.UIWidgets\&.ContextMenu\fP, \fBDevionGames\&.UIWidgets\&.DialogBox\fP, \fBDevionGames\&.UIWidgets\&.Progressbar\fP, \fBDevionGames\&.UIWidgets\&.RadialMenu\fP, \fBDevionGames\&.UIWidgets\&.Tooltip\fP, and \fBDevionGames\&.UIWidgets\&.UIContainer< T >\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBWidgetEvent\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBShow\fP ()"
+.br
+.RI "Show this widget\&. "
+.ti -1c
+.RI "virtual void \fBClose\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBClose\fP (UnityAction result=null)"
+.br
+.RI "Close this widget\&. "
+.ti -1c
+.RI "virtual IEnumerator \fBDelayedClose\fP (UnityAction result)"
+.br
+.ti -1c
+.RI "virtual void \fBHide\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBToggle\fP ()"
+.br
+.RI "Toggle the visibility of this widget\&. "
+.ti -1c
+.RI "virtual void \fBFocus\fP ()"
+.br
+.RI "Brings the widget to the top\&. "
+.in -1c
+
+Public Member Functions inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "void \fBRegisterListener\fP (string eventID, UnityAction< \fBCallbackEventData\fP > call)"
+.br
+.ti -1c
+.RI "void \fBRemoveListener\fP (string eventID, UnityAction< \fBCallbackEventData\fP > call)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBpriority\fP"
+.br
+.ti -1c
+.RI "AudioClip \fBshowSound\fP"
+.br
+.RI "The AudioClip that will be played when this widget shows\&. "
+.ti -1c
+.RI "AudioClip \fBcloseSound\fP"
+.br
+.RI "The AudioClip that will be played when this widget closes\&. "
+.ti -1c
+.RI "\fBWidgetEvent\fP \fBonShow\fP"
+.br
+.RI "Events that will be invoked when this widget is shows\&. "
+.ti -1c
+.RI "\fBWidgetEvent\fP \fBonClose\fP"
+.br
+.RI "Events that will be invoked when this widget closes\&. "
+.in -1c
+
+Public Attributes inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "List< \fBCallbackHandler\&.Entry\fP > \fBdelegates\fP"
+.br
+.in -1c
+.SS "Protected Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBState\fP { \fBShowing\fP, \fBVisible\fP, \fBClosing\fP, \fBInvisible\fP }"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBOnAwake\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBOnStart\fP ()"
+.br
+.in -1c
+
+Protected Member Functions inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "void \fBExecute\fP (string eventID, \fBCallbackEventData\fP eventData)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBm_DeactivateOnClose\fP = true"
+.br
+.RI "If true deactivates the gameobject when closed\&. "
+.ti -1c
+.RI "RectTransform \fBm_RectTransform\fP"
+.br
+.RI "The RectTransform of the widget\&. "
+.ti -1c
+.RI "CanvasGroup \fBm_CanvasGroup\fP"
+.br
+.RI "The CanvasGroup of the widget\&. "
+.ti -1c
+.RI "State \fBm_CurrentState\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBName\fP\fC [get, set]\fP"
+.br
+.RI "Gets or sets the name\&. "
+.ti -1c
+.RI "override string[] \fBCallbacks\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "State \fBIsStateVisible\fP\fC [get]\fP"
+.br
+.RI "Gets a value indicating whether this widget is visible\&. "
+.ti -1c
+.RI "bool \fBIsVisible\fP\fC [get]\fP"
+.br
+.in -1c
+
+Properties inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "string[] \fBCallbacks\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void DevionGames\&.UIWidgets\&.UIWidget\&.Close (UnityAction result = \fCnull\fP)\fC [virtual]\fP"
+
+.PP
+Close this widget\&. 
+.PP
+Reimplemented in \fBDevionGames\&.UIWidgets\&.Tooltip\fP\&.
+.SS "virtual void DevionGames\&.UIWidgets\&.UIWidget\&.Show ()\fC [virtual]\fP"
+
+.PP
+Show this widget\&. 
+.PP
+Reimplemented in \fBDevionGames\&.UIWidgets\&.ContextMenu\fP, \fBDevionGames\&.UIWidgets\&.Progressbar\fP, \fBDevionGames\&.UIWidgets\&.RadialMenu\fP, and \fBDevionGames\&.UIWidgets\&.Tooltip\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "State DevionGames\&.UIWidgets\&.UIWidget\&.IsStateVisible\fC [get]\fP, \fC [protected]\fP"
+
+.PP
+Gets a value indicating whether this widget is visible\&. \fCtrue\fP if this instance is open; otherwise, \fCfalse\fP\&.
+.SS "string DevionGames\&.UIWidgets\&.UIWidget\&.Name\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Gets or sets the name\&. The name\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaCharacter.GetCharacterSpriteAnimation" name="Achroma.AchromaCharacter.GetCharacterSpriteAnimation">
+<area shape="rect" id="Node000001" title="Gets the sprite animation for a given avatar id in the array." alt="" coords="317,5,508,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a0d01cfb09606fe1787a121d22336d5d6" title="Returns character sprite animation by giving an id." alt="" coords="5,5,269,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="302,28,269,28,269,23,302,23"/>
+</map>

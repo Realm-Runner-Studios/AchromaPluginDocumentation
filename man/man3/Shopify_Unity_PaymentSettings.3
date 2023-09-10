@@ -1,0 +1,93 @@
+.TH "Shopify.Unity.PaymentSettings" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.PaymentSettings \- Settings related to payments\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, and ICloneable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPaymentSettings\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "List< \fBCardBrand\fP > \fBacceptedCardBrands\fP ()"
+.br
+.RI "List of the card brands which the shop accepts\&. "
+.ti -1c
+.RI "string \fBcardVaultUrl\fP ()"
+.br
+.RI "The url pointing to the endpoint to vault credit cards\&. "
+.ti -1c
+.RI "\fBCountryCode\fP \fBcountryCode\fP ()"
+.br
+.RI "The country where the shop is located\&. "
+.ti -1c
+.RI "\fBCurrencyCode\fP \fBcurrencyCode\fP ()"
+.br
+.RI "The three-letter code for the shop's primary currency\&. "
+.ti -1c
+.RI "List< \fBCurrencyCode\fP > \fBenabledPresentmentCurrencies\fP ()"
+.br
+.RI "A list of enabled currencies (ISO 4217 format) that the shop accepts\&. Merchants can enable currencies from their \fBShopify\fP Payments settings in the \fBShopify\fP admin\&. "
+.ti -1c
+.RI "string \fBshopifyPaymentsAccountId\fP ()"
+.br
+.RI "The shop’s \fBShopify\fP Payments account id\&. "
+.ti -1c
+.RI "List< \fBDigitalWallet\fP > \fBsupportedDigitalWallets\fP ()"
+.br
+.RI "List of the digital wallets which the shop supports\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Settings related to payments\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.PaymentSettings\&.PaymentSettings (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for PaymentSettings
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

@@ -1,0 +1,319 @@
+\doxysection{Shopify.\+Unity.\+Graph\+QL.\+Product\+Query Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}\index{Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}}
+
+
+A product represents an individual item for sale in a \doxylink{namespace_shopify}{Shopify} store. Products are often physical, but they don\textquotesingle{}t have to be. For example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty).  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a82010a913ddbaf410178f3718b781327}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a82010a913ddbaf410178f3718b781327} 
+{\bfseries Product\+Query} (String\+Builder query)
+\begin{DoxyCompactList}\small\item\em Product\+Query is used to build queries. Typically Product\+Query will not be used directly but instead will be used when building queries from either Query\+Root\+Query or Mutation\+Query. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_af76078e492980c4ceedd735f187db132}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_af76078e492980c4ceedd735f187db132} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries available\+For\+Sale} ()
+\begin{DoxyCompactList}\small\item\em Indicates if at least one product variant is available for sale. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a9c619ff52d42ded6fd0c6a10d15b0ef9}{collections}} (Collection\+Connection\+Delegate build\+Query, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of collections a product belongs to. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a9dc53be39379b07b9529a7fbfd82a62b}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a9dc53be39379b07b9529a7fbfd82a62b} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries created\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the product was created. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a135d55ec41fe63b97ab649a577329605}{description}} (long? truncate\+At=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em Stripped description of the product, single line with HTML tags removed. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a287ab2f5e0418db0e73235d10cd5b729}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a287ab2f5e0418db0e73235d10cd5b729} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries description\+Html} ()
+\begin{DoxyCompactList}\small\item\em The description of the product, complete with HTML formatting. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_aaffe15dcb6ecf3a5580b9be0677b0888}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_aaffe15dcb6ecf3a5580b9be0677b0888} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries handle} ()
+\begin{DoxyCompactList}\small\item\em A human-\/friendly unique string for the Product automatically generated from its title. They are used by the Liquid templating language to refer to objects. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_ab8f3715ff72ecc09b666d658cbf93093}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_ab8f3715ff72ecc09b666d658cbf93093} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries id} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_afdb8a98b4a0d0aafe59bdc243b53bd0a}{images}} (Image\+Connection\+Delegate build\+Query, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \mbox{\hyperlink{namespace_shopify_1_1_unity_afda2e567da6adb1edbf9afbaef1340ec}{Product\+Image\+Sort\+Keys}}? sort\+Key=null, long? max\+Width=null, long? max\+Height=null, \mbox{\hyperlink{namespace_shopify_1_1_unity_ae6f7c4d6eba107063bbcd35e801753c1}{Crop\+Region}}? crop=null, long? scale=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of images associated with the product. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a2c50f9d38b5ff4904a93f2bc9c3126d6}{media}} (Media\+Connection\+Delegate build\+Query, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em The media associated with the product. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a4777bfc98d04472a2ffa308c15707a39}{metafield}} (Metafield\+Delegate build\+Query, string namespace\+Value, string key, string alias=null)
+\begin{DoxyCompactList}\small\item\em The metafield associated with the resource. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a18c6e085be5af636fb2a7483999db596}{metafields}} (Metafield\+Connection\+Delegate build\+Query, string namespace\+Value=null, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em A paginated list of metafields associated with the resource. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a503e7ebff2e99e0e52159fd85695ff2c}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a503e7ebff2e99e0e52159fd85695ff2c} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries online\+Store\+Url} ()
+\begin{DoxyCompactList}\small\item\em The online store URL for the product. A value of {\ttfamily null} indicates that the product is not published to the Online Store sales channel. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_ab2090133c47f1ea4f0de1497ed24ec18}{options}} (Product\+Option\+Delegate build\+Query, long? first=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of product options. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_af4d3d670db1893c8efb25a826bbab618}{presentment\+Price\+Ranges}} (Product\+Price\+Range\+Connection\+Delegate build\+Query, List$<$ \mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} $>$ presentment\+Currencies=null, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of price ranges in the presentment currencies for this shop. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a32d4c6ddf47991bf23ed756cfd71f43b}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a32d4c6ddf47991bf23ed756cfd71f43b} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries price\+Range} (Product\+Price\+Range\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The price range. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a7a22bc1c958a2274080dad817c629fe0}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a7a22bc1c958a2274080dad817c629fe0} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries product\+Type} ()
+\begin{DoxyCompactList}\small\item\em A categorization that a product can be tagged with, commonly used for filtering and searching. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_aa4d16c9e4131fd29c793e3ccde7ff67e}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_aa4d16c9e4131fd29c793e3ccde7ff67e} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries published\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the product was published to the channel. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a4d4423d7ab6bb476f909ff7642615943}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a4d4423d7ab6bb476f909ff7642615943} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries tags} ()
+\begin{DoxyCompactList}\small\item\em A comma separated list of tags that have been added to the product. Additional access scope required for private apps\+: unauthenticated\+\_\+read\+\_\+product\+\_\+tags. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a34411d0be77b98f822b3f7e3353f4130}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a34411d0be77b98f822b3f7e3353f4130} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries title} ()
+\begin{DoxyCompactList}\small\item\em The product’s title. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a654150ef0eac012ccef9fc8e36af7b7c}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a654150ef0eac012ccef9fc8e36af7b7c} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries updated\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the product was last modified. A product\textquotesingle{}s {\ttfamily updated\+At} value can change for different reasons. For example, if an order is placed for a product that has inventory tracking set up, then the inventory adjustment is counted as an update. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_ab582e0c959db170f9e02aeb5f9f4adf0}{variant\+By\+Selected\+Options}} (Product\+Variant\+Delegate build\+Query, List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_selected_option_input}{Selected\+Option\+Input}} $>$ selected\+Options, string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a product’s variant based on its selected options. This is useful for converting a user’s selection of product options into a single matching variant. If there is not a variant for the selected options, {\ttfamily null} will be returned. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_aa3e5e666baebe45246b2992d9848d562}{variants}} (Product\+Variant\+Connection\+Delegate build\+Query, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \mbox{\hyperlink{namespace_shopify_1_1_unity_a3a0e520df1722611edb33ad9765e1f4c}{Product\+Variant\+Sort\+Keys}}? sort\+Key=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the product’s variants. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a11a3b07e617e99ff8a0adc9fae3c8eb1}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a11a3b07e617e99ff8a0adc9fae3c8eb1} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} {\bfseries vendor} ()
+\begin{DoxyCompactList}\small\item\em The product’s vendor name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A product represents an individual item for sale in a \doxylink{namespace_shopify}{Shopify} store. Products are often physical, but they don\textquotesingle{}t have to be. For example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty). 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a9c619ff52d42ded6fd0c6a10d15b0ef9}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a9c619ff52d42ded6fd0c6a10d15b0ef9} 
+\index{Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}!collections@{collections}}
+\index{collections@{collections}!Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}}
+\doxysubsubsection{\texorpdfstring{collections()}{collections()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Query.\+collections (\begin{DoxyParamCaption}\item[{Collection\+Connection\+Delegate}]{build\+Query,  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of collections a product belongs to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a135d55ec41fe63b97ab649a577329605}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a135d55ec41fe63b97ab649a577329605} 
+\index{Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}!description@{description}}
+\index{description@{description}!Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}}
+\doxysubsubsection{\texorpdfstring{description()}{description()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Query.\+description (\begin{DoxyParamCaption}\item[{long?}]{truncate\+At = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Stripped description of the product, single line with HTML tags removed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em truncate\+At} & Truncates string after the given length. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 1
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_afdb8a98b4a0d0aafe59bdc243b53bd0a}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_afdb8a98b4a0d0aafe59bdc243b53bd0a} 
+\index{Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}!images@{images}}
+\index{images@{images}!Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}}
+\doxysubsubsection{\texorpdfstring{images()}{images()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Query.\+images (\begin{DoxyParamCaption}\item[{Image\+Connection\+Delegate}]{build\+Query,  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{\mbox{\hyperlink{namespace_shopify_1_1_unity_afda2e567da6adb1edbf9afbaef1340ec}{Product\+Image\+Sort\+Keys}}?}]{sort\+Key = {\ttfamily null},  }\item[{long?}]{max\+Width = {\ttfamily null},  }\item[{long?}]{max\+Height = {\ttfamily null},  }\item[{\mbox{\hyperlink{namespace_shopify_1_1_unity_ae6f7c4d6eba107063bbcd35e801753c1}{Crop\+Region}}?}]{crop = {\ttfamily null},  }\item[{long?}]{scale = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of images associated with the product. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+{\em sort\+Key} & Sort the underlying list by the given key. \\
+\hline
+{\em max\+Width} & Image width in pixels between 1 and 2048. This argument is deprecated\+: Use {\ttfamily max\+Width} on {\ttfamily Image.\+transformed\+Src} instead. \\
+\hline
+{\em max\+Height} & Image height in pixels between 1 and 2048. This argument is deprecated\+: Use {\ttfamily max\+Height} on {\ttfamily Image.\+transformed\+Src} instead. \\
+\hline
+{\em crop} & Crops the image according to the specified region. This argument is deprecated\+: Use {\ttfamily crop} on {\ttfamily Image.\+transformed\+Src} instead. \\
+\hline
+{\em scale} & Image size multiplier for high-\/resolution retina displays. Must be between 1 and 3. This argument is deprecated\+: Use {\ttfamily scale} on {\ttfamily Image.\+transformed\+Src} instead. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a2c50f9d38b5ff4904a93f2bc9c3126d6}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a2c50f9d38b5ff4904a93f2bc9c3126d6} 
+\index{Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}!media@{media}}
+\index{media@{media}!Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}}
+\doxysubsubsection{\texorpdfstring{media()}{media()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Query.\+media (\begin{DoxyParamCaption}\item[{Media\+Connection\+Delegate}]{build\+Query,  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+The media associated with the product. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 3
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a4777bfc98d04472a2ffa308c15707a39}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a4777bfc98d04472a2ffa308c15707a39} 
+\index{Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}!metafield@{metafield}}
+\index{metafield@{metafield}!Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}}
+\doxysubsubsection{\texorpdfstring{metafield()}{metafield()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Query.\+metafield (\begin{DoxyParamCaption}\item[{Metafield\+Delegate}]{build\+Query,  }\item[{string}]{namespace\+Value,  }\item[{string}]{key,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+The metafield associated with the resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em namespace} & Container for a set of metafields (maximum of 20 characters). \\
+\hline
+{\em key} & Identifier for the metafield (maximum of 30 characters). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 4
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a18c6e085be5af636fb2a7483999db596}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_a18c6e085be5af636fb2a7483999db596} 
+\index{Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}!metafields@{metafields}}
+\index{metafields@{metafields}!Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}}
+\doxysubsubsection{\texorpdfstring{metafields()}{metafields()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Query.\+metafields (\begin{DoxyParamCaption}\item[{Metafield\+Connection\+Delegate}]{build\+Query,  }\item[{string}]{namespace\+Value = {\ttfamily null},  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+A paginated list of metafields associated with the resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em namespace} & Container for a set of metafields (maximum of 20 characters). \\
+\hline
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 5
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_ab2090133c47f1ea4f0de1497ed24ec18}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_ab2090133c47f1ea4f0de1497ed24ec18} 
+\index{Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}!options@{options}}
+\index{options@{options}!Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Query.\+options (\begin{DoxyParamCaption}\item[{Product\+Option\+Delegate}]{build\+Query,  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of product options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Truncate the array result to this size. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 6
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_af4d3d670db1893c8efb25a826bbab618}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_af4d3d670db1893c8efb25a826bbab618} 
+\index{Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}!presentmentPriceRanges@{presentmentPriceRanges}}
+\index{presentmentPriceRanges@{presentmentPriceRanges}!Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}}
+\doxysubsubsection{\texorpdfstring{presentmentPriceRanges()}{presentmentPriceRanges()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Query.\+presentment\+Price\+Ranges (\begin{DoxyParamCaption}\item[{Product\+Price\+Range\+Connection\+Delegate}]{build\+Query,  }\item[{List$<$ \mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} $>$}]{presentment\+Currencies = {\ttfamily null},  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of price ranges in the presentment currencies for this shop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em presentment\+Currencies} & Specifies the presentment currencies to return a price range in. \\
+\hline
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 7
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_ab582e0c959db170f9e02aeb5f9f4adf0}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_ab582e0c959db170f9e02aeb5f9f4adf0} 
+\index{Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}!variantBySelectedOptions@{variantBySelectedOptions}}
+\index{variantBySelectedOptions@{variantBySelectedOptions}!Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}}
+\doxysubsubsection{\texorpdfstring{variantBySelectedOptions()}{variantBySelectedOptions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Query.\+variant\+By\+Selected\+Options (\begin{DoxyParamCaption}\item[{Product\+Variant\+Delegate}]{build\+Query,  }\item[{List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_selected_option_input}{Selected\+Option\+Input}} $>$}]{selected\+Options,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a product’s variant based on its selected options. This is useful for converting a user’s selection of product options into a single matching variant. If there is not a variant for the selected options, {\ttfamily null} will be returned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em selected\+Options} & The input fields used for a selected option. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 8
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_aa3e5e666baebe45246b2992d9848d562}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query_aa3e5e666baebe45246b2992d9848d562} 
+\index{Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}!variants@{variants}}
+\index{variants@{variants}!Shopify.Unity.GraphQL.ProductQuery@{Shopify.Unity.GraphQL.ProductQuery}}
+\doxysubsubsection{\texorpdfstring{variants()}{variants()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_query}{Product\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Query.\+variants (\begin{DoxyParamCaption}\item[{Product\+Variant\+Connection\+Delegate}]{build\+Query,  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{\mbox{\hyperlink{namespace_shopify_1_1_unity_a3a0e520df1722611edb33ad9765e1f4c}{Product\+Variant\+Sort\+Keys}}?}]{sort\+Key = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the product’s variants. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+{\em sort\+Key} & Sort the underlying list by the given key. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 9
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/\+Graph\+QL/Product\+Query.\+cs\end{DoxyCompactItemize}

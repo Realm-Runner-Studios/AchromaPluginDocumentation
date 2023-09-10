@@ -1,0 +1,12 @@
+digraph "Shopify.Unity.SDK.InputValueToString.GetList"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Shopify.Unity.SDK.InputValue\lToString.GetList",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Returns a string representing a GraphQL list from a C# iteratable object implementing IList."];
+  Node1 -> Node2 [id="edge3_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Shopify.Unity.SDK.InputValue\lToString.Get",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_shopify_1_1_unity_1_1_s_d_k_1_1_input_value_to_string.html#a9e322e30591200883a1bd0ea67f28bf7",tooltip="Converts a C# value/object to a GraphQL string value/object."];
+  Node2 -> Node1 [id="edge4_Node000002_Node000001",color="steelblue1",style="solid",tooltip=" "];
+}

@@ -1,0 +1,97 @@
+.TH "Achroma.AchromaAction" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaAction
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static string \fBGetActionSpriteName\fP (int id)"
+.br
+.RI "Returns Action sprite name to be found in the asset bundle\&. "
+.ti -1c
+.RI "static \fBAchromaActionType\fP \fBGetActionByName\fP (string name)"
+.br
+.RI "Returns the Action based on its name\&. "
+.ti -1c
+.RI "static \fBAchromaActionType\fP \fBGetActionById\fP (int id)"
+.br
+.RI "Returns the Action based on its id\&. "
+.ti -1c
+.RI "static void \fBGetActionSprite\fP (int Action, UnityAction< bool, string, Sprite > callback)"
+.br
+.RI "Gets the sprite for a given Action id in the array\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBAchromaActionType\fP Achroma\&.AchromaAction\&.GetActionById (int id)\fC [static]\fP"
+
+.PP
+Returns the Action based on its id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP Action's id
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBAchroma\fP Action
+.RE
+.PP
+
+.SS "static \fBAchromaActionType\fP Achroma\&.AchromaAction\&.GetActionByName (string name)\fC [static]\fP"
+
+.PP
+Returns the Action based on its name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP Action's name
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBAchroma\fP Action
+.RE
+.PP
+
+.SS "static void Achroma\&.AchromaAction\&.GetActionSprite (int Action, UnityAction< bool, string, Sprite > callback)\fC [static]\fP"
+
+.PP
+Gets the sprite for a given Action id in the array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIAction\fP avatar id in the array
+.br
+\fItransparent\fP if transparent is true, it will look for PNG versions of the character
+.br
+\fIcallback\fP result callback with a success flat, an error message and the instance of the instantiated sprite
+.RE
+.PP
+
+.SS "static string Achroma\&.AchromaAction\&.GetActionSpriteName (int id)\fC [static]\fP"
+
+.PP
+Returns Action sprite name to be found in the asset bundle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP Id in the Action array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns name of the sprite in the asset bundle file
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

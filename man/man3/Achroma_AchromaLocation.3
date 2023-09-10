@@ -1,0 +1,188 @@
+.TH "Achroma.AchromaLocation" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaLocation
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static string \fBGetLocationSpriteName\fP (int location)"
+.br
+.RI "Returns location sprite name to be found in the asset bundle\&. "
+.ti -1c
+.RI "static string \fBGetLocationStory\fP (int location)"
+.br
+.RI "Returns the story linked to the location\&. "
+.ti -1c
+.RI "static string \fBGetLocationName\fP (int location)"
+.br
+.RI "Returns the name of the location\&. "
+.ti -1c
+.RI "static void \fBGetLocationSprite\fP (int location, bool transparent, UnityAction< bool, string, Sprite > callback)"
+.br
+.RI "Gets the sprite for a given avatar id in the array\&. "
+.ti -1c
+.RI "static void \fBGetLocationAnimation\fP (int location, UnityAction< bool, string, GameObject > callback)"
+.br
+.RI "Gets the sprite for a given location id in the array\&. "
+.ti -1c
+.RI "static void \fBGetLocationAnimation\fP (string location, UnityAction< bool, string, GameObject > callback)"
+.br
+.RI "Gets the sprite for a given location name in the array\&. "
+.ti -1c
+.RI "static void \fBGetLocationSprite\fP (string location, UnityAction< bool, string, Sprite > callback)"
+.br
+.RI "Gets the sprite for a given location name in the array\&. "
+.ti -1c
+.RI "static \fBLocation\fP \fBGetLocationByName\fP (string name)"
+.br
+.RI "Returns the location from the Control File with all its data\&. "
+.ti -1c
+.RI "static \fBLocation\fP \fBGetLocationById\fP (int id)"
+.br
+.RI "Returns the location from the Control File with all its data\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "static void Achroma\&.AchromaLocation\&.GetLocationAnimation (int location, UnityAction< bool, string, GameObject > callback)\fC [static]\fP"
+
+.PP
+Gets the sprite for a given location id in the array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlocation\fP location id in the array
+.br
+\fIcallback\fP result callback with a success flat, an error message and the instance of the instantiated sprite
+.RE
+.PP
+
+.SS "static void Achroma\&.AchromaLocation\&.GetLocationAnimation (string location, UnityAction< bool, string, GameObject > callback)\fC [static]\fP"
+
+.PP
+Gets the sprite for a given location name in the array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlocation\fP location name in the array
+.br
+\fIcallback\fP result callback with a success flat, an error message and the instance of the instantiated sprite
+.RE
+.PP
+
+.SS "static \fBLocation\fP Achroma\&.AchromaLocation\&.GetLocationById (int id)\fC [static]\fP"
+
+.PP
+Returns the location from the Control File with all its data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the location
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the Location type with all the related data to the Location
+.RE
+.PP
+
+.SS "static \fBLocation\fP Achroma\&.AchromaLocation\&.GetLocationByName (string name)\fC [static]\fP"
+
+.PP
+Returns the location from the Control File with all its data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the location
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the Location type with all the related data to the Location
+.RE
+.PP
+
+.SS "static string Achroma\&.AchromaLocation\&.GetLocationName (int location)\fC [static]\fP"
+
+.PP
+Returns the name of the location\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlocation\fP Id in the location array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns the location's name
+.RE
+.PP
+
+.SS "static void Achroma\&.AchromaLocation\&.GetLocationSprite (int location, bool transparent, UnityAction< bool, string, Sprite > callback)\fC [static]\fP"
+
+.PP
+Gets the sprite for a given avatar id in the array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlocation\fP location id in the array
+.br
+\fItransparent\fP If true, it will get PNG instead of the JPG version
+.br
+\fIcallback\fP result callback with a success flat, an error message and the instance of the instantiated sprite
+.RE
+.PP
+
+.SS "static void Achroma\&.AchromaLocation\&.GetLocationSprite (string location, UnityAction< bool, string, Sprite > callback)\fC [static]\fP"
+
+.PP
+Gets the sprite for a given location name in the array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlocation\fP location name in the array
+.br
+\fIcallback\fP result callback with a success flat, an error message and the instance of the instantiated sprite
+.RE
+.PP
+
+.SS "static string Achroma\&.AchromaLocation\&.GetLocationSpriteName (int location)\fC [static]\fP"
+
+.PP
+Returns location sprite name to be found in the asset bundle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlocation\fP Id in the location array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns name of the sprite in the asset bundle file
+.RE
+.PP
+
+.SS "static string Achroma\&.AchromaLocation\&.GetLocationStory (int location)\fC [static]\fP"
+
+.PP
+Returns the story linked to the location\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIavatar\fP Id in the location array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns the story id
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

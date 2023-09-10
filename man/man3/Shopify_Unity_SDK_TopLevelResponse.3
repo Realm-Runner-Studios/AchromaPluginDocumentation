@@ -1,0 +1,52 @@
+.TH "Shopify.Unity.SDK.TopLevelResponse" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.SDK.TopLevelResponse \- Base class for QueryResponse 
+.PP
+and MutationResponse 
+.PP
+, which are top-level responses for all GraphQL queries\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBShopify\&.Unity\&.SDK\&.MutationResponse\fP, and \fBShopify\&.Unity\&.SDK\&.QueryResponse\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTopLevelResponse\fP (Dictionary< string, object > dataJSON)"
+.br
+.ti -1c
+.RI "\fBTopLevelResponse\fP (string httpError)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBHTTPError\fP\fC [get]\fP"
+.br
+.RI "Contains a string representing an http error\&. Is \fCnull\fP if there was no http error\&. "
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get]\fP"
+.br
+.RI "Contains JSON response data from the GraphQL query\&. Is \fCnull\fP if no data was returned\&. "
+.ti -1c
+.RI "string \fBerrors\fP\fC [get]\fP"
+.br
+.RI "Contains a list of errors as a JSON string returned by the GraphQL end point\&. Is \fCnull\fP if no errors were returned\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Base class for QueryResponse 
+.PP
+and MutationResponse 
+.PP
+, which are top-level responses for all GraphQL queries\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

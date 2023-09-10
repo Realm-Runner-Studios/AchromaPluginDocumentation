@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaManager.LoadAchromaPlugin" name="Achroma.AchromaManager.LoadAchromaPlugin">
+<area shape="rect" id="Node000001" title="Method to load everything that&#39;s needed to call Achroma plugin features." alt="" coords="5,5,216,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_parent_controller.html#a9b7cd6b8a910602b1472e2d5be3b8bf8" title="This method loads a scene synchronously and returns a callback when the scene is ended loading." alt="" coords="264,5,490,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,23,249,23,249,28,216,28"/>
+</map>

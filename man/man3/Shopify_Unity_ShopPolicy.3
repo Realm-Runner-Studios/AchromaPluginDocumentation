@@ -1,0 +1,93 @@
+.TH "Shopify.Unity.ShopPolicy" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.ShopPolicy \- Policy that a merchant has configured for their store, such as their refund or privacy policy\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.Node\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShopPolicy\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "string \fBbody\fP ()"
+.br
+.RI "Policy text, maximum size of 64kb\&. "
+.ti -1c
+.RI "string \fBhandle\fP ()"
+.br
+.RI "Policy’s handle\&. "
+.ti -1c
+.RI "string \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "string \fBtitle\fP ()"
+.br
+.RI "Policy’s title\&. "
+.ti -1c
+.RI "string \fBurl\fP ()"
+.br
+.RI "Public URL to the policy\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Policy that a merchant has configured for their store, such as their refund or privacy policy\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.ShopPolicy\&.ShopPolicy (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for ShopPolicy
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "string Shopify\&.Unity\&.ShopPolicy\&.id ()"
+
+.PP
+Globally unique identifier\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Node\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

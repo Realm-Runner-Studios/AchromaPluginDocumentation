@@ -1,0 +1,105 @@
+.TH "md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e \- README 
+.PP
+\fBAchroma\fP Plugin#
+.SS "1\&. Install dependencies"
+First of all, under Build Settings, choose Android platform
+.PP
+.IP "1." 4
+Create an empty project
+.IP "2." 4
+Download firebase from the link: https://dl.google.com/firebase/sdk/unity/firebase_unity_sdk_9.6.0.zip
+.IP "3." 4
+Decompress the zip file
+.IP "4." 4
+From the folder dotNet4, install the following unity packages:
+.IP "  \(bu" 4
+FirebaseAuth
+.IP "  \(bu" 4
+FirebaseDatabase
+.IP "  \(bu" 4
+FirebaseFunctions
+.IP "  \(bu" 4
+FirebaseMessaging
+.IP "  \(bu" 4
+FirebaseRemoteConfig
+.PP
+
+.IP "5." 4
+Copy the Firebase config files 'google-services\&.json' and 'GoogleService-Info\&.plist' to the Assets/Firebase folder
+.IP "6." 4
+Upgrade the External Dependency Manager by downloading the package from https://github.com/googlesamples/unity-jar-resolver/blob/master/external-dependency-manager-latest.unitypackage
+.IP "7." 4
+Inside the folder Assets/Parse/Plugins remove everything (Unity\&.Compat\&.dll and Unity\&.Tasks\&.dll) from the root and keep just the folder dotNet45
+.PP
+.SS "2\&. Firebase Android setup"
+.IP "\(bu" 2
+Switch platform to Android
+.IP "\(bu" 2
+Go to Assets -> External Dependency Manager -> Android Resolver -> Settings
+.IP "\(bu" 2
+Make sure 'User Jetifier' is deactivated
+.IP "\(bu" 2
+Run Assets -> External Dependency Manager -> Android Resolver -> Force Resolve
+.IP "\(bu" 2
+Inside Unity, go to Menu \fBAchroma\fP -> Copy Google Sign In Files\&. This is needed to to make Google Sign In work\&.
+.PP
+.SS "3\&. Project setup"
+.IP "\(bu" 2
+Add the \fBAchroma\fP Plugin to the project by adding it by git URL: https://github.com/Realm-Runner-Studios/Achroma-Unity-Plugin.git
+.IP "\(bu" 2
+Go to Edit -> Project Settings\&. On the left side, under 'Services', select 'In-App Purchasing' and click on the switch button on the top right corner
+.PP
+.SS "3\&.1 Firebase setup"
+In Firebase, make sure that under 'Remote Config' there's a parameter with the name of the app + 'LastVersion' + platform\&. For example, if the bundle identifier on Android is com\&.realmrunnerstudios\&.achromaAdenture, a parameter must be third element of the bundle identifier (achromaAdventure) + 'LastVersionAndroid'\&. The result would be 'achromaAdventureLastVersionAndroid' For iOS, if the bundle identifier is 'com\&.realmrunnerstudios\&.achroma-adventure', the result would 'achromadventureLastVersioniOS' (the hiphen is not accepted on Firebase)
+.PP
+Do the same for the 'LastVersion' parameters\&. You must also add two parameters for the app store address, like: achromaAdventureLinkStoreAndroid achromaadentureLinkStoreiOS These parameters will contain a link to the App Store or Google Play store where the user will be taken to to download a new version\&.
+.SS "4\&. Usage"
+To use the plugin, add \fCusing \fBAchromaAPI\fP;\fP to the head of your script\&.
+.PP
+This plugin has areas of usage depending on what you need todo:
+.PP
+\fCAchromaInstanceAssets\fP for anything related to Assets like Characters, Locations, Objects and Actions\&.
+.PP
+\fCAchromaInstanceAuth\fP for anything related to Sign In, Sign Out
+.PP
+\fCAchromaInstanceAchievements\fP for anything related to user's achievements
+.PP
+\fCAchromaInstanceDatabase\fP for anything related to the user's account and their data
+.PP
+\fCAchromaInstanceMatch\fP for anything related to Companion match
+.PP
+\fCAchromaInstanceShards\fP for anything related to Shards Animations
+.PP
+\fCAchromaInstanceStory\fP for anything related to the Adventure Mode
+.PP
+\fCAchromaInstanceUI\fP for anything related to UI elements standardized for \fBAchroma\fP
+.PP
+You can use the plugin as follows\&. Everything starts with the \fBAchromaAPI\fP singleton: 
+.PP
+.nf
+public void SignIn()
+{
+    AchromaAPI\&.AchromaInstanceAuth\&.SignIn(false, true, delegate (bool success, string message)
+    {
+        if (success)
+        {
+            AchromaAPI\&.AddUserNotification("Logged in");
+        }
+        else
+        {
+            AchromaAPI\&.ShowErrorMessage(message);
+        }
+
+    });
+}
+
+.fi
+.PP
+.SS "Android build"
+When building for Android, make sure a folder with the name FirebaseApp\&.androidlib is created inside Assets/Plugins/Android\&. If it's not created, run Assets -> External Dependency Manager -> Android Resolver -> Forse Resolve
+.SS "iOS build"
+When building for iOS, inside Xcode make sure Bitcode is disabled for the UnityFramework package 

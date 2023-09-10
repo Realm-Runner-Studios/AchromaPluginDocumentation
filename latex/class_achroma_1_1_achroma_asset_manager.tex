@@ -1,0 +1,182 @@
+\doxysection{Achroma.\+Achroma\+Asset\+Manager Class Reference}
+\hypertarget{class_achroma_1_1_achroma_asset_manager}{}\label{class_achroma_1_1_achroma_asset_manager}\index{Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}}
+
+
+Inheritance diagram for Achroma.\+Achroma\+Asset\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_achroma_1_1_achroma_asset_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Achroma.\+Achroma\+Asset\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_achroma_1_1_achroma_asset_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_achroma_1_1_achroma_asset_manager_1_1_achroma_download_token}{Achroma\+Download\+Token}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_asset_manager_a04f74f39e3d5952eddf16726f98a7175}\label{class_achroma_1_1_achroma_asset_manager_a04f74f39e3d5952eddf16726f98a7175} 
+enum {\bfseries Achroma\+Data\+Path\+Type} \{ {\bfseries Persistent\+Data\+Path}
+, {\bfseries Streaming\+Assets\+Path}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_asset_manager_aef100d7d6a215401b3ca77c7b12b8526}{Download\+Asset\+Bundles}} (Unity\+Action$<$ string $>$ progress, Unity\+Action$<$ bool, string $>$ callback)
+\begin{DoxyCompactList}\small\item\em This will download all the asset bundles at once. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_asset_manager_a3f0cf3497f243895b067220ef661f008}{Download\+Text\+File}} (string remote\+File, string local\+File, Unity\+Action$<$ bool, string, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Method to download files that usually don\textquotesingle{}t need the download token after alt?media=. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_asset_manager_a2479b062874ef19eb4be4928d54d52f5}{Download\+Text\+File\+Using\+Token}} (string remote\+File, string local\+File, Unity\+Action$<$ bool, string, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Method to download text files that usually need the download token after alt?media=. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_asset_manager_aaca5b4e4b5dace44e0fbced0dcc7d69b}{Instantiate\+Sprite\+From\+Bundle}} (string asset\+Bundle\+Name, string asset\+Name, Unity\+Action$<$ bool, string, Sprite $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em Instantiate a sprite from an Asset Bundle, given the name of the asset bundle and the name of the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_asset_manager_a419fc2d427990cc742d38f80b677cb5c}{Instantiate\+Object\+From\+Bundle}} (string asset\+Bundle\+Name, string asset\+Name, Unity\+Action$<$ bool, string, Game\+Object $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the object. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_asset_manager_a306d564a8382658d7512962a9e49cb5a}\label{class_achroma_1_1_achroma_asset_manager_a306d564a8382658d7512962a9e49cb5a} 
+void {\bfseries Unload\+Asset\+Bundles} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_asset_manager_a7ebddc07e042e215d2b7eff948a8b084}\label{class_achroma_1_1_achroma_asset_manager_a7ebddc07e042e215d2b7eff948a8b084} 
+static string {\bfseries Local\+File\+Location} (string file\+Name, bool file\+Suffix, Achroma\+Data\+Path\+Type path\+Type)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_asset_manager_aa9c8bc458e894e836ac9bbc19a54a785}\label{class_achroma_1_1_achroma_asset_manager_aa9c8bc458e894e836ac9bbc19a54a785} 
+static string {\bfseries Get\+File\+Content} (string file\+Name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_asset_manager_a26db438953a0357c7b7703036e44b492}\label{class_achroma_1_1_achroma_asset_manager_a26db438953a0357c7b7703036e44b492} 
+static \mbox{\hyperlink{class_achroma_1_1_achroma_asset_manager}{Achroma\+Asset\+Manager}} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_1_1_achroma_asset_manager_aef100d7d6a215401b3ca77c7b12b8526}\label{class_achroma_1_1_achroma_asset_manager_aef100d7d6a215401b3ca77c7b12b8526} 
+\index{Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}!DownloadAssetBundles@{DownloadAssetBundles}}
+\index{DownloadAssetBundles@{DownloadAssetBundles}!Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}}
+\doxysubsubsection{\texorpdfstring{DownloadAssetBundles()}{DownloadAssetBundles()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Asset\+Manager.\+Download\+Asset\+Bundles (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ string $>$}]{progress,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+This will download all the asset bundles at once. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em progress} & This will update the progress loading screen\\
+\hline
+{\em callback} & This is the callback indicating when the downloads are finished\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_achroma_1_1_achroma_asset_manager_a3f0cf3497f243895b067220ef661f008}\label{class_achroma_1_1_achroma_asset_manager_a3f0cf3497f243895b067220ef661f008} 
+\index{Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}!DownloadTextFile@{DownloadTextFile}}
+\index{DownloadTextFile@{DownloadTextFile}!Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}}
+\doxysubsubsection{\texorpdfstring{DownloadTextFile()}{DownloadTextFile()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Asset\+Manager.\+Download\+Text\+File (\begin{DoxyParamCaption}\item[{string}]{remote\+File,  }\item[{string}]{local\+File,  }\item[{Unity\+Action$<$ bool, string, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Method to download files that usually don\textquotesingle{}t need the download token after alt?media=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em remote\+File} & The location of the file on the web\\
+\hline
+{\em local\+File} & The location of the file on the local disk\\
+\hline
+{\em result} & callback function, returns success flag, an error message (if any) and a string with the file content (if the file is text type) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_achroma_1_1_achroma_asset_manager_a2479b062874ef19eb4be4928d54d52f5}\label{class_achroma_1_1_achroma_asset_manager_a2479b062874ef19eb4be4928d54d52f5} 
+\index{Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}!DownloadTextFileUsingToken@{DownloadTextFileUsingToken}}
+\index{DownloadTextFileUsingToken@{DownloadTextFileUsingToken}!Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}}
+\doxysubsubsection{\texorpdfstring{DownloadTextFileUsingToken()}{DownloadTextFileUsingToken()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Asset\+Manager.\+Download\+Text\+File\+Using\+Token (\begin{DoxyParamCaption}\item[{string}]{remote\+File,  }\item[{string}]{local\+File,  }\item[{Unity\+Action$<$ bool, string, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Method to download text files that usually need the download token after alt?media=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em remote\+File} & The location of the file on the web\\
+\hline
+{\em local\+File} & The location of the file on the local disk\\
+\hline
+{\em result} & callback function, returns success flag, an error message (if any) and a string with the file content (if the file is text type) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_achroma_1_1_achroma_asset_manager_a419fc2d427990cc742d38f80b677cb5c}\label{class_achroma_1_1_achroma_asset_manager_a419fc2d427990cc742d38f80b677cb5c} 
+\index{Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}!InstantiateObjectFromBundle@{InstantiateObjectFromBundle}}
+\index{InstantiateObjectFromBundle@{InstantiateObjectFromBundle}!Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}}
+\doxysubsubsection{\texorpdfstring{InstantiateObjectFromBundle()}{InstantiateObjectFromBundle()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Asset\+Manager.\+Instantiate\+Object\+From\+Bundle (\begin{DoxyParamCaption}\item[{string}]{asset\+Bundle\+Name,  }\item[{string}]{asset\+Name,  }\item[{Unity\+Action$<$ bool, string, Game\+Object $>$}]{callback = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em asset\+Bundle\+Name} & Name of the asset bundle that will be added to the bucket URL\\
+\hline
+{\em asset\+Name} & The name of the object to be instantiated\\
+\hline
+{\em callback} & The result of the the method, that will return a success flag, an error message (if any) and a Sprite (if successful)\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_asset_manager_a419fc2d427990cc742d38f80b677cb5c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_asset_manager_aaca5b4e4b5dace44e0fbced0dcc7d69b}\label{class_achroma_1_1_achroma_asset_manager_aaca5b4e4b5dace44e0fbced0dcc7d69b} 
+\index{Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}!InstantiateSpriteFromBundle@{InstantiateSpriteFromBundle}}
+\index{InstantiateSpriteFromBundle@{InstantiateSpriteFromBundle}!Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}}
+\doxysubsubsection{\texorpdfstring{InstantiateSpriteFromBundle()}{InstantiateSpriteFromBundle()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Asset\+Manager.\+Instantiate\+Sprite\+From\+Bundle (\begin{DoxyParamCaption}\item[{string}]{asset\+Bundle\+Name,  }\item[{string}]{asset\+Name,  }\item[{Unity\+Action$<$ bool, string, Sprite $>$}]{callback = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Instantiate a sprite from an Asset Bundle, given the name of the asset bundle and the name of the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em asset\+Bundle\+Name} & Name of the asset bundle that will be added to the bucket URL\\
+\hline
+{\em asset\+Name} & The name of the object to be instantiated\\
+\hline
+{\em callback} & The result of the the method, that will return a success flag, an error message (if any) and a Sprite (if successful)\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_asset_manager_aaca5b4e4b5dace44e0fbced0dcc7d69b_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Utils/Achroma\+Asset\+Manager.\+cs\end{DoxyCompactItemize}

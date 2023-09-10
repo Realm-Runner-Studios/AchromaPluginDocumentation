@@ -1,0 +1,35 @@
+<map id="Achroma.AchromaUIController.ShowLoading" name="Achroma.AchromaUIController.ShowLoading">
+<area shape="rect" id="Node000001" title="This method shows the loading screen." alt="" coords="822,312,1025,353"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a7032324784b1c707ba3d0db75e7f9b7c" title="Checks if the user has the latest version installed. If the user has an outdated version,..." alt="" coords="530,29,774,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="909,299,890,250,861,193,822,134,799,108,773,85,752,73,755,68,776,81,802,104,826,131,866,190,895,248,914,297"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_sign_in_u_i.html#a6f3163791d675c4f2fd6a1a797de0f07" title="This method will ask for another password." alt="" coords="560,95,744,135"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="902,301,880,265,851,225,814,184,773,151,743,136,746,131,776,146,818,181,855,221,885,262,907,298"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_database_controller.html#ab015604a046b96ae466b9945c2b05a6e" title="Gets a list of cards from the database." alt="" coords="530,160,774,201"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="890,304,838,258,806,236,773,216,744,204,746,199,776,211,809,231,841,254,893,300"/>
+<area shape="rect" id="Node000006" href="$class_achroma_1_1_achroma_database_controller.html#a85e4fb83fbe91c323abe7155581beb72" title="Method to get current user data and store it to a UserData variable." alt="" coords="530,225,774,266"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="843,309,774,287,718,269,720,264,775,282,845,304"/>
+<area shape="rect" id="Node000009" href="$class_achroma_1_1_achroma_sign_in_u_i.html#a21cceb3c00842102faa86f7957e5a703" title="This method calls the login method using Apple." alt="" coords="5,221,190,262"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="807,332,545,317,391,302,237,280,169,265,171,260,238,275,392,296,546,311,807,327"/>
+<area shape="rect" id="Node000011" href="$class_achroma_1_1_achroma_parent_controller.html#a5a2862ca45481939108f74a297779060" title="This method calls the scene that called the current scene back." alt="" coords="539,340,765,381"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="808,347,766,351,766,346,807,342"/>
+<area shape="rect" id="Node000012" href="$class_achroma_1_1_achroma_sign_in_u_i.html#a891240c831e125ade753347f9e47e467" title="This method calls the login method using Apple." alt="" coords="560,405,744,446"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="862,361,775,395,735,407,734,402,773,390,860,356"/>
+<area shape="rect" id="Node000013" href="$class_achroma_1_1_achroma_database_controller.html#aa63b48152c5a84373e98b257c7c66588" title="Forces an update to the local match data by retrieving it from the database." alt="" coords="530,471,774,511"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="895,365,843,414,810,439,776,460,747,473,744,468,773,455,807,434,839,410,892,362"/>
+<area shape="rect" id="Node000015" href="$class_achroma_a_p_i_1_1_achroma_instance_u_i.html#ad461325c05edddc648f0c391efa33833" title="Shows a loading screen with a custom message." alt="" coords="552,536,753,577"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="907,367,885,404,856,447,819,489,776,525,752,538,750,533,773,521,815,485,851,444,881,401,903,365"/>
+<area shape="rect" id="Node000016" href="$class_achroma_1_1_achroma_shard_shop_u_i.html#ac6b5ed4a7e8df9d1280c3f9686f0f47b" title="Shows the purchase details for items that can be purchased using shards Used for the purchase of avat..." alt="" coords="548,601,757,642"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="914,368,895,418,867,478,827,539,803,566,776,590,755,603,753,598,773,586,799,563,823,535,862,475,891,416,909,366"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="697,17,681,10,652,8,626,10,610,15,604,21,607,28,602,29,599,19,607,10,625,5,652,3,682,5,699,12"/>
+<area shape="rect" id="Node000003" href="$class_achroma_a_p_i_1_1_achroma_instance.html#af3821af509fedf5a7572f5bff84510da" title="Checks if the user has the latest version installed. If the user has an outdated version,..." alt="" coords="257,29,463,70"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="515,52,463,52,463,47,515,47"/>
+<area shape="rect" id="Node000007" href="$class_achroma_1_1_achroma_database_controller.html#a02bc8095f4c161c5b4f24248330bb2cf" title="Method that signs in to Apple from an Android device." alt="" coords="238,95,482,135"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="538,220,528,214,512,198,504,182,496,166,480,150,458,138,461,134,484,146,500,162,508,179,516,195,532,210,541,216"/>
+<area shape="rect" id="Node000008" href="$class_achroma_1_1_achroma_database_controller.html#a344a2985784742079272d23bd6456e07" title="Method that signs in to Apple from an Apple device." alt="" coords="238,160,482,201"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="543,224,453,204,455,199,544,219"/>
+<area shape="rect" id="Node000010" href="$class_achroma_1_1_achroma_database_controller.html#a765dd443290a3abe4ba21860dfebe4ca" title="This method calls the login method using email and password." alt="" coords="238,225,482,266"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="515,248,482,248,482,243,515,243"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="257,207,188,223,187,218,255,202"/>
+<area shape="rect" id="Node000014" href="$class_achroma_a_p_i_1_1_achroma_instance_match.html#a4fe70e7b7909bfa5fc13f54d46867bbd" title="Forces an update to the local match data by retrieving it from the database." alt="" coords="259,471,461,511"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="515,494,461,494,461,488,515,488"/>
+</map>

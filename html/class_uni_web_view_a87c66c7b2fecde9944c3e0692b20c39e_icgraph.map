@@ -1,0 +1,5 @@
+<map id="UniWebView.EvaluateJavaScript" name="UniWebView.EvaluateJavaScript">
+<area shape="rect" id="Node000001" title="Evaluates a JavaScript string on current page." alt="" coords="255,5,466,31"/>
+<area shape="rect" id="Node000002" href="$class_uni_web_view.html#a916bbeb884eda538b0f2afd56f2f8492" title="Gets the HTML content from current page by accessing its outerHTML with JavaScript." alt="" coords="5,5,207,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,21,207,21,207,16,239,16"/>
+</map>

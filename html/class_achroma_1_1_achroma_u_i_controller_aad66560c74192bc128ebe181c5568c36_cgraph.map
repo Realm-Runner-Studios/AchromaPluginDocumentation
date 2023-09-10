@@ -1,0 +1,17 @@
+<map id="Achroma.AchromaUIController.LoadUserAvatar" name="Achroma.AchromaUIController.LoadUserAvatar">
+<area shape="rect" id="Node000001" title="Loader user sprite into the home button." alt="" coords="5,96,208,137"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_character.html#a680e1266ff321b7886b91604a5be11a8" title="Returns the avatar position for the home button." alt="" coords="524,5,713,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,93,255,83,509,40,510,45,256,88,206,98"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_character.html#a7ef8b65d41f7bcb62dcbd31a498dbee7" title="Gets the sprite for a given avatar id in the array." alt="" coords="264,124,454,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="209,125,250,130,249,135,208,130"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_character.html#a110f23f5cb117b579984558ba507eb6e" title="Returns character sprite name to be found in the asset bundle." alt="" coords="524,71,713,111"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="208,109,508,94,509,99,208,114"/>
+<area shape="rect" id="Node000007" href="$class_achroma_1_1_achroma_home_button.html#acd186e1fc47cf6fbe3eec792c673d9f5" title="Sets the avatar image on the home button." alt="" coords="256,189,462,230"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="158,135,257,174,279,182,277,187,255,179,156,140"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_control_file.html#a1ea313946783cbc2c9125d755c56957c" title="Returns the character from the Control File with all its data." alt="" coords="774,39,971,79"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="714,35,760,42,759,47,713,41"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="453,122,508,111,510,116,454,127"/>
+<area shape="rect" id="Node000006" href="$class_achroma_1_1_achroma_asset_manager.html#aaca5b4e4b5dace44e0fbced0dcc7d69b" title="Instantiate a sprite from an Asset Bundle, given the name of the asset bundle and the name of the obj..." alt="" coords="510,136,726,177"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="454,146,495,148,495,153,454,151"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="713,76,759,71,760,76,714,82"/>
+</map>

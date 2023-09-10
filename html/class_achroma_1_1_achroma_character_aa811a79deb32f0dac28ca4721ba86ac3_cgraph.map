@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaCharacter.GetCharacterCard" name="Achroma.AchromaCharacter.GetCharacterCard">
+<area shape="rect" id="Node000001" title="Returns the character&#39;s card id." alt="" coords="5,5,195,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_control_file.html#a1ea313946783cbc2c9125d755c56957c" title="Returns the character from the Control File with all its data." alt="" coords="243,5,439,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,23,228,23,228,28,195,28"/>
+</map>

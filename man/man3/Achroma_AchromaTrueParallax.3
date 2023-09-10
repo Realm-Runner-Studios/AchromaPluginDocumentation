@@ -1,0 +1,71 @@
+.TH "Achroma.AchromaTrueParallax" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaTrueParallax \- Adds parallax effect by using device orientation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBResetToStart\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float \fBSpeed\fP"
+.br
+.RI "Speed of the object\&. "
+.ti -1c
+.RI "Vector3 \fBMaxOffset\fP = new Vector3(0\&.5f, 0\&.5f, 0\&.5f)"
+.br
+.RI "Max offset relative to the current position\&. "
+.ti -1c
+.RI "Vector3 \fBMinOffset\fP = new Vector3(0\&.5f, 0\&.5f, 0\&.5f)"
+.br
+.ti -1c
+.RI "bool \fBAllowHorizontal\fP = true"
+.br
+.ti -1c
+.RI "bool \fBAllowVertical\fP = true"
+.br
+.ti -1c
+.RI "Vector2 \fBstartPosition\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBUseGyroscope\fP = true"
+.br
+.RI "Use gyro if available\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "bool \fBIsGyroEnabled\fP\fC [get]\fP"
+.br
+.RI "Whether gyro is enabled\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Adds parallax effect by using device orientation\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "float Achroma\&.AchromaTrueParallax\&.Speed"
+
+.PP
+Speed of the object\&. When speed increase, object appears to be closer to viewer\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

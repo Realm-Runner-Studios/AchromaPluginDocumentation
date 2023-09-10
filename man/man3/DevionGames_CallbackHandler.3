@@ -1,0 +1,61 @@
+.TH "DevionGames.CallbackHandler" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DevionGames.CallbackHandler \- Callback handler for custom events\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.PP
+Inherited by \fBDevionGames\&.SelectableObject\fP, \fBDevionGames\&.SelectionHandler\fP, \fBDevionGames\&.SetCursorLockState\fP, and \fBDevionGames\&.UIWidgets\&.UIWidget\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBCallbackEvent\fP"
+.br
+.ti -1c
+.RI "class \fBEntry\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBRegisterListener\fP (string eventID, UnityAction< \fBCallbackEventData\fP > call)"
+.br
+.ti -1c
+.RI "void \fBRemoveListener\fP (string eventID, UnityAction< \fBCallbackEventData\fP > call)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "List< \fBCallbackHandler\&.Entry\fP > \fBdelegates\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBExecute\fP (string eventID, \fBCallbackEventData\fP eventData)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string[] \fBCallbacks\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Callback handler for custom events\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

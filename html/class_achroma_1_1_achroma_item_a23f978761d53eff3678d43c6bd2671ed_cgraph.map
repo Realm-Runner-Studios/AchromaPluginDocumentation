@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaItem.GetItemSpriteName" name="Achroma.AchromaItem.GetItemSpriteName">
+<area shape="rect" id="Node000001" title="Returns item sprite name to be found in the asset bundle." alt="" coords="5,5,212,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_control_file.html#a870660b99635c1a94f04679ddaec7ec1" title="Returns the item from the Control File with all its data." alt="" coords="260,5,456,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,23,245,23,245,28,212,28"/>
+</map>

@@ -1,0 +1,371 @@
+.TH "AchromaAPI.AchromaInstanceAssets" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AchromaAPI.AchromaInstanceAssets \- Singleton with the methods to instantiate assets like Characters, Locations, Objects, Actions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBGetActionSpriteById\fP (int id, UnityAction< Sprite > callback)"
+.br
+.RI "Returns action sprite by giving an id\&. "
+.ti -1c
+.RI "static string \fBGetActionNameById\fP (int id)"
+.br
+.RI "Returns the name of the action that's informed in the control file\&. "
+.ti -1c
+.RI "static int \fBGetActionIdByName\fP (string name)"
+.br
+.RI "Returns the action id based on the name\&. "
+.ti -1c
+.RI "static void \fBGetCharacterSpriteById\fP (int id, bool transparent, UnityAction< Sprite > callback)"
+.br
+.RI "Returns character sprite by giving an id\&. "
+.ti -1c
+.RI "static void \fBGetCharacterSpriteAnimationById\fP (int id, bool transparent, UnityAction< GameObject > callback)"
+.br
+.RI "Returns character sprite animation by giving an id\&. "
+.ti -1c
+.RI "static string \fBGetCharacterNameById\fP (int id)"
+.br
+.RI "Returns the name of the character that's informed in the control file\&. "
+.ti -1c
+.RI "static int \fBGetCharacterIdByName\fP (string name)"
+.br
+.RI "Returns the Character id based on the name\&. "
+.ti -1c
+.RI "static string \fBGetCharacterHero\fP (int id)"
+.br
+.RI "Returns the hero power when the character has one\&. "
+.ti -1c
+.RI "static Vector2 \fBGetCharacterAvatarPosition\fP (int id)"
+.br
+.RI "Returns the avatar position for the home button\&. "
+.ti -1c
+.RI "static string \fBGetCharacterBackground\fP (int id)"
+.br
+.RI "Returns the character location (backgroud) "
+.ti -1c
+.RI "static void \fBGetItemSpriteById\fP (int id, bool transparent, UnityAction< Sprite > callback)"
+.br
+.RI "Returns item sprite by giving an id\&. "
+.ti -1c
+.RI "static string \fBGetItemNameById\fP (int id)"
+.br
+.RI "Returns the name of the item that's informed in the control file\&. "
+.ti -1c
+.RI "static int \fBGetItemIdByName\fP (string name)"
+.br
+.RI "Returns the item id based on the name\&. "
+.ti -1c
+.RI "static void \fBGetLocationSpriteById\fP (int id, bool transparent, UnityAction< Sprite > callback)"
+.br
+.RI "Returns location sprite by giving an id\&. "
+.ti -1c
+.RI "static void \fBGetLocationSpriteAnimationById\fP (int id, UnityAction< GameObject > callback)"
+.br
+.RI "Returns location sprite animation by giving an id\&. "
+.ti -1c
+.RI "static void \fBGetLocationSpriteAnimationByName\fP (string name, UnityAction< GameObject > callback)"
+.br
+.RI "Returns location sprite animation by giving a name\&. "
+.ti -1c
+.RI "static string \fBGetLocationNameById\fP (int id)"
+.br
+.RI "Returns the name of the locatioin that's informed in the control file\&. "
+.ti -1c
+.RI "static int \fBGetLocationIdByName\fP (string name)"
+.br
+.RI "Returns the location id based on the name\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Singleton with the methods to instantiate assets like Characters, Locations, Objects, Actions\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static int AchromaAPI\&.AchromaInstanceAssets\&.GetActionIdByName (string name)\fC [static]\fP"
+
+.PP
+Returns the action id based on the name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The action details
+.RE
+.PP
+
+.SS "static string AchromaAPI\&.AchromaInstanceAssets\&.GetActionNameById (int id)\fC [static]\fP"
+
+.PP
+Returns the name of the action that's informed in the control file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The id in the Actions array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The actions's name
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceAssets\&.GetActionSpriteById (int id, UnityAction< Sprite > callback)\fC [static]\fP"
+
+.PP
+Returns action sprite by giving an id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The index in the action array from the control file
+.br
+\fItransparent\fP if true, it will take the PNG version of the item
+.br
+\fIcallback\fP callback with the Sprite
+.RE
+.PP
+
+.SS "static Vector2 AchromaAPI\&.AchromaInstanceAssets\&.GetCharacterAvatarPosition (int id)\fC [static]\fP"
+
+.PP
+Returns the avatar position for the home button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP character id
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The x and y position for avatar
+.RE
+.PP
+
+.SS "static string AchromaAPI\&.AchromaInstanceAssets\&.GetCharacterBackground (int id)\fC [static]\fP"
+
+.PP
+Returns the character location (backgroud) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP character id
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Hero power
+.RE
+.PP
+
+.SS "static string AchromaAPI\&.AchromaInstanceAssets\&.GetCharacterHero (int id)\fC [static]\fP"
+
+.PP
+Returns the hero power when the character has one\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP character id
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Hero power
+.RE
+.PP
+
+.SS "static int AchromaAPI\&.AchromaInstanceAssets\&.GetCharacterIdByName (string name)\fC [static]\fP"
+
+.PP
+Returns the Character id based on the name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The Character details
+.RE
+.PP
+
+.SS "static string AchromaAPI\&.AchromaInstanceAssets\&.GetCharacterNameById (int id)\fC [static]\fP"
+
+.PP
+Returns the name of the character that's informed in the control file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The id in the Characters array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The Characters's name
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceAssets\&.GetCharacterSpriteAnimationById (int id, bool transparent, UnityAction< GameObject > callback)\fC [static]\fP"
+
+.PP
+Returns character sprite animation by giving an id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The index in the character array from the control file
+.br
+\fItransparent\fP if true, it will take the PNG version of the character
+.br
+\fIcallback\fP callback with the Sprite
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceAssets\&.GetCharacterSpriteById (int id, bool transparent, UnityAction< Sprite > callback)\fC [static]\fP"
+
+.PP
+Returns character sprite by giving an id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The index in the character array from the control file
+.br
+\fItransparent\fP if true, it will take the PNG version of the character
+.br
+\fIcallback\fP callback with the Sprite
+.RE
+.PP
+
+.SS "static int AchromaAPI\&.AchromaInstanceAssets\&.GetItemIdByName (string name)\fC [static]\fP"
+
+.PP
+Returns the item id based on the name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The item details
+.RE
+.PP
+
+.SS "static string AchromaAPI\&.AchromaInstanceAssets\&.GetItemNameById (int id)\fC [static]\fP"
+
+.PP
+Returns the name of the item that's informed in the control file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The id in the Items array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The item's name
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceAssets\&.GetItemSpriteById (int id, bool transparent, UnityAction< Sprite > callback)\fC [static]\fP"
+
+.PP
+Returns item sprite by giving an id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The index in the item array from the control file
+.br
+\fItransparent\fP if true, it will take the PNG version of the item
+.br
+\fIcallback\fP callback with the Sprite
+.RE
+.PP
+
+.SS "static int AchromaAPI\&.AchromaInstanceAssets\&.GetLocationIdByName (string name)\fC [static]\fP"
+
+.PP
+Returns the location id based on the name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The location details
+.RE
+.PP
+
+.SS "static string AchromaAPI\&.AchromaInstanceAssets\&.GetLocationNameById (int id)\fC [static]\fP"
+
+.PP
+Returns the name of the locatioin that's informed in the control file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The id in the location array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The location's name
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceAssets\&.GetLocationSpriteAnimationById (int id, UnityAction< GameObject > callback)\fC [static]\fP"
+
+.PP
+Returns location sprite animation by giving an id\&. /// 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The index in the location array from the control file
+.br
+\fIcallback\fP callback with the GameObject
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceAssets\&.GetLocationSpriteAnimationByName (string name, UnityAction< GameObject > callback)\fC [static]\fP"
+
+.PP
+Returns location sprite animation by giving a name\&. /// 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name in the location array from the control file
+.br
+\fIcallback\fP callback with the GameObject
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceAssets\&.GetLocationSpriteById (int id, bool transparent, UnityAction< Sprite > callback)\fC [static]\fP"
+
+.PP
+Returns location sprite by giving an id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The index in the location array from the control file
+.br
+\fItransparent\fP if true, it will take the PNG version of the location
+.br
+\fIcallback\fP callback with the Sprite
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

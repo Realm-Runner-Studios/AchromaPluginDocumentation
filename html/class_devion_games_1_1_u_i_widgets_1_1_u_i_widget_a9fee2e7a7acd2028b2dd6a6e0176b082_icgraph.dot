@@ -1,0 +1,15 @@
+digraph "DevionGames.UIWidgets.UIWidget.Show"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="DevionGames.UIWidgets.UIWidget.Show",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Show this widget."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="DevionGames.UIWidgets.Dialog\lBox.Show",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_devion_games_1_1_u_i_widgets_1_1_dialog_box.html#a802b1b0673f06c9d3d41aab9e9305e89",tooltip="Show the MessageBox."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="DevionGames.UIWidgets.Dialog\lBox.Show",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_devion_games_1_1_u_i_widgets_1_1_dialog_box.html#a2ec7158bfc1ef749f01bbdb2cbf3aab6",tooltip="Show the MessageBox."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="DevionGames.UIWidgets.UIWidget.\lToggle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_devion_games_1_1_u_i_widgets_1_1_u_i_widget.html#a085d397242497094b0712db940763263",tooltip="Toggle the visibility of this widget."];
+}

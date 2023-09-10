@@ -1,0 +1,17 @@
+<map id="Achroma.AchromaControlFile" name="Achroma.AchromaControlFile">
+<area shape="rect" id="Node000001" title=" " alt="" coords="951,55,1144,80"/>
+<area shape="rect" id="Node000002" href="$struct_achroma_1_1_achroma_control_file_type.html" title=" " alt="" coords="619,55,839,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="854,65,951,65,951,70,854,70"/>
+<area shape="rect" id="Node000003" href="$struct_achroma_1_1_achroma_asset_bundle_file.html" title=" " alt="" coords="304,31,528,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="543,51,619,56,618,62,543,56"/>
+<area shape="rect" id="Node000004" href="$struct_achroma_1_1_achroma_file_story.html" title=" " alt="" coords="325,80,507,106"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="521,82,595,76,618,74,619,79,595,81,521,87"/>
+<area shape="rect" id="Node000005" href="$struct_achroma_1_1_character_avatar.html" title=" " alt="" coords="16,5,189,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="193,32,281,56,305,66,343,77,342,82,303,71,279,61,191,37"/>
+<area shape="rect" id="Node000006" href="$struct_achroma_1_1_achroma_item_type.html" title=" " alt="" coords="11,55,194,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="209,73,325,83,325,88,209,79"/>
+<area shape="rect" id="Node000007" href="$struct_achroma_1_1_achroma_action_type.html" title=" " alt="" coords="5,104,200,130"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="214,113,279,109,329,104,330,109,280,114,214,118"/>
+<area shape="rect" id="Node000008" href="$struct_achroma_1_1_location.html" title=" " alt="" coords="39,153,166,179"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="180,153,279,133,376,104,378,109,280,138,181,158"/>
+</map>

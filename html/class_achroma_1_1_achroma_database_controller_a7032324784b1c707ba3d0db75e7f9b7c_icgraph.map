@@ -1,0 +1,6 @@
+<map id="Achroma.AchromaDatabaseController.CheckForUpdates" name="Achroma.AchromaDatabaseController.CheckForUpdates">
+<area shape="rect" id="Node000001" title="Checks if the user has the latest version installed. If the user has an outdated version,..." alt="" coords="259,29,503,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="426,17,410,10,381,8,355,10,339,15,333,21,335,28,330,29,327,19,336,10,354,5,381,3,411,5,428,12"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance.html#af3821af509fedf5a7572f5bff84510da" title="Checks if the user has the latest version installed. If the user has an outdated version,..." alt="" coords="5,29,211,70"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="244,52,211,52,211,47,244,47"/>
+</map>

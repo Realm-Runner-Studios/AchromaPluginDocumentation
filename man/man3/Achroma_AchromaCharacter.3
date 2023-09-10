@@ -1,0 +1,234 @@
+.TH "Achroma.AchromaCharacter" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaCharacter
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static string \fBGetCharacterSpriteName\fP (int avatar)"
+.br
+.RI "Returns character sprite name to be found in the asset bundle\&. "
+.ti -1c
+.RI "static string \fBGetCharacterStory\fP (int avatar)"
+.br
+.RI "Returns the story linked to the character\&. "
+.ti -1c
+.RI "static string \fBGetCharacterName\fP (int avatar)"
+.br
+.RI "Returns the name of the character\&. "
+.ti -1c
+.RI "static string \fBGetCharacterCard\fP (int avatar)"
+.br
+.RI "Returns the character's card id\&. "
+.ti -1c
+.RI "static Vector2 \fBGetAvatarPosition\fP (int avatar)"
+.br
+.RI "Returns the avatar position for the home button\&. "
+.ti -1c
+.RI "static void \fBGetCharacterSprite\fP (int avatar, bool transparent, UnityAction< bool, string, Sprite > callback)"
+.br
+.RI "Gets the sprite for a given avatar id in the array\&. "
+.ti -1c
+.RI "static \fBCharacterAvatar\fP \fBGetCharacterAvatarByName\fP (string name)"
+.br
+.RI "Returns the character from the Control File with all its data\&. "
+.ti -1c
+.RI "static \fBCharacterAvatar\fP \fBGetCharacterAvatarById\fP (int id)"
+.br
+.RI "Returns the character from the Control File with all its data\&. "
+.ti -1c
+.RI "static void \fBGetCharacterSpriteAnimation\fP (int avatar, UnityAction< bool, string, GameObject > callback)"
+.br
+.RI "Gets the sprite animation for a given avatar id in the array\&. "
+.ti -1c
+.RI "static int \fBGetCharacterIdByName\fP (string name)"
+.br
+.RI "Returns character id based on the name\&. "
+.ti -1c
+.RI "static string \fBGetCharacterBackgroundById\fP (int id)"
+.br
+.RI "Returns background based on character id\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "static Vector2 Achroma\&.AchromaCharacter\&.GetAvatarPosition (int avatar)\fC [static]\fP"
+
+.PP
+Returns the avatar position for the home button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIavatar\fP Id in the character array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns the Vector2 position for the avatar in the home button
+.RE
+.PP
+
+.SS "static \fBCharacterAvatar\fP Achroma\&.AchromaCharacter\&.GetCharacterAvatarById (int id)\fC [static]\fP"
+
+.PP
+Returns the character from the Control File with all its data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the character
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the CharacaterAvatar type with all the related data to the Character
+.RE
+.PP
+
+.SS "static \fBCharacterAvatar\fP Achroma\&.AchromaCharacter\&.GetCharacterAvatarByName (string name)\fC [static]\fP"
+
+.PP
+Returns the character from the Control File with all its data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the character
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the CharacaterAvatar type with all the related data to the Character
+.RE
+.PP
+
+.SS "static string Achroma\&.AchromaCharacter\&.GetCharacterBackgroundById (int id)\fC [static]\fP"
+
+.PP
+Returns background based on character id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIavatar\fP Id in the character array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns the character id
+.RE
+.PP
+
+.SS "static string Achroma\&.AchromaCharacter\&.GetCharacterCard (int avatar)\fC [static]\fP"
+
+.PP
+Returns the character's card id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIavatar\fP Id in the character array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns the character's card id
+.RE
+.PP
+
+.SS "static int Achroma\&.AchromaCharacter\&.GetCharacterIdByName (string name)\fC [static]\fP"
+
+.PP
+Returns character id based on the name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP Name in the character array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns the character id
+.RE
+.PP
+
+.SS "static string Achroma\&.AchromaCharacter\&.GetCharacterName (int avatar)\fC [static]\fP"
+
+.PP
+Returns the name of the character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIavatar\fP Id in the character array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns the character's name
+.RE
+.PP
+
+.SS "static void Achroma\&.AchromaCharacter\&.GetCharacterSprite (int avatar, bool transparent, UnityAction< bool, string, Sprite > callback)\fC [static]\fP"
+
+.PP
+Gets the sprite for a given avatar id in the array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIavatar\fP avatar id in the array
+.br
+\fItransparent\fP if transparent is true, it will look for PNG versions of the character
+.br
+\fIcallback\fP result callback with a success flat, an error message and the instance of the instantiated sprite
+.RE
+.PP
+
+.SS "static void Achroma\&.AchromaCharacter\&.GetCharacterSpriteAnimation (int avatar, UnityAction< bool, string, GameObject > callback)\fC [static]\fP"
+
+.PP
+Gets the sprite animation for a given avatar id in the array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIavatar\fP avatar id in the array
+.br
+\fIcallback\fP result callback with a success flat, an error message and the instance of the instantiated sprite animation
+.RE
+.PP
+
+.SS "static string Achroma\&.AchromaCharacter\&.GetCharacterSpriteName (int avatar)\fC [static]\fP"
+
+.PP
+Returns character sprite name to be found in the asset bundle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIavatar\fP Id in the character array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns name of the sprite in the asset bundle file
+.RE
+.PP
+
+.SS "static string Achroma\&.AchromaCharacter\&.GetCharacterStory (int avatar)\fC [static]\fP"
+
+.PP
+Returns the story linked to the character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIavatar\fP Id in the character array
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns the story id
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

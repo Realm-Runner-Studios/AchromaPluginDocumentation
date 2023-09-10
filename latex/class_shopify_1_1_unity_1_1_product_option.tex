@@ -1,0 +1,90 @@
+\doxysection{Shopify.\+Unity.\+Product\+Option Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_product_option}{}\label{class_shopify_1_1_unity_1_1_product_option}\index{Shopify.Unity.ProductOption@{Shopify.Unity.ProductOption}}
+
+
+Product property names like "{}\+Size"{}, "{}\+Color"{}, and "{}\+Material"{} that the customers can select. Variants are selected based on permutations of these options. 255 characters limit each.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Product\+Option\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Product\+Option\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_option_a5d98680197c05beec590332863ccb5c4}{Product\+Option}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_option_a9df651ee34d23e440a04c88f1837d30a}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_option_a8ee296d5f808910dde5c13f4ac45eb9d}\label{class_shopify_1_1_unity_1_1_product_option_a8ee296d5f808910dde5c13f4ac45eb9d} 
+string {\bfseries name} ()
+\begin{DoxyCompactList}\small\item\em The product option’s name. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_option_a25ce5f44ccf4d201c920733be21e2115}\label{class_shopify_1_1_unity_1_1_product_option_a25ce5f44ccf4d201c920733be21e2115} 
+List$<$ string $>$ {\bfseries values} ()
+\begin{DoxyCompactList}\small\item\em The corresponding value to the product option name. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_option_ad2dc17c20c883f8c86ba69c529a3d0e7}\label{class_shopify_1_1_unity_1_1_product_option_ad2dc17c20c883f8c86ba69c529a3d0e7} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Product property names like "{}\+Size"{}, "{}\+Color"{}, and "{}\+Material"{} that the customers can select. Variants are selected based on permutations of these options. 255 characters limit each. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_option_a5d98680197c05beec590332863ccb5c4}\label{class_shopify_1_1_unity_1_1_product_option_a5d98680197c05beec590332863ccb5c4} 
+\index{Shopify.Unity.ProductOption@{Shopify.Unity.ProductOption}!ProductOption@{ProductOption}}
+\index{ProductOption@{ProductOption}!Shopify.Unity.ProductOption@{Shopify.Unity.ProductOption}}
+\doxysubsubsection{\texorpdfstring{ProductOption()}{ProductOption()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Product\+Option.\+Product\+Option (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Product\+Option\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_option_a9df651ee34d23e440a04c88f1837d30a}\label{class_shopify_1_1_unity_1_1_product_option_a9df651ee34d23e440a04c88f1837d30a} 
+\index{Shopify.Unity.ProductOption@{Shopify.Unity.ProductOption}!id@{id}}
+\index{id@{id}!Shopify.Unity.ProductOption@{Shopify.Unity.ProductOption}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Product\+Option.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Product\+Option.\+cs\end{DoxyCompactItemize}

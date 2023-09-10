@@ -1,0 +1,1041 @@
+.TH "Shopify.Unity.GraphQL" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBApiVersionQuery\fP"
+.br
+.RI "A version of the API\&. "
+.ti -1c
+.RI "class \fBAppliedGiftCardQuery\fP"
+.br
+.RI "Details about the gift card used on the checkout\&. "
+.ti -1c
+.RI "class \fBArticleAuthorQuery\fP"
+.br
+.RI "The author of an article\&. "
+.ti -1c
+.RI "class \fBArticleConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Articles\&. "
+.ti -1c
+.RI "class \fBArticleEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one Article and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBArticleQuery\fP"
+.br
+.RI "An article in an online store blog\&. "
+.ti -1c
+.RI "class \fBAttributeQuery\fP"
+.br
+.RI "Represents a generic custom attribute\&. "
+.ti -1c
+.RI "class \fBAutomaticDiscountApplicationQuery\fP"
+.br
+.RI "Automatic discount applications capture the intentions of a discount that was automatically applied\&. "
+.ti -1c
+.RI "class \fBAvailableShippingRatesQuery\fP"
+.br
+.RI "A collection of available shipping rates for a checkout\&. "
+.ti -1c
+.RI "class \fBBlogConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Blogs\&. "
+.ti -1c
+.RI "class \fBBlogEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one Blog and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBBlogQuery\fP"
+.br
+.RI "An online store blog\&. "
+.ti -1c
+.RI "class \fBCheckoutAttributesUpdatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutAttributesUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutAttributesUpdateV2payloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutAttributesUpdateV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCompleteFreePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutCompleteFree\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCompleteWithCreditCardPayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutCompleteWithCreditCard\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCompleteWithCreditCardV2payloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutCompleteWithCreditCardV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCompleteWithTokenizedPaymentPayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutCompleteWithTokenizedPayment\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCompleteWithTokenizedPaymentV2payloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutCompleteWithTokenizedPaymentV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCreatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutCreate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCustomerAssociatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutCustomerAssociate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCustomerAssociateV2payloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutCustomerAssociateV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCustomerDisassociatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutCustomerDisassociate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutCustomerDisassociateV2payloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutCustomerDisassociateV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutDiscountCodeApplyPayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutDiscountCodeApply\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutDiscountCodeApplyV2payloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutDiscountCodeApplyV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutDiscountCodeRemovePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutDiscountCodeRemove\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutEmailUpdatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutEmailUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutEmailUpdateV2payloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutEmailUpdateV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutGiftCardApplyPayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutGiftCardApply\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutGiftCardRemovePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutGiftCardRemove\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutGiftCardRemoveV2payloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutGiftCardRemoveV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutGiftCardsAppendPayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutGiftCardsAppend\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple CheckoutLineItems\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one CheckoutLineItem and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemQuery\fP"
+.br
+.RI "A single line item in the checkout, grouped by variant and attributes\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemsAddPayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutLineItemsAdd\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemsRemovePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutLineItemsRemove\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemsReplacePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutLineItemsReplace\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutLineItemsUpdatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutLineItemsUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutQuery\fP"
+.br
+.RI "A container for all the information required to checkout items and pay\&. "
+.ti -1c
+.RI "class \fBCheckoutShippingAddressUpdatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutShippingAddressUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutShippingAddressUpdateV2payloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutShippingAddressUpdateV2\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutShippingLineUpdatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcheckoutShippingLineUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCheckoutUserErrorQuery\fP"
+.br
+.RI "Represents an error that happens during execution of a checkout mutation\&. "
+.ti -1c
+.RI "class \fBCollectionConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Collections\&. "
+.ti -1c
+.RI "class \fBCollectionEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one Collection and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBCollectionQuery\fP"
+.br
+.RI "A collection represents a grouping of products that a shop owner can create to organize them or make their shops easier to browse\&. "
+.ti -1c
+.RI "class \fBCommentAuthorQuery\fP"
+.br
+.RI "The author of a comment\&. "
+.ti -1c
+.RI "class \fBCommentConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Comments\&. "
+.ti -1c
+.RI "class \fBCommentEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one Comment and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBCommentQuery\fP"
+.br
+.RI "A comment on an article\&. "
+.ti -1c
+.RI "class \fBCreditCardQuery\fP"
+.br
+.RI "Credit card information used for a payment\&. "
+.ti -1c
+.RI "class \fBCustomerAccessTokenCreatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerAccessTokenCreate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerAccessTokenDeletePayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerAccessTokenDelete\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerAccessTokenQuery\fP"
+.br
+.RI "A CustomerAccessToken represents the unique token required to make modifications to the customer object\&. "
+.ti -1c
+.RI "class \fBCustomerAccessTokenRenewPayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerAccessTokenRenew\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerActivatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerActivate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerAddressCreatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerAddressCreate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerAddressDeletePayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerAddressDelete\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerAddressUpdatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerAddressUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerCreatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerCreate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerDefaultAddressUpdatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerDefaultAddressUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerQuery\fP"
+.br
+.RI "A customer represents a customer account with the shop\&. Customer accounts store contact information for the customer, saving logged-in customers the trouble of having to provide it at every checkout\&. "
+.ti -1c
+.RI "class \fBCustomerRecoverPayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerRecover\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerResetByUrlPayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerResetByUrl\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerResetPayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerReset\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerUpdatePayloadQuery\fP"
+.br
+.RI "Return type for \fCcustomerUpdate\fP mutation\&. "
+.ti -1c
+.RI "class \fBCustomerUserErrorQuery\fP"
+.br
+.RI "Represents an error that happens during execution of a customer mutation\&. "
+.ti -1c
+.RI "class \fBDiscountAllocationQuery\fP"
+.br
+.RI "An amount discounting the line that has been allocated by a discount\&. "
+.ti -1c
+.RI "class \fBDiscountApplicationConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple DiscountApplications\&. "
+.ti -1c
+.RI "class \fBDiscountApplicationEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one DiscountApplication and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBDiscountApplicationQuery\fP"
+.br
+.RI "Discount applications capture the intentions of a discount source at the time of application\&. "
+.ti -1c
+.RI "class \fBDiscountCodeApplicationQuery\fP"
+.br
+.RI "Discount code applications capture the intentions of a discount code at the time that it is applied\&. "
+.ti -1c
+.RI "class \fBDisplayableErrorQuery\fP"
+.br
+.RI "Represents an error in the input of a mutation\&. "
+.ti -1c
+.RI "class \fBDomainQuery\fP"
+.br
+.RI "Represents a web address\&. "
+.ti -1c
+.RI "class \fBExternalVideoQuery\fP"
+.br
+.RI "Represents a video hosted outside of \fBShopify\fP\&. "
+.ti -1c
+.RI "class \fBFulfillmentLineItemConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple FulfillmentLineItems\&. "
+.ti -1c
+.RI "class \fBFulfillmentLineItemEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one FulfillmentLineItem and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBFulfillmentLineItemQuery\fP"
+.br
+.RI "Represents a single line item in a fulfillment\&. There is at most one fulfillment line item for each order line item\&. "
+.ti -1c
+.RI "class \fBFulfillmentQuery\fP"
+.br
+.RI "Represents a single fulfillment in an order\&. "
+.ti -1c
+.RI "class \fBFulfillmentTrackingInfoQuery\fP"
+.br
+.RI "Tracking information associated with the fulfillment\&. "
+.ti -1c
+.RI "class \fBHasMetafieldsQuery\fP"
+.br
+.RI "Represents information about the metafields associated to the specified resource\&. "
+.ti -1c
+.RI "class \fBImageConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Images\&. "
+.ti -1c
+.RI "class \fBImageEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one Image and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBImageQuery\fP"
+.br
+.RI "Represents an image resource\&. "
+.ti -1c
+.RI "class \fBMailingAddressConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple MailingAddresses\&. "
+.ti -1c
+.RI "class \fBMailingAddressEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one MailingAddress and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBMailingAddressQuery\fP"
+.br
+.RI "Represents a mailing address for customers and shipping\&. "
+.ti -1c
+.RI "class \fBManualDiscountApplicationQuery\fP"
+.br
+.RI "Manual discount applications capture the intentions of a discount that was manually created\&. "
+.ti -1c
+.RI "class \fBMediaConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Media\&. "
+.ti -1c
+.RI "class \fBMediaEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one Media and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBMediaImageQuery\fP"
+.br
+.RI "Represents a \fBShopify\fP hosted image\&. "
+.ti -1c
+.RI "class \fBMediaQuery\fP"
+.br
+.RI "Represents a media interface\&. "
+.ti -1c
+.RI "class \fBMetafieldConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Metafields\&. "
+.ti -1c
+.RI "class \fBMetafieldEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one Metafield and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBMetafieldParentResourceQuery\fP"
+.br
+.RI "A resource that the metafield belongs to\&. "
+.ti -1c
+.RI "class \fBMetafieldQuery\fP"
+.br
+.RI "Metafields represent custom metadata attached to a resource\&. Metafields can be sorted into namespaces and are comprised of keys, values, and value types\&. "
+.ti -1c
+.RI "class \fBModel3dQuery\fP"
+.br
+.RI "Represents a \fBShopify\fP hosted 3D model\&. "
+.ti -1c
+.RI "class \fBModel3dSourceQuery\fP"
+.br
+.RI "Represents a source for a \fBShopify\fP hosted 3d model\&. "
+.ti -1c
+.RI "class \fBMoneyV2connectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple MoneyV2s\&. "
+.ti -1c
+.RI "class \fBMoneyV2edgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one MoneyV2 and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBMoneyV2Query\fP"
+.br
+.RI "A monetary value with currency\&. "
+.ti -1c
+.RI "class \fBMutationQuery\fP"
+.br
+.RI "MutationQuery is the root mutation builder\&. All Storefront API mutation queries are built off of MutationQuery\&. "
+.ti -1c
+.RI "class \fBNodeQuery\fP"
+.br
+.RI "An object with an ID to support global identification\&. "
+.ti -1c
+.RI "class \fBOrderConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Orders\&. "
+.ti -1c
+.RI "class \fBOrderEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one Order and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBOrderLineItemConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple OrderLineItems\&. "
+.ti -1c
+.RI "class \fBOrderLineItemEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one OrderLineItem and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBOrderLineItemQuery\fP"
+.br
+.RI "Represents a single line in an order\&. There is one line item for each distinct product variant\&. "
+.ti -1c
+.RI "class \fBOrderQuery\fP"
+.br
+.RI "An order is a customer’s completed request to purchase one or more products from a shop\&. An order is created when a customer completes the checkout process, during which time they provides an email address, billing address and payment information\&. "
+.ti -1c
+.RI "class \fBPageConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Pages\&. "
+.ti -1c
+.RI "class \fBPageEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one Page and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBPageInfoQuery\fP"
+.br
+.RI "Information about pagination in a connection\&. "
+.ti -1c
+.RI "class \fBPageQuery\fP"
+.br
+.RI "\fBShopify\fP merchants can create pages to hold static HTML content\&. Each Page object represents a custom page on the online store\&. "
+.ti -1c
+.RI "class \fBPaymentQuery\fP"
+.br
+.RI "A payment applied to a checkout\&. "
+.ti -1c
+.RI "class \fBPaymentSettingsQuery\fP"
+.br
+.RI "Settings related to payments\&. "
+.ti -1c
+.RI "class \fBPricingPercentageValueQuery\fP"
+.br
+.RI "The value of the percentage pricing object\&. "
+.ti -1c
+.RI "class \fBPricingValueQuery\fP"
+.br
+.RI "The price value (fixed or percentage) for a discount application\&. "
+.ti -1c
+.RI "class \fBProductConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Products\&. "
+.ti -1c
+.RI "class \fBProductEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one Product and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBProductOptionQuery\fP"
+.br
+.RI "Product property names like 'Size', 'Color', and 'Material' that the customers can select\&. Variants are selected based on permutations of these options\&. 255 characters limit each\&. "
+.ti -1c
+.RI "class \fBProductPriceRangeConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple ProductPriceRanges\&. "
+.ti -1c
+.RI "class \fBProductPriceRangeEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one ProductPriceRange and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBProductPriceRangeQuery\fP"
+.br
+.RI "The price range of the product\&. "
+.ti -1c
+.RI "class \fBProductQuery\fP"
+.br
+.RI "A product represents an individual item for sale in a \fBShopify\fP store\&. Products are often physical, but they don't have to be\&. For example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty)\&. "
+.ti -1c
+.RI "class \fBProductVariantConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple ProductVariants\&. "
+.ti -1c
+.RI "class \fBProductVariantEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one ProductVariant and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBProductVariantPricePairConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple ProductVariantPricePairs\&. "
+.ti -1c
+.RI "class \fBProductVariantPricePairEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one ProductVariantPricePair and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBProductVariantPricePairQuery\fP"
+.br
+.RI "The compare-at price and price of a variant sharing a currency\&. "
+.ti -1c
+.RI "class \fBProductVariantQuery\fP"
+.br
+.RI "A product variant represents a different version of a product, such as differing sizes or differing colors\&. "
+.ti -1c
+.RI "class \fBQueryRootQuery\fP"
+.br
+.RI "QueryRootQuery is the root query builder\&. All Storefront API queries are built off of QueryRootQuery\&. "
+.ti -1c
+.RI "class \fBScriptDiscountApplicationQuery\fP"
+.br
+.RI "Script discount applications capture the intentions of a discount that was created by a \fBShopify\fP Script\&. "
+.ti -1c
+.RI "class \fBSelectedOptionQuery\fP"
+.br
+.RI "Properties used by customers to select a product variant\&. Products can have multiple options, like different sizes or colors\&. "
+.ti -1c
+.RI "class \fBSeoQuery\fP"
+.br
+.RI "SEO information\&. "
+.ti -1c
+.RI "class \fBShippingRateQuery\fP"
+.br
+.RI "A shipping rate to be applied to a checkout\&. "
+.ti -1c
+.RI "class \fBShopPolicyQuery\fP"
+.br
+.RI "Policy that a merchant has configured for their store, such as their refund or privacy policy\&. "
+.ti -1c
+.RI "class \fBShopQuery\fP"
+.br
+.RI "Shop represents a collection of the general settings and information about the shop\&. "
+.ti -1c
+.RI "class \fBStringConnectionQuery\fP"
+.br
+.RI "An auto-generated type for paginating through multiple Strings\&. "
+.ti -1c
+.RI "class \fBStringEdgeQuery\fP"
+.br
+.RI "An auto-generated type which holds one String and a cursor during pagination\&. "
+.ti -1c
+.RI "class \fBTransactionQuery\fP"
+.br
+.RI "An object representing exchange of money for a product or service\&. "
+.ti -1c
+.RI "class \fBUnitPriceMeasurementQuery\fP"
+.br
+.RI "The measurement used to calculate a unit price for a product variant (e\&.g\&. $9\&.99 / 100ml)\&. "
+.ti -1c
+.RI "class \fBUserErrorQuery\fP"
+.br
+.RI "Represents an error in the input of a mutation\&. "
+.ti -1c
+.RI "class \fBVideoQuery\fP"
+.br
+.RI "Represents a \fBShopify\fP hosted video\&. "
+.ti -1c
+.RI "class \fBVideoSourceQuery\fP"
+.br
+.RI "Represents a source for a \fBShopify\fP hosted video\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "delegate void \fBApiVersionDelegate\fP (\fBApiVersionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBAppliedGiftCardDelegate\fP (\fBAppliedGiftCardQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBArticleAuthorDelegate\fP (\fBArticleAuthorQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBArticleConnectionDelegate\fP (\fBArticleConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBArticleEdgeDelegate\fP (\fBArticleEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBArticleDelegate\fP (\fBArticleQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBAttributeDelegate\fP (\fBAttributeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBAutomaticDiscountApplicationDelegate\fP (\fBAutomaticDiscountApplicationQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBAvailableShippingRatesDelegate\fP (\fBAvailableShippingRatesQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBBlogConnectionDelegate\fP (\fBBlogConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBBlogEdgeDelegate\fP (\fBBlogEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBBlogDelegate\fP (\fBBlogQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutAttributesUpdatePayloadDelegate\fP (\fBCheckoutAttributesUpdatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutAttributesUpdateV2payloadDelegate\fP (\fBCheckoutAttributesUpdateV2payloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutCompleteFreePayloadDelegate\fP (\fBCheckoutCompleteFreePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutCompleteWithCreditCardPayloadDelegate\fP (\fBCheckoutCompleteWithCreditCardPayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutCompleteWithCreditCardV2payloadDelegate\fP (\fBCheckoutCompleteWithCreditCardV2payloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutCompleteWithTokenizedPaymentPayloadDelegate\fP (\fBCheckoutCompleteWithTokenizedPaymentPayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutCompleteWithTokenizedPaymentV2payloadDelegate\fP (\fBCheckoutCompleteWithTokenizedPaymentV2payloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutCreatePayloadDelegate\fP (\fBCheckoutCreatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutCustomerAssociatePayloadDelegate\fP (\fBCheckoutCustomerAssociatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutCustomerAssociateV2payloadDelegate\fP (\fBCheckoutCustomerAssociateV2payloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutCustomerDisassociatePayloadDelegate\fP (\fBCheckoutCustomerDisassociatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutCustomerDisassociateV2payloadDelegate\fP (\fBCheckoutCustomerDisassociateV2payloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutDiscountCodeApplyPayloadDelegate\fP (\fBCheckoutDiscountCodeApplyPayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutDiscountCodeApplyV2payloadDelegate\fP (\fBCheckoutDiscountCodeApplyV2payloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutDiscountCodeRemovePayloadDelegate\fP (\fBCheckoutDiscountCodeRemovePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutEmailUpdatePayloadDelegate\fP (\fBCheckoutEmailUpdatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutEmailUpdateV2payloadDelegate\fP (\fBCheckoutEmailUpdateV2payloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutGiftCardApplyPayloadDelegate\fP (\fBCheckoutGiftCardApplyPayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutGiftCardRemovePayloadDelegate\fP (\fBCheckoutGiftCardRemovePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutGiftCardRemoveV2payloadDelegate\fP (\fBCheckoutGiftCardRemoveV2payloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutGiftCardsAppendPayloadDelegate\fP (\fBCheckoutGiftCardsAppendPayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutLineItemConnectionDelegate\fP (\fBCheckoutLineItemConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutLineItemEdgeDelegate\fP (\fBCheckoutLineItemEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutLineItemDelegate\fP (\fBCheckoutLineItemQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutLineItemsAddPayloadDelegate\fP (\fBCheckoutLineItemsAddPayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutLineItemsRemovePayloadDelegate\fP (\fBCheckoutLineItemsRemovePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutLineItemsReplacePayloadDelegate\fP (\fBCheckoutLineItemsReplacePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutLineItemsUpdatePayloadDelegate\fP (\fBCheckoutLineItemsUpdatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutDelegate\fP (\fBCheckoutQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutShippingAddressUpdatePayloadDelegate\fP (\fBCheckoutShippingAddressUpdatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutShippingAddressUpdateV2payloadDelegate\fP (\fBCheckoutShippingAddressUpdateV2payloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutShippingLineUpdatePayloadDelegate\fP (\fBCheckoutShippingLineUpdatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutUserErrorDelegate\fP (\fBCheckoutUserErrorQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCollectionConnectionDelegate\fP (\fBCollectionConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCollectionEdgeDelegate\fP (\fBCollectionEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCollectionDelegate\fP (\fBCollectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCommentAuthorDelegate\fP (\fBCommentAuthorQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCommentConnectionDelegate\fP (\fBCommentConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCommentEdgeDelegate\fP (\fBCommentEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCommentDelegate\fP (\fBCommentQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCreditCardDelegate\fP (\fBCreditCardQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerAccessTokenCreatePayloadDelegate\fP (\fBCustomerAccessTokenCreatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerAccessTokenDeletePayloadDelegate\fP (\fBCustomerAccessTokenDeletePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerAccessTokenDelegate\fP (\fBCustomerAccessTokenQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerAccessTokenRenewPayloadDelegate\fP (\fBCustomerAccessTokenRenewPayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerActivatePayloadDelegate\fP (\fBCustomerActivatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerAddressCreatePayloadDelegate\fP (\fBCustomerAddressCreatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerAddressDeletePayloadDelegate\fP (\fBCustomerAddressDeletePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerAddressUpdatePayloadDelegate\fP (\fBCustomerAddressUpdatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerCreatePayloadDelegate\fP (\fBCustomerCreatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerDefaultAddressUpdatePayloadDelegate\fP (\fBCustomerDefaultAddressUpdatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerDelegate\fP (\fBCustomerQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerRecoverPayloadDelegate\fP (\fBCustomerRecoverPayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerResetByUrlPayloadDelegate\fP (\fBCustomerResetByUrlPayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerResetPayloadDelegate\fP (\fBCustomerResetPayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerUpdatePayloadDelegate\fP (\fBCustomerUpdatePayloadQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBCustomerUserErrorDelegate\fP (\fBCustomerUserErrorQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBDiscountAllocationDelegate\fP (\fBDiscountAllocationQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBDiscountApplicationConnectionDelegate\fP (\fBDiscountApplicationConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBDiscountApplicationEdgeDelegate\fP (\fBDiscountApplicationEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBDiscountApplicationDelegate\fP (\fBDiscountApplicationQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBDiscountCodeApplicationDelegate\fP (\fBDiscountCodeApplicationQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBDisplayableErrorDelegate\fP (\fBDisplayableErrorQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBDomainDelegate\fP (\fBDomainQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBExternalVideoDelegate\fP (\fBExternalVideoQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBFulfillmentLineItemConnectionDelegate\fP (\fBFulfillmentLineItemConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBFulfillmentLineItemEdgeDelegate\fP (\fBFulfillmentLineItemEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBFulfillmentLineItemDelegate\fP (\fBFulfillmentLineItemQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBFulfillmentDelegate\fP (\fBFulfillmentQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBFulfillmentTrackingInfoDelegate\fP (\fBFulfillmentTrackingInfoQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBHasMetafieldsDelegate\fP (\fBHasMetafieldsQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBImageConnectionDelegate\fP (\fBImageConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBImageEdgeDelegate\fP (\fBImageEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBImageDelegate\fP (\fBImageQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMailingAddressConnectionDelegate\fP (\fBMailingAddressConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMailingAddressEdgeDelegate\fP (\fBMailingAddressEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMailingAddressDelegate\fP (\fBMailingAddressQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBManualDiscountApplicationDelegate\fP (\fBManualDiscountApplicationQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMediaConnectionDelegate\fP (\fBMediaConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMediaEdgeDelegate\fP (\fBMediaEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMediaImageDelegate\fP (\fBMediaImageQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMediaDelegate\fP (\fBMediaQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMetafieldConnectionDelegate\fP (\fBMetafieldConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMetafieldEdgeDelegate\fP (\fBMetafieldEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMetafieldParentResourceDelegate\fP (\fBMetafieldParentResourceQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMetafieldDelegate\fP (\fBMetafieldQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBModel3dDelegate\fP (\fBModel3dQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBModel3dSourceDelegate\fP (\fBModel3dSourceQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMoneyV2connectionDelegate\fP (\fBMoneyV2connectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMoneyV2edgeDelegate\fP (\fBMoneyV2edgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMoneyV2Delegate\fP (\fBMoneyV2Query\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBMutationDelegate\fP (\fBMutationQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBNodeDelegate\fP (\fBNodeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBOrderConnectionDelegate\fP (\fBOrderConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBOrderEdgeDelegate\fP (\fBOrderEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBOrderLineItemConnectionDelegate\fP (\fBOrderLineItemConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBOrderLineItemEdgeDelegate\fP (\fBOrderLineItemEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBOrderLineItemDelegate\fP (\fBOrderLineItemQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBOrderDelegate\fP (\fBOrderQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBPageConnectionDelegate\fP (\fBPageConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBPageEdgeDelegate\fP (\fBPageEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBPageInfoDelegate\fP (\fBPageInfoQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBPageDelegate\fP (\fBPageQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBPaymentDelegate\fP (\fBPaymentQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBPaymentSettingsDelegate\fP (\fBPaymentSettingsQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBPricingPercentageValueDelegate\fP (\fBPricingPercentageValueQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBPricingValueDelegate\fP (\fBPricingValueQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductConnectionDelegate\fP (\fBProductConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductEdgeDelegate\fP (\fBProductEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductOptionDelegate\fP (\fBProductOptionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductPriceRangeConnectionDelegate\fP (\fBProductPriceRangeConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductPriceRangeEdgeDelegate\fP (\fBProductPriceRangeEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductPriceRangeDelegate\fP (\fBProductPriceRangeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductDelegate\fP (\fBProductQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductVariantConnectionDelegate\fP (\fBProductVariantConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductVariantEdgeDelegate\fP (\fBProductVariantEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductVariantPricePairConnectionDelegate\fP (\fBProductVariantPricePairConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductVariantPricePairEdgeDelegate\fP (\fBProductVariantPricePairEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductVariantPricePairDelegate\fP (\fBProductVariantPricePairQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBProductVariantDelegate\fP (\fBProductVariantQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBQueryRootDelegate\fP (\fBQueryRootQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBScriptDiscountApplicationDelegate\fP (\fBScriptDiscountApplicationQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBSelectedOptionDelegate\fP (\fBSelectedOptionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBSeoDelegate\fP (\fBSeoQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBShippingRateDelegate\fP (\fBShippingRateQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBShopPolicyDelegate\fP (\fBShopPolicyQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBShopDelegate\fP (\fBShopQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBStringConnectionDelegate\fP (\fBStringConnectionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBStringEdgeDelegate\fP (\fBStringEdgeQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBTransactionDelegate\fP (\fBTransactionQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBUnitPriceMeasurementDelegate\fP (\fBUnitPriceMeasurementQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBUserErrorDelegate\fP (\fBUserErrorQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBVideoDelegate\fP (\fBVideoQuery\fP query)"
+.br
+.ti -1c
+.RI "delegate void \fBVideoSourceDelegate\fP (\fBVideoSourceQuery\fP query)"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

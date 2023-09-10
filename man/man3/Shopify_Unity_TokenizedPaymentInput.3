@@ -1,0 +1,149 @@
+.TH "Shopify.Unity.TokenizedPaymentInput" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.TokenizedPaymentInput \- Specifies the fields required to complete a checkout with a tokenized payment\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.InputBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTokenizedPaymentInput\fP (decimal \fBamount\fP, string \fBidempotencyKey\fP, \fBMailingAddressInput\fP \fBbillingAddress\fP, string \fBtype\fP, string \fBpaymentData\fP, bool? \fBtest\fP=null, string \fBidentifier\fP=null)"
+.br
+.ti -1c
+.RI "\fBTokenizedPaymentInput\fP (Dictionary< string, object > dataJSON)"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.InputBase\fP
+.in +1c
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Returns a string representing a GraphQL input object\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "const string \fBamountFieldKey\fP = 'amount'"
+.br
+.ti -1c
+.RI "const string \fBidempotencyKeyFieldKey\fP = 'idempotencyKey'"
+.br
+.ti -1c
+.RI "const string \fBbillingAddressFieldKey\fP = 'billingAddress'"
+.br
+.ti -1c
+.RI "const string \fBtypeFieldKey\fP = 'type'"
+.br
+.ti -1c
+.RI "const string \fBpaymentDataFieldKey\fP = 'paymentData'"
+.br
+.ti -1c
+.RI "const string \fBtestFieldKey\fP = 'test'"
+.br
+.ti -1c
+.RI "const string \fBidentifierFieldKey\fP = 'identifier'"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "decimal \fBamount\fP\fC [get, set]\fP"
+.br
+.RI "The amount of the payment\&. "
+.ti -1c
+.RI "string \fBidempotencyKey\fP\fC [get, set]\fP"
+.br
+.RI "A unique client generated key used to avoid duplicate charges\&. When a duplicate payment is found, the original is returned instead of creating a new one\&. "
+.ti -1c
+.RI "\fBMailingAddressInput\fP \fBbillingAddress\fP\fC [get, set]\fP"
+.br
+.RI "The billing address for the payment\&. "
+.ti -1c
+.RI "string \fBtype\fP\fC [get, set]\fP"
+.br
+.RI "The type of payment token\&. "
+.ti -1c
+.RI "string \fBpaymentData\fP\fC [get, set]\fP"
+.br
+.RI "A simple string or JSON containing the required payment data for the tokenized payment\&. "
+.ti -1c
+.RI "bool? \fBtest\fP\fC [get, set]\fP"
+.br
+.RI "Executes the payment in test mode if possible\&. Defaults to \fCfalse\fP\&. "
+.ti -1c
+.RI "string \fBidentifier\fP\fC [get, set]\fP"
+.br
+.RI "Public Hash Key used for AndroidPay payments only\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.InputBase\fP
+.in +1c
+.ti -1c
+.RI "void \fBSet\fP (string key, object value)"
+.br
+.ti -1c
+.RI "object \fBGet\fP (string key)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Specifies the fields required to complete a checkout with a tokenized payment\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.TokenizedPaymentInput\&.TokenizedPaymentInput (decimal amount, string idempotencyKey, \fBMailingAddressInput\fP billingAddress, string type, string paymentData, bool? test = \fCnull\fP, string identifier = \fCnull\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIamount\fP The amount of the payment\&. 
+.br
+\fIidempotencyKey\fP A unique client generated key used to avoid duplicate charges\&. When a duplicate payment is found, the original is returned instead of creating a new one\&. 
+.br
+\fIbillingAddress\fP The billing address for the payment\&. 
+.br
+\fItype\fP The type of payment token\&. 
+.br
+\fIpaymentData\fP A simple string or JSON containing the required payment data for the tokenized payment\&. 
+.br
+\fItest\fP Executes the payment in test mode if possible\&. Defaults to \fCfalse\fP\&. 
+.br
+\fIidentifier\fP Public Hash Key used for AndroidPay payments only\&. 
+.RE
+.PP
+
+.SS "Shopify\&.Unity\&.TokenizedPaymentInput\&.TokenizedPaymentInput (Dictionary< string, object > dataJSON)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIamount\fP The amount of the payment\&. 
+.br
+\fIidempotencyKey\fP A unique client generated key used to avoid duplicate charges\&. When a duplicate payment is found, the original is returned instead of creating a new one\&. 
+.br
+\fIbillingAddress\fP The billing address for the payment\&. 
+.br
+\fItype\fP The type of payment token\&. 
+.br
+\fIpaymentData\fP A simple string or JSON containing the required payment data for the tokenized payment\&. 
+.br
+\fItest\fP Executes the payment in test mode if possible\&. Defaults to \fCfalse\fP\&. 
+.br
+\fIidentifier\fP Public Hash Key used for AndroidPay payments only\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

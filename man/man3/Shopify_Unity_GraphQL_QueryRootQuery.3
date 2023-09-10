@@ -1,0 +1,376 @@
+.TH "Shopify.Unity.GraphQL.QueryRootQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.QueryRootQuery \- QueryRootQuery is the root query builder\&. All Storefront API queries are built off of QueryRootQuery\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBQueryRootQuery\fP ()"
+.br
+.RI "QueryRootQuery constructor accepts no parameters but it will create a root query builder\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBarticles\fP (ArticleConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBArticleSortKeys\fP? sortKey=null, string queryValue=null, string alias=null)"
+.br
+.RI "List of the shop's articles\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBblogByHandle\fP (BlogDelegate buildQuery, string handle, string alias=null)"
+.br
+.RI "Find a blog by its handle\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBblogs\fP (BlogConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBBlogSortKeys\fP? sortKey=null, string queryValue=null, string alias=null)"
+.br
+.RI "List of the shop's blogs\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBcollectionByHandle\fP (CollectionDelegate buildQuery, string handle, string alias=null)"
+.br
+.RI "Find a collection by its handle\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBcollections\fP (CollectionConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBCollectionSortKeys\fP? sortKey=null, string queryValue=null, string alias=null)"
+.br
+.RI "List of the shop’s collections\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBcustomer\fP (CustomerDelegate buildQuery, string customerAccessToken, string alias=null)"
+.br
+.RI "Find a customer by its access token\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBnode\fP (NodeDelegate buildQuery, string id, string alias=null)"
+.br
+.RI "Returns a specific node by ID\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBnodes\fP (NodeDelegate buildQuery, List< string > ids, string alias=null)"
+.br
+.RI "Returns the list of nodes with the given IDs\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBpageByHandle\fP (PageDelegate buildQuery, string handle, string alias=null)"
+.br
+.RI "Find a page by its handle\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBpages\fP (PageConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBPageSortKeys\fP? sortKey=null, string queryValue=null, string alias=null)"
+.br
+.RI "List of the shop's pages\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBproductByHandle\fP (ProductDelegate buildQuery, string handle, string alias=null)"
+.br
+.RI "Find a product by its handle\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBproductRecommendations\fP (ProductDelegate buildQuery, string productId, string alias=null)"
+.br
+.RI "Find recommended products related to a given \fCproduct_id\fP\&. To learn more about how recommendations are generated, see \fC\fIShowing product recommendations on product pages\fP\fP\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBproductTags\fP (StringConnectionDelegate buildQuery, long first, string alias=null)"
+.br
+.RI "Tags added to products\&. Additional access scope required: unauthenticated_read_product_tags\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBproductTypes\fP (StringConnectionDelegate buildQuery, long first, string alias=null)"
+.br
+.RI "List of product types for the shop's products that are published to your app\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBproducts\fP (ProductConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBProductSortKeys\fP? sortKey=null, string queryValue=null, string alias=null)"
+.br
+.RI "List of the shop’s products\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBpublicApiVersions\fP (ApiVersionDelegate buildQuery)"
+.br
+.RI "The list of public Storefront API versions, including supported, release candidate and unstable versions\&. "
+.ti -1c
+.RI "\fBQueryRootQuery\fP \fBshop\fP (ShopDelegate buildQuery)"
+.br
+.RI "The shop associated with the storefront access token\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Will return a GraphQL query\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+QueryRootQuery is the root query builder\&. All Storefront API queries are built off of QueryRootQuery\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.articles (ArticleConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBArticleSortKeys\fP? sortKey = \fCnull\fP, string queryValue = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the shop's articles\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.br
+\fIquery\fP Supported filter parameters:
+.IP "\(bu" 2
+\fCauthor\fP
+.IP "\(bu" 2
+\fCblog_title\fP
+.IP "\(bu" 2
+\fCcreated_at\fP
+.IP "\(bu" 2
+\fCtag\fP
+.IP "\(bu" 2
+\fCupdated_at\fP
+.PP
+.RE
+.PP
+See the detailed \fCsearch syntax\fP for more information about using filters\&. 
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.blogByHandle (BlogDelegate buildQuery, string handle, string alias = \fCnull\fP)"
+
+.PP
+Find a blog by its handle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhandle\fP The handle of the blog\&. 
+.RE
+.PP
+
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.blogs (BlogConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBBlogSortKeys\fP? sortKey = \fCnull\fP, string queryValue = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the shop's blogs\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.br
+\fIquery\fP Supported filter parameters:
+.IP "\(bu" 2
+\fCcreated_at\fP
+.IP "\(bu" 2
+\fChandle\fP
+.IP "\(bu" 2
+\fCtitle\fP
+.IP "\(bu" 2
+\fCupdated_at\fP
+.PP
+.RE
+.PP
+See the detailed \fCsearch syntax\fP for more information about using filters\&. 
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.collectionByHandle (CollectionDelegate buildQuery, string handle, string alias = \fCnull\fP)"
+
+.PP
+Find a collection by its handle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhandle\fP The handle of the collection\&. 
+.RE
+.PP
+
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.collections (CollectionConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBCollectionSortKeys\fP? sortKey = \fCnull\fP, string queryValue = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the shop’s collections\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.br
+\fIquery\fP Supported filter parameters:
+.IP "\(bu" 2
+\fCcollection_type\fP
+.IP "\(bu" 2
+\fCtitle\fP
+.IP "\(bu" 2
+\fCupdated_at\fP
+.PP
+.RE
+.PP
+See the detailed \fCsearch syntax\fP for more information about using filters\&. 
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.customer (CustomerDelegate buildQuery, string customerAccessToken, string alias = \fCnull\fP)"
+
+.PP
+Find a customer by its access token\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustomerAccessToken\fP The customer access token\&. 
+.RE
+.PP
+
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.node (NodeDelegate buildQuery, string id, string alias = \fCnull\fP)"
+
+.PP
+Returns a specific node by ID\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The ID of the Node to return\&. 
+.RE
+.PP
+
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.nodes (NodeDelegate buildQuery, List< string > ids, string alias = \fCnull\fP)"
+
+.PP
+Returns the list of nodes with the given IDs\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIids\fP The IDs of the Nodes to return\&. 
+.RE
+.PP
+
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.pageByHandle (PageDelegate buildQuery, string handle, string alias = \fCnull\fP)"
+
+.PP
+Find a page by its handle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhandle\fP The handle of the page\&. 
+.RE
+.PP
+
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.pages (PageConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBPageSortKeys\fP? sortKey = \fCnull\fP, string queryValue = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the shop's pages\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.br
+\fIquery\fP Supported filter parameters:
+.IP "\(bu" 2
+\fCcreated_at\fP
+.IP "\(bu" 2
+\fChandle\fP
+.IP "\(bu" 2
+\fCtitle\fP
+.IP "\(bu" 2
+\fCupdated_at\fP
+.PP
+.RE
+.PP
+See the detailed \fCsearch syntax\fP for more information about using filters\&. 
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.productByHandle (ProductDelegate buildQuery, string handle, string alias = \fCnull\fP)"
+
+.PP
+Find a product by its handle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhandle\fP The handle of the product\&. 
+.RE
+.PP
+
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.productRecommendations (ProductDelegate buildQuery, string productId, string alias = \fCnull\fP)"
+
+.PP
+Find recommended products related to a given \fCproduct_id\fP\&. To learn more about how recommendations are generated, see \fC\fIShowing product recommendations on product pages\fP\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIproductId\fP The id of the product\&. 
+.RE
+.PP
+
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.products (ProductConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBProductSortKeys\fP? sortKey = \fCnull\fP, string queryValue = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the shop’s products\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.br
+\fIquery\fP Supported filter parameters:
+.IP "\(bu" 2
+\fCavailable_for_sale\fP
+.IP "\(bu" 2
+\fCcreated_at\fP
+.IP "\(bu" 2
+\fCproduct_type\fP
+.IP "\(bu" 2
+\fCtag\fP
+.IP "\(bu" 2
+\fCtitle\fP
+.IP "\(bu" 2
+\fCupdated_at\fP
+.IP "\(bu" 2
+\fCvariants\&.price\fP
+.IP "\(bu" 2
+\fCvendor\fP
+.PP
+.RE
+.PP
+See the detailed \fCsearch syntax\fP for more information about using filters\&. 
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.productTags (StringConnectionDelegate buildQuery, long first, string alias = \fCnull\fP)"
+
+.PP
+Tags added to products\&. Additional access scope required: unauthenticated_read_product_tags\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.RE
+.PP
+
+.SS "\fBQueryRootQuery\fP Shopify\&.Unity\&.GraphQL\&.QueryRootQuery\&.productTypes (StringConnectionDelegate buildQuery, long first, string alias = \fCnull\fP)"
+
+.PP
+List of product types for the shop's products that are published to your app\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

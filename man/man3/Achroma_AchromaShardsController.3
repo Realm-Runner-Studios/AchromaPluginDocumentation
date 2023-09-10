@@ -1,0 +1,89 @@
+.TH "Achroma.AchromaShardsController" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaShardsController
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBShowShardsGained\fP (int count, float sourcePosition=\-1\&.6f, float distance=3, UnityAction result=null)"
+.br
+.RI "Shows the animation of shards being added to the user\&. "
+.ti -1c
+.RI "void \fBShowShardsLost\fP (int count, float sourcePosition=1\&.2f, float distance=\-4, UnityAction result=null)"
+.br
+.RI "Shows the animation of shards being lost by the user\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "GameObject \fBshardAttractionPrefab\fP"
+.br
+.ti -1c
+.RI "GameObject \fBshardAttractionParent\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAchromaShardAttraction\fP \fBshardGainedAttraction\fP"
+.br
+.ti -1c
+.RI "\fBAchromaShardAttraction\fP \fBshardLostAttraction\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "static \fBAchromaShardsController\fP \fBInstance\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void Achroma\&.AchromaShardsController\&.ShowShardsGained (int count, float sourcePosition = \fC\-1::6f\fP, float distance = \fC3\fP, UnityAction result = \fCnull\fP)"
+
+.PP
+Shows the animation of shards being added to the user\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcount\fP Number of shards
+.br
+\fIsourcePosition\fP The y source position
+.br
+\fIdistance\fP The distance from attractor
+.br
+\fIresult\fP A callback to tell when the animation is finished
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaShardsController\&.ShowShardsLost (int count, float sourcePosition = \fC1::2f\fP, float distance = \fC\-4\fP, UnityAction result = \fCnull\fP)"
+
+.PP
+Shows the animation of shards being lost by the user\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcount\fP Number of shards
+.br
+\fIsourcePosition\fP The y source position
+.br
+\fIdistance\fP The distance from attractor
+.br
+\fIresult\fP A callback to tell when the animation is finished
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

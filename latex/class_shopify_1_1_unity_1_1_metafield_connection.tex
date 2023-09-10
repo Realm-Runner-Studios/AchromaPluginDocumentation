@@ -1,0 +1,108 @@
+\doxysection{Shopify.\+Unity.\+Metafield\+Connection Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_metafield_connection}{}\label{class_shopify_1_1_unity_1_1_metafield_connection}\index{Shopify.Unity.MetafieldConnection@{Shopify.Unity.MetafieldConnection}}
+
+
+An auto-\/generated type for paginating through multiple Metafields. . Metafield\+Connection can be cast to {\ttfamily List$<$\+Metafield$>$}.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Metafield\+Connection\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Metafield\+Connection\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield_connection_afdcd4f42138dce2e547028954cbe481b}{Metafield\+Connection}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_connection_a1eab437700851ed6c62f4ff39517aa85}\label{class_shopify_1_1_unity_1_1_metafield_connection_a1eab437700851ed6c62f4ff39517aa85} 
+IEnumerator {\bfseries Get\+Enumerator} ()
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_connection_ae72a14efe75303de716b43a54d212b28}\label{class_shopify_1_1_unity_1_1_metafield_connection_ae72a14efe75303de716b43a54d212b28} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield_edge}{Metafield\+Edge}} $>$ {\bfseries edges} ()
+\begin{DoxyCompactList}\small\item\em A list of edges. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_connection_af7c68304848584d09c69c7b051a9801c}\label{class_shopify_1_1_unity_1_1_metafield_connection_af7c68304848584d09c69c7b051a9801c} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_page_info}{Page\+Info}} {\bfseries page\+Info} ()
+\begin{DoxyCompactList}\small\item\em Information to aid in pagination. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_connection_a0bd9d18b7e4cbdb4f387e238b9269b70}\label{class_shopify_1_1_unity_1_1_metafield_connection_a0bd9d18b7e4cbdb4f387e238b9269b70} 
+object {\bfseries Clone} ()
+\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield_connection_ab3f1a9bbf6804353cf34c4b28a6751e3}{Add\+From\+Connection}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield_connection}{Metafield\+Connection}} connection)
+\begin{DoxyCompactList}\small\item\em This is a utility function that allows you to append newly queried data from a connection into this one. The passed in Connection will be appended into this Connection. The {\ttfamily edges} will receive all new {\ttfamily nodes}, and both the {\ttfamily cursors} and {\ttfamily page\+Info} will be updated based on the passed Connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_connection_a3ef0321a8b4d051ef332961fe1837f81}\label{class_shopify_1_1_unity_1_1_metafield_connection_a3ef0321a8b4d051ef332961fe1837f81} 
+static {\bfseries operator List$<$ Metafield $>$} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield_connection}{Metafield\+Connection}} connection)
+\begin{DoxyCompactList}\small\item\em Adds the ability to cast Metafield\+Connection to {\ttfamily List$<$\+Metafield$>$}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_connection_a1dde34415a0ba9dd08fbeccfc4a0a675}\label{class_shopify_1_1_unity_1_1_metafield_connection_a1dde34415a0ba9dd08fbeccfc4a0a675} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield}{Metafield}} $>$ {\bfseries Nodes}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An auto-\/generated type for paginating through multiple Metafields. . Metafield\+Connection can be cast to {\ttfamily List$<$\+Metafield$>$}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_connection_afdcd4f42138dce2e547028954cbe481b}\label{class_shopify_1_1_unity_1_1_metafield_connection_afdcd4f42138dce2e547028954cbe481b} 
+\index{Shopify.Unity.MetafieldConnection@{Shopify.Unity.MetafieldConnection}!MetafieldConnection@{MetafieldConnection}}
+\index{MetafieldConnection@{MetafieldConnection}!Shopify.Unity.MetafieldConnection@{Shopify.Unity.MetafieldConnection}}
+\doxysubsubsection{\texorpdfstring{MetafieldConnection()}{MetafieldConnection()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Metafield\+Connection.\+Metafield\+Connection (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Metafield\+Connection\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_connection_ab3f1a9bbf6804353cf34c4b28a6751e3}\label{class_shopify_1_1_unity_1_1_metafield_connection_ab3f1a9bbf6804353cf34c4b28a6751e3} 
+\index{Shopify.Unity.MetafieldConnection@{Shopify.Unity.MetafieldConnection}!AddFromConnection@{AddFromConnection}}
+\index{AddFromConnection@{AddFromConnection}!Shopify.Unity.MetafieldConnection@{Shopify.Unity.MetafieldConnection}}
+\doxysubsubsection{\texorpdfstring{AddFromConnection()}{AddFromConnection()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Metafield\+Connection.\+Add\+From\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield_connection}{Metafield\+Connection}}}]{connection }\end{DoxyParamCaption})}
+
+
+
+This is a utility function that allows you to append newly queried data from a connection into this one. The passed in Connection will be appended into this Connection. The {\ttfamily edges} will receive all new {\ttfamily nodes}, and both the {\ttfamily cursors} and {\ttfamily page\+Info} will be updated based on the passed Connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & response\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Metafield\+Connection.\+cs\end{DoxyCompactItemize}

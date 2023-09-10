@@ -1,0 +1,68 @@
+.TH "Shopify.Unity.GraphQL.FulfillmentQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.FulfillmentQuery \- Represents a single fulfillment in an order\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFulfillmentQuery\fP (StringBuilder query)"
+.br
+.RI "FulfillmentQuery is used to build queries\&. Typically FulfillmentQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBFulfillmentQuery\fP \fBfulfillmentLineItems\fP (FulfillmentLineItemConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "List of the fulfillment's line items\&. "
+.ti -1c
+.RI "\fBFulfillmentQuery\fP \fBtrackingCompany\fP ()"
+.br
+.RI "The name of the tracking company\&. "
+.ti -1c
+.RI "\fBFulfillmentQuery\fP \fBtrackingInfo\fP (FulfillmentTrackingInfoDelegate buildQuery, long? first=null, string alias=null)"
+.br
+.RI "Tracking information associated with the fulfillment, such as the tracking number and tracking URL\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents a single fulfillment in an order\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBFulfillmentQuery\fP Shopify\&.Unity\&.GraphQL\&.FulfillmentQuery\&.fulfillmentLineItems (FulfillmentLineItemConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the fulfillment's line items\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBFulfillmentQuery\fP Shopify\&.Unity\&.GraphQL\&.FulfillmentQuery\&.trackingInfo (FulfillmentTrackingInfoDelegate buildQuery, long? first = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+Tracking information associated with the fulfillment, such as the tracking number and tracking URL\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Truncate the array result to this size\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

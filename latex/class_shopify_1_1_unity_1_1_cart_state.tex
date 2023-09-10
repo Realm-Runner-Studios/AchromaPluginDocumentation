@@ -1,0 +1,63 @@
+\doxysection{Shopify.\+Unity.\+Cart\+State Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_cart_state}{}\label{class_shopify_1_1_unity_1_1_cart_state}\index{Shopify.Unity.CartState@{Shopify.Unity.CartState}}
+
+
+Internal state class for a Cart.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_a1d17b96b648b3bb5e7a481fb615125d9}\label{class_shopify_1_1_unity_1_1_cart_state_a1d17b96b648b3bb5e7a481fb615125d9} 
+{\bfseries Cart\+State} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client}{Shopify\+Client}} client)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_a677616fae860e169284da2bc8696aa07}\label{class_shopify_1_1_unity_1_1_cart_state_a677616fae860e169284da2bc8696aa07} 
+void {\bfseries Reset} ()
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_a34aafd698f466e544cf29eaa817fb1f4}\label{class_shopify_1_1_unity_1_1_cart_state_a34aafd698f466e544cf29eaa817fb1f4} 
+decimal {\bfseries Subtotal} ()
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_aa085659d2fa0e2691a011206730efa02}\label{class_shopify_1_1_unity_1_1_cart_state_aa085659d2fa0e2691a011206730efa02} 
+void {\bfseries Set\+Shipping\+Line} (string shipping\+Rate\+Handle, Completion\+Callback callback)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_a4af50efd7c47111810cc955fb1ee8056}\label{class_shopify_1_1_unity_1_1_cart_state_a4af50efd7c47111810cc955fb1ee8056} 
+void {\bfseries Set\+Email\+Address} (string email, Completion\+Callback callback)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_aad640b3d7c1a8058f30cd3dd74018205}\label{class_shopify_1_1_unity_1_1_cart_state_aad640b3d7c1a8058f30cd3dd74018205} 
+void {\bfseries Set\+Shipping\+Address} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address_input}{Mailing\+Address\+Input}} mailing\+Address\+Input, Completion\+Callback callback)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_aa8baafd0afeddb71dc6bcb06301da5f0}\label{class_shopify_1_1_unity_1_1_cart_state_aa8baafd0afeddb71dc6bcb06301da5f0} 
+void {\bfseries Set\+Final\+Checkout\+Fields} (string email, \mbox{\hyperlink{struct_shopify_1_1_unity_1_1_shipping_fields}{Shipping\+Fields}}? shipping\+Fields, Completion\+Callback callback)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_a099bd8d59a93f57bfc67a5fb86f29a20}\label{class_shopify_1_1_unity_1_1_cart_state_a099bd8d59a93f57bfc67a5fb86f29a20} 
+void {\bfseries Checkout\+Save} (Completion\+Callback callback)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_a3d5c007cc21f3a5456253d767f7b69a7}\label{class_shopify_1_1_unity_1_1_cart_state_a3d5c007cc21f3a5456253d767f7b69a7} 
+void {\bfseries Checkout\+With\+Tokenized\+Payment\+V2} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_tokenized_payment_input_v2}{Tokenized\+Payment\+Input\+V2}} tokenized\+Payment\+Input\+V2, Completion\+Callback callback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_a07490ce18f899fd826127306a8b53565}\label{class_shopify_1_1_unity_1_1_cart_state_a07490ce18f899fd826127306a8b53565} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items}{Cart\+Line\+Items}} {\bfseries Line\+Items}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_a5a7bb20d117c5d82293cdc7664c54563}\label{class_shopify_1_1_unity_1_1_cart_state_a5a7bb20d117c5d82293cdc7664c54563} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_user_error}{Checkout\+User\+Error}} $>$ {\bfseries User\+Errors}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_a60f2ca2b95f3a708559381349432c075}\label{class_shopify_1_1_unity_1_1_cart_state_a60f2ca2b95f3a708559381349432c075} 
+bool {\bfseries Is\+Saved}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_aeaec700e85f022943edc670256d21540}\label{class_shopify_1_1_unity_1_1_cart_state_aeaec700e85f022943edc670256d21540} 
+bool {\bfseries Is\+Created}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_cart_state_a38f3de1ccefef2ad11f94dba2f23cf34}\label{class_shopify_1_1_unity_1_1_cart_state_a38f3de1ccefef2ad11f94dba2f23cf34} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout}{Checkout}} {\bfseries Current\+Checkout}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Internal state class for a Cart. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/Cart\+State.\+cs\end{DoxyCompactItemize}

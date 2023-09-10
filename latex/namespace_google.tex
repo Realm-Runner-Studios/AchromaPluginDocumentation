@@ -1,0 +1,95 @@
+\doxysection{Google Namespace Reference}
+\hypertarget{namespace_google}{}\label{namespace_google}\index{Google@{Google}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_google_1_1_future}{Future}}
+\begin{DoxyCompactList}\small\item\em Future return value. \end{DoxyCompactList}\item 
+interface {\bfseries Future\+APIImpl}
+\begin{DoxyCompactList}\small\item\em Interface for implementations of the Future$<$\+T$>$ API. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_google_1_1_google_sign_in}{Google\+Sign\+In}}
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_google}{Google} sign in API. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_google_1_1_google_sign_in_configuration}{Google\+Sign\+In\+Configuration}}
+\begin{DoxyCompactList}\small\item\em Configuration properties for \doxylink{namespace_google}{Google} Sign-\/\+In. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_google_1_1_google_sign_in_user}{Google\+Sign\+In\+User}}
+\begin{DoxyCompactList}\small\item\em Information for the authenticated user. \end{DoxyCompactList}\item 
+interface {\bfseries ISign\+In\+Impl}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79dd}{Google\+Sign\+In\+Status\+Code}} \{ \newline
+\mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda4bf3456db9a5c76666f4b7b06eb00fc5}{Success\+Cached}} = -\/1
+, \mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda505a83f220c02df2f85c3810cd9ceb38}{Success}} = 0
+, \mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda7509abb164eba7cfa9d4314c8a224e7d}{Api\+Not\+Connected}} = 1
+, \mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda0e22fe7d45f8e5632a4abf369b24e29c}{Canceled}} = 2
+, \newline
+\mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda12c37c4278b8c0db6c2f65052569cd80}{Interrupted}} = 3
+, \mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79ddac733ffabbce1918362e0faa1508d75d7}{Invalid\+Account}} = 4
+, \mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79ddac85a251cc457840f1e032f1b733e9398}{Timeout}} = 5
+, \mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda77540cdd479f75e8a75c137b26b40833}{Developer\+Error}} = 6
+, \newline
+\mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda8462b58246e70e5c83e5b939a9332cb5}{Internal\+Error}} = 7
+, \mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda47423b8444592efbe331550c5620e821}{Network\+Error}} = 8
+, \mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda902b0d55fddef6f8d651fe1035b7d4bd}{Error}} = 9
+ \}
+\begin{DoxyCompactList}\small\item\em Status code for the Sign\+In operations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespace_google_aadd62561b51aeb90a9e98f9c954c79dd}\label{namespace_google_aadd62561b51aeb90a9e98f9c954c79dd} 
+\index{Google@{Google}!GoogleSignInStatusCode@{GoogleSignInStatusCode}}
+\index{GoogleSignInStatusCode@{GoogleSignInStatusCode}!Google@{Google}}
+\doxysubsubsection{\texorpdfstring{GoogleSignInStatusCode}{GoogleSignInStatusCode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_google_aadd62561b51aeb90a9e98f9c954c79dd}{Google.\+Google\+Sign\+In\+Status\+Code}}}
+
+
+
+Status code for the Sign\+In operations. 
+
+All successful status codes are less than or equal to 0. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SuccessCached@{SuccessCached}!Google@{Google}}\index{Google@{Google}!SuccessCached@{SuccessCached}}}\Hypertarget{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda4bf3456db9a5c76666f4b7b06eb00fc5}\label{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda4bf3456db9a5c76666f4b7b06eb00fc5} 
+Success\+Cached&The operation was successful, but used the device\textquotesingle{}s cache. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Success@{Success}!Google@{Google}}\index{Google@{Google}!Success@{Success}}}\Hypertarget{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda505a83f220c02df2f85c3810cd9ceb38}\label{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda505a83f220c02df2f85c3810cd9ceb38} 
+Success&The operation was successful. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ApiNotConnected@{ApiNotConnected}!Google@{Google}}\index{Google@{Google}!ApiNotConnected@{ApiNotConnected}}}\Hypertarget{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda7509abb164eba7cfa9d4314c8a224e7d}\label{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda7509abb164eba7cfa9d4314c8a224e7d} 
+Api\+Not\+Connected&The client attempted to call a method from an API that failed to connect. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Canceled@{Canceled}!Google@{Google}}\index{Google@{Google}!Canceled@{Canceled}}}\Hypertarget{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda0e22fe7d45f8e5632a4abf369b24e29c}\label{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda0e22fe7d45f8e5632a4abf369b24e29c} 
+Canceled&The result was canceled either due to client disconnect or cancel(). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Interrupted@{Interrupted}!Google@{Google}}\index{Google@{Google}!Interrupted@{Interrupted}}}\Hypertarget{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda12c37c4278b8c0db6c2f65052569cd80}\label{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda12c37c4278b8c0db6c2f65052569cd80} 
+Interrupted&A blocking call was interrupted while waiting and did not run to completion. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{InvalidAccount@{InvalidAccount}!Google@{Google}}\index{Google@{Google}!InvalidAccount@{InvalidAccount}}}\Hypertarget{namespace_google_aadd62561b51aeb90a9e98f9c954c79ddac733ffabbce1918362e0faa1508d75d7}\label{namespace_google_aadd62561b51aeb90a9e98f9c954c79ddac733ffabbce1918362e0faa1508d75d7} 
+Invalid\+Account&The client attempted to connect to the service with an invalid account name specified. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Timeout@{Timeout}!Google@{Google}}\index{Google@{Google}!Timeout@{Timeout}}}\Hypertarget{namespace_google_aadd62561b51aeb90a9e98f9c954c79ddac85a251cc457840f1e032f1b733e9398}\label{namespace_google_aadd62561b51aeb90a9e98f9c954c79ddac85a251cc457840f1e032f1b733e9398} 
+Timeout&Timed out while awaiting the result. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DeveloperError@{DeveloperError}!Google@{Google}}\index{Google@{Google}!DeveloperError@{DeveloperError}}}\Hypertarget{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda77540cdd479f75e8a75c137b26b40833}\label{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda77540cdd479f75e8a75c137b26b40833} 
+Developer\+Error&The application is misconfigured. This error is not recoverable. The developer should look at the logs after this to determine more actionable information. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{InternalError@{InternalError}!Google@{Google}}\index{Google@{Google}!InternalError@{InternalError}}}\Hypertarget{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda8462b58246e70e5c83e5b939a9332cb5}\label{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda8462b58246e70e5c83e5b939a9332cb5} 
+Internal\+Error&An internal error occurred. Retrying should resolve the problem. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NetworkError@{NetworkError}!Google@{Google}}\index{Google@{Google}!NetworkError@{NetworkError}}}\Hypertarget{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda47423b8444592efbe331550c5620e821}\label{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda47423b8444592efbe331550c5620e821} 
+Network\+Error&A network error occurred. Retrying should resolve the problem. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Error@{Error}!Google@{Google}}\index{Google@{Google}!Error@{Error}}}\Hypertarget{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda902b0d55fddef6f8d651fe1035b7d4bd}\label{namespace_google_aadd62561b51aeb90a9e98f9c954c79dda902b0d55fddef6f8d651fe1035b7d4bd} 
+Error&The operation failed with no more detailed information. \\
+\hline
+
+\end{DoxyEnumFields}

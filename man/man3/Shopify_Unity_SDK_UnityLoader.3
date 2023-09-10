@@ -1,0 +1,100 @@
+.TH "Shopify.Unity.SDK.UnityLoader" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.SDK.UnityLoader \- Performs network communication to send GraphQL queries between Unity and a \fBShopify\fP GraphQL endpoint\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.BaseLoader\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUnityLoader\fP (string domain, string accessToken, string locale=null)"
+.br
+.ti -1c
+.RI "override void \fBLoad\fP (string query, LoaderResponseHandler callback)"
+.br
+.RI "Send a query to the Storefront API\&. "
+.ti -1c
+.RI "override void \fBSetHeader\fP (string key, string value)"
+.br
+.ti -1c
+.RI "override string \fBSDKVariantName\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.BaseLoader\fP
+.in +1c
+.ti -1c
+.RI "\fBBaseLoader\fP (string domain, string accessToken, string locale=null)"
+.br
+.ti -1c
+.RI "void \fBLoad\fP (string query, LoaderResponseHandler callback)"
+.br
+.RI "Sends the GraphQL query to the GraphQL endpoint\&. "
+.ti -1c
+.RI "void \fBSetHeader\fP (string key, string value)"
+.br
+.RI "Assigns a custom header field to the loader\&. "
+.ti -1c
+.RI "string \fBSDKVariantName\fP ()"
+.br
+.RI "Returns the loader's X-SDK-Variant header value\&. Required by a BaseLoader implementation to let the server know who is sending the request\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.BaseLoader\fP
+.in +1c
+.ti -1c
+.RI "string \fBDomain\fP\fC [get]\fP"
+.br
+.RI "Domain of a \fBShopify\fP store\&. "
+.ti -1c
+.RI "string \fBAccessToken\fP\fC [get]\fP"
+.br
+.RI "Access token used to communicate with a \fBShopify\fP store\&. "
+.ti -1c
+.RI "string \fBLocale\fP\fC [get]\fP"
+.br
+.RI "Locale for translated content of supported types and fields\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Performs network communication to send GraphQL queries between Unity and a \fBShopify\fP GraphQL endpoint\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.SDK\&.UnityLoader\&.UnityLoader (string domain, string accessToken, string locale = \fCnull\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIdomain\fP \fBShopify\fP store domain that you'd like to query on
+.br
+\fIaccessToken\fP access token used to communicate with the \fBShopify\fP Store
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "override void Shopify\&.Unity\&.SDK\&.UnityLoader\&.Load (string query, LoaderResponseHandler callback)"
+
+.PP
+Send a query to the Storefront API\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIquery\fP Query that will be sent to the Storefront API
+.br
+\fIcallback\fP callback that receives a response
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

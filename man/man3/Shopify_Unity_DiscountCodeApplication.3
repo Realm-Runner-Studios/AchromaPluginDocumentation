@@ -1,0 +1,115 @@
+.TH "Shopify.Unity.DiscountCodeApplication" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.DiscountCodeApplication \- Discount code applications capture the intentions of a discount code at the time that it is applied\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.DiscountApplication\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDiscountCodeApplication\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "\fBDiscountApplicationAllocationMethod\fP \fBallocationMethod\fP ()"
+.br
+.RI "The method by which the discount's value is allocated to its entitled items\&. "
+.ti -1c
+.RI "bool \fBapplicable\fP ()"
+.br
+.RI "Specifies whether the discount code was applied successfully\&. "
+.ti -1c
+.RI "string \fBcode\fP ()"
+.br
+.RI "The string identifying the discount code that was used at the time of application\&. "
+.ti -1c
+.RI "\fBDiscountApplicationTargetSelection\fP \fBtargetSelection\fP ()"
+.br
+.RI "Which lines of targetType that the discount is allocated over\&. "
+.ti -1c
+.RI "\fBDiscountApplicationTargetType\fP \fBtargetType\fP ()"
+.br
+.RI "The type of line that the discount is applicable towards\&. "
+.ti -1c
+.RI "\fBPricingValue\fP \fBvalue\fP ()"
+.br
+.RI "The value of the discount application\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Discount code applications capture the intentions of a discount code at the time that it is applied\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.DiscountCodeApplication\&.DiscountCodeApplication (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for DiscountCodeApplication
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBDiscountApplicationAllocationMethod\fP Shopify\&.Unity\&.DiscountCodeApplication\&.allocationMethod ()"
+
+.PP
+The method by which the discount's value is allocated to its entitled items\&. 
+.PP
+Implements \fBShopify\&.Unity\&.DiscountApplication\fP\&.
+.SS "\fBDiscountApplicationTargetSelection\fP Shopify\&.Unity\&.DiscountCodeApplication\&.targetSelection ()"
+
+.PP
+Which lines of targetType that the discount is allocated over\&. 
+.PP
+Implements \fBShopify\&.Unity\&.DiscountApplication\fP\&.
+.SS "\fBDiscountApplicationTargetType\fP Shopify\&.Unity\&.DiscountCodeApplication\&.targetType ()"
+
+.PP
+The type of line that the discount is applicable towards\&. 
+.PP
+Implements \fBShopify\&.Unity\&.DiscountApplication\fP\&.
+.SS "\fBPricingValue\fP Shopify\&.Unity\&.DiscountCodeApplication\&.value ()"
+
+.PP
+The value of the discount application\&. 
+.PP
+Implements \fBShopify\&.Unity\&.DiscountApplication\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

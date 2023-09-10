@@ -1,0 +1,100 @@
+\doxysection{Shopify.\+Unity.\+Checkout\+Line\+Item\+Input Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_input}{}\label{class_shopify_1_1_unity_1_1_checkout_line_item_input}\index{Shopify.Unity.CheckoutLineItemInput@{Shopify.Unity.CheckoutLineItemInput}}
+
+
+Specifies the input fields to create a line item on a checkout.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Checkout\+Line\+Item\+Input\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Checkout\+Line\+Item\+Input\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input_a4e76ee931241936d6abf5b52e3769a3b}{Checkout\+Line\+Item\+Input}} (long \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input_ac37b1505796d7809e0d78d918bc99ddb}{quantity}}, string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input_a10059d9b78f89d147f6bc7c9829a043a}{variant\+Id}}, List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_attribute_input}{Attribute\+Input}} $>$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input_ac782a8577ebf198c0a7006951f58bad8}{custom\+Attributes}}=null)
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input_a034c56134b7183180e3e1c03f6fe69a6}{Checkout\+Line\+Item\+Input}} (Dictionary$<$ string, object $>$ data\+JSON)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_input_base}{Shopify.\+Unity.\+SDK.\+Input\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+override string {\bfseries To\+String} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representing a Graph\+QL input object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_input_acd350b060a68699c92320dc9294d2718}\label{class_shopify_1_1_unity_1_1_checkout_line_item_input_acd350b060a68699c92320dc9294d2718} 
+const string {\bfseries custom\+Attributes\+Field\+Key} = "{}custom\+Attributes"{}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_input_a44968ccad610b432086fddeb2df1f01a}\label{class_shopify_1_1_unity_1_1_checkout_line_item_input_a44968ccad610b432086fddeb2df1f01a} 
+const string {\bfseries quantity\+Field\+Key} = "{}quantity"{}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_input_afa9e29dfdd41146745045119bb6111db}\label{class_shopify_1_1_unity_1_1_checkout_line_item_input_afa9e29dfdd41146745045119bb6111db} 
+const string {\bfseries variant\+Id\+Field\+Key} = "{}variant\+Id"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_input_ac782a8577ebf198c0a7006951f58bad8}\label{class_shopify_1_1_unity_1_1_checkout_line_item_input_ac782a8577ebf198c0a7006951f58bad8} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_attribute_input}{Attribute\+Input}} $>$ {\bfseries custom\+Attributes}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Extra information in the form of an array of Key-\/\+Value pairs about the line item. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_input_ac37b1505796d7809e0d78d918bc99ddb}\label{class_shopify_1_1_unity_1_1_checkout_line_item_input_ac37b1505796d7809e0d78d918bc99ddb} 
+long {\bfseries quantity}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The quantity of the line item. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_input_a10059d9b78f89d147f6bc7c9829a043a}\label{class_shopify_1_1_unity_1_1_checkout_line_item_input_a10059d9b78f89d147f6bc7c9829a043a} 
+string {\bfseries variant\+Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The identifier of the product variant for the line item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_input_base}{Shopify.\+Unity.\+SDK.\+Input\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Set} (string key, object value)
+\item 
+object {\bfseries Get} (string key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Specifies the input fields to create a line item on a checkout. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_input_a4e76ee931241936d6abf5b52e3769a3b}\label{class_shopify_1_1_unity_1_1_checkout_line_item_input_a4e76ee931241936d6abf5b52e3769a3b} 
+\index{Shopify.Unity.CheckoutLineItemInput@{Shopify.Unity.CheckoutLineItemInput}!CheckoutLineItemInput@{CheckoutLineItemInput}}
+\index{CheckoutLineItemInput@{CheckoutLineItemInput}!Shopify.Unity.CheckoutLineItemInput@{Shopify.Unity.CheckoutLineItemInput}}
+\doxysubsubsection{\texorpdfstring{CheckoutLineItemInput()}{CheckoutLineItemInput()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Checkout\+Line\+Item\+Input.\+Checkout\+Line\+Item\+Input (\begin{DoxyParamCaption}\item[{long}]{quantity,  }\item[{string}]{variant\+Id,  }\item[{List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_attribute_input}{Attribute\+Input}} $>$}]{custom\+Attributes = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em custom\+Attributes} & Extra information in the form of an array of Key-\/\+Value pairs about the line item. \\
+\hline
+{\em quantity} & The quantity of the line item. \\
+\hline
+{\em variant\+Id} & The identifier of the product variant for the line item. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_input_a034c56134b7183180e3e1c03f6fe69a6}\label{class_shopify_1_1_unity_1_1_checkout_line_item_input_a034c56134b7183180e3e1c03f6fe69a6} 
+\index{Shopify.Unity.CheckoutLineItemInput@{Shopify.Unity.CheckoutLineItemInput}!CheckoutLineItemInput@{CheckoutLineItemInput}}
+\index{CheckoutLineItemInput@{CheckoutLineItemInput}!Shopify.Unity.CheckoutLineItemInput@{Shopify.Unity.CheckoutLineItemInput}}
+\doxysubsubsection{\texorpdfstring{CheckoutLineItemInput()}{CheckoutLineItemInput()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Checkout\+Line\+Item\+Input.\+Checkout\+Line\+Item\+Input (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em custom\+Attributes} & Extra information in the form of an array of Key-\/\+Value pairs about the line item. \\
+\hline
+{\em quantity} & The quantity of the line item. \\
+\hline
+{\em variant\+Id} & The identifier of the product variant for the line item. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Checkout\+Line\+Item\+Input.\+cs\end{DoxyCompactItemize}

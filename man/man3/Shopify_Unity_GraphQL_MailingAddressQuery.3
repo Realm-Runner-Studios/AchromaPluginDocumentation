@@ -1,0 +1,139 @@
+.TH "Shopify.Unity.GraphQL.MailingAddressQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.MailingAddressQuery \- Represents a mailing address for customers and shipping\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMailingAddressQuery\fP (StringBuilder query)"
+.br
+.RI "MailingAddressQuery is used to build queries\&. Typically MailingAddressQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBaddress1\fP ()"
+.br
+.RI "The first line of the address\&. Typically the street address or PO Box number\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBaddress2\fP ()"
+.br
+.RI "The second line of the address\&. Typically the number of the apartment, suite, or unit\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBcity\fP ()"
+.br
+.RI "The name of the city, district, village, or town\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBcompany\fP ()"
+.br
+.RI "The name of the customer's company or organization\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBcountry\fP ()"
+.br
+.RI "The name of the country\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBcountryCode\fP ()"
+.br
+.RI "The two-letter code for the country of the address\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBcountryCodeV2\fP ()"
+.br
+.RI "The two-letter code for the country of the address\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBfirstName\fP ()"
+.br
+.RI "The first name of the customer\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBformatted\fP (bool? withName=null, bool? withCompany=null, string alias=null)"
+.br
+.RI "A formatted version of the address, customized by the provided arguments\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBformattedArea\fP ()"
+.br
+.RI "A comma-separated list of the values for city, province, and country\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBlastName\fP ()"
+.br
+.RI "The last name of the customer\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBlatitude\fP ()"
+.br
+.RI "The latitude coordinate of the customer address\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBlongitude\fP ()"
+.br
+.RI "The longitude coordinate of the customer address\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBname\fP ()"
+.br
+.RI "The full name of the customer, based on firstName and lastName\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBphone\fP ()"
+.br
+.RI "A unique phone number for the customer\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBprovince\fP ()"
+.br
+.RI "The region of the address, such as the province, state, or district\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBprovinceCode\fP ()"
+.br
+.RI "The two-letter code for the region\&. "
+.ti -1c
+.RI "\fBMailingAddressQuery\fP \fBzip\fP ()"
+.br
+.RI "The zip or postal code of the address\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents a mailing address for customers and shipping\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBMailingAddressQuery\fP Shopify\&.Unity\&.GraphQL\&.MailingAddressQuery\&.countryCode ()"
+
+.PP
+The two-letter code for the country of the address\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcountryCodeV2\fP instead 
+.RE
+.PP
+.PP
+For example, US\&. 
+.SS "\fBMailingAddressQuery\fP Shopify\&.Unity\&.GraphQL\&.MailingAddressQuery\&.countryCodeV2 ()"
+
+.PP
+The two-letter code for the country of the address\&. For example, US\&. 
+.SS "\fBMailingAddressQuery\fP Shopify\&.Unity\&.GraphQL\&.MailingAddressQuery\&.formatted (bool? withName = \fCnull\fP, bool? withCompany = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+A formatted version of the address, customized by the provided arguments\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwithName\fP Whether to include the customer's name in the formatted address\&. 
+.br
+\fIwithCompany\fP Whether to include the customer's company in the formatted address\&. 
+.RE
+.PP
+
+.SS "\fBMailingAddressQuery\fP Shopify\&.Unity\&.GraphQL\&.MailingAddressQuery\&.phone ()"
+
+.PP
+A unique phone number for the customer\&. Formatted using E\&.164 standard\&. For example, \fI+16135551111\fP\&. 
+.SS "\fBMailingAddressQuery\fP Shopify\&.Unity\&.GraphQL\&.MailingAddressQuery\&.provinceCode ()"
+
+.PP
+The two-letter code for the region\&. For example, ON\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

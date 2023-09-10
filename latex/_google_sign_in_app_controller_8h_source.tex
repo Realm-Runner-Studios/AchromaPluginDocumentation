@@ -1,0 +1,29 @@
+\doxysection{Google\+Sign\+In\+App\+Controller.\+h}
+\hypertarget{_google_sign_in_app_controller_8h_source}{}\label{_google_sign_in_app_controller_8h_source}\index{/Users/diego/Documents/Unity Projects/Achroma Adventure/Assets/Achroma/Runtime/Plugins/iOS/GoogleSignIn/GoogleSignInAppController.h@{/Users/diego/Documents/Unity Projects/Achroma Adventure/Assets/Achroma/Runtime/Plugins/iOS/GoogleSignIn/GoogleSignInAppController.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#import\ "{}GoogleSignIn.h"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#import\ <UnityAppController.h>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ Controller\ to\ handle\ Google\ SignIn.\ \ The\ AppController\ methods\ are\ swizzled}}
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ into\ the\ UnityAppController\ in\ order\ to\ avoid\ breaking\ other\ code\ that\ needs}}
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ to\ handle\ these\ messages\ also.}}
+\DoxyCodeLine{00022\ \textcolor{keyword}{@interface\ }UnityAppController\ (GoogleSignInAppController)}
+\DoxyCodeLine{00023\ \textcolor{comment}{//\ These\ are\ the\ implementations\ for\ GSI.\ \ The\ signatures\ match\ the}}
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ AppController\ methods.}}
+\DoxyCodeLine{00025\ -\/\ (BOOL)application:(UIApplication\ *)application}
+\DoxyCodeLine{00026\ \ \ \ \ didFinishLaunchingWithOptions:(NSDictionary\ *)launchOptions;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ -\/\ (BOOL)application:(UIApplication\ *)application}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ openURL:(NSURL\ *)url}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ options:(NSDictionary<NSString\ *,\ \textcolor{keywordtype}{id}>\ *)options;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ -\/\ (BOOL)application:(UIApplication\ *)application}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ openURL:(NSURL\ *)url}
+\DoxyCodeLine{00034\ \ \ \ \ sourceApplication:(NSString\ *)sourceApplication}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ annotation:(\textcolor{keywordtype}{id})annotation;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

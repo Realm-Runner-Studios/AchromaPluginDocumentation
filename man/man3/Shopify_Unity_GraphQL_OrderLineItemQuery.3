@@ -1,0 +1,44 @@
+.TH "Shopify.Unity.GraphQL.OrderLineItemQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.OrderLineItemQuery \- Represents a single line in an order\&. There is one line item for each distinct product variant\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOrderLineItemQuery\fP (StringBuilder query)"
+.br
+.RI "OrderLineItemQuery is used to build queries\&. Typically OrderLineItemQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBOrderLineItemQuery\fP \fBcustomAttributes\fP (AttributeDelegate buildQuery)"
+.br
+.RI "List of custom attributes associated to the line item\&. "
+.ti -1c
+.RI "\fBOrderLineItemQuery\fP \fBdiscountAllocations\fP (DiscountAllocationDelegate buildQuery)"
+.br
+.RI "The discounts that have been allocated onto the order line item by discount applications\&. "
+.ti -1c
+.RI "\fBOrderLineItemQuery\fP \fBquantity\fP ()"
+.br
+.RI "The number of products variants associated to the line item\&. "
+.ti -1c
+.RI "\fBOrderLineItemQuery\fP \fBtitle\fP ()"
+.br
+.RI "The title of the product combined with title of the variant\&. "
+.ti -1c
+.RI "\fBOrderLineItemQuery\fP \fBvariant\fP (ProductVariantDelegate buildQuery)"
+.br
+.RI "The product variant object associated to the line item\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents a single line in an order\&. There is one line item for each distinct product variant\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

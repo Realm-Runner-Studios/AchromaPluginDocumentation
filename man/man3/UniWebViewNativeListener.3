@@ -1,0 +1,112 @@
+.TH "UniWebViewNativeListener" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UniWebViewNativeListener \- A listener script for message sent from native side of \fBUniWebView\fP\&. Normally this component will be attached to a sub \fCGameObject\fP under the \fC\fBUniWebView\fP\fP one\&. It will be added automatically and destroyed as needed\&. So there is rarely a need for you to manipulate on this class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBPageStarted\fP (string url)"
+.br
+.ti -1c
+.RI "void \fBPageFinished\fP (string result)"
+.br
+.ti -1c
+.RI "void \fBPageErrorReceived\fP (string result)"
+.br
+.ti -1c
+.RI "void \fBPageProgressChanged\fP (string result)"
+.br
+.ti -1c
+.RI "void \fBShowTransitionFinished\fP (string identifer)"
+.br
+.ti -1c
+.RI "void \fBHideTransitionFinished\fP (string identifer)"
+.br
+.ti -1c
+.RI "void \fBAnimateToFinished\fP (string identifer)"
+.br
+.ti -1c
+.RI "void \fBAddJavaScriptFinished\fP (string result)"
+.br
+.ti -1c
+.RI "void \fBEvalJavaScriptFinished\fP (string result)"
+.br
+.ti -1c
+.RI "void \fBMessageReceived\fP (string result)"
+.br
+.ti -1c
+.RI "void \fBWebViewDone\fP (string param)"
+.br
+.ti -1c
+.RI "void \fBWebContentProcessDidTerminate\fP (string param)"
+.br
+.ti -1c
+.RI "void \fBSafeBrowsingFinished\fP (string param)"
+.br
+.ti -1c
+.RI "void \fBMultipleWindowOpened\fP (string param)"
+.br
+.ti -1c
+.RI "void \fBMultipleWindowClosed\fP (string param)"
+.br
+.ti -1c
+.RI "void \fBFileDownloadStarted\fP (string result)"
+.br
+.ti -1c
+.RI "void \fBFileDownloadFinished\fP (string result)"
+.br
+.ti -1c
+.RI "void \fBCaptureSnapshotFinished\fP (string result)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBAddListener\fP (\fBUniWebViewNativeListener\fP target)"
+.br
+.ti -1c
+.RI "static void \fBRemoveListener\fP (String name)"
+.br
+.ti -1c
+.RI "static \fBUniWebViewNativeListener\fP \fBGetListener\fP (String name)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBUniWebView\fP \fBwebView\fP"
+.br
+.RI "The web view holder of this listener\&. It will be linked to original web view in web view context, so you should never set it yourself\&. Either \fCwebView\fP or \fCsafeBrowsing\fP will be valid in this listener\&. "
+.ti -1c
+.RI "\fBUniWebViewSafeBrowsing\fP \fBsafeBrowsing\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBName\fP\fC [get]\fP"
+.br
+.RI "Name of current listener\&. This is a UUID string by which native side could use to find the message destination\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A listener script for message sent from native side of \fBUniWebView\fP\&. Normally this component will be attached to a sub \fCGameObject\fP under the \fC\fBUniWebView\fP\fP one\&. It will be added automatically and destroyed as needed\&. So there is rarely a need for you to manipulate on this class\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBUniWebViewSafeBrowsing\fP UniWebViewNativeListener\&.safeBrowsing"
+It will be linked to original safe browsing in browsing context, so you should never set it yourself\&. Either \fCwebView\fP or \fCsafeBrowsing\fP will be valid in this listener\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

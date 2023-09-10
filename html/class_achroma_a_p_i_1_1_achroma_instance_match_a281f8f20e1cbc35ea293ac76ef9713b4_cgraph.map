@@ -1,0 +1,7 @@
+<map id="AchromaAPI.AchromaInstanceMatch.GetMatchData" name="AchromaAPI.AchromaInstanceMatch.GetMatchData">
+<area shape="rect" id="Node000001" title="Based on a session id, it gives back the MatchData object." alt="" coords="5,5,207,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a7677c9fc75eec0344e156b0c9f2218d6" title="Based on a session id, it gives back the MatchData object." alt="" coords="255,5,499,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,23,240,23,240,28,207,28"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_firebase_controller.html#af26f0efa5f2b9be6502515156efb3d56" title="Gets the json of a match given the session id." alt="" coords="547,5,785,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="499,23,532,23,532,28,499,28"/>
+</map>

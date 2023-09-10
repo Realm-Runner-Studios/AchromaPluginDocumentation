@@ -1,0 +1,7 @@
+<map id="NotificationTrigger" name="NotificationTrigger">
+<area shape="rect" id="Node000001" title="Message container example." alt="" coords="97,109,225,135"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,13,117,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,47,150,107,146,110,82,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="141,5,381,46"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,58,175,111,172,107,228,54"/>
+</map>

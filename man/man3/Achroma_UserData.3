@@ -1,0 +1,230 @@
+.TH "Achroma.UserData" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.UserData
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBGetDictionary\fP ()"
+.br
+.ti -1c
+.RI "\fBUserData\fP (string UserId, System\&.DateTime LastUpdate)"
+.br
+.ti -1c
+.RI "\fBUserData\fP (string id, string playerName, int uniqueNumber, string email, string bio, int character, int storyAchrometer, List< \fBAchievement\fP > achievements)"
+.br
+.ti -1c
+.RI "\fBUserData\fP (string id, string playerName, int uniqueNumber, string email, string bio, int character, int storyAchrometer, int storyAchrometerTier, int achrometerTier, int totalAchromWins, int totalChromaWins, int totalMatches, int totalPoints, int totalWins, List< \fBAchievement\fP > achievements)"
+.br
+.ti -1c
+.RI "\fBUserData\fP (string file, ImportType type)"
+.br
+.ti -1c
+.RI "void \fBAddTransaction\fP (string StoryStepId, System\&.DateTime Date, int Type, int Character, int \fBValue\fP)"
+.br
+.ti -1c
+.RI "void \fBRemoveTransaction\fP (string DateTime, int Type, string StoryStepId)"
+.br
+.ti -1c
+.RI "void \fBResetVariable\fP (string Story, string Name)"
+.br
+.ti -1c
+.RI "void \fBUpdateVariable\fP (string Name, int \fBValue\fP, string Story)"
+.br
+.ti -1c
+.RI "void \fBUnlockCharacter\fP (int character, UnityAction unlockedAction=null)"
+.br
+.ti -1c
+.RI "void \fBLockCharacter\fP (int character, UnityAction< bool > lockedAction=null)"
+.br
+.ti -1c
+.RI "bool \fBCharacterIsUnlocked\fP (int character)"
+.br
+.ti -1c
+.RI "bool \fBCharacterIsHero\fP (int character)"
+.br
+.ti -1c
+.RI "void \fBUpdateAchievement\fP (string name, int value, GameAchievement\&.GameAchievementOperation operation, UnityAction< GameAchievement\&.GameAchievementState, string > result)"
+.br
+.ti -1c
+.RI "GameAchievement\&.GameAchievementState \fBGetAchievementStatus\fP (string name)"
+.br
+.ti -1c
+.RI "int \fBGetAchievementValue\fP (string name)"
+.br
+.ti -1c
+.RI "float \fBGetAchievementCompletionPct\fP (string name)"
+.br
+.ti -1c
+.RI "void \fBSaveToFile\fP ()"
+.br
+.ti -1c
+.RI "void \fBLoadFromFile\fP ()"
+.br
+.ti -1c
+.RI "string \fBGetJson\fP ()"
+.br
+.ti -1c
+.RI "void \fBLoadFromJson\fP (string json)"
+.br
+.ti -1c
+.RI "string \fBGetLast\fP (string currentStory)"
+.br
+.ti -1c
+.RI "string \fBGetStoryLastUpdate\fP (string currentStory)"
+.br
+.ti -1c
+.RI "string \fBGoBackAStep\fP (string currentStory)"
+.br
+.ti -1c
+.RI "int \fBGetHistoryCount\fP (string currentStory)"
+.br
+.ti -1c
+.RI "void \fBClear\fP ()"
+.br
+.ti -1c
+.RI "void \fBAddCard\fP (\fBUserCard\fP card, UnityAction< string > result)"
+.br
+.ti -1c
+.RI "void \fBRemoveCard\fP (\fBUserCard\fP card, UnityAction< bool > result)"
+.br
+.ti -1c
+.RI "bool \fBCardIsUnlocked\fP (string CardId)"
+.br
+.ti -1c
+.RI "AchromaStory \fBGetAvatarStory\fP ()"
+.br
+.ti -1c
+.RI "void \fBAddAchromWin\fP ()"
+.br
+.ti -1c
+.RI "void \fBAddChromaWin\fP ()"
+.br
+.ti -1c
+.RI "void \fBUpdateStoryAchrometer\fP (int value)"
+.br
+.ti -1c
+.RI "void \fBUpdateFromDictionary\fP (Dictionary< string, object > dictionary)"
+.br
+.ti -1c
+.RI "void \fBSetStoryCharacterAndRelic\fP (string storyId, int storyCharater, int storyRelic)"
+.br
+.ti -1c
+.RI "int \fBGetStoryRelic\fP (string storyId)"
+.br
+.ti -1c
+.RI "int \fBGetStoryChracter\fP (string storyId)"
+.br
+.ti -1c
+.RI "void \fBUpdateMilestone\fP (string Name, int \fBValue\fP, string Story)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBid\fP"
+.br
+.ti -1c
+.RI "int \fBuniqueNumber\fP"
+.br
+.ti -1c
+.RI "string \fBemail\fP = ''"
+.br
+.ti -1c
+.RI "string \fBplayerName\fP = ''"
+.br
+.ti -1c
+.RI "string \fBbio\fP = ''"
+.br
+.ti -1c
+.RI "string \fBlastUpdate\fP"
+.br
+.ti -1c
+.RI "bool \fBarcade\fP"
+.br
+.ti -1c
+.RI "bool \fBCurdleHillStory\fP"
+.br
+.ti -1c
+.RI "bool \fBHeroModeOn\fP"
+.br
+.ti -1c
+.RI "bool \fBendlessShardBank\fP"
+.br
+.ti -1c
+.RI "bool \fBstoryDebugMode\fP"
+.br
+.ti -1c
+.RI "List< \fBAchromaStoryProgress\fP > \fBstory\fP"
+.br
+.ti -1c
+.RI "List< \fBLoginHistory\fP > \fBloginHistory\fP"
+.br
+.ti -1c
+.RI "List< \fBTransaction\fP > \fBtransactions\fP"
+.br
+.ti -1c
+.RI "List< \fBVariable\fP > \fBvariables\fP"
+.br
+.ti -1c
+.RI "List< \fBVariable\fP > \fBmilestones\fP"
+.br
+.ti -1c
+.RI "List< \fBAccomplishment\fP > \fBaccomplishments\fP"
+.br
+.ti -1c
+.RI "List< \fBPowerUp\fP > \fBpowerUps\fP"
+.br
+.ti -1c
+.RI "int \fBstoryAchrometer\fP"
+.br
+.ti -1c
+.RI "int \fBcharacter\fP"
+.br
+.ti -1c
+.RI "List< int > \fBunlockedCharacters\fP"
+.br
+.ti -1c
+.RI "List< \fBUserCard\fP > \fBcards\fP"
+.br
+.ti -1c
+.RI "List< \fBAchievement\fP > \fBachievements\fP"
+.br
+.ti -1c
+.RI "\fBUserMatchData\fP \fBgameStats\fP"
+.br
+.ti -1c
+.RI "bool \fBdeleted\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBShards\fP\fC [get]\fP"
+.br
+.RI "Returns the numnber of shards the user has\&. "
+.in -1c
+.SH "Property Documentation"
+.PP 
+.SS "int Achroma\&.UserData\&.Shards\fC [get]\fP"
+
+.PP
+Returns the numnber of shards the user has\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Number of shards
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

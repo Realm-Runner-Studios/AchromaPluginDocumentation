@@ -1,0 +1,265 @@
+.TH "Shopify.Unity.SDK" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.SDK
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAbstractResponse\fP"
+.br
+.ti -1c
+.RI "class \fBAliasException\fP"
+.br
+.RI "This exception is thrown when trying to access a response field using an alias which was not used to build the query\&. AliasException 
+.PP
+is also thrown when the alias format is invalid for instance a blank string or the alias uses invalid characters\&. "
+.ti -1c
+.RI "class \fBArguments\fP"
+.br
+.RI "Is used by GraphQL generator classes to create argument strings\&. "
+.ti -1c
+.RI "class \fBBaseLoader\fP"
+.br
+.RI "An abstract base that must be defined by classes that will perform network communication\&. "
+.ti -1c
+.RI "class \fBCartLineItem\fP"
+.br
+.RI "A line item on an order\&. A line item is defined by a variant id and the quantity of that variant that you'll be ordering\&. Custom Attributes are used to define customizations or any additional meta data on the line item\&. "
+.ti -1c
+.RI "class \fBCartLineItems\fP"
+.br
+.RI "Is used to add, update, or delete line items in a Cart 
+.PP
+\&. "
+.ti -1c
+.RI "class \fBCastUtils\fP"
+.br
+.ti -1c
+.RI "class \fBConnectionLoader\fP"
+.br
+.ti -1c
+.RI "struct \fBConnectionQueryInfo\fP"
+.br
+.ti -1c
+.RI "class \fBDefaultCheckoutQueries\fP"
+.br
+.ti -1c
+.RI "class \fBDefaultCollectionQueries\fP"
+.br
+.RI "Generates default queries for ShopifyClient\&.collections 
+.PP
+\&. "
+.ti -1c
+.RI "class \fBDefaultProductQueries\fP"
+.br
+.RI "Generates default queries for ShopifyClient\&.products 
+.PP
+\&. "
+.ti -1c
+.RI "class \fBDefaultQueries\fP"
+.br
+.RI "Generates default queries for ShopifyClient\&.products 
+.PP
+and ShopifyClient\&.collections 
+.PP
+\&. "
+.ti -1c
+.RI "class \fBDefaultShopQueries\fP"
+.br
+.RI "Generates default queries for ShopifyClient
+.PP
+\&. "
+.ti -1c
+.RI "class \fBGlobalGameObject\fP"
+.br
+.ti -1c
+.RI "interface \fBILoaderProvider\fP"
+.br
+.ti -1c
+.RI "interface \fBINativeCheckout\fP"
+.br
+.ti -1c
+.RI "class \fBInputBase\fP"
+.br
+.RI "Base class for all GraphQL query generator input objects\&. "
+.ti -1c
+.RI "class \fBInputValueToString\fP"
+.br
+.RI "Converts C# values to GraphQL strings for queries\&. "
+.ti -1c
+.RI "class \fBInvalidServerResponseException\fP"
+.br
+.RI "This exception is thrown whenenver the server responds with an unexpected response which cannot be handled gracefully\&. "
+.ti -1c
+.RI "class \fBLoaderComponent\fP"
+.br
+.ti -1c
+.RI "class \fBLog\fP"
+.br
+.ti -1c
+.RI "class \fBMergeCheckout\fP"
+.br
+.ti -1c
+.RI "class \fBMutationResponse\fP"
+.br
+.RI "Top-level response for all GraphQL mutation queries\&. "
+.ti -1c
+.RI "class \fBNativeMessage\fP"
+.br
+.ti -1c
+.RI "class \fBNativePayment\fP"
+.br
+.ti -1c
+.RI "class \fBNoQueryException\fP"
+.br
+.RI "This exception is thrown when a field was accessed from a query response but the field was not queried\&. "
+.ti -1c
+.RI "class \fBObservableDictionary\fP"
+.br
+.ti -1c
+.RI "class \fBPaymentNetwork\fP"
+.br
+.ti -1c
+.RI "class \fBQueryLoader\fP"
+.br
+.RI "Abstracts creating and sending queries and mutations via a BaseLoader\&. "
+.ti -1c
+.RI "class \fBQueryResponse\fP"
+.br
+.RI "Top level response for all GraphQL queries\&. "
+.ti -1c
+.RI "class \fBResponseMergeUtil\fP"
+.br
+.ti -1c
+.RI "class \fBSerializable\fP"
+.br
+.ti -1c
+.RI "class \fBShippingMethod\fP"
+.br
+.ti -1c
+.RI "class \fBSummaryItem\fP"
+.br
+.ti -1c
+.RI "class \fBTimeoutComponent\fP"
+.br
+.ti -1c
+.RI "class \fBTopLevelResponse\fP"
+.br
+.RI "Base class for QueryResponse 
+.PP
+and MutationResponse 
+.PP
+, which are top-level responses for all GraphQL queries\&. "
+.ti -1c
+.RI "class \fBUnityLoader\fP"
+.br
+.RI "Performs network communication to send GraphQL queries between Unity and a \fBShopify\fP GraphQL endpoint\&. "
+.ti -1c
+.RI "class \fBUnityLoaderProvider\fP"
+.br
+.ti -1c
+.RI "class \fBUnityTimeout\fP"
+.br
+.ti -1c
+.RI "class \fBValidationUtils\fP"
+.br
+.ti -1c
+.RI "class \fBWebCheckout\fP"
+.br
+.ti -1c
+.RI "class \fBWebCheckoutMessageReceiver\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "delegate \fBQueryRootQuery\fP \fBBuildQueryOnConnectionLoopDelegate\fP (\fBQueryResponse\fP response=null)"
+.br
+.ti -1c
+.RI "delegate object \fBGetConnectionFromResponseDelegate\fP (object response)"
+.br
+.ti -1c
+.RI "delegate void \fBBuildQueryOnNodeDelegate\fP (\fBQueryRootQuery\fP query, List< \fBConnectionQueryInfo\fP > connectionInfosToBuildQuery, string nodeId, string alias)"
+.br
+.ti -1c
+.RI "delegate void \fBBuildQueryOnEdgesNodeDelegate\fP (object node, string after)"
+.br
+.ti -1c
+.RI "delegate void \fBResponseNodeHandler\fP (List< \fBNode\fP > nodes, \fBShopifyError\fP error)"
+.br
+.ti -1c
+.RI "delegate void \fBLoaderResponseHandler\fP (string response, string error)"
+.br
+.ti -1c
+.RI "delegate void \fBDictionaryChangeHandler\fP ()"
+.br
+.ti -1c
+.RI "delegate void \fBQueryResponseHandler\fP (\fBQueryResponse\fP response)"
+.br
+.ti -1c
+.RI "delegate void \fBMutationResponseHandler\fP (\fBMutationResponse\fP response)"
+.br
+.ti -1c
+.RI "delegate void \fBMergeFieldDelegate\fP (string field, Dictionary< string, object > into, Dictionary< string, object > responseA, Dictionary< string, object > responseB)"
+.br
+.ti -1c
+.RI "delegate void \fBProductsHandler\fP (List< \fBProduct\fP > products, \fBShopifyError\fP error)"
+.br
+.ti -1c
+.RI "delegate void \fBProductsPaginatedHandler\fP (List< \fBProduct\fP > products, \fBShopifyError\fP error, string after)"
+.br
+.ti -1c
+.RI "delegate void \fBCollectionsHandler\fP (List< \fBCollection\fP > products, \fBShopifyError\fP error)"
+.br
+.ti -1c
+.RI "delegate void \fBCollectionsPaginatedHandler\fP (List< \fBCollection\fP > collections, \fBShopifyError\fP error, string after)"
+.br
+.ti -1c
+.RI "delegate void \fBQueryRootHandler\fP (\fBQueryRoot\fP queryRoot, \fBShopifyError\fP error)"
+.br
+.ti -1c
+.RI "delegate void \fBMutationRootHandler\fP (\fBMutation\fP mutationRoot, \fBShopifyError\fP error)"
+.br
+.ti -1c
+.RI "delegate void \fBShopMetadataHandler\fP (\fBShopMetadata\fP? metadata, \fBShopifyError\fP error)"
+.br
+.ti -1c
+.RI "delegate void \fBLineItemChangeHandler\fP (CartLineItems\&.LineItemChangeType type, \fBCartLineItem\fP lineItem)"
+.br
+.ti -1c
+.RI "delegate bool \fBPollUpdatedHandler\fP (\fBQueryRoot\fP updatedQueryRoot)"
+.br
+.ti -1c
+.RI "delegate void \fBCanCheckoutWithNativePayCallback\fP (bool canCheckout)"
+.br
+.ti -1c
+.RI "delegate void \fBCanShowNativePaySetupCallback\fP (bool canShowPaymentSetup)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutSuccessCallback\fP ()"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutFailureCallback\fP (\fBShopifyError\fP error)"
+.br
+.ti -1c
+.RI "delegate void \fBCheckoutCancelCallback\fP ()"
+.br
+.ti -1c
+.RI "delegate void \fBGetWebCheckoutLinkSuccessCallback\fP (string url)"
+.br
+.ti -1c
+.RI "delegate void \fBGetWebCheckoutLinkFailureCallback\fP (\fBShopifyError\fP error)"
+.br
+.ti -1c
+.RI "delegate void \fBCompletionCallback\fP (\fBShopifyError\fP error)"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

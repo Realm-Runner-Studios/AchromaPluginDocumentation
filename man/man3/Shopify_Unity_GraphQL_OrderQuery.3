@@ -1,0 +1,230 @@
+.TH "Shopify.Unity.GraphQL.OrderQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.OrderQuery \- An order is a customer’s completed request to purchase one or more products from a shop\&. An order is created when a customer completes the checkout process, during which time they provides an email address, billing address and payment information\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOrderQuery\fP (StringBuilder query)"
+.br
+.RI "OrderQuery is used to build queries\&. Typically OrderQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBcurrencyCode\fP ()"
+.br
+.RI "The code of the currency used for the payment\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBcustomerLocale\fP ()"
+.br
+.RI "The locale code in which this specific order happened\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBcustomerUrl\fP ()"
+.br
+.RI "The unique URL that the customer can use to access the order\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBdiscountApplications\fP (DiscountApplicationConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "Discounts that have been applied on the order\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBemail\fP ()"
+.br
+.RI "The customer's email address\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBlineItems\fP (OrderLineItemConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "List of the order’s line items\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBname\fP ()"
+.br
+.RI "Unique identifier for the order that appears on the order\&. For example, _#1000_ or _Store1001\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBorderNumber\fP ()"
+.br
+.RI "A unique numeric identifier for the order for use by shop owner and customer\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBphone\fP ()"
+.br
+.RI "The customer's phone number for receiving SMS notifications\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBprocessedAt\fP ()"
+.br
+.RI "The date and time when the order was imported\&. This value can be set to dates in the past when importing from other systems\&. If no value is provided, it will be auto-generated based on current date and time\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBshippingAddress\fP (MailingAddressDelegate buildQuery)"
+.br
+.RI "The address to where the order will be shipped\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBshippingDiscountAllocations\fP (DiscountAllocationDelegate buildQuery)"
+.br
+.RI "The discounts that have been allocated onto the shipping line by discount applications\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBstatusUrl\fP ()"
+.br
+.RI "The unique URL for the order's status page\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBsubtotalPrice\fP ()"
+.br
+.RI "Price of the order before shipping and taxes\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBsubtotalPriceV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "Price of the order before duties, shipping and taxes\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBsuccessfulFulfillments\fP (FulfillmentDelegate buildQuery, long? first=null, string alias=null)"
+.br
+.RI "List of the order’s successful fulfillments\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBtotalPrice\fP ()"
+.br
+.RI "The sum of all the prices of all the items in the order, taxes and discounts included (must be positive)\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBtotalPriceV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The sum of all the prices of all the items in the order, duties, taxes and discounts included (must be positive)\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBtotalRefunded\fP ()"
+.br
+.RI "The total amount that has been refunded\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBtotalRefundedV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The total amount that has been refunded\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBtotalShippingPrice\fP ()"
+.br
+.RI "The total cost of shipping\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBtotalShippingPriceV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The total cost of shipping\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBtotalTax\fP ()"
+.br
+.RI "The total cost of taxes\&. "
+.ti -1c
+.RI "\fBOrderQuery\fP \fBtotalTaxV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The total cost of taxes\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+An order is a customer’s completed request to purchase one or more products from a shop\&. An order is created when a customer completes the checkout process, during which time they provides an email address, billing address and payment information\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBOrderQuery\fP Shopify\&.Unity\&.GraphQL\&.OrderQuery\&.discountApplications (DiscountApplicationConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+Discounts that have been applied on the order\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBOrderQuery\fP Shopify\&.Unity\&.GraphQL\&.OrderQuery\&.lineItems (OrderLineItemConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the order’s line items\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBOrderQuery\fP Shopify\&.Unity\&.GraphQL\&.OrderQuery\&.subtotalPrice ()"
+
+.PP
+Price of the order before shipping and taxes\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCsubtotalPriceV2\fP instead 
+.RE
+.PP
+
+.SS "\fBOrderQuery\fP Shopify\&.Unity\&.GraphQL\&.OrderQuery\&.successfulFulfillments (FulfillmentDelegate buildQuery, long? first = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the order’s successful fulfillments\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Truncate the array result to this size\&. 
+.RE
+.PP
+
+.SS "\fBOrderQuery\fP Shopify\&.Unity\&.GraphQL\&.OrderQuery\&.totalPrice ()"
+
+.PP
+The sum of all the prices of all the items in the order, taxes and discounts included (must be positive)\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCtotalPriceV2\fP instead 
+.RE
+.PP
+
+.SS "\fBOrderQuery\fP Shopify\&.Unity\&.GraphQL\&.OrderQuery\&.totalRefunded ()"
+
+.PP
+The total amount that has been refunded\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCtotalRefundedV2\fP instead 
+.RE
+.PP
+
+.SS "\fBOrderQuery\fP Shopify\&.Unity\&.GraphQL\&.OrderQuery\&.totalShippingPrice ()"
+
+.PP
+The total cost of shipping\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCtotalShippingPriceV2\fP instead 
+.RE
+.PP
+
+.SS "\fBOrderQuery\fP Shopify\&.Unity\&.GraphQL\&.OrderQuery\&.totalTax ()"
+
+.PP
+The total cost of taxes\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCtotalTaxV2\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

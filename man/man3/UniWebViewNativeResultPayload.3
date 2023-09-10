@@ -1,0 +1,32 @@
+.TH "UniWebViewNativeResultPayload" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UniWebViewNativeResultPayload \- A payload received from native side\&. It contains information to identify the message sender, as well as some necessary field to bring data from native side to Unity\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBidentifier\fP"
+.br
+.RI "The identifier bound to this payload\&. It would be used internally to identify the callback\&. "
+.ti -1c
+.RI "string \fBresultCode\fP"
+.br
+.RI "The result code contained in this payload\&. Generally, '0' means the operation finished without problem, while a non-zero value means somethings goes wrong\&. "
+.ti -1c
+.RI "string \fBdata\fP"
+.br
+.RI "Return value or data from native\&. You should look at corresponding APIs to know what exactly contained in this\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A payload received from native side\&. It contains information to identify the message sender, as well as some necessary field to bring data from native side to Unity\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

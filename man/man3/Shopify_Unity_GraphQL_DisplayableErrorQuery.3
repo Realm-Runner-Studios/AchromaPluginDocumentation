@@ -1,0 +1,44 @@
+.TH "Shopify.Unity.GraphQL.DisplayableErrorQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.DisplayableErrorQuery \- Represents an error in the input of a mutation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDisplayableErrorQuery\fP (StringBuilder query)"
+.br
+.RI "DisplayableErrorQuery is used to build queries\&. Typically DisplayableErrorQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBDisplayableErrorQuery\fP \fBfield\fP ()"
+.br
+.RI "Path to the input field which caused the error\&. "
+.ti -1c
+.RI "\fBDisplayableErrorQuery\fP \fBmessage\fP ()"
+.br
+.RI "The error message\&. "
+.ti -1c
+.RI "\fBDisplayableErrorQuery\fP \fBonCheckoutUserError\fP (CheckoutUserErrorDelegate buildQuery)"
+.br
+.RI "will allow you to write queries on CheckoutUserError\&. "
+.ti -1c
+.RI "\fBDisplayableErrorQuery\fP \fBonCustomerUserError\fP (CustomerUserErrorDelegate buildQuery)"
+.br
+.RI "will allow you to write queries on CustomerUserError\&. "
+.ti -1c
+.RI "\fBDisplayableErrorQuery\fP \fBonUserError\fP (UserErrorDelegate buildQuery)"
+.br
+.RI "will allow you to write queries on UserError\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents an error in the input of a mutation\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

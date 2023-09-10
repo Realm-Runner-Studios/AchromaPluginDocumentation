@@ -1,0 +1,88 @@
+.TH "Google" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Google
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBFuture\fP"
+.br
+.RI "Future return value\&. "
+.ti -1c
+.RI "interface \fBFutureAPIImpl\fP"
+.br
+.RI "Interface for implementations of the Future<T> API\&. "
+.ti -1c
+.RI "class \fBGoogleSignIn\fP"
+.br
+.RI "\fBGoogle\fP sign in API\&. "
+.ti -1c
+.RI "class \fBGoogleSignInConfiguration\fP"
+.br
+.RI "Configuration properties for \fBGoogle\fP Sign-In\&. "
+.ti -1c
+.RI "class \fBGoogleSignInUser\fP"
+.br
+.RI "Information for the authenticated user\&. "
+.ti -1c
+.RI "interface \fBISignInImpl\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBGoogleSignInStatusCode\fP { \fBSuccessCached\fP = -1, \fBSuccess\fP = 0, \fBApiNotConnected\fP = 1, \fBCanceled\fP = 2, \fBInterrupted\fP = 3, \fBInvalidAccount\fP = 4, \fBTimeout\fP = 5, \fBDeveloperError\fP = 6, \fBInternalError\fP = 7, \fBNetworkError\fP = 8, \fBError\fP = 9 }"
+.br
+.RI "Status code for the SignIn operations\&. "
+.in -1c
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBGoogle\&.GoogleSignInStatusCode\fP"
+
+.PP
+Status code for the SignIn operations\&. All successful status codes are less than or equal to 0\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fISuccessCached \fP\fP
+The operation was successful, but used the device's cache\&. 
+.TP
+\fB\fISuccess \fP\fP
+The operation was successful\&. 
+.TP
+\fB\fIApiNotConnected \fP\fP
+The client attempted to call a method from an API that failed to connect\&. 
+.TP
+\fB\fICanceled \fP\fP
+The result was canceled either due to client disconnect or cancel()\&. 
+.TP
+\fB\fIInterrupted \fP\fP
+A blocking call was interrupted while waiting and did not run to completion\&. 
+.TP
+\fB\fIInvalidAccount \fP\fP
+The client attempted to connect to the service with an invalid account name specified\&. 
+.TP
+\fB\fITimeout \fP\fP
+Timed out while awaiting the result\&. 
+.TP
+\fB\fIDeveloperError \fP\fP
+The application is misconfigured\&. This error is not recoverable\&. The developer should look at the logs after this to determine more actionable information\&. 
+.TP
+\fB\fIInternalError \fP\fP
+An internal error occurred\&. Retrying should resolve the problem\&. 
+.TP
+\fB\fINetworkError \fP\fP
+A network error occurred\&. Retrying should resolve the problem\&. 
+.TP
+\fB\fIError \fP\fP
+The operation failed with no more detailed information\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

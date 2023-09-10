@@ -1,0 +1,9 @@
+<map id="Achroma.AchromaDatabaseController.AddLocalPlayerToCurrentMatch" name="Achroma.AchromaDatabaseController.AddLocalPlayerToCurrentMatch">
+<area shape="rect" id="Node000001" title="Adds the local player to the match." alt="" coords="548,39,792,79"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_match.html#a05381755bae7b8695ef90599f9259980" title="Adds the local player to the match." alt="" coords="255,5,500,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="533,46,500,42,501,37,533,41"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_database_controller.html#af85af5010e60fbddfe6ee30942ae9295" title="Adds a new match to Firebase&#39;s match table." alt="" coords="255,71,500,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="533,77,500,80,500,75,533,71"/>
+<area shape="rect" id="Node000004" href="$class_achroma_a_p_i_1_1_achroma_instance_match.html#a188b25cfcd07b36fd79aecfbd085f014" title="Adds a new match to Firebase&#39;s match table." alt="" coords="5,71,207,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="240,94,207,94,207,88,240,88"/>
+</map>

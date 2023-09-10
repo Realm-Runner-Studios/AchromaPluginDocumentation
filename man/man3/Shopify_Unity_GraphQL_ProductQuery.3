@@ -1,0 +1,294 @@
+.TH "Shopify.Unity.GraphQL.ProductQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.ProductQuery \- A product represents an individual item for sale in a \fBShopify\fP store\&. Products are often physical, but they don't have to be\&. For example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProductQuery\fP (StringBuilder query)"
+.br
+.RI "ProductQuery is used to build queries\&. Typically ProductQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBavailableForSale\fP ()"
+.br
+.RI "Indicates if at least one product variant is available for sale\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBcollections\fP (CollectionConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "List of collections a product belongs to\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBcreatedAt\fP ()"
+.br
+.RI "The date and time when the product was created\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBdescription\fP (long? truncateAt=null, string alias=null)"
+.br
+.RI "Stripped description of the product, single line with HTML tags removed\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBdescriptionHtml\fP ()"
+.br
+.RI "The description of the product, complete with HTML formatting\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBhandle\fP ()"
+.br
+.RI "A human-friendly unique string for the Product automatically generated from its title\&. They are used by the Liquid templating language to refer to objects\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBimages\fP (ImageConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBProductImageSortKeys\fP? sortKey=null, long? maxWidth=null, long? maxHeight=null, \fBCropRegion\fP? crop=null, long? scale=null, string alias=null)"
+.br
+.RI "List of images associated with the product\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBmedia\fP (MediaConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "The media associated with the product\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBmetafield\fP (MetafieldDelegate buildQuery, string namespaceValue, string key, string alias=null)"
+.br
+.RI "The metafield associated with the resource\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBmetafields\fP (MetafieldConnectionDelegate buildQuery, string namespaceValue=null, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "A paginated list of metafields associated with the resource\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBonlineStoreUrl\fP ()"
+.br
+.RI "The online store URL for the product\&. A value of \fCnull\fP indicates that the product is not published to the Online Store sales channel\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBoptions\fP (ProductOptionDelegate buildQuery, long? first=null, string alias=null)"
+.br
+.RI "List of product options\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBpresentmentPriceRanges\fP (ProductPriceRangeConnectionDelegate buildQuery, List< \fBCurrencyCode\fP > presentmentCurrencies=null, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "List of price ranges in the presentment currencies for this shop\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBpriceRange\fP (ProductPriceRangeDelegate buildQuery)"
+.br
+.RI "The price range\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBproductType\fP ()"
+.br
+.RI "A categorization that a product can be tagged with, commonly used for filtering and searching\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBpublishedAt\fP ()"
+.br
+.RI "The date and time when the product was published to the channel\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBtags\fP ()"
+.br
+.RI "A comma separated list of tags that have been added to the product\&. Additional access scope required for private apps: unauthenticated_read_product_tags\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBtitle\fP ()"
+.br
+.RI "The product’s title\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBupdatedAt\fP ()"
+.br
+.RI "The date and time when the product was last modified\&. A product's \fCupdatedAt\fP value can change for different reasons\&. For example, if an order is placed for a product that has inventory tracking set up, then the inventory adjustment is counted as an update\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBvariantBySelectedOptions\fP (ProductVariantDelegate buildQuery, List< \fBSelectedOptionInput\fP > selectedOptions, string alias=null)"
+.br
+.RI "Find a product’s variant based on its selected options\&. This is useful for converting a user’s selection of product options into a single matching variant\&. If there is not a variant for the selected options, \fCnull\fP will be returned\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBvariants\fP (ProductVariantConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBProductVariantSortKeys\fP? sortKey=null, string alias=null)"
+.br
+.RI "List of the product’s variants\&. "
+.ti -1c
+.RI "\fBProductQuery\fP \fBvendor\fP ()"
+.br
+.RI "The product’s vendor name\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A product represents an individual item for sale in a \fBShopify\fP store\&. Products are often physical, but they don't have to be\&. For example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty)\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBProductQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductQuery\&.collections (CollectionConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of collections a product belongs to\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBProductQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductQuery\&.description (long? truncateAt = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+Stripped description of the product, single line with HTML tags removed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItruncateAt\fP Truncates string after the given length\&. 
+.RE
+.PP
+
+.SS "\fBProductQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductQuery\&.images (ImageConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBProductImageSortKeys\fP? sortKey = \fCnull\fP, long? maxWidth = \fCnull\fP, long? maxHeight = \fCnull\fP, \fBCropRegion\fP? crop = \fCnull\fP, long? scale = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of images associated with the product\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.br
+\fImaxWidth\fP Image width in pixels between 1 and 2048\&. This argument is deprecated: Use \fCmaxWidth\fP on \fCImage\&.transformedSrc\fP instead\&. 
+.br
+\fImaxHeight\fP Image height in pixels between 1 and 2048\&. This argument is deprecated: Use \fCmaxHeight\fP on \fCImage\&.transformedSrc\fP instead\&. 
+.br
+\fIcrop\fP Crops the image according to the specified region\&. This argument is deprecated: Use \fCcrop\fP on \fCImage\&.transformedSrc\fP instead\&. 
+.br
+\fIscale\fP Image size multiplier for high-resolution retina displays\&. Must be between 1 and 3\&. This argument is deprecated: Use \fCscale\fP on \fCImage\&.transformedSrc\fP instead\&. 
+.RE
+.PP
+
+.SS "\fBProductQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductQuery\&.media (MediaConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+The media associated with the product\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBProductQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductQuery\&.metafield (MetafieldDelegate buildQuery, string namespaceValue, string key, string alias = \fCnull\fP)"
+
+.PP
+The metafield associated with the resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInamespace\fP Container for a set of metafields (maximum of 20 characters)\&. 
+.br
+\fIkey\fP Identifier for the metafield (maximum of 30 characters)\&. 
+.RE
+.PP
+
+.SS "\fBProductQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductQuery\&.metafields (MetafieldConnectionDelegate buildQuery, string namespaceValue = \fCnull\fP, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+A paginated list of metafields associated with the resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInamespace\fP Container for a set of metafields (maximum of 20 characters)\&. 
+.br
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBProductQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductQuery\&.options (ProductOptionDelegate buildQuery, long? first = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of product options\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Truncate the array result to this size\&. 
+.RE
+.PP
+
+.SS "\fBProductQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductQuery\&.presentmentPriceRanges (ProductPriceRangeConnectionDelegate buildQuery, List< \fBCurrencyCode\fP > presentmentCurrencies = \fCnull\fP, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of price ranges in the presentment currencies for this shop\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpresentmentCurrencies\fP Specifies the presentment currencies to return a price range in\&. 
+.br
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBProductQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductQuery\&.variantBySelectedOptions (ProductVariantDelegate buildQuery, List< \fBSelectedOptionInput\fP > selectedOptions, string alias = \fCnull\fP)"
+
+.PP
+Find a product’s variant based on its selected options\&. This is useful for converting a user’s selection of product options into a single matching variant\&. If there is not a variant for the selected options, \fCnull\fP will be returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIselectedOptions\fP The input fields used for a selected option\&. 
+.RE
+.PP
+
+.SS "\fBProductQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductQuery\&.variants (ProductVariantConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBProductVariantSortKeys\fP? sortKey = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of the product’s variants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

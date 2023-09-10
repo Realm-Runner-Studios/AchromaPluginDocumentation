@@ -1,0 +1,7 @@
+<map id="Achroma.AchromaAction.GetActionSpriteName" name="Achroma.AchromaAction.GetActionSpriteName">
+<area shape="rect" id="Node000001" title="Returns Action sprite name to be found in the asset bundle." alt="" coords="494,5,685,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_action.html#a15a8ba8bc2982dd77b3d95eb7a7c41d9" title="Gets the sprite for a given Action id in the array." alt="" coords="255,5,446,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="479,28,447,28,447,23,479,23"/>
+<area shape="rect" id="Node000003" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a5d4623e6cb42a5089e4bfb2067ed58c0" title="Returns action sprite by giving an id." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="240,28,207,28,207,23,240,23"/>
+</map>

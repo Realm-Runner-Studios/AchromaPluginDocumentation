@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaItem.GetItemByName" name="Achroma.AchromaItem.GetItemByName">
+<area shape="rect" id="Node000001" title="Returns the Item based on its name." alt="" coords="255,5,461,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a7ff9b540dde418fc2aa96e512caaf1be" title="Returns the item id based on the name." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,28,207,28,207,23,240,23"/>
+</map>

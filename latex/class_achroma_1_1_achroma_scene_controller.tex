@@ -1,0 +1,73 @@
+\doxysection{Achroma.\+Achroma\+Scene\+Controller Class Reference}
+\hypertarget{class_achroma_1_1_achroma_scene_controller}{}\label{class_achroma_1_1_achroma_scene_controller}\index{Achroma.AchromaSceneController@{Achroma.AchromaSceneController}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Async\+Operation \mbox{\hyperlink{class_achroma_1_1_achroma_scene_controller_aba510fb3486d906d95e6a16e00169b2b}{Load\+Async\+Scene}} (string scene\+Name, Load\+Scene\+Mode load\+Scene\+Mode=Load\+Scene\+Mode.\+Single)
+\begin{DoxyCompactList}\small\item\em This static method loads the scene asynchronously and returns the operation so the loading progress can be tracked. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_scene_controller_a6f65dca486fcc18efecab440e77f0d07}\label{class_achroma_1_1_achroma_scene_controller_a6f65dca486fcc18efecab440e77f0d07} 
+static void {\bfseries Unload\+Scene} ()
+\begin{DoxyCompactList}\small\item\em This static method unloads the current single active scene. \end{DoxyCompactList}\item 
+static Async\+Operation \mbox{\hyperlink{class_achroma_1_1_achroma_scene_controller_a7efd4cb254e74cbb7e7236ef2c44ddd8}{Load\+Previous\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em This method calls the scene that called the current scene back. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_1_1_achroma_scene_controller_aba510fb3486d906d95e6a16e00169b2b}\label{class_achroma_1_1_achroma_scene_controller_aba510fb3486d906d95e6a16e00169b2b} 
+\index{Achroma.AchromaSceneController@{Achroma.AchromaSceneController}!LoadAsyncScene@{LoadAsyncScene}}
+\index{LoadAsyncScene@{LoadAsyncScene}!Achroma.AchromaSceneController@{Achroma.AchromaSceneController}}
+\doxysubsubsection{\texorpdfstring{LoadAsyncScene()}{LoadAsyncScene()}}
+{\footnotesize\ttfamily static Async\+Operation Achroma.\+Achroma\+Scene\+Controller.\+Load\+Async\+Scene (\begin{DoxyParamCaption}\item[{string}]{scene\+Name,  }\item[{Load\+Scene\+Mode}]{load\+Scene\+Mode = {\ttfamily LoadSceneMode\+:\+:Single} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This static method loads the scene asynchronously and returns the operation so the loading progress can be tracked. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & The name of the scene\\
+\hline
+{\em scene\+Mode} & The scene mode\+: Single (will load on top of the current scene) or Additive (will load a scene along with the current scene)\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_scene_controller_aba510fb3486d906d95e6a16e00169b2b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_scene_controller_a7efd4cb254e74cbb7e7236ef2c44ddd8}\label{class_achroma_1_1_achroma_scene_controller_a7efd4cb254e74cbb7e7236ef2c44ddd8} 
+\index{Achroma.AchromaSceneController@{Achroma.AchromaSceneController}!LoadPreviousScene@{LoadPreviousScene}}
+\index{LoadPreviousScene@{LoadPreviousScene}!Achroma.AchromaSceneController@{Achroma.AchromaSceneController}}
+\doxysubsubsection{\texorpdfstring{LoadPreviousScene()}{LoadPreviousScene()}}
+{\footnotesize\ttfamily static Async\+Operation Achroma.\+Achroma\+Scene\+Controller.\+Load\+Previous\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method calls the scene that called the current scene back. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The text that will be shown to the user in the loading screen\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_scene_controller_a7efd4cb254e74cbb7e7236ef2c44ddd8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_scene_controller_a7efd4cb254e74cbb7e7236ef2c44ddd8_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Scene/Achroma\+Scene\+Controller.\+cs\end{DoxyCompactItemize}

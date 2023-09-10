@@ -1,0 +1,279 @@
+.TH "Shopify.Unity.Product" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Product \- A product represents an individual item for sale in a \fBShopify\fP store\&. Products are often physical, but they don't have to be\&. For example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, \fBShopify\&.Unity\&.HasMetafields\fP, and \fBShopify\&.Unity\&.Node\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProduct\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "bool \fBavailableForSale\fP ()"
+.br
+.RI "Indicates if at least one product variant is available for sale\&. "
+.ti -1c
+.RI "\fBCollectionConnection\fP \fBcollections\fP (string alias=null)"
+.br
+.RI "List of collections a product belongs to\&. "
+.ti -1c
+.RI "DateTime? \fBcreatedAt\fP ()"
+.br
+.RI "The date and time when the product was created\&. "
+.ti -1c
+.RI "string \fBdescription\fP (string alias=null)"
+.br
+.RI "Stripped description of the product, single line with HTML tags removed\&. "
+.ti -1c
+.RI "string \fBdescriptionHtml\fP ()"
+.br
+.RI "The description of the product, complete with HTML formatting\&. "
+.ti -1c
+.RI "string \fBhandle\fP ()"
+.br
+.RI "A human-friendly unique string for the Product automatically generated from its title\&. They are used by the Liquid templating language to refer to objects\&. "
+.ti -1c
+.RI "string \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBImageConnection\fP \fBimages\fP (string alias=null)"
+.br
+.RI "List of images associated with the product\&. "
+.ti -1c
+.RI "\fBMediaConnection\fP \fBmedia\fP (string alias=null)"
+.br
+.RI "The media associated with the product\&. "
+.ti -1c
+.RI "\fBMetafield\fP \fBmetafield\fP (string alias=null)"
+.br
+.RI "The metafield associated with the resource\&. "
+.ti -1c
+.RI "\fBMetafieldConnection\fP \fBmetafields\fP (string alias=null)"
+.br
+.RI "A paginated list of metafields associated with the resource\&. "
+.ti -1c
+.RI "string \fBonlineStoreUrl\fP ()"
+.br
+.RI "The online store URL for the product\&. A value of \fCnull\fP indicates that the product is not published to the Online Store sales channel\&. "
+.ti -1c
+.RI "List< \fBProductOption\fP > \fBoptions\fP (string alias=null)"
+.br
+.RI "List of product options\&. "
+.ti -1c
+.RI "\fBProductPriceRangeConnection\fP \fBpresentmentPriceRanges\fP (string alias=null)"
+.br
+.RI "List of price ranges in the presentment currencies for this shop\&. "
+.ti -1c
+.RI "\fBProductPriceRange\fP \fBpriceRange\fP ()"
+.br
+.RI "The price range\&. "
+.ti -1c
+.RI "string \fBproductType\fP ()"
+.br
+.RI "A categorization that a product can be tagged with, commonly used for filtering and searching\&. "
+.ti -1c
+.RI "DateTime? \fBpublishedAt\fP ()"
+.br
+.RI "The date and time when the product was published to the channel\&. "
+.ti -1c
+.RI "List< string > \fBtags\fP ()"
+.br
+.RI "A comma separated list of tags that have been added to the product\&. Additional access scope required for private apps: unauthenticated_read_product_tags\&. "
+.ti -1c
+.RI "string \fBtitle\fP ()"
+.br
+.RI "The product’s title\&. "
+.ti -1c
+.RI "DateTime? \fBupdatedAt\fP ()"
+.br
+.RI "The date and time when the product was last modified\&. A product's \fCupdatedAt\fP value can change for different reasons\&. For example, if an order is placed for a product that has inventory tracking set up, then the inventory adjustment is counted as an update\&. "
+.ti -1c
+.RI "\fBProductVariant\fP \fBvariantBySelectedOptions\fP (string alias=null)"
+.br
+.RI "Find a product’s variant based on its selected options\&. This is useful for converting a user’s selection of product options into a single matching variant\&. If there is not a variant for the selected options, \fCnull\fP will be returned\&. "
+.ti -1c
+.RI "\fBProductVariantConnection\fP \fBvariants\fP (string alias=null)"
+.br
+.RI "List of the product’s variants\&. "
+.ti -1c
+.RI "string \fBvendor\fP ()"
+.br
+.RI "The product’s vendor name\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A product represents an individual item for sale in a \fBShopify\fP store\&. Products are often physical, but they don't have to be\&. For example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty)\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Product\&.Product (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Product
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCollectionConnection\fP Shopify\&.Unity\&.Product\&.collections (string alias = \fCnull\fP)"
+
+.PP
+List of collections a product belongs to\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.Product\&.description (string alias = \fCnull\fP)"
+
+.PP
+Stripped description of the product, single line with HTML tags removed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.Product\&.id ()"
+
+.PP
+Globally unique identifier\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Node\fP\&.
+.SS "\fBImageConnection\fP Shopify\&.Unity\&.Product\&.images (string alias = \fCnull\fP)"
+
+.PP
+List of images associated with the product\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBMediaConnection\fP Shopify\&.Unity\&.Product\&.media (string alias = \fCnull\fP)"
+
+.PP
+The media associated with the product\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBMetafield\fP Shopify\&.Unity\&.Product\&.metafield (string alias = \fCnull\fP)"
+
+.PP
+The metafield associated with the resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.PP
+Implements \fBShopify\&.Unity\&.HasMetafields\fP\&.
+.SS "\fBMetafieldConnection\fP Shopify\&.Unity\&.Product\&.metafields (string alias = \fCnull\fP)"
+
+.PP
+A paginated list of metafields associated with the resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.PP
+Implements \fBShopify\&.Unity\&.HasMetafields\fP\&.
+.SS "List< \fBProductOption\fP > Shopify\&.Unity\&.Product\&.options (string alias = \fCnull\fP)"
+
+.PP
+List of product options\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBProductPriceRangeConnection\fP Shopify\&.Unity\&.Product\&.presentmentPriceRanges (string alias = \fCnull\fP)"
+
+.PP
+List of price ranges in the presentment currencies for this shop\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBProductVariant\fP Shopify\&.Unity\&.Product\&.variantBySelectedOptions (string alias = \fCnull\fP)"
+
+.PP
+Find a product’s variant based on its selected options\&. This is useful for converting a user’s selection of product options into a single matching variant\&. If there is not a variant for the selected options, \fCnull\fP will be returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBProductVariantConnection\fP Shopify\&.Unity\&.Product\&.variants (string alias = \fCnull\fP)"
+
+.PP
+List of the product’s variants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

@@ -1,0 +1,13 @@
+<map id="AchromaAPI.AchromaInstanceDatabase.SaveUserData" name="AchromaAPI.AchromaInstanceDatabase.SaveUserData">
+<area shape="rect" id="Node000001" title="Uploads user data to the database." alt="" coords="5,71,207,111"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_database.html#a571db3347bbadd19cc7f56b9cc0498da" title="This returns to the host application the state of the database." alt="" coords="276,5,478,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,67,275,47,276,53,194,73"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_manager.html#a9da982e1b6bb0676daa31316949e642a" title="Method to load everything that&#39;s needed to call Achroma plugin features." alt="" coords="272,71,482,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,88,257,88,257,94,207,94"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_database_controller.html#aedd3a3bf10a86289dc099e698efb024b" title="Method to update Firebase with the user&#39;s updates." alt="" coords="255,136,499,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="194,109,276,129,275,135,193,115"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_parent_controller.html#a9b7cd6b8a910602b1472e2d5be3b8bf8" title="This method loads a scene synchronously and returns a callback when the scene is ended loading." alt="" coords="553,71,779,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="482,88,538,88,538,94,482,94"/>
+<area shape="rect" id="Node000006" href="$class_achroma_1_1_achroma_firebase_controller.html#aeaebd8d6f8b4ae1933dded34b8c18a61" title="Method to push the user data to Firebase using Json serialization." alt="" coords="547,136,785,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="499,154,532,154,532,159,499,159"/>
+</map>

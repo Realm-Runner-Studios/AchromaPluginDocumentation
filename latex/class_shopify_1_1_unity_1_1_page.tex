@@ -1,0 +1,105 @@
+\doxysection{Shopify.\+Unity.\+Page Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_page}{}\label{class_shopify_1_1_unity_1_1_page}\index{Shopify.Unity.Page@{Shopify.Unity.Page}}
+
+
+\doxylink{namespace_shopify}{Shopify} merchants can create pages to hold static HTML content. Each Page object represents a custom page on the online store.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Page\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Page\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_page_aae9b81e10dcc7885e36d4fe8ff1a5e7e}{Page}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_page_a5a542c0181934affb31ab806102490ac}\label{class_shopify_1_1_unity_1_1_page_a5a542c0181934affb31ab806102490ac} 
+string {\bfseries body} ()
+\begin{DoxyCompactList}\small\item\em The description of the page, complete with HTML formatting. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_page_a9c916a8573e7465563ed7f366cf02918}\label{class_shopify_1_1_unity_1_1_page_a9c916a8573e7465563ed7f366cf02918} 
+string {\bfseries body\+Summary} ()
+\begin{DoxyCompactList}\small\item\em Summary of the page body. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_page_ae2deef42e86d031a380cffb5efd46ffc}\label{class_shopify_1_1_unity_1_1_page_ae2deef42e86d031a380cffb5efd46ffc} 
+Date\+Time? {\bfseries created\+At} ()
+\begin{DoxyCompactList}\small\item\em The timestamp of the page creation. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_page_a069f7c3a53fe79572cda4909f28ab4ca}\label{class_shopify_1_1_unity_1_1_page_a069f7c3a53fe79572cda4909f28ab4ca} 
+string {\bfseries handle} ()
+\begin{DoxyCompactList}\small\item\em A human-\/friendly unique string for the page automatically generated from its title. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_page_a2a4178f7ad217d151168019c9c95ce2e}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_page_a976f0857a146db79040e5b8c07ac6c12}\label{class_shopify_1_1_unity_1_1_page_a976f0857a146db79040e5b8c07ac6c12} 
+string {\bfseries title} ()
+\begin{DoxyCompactList}\small\item\em The title of the page. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_page_a228dfcbbad7c0405d2d8f5188bde683b}\label{class_shopify_1_1_unity_1_1_page_a228dfcbbad7c0405d2d8f5188bde683b} 
+Date\+Time? {\bfseries updated\+At} ()
+\begin{DoxyCompactList}\small\item\em The timestamp of the latest page update. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_page_a793462d67010257494e46d484ab72c6e}\label{class_shopify_1_1_unity_1_1_page_a793462d67010257494e46d484ab72c6e} 
+string {\bfseries url} ()
+\begin{DoxyCompactList}\small\item\em The url pointing to the page accessible from the web. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_page_aa7c49f0655e2c1e9c678857fc5a18f83}\label{class_shopify_1_1_unity_1_1_page_aa7c49f0655e2c1e9c678857fc5a18f83} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_shopify}{Shopify} merchants can create pages to hold static HTML content. Each Page object represents a custom page on the online store. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_page_aae9b81e10dcc7885e36d4fe8ff1a5e7e}\label{class_shopify_1_1_unity_1_1_page_aae9b81e10dcc7885e36d4fe8ff1a5e7e} 
+\index{Shopify.Unity.Page@{Shopify.Unity.Page}!Page@{Page}}
+\index{Page@{Page}!Shopify.Unity.Page@{Shopify.Unity.Page}}
+\doxysubsubsection{\texorpdfstring{Page()}{Page()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Page.\+Page (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Page\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_page_a2a4178f7ad217d151168019c9c95ce2e}\label{class_shopify_1_1_unity_1_1_page_a2a4178f7ad217d151168019c9c95ce2e} 
+\index{Shopify.Unity.Page@{Shopify.Unity.Page}!id@{id}}
+\index{id@{id}!Shopify.Unity.Page@{Shopify.Unity.Page}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Page.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Page.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,901 @@
+\doxysection{Shopify.\+Unity.\+Shopify\+Client Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_shopify_client}{}\label{class_shopify_1_1_unity_1_1_shopify_client}\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+
+
+\doxylink{}{Shopify\+Client } is the entry point to communicate with the \doxylink{namespace_shopify}{Shopify} Storefront API. \doxylink{}{Shopify\+Client } also has functionality to easily generate and send queries to receive information about products, collections, and has the ability to create checkouts.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_a7d8a7a09ed0be41560c110cf18c61741}{Shopify\+Client}} (string access\+Token, string domain, string locale=null)
+\begin{DoxyCompactList}\small\item\em Shopify\+Client 
+
+is the entry point to communicate with the \doxylink{namespace_shopify}{Shopify} Storefront API. Shopify\+Client 
+
+also has functionality to easily generate and send queries to receive information about products and collections. It also has the ability to create checkouts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_a305ae1fac4ce7154d3de1936ca096e02}{Shopify\+Client}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader}{Base\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em It is possible to instantiate a Shopify\+Client 
+
+by passing an instance that implements Base\+Loader 
+
+. Base\+Loaders 
+
+handle network communication with the Storefront API. This functionality is useful if you\textquotesingle{}d like to use the \doxylink{namespace_shopify}{Shopify} SDK for Unity in a C\# environment outside of Unity. The {\ttfamily domain} string is inferred from Base\+Loaders 
+
+which can be used to request a specific client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_abe30c89d119aca8c5d92c10ea050b313}{Update\+Locale}} (string locale)
+\begin{DoxyCompactList}\small\item\em Overwrites the Query\+Loader instance with a new one with the specified locale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_a63210b6ad49e4ecc0bb706e984891fd6}{products}} (Products\+Paginated\+Handler callback, int? first=null, string after=null)
+\begin{DoxyCompactList}\small\item\em Generates a query to receive one page of {\ttfamily products} from a \doxylink{namespace_shopify}{Shopify} store. The generated query will query the following on products\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_a2be2e03d27d9df04a6216db138a610c7}{products}} (Products\+Handler callback, string first\+Product\+Id, params string\mbox{[}$\,$\mbox{]} other\+Product\+Ids)
+\begin{DoxyCompactList}\small\item\em Generates a query to receive selected {\ttfamily products} from a \doxylink{namespace_shopify}{Shopify} store. The generated query will query the following on products\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_a57683e84ea6c523b7ebaa2363704ccec}{products}} (Products\+Handler callback, List$<$ string $>$ product\+Ids)
+\begin{DoxyCompactList}\small\item\em Generates a query to receive selected {\ttfamily products} from a \doxylink{namespace_shopify}{Shopify} store. The generated query will query the following on products\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_a1941463abfeb8bed64f1d2d01c918528}{collections}} (Collections\+Paginated\+Handler callback, int? first=null, string after=null)
+\begin{DoxyCompactList}\small\item\em Generates a query to receive a page of {\ttfamily collections} from a \doxylink{namespace_shopify}{Shopify} store. The generated query will query the following on collections\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_abf9caa1b8b857c6d729daef25201ae8a}{collections}} (Collections\+Handler callback, string first\+Collection\+Id, params string\mbox{[}$\,$\mbox{]} other\+Collection\+Ids)
+\begin{DoxyCompactList}\small\item\em Generates a query to receive selected {\ttfamily collections} from a \doxylink{namespace_shopify}{Shopify} store. The generated query will query the following on collections\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_a91c844e19ae9f41d02c4a308221e555a}{collections}} (Collections\+Handler callback, List$<$ string $>$ collection\+Ids)
+\begin{DoxyCompactList}\small\item\em Generates a query to fetch the specified {\ttfamily collections} by id from a \doxylink{namespace_shopify}{Shopify} store. The generated query will query the following on collections\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_a6e81f60efd90f09f46e744aedc176618}{Query}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} query, Query\+Root\+Handler callback)
+\begin{DoxyCompactList}\small\item\em Allows you to send custom Graph\+QL queries to the Storefront API. While having utility functions like products 
+
+collections 
+
+is useful, the Storefront API has more functionality. This method allows you to access all the extra functionality that the Storefront API provides. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_a72005ec6221af190dec0938c1f916ca9}{Query}} (Query\+Root\+Delegate build\+Query, Query\+Root\+Handler callback)
+\begin{DoxyCompactList}\small\item\em Allows you to build and send custom Graph\+QL queries to the Storefront API. While having utility functions like products 
+
+collections 
+
+is useful, the Storefront API has more functionality. This method allows you to access all the extra functionality that the Storefront API provides. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_a805d42ebf200226225df69f1bdf97af0}{Mutation}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} query, Mutation\+Root\+Handler callback)
+\begin{DoxyCompactList}\small\item\em Allows you to continuously make a root query, till the response is deemed ready. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_af410187b0650aed08ab6ed6970c9afd5}{Mutation}} (Mutation\+Delegate build\+Query, Mutation\+Root\+Handler callback)
+\begin{DoxyCompactList}\small\item\em Allows you to build and send custom Graph\+QL mutation queries to the Storefront API. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_cart}{Cart}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_a64e42c2b35227dbb9921e0efcfd8fec6}{Cart}} (string cart\+Id=null)
+\begin{DoxyCompactList}\small\item\em Creates a Cart 
+
+, which can be used to manage line items for an order and create a web checkout link. One client 
+
+can have multiple carts, so it\textquotesingle{}s possible to pass in a {\ttfamily cart\+Id} to reference a specific cart. If no {\ttfamily cart\+Id} is passed, then a default Cart 
+
+is used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Dictionary$<$ string, int $>$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client_a2e46f625c4a52da98572d69336aec95f}{Default\+Image\+Resolutions}}
+\begin{DoxyCompactList}\small\item\em This is a dictionary that defines aliases, {\ttfamily max\+Width}, and {\ttfamily max\+Height} for images loaded by products 
+
+and collections 
+
+. All Products images, Product variant images, and Collection images will be queried using aliases defined by this dictionary\textquotesingle{}s keys and the {\ttfamily max\+Width} and {\ttfamily max\+Height} will be this dictionary\textquotesingle{}s values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_ab4b4534535997c6cd476306fc0aa63f6}\label{class_shopify_1_1_unity_1_1_shopify_client_ab4b4534535997c6cd476306fc0aa63f6} 
+string {\bfseries Access\+Token}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Access\+Token 
+
+is the access token associated with this client to query \doxylink{namespace_shopify}{Shopify}. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a40b0d007c05690925cec36ca15fa30e0}\label{class_shopify_1_1_unity_1_1_shopify_client_a40b0d007c05690925cec36ca15fa30e0} 
+string {\bfseries Domain}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Domain 
+
+is the \doxylink{namespace_shopify}{Shopify} store domain associated with this client. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a790a6f5a261fcb94e207b2420006a109}\label{class_shopify_1_1_unity_1_1_shopify_client_a790a6f5a261fcb94e207b2420006a109} 
+string {\bfseries Locale}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Locale 
+
+is the language that supported translated content will be in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{}{Shopify\+Client } is the entry point to communicate with the \doxylink{namespace_shopify}{Shopify} Storefront API. \doxylink{}{Shopify\+Client } also has functionality to easily generate and send queries to receive information about products, collections, and has the ability to create checkouts. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a7d8a7a09ed0be41560c110cf18c61741}\label{class_shopify_1_1_unity_1_1_shopify_client_a7d8a7a09ed0be41560c110cf18c61741} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!ShopifyClient@{ShopifyClient}}
+\index{ShopifyClient@{ShopifyClient}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{ShopifyClient()}{ShopifyClient()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Shopify\+Client.\+Shopify\+Client (\begin{DoxyParamCaption}\item[{string}]{access\+Token,  }\item[{string}]{domain,  }\item[{string}]{locale = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Shopify\+Client 
+
+is the entry point to communicate with the \doxylink{namespace_shopify}{Shopify} Storefront API. Shopify\+Client 
+
+also has functionality to easily generate and send queries to receive information about products and collections. It also has the ability to create checkouts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & the access token used to query the \doxylink{namespace_shopify}{Shopify} Storefront API for a store\\
+\hline
+{\em domain} & domain for the \doxylink{namespace_shopify}{Shopify} store\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ initializes\ a\ new\ ShopifyClient\ which\ will\ query\ all\ products}}
+\DoxyCodeLine{\textcolor{keywordtype}{string}\ accessToken\ =\ \textcolor{stringliteral}{"{}b8d417759a62f7b342f3735dbe86b322"{}};}
+\DoxyCodeLine{\textcolor{keywordtype}{string}\ shopDomain\ =\ \textcolor{stringliteral}{"{}unity-\/buy-\/sdk.myshopify.com"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{ShopifyClient\ client\ =\ \textcolor{keyword}{new}\ ShopifyClient(accessToken,\ shopDomain);}
+\DoxyCodeLine{}
+\DoxyCodeLine{client.products((products,\ error)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[0].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[1].title());}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+ \Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a305ae1fac4ce7154d3de1936ca096e02}\label{class_shopify_1_1_unity_1_1_shopify_client_a305ae1fac4ce7154d3de1936ca096e02} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!ShopifyClient@{ShopifyClient}}
+\index{ShopifyClient@{ShopifyClient}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{ShopifyClient()}{ShopifyClient()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Shopify\+Client.\+Shopify\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader}{Base\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+
+
+It is possible to instantiate a Shopify\+Client 
+
+by passing an instance that implements Base\+Loader 
+
+. Base\+Loaders 
+
+handle network communication with the Storefront API. This functionality is useful if you\textquotesingle{}d like to use the \doxylink{namespace_shopify}{Shopify} SDK for Unity in a C\# environment outside of Unity. The {\ttfamily domain} string is inferred from Base\+Loaders 
+
+which can be used to request a specific client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loader} & a loader which will handle network communication with the Storefront API\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ initializes\ a\ new\ ShopifyClient\ using\ a\ custom\ loader\ for\ another\ C\#\ platform}}
+\DoxyCodeLine{\textcolor{keywordtype}{string}\ accessToken\ =\ \textcolor{stringliteral}{"{}b8d417759a62f7b342f3735dbe86b322"{}};}
+\DoxyCodeLine{\textcolor{keywordtype}{string}\ shopDomain\ =\ \textcolor{stringliteral}{"{}unity-\/buy-\/sdk.myshopify.com"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{CustomLoaderForNonUnityPlatform\ loader\ =\ \textcolor{keyword}{new}\ CustomLoaderForNonUnityPlatform(accessToken,\ shopDomain);}
+\DoxyCodeLine{}
+\DoxyCodeLine{ShopifyClient\ client\ =\ \textcolor{keyword}{new}\ ShopifyClient(loader);}
+\DoxyCodeLine{}
+\DoxyCodeLine{client.products((products,\ error)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[0].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[1].title());}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a64e42c2b35227dbb9921e0efcfd8fec6}\label{class_shopify_1_1_unity_1_1_shopify_client_a64e42c2b35227dbb9921e0efcfd8fec6} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!Cart@{Cart}}
+\index{Cart@{Cart}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{Cart()}{Cart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_cart}{Cart}} Shopify.\+Unity.\+Shopify\+Client.\+Cart (\begin{DoxyParamCaption}\item[{string}]{cart\+Id = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Creates a Cart 
+
+, which can be used to manage line items for an order and create a web checkout link. One client 
+
+can have multiple carts, so it\textquotesingle{}s possible to pass in a {\ttfamily cart\+Id} to reference a specific cart. If no {\ttfamily cart\+Id} is passed, then a default Cart 
+
+is used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & can be optionally passed in. This is useful if your application needs multiple carts\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ checks\ how\ many\ line\ items\ the\ cart\ contains}}
+\DoxyCodeLine{Cart\ cart\ =\ ShopifyBuy.Client().Cart();}
+\DoxyCodeLine{}
+\DoxyCodeLine{Debug.Log(\textcolor{stringliteral}{"{}The\ cart\ has\ "{}}\ +\ cart.LineItems.All().Count\ +\ \textcolor{stringliteral}{"{}\ line\ items"{}});}
+
+\end{DoxyCode}
+ \Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a91c844e19ae9f41d02c4a308221e555a}\label{class_shopify_1_1_unity_1_1_shopify_client_a91c844e19ae9f41d02c4a308221e555a} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!collections@{collections}}
+\index{collections@{collections}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{collections()}{collections()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Shopify\+Client.\+collections (\begin{DoxyParamCaption}\item[{Collections\+Handler}]{callback,  }\item[{List$<$ string $>$}]{collection\+Ids }\end{DoxyParamCaption})}
+
+
+
+Generates a query to fetch the specified {\ttfamily collections} by id from a \doxylink{namespace_shopify}{Shopify} store. The generated query will query the following on collections\+: 
+
+
+\begin{DoxyItemize}
+\item id
+\item title
+\item description
+\item description\+Html
+\item updated\+At
+\item image
+\begin{DoxyItemize}
+\item alt\+Text
+\item src
+\end{DoxyItemize}
+\item products
+\begin{DoxyItemize}
+\item id
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & callback that will receive responses from server\\
+\hline
+{\em collection\+Ids} & the list of collection ids you want to receive from the server\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ usage\ querying\ two\ collection\ ids\ using\ a\ List<string>}}
+\DoxyCodeLine{List<string>\ collectionIds\ =\ \textcolor{keyword}{new}\ List<string>()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzYwOTk="{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzkwNDM="{}}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{ShopifyBuy.Client().collections((collections,\ error)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ Debug.Log(collections[0].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(collections[1].title());}
+\DoxyCodeLine{\},\ collectionIds);}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 0
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_abf9caa1b8b857c6d729daef25201ae8a}\label{class_shopify_1_1_unity_1_1_shopify_client_abf9caa1b8b857c6d729daef25201ae8a} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!collections@{collections}}
+\index{collections@{collections}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{collections()}{collections()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Shopify\+Client.\+collections (\begin{DoxyParamCaption}\item[{Collections\+Handler}]{callback,  }\item[{string}]{first\+Collection\+Id,  }\item[{params string\mbox{[}$\,$\mbox{]}}]{other\+Collection\+Ids }\end{DoxyParamCaption})}
+
+
+
+Generates a query to receive selected {\ttfamily collections} from a \doxylink{namespace_shopify}{Shopify} store. The generated query will query the following on collections\+: 
+
+
+\begin{DoxyItemize}
+\item id
+\item title
+\item description
+\item description\+Html
+\item updated\+At
+\item image
+\begin{DoxyItemize}
+\item alt\+Text
+\item src
+\end{DoxyItemize}
+\item products
+\begin{DoxyItemize}
+\item id
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & callback that will receive responses or errors from server\\
+\hline
+{\em first\+Collection\+Id} & you must pass in at least one collection id to query\\
+\hline
+{\em other\+Collection\+Ids} & after the first collection id you can pass in as many collection ids as you\textquotesingle{}d like. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ usage\ querying\ two\ collection\ ids\ using\ a\ List<string>}}
+\DoxyCodeLine{ShopifyBuy.Client().collections((collections,\ error)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ Debug.Log(collections[0].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(collections[1].title());}
+\DoxyCodeLine{\},\ \textcolor{stringliteral}{"{}Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzYwOTk="{}},\ \textcolor{stringliteral}{"{}Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzkwNDM="{}});}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 1
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a1941463abfeb8bed64f1d2d01c918528}\label{class_shopify_1_1_unity_1_1_shopify_client_a1941463abfeb8bed64f1d2d01c918528} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!collections@{collections}}
+\index{collections@{collections}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{collections()}{collections()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Shopify\+Client.\+collections (\begin{DoxyParamCaption}\item[{Collections\+Paginated\+Handler}]{callback,  }\item[{int?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Generates a query to receive a page of {\ttfamily collections} from a \doxylink{namespace_shopify}{Shopify} store. The generated query will query the following on collections\+: 
+
+
+\begin{DoxyItemize}
+\item id
+\item title
+\item description
+\item description\+Html
+\item updated\+At
+\item image
+\begin{DoxyItemize}
+\item alt\+Text
+\item src
+\end{DoxyItemize}
+\item products
+\begin{DoxyItemize}
+\item id
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Note that {\ttfamily shop.\+collections} is a Connection (Graph\+QL paginated data structure). collections 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & callback that will receive responses from server\\
+\hline
+{\em first} & can be used to limit how many products are returned. For instance 10 would return only 10 collections\\
+\hline
+{\em after} & is used to load subsequent pages. Basically it\textquotesingle{}s a cursor variable to define what page to load next. For example, when used with {\ttfamily first\+: 10} and {\ttfamily after\+: "{}abc"{}}, only the first 10 collections would be loaded after cursor {\ttfamily "{}abc"{}}. If no {\ttfamily after} is passed the first page of collections will be loaded. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ queries\ all\ collections\ on\ a\ shop}}
+\DoxyCodeLine{ShopifyBuy.Client().collections((collections,\ error)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ Debug.Log(collections[0].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(collections.Count);}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_af410187b0650aed08ab6ed6970c9afd5}\label{class_shopify_1_1_unity_1_1_shopify_client_af410187b0650aed08ab6ed6970c9afd5} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!Mutation@{Mutation}}
+\index{Mutation@{Mutation}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{Mutation()}{Mutation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Shopify\+Client.\+Mutation (\begin{DoxyParamCaption}\item[{Mutation\+Delegate}]{build\+Query,  }\item[{Mutation\+Root\+Handler}]{callback }\end{DoxyParamCaption})}
+
+
+
+Allows you to build and send custom Graph\+QL mutation queries to the Storefront API. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em build\+Query} & delegate that will build a query starting at Mutation\+Query \\
+\hline
+{\em callback} & callback which will receive a response\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ creates\ a\ new\ customer\ on\ a\ store}}
+\DoxyCodeLine{ShopifyBuy.Client().Mutation(}
+\DoxyCodeLine{\ \ \ \ buildQuery:\ (mutation)\ =>\ \{\ mutation}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .customerCreate(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ buildQuery:\ (cc)\ =>\ \{\ cc}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .userErrors(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ buildQuery:\ (ue)\ =>\ \{\ ue}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .field()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .message();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ input:\ \textcolor{keyword}{new}\ CustomerCreateInput(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ email:\ \textcolor{stringliteral}{"{}mikkoh@email.com"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ password:\ \textcolor{stringliteral}{"{}oh\ so\ secret"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ callback:\ (data,\ error)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (error\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}There\ was\ an\ error:\ "{}}\ +\ error.Reason);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ List<UserError>\ userErrors\ =\ data.customerCreate().userErrors();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (userErrors\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}(UserError\ error\ \textcolor{keywordflow}{in}\ userErrors)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ field\ which\ may\ have\ a\ user\ error}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(error.field());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ error\ message\ for\ the\ field\ which\ had\ an\ error}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(error.message());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}No\ user\ errors\ the\ customer\ was\ created"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+ \Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a805d42ebf200226225df69f1bdf97af0}\label{class_shopify_1_1_unity_1_1_shopify_client_a805d42ebf200226225df69f1bdf97af0} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!Mutation@{Mutation}}
+\index{Mutation@{Mutation}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{Mutation()}{Mutation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Shopify\+Client.\+Mutation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}}}]{query,  }\item[{Mutation\+Root\+Handler}]{callback }\end{DoxyParamCaption})}
+
+
+
+Allows you to continuously make a root query, till the response is deemed ready. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Ready} & A Delegates.\+Poll\+Updated\+Handler that determines if polling should stop by returning true\\
+\hline
+{\em query} & The query to be queried continuously\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ Example\ that\ uses\ polling}}
+\DoxyCodeLine{\ \ \ \ QueryRootQuery\ query\ =\ \textcolor{keyword}{new}\ QueryRootQuery();}
+\DoxyCodeLine{\ \ \ }
+\DoxyCodeLine{\ \ \ \ query.node(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ buildQuery:\ node\ =>\ node}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ .onCheckout(checkout\ =>\ checkout.ready()),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ id:\ \textcolor{stringliteral}{"{}someCheckoutID"{}}\textcolor{stringliteral}{"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ );}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ PollUpdatedHandler\ isReadyHandler\ =\ (updatedQueryRoot)\ =>\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ var\ expectedNode\ =\ (Checkout)\ updatedQueryRoot.node();}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ return\ expectedNode.ready();}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \};}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ PollQuery(isReadyHandler,\ query,\ (response,\ error)\ =>\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ if\ (error\ ==\ null)\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ var\ checkout\ =\ (Checkout)\ response.node();}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ //\ checkout.ready()\ is\ true}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \})}}
+\DoxyCodeLine{\textcolor{stringliteral}{public\ void\ PollQuery\ (PollUpdatedHandler\ isReady,\ QueryRootQuery\ query,\ QueryRootHandler\ callback)\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ const\ float\ POLL\_DELAY\_SECONDS\ =\ 0.5f;}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ Query\ (query,\ (QueryRoot\ response,\ ShopifyError\ error)\ =>\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ if\ (error\ !=\ null)\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ callback\ (response,\ error);}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \}\ else\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ if\ (isReady\ (response))\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ callback\ (response,\ null);}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \}\ else\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ UnityTimeout.Start\ (POLL\_DELAY\_SECONDS,\ ()\ =>\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PollQuery\ (isReady,\ query,\ callback);}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \});}}
+\DoxyCodeLine{\textcolor{stringliteral}{\}}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ <summary>}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ Allows\ you\ to\ send\ custom\ prebuilt\ GraphQL\ mutation\ queries\ to\ the\ Storefront\ API.}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ </summary>}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ <param\ name="{}}query\textcolor{stringliteral}{"{}>a\ query\ to\ be\ sent\ to\ the\ Storefront\ API</param>}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ <param\ name="{}}callback\textcolor{stringliteral}{"{}>callback\ which\ will\ receive\ a\ response</param>}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \(\backslash\)code}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ //\ Example\ that\ creates\ a\ custom\ mutation\ query}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ MutationQuery\ mutation\ =\ new\ MutationQuery();}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ mutation.customerCreate(}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ buildQuery:\ (cc)\ =>\ \{\ cc}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ .userErrors(}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ buildQuery:\ (ue)\ =>\ \{\ ue}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .field()}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .message();}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ );}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \},}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ input:\ new\ CustomerCreateInput(}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ email:\ "{}}mikkoh@email.com\textcolor{stringliteral}{"{},}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ password:\ "{}}oh\ so\ secret\textcolor{stringliteral}{"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ )}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ );}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ ShopifyBuy.Client().Mutation(}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ query:\ mutation,}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ callback:\ (data,\ error)\ =>\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ if\ (error\ !=\ null)\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log("{}}There\ was\ an\ error:\ \textcolor{stringliteral}{"{}\ +\ error.Reason);}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \}\ else\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ List<UserError>\ userErrors\ =\ data.customerCreate().userErrors();}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if\ (userErrors\ !=\ null)\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ foreach(UserError\ error\ in\ userErrors)\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ //\ field\ which\ may\ have\ a\ user\ error}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(error.field());}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ //\ error\ message\ for\ the\ field\ which\ had\ an\ error}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(error.message());}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ else\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log("{}}No\ user\ errors\ the\ customer\ was\ created\textcolor{stringliteral}{"{});}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ );}}
+
+\end{DoxyCode}
+ \Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a57683e84ea6c523b7ebaa2363704ccec}\label{class_shopify_1_1_unity_1_1_shopify_client_a57683e84ea6c523b7ebaa2363704ccec} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!products@{products}}
+\index{products@{products}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{products()}{products()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Shopify\+Client.\+products (\begin{DoxyParamCaption}\item[{Products\+Handler}]{callback,  }\item[{List$<$ string $>$}]{product\+Ids }\end{DoxyParamCaption})}
+
+
+
+Generates a query to receive selected {\ttfamily products} from a \doxylink{namespace_shopify}{Shopify} store. The generated query will query the following on products\+: 
+
+
+\begin{DoxyItemize}
+\item id
+\item title
+\item description\+Html
+\item images (with aliases defined by Shopify\+Client.\+default\+Image\+Resolutions)
+\begin{DoxyItemize}
+\item alt\+Text
+\item src
+\end{DoxyItemize}
+\item options
+\begin{DoxyItemize}
+\item name
+\item values
+\end{DoxyItemize}
+\item variants
+\begin{DoxyItemize}
+\item id
+\item available
+\item price
+\item title
+\item weight
+\item weight\+Unit
+\item selected\+Options
+\begin{DoxyItemize}
+\item name
+\item values
+\end{DoxyItemize}
+\item image (with aliases defined by Shopify\+Client.\+default\+Image\+Resolutions)
+\begin{DoxyItemize}
+\item alt\+Text
+\item src
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item collections
+\begin{DoxyItemize}
+\item image (with aliases defined by Shopify\+Client.\+default\+Image\+Resolutions)
+\begin{DoxyItemize}
+\item alt\+Text
+\item src
+\end{DoxyItemize}
+\item title
+\item updated\+At
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & callback that will receive responses from server\\
+\hline
+{\em product\+Ids} & a list of product ids you\textquotesingle{}d like to query\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ usage\ querying\ two\ product\ ids\ using\ a\ List<string>}}
+\DoxyCodeLine{List<string>\ productIds\ =\ \textcolor{keyword}{new}\ List<string>()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzYwOTk="{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzkwNDM="{}}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{ShopifyBuy.Client().products((products,\ error)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[0].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[1].title());}
+\DoxyCodeLine{\},\ productIds);}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 4
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a2be2e03d27d9df04a6216db138a610c7}\label{class_shopify_1_1_unity_1_1_shopify_client_a2be2e03d27d9df04a6216db138a610c7} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!products@{products}}
+\index{products@{products}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{products()}{products()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Shopify\+Client.\+products (\begin{DoxyParamCaption}\item[{Products\+Handler}]{callback,  }\item[{string}]{first\+Product\+Id,  }\item[{params string\mbox{[}$\,$\mbox{]}}]{other\+Product\+Ids }\end{DoxyParamCaption})}
+
+
+
+Generates a query to receive selected {\ttfamily products} from a \doxylink{namespace_shopify}{Shopify} store. The generated query will query the following on products\+: 
+
+
+\begin{DoxyItemize}
+\item id
+\item title
+\item description\+Html
+\item images (with aliases defined by Shopify\+Client.\+default\+Image\+Resolutions)
+\begin{DoxyItemize}
+\item alt\+Text
+\item src
+\end{DoxyItemize}
+\item options
+\begin{DoxyItemize}
+\item name
+\item values
+\end{DoxyItemize}
+\item variants
+\begin{DoxyItemize}
+\item id
+\item available
+\item price
+\item title
+\item weight
+\item weight\+Unit
+\item selected\+Options
+\begin{DoxyItemize}
+\item name
+\item values
+\end{DoxyItemize}
+\item image (with aliases defined by Shopify\+Client.\+default\+Image\+Resolutions)
+\begin{DoxyItemize}
+\item alt\+Text
+\item src
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item collections
+\begin{DoxyItemize}
+\item image (with aliases defined by Shopify\+Client.\+default\+Image\+Resolutions)
+\begin{DoxyItemize}
+\item alt\+Text
+\item src
+\end{DoxyItemize}
+\item title
+\item updated\+At
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & callback that will receive responses or errors from server\\
+\hline
+{\em first\+Product\+Id} & you must pass in at least one product id to query\\
+\hline
+{\em other\+Product\+Ids} & after the first product id you can pass in as many product ids as you\textquotesingle{}d like. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ usage\ querying\ two\ product\ ids}}
+\DoxyCodeLine{ShopifyBuy.Client().products((products,\ error)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[0].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[1].title());}
+\DoxyCodeLine{\},\ \textcolor{stringliteral}{"{}Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzYwOTk="{}},\ \textcolor{stringliteral}{"{}Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzkwNDM="{}});}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 5
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a63210b6ad49e4ecc0bb706e984891fd6}\label{class_shopify_1_1_unity_1_1_shopify_client_a63210b6ad49e4ecc0bb706e984891fd6} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!products@{products}}
+\index{products@{products}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{products()}{products()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Shopify\+Client.\+products (\begin{DoxyParamCaption}\item[{Products\+Paginated\+Handler}]{callback,  }\item[{int?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Generates a query to receive one page of {\ttfamily products} from a \doxylink{namespace_shopify}{Shopify} store. The generated query will query the following on products\+: 
+
+
+\begin{DoxyItemize}
+\item id
+\item title
+\item description\+Html
+\item images (with aliases defined by Shopify\+Client.\+Default\+Image\+Resolutions)
+\begin{DoxyItemize}
+\item alt\+Text
+\item src
+\end{DoxyItemize}
+\item options
+\begin{DoxyItemize}
+\item name
+\item values
+\end{DoxyItemize}
+\item variants
+\begin{DoxyItemize}
+\item id
+\item available
+\item price
+\item title
+\item weight
+\item weight\+Unit
+\item selected\+Options
+\begin{DoxyItemize}
+\item name
+\item values
+\end{DoxyItemize}
+\item image (with aliases defined by Shopify\+Client.\+Default\+Image\+Resolutions)
+\begin{DoxyItemize}
+\item alt\+Text
+\item src
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item collections
+\begin{DoxyItemize}
+\item image (with aliases defined by Shopify\+Client.\+Default\+Image\+Resolutions)
+\begin{DoxyItemize}
+\item alt\+Text
+\item src
+\end{DoxyItemize}
+\item title
+\item updated\+At
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Note that {\ttfamily shop.\+products} is a Connection (Graph\+QL paginated data structure).
+
+{\ttfamily first} will define the page size. {\ttfamily after} will be the cursor for the next page.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & callback that will receive responses from server. This callback also can receive {\ttfamily Shopify\+Error} or {\ttfamily null} if no error happened. The callback also receives {\ttfamily after} will be the cursor for the next page. If the callback\textquotesingle{}s after parameter is null, there are no more pages to fetch.\\
+\hline
+{\em first} & can be used to limit how many products are returned. For instance 10 would return only 10 products\\
+\hline
+{\em after} & is used to load subsequent pages. Basically it\textquotesingle{}s a cursor variable to define what page to load next. For example, when used with {\ttfamily first\+: 10} and {\ttfamily after\+: "{}abc"{}}, only the first 10 products would be loaded after cursor {\ttfamily "{}abc"{}}. If no {\ttfamily after} is passed the first page of products will be loaded. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ usage\ querying\ one\ page\ of\ products\ after\ the\ cursor\ "{}abc"{}:}}
+\DoxyCodeLine{ShopifyBuy.Client().products((products,\ error,\ after)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[0].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[1].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products.Count);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (after\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ more\ products\ could\ be\ loaded\ here}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\},\ after:\ \textcolor{stringliteral}{"{}abc"{}});}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a72005ec6221af190dec0938c1f916ca9}\label{class_shopify_1_1_unity_1_1_shopify_client_a72005ec6221af190dec0938c1f916ca9} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!Query@{Query}}
+\index{Query@{Query}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{Query()}{Query()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Shopify\+Client.\+Query (\begin{DoxyParamCaption}\item[{Query\+Root\+Delegate}]{build\+Query,  }\item[{Query\+Root\+Handler}]{callback }\end{DoxyParamCaption})}
+
+
+
+Allows you to build and send custom Graph\+QL queries to the Storefront API. While having utility functions like products 
+
+collections 
+
+is useful, the Storefront API has more functionality. This method allows you to access all the extra functionality that the Storefront API provides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em build\+Query} & delegate that will build a query starting at Query\+Root\+Query which will be sent to the Storefront API \\
+\hline
+{\em callback} & callback which will receive a response\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ builds\ a\ query\ that\ queries\ a\ Shop's\ name}}
+\DoxyCodeLine{ShopifyBuy.Client().Query(}
+\DoxyCodeLine{\ \ \ \ query:\ q\ =>\ q}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .shop(s\ =>\ s}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ .name()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ callback:\ (data,\ error)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (error\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}There\ was\ an\ error:\ "{}}\ +\ error.Reason);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(data.shop().name());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 8
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a6e81f60efd90f09f46e744aedc176618}\label{class_shopify_1_1_unity_1_1_shopify_client_a6e81f60efd90f09f46e744aedc176618} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!Query@{Query}}
+\index{Query@{Query}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{Query()}{Query()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Shopify\+Client.\+Query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}}}]{query,  }\item[{Query\+Root\+Handler}]{callback }\end{DoxyParamCaption})}
+
+
+
+Allows you to send custom Graph\+QL queries to the Storefront API. While having utility functions like products 
+
+collections 
+
+is useful, the Storefront API has more functionality. This method allows you to access all the extra functionality that the Storefront API provides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & a Graph\+QL query to be sent to the Storefront API\\
+\hline
+{\em callback} & callback which will receive a response from the query\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ queries\ a\ Shop's\ name}}
+\DoxyCodeLine{QueryRoot\ query\ =\ \textcolor{keyword}{new}\ QueryRootQuery();}
+\DoxyCodeLine{}
+\DoxyCodeLine{query.shop(s\ =>\ s}
+\DoxyCodeLine{\ \ \ \ .name()}
+\DoxyCodeLine{);}
+\DoxyCodeLine{}
+\DoxyCodeLine{ShopifyBuy.Client().Query(}
+\DoxyCodeLine{\ \ \ \ query:\ query,}
+\DoxyCodeLine{\ \ \ \ callback:\ (data,\ error)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (error\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}There\ was\ an\ error:\ "{}}\ +\ error.Reason);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(data.shop().name());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+ Here is the caller graph for this function\+:
+% FIG 9
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_abe30c89d119aca8c5d92c10ea050b313}\label{class_shopify_1_1_unity_1_1_shopify_client_abe30c89d119aca8c5d92c10ea050b313} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!UpdateLocale@{UpdateLocale}}
+\index{UpdateLocale@{UpdateLocale}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{UpdateLocale()}{UpdateLocale()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Shopify\+Client.\+Update\+Locale (\begin{DoxyParamCaption}\item[{string}]{locale }\end{DoxyParamCaption})}
+
+
+
+Overwrites the Query\+Loader instance with a new one with the specified locale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em locale} & locale for fetching translated content of supported types and fields\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ usage\ for\ updating\ the\ locale\ to\ French:}}
+\DoxyCodeLine{ShopifyBuy.Client(shopDomain).UpdateLocale(\textcolor{stringliteral}{"{}fr"{}})}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_client_a2e46f625c4a52da98572d69336aec95f}\label{class_shopify_1_1_unity_1_1_shopify_client_a2e46f625c4a52da98572d69336aec95f} 
+\index{Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}!DefaultImageResolutions@{DefaultImageResolutions}}
+\index{DefaultImageResolutions@{DefaultImageResolutions}!Shopify.Unity.ShopifyClient@{Shopify.Unity.ShopifyClient}}
+\doxysubsubsection{\texorpdfstring{DefaultImageResolutions}{DefaultImageResolutions}}
+{\footnotesize\ttfamily Dictionary$<$string, int$>$ Shopify.\+Unity.\+Shopify\+Client.\+Default\+Image\+Resolutions\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ Dictionary<string,\ int>\ ()\ \{\ \{\ \textcolor{stringliteral}{"{}pico"{}},\ 16\ \},\ \{\ \textcolor{stringliteral}{"{}icon"{}},\ 32\ \},\ \{\ \textcolor{stringliteral}{"{}thumb"{}},\ 50\ \},\ \{\ \textcolor{stringliteral}{"{}small"{}},\ 100\ \},\ \{\ \textcolor{stringliteral}{"{}compact"{}},\ 160\ \},\ \{\ \textcolor{stringliteral}{"{}medium"{}},\ 240\ \},\ \{\ \textcolor{stringliteral}{"{}large"{}},\ 480\ \},\ \{\ \textcolor{stringliteral}{"{}grande"{}},\ 600\ \},\ \{\ \textcolor{stringliteral}{"{}resolution\_1024"{}},\ 1024\ \},\ \{\ \textcolor{stringliteral}{"{}resolution\_2048"{}},\ 2048\ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+This is a dictionary that defines aliases, {\ttfamily max\+Width}, and {\ttfamily max\+Height} for images loaded by products 
+
+and collections 
+
+. All Products images, Product variant images, and Collection images will be queried using aliases defined by this dictionary\textquotesingle{}s keys and the {\ttfamily max\+Width} and {\ttfamily max\+Height} will be this dictionary\textquotesingle{}s values. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Returns\ an\ image\ source\ url\ whose\ dimensions\ are\ never\ greater\ than\ 100px}}
+\DoxyCodeLine{\textcolor{keywordtype}{string}\ srcSmallImage\ =\ productVariant.image().transformedSrc(\textcolor{stringliteral}{"{}small"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Returns\ an\ image\ source\ url\ whose\ dimensions\ are\ never\ greater\ than\ 1024px}}
+\DoxyCodeLine{\textcolor{keywordtype}{string}\ src1024Image\ =\ productVariant.image().transformedSrc(\textcolor{stringliteral}{"{}resolution\_1024"{}});}
+
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/Shopify\+Buy.\+cs\end{DoxyCompactItemize}

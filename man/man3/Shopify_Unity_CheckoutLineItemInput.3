@@ -1,0 +1,105 @@
+.TH "Shopify.Unity.CheckoutLineItemInput" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.CheckoutLineItemInput \- Specifies the input fields to create a line item on a checkout\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.InputBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCheckoutLineItemInput\fP (long \fBquantity\fP, string \fBvariantId\fP, List< \fBAttributeInput\fP > \fBcustomAttributes\fP=null)"
+.br
+.ti -1c
+.RI "\fBCheckoutLineItemInput\fP (Dictionary< string, object > dataJSON)"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.InputBase\fP
+.in +1c
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Returns a string representing a GraphQL input object\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "const string \fBcustomAttributesFieldKey\fP = 'customAttributes'"
+.br
+.ti -1c
+.RI "const string \fBquantityFieldKey\fP = 'quantity'"
+.br
+.ti -1c
+.RI "const string \fBvariantIdFieldKey\fP = 'variantId'"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "List< \fBAttributeInput\fP > \fBcustomAttributes\fP\fC [get, set]\fP"
+.br
+.RI "Extra information in the form of an array of Key-Value pairs about the line item\&. "
+.ti -1c
+.RI "long \fBquantity\fP\fC [get, set]\fP"
+.br
+.RI "The quantity of the line item\&. "
+.ti -1c
+.RI "string \fBvariantId\fP\fC [get, set]\fP"
+.br
+.RI "The identifier of the product variant for the line item\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.InputBase\fP
+.in +1c
+.ti -1c
+.RI "void \fBSet\fP (string key, object value)"
+.br
+.ti -1c
+.RI "object \fBGet\fP (string key)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Specifies the input fields to create a line item on a checkout\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.CheckoutLineItemInput\&.CheckoutLineItemInput (long quantity, string variantId, List< \fBAttributeInput\fP > customAttributes = \fCnull\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustomAttributes\fP Extra information in the form of an array of Key-Value pairs about the line item\&. 
+.br
+\fIquantity\fP The quantity of the line item\&. 
+.br
+\fIvariantId\fP The identifier of the product variant for the line item\&. 
+.RE
+.PP
+
+.SS "Shopify\&.Unity\&.CheckoutLineItemInput\&.CheckoutLineItemInput (Dictionary< string, object > dataJSON)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustomAttributes\fP Extra information in the form of an array of Key-Value pairs about the line item\&. 
+.br
+\fIquantity\fP The quantity of the line item\&. 
+.br
+\fIvariantId\fP The identifier of the product variant for the line item\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

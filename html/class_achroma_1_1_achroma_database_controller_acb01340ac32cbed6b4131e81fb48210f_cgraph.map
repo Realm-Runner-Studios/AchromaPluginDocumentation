@@ -1,0 +1,7 @@
+<map id="Achroma.AchromaDatabaseController.RemoveLocalPlayerFromCurrentMatch" name="Achroma.AchromaDatabaseController.RemoveLocalPlayerFromCurrentMatch">
+<area shape="rect" id="Node000001" title="User removes themselves from the match." alt="" coords="5,5,253,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a378ba405855c9f8d33c340b152cdb7e5" title="Pushes the match data to Firebase." alt="" coords="301,5,545,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,23,286,23,286,28,253,28"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_firebase_controller.html#a2bc45fdb6cdbbbf0effc45f4a94ab6cc" title="Saves data to the match table." alt="" coords="593,5,831,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="545,23,578,23,578,28,545,28"/>
+</map>

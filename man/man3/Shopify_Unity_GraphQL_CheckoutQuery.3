@@ -1,0 +1,247 @@
+.TH "Shopify.Unity.GraphQL.CheckoutQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.CheckoutQuery \- A container for all the information required to checkout items and pay\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCheckoutQuery\fP (StringBuilder query)"
+.br
+.RI "CheckoutQuery is used to build queries\&. Typically CheckoutQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBappliedGiftCards\fP (AppliedGiftCardDelegate buildQuery)"
+.br
+.RI "The gift cards used on the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBavailableShippingRates\fP (AvailableShippingRatesDelegate buildQuery)"
+.br
+.RI "The available shipping rates for this Checkout\&. Should only be used when checkout \fCrequiresShipping\fP is \fCtrue\fP and the shipping address is valid\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBcompletedAt\fP ()"
+.br
+.RI "The date and time when the checkout was completed\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBcreatedAt\fP ()"
+.br
+.RI "The date and time when the checkout was created\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBcurrencyCode\fP ()"
+.br
+.RI "The currency code for the Checkout\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBcustomAttributes\fP (AttributeDelegate buildQuery)"
+.br
+.RI "A list of extra information that is added to the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBcustomer\fP (CustomerDelegate buildQuery)"
+.br
+.RI "The customer associated with the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBdiscountApplications\fP (DiscountApplicationConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "Discounts that have been applied on the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBemail\fP ()"
+.br
+.RI "The email attached to this checkout\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBlineItems\fP (CheckoutLineItemConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "A list of line item objects, each one containing information about an item in the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBlineItemsSubtotalPrice\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The sum of all the prices of all the items in the checkout\&. Duties, taxes, shipping and discounts excluded\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBnote\fP ()"
+.br
+.RI "The note associated with the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBorder\fP (OrderDelegate buildQuery)"
+.br
+.RI "The resulting order from a paid checkout\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBorderStatusUrl\fP ()"
+.br
+.RI "The Order Status Page for this Checkout, null when checkout is not completed\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBpaymentDue\fP ()"
+.br
+.RI "The amount left to be paid\&. This is equal to the cost of the line items, taxes and shipping minus discounts and gift cards\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBpaymentDueV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The amount left to be paid\&. This is equal to the cost of the line items, duties, taxes and shipping minus discounts and gift cards\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBready\fP ()"
+.br
+.RI "Whether or not the Checkout is ready and can be completed\&. Checkouts may have asynchronous operations that can take time to finish\&. If you want to complete a checkout or ensure all the fields are populated and up to date, polling is required until the value is true\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBrequiresShipping\fP ()"
+.br
+.RI "States whether or not the fulfillment requires shipping\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBshippingAddress\fP (MailingAddressDelegate buildQuery)"
+.br
+.RI "The shipping address to where the line items will be shipped\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBshippingDiscountAllocations\fP (DiscountAllocationDelegate buildQuery)"
+.br
+.RI "The discounts that have been allocated onto the shipping line by discount applications\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBshippingLine\fP (ShippingRateDelegate buildQuery)"
+.br
+.RI "Once a shipping rate is selected by the customer it is transitioned to a \fCshipping_line\fP object\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBsubtotalPrice\fP ()"
+.br
+.RI "Price of the checkout before shipping and taxes\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBsubtotalPriceV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "Price of the checkout before duties, shipping and taxes\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBtaxExempt\fP ()"
+.br
+.RI "Specifies if the Checkout is tax exempt\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBtaxesIncluded\fP ()"
+.br
+.RI "Specifies if taxes are included in the line item and shipping line prices\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBtotalPrice\fP ()"
+.br
+.RI "The sum of all the prices of all the items in the checkout, taxes and discounts included\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBtotalPriceV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The sum of all the prices of all the items in the checkout, duties, taxes and discounts included\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBtotalTax\fP ()"
+.br
+.RI "The sum of all the taxes applied to the line items and shipping lines in the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBtotalTaxV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The sum of all the taxes applied to the line items and shipping lines in the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBupdatedAt\fP ()"
+.br
+.RI "The date and time when the checkout was last updated\&. "
+.ti -1c
+.RI "\fBCheckoutQuery\fP \fBwebUrl\fP ()"
+.br
+.RI "The url pointing to the checkout accessible from the web\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A container for all the information required to checkout items and pay\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCheckoutQuery\fP Shopify\&.Unity\&.GraphQL\&.CheckoutQuery\&.customer (CustomerDelegate buildQuery)"
+
+.PP
+The customer associated with the checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+This field will always return null\&. If you have an authentication token for the customer, you can use the \fCcustomer\fP field on the query root to retrieve it\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutQuery\fP Shopify\&.Unity\&.GraphQL\&.CheckoutQuery\&.discountApplications (DiscountApplicationConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+Discounts that have been applied on the checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutQuery\fP Shopify\&.Unity\&.GraphQL\&.CheckoutQuery\&.lineItems (CheckoutLineItemConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+A list of line item objects, each one containing information about an item in the checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutQuery\fP Shopify\&.Unity\&.GraphQL\&.CheckoutQuery\&.paymentDue ()"
+
+.PP
+The amount left to be paid\&. This is equal to the cost of the line items, taxes and shipping minus discounts and gift cards\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCpaymentDueV2\fP instead 
+.RE
+.PP
+
+.SS "\fBCheckoutQuery\fP Shopify\&.Unity\&.GraphQL\&.CheckoutQuery\&.subtotalPrice ()"
+
+.PP
+Price of the checkout before shipping and taxes\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCsubtotalPriceV2\fP instead 
+.RE
+.PP
+
+.SS "\fBCheckoutQuery\fP Shopify\&.Unity\&.GraphQL\&.CheckoutQuery\&.totalPrice ()"
+
+.PP
+The sum of all the prices of all the items in the checkout, taxes and discounts included\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCtotalPriceV2\fP instead 
+.RE
+.PP
+
+.SS "\fBCheckoutQuery\fP Shopify\&.Unity\&.GraphQL\&.CheckoutQuery\&.totalTax ()"
+
+.PP
+The sum of all the taxes applied to the line items and shipping lines in the checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCtotalTaxV2\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

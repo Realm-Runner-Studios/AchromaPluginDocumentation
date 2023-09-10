@@ -1,0 +1,9 @@
+<map id="AchromaAPI.AchromaInstanceMatch.GetMatchCode" name="AchromaAPI.AchromaInstanceMatch.GetMatchCode">
+<area shape="rect" id="Node000001" title="Gets a unique match code." alt="" coords="5,5,207,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#ac8f647abd3d62aeb99276847e391eeeb" title="Gets a unique match code." alt="" coords="255,5,499,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,23,240,23,240,28,207,28"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_firebase_controller.html#a60ba4be3e6e106d7bc8ed4864f4e67b6" title="Gets a new match code." alt="" coords="547,5,785,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="499,23,532,23,532,28,499,28"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_firebase_controller.html#a7b3d5a50698bfc09ed5d51fa191f2f3e" title="Gets a new match code." alt="" coords="833,5,1072,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="786,23,819,23,819,28,786,28"/>
+</map>

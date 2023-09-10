@@ -1,0 +1,5 @@
+<map id="AchromaAPI.AchromaInstanceUI.ShowHomeButton" name="AchromaAPI.AchromaInstanceUI.ShowHomeButton">
+<area shape="rect" id="Node000001" title="Shows the Home Button." alt="" coords="255,5,456,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_auth.html#a75fddeef864f3b4432fae8fd9cab5459" title="API method to log in. This will load the necessary scenes and call login." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,28,207,28,207,23,239,23"/>
+</map>

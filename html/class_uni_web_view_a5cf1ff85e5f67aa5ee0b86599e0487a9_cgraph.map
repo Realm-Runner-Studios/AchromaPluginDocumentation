@@ -1,0 +1,5 @@
+<map id="UniWebView.AddSslExceptionDomain" name="UniWebView.AddSslExceptionDomain">
+<area shape="rect" id="Node000001" title="Adds a domain to the SSL checking white list. If you are trying to access a web site with untrusted o..." alt="" coords="5,5,204,46"/>
+<area shape="rect" id="Node000002" href="$class_uni_web_view_logger.html#abb0d3b3f645b881edb7147760211f31e" title="Log a critical message." alt="" coords="252,13,431,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,23,237,23,237,28,204,28"/>
+</map>

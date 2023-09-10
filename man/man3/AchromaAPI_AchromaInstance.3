@@ -1,0 +1,48 @@
+.TH "AchromaAPI.AchromaInstance" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AchromaAPI.AchromaInstance \- Main Singleton responsible for initializing the \fBAchroma\fP Instance, which will add the scenes needed as well as the objects required to connect to Firebase\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBCheckForUpdates\fP (string sceneToReload, UnityAction< bool, string > callback)"
+.br
+.RI "Checks if the user has the latest version installed\&. If the user has an outdated version, the app will take them to the app store and force the update\&. "
+.ti -1c
+.RI "static void \fBInitialize\fP (List< \fBAchromaPurchaseOption\fP > purchaseOptions, UnityAction< \fBUserData\fP > userDataChanged=null, UnityAction< bool, string > callback=null)"
+.br
+.RI "This will initialize all the assets needed to use the plugin, like database layer UI, etc This should be called after the app is initialized\&. Don't use this on Awake or Start\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "static \fBAchroma\&.AchromaManager\fP \fBManager\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Main Singleton responsible for initializing the \fBAchroma\fP Instance, which will add the scenes needed as well as the objects required to connect to Firebase\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static void AchromaAPI\&.AchromaInstance\&.CheckForUpdates (string sceneToReload, UnityAction< bool, string > callback)\fC [static]\fP"
+
+.PP
+Checks if the user has the latest version installed\&. If the user has an outdated version, the app will take them to the app store and force the update\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsceneToReload\fP The scene to be reloaded after if something goes wrong
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

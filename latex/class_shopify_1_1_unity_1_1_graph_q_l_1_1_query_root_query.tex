@@ -1,0 +1,414 @@
+\doxysection{Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+
+
+Query\+Root\+Query is the root query builder. All Storefront API queries are built off of Query\+Root\+Query.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a3b26b9bbcd763e73f5ca6c0bd7fa23ce}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a3b26b9bbcd763e73f5ca6c0bd7fa23ce} 
+{\bfseries Query\+Root\+Query} ()
+\begin{DoxyCompactList}\small\item\em Query\+Root\+Query constructor accepts no parameters but it will create a root query builder. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_ab2d0ad701a8abc062e0c615e7c0112ed}{articles}} (Article\+Connection\+Delegate build\+Query, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \mbox{\hyperlink{namespace_shopify_1_1_unity_a0e67fefb75cf80b4d61c9b5b070442ce}{Article\+Sort\+Keys}}? sort\+Key=null, string query\+Value=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop\textquotesingle{}s articles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_af3c3972a14ea8827b607a9fc02fff8d6}{blog\+By\+Handle}} (Blog\+Delegate build\+Query, string handle, string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a blog by its handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_aff8d45b6bddb8418446e734633c3f5a4}{blogs}} (Blog\+Connection\+Delegate build\+Query, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \mbox{\hyperlink{namespace_shopify_1_1_unity_a5dfb6dce6787178d88e9ca27502d4bc6}{Blog\+Sort\+Keys}}? sort\+Key=null, string query\+Value=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop\textquotesingle{}s blogs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_acc8797d62c249901c0f693a2dbb2eafa}{collection\+By\+Handle}} (Collection\+Delegate build\+Query, string handle, string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a collection by its handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a98404aad3a7f264167b306081265289b}{collections}} (Collection\+Connection\+Delegate build\+Query, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \mbox{\hyperlink{namespace_shopify_1_1_unity_a2e8be354f304034101bf0112fde5dbfb}{Collection\+Sort\+Keys}}? sort\+Key=null, string query\+Value=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop’s collections. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_aabf05b04ce711455fdf98c7a72ef8f23}{customer}} (Customer\+Delegate build\+Query, string customer\+Access\+Token, string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a customer by its access token. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a1f6cdb72375198c9cece122749e80721}{node}} (Node\+Delegate build\+Query, string id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Returns a specific node by ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a80ea96ef907e9ee6468d6421b05c195c}{nodes}} (Node\+Delegate build\+Query, List$<$ string $>$ ids, string alias=null)
+\begin{DoxyCompactList}\small\item\em Returns the list of nodes with the given IDs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a73f62906e090c5c52003b0e909c170c6}{page\+By\+Handle}} (Page\+Delegate build\+Query, string handle, string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a page by its handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_ae14faf75579915a300ca6a5ce636c95e}{pages}} (Page\+Connection\+Delegate build\+Query, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \mbox{\hyperlink{namespace_shopify_1_1_unity_a189f3047e91b247ce6a3ba6ce2a347fc}{Page\+Sort\+Keys}}? sort\+Key=null, string query\+Value=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop\textquotesingle{}s pages. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a1cbb56633cc4182cbe876b4a4b230450}{product\+By\+Handle}} (Product\+Delegate build\+Query, string handle, string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a product by its handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_abcc5f3ec4a9b0ec3e567d9f8ee2abf99}{product\+Recommendations}} (Product\+Delegate build\+Query, string product\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Find recommended products related to a given {\ttfamily product\+\_\+id}. To learn more about how recommendations are generated, see \href{https://help.shopify.com/themes/development/recommended-products}{\texttt{ {\itshape Showing product recommendations on product pages}}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a19c694e40d584fb182579a5a62bb9bcf}{product\+Tags}} (String\+Connection\+Delegate build\+Query, long first, string alias=null)
+\begin{DoxyCompactList}\small\item\em Tags added to products. Additional access scope required\+: unauthenticated\+\_\+read\+\_\+product\+\_\+tags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_ade89d000bb6991c6aaa1cd287403a06b}{product\+Types}} (String\+Connection\+Delegate build\+Query, long first, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of product types for the shop\textquotesingle{}s products that are published to your app. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a015e36d47ae7de64f9a0d2567ff5788a}{products}} (Product\+Connection\+Delegate build\+Query, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \mbox{\hyperlink{namespace_shopify_1_1_unity_a792531009a09796b48377f704cdeb35b}{Product\+Sort\+Keys}}? sort\+Key=null, string query\+Value=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop’s products. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a75215e6151aac39b40450974004706e3}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a75215e6151aac39b40450974004706e3} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} {\bfseries public\+Api\+Versions} (Api\+Version\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The list of public Storefront API versions, including supported, release candidate and unstable versions. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_afb522c256298590d61a41484aa9516be}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_afb522c256298590d61a41484aa9516be} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} {\bfseries shop} (Shop\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The shop associated with the storefront access token. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a6dfb0a79766406ff23e2f310df94940e}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a6dfb0a79766406ff23e2f310df94940e} 
+override string {\bfseries To\+String} ()
+\begin{DoxyCompactList}\small\item\em Will return a Graph\+QL query. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Query\+Root\+Query is the root query builder. All Storefront API queries are built off of Query\+Root\+Query. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_ab2d0ad701a8abc062e0c615e7c0112ed}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_ab2d0ad701a8abc062e0c615e7c0112ed} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!articles@{articles}}
+\index{articles@{articles}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{articles()}{articles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+articles (\begin{DoxyParamCaption}\item[{Article\+Connection\+Delegate}]{build\+Query,  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{\mbox{\hyperlink{namespace_shopify_1_1_unity_a0e67fefb75cf80b4d61c9b5b070442ce}{Article\+Sort\+Keys}}?}]{sort\+Key = {\ttfamily null},  }\item[{string}]{query\+Value = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop\textquotesingle{}s articles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+{\em sort\+Key} & Sort the underlying list by the given key. \\
+\hline
+{\em query} & Supported filter parameters\+:
+\begin{DoxyItemize}
+\item {\ttfamily author}
+\item {\ttfamily blog\+\_\+title}
+\item {\ttfamily created\+\_\+at}
+\item {\ttfamily tag}
+\item {\ttfamily updated\+\_\+at}
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+See the detailed \href{https://help.shopify.com/api/getting-started/search-syntax}{\texttt{ search syntax}} for more information about using filters. Here is the call graph for this function\+:
+% FIG 0
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_af3c3972a14ea8827b607a9fc02fff8d6}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_af3c3972a14ea8827b607a9fc02fff8d6} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!blogByHandle@{blogByHandle}}
+\index{blogByHandle@{blogByHandle}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{blogByHandle()}{blogByHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+blog\+By\+Handle (\begin{DoxyParamCaption}\item[{Blog\+Delegate}]{build\+Query,  }\item[{string}]{handle,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a blog by its handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & The handle of the blog. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 1
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_aff8d45b6bddb8418446e734633c3f5a4}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_aff8d45b6bddb8418446e734633c3f5a4} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!blogs@{blogs}}
+\index{blogs@{blogs}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{blogs()}{blogs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+blogs (\begin{DoxyParamCaption}\item[{Blog\+Connection\+Delegate}]{build\+Query,  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{\mbox{\hyperlink{namespace_shopify_1_1_unity_a5dfb6dce6787178d88e9ca27502d4bc6}{Blog\+Sort\+Keys}}?}]{sort\+Key = {\ttfamily null},  }\item[{string}]{query\+Value = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop\textquotesingle{}s blogs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+{\em sort\+Key} & Sort the underlying list by the given key. \\
+\hline
+{\em query} & Supported filter parameters\+:
+\begin{DoxyItemize}
+\item {\ttfamily created\+\_\+at}
+\item {\ttfamily handle}
+\item {\ttfamily title}
+\item {\ttfamily updated\+\_\+at}
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+See the detailed \href{https://help.shopify.com/api/getting-started/search-syntax}{\texttt{ search syntax}} for more information about using filters. Here is the call graph for this function\+:
+% FIG 2
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_acc8797d62c249901c0f693a2dbb2eafa}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_acc8797d62c249901c0f693a2dbb2eafa} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!collectionByHandle@{collectionByHandle}}
+\index{collectionByHandle@{collectionByHandle}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{collectionByHandle()}{collectionByHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+collection\+By\+Handle (\begin{DoxyParamCaption}\item[{Collection\+Delegate}]{build\+Query,  }\item[{string}]{handle,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a collection by its handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & The handle of the collection. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 3
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a98404aad3a7f264167b306081265289b}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a98404aad3a7f264167b306081265289b} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!collections@{collections}}
+\index{collections@{collections}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{collections()}{collections()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+collections (\begin{DoxyParamCaption}\item[{Collection\+Connection\+Delegate}]{build\+Query,  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{\mbox{\hyperlink{namespace_shopify_1_1_unity_a2e8be354f304034101bf0112fde5dbfb}{Collection\+Sort\+Keys}}?}]{sort\+Key = {\ttfamily null},  }\item[{string}]{query\+Value = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop’s collections. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+{\em sort\+Key} & Sort the underlying list by the given key. \\
+\hline
+{\em query} & Supported filter parameters\+:
+\begin{DoxyItemize}
+\item {\ttfamily collection\+\_\+type}
+\item {\ttfamily title}
+\item {\ttfamily updated\+\_\+at}
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+See the detailed \href{https://help.shopify.com/api/getting-started/search-syntax}{\texttt{ search syntax}} for more information about using filters. Here is the call graph for this function\+:
+% FIG 4
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_aabf05b04ce711455fdf98c7a72ef8f23}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_aabf05b04ce711455fdf98c7a72ef8f23} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!customer@{customer}}
+\index{customer@{customer}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{customer()}{customer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+customer (\begin{DoxyParamCaption}\item[{Customer\+Delegate}]{build\+Query,  }\item[{string}]{customer\+Access\+Token,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a customer by its access token. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+Access\+Token} & The customer access token. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 5
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a1f6cdb72375198c9cece122749e80721}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a1f6cdb72375198c9cece122749e80721} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!node@{node}}
+\index{node@{node}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{node()}{node()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+node (\begin{DoxyParamCaption}\item[{Node\+Delegate}]{build\+Query,  }\item[{string}]{id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Returns a specific node by ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the Node to return. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 6
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a80ea96ef907e9ee6468d6421b05c195c}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a80ea96ef907e9ee6468d6421b05c195c} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!nodes@{nodes}}
+\index{nodes@{nodes}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{nodes()}{nodes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+nodes (\begin{DoxyParamCaption}\item[{Node\+Delegate}]{build\+Query,  }\item[{List$<$ string $>$}]{ids,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Returns the list of nodes with the given IDs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ids} & The IDs of the Nodes to return. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 7
+Here is the caller graph for this function\+:
+% FIG 8
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a73f62906e090c5c52003b0e909c170c6}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a73f62906e090c5c52003b0e909c170c6} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!pageByHandle@{pageByHandle}}
+\index{pageByHandle@{pageByHandle}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{pageByHandle()}{pageByHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+page\+By\+Handle (\begin{DoxyParamCaption}\item[{Page\+Delegate}]{build\+Query,  }\item[{string}]{handle,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a page by its handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & The handle of the page. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 9
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_ae14faf75579915a300ca6a5ce636c95e}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_ae14faf75579915a300ca6a5ce636c95e} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!pages@{pages}}
+\index{pages@{pages}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{pages()}{pages()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+pages (\begin{DoxyParamCaption}\item[{Page\+Connection\+Delegate}]{build\+Query,  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{\mbox{\hyperlink{namespace_shopify_1_1_unity_a189f3047e91b247ce6a3ba6ce2a347fc}{Page\+Sort\+Keys}}?}]{sort\+Key = {\ttfamily null},  }\item[{string}]{query\+Value = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop\textquotesingle{}s pages. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+{\em sort\+Key} & Sort the underlying list by the given key. \\
+\hline
+{\em query} & Supported filter parameters\+:
+\begin{DoxyItemize}
+\item {\ttfamily created\+\_\+at}
+\item {\ttfamily handle}
+\item {\ttfamily title}
+\item {\ttfamily updated\+\_\+at}
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+See the detailed \href{https://help.shopify.com/api/getting-started/search-syntax}{\texttt{ search syntax}} for more information about using filters. Here is the call graph for this function\+:
+% FIG 10
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a1cbb56633cc4182cbe876b4a4b230450}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a1cbb56633cc4182cbe876b4a4b230450} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!productByHandle@{productByHandle}}
+\index{productByHandle@{productByHandle}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{productByHandle()}{productByHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+product\+By\+Handle (\begin{DoxyParamCaption}\item[{Product\+Delegate}]{build\+Query,  }\item[{string}]{handle,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a product by its handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & The handle of the product. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 11
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_abcc5f3ec4a9b0ec3e567d9f8ee2abf99}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_abcc5f3ec4a9b0ec3e567d9f8ee2abf99} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!productRecommendations@{productRecommendations}}
+\index{productRecommendations@{productRecommendations}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{productRecommendations()}{productRecommendations()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+product\+Recommendations (\begin{DoxyParamCaption}\item[{Product\+Delegate}]{build\+Query,  }\item[{string}]{product\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find recommended products related to a given {\ttfamily product\+\_\+id}. To learn more about how recommendations are generated, see \href{https://help.shopify.com/themes/development/recommended-products}{\texttt{ {\itshape Showing product recommendations on product pages}}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em product\+Id} & The id of the product. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 12
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a015e36d47ae7de64f9a0d2567ff5788a}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a015e36d47ae7de64f9a0d2567ff5788a} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!products@{products}}
+\index{products@{products}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{products()}{products()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+products (\begin{DoxyParamCaption}\item[{Product\+Connection\+Delegate}]{build\+Query,  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{\mbox{\hyperlink{namespace_shopify_1_1_unity_a792531009a09796b48377f704cdeb35b}{Product\+Sort\+Keys}}?}]{sort\+Key = {\ttfamily null},  }\item[{string}]{query\+Value = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop’s products. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+{\em sort\+Key} & Sort the underlying list by the given key. \\
+\hline
+{\em query} & Supported filter parameters\+:
+\begin{DoxyItemize}
+\item {\ttfamily available\+\_\+for\+\_\+sale}
+\item {\ttfamily created\+\_\+at}
+\item {\ttfamily product\+\_\+type}
+\item {\ttfamily tag}
+\item {\ttfamily title}
+\item {\ttfamily updated\+\_\+at}
+\item {\ttfamily variants.\+price}
+\item {\ttfamily vendor}
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+See the detailed \href{https://help.shopify.com/api/getting-started/search-syntax}{\texttt{ search syntax}} for more information about using filters. Here is the call graph for this function\+:
+% FIG 13
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a19c694e40d584fb182579a5a62bb9bcf}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_a19c694e40d584fb182579a5a62bb9bcf} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!productTags@{productTags}}
+\index{productTags@{productTags}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{productTags()}{productTags()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+product\+Tags (\begin{DoxyParamCaption}\item[{String\+Connection\+Delegate}]{build\+Query,  }\item[{long}]{first,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Tags added to products. Additional access scope required\+: unauthenticated\+\_\+read\+\_\+product\+\_\+tags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 14
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_ade89d000bb6991c6aaa1cd287403a06b}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query_ade89d000bb6991c6aaa1cd287403a06b} 
+\index{Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}!productTypes@{productTypes}}
+\index{productTypes@{productTypes}!Shopify.Unity.GraphQL.QueryRootQuery@{Shopify.Unity.GraphQL.QueryRootQuery}}
+\doxysubsubsection{\texorpdfstring{productTypes()}{productTypes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Query\+Root\+Query.\+product\+Types (\begin{DoxyParamCaption}\item[{String\+Connection\+Delegate}]{build\+Query,  }\item[{long}]{first,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of product types for the shop\textquotesingle{}s products that are published to your app. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 15
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/\+Graph\+QL/Query\+Root\+Query.\+cs\end{DoxyCompactItemize}

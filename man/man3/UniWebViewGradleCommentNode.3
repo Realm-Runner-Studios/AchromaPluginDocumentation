@@ -1,0 +1,84 @@
+.TH "UniWebViewGradleCommentNode" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UniWebViewGradleCommentNode
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBUniWebViewGradleNode\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUniWebViewGradleCommentNode\fP (String content, \fBUniWebViewGradleNode\fP parent)"
+.br
+.ti -1c
+.RI "string \fBGetComment\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBUniWebViewGradleNode\fP
+.in +1c
+.ti -1c
+.RI "\fBUniWebViewGradleNode\fP (string name, \fBUniWebViewGradleNode\fP parent=null)"
+.br
+.ti -1c
+.RI "void \fBEach\fP (Action< \fBUniWebViewGradleNode\fP > f)"
+.br
+.ti -1c
+.RI "void \fBAppendChildNode\fP (\fBUniWebViewGradleNode\fP node)"
+.br
+.ti -1c
+.RI "\fBUniWebViewGradleNode\fP \fBTryGetNode\fP (string path)"
+.br
+.ti -1c
+.RI "\fBUniWebViewGradleNode\fP \fBFindChildNodeByName\fP (string name)"
+.br
+.ti -1c
+.RI "bool \fBReplaceContenStartsWith\fP (string patten, string value)"
+.br
+.ti -1c
+.RI "\fBUniWebViewGradleContentNode\fP \fBReplaceContenOrAddStartsWith\fP (string patten, string value)"
+.br
+.ti -1c
+.RI "\fBUniWebViewGradleContentNode\fP \fBAppendContentNode\fP (string content)"
+.br
+.RI "添加子节点 "
+.ti -1c
+.RI "bool \fBRemoveContentNode\fP (string contentPattern)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBUniWebViewGradleNode\fP
+.in +1c
+.ti -1c
+.RI "List< \fBUniWebViewGradleNode\fP > \fBm_children\fP = new List<\fBUniWebViewGradleNode\fP>()"
+.br
+.ti -1c
+.RI "\fBUniWebViewGradleNode\fP \fBm_parent\fP"
+.br
+.ti -1c
+.RI "String \fBm_name\fP"
+.br
+.in -1c
+
+Properties inherited from \fBUniWebViewGradleNode\fP
+.in +1c
+.ti -1c
+.RI "\fBUniWebViewGradleNode\fP \fBPARENT\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "string \fBNAME\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "List< \fBUniWebViewGradleNode\fP > \fBCHILDREN\fP\fC [get]\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

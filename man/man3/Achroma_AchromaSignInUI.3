@@ -1,0 +1,165 @@
+.TH "Achroma.AchromaSignInUI" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaSignInUI
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBAchromaPopupWindow\fP, \fBAchromaPopupWindow\fP, \fBAchromaPopupWindow\fP, and \fBAchromaPopupWindow\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBProcessAppleSignIn\fP (\fBUserInfo\fP userInfo)"
+.br
+.RI "This method calls the login method using Apple\&. "
+.ti -1c
+.RI "void \fBSignInWithApple\fP ()"
+.br
+.ti -1c
+.RI "void \fBEmailSignInManual\fP ()"
+.br
+.RI "Exposed method to manually sign in by email\&. "
+.ti -1c
+.RI "void \fBForgotPassword\fP ()"
+.br
+.RI "This method will ask for another password\&. "
+.ti -1c
+.RI "void \fBSignUp\fP ()"
+.br
+.ti -1c
+.RI "void \fBProcessGogleSignIn\fP (string googleAccessToken, string googleTokenId)"
+.br
+.RI "This method calls the login method using Apple\&. "
+.ti -1c
+.RI "void \fBSignInWithGoogle\fP ()"
+.br
+.RI "Starts the Sign in process with Google\&. "
+.ti -1c
+.RI "void \fBShowSignInSection\fP ()"
+.br
+.RI "This method will show the Sign In section when the user is not new\&. "
+.ti -1c
+.RI "void \fBShowSignUpSection\fP ()"
+.br
+.RI "This method will show the Sign Up section when the user is new\&. "
+.ti -1c
+.RI "override void \fBUpdate\fP ()"
+.br
+.ti -1c
+.RI "void \fBSignInAutomatically\fP (UnityAction< bool, string > callback=null)"
+.br
+.RI "This method will be called if the user is logging again after successfully logging in before\&. "
+.in -1c
+
+Public Member Functions inherited from \fBAchromaPopupWindow\fP
+.in +1c
+.ti -1c
+.RI "void \fBHide\fP ()"
+.br
+.RI "This will set the element position to the bottom, making it disappear from the screen\&. "
+.ti -1c
+.RI "virtual void \fBFadeIn\fP (UnityAction result=null)"
+.br
+.RI "The method that will move the UI element up\&. "
+.ti -1c
+.RI "virtual void \fBFadeOut\fP (UnityAction result=null)"
+.br
+.RI "The Coroutine that will move the UI element down\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBisLogging\fP = false"
+.br
+.ti -1c
+.RI "GameObject \fBcloseButton\fP"
+.br
+.ti -1c
+.RI "Button \fBsignInButton\fP"
+.br
+.ti -1c
+.RI "Button \fBsignUpButton\fP"
+.br
+.ti -1c
+.RI "GameObject \fBsignInSection\fP"
+.br
+.ti -1c
+.RI "GameObject \fBsignUpSection\fP"
+.br
+.ti -1c
+.RI "\fBAchromaFormField\fP \fBemailLoginField\fP"
+.br
+.ti -1c
+.RI "\fBAchromaFormField\fP \fBpasswordLoginField\fP"
+.br
+.ti -1c
+.RI "GameObject \fBsignInApple\fP"
+.br
+.ti -1c
+.RI "GameObject \fBsignInGoogle\fP"
+.br
+.ti -1c
+.RI "\fBAchromaFormField\fP \fBusernameRegisterField\fP"
+.br
+.ti -1c
+.RI "\fBAchromaFormField\fP \fBemailRegisterField\fP"
+.br
+.ti -1c
+.RI "\fBAchromaFormField\fP \fBpasswordRegisterField\fP"
+.br
+.ti -1c
+.RI "\fBAchromaFormField\fP \fBpasswordRegisterVerifyField\fP"
+.br
+.ti -1c
+.RI "GameObject \fBsignUpApple\fP"
+.br
+.ti -1c
+.RI "GameObject \fBsignUpGoogle\fP"
+.br
+.ti -1c
+.RI "UnityAction< bool, string > \fBcallback\fP = null"
+.br
+.in -1c
+
+Public Attributes inherited from \fBAchromaPopupWindow\fP
+.in +1c
+.ti -1c
+.RI "float \fBspeed\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void Achroma\&.AchromaSignInUI\&.ProcessAppleSignIn (\fBUserInfo\fP userInfo)"
+
+.PP
+This method calls the login method using Apple\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserInfo\fP The user info that comes from the device
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaSignInUI\&.ProcessGogleSignIn (string googleAccessToken, string googleTokenId)"
+
+.PP
+This method calls the login method using Apple\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserInfo\fP The user info that comes from the device
+.RE
+.PP
+
+.SS "override void Achroma\&.AchromaSignInUI\&.Update ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBAchromaPopupWindow\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

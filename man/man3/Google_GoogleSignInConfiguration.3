@@ -1,0 +1,74 @@
+.TH "Google.GoogleSignInConfiguration" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Google.GoogleSignInConfiguration \- Configuration properties for \fBGoogle\fP Sign-In\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBUseGameSignIn\fP = false"
+.br
+.RI "Set to true to use games signin, false for default signin\&. "
+.ti -1c
+.RI "string \fBWebClientId\fP = null"
+.br
+.RI "Web client id associated with this app\&. "
+.ti -1c
+.RI "bool \fBRequestAuthCode\fP = false"
+.br
+.RI "Set to true for getting an auth code when authenticating\&. "
+.ti -1c
+.RI "bool \fBForceTokenRefresh\fP = false"
+.br
+.RI "Set to true to request to reset the refresh token\&. Causes re-consent\&. "
+.ti -1c
+.RI "bool \fBRequestEmail\fP = false"
+.br
+.RI "Request email address, requires consent\&. "
+.ti -1c
+.RI "bool \fBRequestIdToken\fP = false"
+.br
+.RI "Request id token, requires consent\&. "
+.ti -1c
+.RI "bool \fBRequestProfile\fP = false"
+.br
+.RI "Request profile information, requires consent\&. "
+.ti -1c
+.RI "bool \fBHidePopups\fP = false"
+.br
+.RI "Hides popup UIs from games services\&. "
+.ti -1c
+.RI "string \fBAccountName\fP = null"
+.br
+.RI "Account name to use when authenticating, null indicates use default\&. "
+.ti -1c
+.RI "IEnumerable< string > \fBAdditionalScopes\fP = null"
+.br
+.RI "Additional scopes to request, requires consent\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Configuration properties for \fBGoogle\fP Sign-In\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Google\&.GoogleSignInConfiguration\&.HidePopups = false"
+
+.PP
+Hides popup UIs from games services\&. Used with games signin to show or hide the connecting popup UI and to associate an invisible view for other popups\&. This is recommended for VR applications\&. This has no effect if UseGameSignIn is false\&. 
+.SS "bool Google\&.GoogleSignInConfiguration\&.UseGameSignIn = false"
+
+.PP
+Set to true to use games signin, false for default signin\&. Note: The Games configuration is not supported on non-Android platforms\&. If games configuration is used, you must also add the play-services-games libraries and dependencies\&. See the README for more details\&. 
+.SS "string Google\&.GoogleSignInConfiguration\&.WebClientId = null"
+
+.PP
+Web client id associated with this app\&. Required for requesting auth code or id token\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

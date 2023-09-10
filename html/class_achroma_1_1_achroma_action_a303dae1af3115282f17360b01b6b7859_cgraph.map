@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaAction.GetActionByName" name="Achroma.AchromaAction.GetActionByName">
+<area shape="rect" id="Node000001" title="Returns the Action based on its name." alt="" coords="5,5,197,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_control_file.html#a3243e2dc8c5b34c2c482fe608b16c455" title="Returns the Action from the Control File with all its data." alt="" coords="245,5,441,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,23,229,23,229,28,197,28"/>
+</map>

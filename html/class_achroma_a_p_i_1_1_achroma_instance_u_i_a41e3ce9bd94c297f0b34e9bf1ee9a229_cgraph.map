@@ -1,0 +1,7 @@
+<map id="AchromaAPI.AchromaInstanceUI.ShowWarningMessage" name="AchromaAPI.AchromaInstanceUI.ShowWarningMessage">
+<area shape="rect" id="Node000001" title="Shows simple message with a error title and an OK button." alt="" coords="5,5,207,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_manager.html#a9da982e1b6bb0676daa31316949e642a" title="Method to load everything that&#39;s needed to call Achroma plugin features." alt="" coords="255,5,465,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,23,240,23,240,28,207,28"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_parent_controller.html#a9b7cd6b8a910602b1472e2d5be3b8bf8" title="This method loads a scene synchronously and returns a callback when the scene is ended loading." alt="" coords="513,5,739,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="465,23,498,23,498,28,465,28"/>
+</map>

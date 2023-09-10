@@ -1,0 +1,325 @@
+.TH "AchromaAPI.AchromaInstanceStory" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AchromaAPI.AchromaInstanceStory \- Singleton with methods related to the Adventure Mode\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static AchromaStory \fBGetUserAvatarStory\fP ()"
+.br
+.RI "Returns the avatar to the host application\&. "
+.ti -1c
+.RI "static \fBAchromaStoryProgress\fP \fBGetUserStoryProgress\fP (string story)"
+.br
+.RI "Returns the user's progress given a story\&. "
+.ti -1c
+.RI "static int \fBGetUserStoryProgressCount\fP (string story)"
+.br
+.RI "Returns the user's progress count given a story\&. "
+.ti -1c
+.RI "static string \fBGetUserLastStoryStep\fP (string story)"
+.br
+.RI "Returns the user's last step in the story\&. "
+.ti -1c
+.RI "static string \fBGetUserLastUpdateOnStory\fP (string story)"
+.br
+.RI "Returns the user's last update date\&. "
+.ti -1c
+.RI "static void \fBGoBackInStory\fP (string story, UnityAction< bool, string, string > callback)"
+.br
+.RI "Goest back in time in the story mode\&. "
+.ti -1c
+.RI "static void \fBClearStoryProgress\fP (string story, UnityAction< bool, string > callback)"
+.br
+.RI "Clears the progress for a given story\&. This should be called when the story reinitiated\&. "
+.ti -1c
+.RI "static void \fBAddStoryStep\fP (string story, string storyStepId, int character, int relic, UnityAction< bool, string > callback)"
+.br
+.RI "Adds a new step to the story\&. "
+.ti -1c
+.RI "static bool \fBGetUserDebugMode\fP ()"
+.br
+.RI "Returns the if the user has debug mode privilege\&. "
+.ti -1c
+.RI "static void \fBAddStoryShards\fP (int shards, string storyStepId, UnityAction< bool, string > callback)"
+.br
+.RI "Adds shards to the user\&. "
+.ti -1c
+.RI "static int \fBGetStoryRelic\fP (string story)"
+.br
+.RI "Returns the relic chosen by the user for a given story\&. "
+.ti -1c
+.RI "static int \fBGetStoryChracter\fP (string story)"
+.br
+.RI "Returns the character chosen by the user for a given story\&. "
+.ti -1c
+.RI "static void \fBSetStoryCharacterAndRelic\fP (string storyId, int storyCharater, int storyRelic, UnityAction< bool, string >callback)"
+.br
+.RI "Sets the Character and the Relic for a give story\&. "
+.ti -1c
+.RI "static int \fBGetStoryMilestoneValue\fP (string story, string milestone)"
+.br
+.RI "Returns the milestone value for a given story (characters, locations and objects visited) "
+.ti -1c
+.RI "static void \fBUpdateStoryMilestoneValue\fP (string story, string name, int value, UnityAction< string, int > callback)"
+.br
+.RI "Updates the variable inside a story and returns the value to the user\&. "
+.ti -1c
+.RI "static void \fBUpdateStoryVariableValue\fP (string story, string name, int value, UnityAction< string, int > callback)"
+.br
+.RI "Updates the variable inside a story and returns the value to the user\&. "
+.ti -1c
+.RI "static void \fBResetStoryVariable\fP (string story, string name, UnityAction< string > callback)"
+.br
+.RI "Resets the variable for a give story\&. "
+.ti -1c
+.RI "static int \fBGetStoryVariableValue\fP (string story, string variable)"
+.br
+.RI "Returns the variable value for a given story\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Singleton with methods related to the Adventure Mode\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static void AchromaAPI\&.AchromaInstanceStory\&.AddStoryShards (int shards, string storyStepId, UnityAction< bool, string > callback)\fC [static]\fP"
+
+.PP
+Adds shards to the user\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshards\fP Shards to add
+.br
+\fIstoryStepId\fP The story step related to this gain
+.br
+\fIcallback\fP The callback indicating success or failure
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceStory\&.AddStoryStep (string story, string storyStepId, int character, int relic, UnityAction< bool, string > callback)\fC [static]\fP"
+
+.PP
+Adds a new step to the story\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP The related story
+.br
+\fIstoryStepId\fP The step id in question
+.br
+\fIcallback\fP Success/Failure feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceStory\&.ClearStoryProgress (string story, UnityAction< bool, string > callback)\fC [static]\fP"
+
+.PP
+Clears the progress for a given story\&. This should be called when the story reinitiated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP The related story
+.br
+\fIcallback\fP Success/Failure feedback
+.RE
+.PP
+
+.SS "static int AchromaAPI\&.AchromaInstanceStory\&.GetStoryChracter (string story)\fC [static]\fP"
+
+.PP
+Returns the character chosen by the user for a given story\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+the character
+.RE
+.PP
+
+.SS "static int AchromaAPI\&.AchromaInstanceStory\&.GetStoryMilestoneValue (string story, string milestone)\fC [static]\fP"
+
+.PP
+Returns the milestone value for a given story (characters, locations and objects visited) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP The story chapter CH, CC, DR, FL, WW
+.br
+\fImilestone\fP The milestone name that comes from weaver and has to do with what the user has seen/picked/met
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "static int AchromaAPI\&.AchromaInstanceStory\&.GetStoryRelic (string story)\fC [static]\fP"
+
+.PP
+Returns the relic chosen by the user for a given story\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+the relic
+.RE
+.PP
+
+.SS "static int AchromaAPI\&.AchromaInstanceStory\&.GetStoryVariableValue (string story, string variable)\fC [static]\fP"
+
+.PP
+Returns the variable value for a given story\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP The story chapter CH, CC, DR, FL, WW
+.br
+\fIvariable\fP The variable name that comes from weaver
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "static string AchromaAPI\&.AchromaInstanceStory\&.GetUserLastStoryStep (string story)\fC [static]\fP"
+
+.PP
+Returns the user's last step in the story\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP The related story (CH, FL, DR, etc)
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "static \fBAchromaStoryProgress\fP AchromaAPI\&.AchromaInstanceStory\&.GetUserStoryProgress (string story)\fC [static]\fP"
+
+.PP
+Returns the user's progress given a story\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP The related story (CH, FL, DR, etc)
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "static int AchromaAPI\&.AchromaInstanceStory\&.GetUserStoryProgressCount (string story)\fC [static]\fP"
+
+.PP
+Returns the user's progress count given a story\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP The related story (CH, FL, DR, etc)
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceStory\&.GoBackInStory (string story, UnityAction< bool, string, string > callback)\fC [static]\fP"
+
+.PP
+Goest back in time in the story mode\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP The story chapter 
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceStory\&.ResetStoryVariable (string story, string name, UnityAction< string > callback)\fC [static]\fP"
+
+.PP
+Resets the variable for a give story\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP The story chapted
+.br
+\fIname\fP The variable name
+.br
+\fIcallback\fP The success/failure callback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceStory\&.SetStoryCharacterAndRelic (string storyId, int storyCharater, int storyRelic, UnityAction< bool, string > callback)\fC [static]\fP"
+
+.PP
+Sets the Character and the Relic for a give story\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstoryId\fP The story id (CH, DR, FL, WW, CC)
+.br
+\fIstoryCharater\fP The character id selected for the story
+.br
+\fIstoryRelic\fP The item id selected
+.br
+\fIcallback\fP The success/failure feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceStory\&.UpdateStoryMilestoneValue (string story, string name, int value, UnityAction< string, int > callback)\fC [static]\fP"
+
+.PP
+Updates the variable inside a story and returns the value to the user\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP The story chapted
+.br
+\fIname\fP The variable name
+.br
+\fIvalue\fP The value
+.br
+\fIcallback\fP The success/failure callback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceStory\&.UpdateStoryVariableValue (string story, string name, int value, UnityAction< string, int > callback)\fC [static]\fP"
+
+.PP
+Updates the variable inside a story and returns the value to the user\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstory\fP The story chapted
+.br
+\fIname\fP The variable name
+.br
+\fIvalue\fP The value
+.br
+\fIcallback\fP The success/failure callback
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

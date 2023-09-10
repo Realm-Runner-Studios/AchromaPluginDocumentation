@@ -1,0 +1,92 @@
+.TH "Shopify.Unity.SDK.BaseLoader" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.SDK.BaseLoader \- An abstract base that must be defined by classes that will perform network communication\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBShopify\&.Unity\&.SDK\&.UnityLoader\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBaseLoader\fP (string domain, string accessToken, string locale=null)"
+.br
+.ti -1c
+.RI "void \fBLoad\fP (string query, LoaderResponseHandler callback)"
+.br
+.RI "Sends the GraphQL query to the GraphQL endpoint\&. "
+.ti -1c
+.RI "void \fBSetHeader\fP (string key, string value)"
+.br
+.RI "Assigns a custom header field to the loader\&. "
+.ti -1c
+.RI "string \fBSDKVariantName\fP ()"
+.br
+.RI "Returns the loader's X-SDK-Variant header value\&. Required by a BaseLoader implementation to let the server know who is sending the request\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBDomain\fP\fC [get]\fP"
+.br
+.RI "Domain of a \fBShopify\fP store\&. "
+.ti -1c
+.RI "string \fBAccessToken\fP\fC [get]\fP"
+.br
+.RI "Access token used to communicate with a \fBShopify\fP store\&. "
+.ti -1c
+.RI "string \fBLocale\fP\fC [get]\fP"
+.br
+.RI "Locale for translated content of supported types and fields\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+An abstract base that must be defined by classes that will perform network communication\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Shopify\&.Unity\&.SDK\&.BaseLoader\&.Load (string query, LoaderResponseHandler callback)\fC [abstract]\fP"
+
+.PP
+Sends the GraphQL query to the GraphQL endpoint\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIquery\fP a GraphQL query
+.br
+\fIcallback\fP a callback which will receive a response from the GraphQL query
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.SDK\&.BaseLoader\&.SDKVariantName ()\fC [abstract]\fP"
+
+.PP
+Returns the loader's X-SDK-Variant header value\&. Required by a BaseLoader implementation to let the server know who is sending the request\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Identifying name of the loader to be sent to the server using the X-SDK-Variant header\&.
+.RE
+.PP
+
+.SS "void Shopify\&.Unity\&.SDK\&.BaseLoader\&.SetHeader (string key, string value)\fC [abstract]\fP"
+
+.PP
+Assigns a custom header field to the loader\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP Header field name
+.br
+\fIvalue\fP Header field value
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

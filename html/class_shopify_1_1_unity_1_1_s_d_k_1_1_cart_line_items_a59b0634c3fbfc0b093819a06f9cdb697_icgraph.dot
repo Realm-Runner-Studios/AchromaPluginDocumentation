@@ -1,0 +1,11 @@
+digraph "Shopify.Unity.SDK.CartLineItems.AddOrUpdate"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Shopify.Unity.SDK.CartLine\lItems.AddOrUpdate",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Adds or updates a line item using a ProductVariant ."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Shopify.Unity.SDK.CartLine\lItems.AddOrUpdate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items.html#a7283bb4d1e802609c5e91e533158eab2",tooltip="Adds a new line item using a Product and selected options. If an existing line item exists for the va..."];
+}

@@ -1,0 +1,78 @@
+\doxysection{Google.\+Google\+Sign\+In\+Configuration Class Reference}
+\hypertarget{class_google_1_1_google_sign_in_configuration}{}\label{class_google_1_1_google_sign_in_configuration}\index{Google.GoogleSignInConfiguration@{Google.GoogleSignInConfiguration}}
+
+
+Configuration properties for \doxylink{namespace_google}{Google} Sign-\/\+In.  
+
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_google_1_1_google_sign_in_configuration_ad5f948e2b3a70b9dacc646284055bda2}{Use\+Game\+Sign\+In}} = false
+\begin{DoxyCompactList}\small\item\em Set to true to use games signin, false for default signin. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_google_1_1_google_sign_in_configuration_a6cd2d5e7fa3ca0cd57fc7c21233ce9bc}{Web\+Client\+Id}} = null
+\begin{DoxyCompactList}\small\item\em Web client id associated with this app. \end{DoxyCompactList}\item 
+\Hypertarget{class_google_1_1_google_sign_in_configuration_af415be8272b87bdaaf78eb3e9ff2e056}\label{class_google_1_1_google_sign_in_configuration_af415be8272b87bdaaf78eb3e9ff2e056} 
+bool {\bfseries Request\+Auth\+Code} = false
+\begin{DoxyCompactList}\small\item\em Set to true for getting an auth code when authenticating. \end{DoxyCompactList}\item 
+\Hypertarget{class_google_1_1_google_sign_in_configuration_a950a0cf2b22d254acc783469770924f5}\label{class_google_1_1_google_sign_in_configuration_a950a0cf2b22d254acc783469770924f5} 
+bool {\bfseries Force\+Token\+Refresh} = false
+\begin{DoxyCompactList}\small\item\em Set to true to request to reset the refresh token. Causes re-\/consent. \end{DoxyCompactList}\item 
+\Hypertarget{class_google_1_1_google_sign_in_configuration_a55d8042d651e022380045095ae4aa9ae}\label{class_google_1_1_google_sign_in_configuration_a55d8042d651e022380045095ae4aa9ae} 
+bool {\bfseries Request\+Email} = false
+\begin{DoxyCompactList}\small\item\em Request email address, requires consent. \end{DoxyCompactList}\item 
+\Hypertarget{class_google_1_1_google_sign_in_configuration_af02a9bd6c1380b749e5525bbe81906bc}\label{class_google_1_1_google_sign_in_configuration_af02a9bd6c1380b749e5525bbe81906bc} 
+bool {\bfseries Request\+Id\+Token} = false
+\begin{DoxyCompactList}\small\item\em Request id token, requires consent. \end{DoxyCompactList}\item 
+\Hypertarget{class_google_1_1_google_sign_in_configuration_a8f0683beda2c960583eeefa7d16ecc33}\label{class_google_1_1_google_sign_in_configuration_a8f0683beda2c960583eeefa7d16ecc33} 
+bool {\bfseries Request\+Profile} = false
+\begin{DoxyCompactList}\small\item\em Request profile information, requires consent. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_google_1_1_google_sign_in_configuration_a53b8e3aa26b133e8d0846402f1016ec7}{Hide\+Popups}} = false
+\begin{DoxyCompactList}\small\item\em Hides popup UIs from games services. \end{DoxyCompactList}\item 
+\Hypertarget{class_google_1_1_google_sign_in_configuration_a8b35c98ae9e0ff00ddd6b70c84ba3a83}\label{class_google_1_1_google_sign_in_configuration_a8b35c98ae9e0ff00ddd6b70c84ba3a83} 
+string {\bfseries Account\+Name} = null
+\begin{DoxyCompactList}\small\item\em Account name to use when authenticating, null indicates use default. \end{DoxyCompactList}\item 
+\Hypertarget{class_google_1_1_google_sign_in_configuration_a7957a0bd0449ddd53b60c52205d1685f}\label{class_google_1_1_google_sign_in_configuration_a7957a0bd0449ddd53b60c52205d1685f} 
+IEnumerable$<$ string $>$ {\bfseries Additional\+Scopes} = null
+\begin{DoxyCompactList}\small\item\em Additional scopes to request, requires consent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Configuration properties for \doxylink{namespace_google}{Google} Sign-\/\+In. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_google_1_1_google_sign_in_configuration_a53b8e3aa26b133e8d0846402f1016ec7}\label{class_google_1_1_google_sign_in_configuration_a53b8e3aa26b133e8d0846402f1016ec7} 
+\index{Google.GoogleSignInConfiguration@{Google.GoogleSignInConfiguration}!HidePopups@{HidePopups}}
+\index{HidePopups@{HidePopups}!Google.GoogleSignInConfiguration@{Google.GoogleSignInConfiguration}}
+\doxysubsubsection{\texorpdfstring{HidePopups}{HidePopups}}
+{\footnotesize\ttfamily bool Google.\+Google\+Sign\+In\+Configuration.\+Hide\+Popups = false}
+
+
+
+Hides popup UIs from games services. 
+
+Used with games signin to show or hide the connecting popup UI and to associate an invisible view for other popups. This is recommended for VR applications. This has no effect if Use\+Game\+Sign\+In is false. \Hypertarget{class_google_1_1_google_sign_in_configuration_ad5f948e2b3a70b9dacc646284055bda2}\label{class_google_1_1_google_sign_in_configuration_ad5f948e2b3a70b9dacc646284055bda2} 
+\index{Google.GoogleSignInConfiguration@{Google.GoogleSignInConfiguration}!UseGameSignIn@{UseGameSignIn}}
+\index{UseGameSignIn@{UseGameSignIn}!Google.GoogleSignInConfiguration@{Google.GoogleSignInConfiguration}}
+\doxysubsubsection{\texorpdfstring{UseGameSignIn}{UseGameSignIn}}
+{\footnotesize\ttfamily bool Google.\+Google\+Sign\+In\+Configuration.\+Use\+Game\+Sign\+In = false}
+
+
+
+Set to true to use games signin, false for default signin. 
+
+Note\+: The Games configuration is not supported on non-\/\+Android platforms. If games configuration is used, you must also add the play-\/services-\/games libraries and dependencies. See the README for more details. \Hypertarget{class_google_1_1_google_sign_in_configuration_a6cd2d5e7fa3ca0cd57fc7c21233ce9bc}\label{class_google_1_1_google_sign_in_configuration_a6cd2d5e7fa3ca0cd57fc7c21233ce9bc} 
+\index{Google.GoogleSignInConfiguration@{Google.GoogleSignInConfiguration}!WebClientId@{WebClientId}}
+\index{WebClientId@{WebClientId}!Google.GoogleSignInConfiguration@{Google.GoogleSignInConfiguration}}
+\doxysubsubsection{\texorpdfstring{WebClientId}{WebClientId}}
+{\footnotesize\ttfamily string Google.\+Google\+Sign\+In\+Configuration.\+Web\+Client\+Id = null}
+
+
+
+Web client id associated with this app. 
+
+Required for requesting auth code or id token.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Google\+Sign\+In/Google\+Sign\+In\+Configuration.\+cs\end{DoxyCompactItemize}

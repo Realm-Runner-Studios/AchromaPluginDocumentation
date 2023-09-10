@@ -1,0 +1,98 @@
+.TH "Shopify.Unity.MoneyV2" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.MoneyV2 \- A monetary value with currency\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, and ICloneable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMoneyV2\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "decimal \fBamount\fP ()"
+.br
+.RI "Decimal money amount\&. "
+.ti -1c
+.RI "\fBCurrencyCode\fP \fBcurrencyCode\fP ()"
+.br
+.RI "Currency of the money\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A monetary value with currency\&. 
+
+To format currencies, combine this type's amount and currencyCode fields with your client's locale\&.
+.PP
+For example, in JavaScript you could use Intl\&.NumberFormat:
+.PP
+.PP
+.nf
+new Intl\&.NumberFormat(locale, {
+style: 'currency',
+currency: currencyCode
+})\&.format(amount);
+.fi
+.PP
+.PP
+Other formatting libraries include:
+.PP
+.IP "\(bu" 2
+iOS - \fCNumberFormatter\fP
+.IP "\(bu" 2
+Android - \fCNumberFormat\fP
+.IP "\(bu" 2
+PHP - \fCNumberFormatter\fP
+.PP
+.PP
+For a more general solution, the [Unicode CLDR number formatting database] is available with many implementations (such as \fCTwitterCldr\fP)\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.MoneyV2\&.MoneyV2 (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for MoneyV2
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

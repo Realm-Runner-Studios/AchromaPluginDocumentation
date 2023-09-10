@@ -1,0 +1,108 @@
+.TH "Shopify.Unity.ProductConnection" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.ProductConnection \- An auto-generated type for paginating through multiple Products\&. \&. ProductConnection can be cast to \fCList<Product>\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and IEnumerable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProductConnection\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "IEnumerator \fBGetEnumerator\fP ()"
+.br
+.ti -1c
+.RI "List< \fBProductEdge\fP > \fBedges\fP ()"
+.br
+.RI "A list of edges\&. "
+.ti -1c
+.RI "\fBPageInfo\fP \fBpageInfo\fP ()"
+.br
+.RI "Information to aid in pagination\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.ti -1c
+.RI "void \fBAddFromConnection\fP (\fBProductConnection\fP connection)"
+.br
+.RI "This is a utility function that allows you to append newly queried data from a connection into this one\&. The passed in Connection will be appended into this Connection\&. The \fCedges\fP will receive all new \fCnodes\fP, and both the \fCcursors\fP and \fCpageInfo\fP will be updated based on the passed Connection\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBoperator List< Product >\fP (\fBProductConnection\fP connection)"
+.br
+.RI "Adds the ability to cast ProductConnection to \fCList<Product>\fP\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "List< \fBProduct\fP > \fBNodes\fP"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+An auto-generated type for paginating through multiple Products\&. \&. ProductConnection can be cast to \fCList<Product>\fP\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.ProductConnection\&.ProductConnection (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for ProductConnection
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Shopify\&.Unity\&.ProductConnection\&.AddFromConnection (\fBProductConnection\fP connection)"
+
+.PP
+This is a utility function that allows you to append newly queried data from a connection into this one\&. The passed in Connection will be appended into this Connection\&. The \fCedges\fP will receive all new \fCnodes\fP, and both the \fCcursors\fP and \fCpageInfo\fP will be updated based on the passed Connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIconnection\fP response
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

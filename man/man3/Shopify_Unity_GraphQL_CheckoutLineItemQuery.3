@@ -1,0 +1,48 @@
+.TH "Shopify.Unity.GraphQL.CheckoutLineItemQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.CheckoutLineItemQuery \- A single line item in the checkout, grouped by variant and attributes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCheckoutLineItemQuery\fP (StringBuilder query)"
+.br
+.RI "CheckoutLineItemQuery is used to build queries\&. Typically CheckoutLineItemQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemQuery\fP \fBcustomAttributes\fP (AttributeDelegate buildQuery)"
+.br
+.RI "Extra information in the form of an array of Key-Value pairs about the line item\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemQuery\fP \fBdiscountAllocations\fP (DiscountAllocationDelegate buildQuery)"
+.br
+.RI "The discounts that have been allocated onto the checkout line item by discount applications\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemQuery\fP \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemQuery\fP \fBquantity\fP ()"
+.br
+.RI "The quantity of the line item\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemQuery\fP \fBtitle\fP ()"
+.br
+.RI "Title of the line item\&. Defaults to the product's title\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemQuery\fP \fBvariant\fP (ProductVariantDelegate buildQuery)"
+.br
+.RI "Product variant of the line item\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A single line item in the checkout, grouped by variant and attributes\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

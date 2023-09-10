@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaDatabaseController.OnAppleError" name="Achroma.AchromaDatabaseController.OnAppleError">
+<area shape="rect" id="Node000001" title="This is called if something wrong happens during Apple sign in." alt="" coords="5,5,250,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_u_i_controller.html#a4f97bc2bbf977d72c33ab1e96d288158" title="This method cancel and closes the loading screen." alt="" coords="298,5,500,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,23,283,23,283,28,250,28"/>
+</map>

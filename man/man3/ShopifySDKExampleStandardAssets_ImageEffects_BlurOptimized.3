@@ -1,0 +1,118 @@
+.TH "ShopifySDKExampleStandardAssets.ImageEffects.BlurOptimized" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ShopifySDKExampleStandardAssets.ImageEffects.BlurOptimized
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopifySDKExampleStandardAssets\&.ImageEffects\&.PostEffectsBase\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBBlurType\fP { \fBStandardGauss\fP = 0, \fBSgxGauss\fP = 1 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override bool \fBCheckResources\fP ()"
+.br
+.ti -1c
+.RI "void \fBOnDisable\fP ()"
+.br
+.ti -1c
+.RI "void \fBOnRenderImage\fP (RenderTexture source, RenderTexture destination)"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBShopifySDKExampleStandardAssets\&.ImageEffects\&.PostEffectsBase\fP
+.in +1c
+.ti -1c
+.RI "bool \fBDx11Support\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBdownsample\fP = 1"
+.br
+.ti -1c
+.RI "float \fBblurSize\fP = 3\&.0f"
+.br
+.ti -1c
+.RI "int \fBblurIterations\fP = 2"
+.br
+.ti -1c
+.RI "Color \fBoverlayColor\fP"
+.br
+.ti -1c
+.RI "float \fBoverlayAmount\fP = 0\&.3f"
+.br
+.ti -1c
+.RI "BlurType \fBblurType\fP = BlurType\&.StandardGauss"
+.br
+.ti -1c
+.RI "Shader \fBblurShader\fP = null"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopifySDKExampleStandardAssets\&.ImageEffects\&.PostEffectsBase\fP
+.in +1c
+.ti -1c
+.RI "Material \fBCheckShaderAndCreateMaterial\fP (Shader s, Material m2Create)"
+.br
+.ti -1c
+.RI "Material \fBCreateMaterial\fP (Shader s, Material m2Create)"
+.br
+.ti -1c
+.RI "bool \fBCheckSupport\fP ()"
+.br
+.ti -1c
+.RI "void \fBStart\fP ()"
+.br
+.ti -1c
+.RI "bool \fBCheckSupport\fP (bool needDepth)"
+.br
+.ti -1c
+.RI "bool \fBCheckSupport\fP (bool needDepth, bool needHdr)"
+.br
+.ti -1c
+.RI "void \fBReportAutoDisable\fP ()"
+.br
+.ti -1c
+.RI "void \fBNotSupported\fP ()"
+.br
+.ti -1c
+.RI "void \fBDrawBorder\fP (RenderTexture dest, Material material)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopifySDKExampleStandardAssets\&.ImageEffects\&.PostEffectsBase\fP
+.in +1c
+.ti -1c
+.RI "bool \fBsupportHDRTextures\fP = true"
+.br
+.ti -1c
+.RI "bool \fBsupportDX11\fP = false"
+.br
+.ti -1c
+.RI "bool \fBisSupported\fP = true"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "override bool ShopifySDKExampleStandardAssets\&.ImageEffects\&.BlurOptimized\&.CheckResources ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBShopifySDKExampleStandardAssets\&.ImageEffects\&.PostEffectsBase\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

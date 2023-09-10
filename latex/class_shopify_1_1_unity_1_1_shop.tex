@@ -1,0 +1,275 @@
+\doxysection{Shopify.\+Unity.\+Shop Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_shop}{}\label{class_shopify_1_1_unity_1_1_shop}\index{Shopify.Unity.Shop@{Shopify.Unity.Shop}}
+
+
+Shop represents a collection of the general settings and information about the shop.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Shop\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Shop\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_a4003500657aa7671bde15d3bd7014d6a}{Shop}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_article_connection}{Article\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_ad6f1ecb810958f5db7feeaf303711897}{articles}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop\textquotesingle{} articles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_blog_connection}{Blog\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_acab558658f38c597fa080fff12e016f6}{blogs}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop\textquotesingle{} blogs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection}{Collection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_ad9a3c4b797ad563d95e85e0e507faacc}{collection\+By\+Handle}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a collection by its handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection_connection}{Collection\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_afb7d5a2547ef853eed133cd2adb52f94}{collections}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop’s collections. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_ab8677e2402ff54feeb3f94761ff9d2a8}{currency\+Code}} ()
+\begin{DoxyCompactList}\small\item\em The three-\/letter code for the currency that the shop accepts. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a9722d18f9815d3a09e4e7690a3a93da9}\label{class_shopify_1_1_unity_1_1_shop_a9722d18f9815d3a09e4e7690a3a93da9} 
+string {\bfseries description} ()
+\begin{DoxyCompactList}\small\item\em A description of the shop. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a63520357c8f2fa2201da130a60dc6c27}\label{class_shopify_1_1_unity_1_1_shop_a63520357c8f2fa2201da130a60dc6c27} 
+string {\bfseries money\+Format} ()
+\begin{DoxyCompactList}\small\item\em A string representing the way currency is formatted when the currency isn’t specified. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a9ccc17d5dc214321351ba037d39373bd}\label{class_shopify_1_1_unity_1_1_shop_a9ccc17d5dc214321351ba037d39373bd} 
+string {\bfseries name} ()
+\begin{DoxyCompactList}\small\item\em The shop’s name. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_ad7c284e40ced86e80318c7af7b136712}\label{class_shopify_1_1_unity_1_1_shop_ad7c284e40ced86e80318c7af7b136712} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_payment_settings}{Payment\+Settings}} {\bfseries payment\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Settings related to payments. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a3eb845d2c5fbdeedbfe6f421c9abd875}\label{class_shopify_1_1_unity_1_1_shop_a3eb845d2c5fbdeedbfe6f421c9abd875} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_domain}{Domain}} {\bfseries primary\+Domain} ()
+\begin{DoxyCompactList}\small\item\em The shop’s primary domain. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a94a07188f4515f293e2f3605c8b709c8}\label{class_shopify_1_1_unity_1_1_shop_a94a07188f4515f293e2f3605c8b709c8} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_policy}{Shop\+Policy}} {\bfseries privacy\+Policy} ()
+\begin{DoxyCompactList}\small\item\em The shop’s privacy policy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_a3070f81cf799988e21f0b61515765f1d}{product\+By\+Handle}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a product by its handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_string_connection}{String\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_aaa879f4c910a8f9aa8bd0347faadc502}{product\+Tags}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em A list of tags that have been added to products. Additional access scope required\+: unauthenticated\+\_\+read\+\_\+product\+\_\+tags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_string_connection}{String\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_a95694336444b96ae6fe6bf195b3c74ea}{product\+Types}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop’s product types. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_connection}{Product\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_abab66dbf18ca648f70d535fca14d4a6d}{products}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the shop’s products. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a0a3bbcd1285ce77f61e88db168a48c16}\label{class_shopify_1_1_unity_1_1_shop_a0a3bbcd1285ce77f61e88db168a48c16} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_policy}{Shop\+Policy}} {\bfseries refund\+Policy} ()
+\begin{DoxyCompactList}\small\item\em The shop’s refund policy. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a2d00113759a3552f346558c8a42841c1}\label{class_shopify_1_1_unity_1_1_shop_a2d00113759a3552f346558c8a42841c1} 
+List$<$ \mbox{\hyperlink{namespace_shopify_1_1_unity_a4ac2ce915c4dff60a384bb28448ea8c7}{Country\+Code}} $>$ {\bfseries ships\+To\+Countries} ()
+\begin{DoxyCompactList}\small\item\em Countries that the shop ships to. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_a08c9beca42775f8b4f018a197627f004}{shopify\+Payments\+Account\+Id}} ()
+\begin{DoxyCompactList}\small\item\em The shop’s \doxylink{namespace_shopify}{Shopify} Payments account id. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a1a14ac64623dd531594880428da7b4a1}\label{class_shopify_1_1_unity_1_1_shop_a1a14ac64623dd531594880428da7b4a1} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_policy}{Shop\+Policy}} {\bfseries terms\+Of\+Service} ()
+\begin{DoxyCompactList}\small\item\em The shop’s terms of service. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a338969026c3d117395e388178e0638b2}\label{class_shopify_1_1_unity_1_1_shop_a338969026c3d117395e388178e0638b2} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Shop represents a collection of the general settings and information about the shop. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a4003500657aa7671bde15d3bd7014d6a}\label{class_shopify_1_1_unity_1_1_shop_a4003500657aa7671bde15d3bd7014d6a} 
+\index{Shopify.Unity.Shop@{Shopify.Unity.Shop}!Shop@{Shop}}
+\index{Shop@{Shop}!Shopify.Unity.Shop@{Shopify.Unity.Shop}}
+\doxysubsubsection{\texorpdfstring{Shop()}{Shop()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Shop.\+Shop (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Shop\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_ad6f1ecb810958f5db7feeaf303711897}\label{class_shopify_1_1_unity_1_1_shop_ad6f1ecb810958f5db7feeaf303711897} 
+\index{Shopify.Unity.Shop@{Shopify.Unity.Shop}!articles@{articles}}
+\index{articles@{articles}!Shopify.Unity.Shop@{Shopify.Unity.Shop}}
+\doxysubsubsection{\texorpdfstring{articles()}{articles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_article_connection}{Article\+Connection}} Shopify.\+Unity.\+Shop.\+articles (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop\textquotesingle{} articles. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000151}{Deprecated}}]Use {\ttfamily Query\+Root.\+articles} instead. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_acab558658f38c597fa080fff12e016f6}\label{class_shopify_1_1_unity_1_1_shop_acab558658f38c597fa080fff12e016f6} 
+\index{Shopify.Unity.Shop@{Shopify.Unity.Shop}!blogs@{blogs}}
+\index{blogs@{blogs}!Shopify.Unity.Shop@{Shopify.Unity.Shop}}
+\doxysubsubsection{\texorpdfstring{blogs()}{blogs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_blog_connection}{Blog\+Connection}} Shopify.\+Unity.\+Shop.\+blogs (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop\textquotesingle{} blogs. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000152}{Deprecated}}]Use {\ttfamily Query\+Root.\+blogs} instead. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_ad9a3c4b797ad563d95e85e0e507faacc}\label{class_shopify_1_1_unity_1_1_shop_ad9a3c4b797ad563d95e85e0e507faacc} 
+\index{Shopify.Unity.Shop@{Shopify.Unity.Shop}!collectionByHandle@{collectionByHandle}}
+\index{collectionByHandle@{collectionByHandle}!Shopify.Unity.Shop@{Shopify.Unity.Shop}}
+\doxysubsubsection{\texorpdfstring{collectionByHandle()}{collectionByHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection}{Collection}} Shopify.\+Unity.\+Shop.\+collection\+By\+Handle (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a collection by its handle. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000153}{Deprecated}}]Use {\ttfamily Query\+Root.\+collection\+By\+Handle} instead. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_afb7d5a2547ef853eed133cd2adb52f94}\label{class_shopify_1_1_unity_1_1_shop_afb7d5a2547ef853eed133cd2adb52f94} 
+\index{Shopify.Unity.Shop@{Shopify.Unity.Shop}!collections@{collections}}
+\index{collections@{collections}!Shopify.Unity.Shop@{Shopify.Unity.Shop}}
+\doxysubsubsection{\texorpdfstring{collections()}{collections()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection_connection}{Collection\+Connection}} Shopify.\+Unity.\+Shop.\+collections (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop’s collections. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000154}{Deprecated}}]Use {\ttfamily Query\+Root.\+collections} instead. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_ab8677e2402ff54feeb3f94761ff9d2a8}\label{class_shopify_1_1_unity_1_1_shop_ab8677e2402ff54feeb3f94761ff9d2a8} 
+\index{Shopify.Unity.Shop@{Shopify.Unity.Shop}!currencyCode@{currencyCode}}
+\index{currencyCode@{currencyCode}!Shopify.Unity.Shop@{Shopify.Unity.Shop}}
+\doxysubsubsection{\texorpdfstring{currencyCode()}{currencyCode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} Shopify.\+Unity.\+Shop.\+currency\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The three-\/letter code for the currency that the shop accepts. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000155}{Deprecated}}]Use {\ttfamily payment\+Settings} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a3070f81cf799988e21f0b61515765f1d}\label{class_shopify_1_1_unity_1_1_shop_a3070f81cf799988e21f0b61515765f1d} 
+\index{Shopify.Unity.Shop@{Shopify.Unity.Shop}!productByHandle@{productByHandle}}
+\index{productByHandle@{productByHandle}!Shopify.Unity.Shop@{Shopify.Unity.Shop}}
+\doxysubsubsection{\texorpdfstring{productByHandle()}{productByHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}} Shopify.\+Unity.\+Shop.\+product\+By\+Handle (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a product by its handle. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000156}{Deprecated}}]Use {\ttfamily Query\+Root.\+product\+By\+Handle} instead. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_abab66dbf18ca648f70d535fca14d4a6d}\label{class_shopify_1_1_unity_1_1_shop_abab66dbf18ca648f70d535fca14d4a6d} 
+\index{Shopify.Unity.Shop@{Shopify.Unity.Shop}!products@{products}}
+\index{products@{products}!Shopify.Unity.Shop@{Shopify.Unity.Shop}}
+\doxysubsubsection{\texorpdfstring{products()}{products()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_connection}{Product\+Connection}} Shopify.\+Unity.\+Shop.\+products (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop’s products. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000159}{Deprecated}}]Use {\ttfamily Query\+Root.\+products} instead. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_aaa879f4c910a8f9aa8bd0347faadc502}\label{class_shopify_1_1_unity_1_1_shop_aaa879f4c910a8f9aa8bd0347faadc502} 
+\index{Shopify.Unity.Shop@{Shopify.Unity.Shop}!productTags@{productTags}}
+\index{productTags@{productTags}!Shopify.Unity.Shop@{Shopify.Unity.Shop}}
+\doxysubsubsection{\texorpdfstring{productTags()}{productTags()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_string_connection}{String\+Connection}} Shopify.\+Unity.\+Shop.\+product\+Tags (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+A list of tags that have been added to products. Additional access scope required\+: unauthenticated\+\_\+read\+\_\+product\+\_\+tags. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000157}{Deprecated}}]Use {\ttfamily Query\+Root.\+product\+Tags} instead. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a95694336444b96ae6fe6bf195b3c74ea}\label{class_shopify_1_1_unity_1_1_shop_a95694336444b96ae6fe6bf195b3c74ea} 
+\index{Shopify.Unity.Shop@{Shopify.Unity.Shop}!productTypes@{productTypes}}
+\index{productTypes@{productTypes}!Shopify.Unity.Shop@{Shopify.Unity.Shop}}
+\doxysubsubsection{\texorpdfstring{productTypes()}{productTypes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_string_connection}{String\+Connection}} Shopify.\+Unity.\+Shop.\+product\+Types (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the shop’s product types. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000158}{Deprecated}}]Use {\ttfamily Query\+Root.\+product\+Types} instead. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_a08c9beca42775f8b4f018a197627f004}\label{class_shopify_1_1_unity_1_1_shop_a08c9beca42775f8b4f018a197627f004} 
+\index{Shopify.Unity.Shop@{Shopify.Unity.Shop}!shopifyPaymentsAccountId@{shopifyPaymentsAccountId}}
+\index{shopifyPaymentsAccountId@{shopifyPaymentsAccountId}!Shopify.Unity.Shop@{Shopify.Unity.Shop}}
+\doxysubsubsection{\texorpdfstring{shopifyPaymentsAccountId()}{shopifyPaymentsAccountId()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Shop.\+shopify\+Payments\+Account\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The shop’s \doxylink{namespace_shopify}{Shopify} Payments account id. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000160}{Deprecated}}]Use {\ttfamily payment\+Settings} instead \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Shop.\+cs\end{DoxyCompactItemize}

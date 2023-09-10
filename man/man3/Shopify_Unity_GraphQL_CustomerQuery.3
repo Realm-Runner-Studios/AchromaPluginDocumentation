@@ -1,0 +1,127 @@
+.TH "Shopify.Unity.GraphQL.CustomerQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.CustomerQuery \- A customer represents a customer account with the shop\&. Customer accounts store contact information for the customer, saving logged-in customers the trouble of having to provide it at every checkout\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCustomerQuery\fP (StringBuilder query)"
+.br
+.RI "CustomerQuery is used to build queries\&. Typically CustomerQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBacceptsMarketing\fP ()"
+.br
+.RI "Indicates whether the customer has consented to be sent marketing material via email\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBaddresses\fP (MailingAddressConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "A list of addresses for the customer\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBcreatedAt\fP ()"
+.br
+.RI "The date and time when the customer was created\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBdefaultAddress\fP (MailingAddressDelegate buildQuery)"
+.br
+.RI "The customer’s default address\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBdisplayName\fP ()"
+.br
+.RI "The customer’s name, email or phone number\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBemail\fP ()"
+.br
+.RI "The customer’s email address\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBfirstName\fP ()"
+.br
+.RI "The customer’s first name\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBid\fP ()"
+.br
+.RI "A unique identifier for the customer\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBlastIncompleteCheckout\fP (CheckoutDelegate buildQuery)"
+.br
+.RI "The customer's most recently updated, incomplete checkout\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBlastName\fP ()"
+.br
+.RI "The customer’s last name\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBorders\fP (OrderConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBOrderSortKeys\fP? sortKey=null, string queryValue=null, string alias=null)"
+.br
+.RI "The orders associated with the customer\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBphone\fP ()"
+.br
+.RI "The customer’s phone number\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBtags\fP ()"
+.br
+.RI "A comma separated list of tags that have been added to the customer\&. Additional access scope required: unauthenticated_read_customer_tags\&. "
+.ti -1c
+.RI "\fBCustomerQuery\fP \fBupdatedAt\fP ()"
+.br
+.RI "The date and time when the customer information was updated\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A customer represents a customer account with the shop\&. Customer accounts store contact information for the customer, saving logged-in customers the trouble of having to provide it at every checkout\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCustomerQuery\fP Shopify\&.Unity\&.GraphQL\&.CustomerQuery\&.addresses (MailingAddressConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+A list of addresses for the customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBCustomerQuery\fP Shopify\&.Unity\&.GraphQL\&.CustomerQuery\&.orders (OrderConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBOrderSortKeys\fP? sortKey = \fCnull\fP, string queryValue = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+The orders associated with the customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.br
+\fIquery\fP Supported filter parameters:
+.IP "\(bu" 2
+\fCprocessed_at\fP
+.PP
+.RE
+.PP
+See the detailed \fCsearch syntax\fP for more information about using filters\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

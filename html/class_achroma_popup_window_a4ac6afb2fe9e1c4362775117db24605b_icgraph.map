@@ -1,0 +1,11 @@
+<map id="AchromaPopupWindow.FadeOut" name="AchromaPopupWindow.FadeOut">
+<area shape="rect" id="Node000001" title="The Coroutine that will move the UI element down." alt="" coords="791,35,1001,60"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_u_i_controller.html#ab83448b3151bee2d1b3cf828e0ff8100" title="This method will close the UI with Login/Register information." alt="" coords="541,27,743,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="776,50,744,50,744,45,776,45"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_u_i_controller.html#a8d6ba5e26f1bba2bb00cc8c425172d98" title="Exposed method to login." alt="" coords="291,27,493,68"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="526,50,493,50,493,45,526,45"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_home_button.html#a867a85f3bee83771b4a861a7ec6ad0f3" title="Opens the webview with the user&#39;s profile." alt="" coords="5,5,243,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="276,37,243,34,243,29,276,32"/>
+<area shape="rect" id="Node000005" href="$class_achroma_a_p_i_1_1_achroma_instance_auth.html#a75fddeef864f3b4432fae8fd9cab5459" title="API method to log in. This will load the necessary scenes and call login." alt="" coords="23,55,225,96"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="276,62,226,68,225,62,276,57"/>
+</map>

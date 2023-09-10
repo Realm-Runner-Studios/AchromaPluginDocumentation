@@ -1,0 +1,10 @@
+<map id="Achroma.AchromaUIController.AddNotification" name="Achroma.AchromaUIController.AddNotification">
+<area shape="rect" id="Node000001" title="Shows a notification on top of the screen with a message." alt="" coords="291,71,493,111"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="436,58,420,52,392,49,366,51,350,56,344,62,347,69,342,71,339,61,348,52,365,46,392,44,421,47,438,53"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_u_i.html#a1ccf60994d29191786c4659a4bc9c177" title="Sends a notification on top of the screen with more paramenters, like color and a sprite reference,..." alt="" coords="23,5,225,46"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="291,69,210,49,211,44,292,64"/>
+<area shape="rect" id="Node000003" href="$class_achroma_a_p_i_1_1_achroma_instance_u_i.html#abadf90faa9529ccf623285305e7b97c6" title="Sends a notification on top of the screen with more paramenters, like color and a sprite reference,..." alt="" coords="23,71,225,111"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="276,94,225,94,225,88,276,88"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_home_button.html#a867a85f3bee83771b4a861a7ec6ad0f3" title="Opens the webview with the user&#39;s profile." alt="" coords="5,136,243,161"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="280,118,243,126,188,138,187,132,242,120,279,112"/>
+</map>

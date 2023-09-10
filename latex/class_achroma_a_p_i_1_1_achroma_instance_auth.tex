@@ -1,0 +1,79 @@
+\doxysection{Achroma\+API.\+Achroma\+Instance\+Auth Class Reference}
+\hypertarget{class_achroma_a_p_i_1_1_achroma_instance_auth}{}\label{class_achroma_a_p_i_1_1_achroma_instance_auth}\index{AchromaAPI.AchromaInstanceAuth@{AchromaAPI.AchromaInstanceAuth}}
+
+
+Singleton to sign in to \doxylink{namespace_achroma}{Achroma} Database.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_auth_a75fddeef864f3b4432fae8fd9cab5459}{Sign\+In}} (bool automatic, bool show\+Home\+Button=true, Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ user\+Data\+Changed=null, string scene\+To\+Reload="{}"{}, \mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button.\+Achroma\+Home\+Button\+Option}}\mbox{[}$\,$\mbox{]} options=null, Unity\+Action$<$ bool, string $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em API method to log in. This will load the necessary scenes and call login. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_auth_a1c8b298fc10795af23847a7d1996340a}{Sign\+Out}} (Unity\+Action callback=null)
+\begin{DoxyCompactList}\small\item\em API method to log out of Firebase. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton to sign in to \doxylink{namespace_achroma}{Achroma} Database. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_auth_a75fddeef864f3b4432fae8fd9cab5459}\label{class_achroma_a_p_i_1_1_achroma_instance_auth_a75fddeef864f3b4432fae8fd9cab5459} 
+\index{AchromaAPI.AchromaInstanceAuth@{AchromaAPI.AchromaInstanceAuth}!SignIn@{SignIn}}
+\index{SignIn@{SignIn}!AchromaAPI.AchromaInstanceAuth@{AchromaAPI.AchromaInstanceAuth}}
+\doxysubsubsection{\texorpdfstring{SignIn()}{SignIn()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Auth.\+Sign\+In (\begin{DoxyParamCaption}\item[{bool}]{automatic,  }\item[{bool}]{show\+Home\+Button = {\ttfamily true},  }\item[{Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$}]{user\+Data\+Changed = {\ttfamily null},  }\item[{string}]{scene\+To\+Reload = {\ttfamily "{}"{}},  }\item[{\mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button\+::\+Achroma\+Home\+Button\+Option}}\mbox{[}$\,$\mbox{]}}]{options = {\ttfamily null},  }\item[{Unity\+Action$<$ bool, string $>$}]{callback = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+API method to log in. This will load the necessary scenes and call login. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em automatic} & If the user has already logged in before, this will skip the login screen and use what\textquotesingle{}s in the Player\+Prefs to log in\\
+\hline
+{\em show\+Home\+Button} & If true, will show the home button as much as possible\\
+\hline
+{\em user\+Data\+Changed} & Reference to a method that will be triggered every time the user data is modified in the database\\
+\hline
+{\em scene\+To\+Reload} & The name of the scene to be reloaded if something goes wrong in checking for a version on Remote Config\\
+\hline
+{\em mode} & The home button mode indicates what options will be seen alongside the home button when the home button is shown\\
+\hline
+{\em callback} & The callback function that\textquotesingle{}s called when the sign in process finishes\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_auth_a75fddeef864f3b4432fae8fd9cab5459_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_auth_a1c8b298fc10795af23847a7d1996340a}\label{class_achroma_a_p_i_1_1_achroma_instance_auth_a1c8b298fc10795af23847a7d1996340a} 
+\index{AchromaAPI.AchromaInstanceAuth@{AchromaAPI.AchromaInstanceAuth}!SignOut@{SignOut}}
+\index{SignOut@{SignOut}!AchromaAPI.AchromaInstanceAuth@{AchromaAPI.AchromaInstanceAuth}}
+\doxysubsubsection{\texorpdfstring{SignOut()}{SignOut()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Auth.\+Sign\+Out (\begin{DoxyParamCaption}\item[{Unity\+Action}]{callback = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+API method to log out of Firebase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & Response after sign out is done\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_auth_a1c8b298fc10795af23847a7d1996340a_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Sign\+In.\+cs\end{DoxyCompactItemize}

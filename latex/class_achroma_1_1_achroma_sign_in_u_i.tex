@@ -1,0 +1,186 @@
+\doxysection{Achroma.\+Achroma\+Sign\+In\+UI Class Reference}
+\hypertarget{class_achroma_1_1_achroma_sign_in_u_i}{}\label{class_achroma_1_1_achroma_sign_in_u_i}\index{Achroma.AchromaSignInUI@{Achroma.AchromaSignInUI}}
+
+
+Inheritance diagram for Achroma.\+Achroma\+Sign\+In\+UI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_achroma_1_1_achroma_sign_in_u_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Achroma.\+Achroma\+Sign\+In\+UI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_sign_in_u_i__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_sign_in_u_i_a21cceb3c00842102faa86f7957e5a703}{Process\+Apple\+Sign\+In}} (\mbox{\hyperlink{struct_user_info}{User\+Info}} user\+Info)
+\begin{DoxyCompactList}\small\item\em This method calls the login method using Apple. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a0f0a8b3ffee770e8de0c037ea9dff6a7}\label{class_achroma_1_1_achroma_sign_in_u_i_a0f0a8b3ffee770e8de0c037ea9dff6a7} 
+void {\bfseries Sign\+In\+With\+Apple} ()
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a069c906599ebc05273e27eaa4f16dc9c}\label{class_achroma_1_1_achroma_sign_in_u_i_a069c906599ebc05273e27eaa4f16dc9c} 
+void {\bfseries Email\+Sign\+In\+Manual} ()
+\begin{DoxyCompactList}\small\item\em Exposed method to manually sign in by email. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a6f3163791d675c4f2fd6a1a797de0f07}\label{class_achroma_1_1_achroma_sign_in_u_i_a6f3163791d675c4f2fd6a1a797de0f07} 
+void {\bfseries Forgot\+Password} ()
+\begin{DoxyCompactList}\small\item\em This method will ask for another password. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a6c40c9dada6c223b08cc1a558927307c}\label{class_achroma_1_1_achroma_sign_in_u_i_a6c40c9dada6c223b08cc1a558927307c} 
+void {\bfseries Sign\+Up} ()
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_sign_in_u_i_a891240c831e125ade753347f9e47e467}{Process\+Gogle\+Sign\+In}} (string google\+Access\+Token, string google\+Token\+Id)
+\begin{DoxyCompactList}\small\item\em This method calls the login method using Apple. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a640c445dd71b4df0795f8e352b1f4d17}\label{class_achroma_1_1_achroma_sign_in_u_i_a640c445dd71b4df0795f8e352b1f4d17} 
+void {\bfseries Sign\+In\+With\+Google} ()
+\begin{DoxyCompactList}\small\item\em Starts the Sign in process with Google. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a84df5dd0f80cc231d74771fddb002dde}\label{class_achroma_1_1_achroma_sign_in_u_i_a84df5dd0f80cc231d74771fddb002dde} 
+void {\bfseries Show\+Sign\+In\+Section} ()
+\begin{DoxyCompactList}\small\item\em This method will show the Sign In section when the user is not new. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_af3e3418d8e425e26bb29e96909f6d781}\label{class_achroma_1_1_achroma_sign_in_u_i_af3e3418d8e425e26bb29e96909f6d781} 
+void {\bfseries Show\+Sign\+Up\+Section} ()
+\begin{DoxyCompactList}\small\item\em This method will show the Sign Up section when the user is new. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_achroma_1_1_achroma_sign_in_u_i_ac85785f5ad5e715ccc72765e970b3b5c}{Update}} ()
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_ac88c4d01e08ae0750bdfa4260a11e08f}\label{class_achroma_1_1_achroma_sign_in_u_i_ac88c4d01e08ae0750bdfa4260a11e08f} 
+void {\bfseries Sign\+In\+Automatically} (Unity\+Action$<$ bool, string $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em This method will be called if the user is logging again after successfully logging in before. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_achroma_popup_window}{Achroma\+Popup\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Hide} ()
+\begin{DoxyCompactList}\small\item\em This will set the element position to the bottom, making it disappear from the screen. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_achroma_popup_window_a3cb1fb3d0c913c93434876bbea59f19b}{Fade\+In}} (Unity\+Action result=null)
+\begin{DoxyCompactList}\small\item\em The method that will move the UI element up. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_achroma_popup_window_a4ac6afb2fe9e1c4362775117db24605b}{Fade\+Out}} (Unity\+Action result=null)
+\begin{DoxyCompactList}\small\item\em The Coroutine that will move the UI element down. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_adc35d5504aace5341075005d57d4286d}\label{class_achroma_1_1_achroma_sign_in_u_i_adc35d5504aace5341075005d57d4286d} 
+bool {\bfseries is\+Logging} = false
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a4c2812ca502443a5569542a121be9b1c}\label{class_achroma_1_1_achroma_sign_in_u_i_a4c2812ca502443a5569542a121be9b1c} 
+Game\+Object {\bfseries close\+Button}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_aa430589a8359f75cf757df1ba0c0a1a6}\label{class_achroma_1_1_achroma_sign_in_u_i_aa430589a8359f75cf757df1ba0c0a1a6} 
+Button {\bfseries sign\+In\+Button}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a89b4eeafcbcd28919867d47a3dc5401f}\label{class_achroma_1_1_achroma_sign_in_u_i_a89b4eeafcbcd28919867d47a3dc5401f} 
+Button {\bfseries sign\+Up\+Button}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a3426c0f32c7d79a12e57dd1f23c31c9f}\label{class_achroma_1_1_achroma_sign_in_u_i_a3426c0f32c7d79a12e57dd1f23c31c9f} 
+Game\+Object {\bfseries sign\+In\+Section}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_ab267c71831920f18ec3be765007467bb}\label{class_achroma_1_1_achroma_sign_in_u_i_ab267c71831920f18ec3be765007467bb} 
+Game\+Object {\bfseries sign\+Up\+Section}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a94136701e71676021930d217b6482cfb}\label{class_achroma_1_1_achroma_sign_in_u_i_a94136701e71676021930d217b6482cfb} 
+\mbox{\hyperlink{class_achroma_form_field}{Achroma\+Form\+Field}} {\bfseries email\+Login\+Field}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a8527af35e513552859fdf17652541eca}\label{class_achroma_1_1_achroma_sign_in_u_i_a8527af35e513552859fdf17652541eca} 
+\mbox{\hyperlink{class_achroma_form_field}{Achroma\+Form\+Field}} {\bfseries password\+Login\+Field}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_acda1c84dc699e4cc22de0c977cd4d909}\label{class_achroma_1_1_achroma_sign_in_u_i_acda1c84dc699e4cc22de0c977cd4d909} 
+Game\+Object {\bfseries sign\+In\+Apple}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a8da522dcb211c06f8c45d21a33c37af4}\label{class_achroma_1_1_achroma_sign_in_u_i_a8da522dcb211c06f8c45d21a33c37af4} 
+Game\+Object {\bfseries sign\+In\+Google}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a256bf29065074a4f93bb84a95a1a57eb}\label{class_achroma_1_1_achroma_sign_in_u_i_a256bf29065074a4f93bb84a95a1a57eb} 
+\mbox{\hyperlink{class_achroma_form_field}{Achroma\+Form\+Field}} {\bfseries username\+Register\+Field}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a3dcd6e38b7a38ce2b63738ab8f4f82df}\label{class_achroma_1_1_achroma_sign_in_u_i_a3dcd6e38b7a38ce2b63738ab8f4f82df} 
+\mbox{\hyperlink{class_achroma_form_field}{Achroma\+Form\+Field}} {\bfseries email\+Register\+Field}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_ae669d3f13a0681bfdbe6363e8375a2fb}\label{class_achroma_1_1_achroma_sign_in_u_i_ae669d3f13a0681bfdbe6363e8375a2fb} 
+\mbox{\hyperlink{class_achroma_form_field}{Achroma\+Form\+Field}} {\bfseries password\+Register\+Field}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a5b6eed6d1d32f9460fef7cead27a3ebd}\label{class_achroma_1_1_achroma_sign_in_u_i_a5b6eed6d1d32f9460fef7cead27a3ebd} 
+\mbox{\hyperlink{class_achroma_form_field}{Achroma\+Form\+Field}} {\bfseries password\+Register\+Verify\+Field}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a70b3b48aa35090fcb3a71977e22b9699}\label{class_achroma_1_1_achroma_sign_in_u_i_a70b3b48aa35090fcb3a71977e22b9699} 
+Game\+Object {\bfseries sign\+Up\+Apple}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a4c10beceebe87c9d321bae21beb986fb}\label{class_achroma_1_1_achroma_sign_in_u_i_a4c10beceebe87c9d321bae21beb986fb} 
+Game\+Object {\bfseries sign\+Up\+Google}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a469cd7414ef92ab8028d5212c867ae0b}\label{class_achroma_1_1_achroma_sign_in_u_i_a469cd7414ef92ab8028d5212c867ae0b} 
+Unity\+Action$<$ bool, string $>$ {\bfseries callback} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_achroma_popup_window}{Achroma\+Popup\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries speed}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a21cceb3c00842102faa86f7957e5a703}\label{class_achroma_1_1_achroma_sign_in_u_i_a21cceb3c00842102faa86f7957e5a703} 
+\index{Achroma.AchromaSignInUI@{Achroma.AchromaSignInUI}!ProcessAppleSignIn@{ProcessAppleSignIn}}
+\index{ProcessAppleSignIn@{ProcessAppleSignIn}!Achroma.AchromaSignInUI@{Achroma.AchromaSignInUI}}
+\doxysubsubsection{\texorpdfstring{ProcessAppleSignIn()}{ProcessAppleSignIn()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Sign\+In\+UI.\+Process\+Apple\+Sign\+In (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_user_info}{User\+Info}}}]{user\+Info }\end{DoxyParamCaption})}
+
+
+
+This method calls the login method using Apple. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Info} & The user info that comes from the device\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_sign_in_u_i_a21cceb3c00842102faa86f7957e5a703_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_a891240c831e125ade753347f9e47e467}\label{class_achroma_1_1_achroma_sign_in_u_i_a891240c831e125ade753347f9e47e467} 
+\index{Achroma.AchromaSignInUI@{Achroma.AchromaSignInUI}!ProcessGogleSignIn@{ProcessGogleSignIn}}
+\index{ProcessGogleSignIn@{ProcessGogleSignIn}!Achroma.AchromaSignInUI@{Achroma.AchromaSignInUI}}
+\doxysubsubsection{\texorpdfstring{ProcessGogleSignIn()}{ProcessGogleSignIn()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Sign\+In\+UI.\+Process\+Gogle\+Sign\+In (\begin{DoxyParamCaption}\item[{string}]{google\+Access\+Token,  }\item[{string}]{google\+Token\+Id }\end{DoxyParamCaption})}
+
+
+
+This method calls the login method using Apple. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Info} & The user info that comes from the device\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_sign_in_u_i_a891240c831e125ade753347f9e47e467_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_sign_in_u_i_ac85785f5ad5e715ccc72765e970b3b5c}\label{class_achroma_1_1_achroma_sign_in_u_i_ac85785f5ad5e715ccc72765e970b3b5c} 
+\index{Achroma.AchromaSignInUI@{Achroma.AchromaSignInUI}!Update@{Update}}
+\index{Update@{Update}!Achroma.AchromaSignInUI@{Achroma.AchromaSignInUI}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Achroma.\+Achroma\+Sign\+In\+UI.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_achroma_popup_window}{Achroma\+Popup\+Window}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Login/Achroma\+Sign\+In\+UI+\+Apple.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Login/Achroma\+Sign\+In\+UI.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Login/Achroma\+Sign\+In\+UI+\+Email.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Login/Achroma\+Sign\+In\+UI+\+Google.\+cs\end{DoxyCompactItemize}

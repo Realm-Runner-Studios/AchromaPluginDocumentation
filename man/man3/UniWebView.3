@@ -1,0 +1,1681 @@
+.TH "UniWebView" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UniWebView \- Main class of \fBUniWebView\fP\&. Any \fCGameObject\fP instance with this script can represent a webview object in the scene\&. Use this class to create, load, show and interact with a general-purpose web view\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "delegate void \fBPageStartedDelegate\fP (\fBUniWebView\fP webView, string url)"
+.br
+.RI "Delegate for page started event\&. "
+.ti -1c
+.RI "delegate void \fBPageFinishedDelegate\fP (\fBUniWebView\fP webView, int statusCode, string url)"
+.br
+.RI "Delegate for page finished event\&. "
+.ti -1c
+.RI "delegate void \fBPageErrorReceivedDelegate\fP (\fBUniWebView\fP webView, int errorCode, string errorMessage)"
+.br
+.RI "Delegate for page error received event\&. "
+.ti -1c
+.RI "delegate void \fBPageProgressChangedDelegate\fP (\fBUniWebView\fP webView, float progress)"
+.br
+.RI "Delegate for page progress changed event\&. "
+.ti -1c
+.RI "delegate void \fBMessageReceivedDelegate\fP (\fBUniWebView\fP webView, \fBUniWebViewMessage\fP message)"
+.br
+.RI "Delegate for message received event\&. "
+.ti -1c
+.RI "delegate bool \fBShouldCloseDelegate\fP (\fBUniWebView\fP webView)"
+.br
+.RI "Delegate for should close event\&. "
+.ti -1c
+.RI "delegate void \fBOrientationChangedDelegate\fP (\fBUniWebView\fP webView, ScreenOrientation orientation)"
+.br
+.RI "Delegate for orientation changed event\&. "
+.ti -1c
+.RI "delegate void \fBOnWebContentProcessTerminatedDelegate\fP (\fBUniWebView\fP webView)"
+.br
+.RI "Delegate for content loading terminated event\&. "
+.ti -1c
+.RI "delegate void \fBFileDownloadStarted\fP (\fBUniWebView\fP webView, string remoteUrl, string fileName)"
+.br
+.RI "Delegate for file download task starting event\&. "
+.ti -1c
+.RI "delegate void \fBFileDownloadFinished\fP (\fBUniWebView\fP webView, int errorCode, string remoteUrl, string diskPath)"
+.br
+.RI "Delegate for file download task finishing event\&. "
+.ti -1c
+.RI "delegate void \fBCaptureSnapshotFinished\fP (\fBUniWebView\fP webView, int errorCode, string diskPath)"
+.br
+.RI "Delegate for capturing snapshot finished event\&. "
+.ti -1c
+.RI "delegate void \fBMultipleWindowOpenedDelegate\fP (\fBUniWebView\fP webView, string multipleWindowId)"
+.br
+.RI "Delegate for multiple window opening event\&. "
+.ti -1c
+.RI "delegate void \fBMultipleWindowClosedDelegate\fP (\fBUniWebView\fP webView, string multipleWindowId)"
+.br
+.RI "Delegate for multiple window closing event\&. "
+.ti -1c
+.RI "void \fBUpdateFrame\fP ()"
+.br
+.RI "Updates and sets current frame of web view to match the setting\&. "
+.ti -1c
+.RI "void \fBLoad\fP (string url, bool skipEncoding=false, string readAccessURL=null)"
+.br
+.RI "Loads a url in current web view\&. "
+.ti -1c
+.RI "void \fBLoadHTMLString\fP (string htmlString, string baseUrl, bool skipEncoding=false)"
+.br
+.RI "Loads an HTML string in current web view\&. "
+.ti -1c
+.RI "void \fBReload\fP ()"
+.br
+.RI "Reloads the current page\&. "
+.ti -1c
+.RI "void \fBStop\fP ()"
+.br
+.RI "Stops loading all resources on the current page\&. "
+.ti -1c
+.RI "void \fBGoBack\fP ()"
+.br
+.RI "Navigates to the back item in the back-forward list\&. "
+.ti -1c
+.RI "void \fBGoForward\fP ()"
+.br
+.RI "Navigates to the forward item in the back-forward list\&. "
+.ti -1c
+.RI "void \fBSetOpenLinksInExternalBrowser\fP (bool flag)"
+.br
+.RI "Sets whether the link clicking in the web view should open the page in an external browser\&. "
+.ti -1c
+.RI "bool \fBShow\fP (bool fade=false, UniWebViewTransitionEdge edge=UniWebViewTransitionEdge\&.None, float duration=0\&.4f, Action completionHandler=null)"
+.br
+.RI "Sets the web view visible on screen\&. "
+.ti -1c
+.RI "bool \fB_Show\fP (bool fade=false, UniWebViewTransitionEdge edge=UniWebViewTransitionEdge\&.None, float duration=0\&.4f, bool useAsync=false, Action completionHandler=null)"
+.br
+.ti -1c
+.RI "bool \fBHide\fP (bool fade=false, UniWebViewTransitionEdge edge=UniWebViewTransitionEdge\&.None, float duration=0\&.4f, Action completionHandler=null)"
+.br
+.RI "Sets the web view invisible from screen\&. "
+.ti -1c
+.RI "bool \fB_Hide\fP (bool fade=false, UniWebViewTransitionEdge edge=UniWebViewTransitionEdge\&.None, float duration=0\&.4f, bool useAsync=false, Action completionHandler=null)"
+.br
+.ti -1c
+.RI "bool \fBAnimateTo\fP (Rect frame, float duration, float delay=0\&.0f, Action completionHandler=null)"
+.br
+.RI "Animates the web view from current position and size to another position and size\&. "
+.ti -1c
+.RI "void \fBAddJavaScript\fP (string jsString, Action< \fBUniWebViewNativeResultPayload\fP > completionHandler=null)"
+.br
+.RI "Adds a JavaScript to current page\&. "
+.ti -1c
+.RI "void \fBEvaluateJavaScript\fP (string jsString, Action< \fBUniWebViewNativeResultPayload\fP > completionHandler=null)"
+.br
+.RI "Evaluates a JavaScript string on current page\&. "
+.ti -1c
+.RI "void \fBAddUrlScheme\fP (string scheme)"
+.br
+.RI "Adds a url scheme to \fBUniWebView\fP message system interpreter\&. All following url navigation to this scheme will be sent as a message to \fBUniWebView\fP instead\&. "
+.ti -1c
+.RI "void \fBRemoveUrlScheme\fP (string scheme)"
+.br
+.RI "Removes a url scheme from \fBUniWebView\fP message system interpreter\&. "
+.ti -1c
+.RI "void \fBAddSslExceptionDomain\fP (string domain)"
+.br
+.RI "Adds a domain to the SSL checking white list\&. If you are trying to access a web site with untrusted or expired certification, the web view will prevent its loading\&. If you could confirm that this site is trusted, you can add the domain as an SSL exception, so you could visit it\&. "
+.ti -1c
+.RI "void \fBRemoveSslExceptionDomain\fP (string domain)"
+.br
+.RI "Removes a domain from the SSL checking white list\&. "
+.ti -1c
+.RI "void \fBSetHeaderField\fP (string key, string value)"
+.br
+.RI "Sets a customized header field for web view requests\&. "
+.ti -1c
+.RI "void \fBSetUserAgent\fP (string agent)"
+.br
+.RI "Sets the user agent used in the web view\&. If the string is null or empty, the system default value will be used\&. "
+.ti -1c
+.RI "string \fBGetUserAgent\fP ()"
+.br
+.RI "Gets the user agent string currently used in web view\&. If a customized user agent is not set, the default user agent in current platform will be returned\&. "
+.ti -1c
+.RI "void \fBSetContentInsetAdjustmentBehavior\fP (UniWebViewContentInsetAdjustmentBehavior behavior)"
+.br
+.RI "Sets the adjustment behavior which indicates how safe area insets are added to the adjusted content inset\&. It is a wrapper of \fCcontentInsetAdjustmentBehavior\fP on iOS\&. "
+.ti -1c
+.RI "void \fBSetAllowFileAccess\fP (bool flag)"
+.br
+.RI "Sets whether loading a local file is allowed\&. "
+.ti -1c
+.RI "void \fBSetAllowFileAccessFromFileURLs\fP (bool flag)"
+.br
+.RI "Sets whether file access from file URLs is allowed\&. "
+.ti -1c
+.RI "void \fBSetAcceptThirdPartyCookies\fP (bool flag)"
+.br
+.RI "Sets whether the \fBUniWebView\fP should allow third party cookies to be set\&. By default, on Android, the third party cookies are disallowed due to security reason\&. Setting this to \fCtrue\fP will allow the cookie manager to accept third party cookies you set\&. "
+.ti -1c
+.RI "void \fBCleanCache\fP ()"
+.br
+.RI "Cleans web view cache\&. This removes cached local data of web view\&. "
+.ti -1c
+.RI "void \fBSetShowSpinnerWhileLoading\fP (bool flag)"
+.br
+.RI "Sets whether to show a loading indicator while the loading is in progress\&. "
+.ti -1c
+.RI "void \fBSetSpinnerText\fP (string text)"
+.br
+.RI "Sets the text displayed in the loading indicator, if \fCSetShowSpinnerWhileLoading\fP is set to \fCtrue\fP\&. "
+.ti -1c
+.RI "void \fBSetHorizontalScrollBarEnabled\fP (bool enabled)"
+.br
+.RI "Sets whether the horizontal scroll bar should show when the web content beyonds web view bounds\&. "
+.ti -1c
+.RI "void \fBSetVerticalScrollBarEnabled\fP (bool enabled)"
+.br
+.RI "Sets whether the vertical scroll bar should show when the web content beyonds web view bounds\&. "
+.ti -1c
+.RI "void \fBSetBouncesEnabled\fP (bool enabled)"
+.br
+.RI "Sets whether the web view should show with a bounces effect when scrolling to page edge\&. "
+.ti -1c
+.RI "void \fBSetZoomEnabled\fP (bool enabled)"
+.br
+.RI "Sets whether the web view supports zoom gesture to change content size\&. Default is \fCfalse\fP, which means the zoom gesture is not supported\&. "
+.ti -1c
+.RI "void \fBAddPermissionTrustDomain\fP (string domain)"
+.br
+.RI "Adds a trusted domain to white list and allow permission requests from the domain\&. "
+.ti -1c
+.RI "void \fBRemovePermissionTrustDomain\fP (string domain)"
+.br
+.RI "Removes a trusted domain from white list\&. "
+.ti -1c
+.RI "void \fBSetBackButtonEnabled\fP (bool enabled)"
+.br
+.RI "Sets whether the device back button should be enabled to execute 'go back' or 'closing' operation\&. "
+.ti -1c
+.RI "void \fBSetUseWideViewPort\fP (bool flag)"
+.br
+.RI "Sets whether the web view should enable support for the 'viewport' HTML meta tag or should use a wide viewport\&. "
+.ti -1c
+.RI "void \fBSetLoadWithOverviewMode\fP (bool flag)"
+.br
+.RI "Sets whether the web view loads pages in overview mode, that is, zooms out the content to fit on screen by width\&. "
+.ti -1c
+.RI "void \fBSetShowToolbar\fP (bool show, bool animated=false, bool onTop=true, bool adjustInset=false)"
+.br
+.RI "Sets whether to show a toolbar which contains navigation buttons and Done button\&. "
+.ti -1c
+.RI "void \fBSetToolbarDoneButtonText\fP (string text)"
+.br
+.RI "Sets the done button text in toolbar\&. "
+.ti -1c
+.RI "void \fBSetToolbarGoBackButtonText\fP (string text)"
+.br
+.RI "Sets the go back button text in toolbar\&. "
+.ti -1c
+.RI "void \fBSetToolbarGoForwardButtonText\fP (string text)"
+.br
+.RI "Sets the go forward button text in toolbar\&. "
+.ti -1c
+.RI "void \fBSetToolbarTintColor\fP (Color color)"
+.br
+.RI "Sets the background tint color for the toolbar\&. "
+.ti -1c
+.RI "void \fBSetToolbarTextColor\fP (Color color)"
+.br
+.RI "Sets the button text color for the toolbar\&. "
+.ti -1c
+.RI "void \fBSetShowToolbarNavigationButtons\fP (bool show)"
+.br
+.RI "Sets the visibility of navigation buttons, such as 'Go Back' and 'Go Forward', on toolbar\&. "
+.ti -1c
+.RI "void \fBSetUserInteractionEnabled\fP (bool enabled)"
+.br
+.RI "Sets whether the web view can receive user interaction or not\&. "
+.ti -1c
+.RI "void \fBSetTransparencyClickingThroughEnabled\fP (bool enabled)"
+.br
+.RI "Sets whether the web view should pass through clicks at clear pixels to Unity scene\&. "
+.ti -1c
+.RI "void \fBSetWindowUserResizeEnabled\fP (bool enabled)"
+.br
+.RI "Enables user resizing for web view window\&. By default, you can only set the window size by setting its frame on mac Editor\&. By enabling user resizing, you would be able to resize the window by dragging its border as a normal macOS window\&. "
+.ti -1c
+.RI "void \fBGetHTMLContent\fP (Action< string > handler)"
+.br
+.RI "Gets the HTML content from current page by accessing its outerHTML with JavaScript\&. "
+.ti -1c
+.RI "void \fBSetAllowBackForwardNavigationGestures\fP (bool flag)"
+.br
+.RI "Sets whether horizontal swipe gestures should trigger back-forward list navigation\&. "
+.ti -1c
+.RI "void \fBSetAllowHTTPAuthPopUpWindow\fP (bool flag)"
+.br
+.RI "Sets whether a prompt alert should be displayed for collection username and password when the web view receives an HTTP authentication challenge (HTTP Basic or HTTP Digest) from server\&. "
+.ti -1c
+.RI "void \fBSetCalloutEnabled\fP (bool enabled)"
+.br
+.RI "Sets whether a callout (context) menu should be displayed when user long tapping on certain web view content\&. "
+.ti -1c
+.RI "void \fBSetSupportMultipleWindows\fP (bool enabled)"
+.br
+.ti -1c
+.RI "void \fBSetSupportMultipleWindows\fP (bool enabled, bool allowJavaScriptOpening)"
+.br
+.RI "Sets whether the web view should support a pop up web view triggered by user in a new tab\&. "
+.ti -1c
+.RI "void \fBSetDefaultFontSize\fP (int size)"
+.br
+.RI "Sets the default font size used in the web view\&. "
+.ti -1c
+.RI "void \fBSetTextZoom\fP (int textZoom)"
+.br
+.RI "Sets the text zoom used in the web view\&. "
+.ti -1c
+.RI "void \fBSetDragInteractionEnabled\fP (bool enabled)"
+.br
+.RI "Sets whether the drag interaction should be enabled on iOS\&. "
+.ti -1c
+.RI "void \fBPrint\fP ()"
+.br
+.RI "Prints current page\&. "
+.ti -1c
+.RI "void \fBCaptureSnapshot\fP (string fileName)"
+.br
+.RI "Capture the content of web view and store it to the cache path on disk with the given file name\&. "
+.ti -1c
+.RI "void \fBScrollTo\fP (int x, int y, bool animated)"
+.br
+.RI "Scrolls the web view to a certain point\&. "
+.ti -1c
+.RI "void \fBAddDownloadURL\fP (string urlString, UniWebViewDownloadMatchingType type=UniWebViewDownloadMatchingType\&.ExactValue)"
+.br
+.RI "Adds the URL to download inspecting list\&. "
+.ti -1c
+.RI "void \fBRemoveDownloadURL\fP (string urlString, UniWebViewDownloadMatchingType type=UniWebViewDownloadMatchingType\&.ExactValue)"
+.br
+.RI "Removes the URL from download inspecting list\&. "
+.ti -1c
+.RI "void \fBAddDownloadMIMEType\fP (string MIMEType, UniWebViewDownloadMatchingType type=UniWebViewDownloadMatchingType\&.ExactValue)"
+.br
+.RI "Adds the MIME type to download inspecting list\&. "
+.ti -1c
+.RI "void \fBRemoveDownloadMIMETypes\fP (string MIMEType, UniWebViewDownloadMatchingType type=UniWebViewDownloadMatchingType\&.ExactValue)"
+.br
+.RI "Removes the MIME type from download inspecting list\&. "
+.ti -1c
+.RI "void \fBSetAllowUserChooseActionAfterDownloading\fP (bool allowed)"
+.br
+.RI "Sets whether allowing users to choose the way to handle the downloaded file\&. Default is \fCtrue\fP\&. "
+.ti -1c
+.RI "void \fBSetDownloadEventForContextMenuEnabled\fP (bool enabled)"
+.br
+.RI "Sets whether the \fCOnFileDownloadStarted\fP and \fCOnFileDownloadFinished\fP events should be raised even for an image saving action triggered by the callout (context) menu on Android\&. "
+.ti -1c
+.RI "void \fBSetImmersiveModeEnabled\fP (bool enabled)"
+.br
+.RI "Sets whether the web view should behave in immersive mode, that is, hides the status bar and navigation bar with a sticky style\&. "
+.ti -1c
+.RI "delegate void \fBKeyCodeReceivedDelegate\fP (\fBUniWebView\fP webView, int keyCode)"
+.br
+.RI "Delegate for code keycode received event\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBSetAllowAutoPlay\fP (bool flag)"
+.br
+.RI "Sets allow auto play for current web view\&. By default, users need to touch the play button to start playing a media resource\&. "
+.ti -1c
+.RI "static void \fBSetAllowInlinePlay\fP (bool flag)"
+.br
+.RI "Sets allow inline play for current web view\&. By default, on iOS, the video can only be played in a new full screen view\&. By setting this to \fCtrue\fP, you could play a video inline the page, instead of opening a new full screen window\&. "
+.ti -1c
+.RI "static void \fBSetAllowUniversalAccessFromFileURLs\fP (bool flag)"
+.br
+.RI "Sets allow universal access from file URLs\&. By default, on iOS, the \fCWKWebView\fP forbids any load of local files through AJAX even when opening a local HTML file\&. It checks the CORS rules and fails at web view level\&. This is useful when you want access these files by setting the \fCallowUniversalAccessFromFileURLs\fP key of web view configuration\&. "
+.ti -1c
+.RI "static void \fBSetEnableKeyboardAvoidance\fP (bool flag)"
+.br
+.RI "Sets whether the web view area should avoid soft keyboard\&. It \fCtrue\fP, when the keyboard shows up, the web views content view will resize itself to avoid keyboard overlap the web content\&. Otherwise, the web view will not resize and just leave the content below under the soft keyboard\&. "
+.ti -1c
+.RI "static void \fBSetJavaScriptEnabled\fP (bool enabled)"
+.br
+.RI "Sets whether JavaScript should be enabled in current web view\&. Default is enabled\&. "
+.ti -1c
+.RI "static void \fBSetAllowJavaScriptOpenWindow\fP (bool flag)"
+.br
+.RI "Sets whether JavaScript can open windows without user interaction\&. "
+.ti -1c
+.RI "static void \fBClearCookies\fP ()"
+.br
+.RI "Clears all cookies from web view\&. "
+.ti -1c
+.RI "static void \fBSetCookie\fP (string url, string cookie, bool skipEncoding=false)"
+.br
+.RI "Sets a cookie for a certain url\&. "
+.ti -1c
+.RI "static string \fBGetCookie\fP (string url, string key, bool skipEncoding=false)"
+.br
+.RI "Gets the cookie value under a url and key\&. "
+.ti -1c
+.RI "static void \fBRemoveCookies\fP (string url, bool skipEncoding=false)"
+.br
+.RI "Removes all the cookies under a url\&. "
+.ti -1c
+.RI "static void \fBRemoveCooke\fP (string url, string key, bool skipEncoding=false)"
+.br
+.RI "Removes the certain cookie under a url for the specified key\&. "
+.ti -1c
+.RI "static void \fBClearHttpAuthUsernamePassword\fP (string host, string realm)"
+.br
+.RI "Clears any saved credentials for HTTP authentication for both Basic and Digest\&. "
+.ti -1c
+.RI "static void \fBSetWebContentsDebuggingEnabled\fP (bool enabled)"
+.br
+.RI "Enables debugging of web contents\&. You could inspect of the content of a web view by using a browser development tool of Chrome for Android or Safari for macOS\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "Rect \fBFrame\fP\fC [get, set]\fP"
+.br
+.RI "Gets or sets the frame of current web view\&. The value is based on current \fCScreen\&.width\fP and \fCScreen\&.height\fP\&. The first two values of \fCRect\fP is \fCx\fP and \fCy\fP position and the followed two \fCwidth\fP and \fCheight\fP\&. "
+.ti -1c
+.RI "RectTransform \fBReferenceRectTransform\fP\fC [get, set]\fP"
+.br
+.RI "A reference rect transform which the web view should change its position and size to\&. Set it to a Unity UI element (which contains a \fCRectTransform\fP) under a canvas to determine the web view frame by a certain UI element\&. "
+.ti -1c
+.RI "string \fBUrl\fP\fC [get]\fP"
+.br
+.RI "The url of current loaded web page\&. "
+.ti -1c
+.RI "static bool \fBIsWebViewSupported\fP\fC [get]\fP"
+.br
+.RI "Whether the web view is supported in current runtime or not\&. "
+.ti -1c
+.RI "bool \fBCanGoBack\fP\fC [get]\fP"
+.br
+.RI "Gets whether there is a back page in the back-forward list that can be navigated to\&. "
+.ti -1c
+.RI "bool \fBCanGoForward\fP\fC [get]\fP"
+.br
+.RI "Gets whether there is a forward page in the back-forward list that can be navigated to\&. "
+.ti -1c
+.RI "Color \fBBackgroundColor\fP\fC [get, set]\fP"
+.br
+.RI "Gets or sets the background color of web view\&. The default value is \fCColor\&.white\fP\&. "
+.ti -1c
+.RI "float \fBAlpha\fP\fC [get, set]\fP"
+.br
+.RI "Gets or sets the alpha value of the whole web view\&. "
+.in -1c
+.SS "Events"
+
+.in +1c
+.ti -1c
+.RI "\fBPageStartedDelegate\fP \fBOnPageStarted\fP"
+.br
+.RI "Raised when the web view starts loading a url\&. "
+.ti -1c
+.RI "\fBPageFinishedDelegate\fP \fBOnPageFinished\fP"
+.br
+.RI "Raised when the web view finished to load a url successfully\&. "
+.ti -1c
+.RI "\fBPageErrorReceivedDelegate\fP \fBOnPageErrorReceived\fP"
+.br
+.RI "Raised when an error encountered during the loading process\&. Such as the 'host not found' error or 'no Internet connection' error will raise this event\&. "
+.ti -1c
+.RI "\fBPageProgressChangedDelegate\fP \fBOnPageProgressChanged\fP"
+.br
+.RI "Raised when the loading progress value changes in current web view\&. "
+.ti -1c
+.RI "\fBMessageReceivedDelegate\fP \fBOnMessageReceived\fP"
+.br
+.RI "Raised when a message from web view is received\&. "
+.ti -1c
+.RI "\fBShouldCloseDelegate\fP \fBOnShouldClose\fP"
+.br
+.RI "Raised when the web view is about to close itself\&. "
+.ti -1c
+.RI "\fBOrientationChangedDelegate\fP \fBOnOrientationChanged\fP"
+.br
+.RI "Raised when the screen orientation is changed\&. It is a good time to set the web view frame if you need to support multiple orientations in your game\&. "
+.ti -1c
+.RI "\fBOnWebContentProcessTerminatedDelegate\fP \fBOnWebContentProcessTerminated\fP"
+.br
+.RI "Raised when on iOS, when system calls \fCwebViewWebContentProcessDidTerminate\fP method\&. It is usually due to a low memory when loading the web content and leave you a blank white screen\&. You need to free as much as memory you could and then do a page reload\&. "
+.ti -1c
+.RI "\fBFileDownloadStarted\fP \fBOnFileDownloadStarted\fP"
+.br
+.RI "Raised when a file download task starts\&. "
+.ti -1c
+.RI "\fBFileDownloadFinished\fP \fBOnFileDownloadFinished\fP"
+.br
+.RI "Raised when a file download task finishes with either an error or success\&. "
+.ti -1c
+.RI "\fBCaptureSnapshotFinished\fP \fBOnCaptureSnapshotFinished\fP"
+.br
+.RI "Raised when an image captured and stored in a cache path on disk\&. "
+.ti -1c
+.RI "\fBMultipleWindowOpenedDelegate\fP \fBOnMultipleWindowOpened\fP"
+.br
+.RI "Raised when a new window is opened\&. This happens when you enable the \fCSetSupportMultipleWindows\fP and open a new pop-up window\&. "
+.ti -1c
+.RI "\fBMultipleWindowClosedDelegate\fP \fBOnMultipleWindowClosed\fP"
+.br
+.RI "Raised when the multiple window is closed\&. This happens when the pop-up window is closed by navigation operation or by a invocation of \fCclose()\fP on the page\&. "
+.ti -1c
+.RI "\fBKeyCodeReceivedDelegate\fP \fBOnKeyCodeReceived\fP"
+.br
+.RI "Raised when a key (like back button or volume up) on the device is pressed\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Main class of \fBUniWebView\fP\&. Any \fCGameObject\fP instance with this script can represent a webview object in the scene\&. Use this class to create, load, show and interact with a general-purpose web view\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void UniWebView\&.AddDownloadMIMEType (string MIMEType, UniWebViewDownloadMatchingType type = \fCUniWebViewDownloadMatchingType::ExactValue\fP)"
+
+.PP
+Adds the MIME type to download inspecting list\&. If a response is received in main frame and its MIME type is already in the inspecting list, a download task will be triggered\&. Check 'Download Files' guide for more\&.
+.PP
+This method only works on iOS and macOS Editor\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIMIMEType\fP The inspected MIME type of the response\&.
+.br
+\fItype\fP The download matching type used to match the MIME type\&. Default is \fCExactValue\fP\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.AddDownloadURL (string urlString, UniWebViewDownloadMatchingType type = \fCUniWebViewDownloadMatchingType::ExactValue\fP)"
+
+.PP
+Adds the URL to download inspecting list\&. If a response is received in main frame and its URL is already in the inspecting list, a download task will be triggered\&. Check 'Download Files' guide for more\&.
+.PP
+This method only works on iOS and macOS Editor\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIurlString\fP The inspected URL\&.
+.br
+\fItype\fP The download matching type used to match the URL\&. Default is \fCExactValue\fP\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.AddJavaScript (string jsString, Action< \fBUniWebViewNativeResultPayload\fP > completionHandler = \fCnull\fP)"
+
+.PP
+Adds a JavaScript to current page\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIjsString\fP The JavaScript code to add\&. It should be a valid JavaScript statement string\&.
+.br
+\fIcompletionHandler\fP Called when adding JavaScript operation finishes\&. Default is \fCnull\fP\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.AddPermissionTrustDomain (string domain)"
+
+.PP
+Adds a trusted domain to white list and allow permission requests from the domain\&. You only need this on Android devices with system before 6\&.0 when a site needs the location or camera permission\&. It will allow the permission gets approved so you could access the corresponding devices\&. From Android 6\&.0, the permission requests method is changed and this is not needed anymore\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIdomain\fP The domain to add to the white list\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.AddSslExceptionDomain (string domain)"
+
+.PP
+Adds a domain to the SSL checking white list\&. If you are trying to access a web site with untrusted or expired certification, the web view will prevent its loading\&. If you could confirm that this site is trusted, you can add the domain as an SSL exception, so you could visit it\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdomain\fP The domain to add\&. It should not contain any scheme or path part in url\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.AddUrlScheme (string scheme)"
+
+.PP
+Adds a url scheme to \fBUniWebView\fP message system interpreter\&. All following url navigation to this scheme will be sent as a message to \fBUniWebView\fP instead\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscheme\fP The url scheme to add\&. It should not contain '://' part\&. You could even add 'http' and/or 'https' to prevent all resource loading on the page\&. 'uniwebview' is added by default\&. Nothing will happen if you try to add a duplicated scheme\&.
+.RE
+.PP
+
+.SS "bool UniWebView\&.AnimateTo (Rect frame, float duration, float delay = \fC0::0f\fP, Action completionHandler = \fCnull\fP)"
+
+.PP
+Animates the web view from current position and size to another position and size\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIframe\fP The new \fCFrame\fP which the web view should be\&.
+.br
+\fIduration\fP Duration of the animation\&.
+.br
+\fIdelay\fP Delay before the animation begins\&. Default is \fC0\&.0f\fP, which means the animation will start immediately\&.
+.br
+\fIcompletionHandler\fP Completion handler which will be called when animation finishes\&. Default is \fCnull\fP\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void UniWebView\&.CaptureSnapshot (string fileName)"
+
+.PP
+Capture the content of web view and store it to the cache path on disk with the given file name\&. When the capturing finishes, \fCOnCaptureSnapshotFinished\fP event will be raised, with an error code to indicate whether the operation succeeded and an accessible disk path of the image\&.
+.PP
+The captured image will be stored as a PNG file under the \fCfileName\fP in app's cache folder\&. If a file with the same file name already exists, it will be overridden by the new captured image\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP The file name to which the captured image is stored to, for example 'screenshot\&.png'\&. If empty, \fBUniWebView\fP will pick a random UUID with 'png' file extension as the file name\&. 
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.CaptureSnapshotFinished (\fBUniWebView\fP webView, int errorCode, string diskPath)"
+
+.PP
+Delegate for capturing snapshot finished event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which raises this event\&.
+.br
+\fIerrorCode\fP The error code of the event\&. If the snapshot is captured and stored without a problem, the error code is 0\&. Any other number indicates an error happened\&. In most cases, the screenshot capturing only fails due to lack of disk storage\&. 
+.br
+\fIdiskPath\fP An accessible disk path to the captured snapshot image\&. If an error happens, it is an empty string\&. 
+.RE
+.PP
+
+.SS "void UniWebView\&.CleanCache ()"
+
+.PP
+Cleans web view cache\&. This removes cached local data of web view\&. If you need to clear all cookies, use \fCClearCookies\fP instead\&. 
+.SS "static void UniWebView\&.ClearCookies ()\fC [static]\fP"
+
+.PP
+Clears all cookies from web view\&. This will clear cookies from all domains in the web view and previous\&. If you only need to remove cookies from a certain domain, use \fCSetCookie\fP instead\&. 
+.SS "static void UniWebView\&.ClearHttpAuthUsernamePassword (string host, string realm)\fC [static]\fP"
+
+.PP
+Clears any saved credentials for HTTP authentication for both Basic and Digest\&. On both iOS and Android, the user input credentials will be stored permanently across session\&. It could prevent your users to input username and password again until they changed\&. If you need the credentials only living in a shorter lifetime, call this method at proper timing\&.
+.PP
+On iOS, it will clear the credentials immediately and completely from both disk and network cache\&. On Android, it only clears from disk database, the authentication might be still cached in the network stack and will not be removed until next session (app restarting)\&.
+.PP
+The client logout mechanism should be implemented by the Web site designer (such as server sending a HTTP 401 for invalidating credentials)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIhost\fP The host to which the credentials apply\&. It should not contain any thing like scheme or path part\&.
+.br
+\fIrealm\fP The realm to which the credentials apply\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.EvaluateJavaScript (string jsString, Action< \fBUniWebViewNativeResultPayload\fP > completionHandler = \fCnull\fP)"
+
+.PP
+Evaluates a JavaScript string on current page\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIjsString\fP The JavaScript string to evaluate\&.
+.br
+\fIcompletionHandler\fP Called when evaluating JavaScript operation finishes\&. Default is \fCnull\fP\&.
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.FileDownloadFinished (\fBUniWebView\fP webView, int errorCode, string remoteUrl, string diskPath)"
+
+.PP
+Delegate for file download task finishing event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which raises this event\&.
+.br
+\fIerrorCode\fP The error code of the download task result\&. Value \fC0\fP means the download finishes without a problem\&. Any other non-\fC0\fP value indicates an issue\&. The detail meaning of the error code depends on system\&. On iOS, it is usually the \fCerrorCode\fP of the received \fCNSURLError\fP\&. On Android, the value usually represents an \fCERROR_*\fP value in \fCDownloadManager\fP\&. 
+.br
+\fIremoteUrl\fP The remote URL of this download task\&.
+.br
+\fIdiskPath\fP The file path of the downloaded file\&. On iOS, the downloader file is in a temporary folder of your app sandbox\&. On Android, it is in the 'Download' folder of your app\&. 
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.FileDownloadStarted (\fBUniWebView\fP webView, string remoteUrl, string fileName)"
+
+.PP
+Delegate for file download task starting event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which raises this event\&.
+.br
+\fIremoteUrl\fP The remote URL of this download task\&. This is also the download URL for the task\&.
+.br
+\fIfileName\fP The file name which user chooses to use\&.
+.RE
+.PP
+
+.SS "static string UniWebView\&.GetCookie (string url, string key, bool skipEncoding = \fCfalse\fP)\fC [static]\fP"
+
+.PP
+Gets the cookie value under a url and key\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIurl\fP The url (domain) where the target cookie is\&.
+.br
+\fIkey\fP The key for target cookie value\&.
+.br
+\fIskipEncoding\fP Whether \fBUniWebView\fP should skip encoding the url or not\&. If set to \fCfalse\fP, \fBUniWebView\fP will try to encode the url parameter before using it\&. Otherwise, your original url string will be used to get the cookie if it is valid\&. Default is \fCfalse\fP\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Value of the target cookie under url\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.GetHTMLContent (Action< string > handler)"
+
+.PP
+Gets the HTML content from current page by accessing its outerHTML with JavaScript\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhandler\fP Called after the JavaScript executed\&. The parameter string is the content read from page\&.
+.RE
+.PP
+
+.SS "string UniWebView\&.GetUserAgent ()"
+
+.PP
+Gets the user agent string currently used in web view\&. If a customized user agent is not set, the default user agent in current platform will be returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The user agent string in use\&.
+.RE
+.PP
+
+.SS "bool UniWebView\&.Hide (bool fade = \fCfalse\fP, UniWebViewTransitionEdge edge = \fCUniWebViewTransitionEdge::None\fP, float duration = \fC0::4f\fP, Action completionHandler = \fCnull\fP)"
+
+.PP
+Sets the web view invisible from screen\&. If you pass \fCfalse\fP and \fCUniWebViewTransitionEdge\&.None\fP to the first two parameters, it means no animation will be applied when hiding\&. So the \fCduration\fP parameter will not be taken into account\&. Otherwise, when either or both \fCfade\fP and \fCedge\fP set, the hiding operation will be animated\&.
+.PP
+Regardless there is an animation or not, the \fCcompletionHandler\fP will be called if not \fCnull\fP when the web view hiding finishes\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIfade\fP Whether hide with a fade in animation\&. Default is \fCfalse\fP\&.
+.br
+\fIedge\fP The edge from which the web view hiding\&. It simulates a modal effect when hiding a web view\&. Default is \fCUniWebViewTransitionEdge\&.None\fP\&.
+.br
+\fIduration\fP Duration of hiding animation\&. Default is \fC0\&.4f\fP\&.
+.br
+\fIcompletionHandler\fP Completion handler which will be called when hiding finishes\&. Default is \fCnull\fP\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A bool value indicates whether the hiding operation started\&.
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.KeyCodeReceivedDelegate (\fBUniWebView\fP webView, int keyCode)"
+
+.PP
+Delegate for code keycode received event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which raises this event\&.
+.br
+\fIkeyCode\fP The key code of pressed key\&. See \fCAndroid API for keycode\fP to know the possible values\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.Load (string url, bool skipEncoding = \fCfalse\fP, string readAccessURL = \fCnull\fP)"
+
+.PP
+Loads a url in current web view\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIurl\fP The url to be loaded\&. This url should start with \fChttp://\fP or \fChttps://\fP scheme\&. You could even load a non-ascii url text if it is valid\&.
+.br
+\fIskipEncoding\fP Whether \fBUniWebView\fP should skip encoding the url or not\&. If set to \fCfalse\fP, \fBUniWebView\fP will try to encode the url parameter before loading it\&. Otherwise, your original url string will be used as the url if it is valid\&. Default is \fCfalse\fP\&. 
+.br
+\fIreadAccessURL\fP The URL to allow read access to\&. This parameter is only used when loading from the filesystem in iOS, and passed to \fCloadFileURL:allowingReadAccessToURL:\fP method of WebKit\&. By default, the parent folder of the \fCurl\fP parameter will be read accessible\&. 
+.RE
+.PP
+
+.SS "void UniWebView\&.LoadHTMLString (string htmlString, string baseUrl, bool skipEncoding = \fCfalse\fP)"
+
+.PP
+Loads an HTML string in current web view\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhtmlString\fP The HTML string to use as the contents of the webpage\&.
+.br
+\fIbaseUrl\fP The url to use as the page's base url\&.
+.br
+\fIskipEncoding\fP Whether \fBUniWebView\fP should skip encoding the baseUrl or not\&. If set to \fCfalse\fP, \fBUniWebView\fP will try to encode the baseUrl parameter before using it\&. Otherwise, your original url string will be used as the baseUrl if it is valid\&. Default is \fCfalse\fP\&. 
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.MessageReceivedDelegate (\fBUniWebView\fP webView, \fBUniWebViewMessage\fP message)"
+
+.PP
+Delegate for message received event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which raises this event\&.
+.br
+\fImessage\fP Message received from web view\&.
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.MultipleWindowClosedDelegate (\fBUniWebView\fP webView, string multipleWindowId)"
+
+.PP
+Delegate for multiple window closing event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which closes the multiple window\&.
+.br
+\fImultipleWindowId\fP The identifier of the closed window\&.
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.MultipleWindowOpenedDelegate (\fBUniWebView\fP webView, string multipleWindowId)"
+
+.PP
+Delegate for multiple window opening event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which opens the new multiple (pop-up) window\&.
+.br
+\fImultipleWindowId\fP The identifier of the opened new window\&.
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.OnWebContentProcessTerminatedDelegate (\fBUniWebView\fP webView)"
+
+.PP
+Delegate for content loading terminated event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which raises this event\&.
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.OrientationChangedDelegate (\fBUniWebView\fP webView, ScreenOrientation orientation)"
+
+.PP
+Delegate for orientation changed event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which raises this event\&.
+.br
+\fIorientation\fP The screen orientation for current state\&.
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.PageErrorReceivedDelegate (\fBUniWebView\fP webView, int errorCode, string errorMessage)"
+
+.PP
+Delegate for page error received event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which raises this event\&.
+.br
+\fIerrorCode\fP The error code which indicates the error type\&. It can be different from systems and platforms\&. 
+.br
+\fIerrorMessage\fP The error message which indicates the error\&.
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.PageFinishedDelegate (\fBUniWebView\fP webView, int statusCode, string url)"
+
+.PP
+Delegate for page finished event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which raises this event\&.
+.br
+\fIstatusCode\fP HTTP status code received from response\&.
+.br
+\fIurl\fP The url which the web view loaded\&.
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.PageProgressChangedDelegate (\fBUniWebView\fP webView, float progress)"
+
+.PP
+Delegate for page progress changed event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which raises this event\&.
+.br
+\fIprogress\fP A value indicates the loading progress of current page\&. It is a value between 0\&.0f and 1\&.0f\&.
+.RE
+.PP
+
+.SS "delegate void UniWebView\&.PageStartedDelegate (\fBUniWebView\fP webView, string url)"
+
+.PP
+Delegate for page started event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which raises this event\&.
+.br
+\fIurl\fP The url which the web view is about to load\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.Print ()"
+
+.PP
+Prints current page\&. By calling this method, a native print preview panel will be brought up on iOS and Android\&. This method does nothing on macOS editor\&. On iOS and Android, the web view does not support JavaScript (window\&.print()), you can only initialize a print job from Unity by this method\&. 
+.SS "static void UniWebView\&.RemoveCooke (string url, string key, bool skipEncoding = \fCfalse\fP)\fC [static]\fP"
+
+.PP
+Removes the certain cookie under a url for the specified key\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIurl\fP The url (domain) where the cookies is under\&.
+.br
+\fIkey\fP The key for target cookie\&.
+.br
+\fIskipEncoding\fP Whether \fBUniWebView\fP should skip encoding the url or not\&. If set to \fCfalse\fP, \fBUniWebView\fP will try to encode the url parameter before using it\&. Otherwise, your original url string will be used to get the cookie if it is valid\&. Default is \fCfalse\fP\&. 
+.RE
+.PP
+
+.SS "static void UniWebView\&.RemoveCookies (string url, bool skipEncoding = \fCfalse\fP)\fC [static]\fP"
+
+.PP
+Removes all the cookies under a url\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIurl\fP The url (domain) where the cookies is under\&.
+.br
+\fIskipEncoding\fP Whether \fBUniWebView\fP should skip encoding the url or not\&. If set to \fCfalse\fP, \fBUniWebView\fP will try to encode the url parameter before using it\&. Otherwise, your original url string will be used to get the cookie if it is valid\&. Default is \fCfalse\fP\&. 
+.RE
+.PP
+
+.SS "void UniWebView\&.RemoveDownloadMIMETypes (string MIMEType, UniWebViewDownloadMatchingType type = \fCUniWebViewDownloadMatchingType::ExactValue\fP)"
+
+.PP
+Removes the MIME type from download inspecting list\&. If a response is received in main frame and its MIME type is already in the inspecting list, a download task will be triggered\&. Check 'Download Files' guide for more\&.
+.PP
+This method only works on iOS and macOS Editor\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIMIMEType\fP The inspected MIME type of the response\&.
+.br
+\fItype\fP The download matching type used to match the MIME type\&. Default is \fCExactValue\fP\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.RemoveDownloadURL (string urlString, UniWebViewDownloadMatchingType type = \fCUniWebViewDownloadMatchingType::ExactValue\fP)"
+
+.PP
+Removes the URL from download inspecting list\&. If a response is received in main frame and its URL is already in the inspecting list, a download task will be triggered\&. Check 'Download Files' guide for more\&.
+.PP
+This method only works on iOS and macOS Editor\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIurlString\fP The inspected URL\&.
+.br
+\fItype\fP The download matching type used to match the URL\&. Default is \fCExactValue\fP\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.RemovePermissionTrustDomain (string domain)"
+
+.PP
+Removes a trusted domain from white list\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdomain\fP The domain to remove from white list\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.RemoveSslExceptionDomain (string domain)"
+
+.PP
+Removes a domain from the SSL checking white list\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdomain\fP The domain to remove\&. It should not contain any scheme or path part in url\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.RemoveUrlScheme (string scheme)"
+
+.PP
+Removes a url scheme from \fBUniWebView\fP message system interpreter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscheme\fP The url scheme to remove\&. Nothing will happen if the scheme is not in the message system\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.ScrollTo (int x, int y, bool animated)"
+
+.PP
+Scrolls the web view to a certain point\&. Use 0 for both \fCx\fP and \fCy\fP value to scroll the web view to its origin\&. In a normal vertical web page, it is equivalent as scrolling to top\&.
+.PP
+You can use the \fCanimated\fP parameter to control whether scrolling the page with or without animation\&. This parameter only works on iOS and Android\&. On macOS editor, the scrolling always happens without animation\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP X value of the target scrolling point\&.
+.br
+\fIy\fP Y value of the target scrolling point\&.
+.br
+\fIanimated\fP If \fCtrue\fP, the scrolling happens with animation\&. Otherwise, it happens without animation and the content is set directly\&. 
+.RE
+.PP
+
+.SS "void UniWebView\&.SetAcceptThirdPartyCookies (bool flag)"
+
+.PP
+Sets whether the \fBUniWebView\fP should allow third party cookies to be set\&. By default, on Android, the third party cookies are disallowed due to security reason\&. Setting this to \fCtrue\fP will allow the cookie manager to accept third party cookies you set\&. This method only works for Android\&. On iOS, this method does nothing and the third party cookies are always allowed\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP Whether the third party cookies should be allowed\&.
+.RE
+.PP
+
+.SS "static void UniWebView\&.SetAllowAutoPlay (bool flag)\fC [static]\fP"
+
+.PP
+Sets allow auto play for current web view\&. By default, users need to touch the play button to start playing a media resource\&. By setting this to \fCtrue\fP, you can start the playing automatically through corresponding media tag attributes\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP A flag indicates whether autoplaying of media is allowed or not\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetAllowBackForwardNavigationGestures (bool flag)"
+
+.PP
+Sets whether horizontal swipe gestures should trigger back-forward list navigation\&. By setting with \fCtrue\fP, users can swipe from screen edge to perform a back or forward navigation\&. This method only works on iOS and macOS Editor\&. Default is \fCfalse\fP\&.
+.PP
+On Android, the screen navigation gestures are simulating the traditional back button and it is enabled by default\&. To disable gesture navigation on Android, you have to also disable the device back button\&. See \fCSetBackButtonEnabled\fP for that purpose\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP The value indicates whether a swipe gestures driven navigation should be allowed\&. Default is \fCfalse\fP\&. 
+.RE
+.PP
+
+.SS "void UniWebView\&.SetAllowFileAccess (bool flag)"
+
+.PP
+Sets whether loading a local file is allowed\&. If set to \fCfalse\fP, any load from a file URL \fCfile://\fP for \fCLoad\fP method will be rejected and trigger an \fCOnPageErrorReceived\fP event\&. That means you cannot load a web page from any local file\&. If you are not going to load any local files, setting it to \fCfalse\fP helps to reduce the interface of web view and improve the security\&.
+.PP
+By default, it is \fCtrue\fP and the local file URL loading is allowed\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP Whether the local file access by web view loading is allowed or not\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetAllowFileAccessFromFileURLs (bool flag)"
+
+.PP
+Sets whether file access from file URLs is allowed\&. By setting with \fCtrue\fP, access to file URLs inside the web view will be enabled and you could access sub-resources or make cross origin requests from local HTML files\&.
+.PP
+On iOS, it uses some 'hidden' way by setting \fCallowFileAccessFromFileURLs\fP in config preferences for WebKit\&. So it is possible that it stops working in a future version\&.
+.PP
+On Android, it sets the \fCWebSettings\&.setAllowFileAccessFromFileURLs\fP for the current web view\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP Whether the file access inside web view from file URLs is allowed or not\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetAllowHTTPAuthPopUpWindow (bool flag)"
+
+.PP
+Sets whether a prompt alert should be displayed for collection username and password when the web view receives an HTTP authentication challenge (HTTP Basic or HTTP Digest) from server\&. By setting with \fCfalse\fP, no prompt will be shown and the user cannot login with input credentials\&. In this case, you can only access this page by providing username and password through the URL like: 'http://username:password@example\&.com'\&. If the username and password does not match, normally an error with 401 as status code would be returned (this behavior depends on the server implementation)\&. If set with \fCtrue\fP, a prompt will be shown when there is no credentials provided or it is not correct in the URL\&.
+.PP
+Default is \fCtrue\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP Whether a prompt alert should be shown for HTTP authentication challenge or not\&.
+.RE
+.PP
+
+.SS "static void UniWebView\&.SetAllowInlinePlay (bool flag)\fC [static]\fP"
+
+.PP
+Sets allow inline play for current web view\&. By default, on iOS, the video can only be played in a new full screen view\&. By setting this to \fCtrue\fP, you could play a video inline the page, instead of opening a new full screen window\&. This only works for iOS and macOS Editor\&. On Android, you could play videos inline by default and calling this method does nothing\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP A flag indicates whether inline playing of media is allowed or not\&.
+.RE
+.PP
+
+.SS "static void UniWebView\&.SetAllowJavaScriptOpenWindow (bool flag)\fC [static]\fP"
+
+.PP
+Sets whether JavaScript can open windows without user interaction\&. By setting this to \fCtrue\fP, an automatically JavaScript navigation will be allowed in the web view\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP Whether JavaScript could open window automatically\&.
+.RE
+.PP
+
+.SS "static void UniWebView\&.SetAllowUniversalAccessFromFileURLs (bool flag)\fC [static]\fP"
+
+.PP
+Sets allow universal access from file URLs\&. By default, on iOS, the \fCWKWebView\fP forbids any load of local files through AJAX even when opening a local HTML file\&. It checks the CORS rules and fails at web view level\&. This is useful when you want access these files by setting the \fCallowUniversalAccessFromFileURLs\fP key of web view configuration\&. On iOS and macOS Editor\&. It uses some 'hidden' way by setting \fCallowUniversalAccessFromFileURLs\fP in config for WebKit\&. So it is possible that it stops working in a future version\&.
+.PP
+On Android, it sets the \fCWebSettings\&.setAllowUniversalAccessFromFileURLs\fP and any later-created web views uses that value\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP A flag indicates whether the universal access for files are allowed or not\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetAllowUserChooseActionAfterDownloading (bool allowed)"
+
+.PP
+Sets whether allowing users to choose the way to handle the downloaded file\&. Default is \fCtrue\fP\&. On iOS, the downloaded file will be stored in a temporary folder\&. Setting this to \fCtrue\fP will show a system default share sheet and give the user a chance to send and store the file to another location (such as the File app or iCloud)\&.
+.PP
+On macOS Editor, setting this to \fCtrue\fP will allow \fBUniWebView\fP to open the file in Finder\&.
+.PP
+This method does not have any effect on Android\&. On Android, the file is downloaded to the Download folder\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIallowed\fP 
+.RE
+.PP
+
+.SS "void UniWebView\&.SetBackButtonEnabled (bool enabled)"
+
+.PP
+Sets whether the device back button should be enabled to execute 'go back' or 'closing' operation\&. On Android, the device back button in navigation bar will navigate users to a back page\&. If there is no any back page avaliable, the back button clicking will try to raise a \fCOnShouldClose\fP event and try to close the web view if \fCtrue\fP is return from the event\&. If the \fCOnShouldClose\fP is not listened, the web view will be closed and the \fBUniWebView\fP component will be destroyed to release using resource\&.
+.PP
+Listen to \fCOnKeyCodeReceived\fP if you need to disable the back button, but still want to get the back button key pressing event\&.
+.PP
+Default is enabled\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether the back button should perform go back or closing operation to web view\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetBouncesEnabled (bool enabled)"
+
+.PP
+Sets whether the web view should show with a bounces effect when scrolling to page edge\&. This only works on mobile platforms\&. It will do nothing on macOS Editor\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether the bounces effect should be applied or not\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetCalloutEnabled (bool enabled)"
+
+.PP
+Sets whether a callout (context) menu should be displayed when user long tapping on certain web view content\&. When enabled, when user long presses an image or link in the web page, a context menu would be show up to ask user's action\&. On iOS, it is a action sheet to ask whether opening the target link or saving the image\&. On Android it is a pop up dialog to ask whether saving the image to local disk\&. On iOS, the preview page triggered by force touch on iOS is also considered as a callout menu\&.
+.PP
+Default is \fCtrue\fP, means that the callout menu will be displayed\&. Call this method with \fCfalse\fP to disable it on the web view\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether a callout menu should be displayed when user long pressing or force touching a certain web page element\&. 
+.RE
+.PP
+
+.SS "void UniWebView\&.SetContentInsetAdjustmentBehavior (UniWebViewContentInsetAdjustmentBehavior behavior)"
+
+.PP
+Sets the adjustment behavior which indicates how safe area insets are added to the adjusted content inset\&. It is a wrapper of \fCcontentInsetAdjustmentBehavior\fP on iOS\&. It only works on iOS 11 and above\&. You need to call this method as soon as you create a web view, before you call any other methods related to web view layout (like \fCShow\fP or \fCSetShowToolbar\fP)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIbehavior\fP The behavior for determining the adjusted content offsets\&.
+.RE
+.PP
+
+.SS "static void UniWebView\&.SetCookie (string url, string cookie, bool skipEncoding = \fCfalse\fP)\fC [static]\fP"
+
+.PP
+Sets a cookie for a certain url\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIurl\fP The url to which cookie will be set\&.
+.br
+\fIcookie\fP The cookie string to set\&.
+.br
+\fIskipEncoding\fP Whether \fBUniWebView\fP should skip encoding the url or not\&. If set to \fCfalse\fP, \fBUniWebView\fP will try to encode the url parameter before using it\&. Otherwise, your original url string will be used to set the cookie if it is valid\&. Default is \fCfalse\fP\&. 
+.RE
+.PP
+
+.SS "void UniWebView\&.SetDefaultFontSize (int size)"
+
+.PP
+Sets the default font size used in the web view\&. On Android, the web view font size can be affected by the system font scale setting\&. Use this method to set the font size in a more reasonable way, by giving the web view another default font size with the system font scale considered\&. It can removes or reduces the effect of system font scale when displaying the web content\&.
+.PP
+This method only works on Android\&. On iOS, this method does nothing since the web view will respect the font size setting in your CSS styles\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIsize\fP The target default font size set to the web view\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetDownloadEventForContextMenuEnabled (bool enabled)"
+
+.PP
+Sets whether the \fCOnFileDownloadStarted\fP and \fCOnFileDownloadFinished\fP events should be raised even for an image saving action triggered by the callout (context) menu on Android\&. By default, the image saving goes through a different route and it does not trigger the \fCOnFileDownloadStarted\fP and \fCOnFileDownloadFinished\fP events like other normal download tasks\&. Setting this with enabled with \fCtrue\fP if you also need to get notified when user long-presses on the image and taps 'Save Image' button\&. By default, the image will be saved to the Downloads directory and you can get the path from the parameter of \fCOnFileDownloadFinished\fP event\&.
+.PP
+This only works on Android\&. On iOS, there is no way to get a callback or any event from the 'Add to Photos' button in the callout menu\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether the context menu image saving action triggers the download related events\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetDragInteractionEnabled (bool enabled)"
+
+.PP
+Sets whether the drag interaction should be enabled on iOS\&. From iOS 11, the iPad web view supports the drag interaction when user long presses an image, link or text\&. Setting this to \fCfalse\fP would disable the drag feather on the web view\&.
+.PP
+This method only works on iOS\&. It does nothing on Android or macOS editor\&. Default is \fCtrue\fP, which means drag interaction on iPad is enabled\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether the drag interaction should be enabled\&. 
+.RE
+.PP
+
+.SS "static void UniWebView\&.SetEnableKeyboardAvoidance (bool flag)\fC [static]\fP"
+
+.PP
+Sets whether the web view area should avoid soft keyboard\&. It \fCtrue\fP, when the keyboard shows up, the web views content view will resize itself to avoid keyboard overlap the web content\&. Otherwise, the web view will not resize and just leave the content below under the soft keyboard\&. This method is only for Android\&. On iOS, the keyboard avoidance is built into the system directly and there is no way to change its behavior\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP Whether the keyboard should avoid web view content\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetHeaderField (string key, string value)"
+
+.PP
+Sets a customized header field for web view requests\&. The header field will be used for all subsequence request\&. Pass \fCnull\fP as value to unset a header field\&.
+.PP
+Some reserved headers like user agent are not be able to override by setting here, use the \fCSetUserAgent\fP method for them instead\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP The key of customized header field\&.
+.br
+\fIvalue\fP The value of customized header field\&. \fCnull\fP if you want to unset the field\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetHorizontalScrollBarEnabled (bool enabled)"
+
+.PP
+Sets whether the horizontal scroll bar should show when the web content beyonds web view bounds\&. This only works on mobile platforms\&. It will do nothing on macOS Editor\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether enable the scroll bar or not\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetImmersiveModeEnabled (bool enabled)"
+
+.PP
+Sets whether the web view should behave in immersive mode, that is, hides the status bar and navigation bar with a sticky style\&. This method is only for Android\&. Default is enabled\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP 
+.RE
+.PP
+
+.SS "static void UniWebView\&.SetJavaScriptEnabled (bool enabled)\fC [static]\fP"
+
+.PP
+Sets whether JavaScript should be enabled in current web view\&. Default is enabled\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether JavaScript should be enabled\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetLoadWithOverviewMode (bool flag)"
+
+.PP
+Sets whether the web view loads pages in overview mode, that is, zooms out the content to fit on screen by width\&. This method is only for Android\&. Default is disabled\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP 
+.RE
+.PP
+
+.SS "void UniWebView\&.SetOpenLinksInExternalBrowser (bool flag)"
+
+.PP
+Sets whether the link clicking in the web view should open the page in an external browser\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP The flag indicates whether a link should be opened externally\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetShowSpinnerWhileLoading (bool flag)"
+
+.PP
+Sets whether to show a loading indicator while the loading is in progress\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP Whether an indicator should show\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetShowToolbar (bool show, bool animated = \fCfalse\fP, bool onTop = \fCtrue\fP, bool adjustInset = \fCfalse\fP)"
+
+.PP
+Sets whether to show a toolbar which contains navigation buttons and Done button\&. You could choose to show or hide the tool bar\&. By configuring the \fCanimated\fP and \fConTop\fP parameters, you can control the animating and position of the toolbar\&. If the toolbar is overlapping with some part of your web view, pass \fCadjustInset\fP with \fCtrue\fP to have the web view relocating itself to avoid the overlap\&.
+.PP
+This method is only for iOS\&. The toolbar is hidden by default\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIshow\fP Whether the toolbar should show or hide\&.
+.br
+\fIanimated\fP Whether the toolbar state changing should be with animation\&. Default is \fCfalse\fP\&.
+.br
+\fIonTop\fP Whether the toolbar should snap to top of screen or to bottom of screen\&. Default is \fCtrue\fP
+.br
+\fIadjustInset\fP Whether the toolbar transition should also adjust web view position and size if overlapped\&. Default is \fCfalse\fP
+.RE
+.PP
+
+.SS "void UniWebView\&.SetShowToolbarNavigationButtons (bool show)"
+
+.PP
+Sets the visibility of navigation buttons, such as 'Go Back' and 'Go Forward', on toolbar\&. By default, \fBUniWebView\fP will show the 'Go Back' and 'Go Forward' navigation buttons on the toolbar\&. Users can use these buttons to perform go back or go forward action just like in a browser\&. If the navigation model is not for your case, call this method with \fCfalse\fP as \fCshow\fP parameter to hide them\&.
+.PP
+This method is only for iOS, since there is no toolbar on Android\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIshow\fP Whether the navigation buttons on the toolbar should show or hide\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetSpinnerText (string text)"
+
+.PP
+Sets the text displayed in the loading indicator, if \fCSetShowSpinnerWhileLoading\fP is set to \fCtrue\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP The text to display while loading indicator visible\&. Default is 'Loading\&.\&.\&.'
+.RE
+.PP
+
+.SS "void UniWebView\&.SetSupportMultipleWindows (bool enabled, bool allowJavaScriptOpening)"
+
+.PP
+Sets whether the web view should support a pop up web view triggered by user in a new tab\&. In a general web browser (such as Google Chrome or Safari), a URL with \fCtarget='_blank'\fP attribute is intended to be opened in a new tab\&. However, in the context of web view, there is no way to handle new tabs without proper configurations\&. Due to that, by default \fBUniWebView\fP will ignore the \fCtarget='_blank'\fP and try to open the page in the same web view if that kind of link is pressed\&.
+.PP
+It works for most cases, but if this is a problem to your app logic, you can change this behavior by calling this method with \fCenabled\fP set to \fCtrue\fP\&. It enables the 'opening in new tab' behavior in a limited way, by adding the new tab web view above to the current web view, with the same size and position\&. When the opened new tab is closed, it will be removed from the view hierarchy automatically\&.
+.PP
+By default, only user triggered action is allowed to open a new window for security reason\&. That means, if you are using some JavaScript like \fCwindow\&.open\fP, unless you set \fCallowJavaScriptOpening\fP to \fCtrue\fP, it won't work\&. This default behavior prevents any other third party JavaScript code from opening a window arbitrarily\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether to support multiple windows\&. If \fCtrue\fP, the \fCtarget='_blank'\fP link will be opened in a new web view\&. Default is \fCfalse\fP\&. 
+.br
+\fIallowJavaScriptOpening\fP Whether to support open the new window with JavaScript by \fCwindow\&.open\fP\&. Setting this to \fCtrue\fP means any JavaScript code, even from third party (in an iframe or a library on the page), can open a new window\&. Use it as your risk\&. 
+.RE
+.PP
+
+.SS "void UniWebView\&.SetTextZoom (int textZoom)"
+
+.PP
+Sets the text zoom used in the web view\&. On Android, this method call \fCWebSettings\&.setTextZoom\fP to the the text zoom used in the web view\&.
+.PP
+This method only works on Android\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fItextZoom\fP The text zoom in percent\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetToolbarDoneButtonText (string text)"
+
+.PP
+Sets the done button text in toolbar\&. By default, \fBUniWebView\fP will show a 'Done' button at right size in the toolbar\&. You could change its title by passing a text\&.
+.PP
+This method is only for iOS, since there is no toolbar on Android\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP The text needed to be set as done button title\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetToolbarGoBackButtonText (string text)"
+
+.PP
+Sets the go back button text in toolbar\&. By default, \fBUniWebView\fP will show a back arrow at the left side in the toolbar\&. You could change its text\&.
+.PP
+This method is only for iOS and macOS Editor, since there is no toolbar on Android\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP The text needed to be set as go back button\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetToolbarGoForwardButtonText (string text)"
+
+.PP
+Sets the go forward button text in toolbar\&. By default, \fBUniWebView\fP will show a forward arrow at the left side in the toolbar\&. You could change its text\&.
+.PP
+This method is only for iOS and macOS Editor, since there is no toolbar on Android\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP The text needed to be set as go forward button\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetToolbarTextColor (Color color)"
+
+.PP
+Sets the button text color for the toolbar\&. By default, \fBUniWebView\fP uses the default text color on iOS, which is blue for most cases\&. You can change it by setting a new opaque color\&.
+.PP
+This method is only for iOS, since there is no toolbar on Android\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP The color should be used for the button text of the toolbar\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetToolbarTintColor (Color color)"
+
+.PP
+Sets the background tint color for the toolbar\&. By default, \fBUniWebView\fP uses a default half-transparent iOS standard background for toolbar\&. You can change it by setting a new opaque color\&.
+.PP
+This method is only for iOS, since there is no toolbar on Android\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP The color should be used for the background tint of the toolbar\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetTransparencyClickingThroughEnabled (bool enabled)"
+
+.PP
+Sets whether the web view should pass through clicks at clear pixels to Unity scene\&. Setting this method is a pre-condition for the whole passing-through feature to work\&. To allow your touch passing through to Unity scene, the following conditions should be met at the same time: 
+.PP
+.nf
+1\&. This method is called with `true` and the web view accepts passing-through clicks\&.
+2\&. The web view has a transparent background in body style for its content by CSS\&.
+3\&. The web view itself has a transparent background color by setting `BackgroundColor` with a clear color\&.
+
+.fi
+.PP
+ Then, when user clicks on the clear pixel on the web view, the touch events will not be handled by the web view\&. Instead, these events are passed to Unity scene\&. By using this feature, it is possible to create a native UI with the web view\&.
+.PP
+Only clicks on transparent part on the web view will be delivered to Unity scene\&. The web view still intercepts and handles other touches on visible pixels on the web view\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether the transparency clicking through feature should be enabled in this web view\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetUserAgent (string agent)"
+
+.PP
+Sets the user agent used in the web view\&. If the string is null or empty, the system default value will be used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIagent\fP The new user agent string to use\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetUserInteractionEnabled (bool enabled)"
+
+.PP
+Sets whether the web view can receive user interaction or not\&. By setting this to \fCfalse\fP, the web view will not accept any user touch event so your users cannot tap links or scroll the page\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether the user interaction should be enabled or not\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetUseWideViewPort (bool flag)"
+
+.PP
+Sets whether the web view should enable support for the 'viewport' HTML meta tag or should use a wide viewport\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIflag\fP Whether to enable support for the viewport meta tag\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetVerticalScrollBarEnabled (bool enabled)"
+
+.PP
+Sets whether the vertical scroll bar should show when the web content beyonds web view bounds\&. This only works on mobile platforms\&. It will do nothing on macOS Editor\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether enable the scroll bar or not\&.
+.RE
+.PP
+
+.SS "static void UniWebView\&.SetWebContentsDebuggingEnabled (bool enabled)\fC [static]\fP"
+
+.PP
+Enables debugging of web contents\&. You could inspect of the content of a web view by using a browser development tool of Chrome for Android or Safari for macOS\&. This method is only for Android and macOS Editor\&. On iOS, you do not need additional step\&. You could open Safari's developer tools to debug a web view on iOS\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether the content debugging should be enabled\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetWindowUserResizeEnabled (bool enabled)"
+
+.PP
+Enables user resizing for web view window\&. By default, you can only set the window size by setting its frame on mac Editor\&. By enabling user resizing, you would be able to resize the window by dragging its border as a normal macOS window\&. This method only works for macOS for debugging purpose\&. It does nothing on iOS and Android\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether the window could be able to be resized by cursor\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.SetZoomEnabled (bool enabled)"
+
+.PP
+Sets whether the web view supports zoom gesture to change content size\&. Default is \fCfalse\fP, which means the zoom gesture is not supported\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIenabled\fP Whether the zoom gesture is allowed or not\&.
+.RE
+.PP
+
+.SS "delegate bool UniWebView\&.ShouldCloseDelegate (\fBUniWebView\fP webView)"
+
+.PP
+Delegate for should close event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwebView\fP The web view component which raises this event\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Whether the web view should be closed and destroyed\&.
+.RE
+.PP
+
+.SS "bool UniWebView\&.Show (bool fade = \fCfalse\fP, UniWebViewTransitionEdge edge = \fCUniWebViewTransitionEdge::None\fP, float duration = \fC0::4f\fP, Action completionHandler = \fCnull\fP)"
+
+.PP
+Sets the web view visible on screen\&. If you pass \fCfalse\fP and \fCUniWebViewTransitionEdge\&.None\fP to the first two parameters, it means no animation will be applied when showing\&. So the \fCduration\fP parameter will not be taken into account\&. Otherwise, when either or both \fCfade\fP and \fCedge\fP set, the showing operation will be animated\&.
+.PP
+Regardless of there is an animation or not, the \fCcompletionHandler\fP will be called if not \fCnull\fP when the web view showing finishes\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIfade\fP Whether show with a fade in animation\&. Default is \fCfalse\fP\&.
+.br
+\fIedge\fP The edge from which the web view showing\&. It simulates a modal effect when showing a web view\&. Default is \fCUniWebViewTransitionEdge\&.None\fP\&.
+.br
+\fIduration\fP Duration of the showing animation\&. Default is \fC0\&.4f\fP\&.
+.br
+\fIcompletionHandler\fP Completion handler which will be called when showing finishes\&. Default is \fCnull\fP\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A bool value indicates whether the showing operation started\&.
+.RE
+.PP
+
+.SS "void UniWebView\&.UpdateFrame ()"
+
+.PP
+Updates and sets current frame of web view to match the setting\&. This is useful if the \fCreferenceRectTransform\fP is changed and you need to sync the frame change to the web view\&. This method follows the frame determining rules\&. 
+.SH "Property Documentation"
+.PP 
+.SS "float UniWebView\&.Alpha\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Gets or sets the alpha value of the whole web view\&. You can make the game scene behind web view visible to make the web view transparent\&.
+.PP
+Default is \fC1\&.0f\fP, which means totally opaque\&. Set it to \fC0\&.0f\fP will make the web view totally transparent\&. 
+.SS "bool UniWebView\&.IsWebViewSupported\fC [static]\fP, \fC [get]\fP"
+
+.PP
+Whether the web view is supported in current runtime or not\&. On some certain Android customized builds, the manufacturer prefers not containing the web view package in the system or blocks the web view package from being installed\&. If this happens, using of any web view related APIs will throw a \fCMissingWebViewPackageException\fP exception\&.
+.PP
+Use this method to check whether the web view is available on the current running system\&. If this parameter returns \fCfalse\fP, you should not use the web view\&.
+.PP
+This property always returns \fCtrue\fP on other supported platforms, such as iOS or macOS editor\&. It only performs runtime checking on Android\&. On other not supported platforms such as Windows or Linux, it always returns \fCfalse\fP\&.
+.PP
+Returns \fCtrue\fP if web view is supported on the current platform\&. Otherwise, \fCfalse\fP\&.
+.SS "RectTransform UniWebView\&.ReferenceRectTransform\fC [get]\fP, \fC [set]\fP"
+
+.PP
+A reference rect transform which the web view should change its position and size to\&. Set it to a Unity UI element (which contains a \fCRectTransform\fP) under a canvas to determine the web view frame by a certain UI element\&. By using this, you could get benefit from \fCMultiple Resolutions UI\fP\&. 
+.SH "Event Documentation"
+.PP 
+.SS "\fBKeyCodeReceivedDelegate\fP UniWebView\&.OnKeyCodeReceived"
+
+.PP
+Raised when a key (like back button or volume up) on the device is pressed\&. This event only raised on Android\&. It is useful when you disabled the back button but still need to get the back button event\&. On iOS, user's key action is not avaliable and this event will never be raised\&. 
+.SS "\fBMessageReceivedDelegate\fP UniWebView\&.OnMessageReceived"
+
+.PP
+Raised when a message from web view is received\&. Generally, the message comes from a navigation to a scheme which is observed by current web view\&. You could use \fCAddUrlScheme\fP and \fCRemoveUrlScheme\fP to manipulate the scheme list\&.
+.PP
+'uniwebview://' scheme is default in the list, so a clicking on link starting with 'uniwebview://' will raise this event, if it is not removed\&. 
+.SS "\fBPageFinishedDelegate\fP UniWebView\&.OnPageFinished"
+
+.PP
+Raised when the web view finished to load a url successfully\&. This method will be invoked when a valid response received from the url, regardless of the response status\&. If a url loading fails before reaching to the server and getting a response, \fCOnPageErrorReceived\fP will be raised instead\&. 
+.SS "\fBPageStartedDelegate\fP UniWebView\&.OnPageStarted"
+
+.PP
+Raised when the web view starts loading a url\&. This event will be invoked for both url loading with \fCLoad\fP method or by a link navigating from page\&. 
+.SS "\fBShouldCloseDelegate\fP UniWebView\&.OnShouldClose"
+
+.PP
+Raised when the web view is about to close itself\&. This event is raised when the users close the web view by Back button on Android, Done button on iOS, or Close button on Unity Editor\&. It gives a chance to make final decision whether the web view should be closed and destroyed\&. You can also clean all related resources you created (such as a reference to the web view) in this event\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

@@ -1,0 +1,62 @@
+.TH "UniWebViewHelper" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UniWebViewHelper \- Provides some helper utility methods for \fBUniWebView\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static string \fBStreamingAssetURLForPath\fP (string path)"
+.br
+.RI "Get the local streaming asset path for a given file path related to the StreamingAssets folder\&. "
+.ti -1c
+.RI "static string \fBPersistentDataURLForPath\fP (string path)"
+.br
+.RI "Get the local persistent data path for a given file path related to the data folder of your host app\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Provides some helper utility methods for \fBUniWebView\fP\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static string UniWebViewHelper\&.PersistentDataURLForPath (string path)\fC [static]\fP"
+
+.PP
+Get the local persistent data path for a given file path related to the data folder of your host app\&. This method will help you to create a URL string for a file under you stored in the \fCpersistentDataPath\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP The relative path to the persistent data path of your file\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The path you could use as the url for the web view\&.
+.RE
+.PP
+
+.SS "static string UniWebViewHelper\&.StreamingAssetURLForPath (string path)\fC [static]\fP"
+
+.PP
+Get the local streaming asset path for a given file path related to the StreamingAssets folder\&. This method will help you to create a URL string for a file under your StreamingAssets folder for different platforms\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP The relative path to the Assets/StreamingAssets of your file\&. For example, if you placed a html file under Assets/StreamingAssets/www/index\&.html, you should pass \fCwww/index\&.html\fP as parameter\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The path you could use as the url for the web view\&.
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

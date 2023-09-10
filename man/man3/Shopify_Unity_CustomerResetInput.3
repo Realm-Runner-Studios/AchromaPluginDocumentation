@@ -1,0 +1,94 @@
+.TH "Shopify.Unity.CustomerResetInput" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.CustomerResetInput \- Specifies the fields required to reset a customer’s password\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.InputBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCustomerResetInput\fP (string \fBresetToken\fP, string \fBpassword\fP)"
+.br
+.ti -1c
+.RI "\fBCustomerResetInput\fP (Dictionary< string, object > dataJSON)"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.InputBase\fP
+.in +1c
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Returns a string representing a GraphQL input object\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "const string \fBresetTokenFieldKey\fP = 'resetToken'"
+.br
+.ti -1c
+.RI "const string \fBpasswordFieldKey\fP = 'password'"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBresetToken\fP\fC [get, set]\fP"
+.br
+.RI "The reset token required to reset the customer’s password\&. "
+.ti -1c
+.RI "string \fBpassword\fP\fC [get, set]\fP"
+.br
+.RI "New password that will be set as part of the reset password process\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.InputBase\fP
+.in +1c
+.ti -1c
+.RI "void \fBSet\fP (string key, object value)"
+.br
+.ti -1c
+.RI "object \fBGet\fP (string key)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Specifies the fields required to reset a customer’s password\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.CustomerResetInput\&.CustomerResetInput (string resetToken, string password)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIresetToken\fP The reset token required to reset the customer’s password\&. 
+.br
+\fIpassword\fP New password that will be set as part of the reset password process\&. 
+.RE
+.PP
+
+.SS "Shopify\&.Unity\&.CustomerResetInput\&.CustomerResetInput (Dictionary< string, object > dataJSON)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIresetToken\fP The reset token required to reset the customer’s password\&. 
+.br
+\fIpassword\fP New password that will be set as part of the reset password process\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

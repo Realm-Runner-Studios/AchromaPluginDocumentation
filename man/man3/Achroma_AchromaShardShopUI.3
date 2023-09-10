@@ -1,0 +1,116 @@
+.TH "Achroma.AchromaShardShopUI" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaShardShopUI
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBAchromaPopupWindow\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBShow\fP (UnityAction result=null)"
+.br
+.ti -1c
+.RI "override void \fBFadeIn\fP (UnityAction result)"
+.br
+.RI "The method that will move the UI element up\&. "
+.ti -1c
+.RI "void \fBShowShardsPurchaseDetails\fP (\fBAchromaShopItem\fP item)"
+.br
+.RI "Shows the purchase details for items that can be purchased using shards Used for the purchase of avatars\&. "
+.ti -1c
+.RI "void \fBShowMoneyPurchaseDetails\fP (\fBAchromaShopItem\fP item)"
+.br
+.RI "Buys using money\&. It's used to buy shard packs with\&. "
+.ti -1c
+.RI "void \fBClose\fP ()"
+.br
+.ti -1c
+.RI "override void \fBUpdate\fP ()"
+.br
+.ti -1c
+.RI "void \fBUpdateShardBank\fP ()"
+.br
+.RI "Updates the shard bank text with the current numbner of shards\&. "
+.in -1c
+
+Public Member Functions inherited from \fBAchromaPopupWindow\fP
+.in +1c
+.ti -1c
+.RI "void \fBHide\fP ()"
+.br
+.RI "This will set the element position to the bottom, making it disappear from the screen\&. "
+.ti -1c
+.RI "virtual void \fBFadeOut\fP (UnityAction result=null)"
+.br
+.RI "The Coroutine that will move the UI element down\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "Button \fBcloseButton\fP"
+.br
+.ti -1c
+.RI "\fBAchromaShopItem\fP[] \fBshopItems\fP"
+.br
+.ti -1c
+.RI "\fBAchromaShardShopDialogBox\fP \fBshardShopDialogBox\fP"
+.br
+.in -1c
+
+Public Attributes inherited from \fBAchromaPopupWindow\fP
+.in +1c
+.ti -1c
+.RI "float \fBspeed\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "override void Achroma\&.AchromaShardShopUI\&.FadeIn (UnityAction result)\fC [virtual]\fP"
+
+.PP
+The method that will move the UI element up\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresukt\fP The callback method that will be called once the element is on the top position
+.RE
+.PP
+
+.PP
+Reimplemented from \fBAchromaPopupWindow\fP\&.
+.SS "void Achroma\&.AchromaShardShopUI\&.ShowMoneyPurchaseDetails (\fBAchromaShopItem\fP item)"
+
+.PP
+Buys using money\&. It's used to buy shard packs with\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIitem\fP the purchasable item
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaShardShopUI\&.ShowShardsPurchaseDetails (\fBAchromaShopItem\fP item)"
+
+.PP
+Shows the purchase details for items that can be purchased using shards Used for the purchase of avatars\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIitem\fP 
+.RE
+.PP
+
+.SS "override void Achroma\&.AchromaShardShopUI\&.Update ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBAchromaPopupWindow\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

@@ -1,0 +1,11 @@
+digraph "Shopify.Unity.SDK.CartLineItem.operator CheckoutLineItemInput"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Shopify.Unity.SDK.CartLine\lItem.operator CheckoutLineItemInput",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Will convert a CartLineItem to a CheckoutLineItemInput. These are used internally by the sdk for the ..."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Shopify.Unity.SDK.CartLine\lItem.GetCheckoutLineItemInput",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item.html#a21e91bdf9a6000c1d31e16f7fbba4843",tooltip="Will convert this CartLineItem to a CheckoutLineItemInput. This is used internally by the sdk for the..."];
+}

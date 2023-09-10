@@ -1,0 +1,950 @@
+.TH "Shopify.Unity.ShopifyClient" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.ShopifyClient \- \fBShopifyClient \fP is the entry point to communicate with the \fBShopify\fP Storefront API\&. \fBShopifyClient \fP also has functionality to easily generate and send queries to receive information about products, collections, and has the ability to create checkouts\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShopifyClient\fP (string accessToken, string domain, string locale=null)"
+.br
+.RI "ShopifyClient 
+.PP
+is the entry point to communicate with the \fBShopify\fP Storefront API\&. ShopifyClient 
+.PP
+also has functionality to easily generate and send queries to receive information about products and collections\&. It also has the ability to create checkouts\&. "
+.ti -1c
+.RI "\fBShopifyClient\fP (\fBBaseLoader\fP loader)"
+.br
+.RI "It is possible to instantiate a ShopifyClient 
+.PP
+by passing an instance that implements BaseLoader 
+.PP
+\&. BaseLoaders 
+.PP
+handle network communication with the Storefront API\&. This functionality is useful if you'd like to use the \fBShopify\fP SDK for Unity in a C# environment outside of Unity\&. The \fCdomain\fP string is inferred from BaseLoaders 
+.PP
+which can be used to request a specific client\&. "
+.ti -1c
+.RI "void \fBUpdateLocale\fP (string locale)"
+.br
+.RI "Overwrites the QueryLoader instance with a new one with the specified locale\&. "
+.ti -1c
+.RI "void \fBproducts\fP (ProductsPaginatedHandler callback, int? first=null, string after=null)"
+.br
+.RI "Generates a query to receive one page of \fCproducts\fP from a \fBShopify\fP store\&. The generated query will query the following on products: "
+.ti -1c
+.RI "void \fBproducts\fP (ProductsHandler callback, string firstProductId, params string[] otherProductIds)"
+.br
+.RI "Generates a query to receive selected \fCproducts\fP from a \fBShopify\fP store\&. The generated query will query the following on products: "
+.ti -1c
+.RI "void \fBproducts\fP (ProductsHandler callback, List< string > productIds)"
+.br
+.RI "Generates a query to receive selected \fCproducts\fP from a \fBShopify\fP store\&. The generated query will query the following on products: "
+.ti -1c
+.RI "void \fBcollections\fP (CollectionsPaginatedHandler callback, int? first=null, string after=null)"
+.br
+.RI "Generates a query to receive a page of \fCcollections\fP from a \fBShopify\fP store\&. The generated query will query the following on collections: "
+.ti -1c
+.RI "void \fBcollections\fP (CollectionsHandler callback, string firstCollectionId, params string[] otherCollectionIds)"
+.br
+.RI "Generates a query to receive selected \fCcollections\fP from a \fBShopify\fP store\&. The generated query will query the following on collections: "
+.ti -1c
+.RI "void \fBcollections\fP (CollectionsHandler callback, List< string > collectionIds)"
+.br
+.RI "Generates a query to fetch the specified \fCcollections\fP by id from a \fBShopify\fP store\&. The generated query will query the following on collections: "
+.ti -1c
+.RI "void \fBQuery\fP (\fBQueryRootQuery\fP query, QueryRootHandler callback)"
+.br
+.RI "Allows you to send custom GraphQL queries to the Storefront API\&. While having utility functions like products 
+.PP
+collections 
+.PP
+is useful, the Storefront API has more functionality\&. This method allows you to access all the extra functionality that the Storefront API provides\&. "
+.ti -1c
+.RI "void \fBQuery\fP (QueryRootDelegate buildQuery, QueryRootHandler callback)"
+.br
+.RI "Allows you to build and send custom GraphQL queries to the Storefront API\&. While having utility functions like products 
+.PP
+collections 
+.PP
+is useful, the Storefront API has more functionality\&. This method allows you to access all the extra functionality that the Storefront API provides\&. "
+.ti -1c
+.RI "void \fBMutation\fP (\fBMutationQuery\fP query, MutationRootHandler callback)"
+.br
+.RI "Allows you to continuously make a root query, till the response is deemed ready\&. "
+.ti -1c
+.RI "void \fBMutation\fP (MutationDelegate buildQuery, MutationRootHandler callback)"
+.br
+.RI "Allows you to build and send custom GraphQL mutation queries to the Storefront API\&. "
+.ti -1c
+.RI "\fBCart\fP \fBCart\fP (string cartId=null)"
+.br
+.RI "Creates a Cart 
+.PP
+, which can be used to manage line items for an order and create a web checkout link\&. One client 
+.PP
+can have multiple carts, so it's possible to pass in a \fCcartId\fP to reference a specific cart\&. If no \fCcartId\fP is passed, then a default Cart 
+.PP
+is used\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static Dictionary< string, int > \fBDefaultImageResolutions\fP"
+.br
+.RI "This is a dictionary that defines aliases, \fCmaxWidth\fP, and \fCmaxHeight\fP for images loaded by products 
+.PP
+and collections 
+.PP
+\&. All Products images, Product variant images, and Collection images will be queried using aliases defined by this dictionary's keys and the \fCmaxWidth\fP and \fCmaxHeight\fP will be this dictionary's values\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBAccessToken\fP\fC [get]\fP"
+.br
+.RI "AccessToken 
+.PP
+is the access token associated with this client to query \fBShopify\fP\&. "
+.ti -1c
+.RI "string \fBDomain\fP\fC [get]\fP"
+.br
+.RI "Domain 
+.PP
+is the \fBShopify\fP store domain associated with this client\&. "
+.ti -1c
+.RI "string \fBLocale\fP\fC [get]\fP"
+.br
+.RI "Locale 
+.PP
+is the language that supported translated content will be in\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBShopifyClient \fP is the entry point to communicate with the \fBShopify\fP Storefront API\&. \fBShopifyClient \fP also has functionality to easily generate and send queries to receive information about products, collections, and has the ability to create checkouts\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.ShopifyClient\&.ShopifyClient (string accessToken, string domain, string locale = \fCnull\fP)"
+
+.PP
+ShopifyClient 
+.PP
+is the entry point to communicate with the \fBShopify\fP Storefront API\&. ShopifyClient 
+.PP
+also has functionality to easily generate and send queries to receive information about products and collections\&. It also has the ability to create checkouts\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIaccessToken\fP the access token used to query the \fBShopify\fP Storefront API for a store
+.br
+\fIdomain\fP domain for the \fBShopify\fP store
+.RE
+.PP
+.PP
+.nf
+// Example that initializes a new ShopifyClient which will query all products
+string accessToken = "b8d417759a62f7b342f3735dbe86b322";
+string shopDomain = "unity\-buy\-sdk\&.myshopify\&.com";
+
+ShopifyClient client = new ShopifyClient(accessToken, shopDomain);
+
+client\&.products((products, error) => {
+    Debug\&.Log(products[0]\&.title());
+    Debug\&.Log(products[1]\&.title());
+});
+.fi
+.PP
+ 
+.SS "Shopify\&.Unity\&.ShopifyClient\&.ShopifyClient (\fBBaseLoader\fP loader)"
+
+.PP
+It is possible to instantiate a ShopifyClient 
+.PP
+by passing an instance that implements BaseLoader 
+.PP
+\&. BaseLoaders 
+.PP
+handle network communication with the Storefront API\&. This functionality is useful if you'd like to use the \fBShopify\fP SDK for Unity in a C# environment outside of Unity\&. The \fCdomain\fP string is inferred from BaseLoaders 
+.PP
+which can be used to request a specific client\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIloader\fP a loader which will handle network communication with the Storefront API
+.RE
+.PP
+.PP
+.nf
+// Example that initializes a new ShopifyClient using a custom loader for another C# platform
+string accessToken = "b8d417759a62f7b342f3735dbe86b322";
+string shopDomain = "unity\-buy\-sdk\&.myshopify\&.com";
+
+CustomLoaderForNonUnityPlatform loader = new CustomLoaderForNonUnityPlatform(accessToken, shopDomain);
+
+ShopifyClient client = new ShopifyClient(loader);
+
+client\&.products((products, error) => {
+    Debug\&.Log(products[0]\&.title());
+    Debug\&.Log(products[1]\&.title());
+});
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCart\fP Shopify\&.Unity\&.ShopifyClient\&.Cart (string cartId = \fCnull\fP)"
+
+.PP
+Creates a Cart 
+.PP
+, which can be used to manage line items for an order and create a web checkout link\&. One client 
+.PP
+can have multiple carts, so it's possible to pass in a \fCcartId\fP to reference a specific cart\&. If no \fCcartId\fP is passed, then a default Cart 
+.PP
+is used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcartId\fP can be optionally passed in\&. This is useful if your application needs multiple carts
+.RE
+.PP
+.PP
+.nf
+// Example that checks how many line items the cart contains
+Cart cart = ShopifyBuy\&.Client()\&.Cart();
+
+Debug\&.Log("The cart has " + cart\&.LineItems\&.All()\&.Count + " line items");
+.fi
+.PP
+ 
+.SS "void Shopify\&.Unity\&.ShopifyClient\&.collections (CollectionsHandler callback, List< string > collectionIds)"
+
+.PP
+Generates a query to fetch the specified \fCcollections\fP by id from a \fBShopify\fP store\&. The generated query will query the following on collections: 
+.IP "\(bu" 2
+id
+.IP "\(bu" 2
+title
+.IP "\(bu" 2
+description
+.IP "\(bu" 2
+descriptionHtml
+.IP "\(bu" 2
+updatedAt
+.IP "\(bu" 2
+image
+.IP "  \(bu" 4
+altText
+.IP "  \(bu" 4
+src
+.PP
+
+.IP "\(bu" 2
+products
+.IP "  \(bu" 4
+id
+.PP
+
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP callback that will receive responses from server
+.br
+\fIcollectionIds\fP the list of collection ids you want to receive from the server
+.RE
+.PP
+.PP
+.nf
+// Example usage querying two collection ids using a List<string>
+List<string> collectionIds = new List<string>() {
+    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzYwOTk=",
+    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzkwNDM="
+};
+
+ShopifyBuy\&.Client()\&.collections((collections, error) => {
+    Debug\&.Log(collections[0]\&.title());
+    Debug\&.Log(collections[1]\&.title());
+}, collectionIds);
+.fi
+.PP
+ 
+.SS "void Shopify\&.Unity\&.ShopifyClient\&.collections (CollectionsHandler callback, string firstCollectionId, params string[] otherCollectionIds)"
+
+.PP
+Generates a query to receive selected \fCcollections\fP from a \fBShopify\fP store\&. The generated query will query the following on collections: 
+.IP "\(bu" 2
+id
+.IP "\(bu" 2
+title
+.IP "\(bu" 2
+description
+.IP "\(bu" 2
+descriptionHtml
+.IP "\(bu" 2
+updatedAt
+.IP "\(bu" 2
+image
+.IP "  \(bu" 4
+altText
+.IP "  \(bu" 4
+src
+.PP
+
+.IP "\(bu" 2
+products
+.IP "  \(bu" 4
+id
+.PP
+
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP callback that will receive responses or errors from server
+.br
+\fIfirstCollectionId\fP you must pass in at least one collection id to query
+.br
+\fIotherCollectionIds\fP after the first collection id you can pass in as many collection ids as you'd like\&. 
+.RE
+.PP
+.PP
+.nf
+// Example usage querying two collection ids using a List<string>
+ShopifyBuy\&.Client()\&.collections((collections, error) => {
+    Debug\&.Log(collections[0]\&.title());
+    Debug\&.Log(collections[1]\&.title());
+}, "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzYwOTk=", "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzkwNDM=");
+.fi
+.PP
+ 
+.SS "void Shopify\&.Unity\&.ShopifyClient\&.collections (CollectionsPaginatedHandler callback, int? first = \fCnull\fP, string after = \fCnull\fP)"
+
+.PP
+Generates a query to receive a page of \fCcollections\fP from a \fBShopify\fP store\&. The generated query will query the following on collections: 
+.IP "\(bu" 2
+id
+.IP "\(bu" 2
+title
+.IP "\(bu" 2
+description
+.IP "\(bu" 2
+descriptionHtml
+.IP "\(bu" 2
+updatedAt
+.IP "\(bu" 2
+image
+.IP "  \(bu" 4
+altText
+.IP "  \(bu" 4
+src
+.PP
+
+.IP "\(bu" 2
+products
+.IP "  \(bu" 4
+id
+.PP
+
+.PP
+.PP
+Note that \fCshop\&.collections\fP is a Connection (GraphQL paginated data structure)\&. collections 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP callback that will receive responses from server
+.br
+\fIfirst\fP can be used to limit how many products are returned\&. For instance 10 would return only 10 collections
+.br
+\fIafter\fP is used to load subsequent pages\&. Basically it's a cursor variable to define what page to load next\&. For example, when used with \fCfirst: 10\fP and \fCafter: 'abc'\fP, only the first 10 collections would be loaded after cursor \fC'abc'\fP\&. If no \fCafter\fP is passed the first page of collections will be loaded\&. 
+.RE
+.PP
+.PP
+.nf
+// Example that queries all collections on a shop
+ShopifyBuy\&.Client()\&.collections((collections, error) => {
+    Debug\&.Log(collections[0]\&.title());
+    Debug\&.Log(collections\&.Count);
+});
+.fi
+.PP
+ 
+.SS "void Shopify\&.Unity\&.ShopifyClient\&.Mutation (MutationDelegate buildQuery, MutationRootHandler callback)"
+
+.PP
+Allows you to build and send custom GraphQL mutation queries to the Storefront API\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbuildQuery\fP delegate that will build a query starting at MutationQuery 
+.br
+\fIcallback\fP callback which will receive a response
+.RE
+.PP
+.PP
+.nf
+// Example that creates a new customer on a store
+ShopifyBuy\&.Client()\&.Mutation(
+    buildQuery: (mutation) => { mutation
+        \&.customerCreate(
+            buildQuery: (cc) => { cc
+                \&.userErrors(
+                    buildQuery: (ue) => { ue
+                        \&.field()
+                        \&.message();
+                    }
+                );
+            },
+            input: new CustomerCreateInput(
+                email: "mikkoh@email\&.com",
+                password: "oh so secret"
+            )
+        );
+    },
+    callback: (data, error) => {
+        if (error != null) {
+            Debug\&.Log("There was an error: " + error\&.Reason);
+        } else {
+            List<UserError> userErrors = data\&.customerCreate()\&.userErrors();
+
+            if (userErrors != null) {
+                foreach(UserError error in userErrors) {
+                    // field which may have a user error
+                    Debug\&.Log(error\&.field());
+                    // error message for the field which had an error
+                    Debug\&.Log(error\&.message());
+                }
+            } else {
+                Debug\&.Log("No user errors the customer was created");
+            }
+        }
+    }
+);
+.fi
+.PP
+ 
+.SS "void Shopify\&.Unity\&.ShopifyClient\&.Mutation (\fBMutationQuery\fP query, MutationRootHandler callback)"
+
+.PP
+Allows you to continuously make a root query, till the response is deemed ready\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIisReady\fP A Delegates\&.PollUpdatedHandler that determines if polling should stop by returning true
+.br
+\fIquery\fP The query to be queried continuously
+.RE
+.PP
+.PP
+.nf
+    // Example that uses polling
+    QueryRootQuery query = new QueryRootQuery();
+   
+    query\&.node(
+        buildQuery: node => node
+            \&.onCheckout(checkout => checkout\&.ready()),
+        id: "someCheckoutID""
+    );
+   
+    PollUpdatedHandler isReadyHandler = (updatedQueryRoot) => {
+        var expectedNode = (Checkout) updatedQueryRoot\&.node();
+        return expectedNode\&.ready();
+    };
+   
+    PollQuery(isReadyHandler, query, (response, error) => {
+        if (error == null) {
+            var checkout = (Checkout) response\&.node();
+            // checkout\&.ready() is true
+        }
+   })
+public void PollQuery (PollUpdatedHandler isReady, QueryRootQuery query, QueryRootHandler callback) {
+    const float POLL_DELAY_SECONDS = 0\&.5f;
+
+    Query (query, (QueryRoot response, ShopifyError error) => {
+        if (error != null) {
+            callback (response, error);
+        } else {
+            if (isReady (response)) {
+                callback (response, null);
+            } else {
+                UnityTimeout\&.Start (POLL_DELAY_SECONDS, () => {
+                    PollQuery (isReady, query, callback);
+                });
+            }
+        }
+    });
+}
+
+    <summary>
+    Allows you to send custom prebuilt GraphQL mutation queries to the Storefront API\&.
+    </summary>
+    <param name="query">a query to be sent to the Storefront API</param>
+    <param name="callback">callback which will receive a response</param>
+    \\code
+    // Example that creates a custom mutation query
+    MutationQuery mutation = new MutationQuery();
+   
+    mutation\&.customerCreate(
+        buildQuery: (cc) => { cc
+            \&.userErrors(
+                buildQuery: (ue) => { ue
+                    \&.field()
+                    \&.message();
+                }
+            );
+        },
+        input: new CustomerCreateInput(
+            email: "mikkoh@email\&.com",
+            password: "oh so secret"
+        )
+    );
+   
+    ShopifyBuy\&.Client()\&.Mutation(
+        query: mutation,
+        callback: (data, error) => {
+            if (error != null) {
+                Debug\&.Log("There was an error: " + error\&.Reason);
+            } else {
+                List<UserError> userErrors = data\&.customerCreate()\&.userErrors();
+   
+                if (userErrors != null) {
+                    foreach(UserError error in userErrors) {
+                        // field which may have a user error
+                        Debug\&.Log(error\&.field());
+                        // error message for the field which had an error
+                        Debug\&.Log(error\&.message());
+                    }
+                } else {
+                    Debug\&.Log("No user errors the customer was created");
+                }
+            }
+        }
+    );
+.fi
+.PP
+ 
+.SS "void Shopify\&.Unity\&.ShopifyClient\&.products (ProductsHandler callback, List< string > productIds)"
+
+.PP
+Generates a query to receive selected \fCproducts\fP from a \fBShopify\fP store\&. The generated query will query the following on products: 
+.IP "\(bu" 2
+id
+.IP "\(bu" 2
+title
+.IP "\(bu" 2
+descriptionHtml
+.IP "\(bu" 2
+images (with aliases defined by ShopifyClient\&.defaultImageResolutions)
+.IP "  \(bu" 4
+altText
+.IP "  \(bu" 4
+src
+.PP
+
+.IP "\(bu" 2
+options
+.IP "  \(bu" 4
+name
+.IP "  \(bu" 4
+values
+.PP
+
+.IP "\(bu" 2
+variants
+.IP "  \(bu" 4
+id
+.IP "  \(bu" 4
+available
+.IP "  \(bu" 4
+price
+.IP "  \(bu" 4
+title
+.IP "  \(bu" 4
+weight
+.IP "  \(bu" 4
+weightUnit
+.IP "  \(bu" 4
+selectedOptions
+.IP "    \(bu" 6
+name
+.IP "    \(bu" 6
+values
+.PP
+
+.IP "  \(bu" 4
+image (with aliases defined by ShopifyClient\&.defaultImageResolutions)
+.IP "    \(bu" 6
+altText
+.IP "    \(bu" 6
+src
+.PP
+
+.PP
+
+.IP "\(bu" 2
+collections
+.IP "  \(bu" 4
+image (with aliases defined by ShopifyClient\&.defaultImageResolutions)
+.IP "    \(bu" 6
+altText
+.IP "    \(bu" 6
+src
+.PP
+
+.IP "  \(bu" 4
+title
+.IP "  \(bu" 4
+updatedAt
+.PP
+
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP callback that will receive responses from server
+.br
+\fIproductIds\fP a list of product ids you'd like to query
+.RE
+.PP
+.PP
+.nf
+// Example usage querying two product ids using a List<string>
+List<string> productIds = new List<string>() {
+    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzYwOTk=",
+    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzkwNDM="
+};
+
+ShopifyBuy\&.Client()\&.products((products, error) => {
+    Debug\&.Log(products[0]\&.title());
+    Debug\&.Log(products[1]\&.title());
+}, productIds);
+.fi
+.PP
+ 
+.SS "void Shopify\&.Unity\&.ShopifyClient\&.products (ProductsHandler callback, string firstProductId, params string[] otherProductIds)"
+
+.PP
+Generates a query to receive selected \fCproducts\fP from a \fBShopify\fP store\&. The generated query will query the following on products: 
+.IP "\(bu" 2
+id
+.IP "\(bu" 2
+title
+.IP "\(bu" 2
+descriptionHtml
+.IP "\(bu" 2
+images (with aliases defined by ShopifyClient\&.defaultImageResolutions)
+.IP "  \(bu" 4
+altText
+.IP "  \(bu" 4
+src
+.PP
+
+.IP "\(bu" 2
+options
+.IP "  \(bu" 4
+name
+.IP "  \(bu" 4
+values
+.PP
+
+.IP "\(bu" 2
+variants
+.IP "  \(bu" 4
+id
+.IP "  \(bu" 4
+available
+.IP "  \(bu" 4
+price
+.IP "  \(bu" 4
+title
+.IP "  \(bu" 4
+weight
+.IP "  \(bu" 4
+weightUnit
+.IP "  \(bu" 4
+selectedOptions
+.IP "    \(bu" 6
+name
+.IP "    \(bu" 6
+values
+.PP
+
+.IP "  \(bu" 4
+image (with aliases defined by ShopifyClient\&.defaultImageResolutions)
+.IP "    \(bu" 6
+altText
+.IP "    \(bu" 6
+src
+.PP
+
+.PP
+
+.IP "\(bu" 2
+collections
+.IP "  \(bu" 4
+image (with aliases defined by ShopifyClient\&.defaultImageResolutions)
+.IP "    \(bu" 6
+altText
+.IP "    \(bu" 6
+src
+.PP
+
+.IP "  \(bu" 4
+title
+.IP "  \(bu" 4
+updatedAt
+.PP
+
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP callback that will receive responses or errors from server
+.br
+\fIfirstProductId\fP you must pass in at least one product id to query
+.br
+\fIotherProductIds\fP after the first product id you can pass in as many product ids as you'd like\&. 
+.RE
+.PP
+.PP
+.nf
+// Example usage querying two product ids
+ShopifyBuy\&.Client()\&.products((products, error) => {
+    Debug\&.Log(products[0]\&.title());
+    Debug\&.Log(products[1]\&.title());
+}, "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzYwOTk=", "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzk4OTUyNzkwNDM=");
+.fi
+.PP
+ 
+.SS "void Shopify\&.Unity\&.ShopifyClient\&.products (ProductsPaginatedHandler callback, int? first = \fCnull\fP, string after = \fCnull\fP)"
+
+.PP
+Generates a query to receive one page of \fCproducts\fP from a \fBShopify\fP store\&. The generated query will query the following on products: 
+.IP "\(bu" 2
+id
+.IP "\(bu" 2
+title
+.IP "\(bu" 2
+descriptionHtml
+.IP "\(bu" 2
+images (with aliases defined by ShopifyClient\&.DefaultImageResolutions)
+.IP "  \(bu" 4
+altText
+.IP "  \(bu" 4
+src
+.PP
+
+.IP "\(bu" 2
+options
+.IP "  \(bu" 4
+name
+.IP "  \(bu" 4
+values
+.PP
+
+.IP "\(bu" 2
+variants
+.IP "  \(bu" 4
+id
+.IP "  \(bu" 4
+available
+.IP "  \(bu" 4
+price
+.IP "  \(bu" 4
+title
+.IP "  \(bu" 4
+weight
+.IP "  \(bu" 4
+weightUnit
+.IP "  \(bu" 4
+selectedOptions
+.IP "    \(bu" 6
+name
+.IP "    \(bu" 6
+values
+.PP
+
+.IP "  \(bu" 4
+image (with aliases defined by ShopifyClient\&.DefaultImageResolutions)
+.IP "    \(bu" 6
+altText
+.IP "    \(bu" 6
+src
+.PP
+
+.PP
+
+.IP "\(bu" 2
+collections
+.IP "  \(bu" 4
+image (with aliases defined by ShopifyClient\&.DefaultImageResolutions)
+.IP "    \(bu" 6
+altText
+.IP "    \(bu" 6
+src
+.PP
+
+.IP "  \(bu" 4
+title
+.IP "  \(bu" 4
+updatedAt
+.PP
+
+.PP
+.PP
+Note that \fCshop\&.products\fP is a Connection (GraphQL paginated data structure)\&.
+.PP
+\fCfirst\fP will define the page size\&. \fCafter\fP will be the cursor for the next page\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP callback that will receive responses from server\&. This callback also can receive \fCShopifyError\fP or \fCnull\fP if no error happened\&. The callback also receives \fCafter\fP will be the cursor for the next page\&. If the callback's after parameter is null, there are no more pages to fetch\&.
+.br
+\fIfirst\fP can be used to limit how many products are returned\&. For instance 10 would return only 10 products
+.br
+\fIafter\fP is used to load subsequent pages\&. Basically it's a cursor variable to define what page to load next\&. For example, when used with \fCfirst: 10\fP and \fCafter: 'abc'\fP, only the first 10 products would be loaded after cursor \fC'abc'\fP\&. If no \fCafter\fP is passed the first page of products will be loaded\&. 
+.RE
+.PP
+.PP
+.nf
+// Example usage querying one page of products after the cursor "abc":
+ShopifyBuy\&.Client()\&.products((products, error, after) => {
+    Debug\&.Log(products[0]\&.title());
+    Debug\&.Log(products[1]\&.title());
+    Debug\&.Log(products\&.Count);
+
+    if (after != null) {
+        // more products could be loaded here
+    }
+}, after: "abc");
+.fi
+.PP
+ 
+.SS "void Shopify\&.Unity\&.ShopifyClient\&.Query (QueryRootDelegate buildQuery, QueryRootHandler callback)"
+
+.PP
+Allows you to build and send custom GraphQL queries to the Storefront API\&. While having utility functions like products 
+.PP
+collections 
+.PP
+is useful, the Storefront API has more functionality\&. This method allows you to access all the extra functionality that the Storefront API provides\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbuildQuery\fP delegate that will build a query starting at QueryRootQuery which will be sent to the Storefront API 
+.br
+\fIcallback\fP callback which will receive a response
+.RE
+.PP
+.PP
+.nf
+// Example that builds a query that queries a Shop's name
+ShopifyBuy\&.Client()\&.Query(
+    query: q => q
+        \&.shop(s => s
+            \&.name()
+        ),
+    callback: (data, error) => {
+        if (error != null) {
+            Debug\&.Log("There was an error: " + error\&.Reason);
+        } else {
+            Debug\&.Log(data\&.shop()\&.name());
+        }
+    }
+);
+.fi
+.PP
+ 
+.SS "void Shopify\&.Unity\&.ShopifyClient\&.Query (\fBQueryRootQuery\fP query, QueryRootHandler callback)"
+
+.PP
+Allows you to send custom GraphQL queries to the Storefront API\&. While having utility functions like products 
+.PP
+collections 
+.PP
+is useful, the Storefront API has more functionality\&. This method allows you to access all the extra functionality that the Storefront API provides\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIquery\fP a GraphQL query to be sent to the Storefront API
+.br
+\fIcallback\fP callback which will receive a response from the query
+.RE
+.PP
+.PP
+.nf
+// Example that queries a Shop's name
+QueryRoot query = new QueryRootQuery();
+
+query\&.shop(s => s
+    \&.name()
+);
+
+ShopifyBuy\&.Client()\&.Query(
+    query: query,
+    callback: (data, error) => {
+        if (error != null) {
+            Debug\&.Log("There was an error: " + error\&.Reason);
+        } else {
+            Debug\&.Log(data\&.shop()\&.name());
+        }
+    }
+);
+.fi
+.PP
+ 
+.SS "void Shopify\&.Unity\&.ShopifyClient\&.UpdateLocale (string locale)"
+
+.PP
+Overwrites the QueryLoader instance with a new one with the specified locale\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlocale\fP locale for fetching translated content of supported types and fields
+.RE
+.PP
+.PP
+.nf
+// Example usage for updating the locale to French:
+ShopifyBuy\&.Client(shopDomain)\&.UpdateLocale("fr")
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "Dictionary<string, int> Shopify\&.Unity\&.ShopifyClient\&.DefaultImageResolutions\fC [static]\fP"
+\fBInitial value:\fP.PP
+.nf
+= new Dictionary<string, int> () { { "pico", 16 }, { "icon", 32 }, { "thumb", 50 }, { "small", 100 }, { "compact", 160 }, { "medium", 240 }, { "large", 480 }, { "grande", 600 }, { "resolution_1024", 1024 }, { "resolution_2048", 2048 }
+        }
+.fi
+
+.PP
+This is a dictionary that defines aliases, \fCmaxWidth\fP, and \fCmaxHeight\fP for images loaded by products 
+.PP
+and collections 
+.PP
+\&. All Products images, Product variant images, and Collection images will be queried using aliases defined by this dictionary's keys and the \fCmaxWidth\fP and \fCmaxHeight\fP will be this dictionary's values\&. 
+.PP
+.nf
+// Returns an image source url whose dimensions are never greater than 100px
+string srcSmallImage = productVariant\&.image()\&.transformedSrc("small");
+
+// Returns an image source url whose dimensions are never greater than 1024px
+string src1024Image = productVariant\&.image()\&.transformedSrc("resolution_1024");
+
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

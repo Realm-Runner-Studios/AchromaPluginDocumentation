@@ -1,0 +1,191 @@
+\doxysection{Uni\+Web\+View\+Safe\+Browsing Class Reference}
+\hypertarget{class_uni_web_view_safe_browsing}{}\label{class_uni_web_view_safe_browsing}\index{UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}}
+
+
+\doxylink{class_uni_web_view}{Uni\+Web\+View} Safe Browsing provides a way for browsing the web content in a more browser-\/like way, such as Safari on i\+OS and Chrome on Android.  
+
+
+
+
+Inheritance diagram for Uni\+Web\+View\+Safe\+Browsing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_uni_web_view_safe_browsing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Uni\+Web\+View\+Safe\+Browsing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_uni_web_view_safe_browsing__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \mbox{\hyperlink{class_uni_web_view_safe_browsing_a2555c848125957840a09a3c929bbb9b9}{On\+Safe\+Browsing\+Finished\+Delegate}} (\mbox{\hyperlink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}} browsing)
+\begin{DoxyCompactList}\small\item\em Delegate for safe browsing finish event. \end{DoxyCompactList}\item 
+\Hypertarget{class_uni_web_view_safe_browsing_ad3e6c2c5c955af8c09173625fce33591}\label{class_uni_web_view_safe_browsing_ad3e6c2c5c955af8c09173625fce33591} 
+void {\bfseries Show} ()
+\begin{DoxyCompactList}\small\item\em Shows the safe browsing content above current screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_safe_browsing_a3a7a268591c495397e331e7212edf0fe}{Dismiss}} ()
+\begin{DoxyCompactList}\small\item\em Dismisses the safe browsing component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_safe_browsing_ad13f17c0c9c6431b4abbac1c505f0aa2}{Set\+Toolbar\+Color}} (Color color)
+\begin{DoxyCompactList}\small\item\em Sets the color for toolbar background in the safe browsing component. The changes are ignored after {\ttfamily Show} method is called. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uni_web_view_safe_browsing_a4cf34414f784ff927cf0aa59330ca932}{Set\+Toolbar\+Item\+Color}} (Color color)
+\begin{DoxyCompactList}\small\item\em Sets the color for toolbar controls in the safe browsing component. The changes are ignored after {\ttfamily Show} method is called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}} \mbox{\hyperlink{class_uni_web_view_safe_browsing_a9d5991e3234fd927a80748b1b11bf35f}{Create}} (string url)
+\begin{DoxyCompactList}\small\item\em Creates a new {\ttfamily \doxylink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}} instance with a given URL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_uni_web_view_safe_browsing_a5e6c976a9c7dd3aaa379968e2f024960}{Is\+Safe\+Browsing\+Supported}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether the safe browsing mode is supported in current runtime or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_uni_web_view_safe_browsing_a2555c848125957840a09a3c929bbb9b9}{On\+Safe\+Browsing\+Finished\+Delegate}} \mbox{\hyperlink{class_uni_web_view_safe_browsing_a1f0f3c85a481716a2aa2d2bc25bf34a2}{On\+Safe\+Browsing\+Finished}}
+\begin{DoxyCompactList}\small\item\em Raised when user dismisses safe browsing by tapping the Done button or Back button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_uni_web_view}{Uni\+Web\+View} Safe Browsing provides a way for browsing the web content in a more browser-\/like way, such as Safari on i\+OS and Chrome on Android. 
+
+This class wraps {\ttfamily SFSafari\+View\+Controller} on i\+OS and "{}\+Custom Tabs"{} on Android. It shares cookies, auto-\/fill completion and other more data with the browser on device. Most of permissions are also built-\/in supported. You can use this class for some tasks that are limited for a normal web view, such as using Apple Pay or Progressive Web Apps (PWA).
+
+You create a {\ttfamily \doxylink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}} instance by calling the static {\ttfamily \doxylink{class_uni_web_view_safe_browsing_a9d5991e3234fd927a80748b1b11bf35f}{Uni\+Web\+View\+Safe\+Browsing.\+Create}} method with a destination URL. You cannot change this URL once the instance is created. To show the safe browsing, call {\ttfamily Show} on the instance. The web content will be displayed in full screen with a toolbar containing the loaded URL, as well as some basic controls like Go Back, Go Forward and Done.
+
+Browsing web content in {\ttfamily \doxylink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}} is only supported on i\+OS and Android. There is no such component in Unity Editor. Creating and showing a {\ttfamily \doxylink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}} on Unity Editor will fall back to open the URL in external browser by using Unity\textquotesingle{}s {\ttfamily Application.\+Open\+URL}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_uni_web_view_safe_browsing_a9d5991e3234fd927a80748b1b11bf35f}\label{class_uni_web_view_safe_browsing_a9d5991e3234fd927a80748b1b11bf35f} 
+\index{UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}!Create@{Create}}
+\index{Create@{Create}!UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}} Uni\+Web\+View\+Safe\+Browsing.\+Create (\begin{DoxyParamCaption}\item[{string}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new {\ttfamily \doxylink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}} instance with a given URL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The URL to navigate to. The URL must use the {\ttfamily http} or {\ttfamily https} scheme.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A newly created {\ttfamily \doxylink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}} instance.
+\end{DoxyReturn}
+\Hypertarget{class_uni_web_view_safe_browsing_a3a7a268591c495397e331e7212edf0fe}\label{class_uni_web_view_safe_browsing_a3a7a268591c495397e331e7212edf0fe} 
+\index{UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}!Dismiss@{Dismiss}}
+\index{Dismiss@{Dismiss}!UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}}
+\doxysubsubsection{\texorpdfstring{Dismiss()}{Dismiss()}}
+{\footnotesize\ttfamily void Uni\+Web\+View\+Safe\+Browsing.\+Dismiss (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dismisses the safe browsing component. 
+
+This method only works on i\+OS. On Android, there is no way to dismiss the safe browsing component programatically as the result of the limitation from the native (Android) side. \Hypertarget{class_uni_web_view_safe_browsing_a2555c848125957840a09a3c929bbb9b9}\label{class_uni_web_view_safe_browsing_a2555c848125957840a09a3c929bbb9b9} 
+\index{UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}!OnSafeBrowsingFinishedDelegate@{OnSafeBrowsingFinishedDelegate}}
+\index{OnSafeBrowsingFinishedDelegate@{OnSafeBrowsingFinishedDelegate}!UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}}
+\doxysubsubsection{\texorpdfstring{OnSafeBrowsingFinishedDelegate()}{OnSafeBrowsingFinishedDelegate()}}
+{\footnotesize\ttfamily delegate void Uni\+Web\+View\+Safe\+Browsing.\+On\+Safe\+Browsing\+Finished\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}}}]{browsing }\end{DoxyParamCaption})}
+
+
+
+Delegate for safe browsing finish event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em browsing} & The {\ttfamily \doxylink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}} object raised this event.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_safe_browsing_ad13f17c0c9c6431b4abbac1c505f0aa2}\label{class_uni_web_view_safe_browsing_ad13f17c0c9c6431b4abbac1c505f0aa2} 
+\index{UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}!SetToolbarColor@{SetToolbarColor}}
+\index{SetToolbarColor@{SetToolbarColor}!UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}}
+\doxysubsubsection{\texorpdfstring{SetToolbarColor()}{SetToolbarColor()}}
+{\footnotesize\ttfamily void Uni\+Web\+View\+Safe\+Browsing.\+Set\+Toolbar\+Color (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the color for toolbar background in the safe browsing component. The changes are ignored after {\ttfamily Show} method is called. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color to tint the toolbar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uni_web_view_safe_browsing_a4cf34414f784ff927cf0aa59330ca932}\label{class_uni_web_view_safe_browsing_a4cf34414f784ff927cf0aa59330ca932} 
+\index{UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}!SetToolbarItemColor@{SetToolbarItemColor}}
+\index{SetToolbarItemColor@{SetToolbarItemColor}!UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}}
+\doxysubsubsection{\texorpdfstring{SetToolbarItemColor()}{SetToolbarItemColor()}}
+{\footnotesize\ttfamily void Uni\+Web\+View\+Safe\+Browsing.\+Set\+Toolbar\+Item\+Color (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the color for toolbar controls in the safe browsing component. The changes are ignored after {\ttfamily Show} method is called. 
+
+This method only works on i\+OS. On Android, the controls color is determined by system to keep a reasonable contrast, based on the toolbar background color you provided in {\ttfamily Set\+Toolbar\+Color}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color to tint the controls on toolbar.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_uni_web_view_safe_browsing_a5e6c976a9c7dd3aaa379968e2f024960}\label{class_uni_web_view_safe_browsing_a5e6c976a9c7dd3aaa379968e2f024960} 
+\index{UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}!IsSafeBrowsingSupported@{IsSafeBrowsingSupported}}
+\index{IsSafeBrowsingSupported@{IsSafeBrowsingSupported}!UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}}
+\doxysubsubsection{\texorpdfstring{IsSafeBrowsingSupported}{IsSafeBrowsingSupported}}
+{\footnotesize\ttfamily bool Uni\+Web\+View\+Safe\+Browsing.\+Is\+Safe\+Browsing\+Supported\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Whether the safe browsing mode is supported in current runtime or not. 
+
+If supported, the safe browsing mode will be used when {\ttfamily Show} is called on a {\ttfamily \doxylink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}} instance. Otherwise, the system default browser will be used to open the page when {\ttfamily Show} is called.
+
+This property always returns {\ttfamily true} on i\+OS runtime platform. On Android, it depends on whether there is an Intent can handle the safe browsing request. Usually it is provided by Chrome. If there is no Intent can open the URL in safe browsing mode, this property will return {\ttfamily false}.
+
+To use this API on Android when you set your Target SDK to Android 11 or later, you need to declare the correct intent query explicitly in your Android\+Manifest.\+xml, to follow the Package Visibility (\href{https://developer.android.com/about/versions/11/privacy/package-visibility}{\texttt{ https\+://developer.\+android.\+com/about/versions/11/privacy/package-\/visibility}})\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<\textcolor{keywordtype}{queries}>}
+\DoxyCodeLine{\ \ <\textcolor{keywordtype}{intent}>}
+\DoxyCodeLine{\ \ \ \ <\textcolor{keywordtype}{action}\ \textcolor{keyword}{android:name}=\textcolor{stringliteral}{"{}android.support.customtabs.action.CustomTabsService"{}}\ />}
+\DoxyCodeLine{\ \ </\textcolor{keywordtype}{intent}>}
+\DoxyCodeLine{</\textcolor{keywordtype}{queries}>}
+
+\end{DoxyCode}
+
+
+Returns {\ttfamily true} if the safe browsing mode is supported and the page will be opened in safe browsing mode. Otherwise, {\ttfamily false}. 
+
+\doxysubsection{Event Documentation}
+\Hypertarget{class_uni_web_view_safe_browsing_a1f0f3c85a481716a2aa2d2bc25bf34a2}\label{class_uni_web_view_safe_browsing_a1f0f3c85a481716a2aa2d2bc25bf34a2} 
+\index{UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}!OnSafeBrowsingFinished@{OnSafeBrowsingFinished}}
+\index{OnSafeBrowsingFinished@{OnSafeBrowsingFinished}!UniWebViewSafeBrowsing@{UniWebViewSafeBrowsing}}
+\doxysubsubsection{\texorpdfstring{OnSafeBrowsingFinished}{OnSafeBrowsingFinished}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_uni_web_view_safe_browsing_a2555c848125957840a09a3c929bbb9b9}{On\+Safe\+Browsing\+Finished\+Delegate}} Uni\+Web\+View\+Safe\+Browsing.\+On\+Safe\+Browsing\+Finished}
+
+
+
+Raised when user dismisses safe browsing by tapping the Done button or Back button. 
+
+The dismissed safe browsing instance will be invalid after this event being raised, and you should not use it for another browsing purpose. Instead, create a new one for a new browsing session.
+
+This event will not happen in Unity Editor, because the whole {\ttfamily \doxylink{class_uni_web_view_safe_browsing}{Uni\+Web\+View\+Safe\+Browsing}} will fall back to an external browser. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Uni\+Web\+View/\+Script/Uni\+Web\+View\+Safe\+Browsing.\+cs\end{DoxyCompactItemize}

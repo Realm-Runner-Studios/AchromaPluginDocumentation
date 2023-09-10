@@ -1,0 +1,861 @@
+\doxysection{Achroma.\+Achroma\+Firebase\+Controller Class Reference}
+\hypertarget{class_achroma_1_1_achroma_firebase_controller}{}\label{class_achroma_1_1_achroma_firebase_controller}\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+
+
+Inheritance diagram for Achroma.\+Achroma\+Firebase\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{class_achroma_1_1_achroma_firebase_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Achroma.\+Achroma\+Firebase\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{class_achroma_1_1_achroma_firebase_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_af4cb2c15d4deaf62bbb28ae66a9633f2}\label{class_achroma_1_1_achroma_firebase_controller_af4cb2c15d4deaf62bbb28ae66a9633f2} 
+enum {\bfseries Firebase\+General\+Database\+State} \{ {\bfseries Error} = -\/1
+, {\bfseries Idle} = 0
+, {\bfseries Initialized} = 1
+ \}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a571001cab4c7cbb9753b018629e37abd}\label{class_achroma_1_1_achroma_firebase_controller_a571001cab4c7cbb9753b018629e37abd} 
+enum {\bfseries Default\+Database\+State} \{ \newline
+{\bfseries Error} = -\/1
+, {\bfseries Idle} = 0
+, {\bfseries Initialized} = 1
+, {\bfseries Authenticating} = 2
+, \newline
+{\bfseries Authenticated} = 4
+, {\bfseries Loading\+Database} = 5
+, {\bfseries Database\+Loaded} = 6
+, {\bfseries Data\+Updated} = 7
+ \}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a689e087169b3ac56ead257f69e54cfdf}\label{class_achroma_1_1_achroma_firebase_controller_a689e087169b3ac56ead257f69e54cfdf} 
+enum {\bfseries Firebase\+Auth\+Type} \{ {\bfseries Email\+Password}
+, {\bfseries Apple}
+, {\bfseries Google}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_af2e8160be8b10e299bf9e09788382822}{Apple\+Sign\+In\+Fromi\+OS}} (\mbox{\hyperlink{struct_user_info}{User\+Info}} user\+Info, Unity\+Action$<$ bool, String, String $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Method that signs in to Apple from an Apple device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_ade66e55cd620ceb61795c34fe8ff623f}{Apple\+Sign\+In\+From\+Android}} (Unity\+Action$<$ bool, String, String $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Signs in to Apple from an Android device. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a86697edf397ebce5e8e259a3881144d8}\label{class_achroma_1_1_achroma_firebase_controller_a86697edf397ebce5e8e259a3881144d8} 
+void {\bfseries Get\+Custom\+Token} (string uid, Unity\+Action$<$ bool, string, string $>$ callback)
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_aa761dbb9fcee9b07ed3b2942a6ae2b2f}{Get\+All\+Cards}} (Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_card_collection}{Card\+Collection}}, bool, string $>$ finished)
+\begin{DoxyCompactList}\small\item\em Returns a collection of all the cards from Firebase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a2ca1d69cd12bc68b55d4dc83d840d45d}{Email\+Sign\+In}} (String email, String password, Unity\+Action$<$ bool, String, String, String $>$ result=null)
+\begin{DoxyCompactList}\small\item\em This method calls the login method using email and password. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a3e3641c7a77dc451603a704eef5e7808}{Forgot\+Password}} (String email, Unity\+Action$<$ bool, String $>$ result=null)
+\begin{DoxyCompactList}\small\item\em In case the user forgot the password. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a8d51368e906ba8a4515f2ec76146068a}\label{class_achroma_1_1_achroma_firebase_controller_a8d51368e906ba8a4515f2ec76146068a} 
+void {\bfseries Stop\+Forgot\+Password} ()
+\begin{DoxyCompactList}\small\item\em Method to interrupt the action of asking for a new password. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a4c3d8e981c3970168260b53d500140e7}{Email\+Sign\+Up}} (String username, String email, String password, String password\+Confirmation, Unity\+Action$<$ bool, String, String $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Function for the register button. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ac45f001dc775dbc194fb27b7fdb1d9f8}\label{class_achroma_1_1_achroma_firebase_controller_ac45f001dc775dbc194fb27b7fdb1d9f8} 
+void {\bfseries Stop\+Email\+Sign\+Up} ()
+\begin{DoxyCompactList}\small\item\em Method to interrupt the action of Signing up by email. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_af2437ff0db4191df08e5dba6b0810952}\label{class_achroma_1_1_achroma_firebase_controller_af2437ff0db4191df08e5dba6b0810952} 
+void {\bfseries Get\+Friends\+Data} (Unity\+Action$<$ bool, string, string $>$ result)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a2574ef04e9ec2c397c11567f9306de48}\label{class_achroma_1_1_achroma_firebase_controller_a2574ef04e9ec2c397c11567f9306de48} 
+void {\bfseries Stop\+Get\+Friends\+Request\+Data} ()
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ad17c0c13ad9f48834189cf5736b77abe}\label{class_achroma_1_1_achroma_firebase_controller_ad17c0c13ad9f48834189cf5736b77abe} 
+void {\bfseries Set\+Friends\+Data} (\mbox{\hyperlink{class_achroma_1_1_friends_data}{Friends\+Data}} friends\+Data, Unity\+Action$<$ bool, string $>$ result)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ac2e69fbe2b172efd660407a40169cead}\label{class_achroma_1_1_achroma_firebase_controller_ac2e69fbe2b172efd660407a40169cead} 
+void {\bfseries Stop\+Set\+Friends\+Request\+Data} ()
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a13372750f556a3071178491199d0d78b}\label{class_achroma_1_1_achroma_firebase_controller_a13372750f556a3071178491199d0d78b} 
+void {\bfseries Add\+Friends\+Changed\+Listener} (Unity\+Action$<$ string $>$ friends\+Changed)
+\begin{DoxyCompactList}\small\item\em Attaches the listener to the friends table and allows the listener to trigger events when a new request arrives or when the friends list has been updated. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a205bb95aca86be078e16cc9e61262c15}\label{class_achroma_1_1_achroma_firebase_controller_a205bb95aca86be078e16cc9e61262c15} 
+void {\bfseries Remove\+Friends\+Changed\+Listener} ()
+\begin{DoxyCompactList}\small\item\em Detaches the listener. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ae317d022479e746b000193a6df9d43b1}\label{class_achroma_1_1_achroma_firebase_controller_ae317d022479e746b000193a6df9d43b1} 
+void {\bfseries Initialize\+Database} ()
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a821abb7c97ab78dcb898b4586cac224a}\label{class_achroma_1_1_achroma_firebase_controller_a821abb7c97ab78dcb898b4586cac224a} 
+void {\bfseries Google\+Sign\+In} (string google\+Access\+Token, string google\+Id\+Token, Unity\+Action$<$ bool, String, String $>$ result=null)
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a5d50339369ec3c512d547cf4de9344a5}{Add\+Match\+Changed\+Listener}} (string session\+Name, Unity\+Action$<$ string $>$ match\+Changed)
+\begin{DoxyCompactList}\small\item\em Adds a listener to a match. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a80982f8eef057d3f128c663794ff71f8}{Remove\+Match\+Changed\+Listener}} (string session\+Name)
+\begin{DoxyCompactList}\small\item\em Removes the listener from the match. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_af26f0efa5f2b9be6502515156efb3d56}{Get\+Match\+Data}} (string session\+Name, Unity\+Action$<$ bool, string, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Gets the json of a match given the session id. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ab45f377674ecba0af1f3574bff1c2420}\label{class_achroma_1_1_achroma_firebase_controller_ab45f377674ecba0af1f3574bff1c2420} 
+void {\bfseries Stop\+Get\+Match\+Data} ()
+\begin{DoxyCompactList}\small\item\em Stops the coroutine that\textquotesingle{}s getting the match data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a2bc45fdb6cdbbbf0effc45f4a94ab6cc}{Set\+Match\+Data}} (string session, \mbox{\hyperlink{class_achroma_1_1_match_data}{Match\+Data}} match\+Data, Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Saves data to the match table. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a9764545c4eff437151a9186f6392d106}\label{class_achroma_1_1_achroma_firebase_controller_a9764545c4eff437151a9186f6392d106} 
+void {\bfseries Stop\+Set\+Match\+Data} ()
+\begin{DoxyCompactList}\small\item\em Interupts saving the matchdata. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a60ba4be3e6e106d7bc8ed4864f4e67b6}{Get\+Match\+Code}} (Unity\+Action$<$ string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets a new match code. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ae9d0d3922acb938bf9c27de51c19b2cb}\label{class_achroma_1_1_achroma_firebase_controller_ae9d0d3922acb938bf9c27de51c19b2cb} 
+void {\bfseries Get\+News} (Unity\+Action$<$ bool, string, \mbox{\hyperlink{class_achroma_1_1_news_collection}{News\+Collection}} $>$ result)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a4eae83c7928418bd708990e34ff3ec3e}\label{class_achroma_1_1_achroma_firebase_controller_a4eae83c7928418bd708990e34ff3ec3e} 
+void {\bfseries Get\+Global\+Achrometer} (Unity\+Action$<$ IDictionary $>$ callback)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a43b8f5705a0d0ce5b41df77d63e67279}\label{class_achroma_1_1_achroma_firebase_controller_a43b8f5705a0d0ce5b41df77d63e67279} 
+void {\bfseries Get\+Current\+Season\+Name} (Unity\+Action$<$ string $>$ callback)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a3990c0e4c8c7e365094c051184b59594}\label{class_achroma_1_1_achroma_firebase_controller_a3990c0e4c8c7e365094c051184b59594} 
+void {\bfseries Get\+Achrometer\+Tier} (int total\+Chroma\+Wins, int total\+Achrom\+Wins, int story\+Achrometer, Unity\+Action$<$ bool, int, int $>$ result)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a0dd48644535e2f16eea2388836bc9c75}\label{class_achroma_1_1_achroma_firebase_controller_a0dd48644535e2f16eea2388836bc9c75} 
+void {\bfseries Get\+Ranking} (int hero, bool current\+Season, string user\+Id, Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$ ranking)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_afb4efbdb8012c3b0ca876ad66cc90251}\label{class_achroma_1_1_achroma_firebase_controller_afb4efbdb8012c3b0ca876ad66cc90251} 
+void {\bfseries Get\+Story\+Ranking} (string user\+Id, Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$ ranking)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a7c9d1eead1a9ac66e5c05ad08be201a1}\label{class_achroma_1_1_achroma_firebase_controller_a7c9d1eead1a9ac66e5c05ad08be201a1} 
+void {\bfseries Get\+Ranking\+Position\+For\+User\+By\+Id} (int hero, string user\+Id, Unity\+Action$<$ int $>$ ranking)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ac8d432777385f3516440ac676d15b2b3}\label{class_achroma_1_1_achroma_firebase_controller_ac8d432777385f3516440ac676d15b2b3} 
+void {\bfseries Get\+Story\+Ranking\+Position\+For\+User\+By\+Id} (string user\+Id, Unity\+Action$<$ int $>$ ranking)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a0268abe682c82fc0442207675c66c097}\label{class_achroma_1_1_achroma_firebase_controller_a0268abe682c82fc0442207675c66c097} 
+void {\bfseries Remote\+Config\+Settings\+Fetch} (Unity\+Action$<$ bool, String $>$ result=null)
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_aeaebd8d6f8b4ae1933dded34b8c18a61}{Set\+User\+Data}} (\mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} user\+Data, Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Method to push the user data to Firebase using Json serialization. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_aefaf1468bcd75aec1daf6533b5dd0841}\label{class_achroma_1_1_achroma_firebase_controller_aefaf1468bcd75aec1daf6533b5dd0841} 
+void {\bfseries Stop\+Set\+User\+Data} ()
+\begin{DoxyCompactList}\small\item\em Method to interrupt an update to the user\textquotesingle{}s table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a41d4053af6d31c2f1d390c43385b2ad2}{Add\+User\+Changed\+Listener}} (string user\+Id, Unity\+Action$<$ string $>$ user\+Changed)
+\begin{DoxyCompactList}\small\item\em Adds the listener to the user record. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a72ec14ffe315fc1c1d4cd1598eb3abea}{Remove\+User\+Changed\+Listener}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Removes the listener from the user record. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_aa082ff5778b71f9a5788ec3f7a7d7d1c}{Get\+User\+Data}} (Unity\+Action$<$ bool, string, string $>$ result, string custom\+User\+Id="{}"{})
+\begin{DoxyCompactList}\small\item\em Method to get current user data and store it to a User\+Data variable. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_aabf4ef89e3ed0fcab3b7965f086cb97a}\label{class_achroma_1_1_achroma_firebase_controller_aabf4ef89e3ed0fcab3b7965f086cb97a} 
+void {\bfseries Stop\+Get\+User\+Data} ()
+\begin{DoxyCompactList}\small\item\em Interrupt the get user data method. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a385a9e7370fba58f74a7bfa3dcaf29b5}\label{class_achroma_1_1_achroma_firebase_controller_a385a9e7370fba58f74a7bfa3dcaf29b5} 
+void {\bfseries Get\+Auth\+Token} (Unity\+Action$<$ string $>$ callback)
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_ad4be9fd22886adbfe2f47458604cc232}{Get\+User\+By\+Id}} (string id, Unity\+Action$<$ bool, string, object $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the user by their id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_aa58994ef9d7ebad43178e2adf6023b7f}{Get\+User\+Id\+By\+Unique\+Number}} (string unique\+Number, Unity\+Action$<$ bool, string, object $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the user by their id. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_abe79572b7963bda4d2bc68e5f41c07ca}\label{class_achroma_1_1_achroma_firebase_controller_abe79572b7963bda4d2bc68e5f41c07ca} 
+void {\bfseries Cancel\+Sign\+In} ()
+\begin{DoxyCompactList}\small\item\em If the user decides to cancel login. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ab1a4c8b4d4acbdd21908bfc279c4e62d}\label{class_achroma_1_1_achroma_firebase_controller_ab1a4c8b4d4acbdd21908bfc279c4e62d} 
+void {\bfseries Sign\+Out} ()
+\begin{DoxyCompactList}\small\item\em This method logs out of the firebase and set the state to the previous state, initialized. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a4c57ab20c42decb71d88600f0fe29485}{Initialize}} (Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Method to initialize Firebase. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_afc176219d1e4a4035cfa6cff7f487459}\label{class_achroma_1_1_achroma_firebase_controller_afc176219d1e4a4035cfa6cff7f487459} 
+void {\bfseries Stop\+Initialize} ()
+\begin{DoxyCompactList}\small\item\em Method to interrupt the initialization if the user likes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_aacb8303ac3668e017ae46483eef84f15}{Load\+Database}} (Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Loads the references to the used tables in the app. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_aa58ea5d26d17770d5065fb288b2ff75e}\label{class_achroma_1_1_achroma_firebase_controller_aa58ea5d26d17770d5065fb288b2ff75e} 
+Firebase\+General\+Database\+State {\bfseries general\+State} = Firebase\+General\+Database\+State.\+Idle
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a80bdb6944542c41e2b944705e4116392}\label{class_achroma_1_1_achroma_firebase_controller_a80bdb6944542c41e2b944705e4116392} 
+Default\+Database\+State {\bfseries default\+State} = Default\+Database\+State.\+Idle
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a75bd02bd0298042e941f23d1da4bdc2d}\label{class_achroma_1_1_achroma_firebase_controller_a75bd02bd0298042e941f23d1da4bdc2d} 
+Dependency\+Status {\bfseries dependency\+Status}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a1526ebdc2338dbc26a2eee22db6782e6}\label{class_achroma_1_1_achroma_firebase_controller_a1526ebdc2338dbc26a2eee22db6782e6} 
+Firebase\+Auth {\bfseries auth}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a864710405625d1d84f31908e0de13322}\label{class_achroma_1_1_achroma_firebase_controller_a864710405625d1d84f31908e0de13322} 
+Firebase\+User {\bfseries User}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_aa27b93950fbd9b4229ff6487526075e9}\label{class_achroma_1_1_achroma_firebase_controller_aa27b93950fbd9b4229ff6487526075e9} 
+IEnumerator {\bfseries Get\+Custom\+Token\+Task} (string uid, Unity\+Action$<$ bool, string, string $>$ callback)
+\item 
+IEnumerator \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a87b18ea6808d33646047c834b182dafa}{Get\+All\+Cards\+Task}} (Unity\+Action$<$ IDictionary, bool, string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Task to call the Get All Cards Cloud Function on Firebase. \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a7b3d5a50698bfc09ed5d51fa191f2f3e}{Get\+Match\+Code\+Task}} (Unity\+Action$<$ string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets a new match code. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a275de8ec9e7f53fb6fb37d1e4d45dc7e}\label{class_achroma_1_1_achroma_firebase_controller_a275de8ec9e7f53fb6fb37d1e4d45dc7e} 
+IEnumerator {\bfseries Get\+Global\+Achrometer\+Task} (Unity\+Action$<$ IDictionary $>$ callback)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ae8cb39f33f7e154831551e6cf51eff3d}\label{class_achroma_1_1_achroma_firebase_controller_ae8cb39f33f7e154831551e6cf51eff3d} 
+IEnumerator {\bfseries Get\+Current\+Season\+Name\+Task} (Unity\+Action$<$ string $>$ callback)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a7aea97d47289a29284e3f92f5b042032}\label{class_achroma_1_1_achroma_firebase_controller_a7aea97d47289a29284e3f92f5b042032} 
+IEnumerator {\bfseries Get\+Achrometer\+Tier\+Task} (int total\+Chroma\+Wins, int total\+Achrom\+Wins, int story\+Achrometer, Unity\+Action$<$ bool, int, int $>$ callback)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_aa513623c29b8caaf2341a93fad0e212c}\label{class_achroma_1_1_achroma_firebase_controller_aa513623c29b8caaf2341a93fad0e212c} 
+IEnumerator {\bfseries Get\+Ranking\+Task} (int hero, bool current\+Season, Unity\+Action$<$ IDictionary, bool $>$ callback)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a84af14f156051d39230a9254d719271f}\label{class_achroma_1_1_achroma_firebase_controller_a84af14f156051d39230a9254d719271f} 
+IEnumerator {\bfseries Get\+Story\+Ranking\+Task} (string user\+Id, Unity\+Action$<$ IDictionary, bool $>$ callback)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_afc1904cb9eda443171f7776eb0ce80f5}\label{class_achroma_1_1_achroma_firebase_controller_afc1904cb9eda443171f7776eb0ce80f5} 
+IEnumerator {\bfseries Get\+Ranking\+Position\+For\+User\+By\+Id\+Task} (int hero, string user, Unity\+Action$<$ IDictionary $>$ callback)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a5c35726c3a74c32d9b37b62ca46bdf89}\label{class_achroma_1_1_achroma_firebase_controller_a5c35726c3a74c32d9b37b62ca46bdf89} 
+IEnumerator {\bfseries Get\+Story\+Ranking\+Position\+For\+User\+By\+Id\+Task} (string user\+Id, Unity\+Action$<$ IDictionary $>$ callback)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ab61e4609c5a08659ea30c35515acb7e6}\label{class_achroma_1_1_achroma_firebase_controller_ab61e4609c5a08659ea30c35515acb7e6} 
+IEnumerator {\bfseries Get\+Ranking\+For\+User\+Friends\+Task} (int hero, bool current\+Season, string user\+Id, Unity\+Action$<$ IDictionary, bool $>$ callback)
+\item 
+IEnumerator \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a13b592a70ae12f12a3393e55c130ddc3}{Get\+User\+By\+Id\+Task}} (string id, Unity\+Action$<$ bool, string, object $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the user by their id. \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a7466f4dbe007e0b9a2b173227f1df19c}{Get\+User\+Id\+By\+Unique\+Number\+Task}} (string unique\+Number, Unity\+Action$<$ bool, string, object $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the user by their id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a544d270c48bcb82b41fe65ead73572a0}\label{class_achroma_1_1_achroma_firebase_controller_a544d270c48bcb82b41fe65ead73572a0} 
+Database\+Reference {\bfseries news\+Data\+Reference}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a13e3b767c905dd363c8dd8dd583285e4}\label{class_achroma_1_1_achroma_firebase_controller_a13e3b767c905dd363c8dd8dd583285e4} 
+Database\+Reference {\bfseries user\+Data\+Reference}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ac2c71fe049f3dcc43f92fbc8fb16725e}\label{class_achroma_1_1_achroma_firebase_controller_ac2c71fe049f3dcc43f92fbc8fb16725e} 
+Database\+Reference {\bfseries matches\+Reference}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a766ffeb4e115aebf4ed85fb6034fa608}\label{class_achroma_1_1_achroma_firebase_controller_a766ffeb4e115aebf4ed85fb6034fa608} 
+Database\+Reference {\bfseries friends\+Reference}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a1890d17252863b5a91d3855bbbaf3d17}\label{class_achroma_1_1_achroma_firebase_controller_a1890d17252863b5a91d3855bbbaf3d17} 
+Firebase\+General\+Database\+State {\bfseries General\+State}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a0f5197ae8a8d27d01ad93a55b1f90743}\label{class_achroma_1_1_achroma_firebase_controller_a0f5197ae8a8d27d01ad93a55b1f90743} 
+static bool {\bfseries General\+Database\+Is\+Loaded}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a91cf1b946e796ad8725b0a034a201bdc}\label{class_achroma_1_1_achroma_firebase_controller_a91cf1b946e796ad8725b0a034a201bdc} 
+Default\+Database\+State {\bfseries Default\+State}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_acd94676a6a0ca3e92c82d970da66e697}\label{class_achroma_1_1_achroma_firebase_controller_acd94676a6a0ca3e92c82d970da66e697} 
+static \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller}{Achroma\+Firebase\+Controller}} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a5d50339369ec3c512d547cf4de9344a5}\label{class_achroma_1_1_achroma_firebase_controller_a5d50339369ec3c512d547cf4de9344a5} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!AddMatchChangedListener@{AddMatchChangedListener}}
+\index{AddMatchChangedListener@{AddMatchChangedListener}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{AddMatchChangedListener()}{AddMatchChangedListener()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Add\+Match\+Changed\+Listener (\begin{DoxyParamCaption}\item[{string}]{session\+Name,  }\item[{Unity\+Action$<$ string $>$}]{match\+Changed }\end{DoxyParamCaption})}
+
+
+
+Adds a listener to a match. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Name} & session id of the match to be watched\\
+\hline
+{\em match\+Changed} & callback with the json of the match\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a5d50339369ec3c512d547cf4de9344a5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a41d4053af6d31c2f1d390c43385b2ad2}\label{class_achroma_1_1_achroma_firebase_controller_a41d4053af6d31c2f1d390c43385b2ad2} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!AddUserChangedListener@{AddUserChangedListener}}
+\index{AddUserChangedListener@{AddUserChangedListener}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{AddUserChangedListener()}{AddUserChangedListener()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Add\+User\+Changed\+Listener (\begin{DoxyParamCaption}\item[{string}]{user\+Id,  }\item[{Unity\+Action$<$ string $>$}]{user\+Changed }\end{DoxyParamCaption})}
+
+
+
+Adds the listener to the user record. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+{\em user\+Changed} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ade66e55cd620ceb61795c34fe8ff623f}\label{class_achroma_1_1_achroma_firebase_controller_ade66e55cd620ceb61795c34fe8ff623f} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!AppleSignInFromAndroid@{AppleSignInFromAndroid}}
+\index{AppleSignInFromAndroid@{AppleSignInFromAndroid}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{AppleSignInFromAndroid()}{AppleSignInFromAndroid()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Apple\+Sign\+In\+From\+Android (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, String, String $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Signs in to Apple from an Android device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Returns a success flag, an error message (if any) and the user id (in case of success)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_ade66e55cd620ceb61795c34fe8ff623f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_af2e8160be8b10e299bf9e09788382822}\label{class_achroma_1_1_achroma_firebase_controller_af2e8160be8b10e299bf9e09788382822} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!AppleSignInFromiOS@{AppleSignInFromiOS}}
+\index{AppleSignInFromiOS@{AppleSignInFromiOS}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{AppleSignInFromiOS()}{AppleSignInFromiOS()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Apple\+Sign\+In\+Fromi\+OS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_user_info}{User\+Info}}}]{user\+Info,  }\item[{Unity\+Action$<$ bool, String, String $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Method that signs in to Apple from an Apple device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Info} & credential data collected previously from Get\+Credential\\
+\hline
+{\em result} & Resul with bool flag, message (if any error) and user id (if successful) \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_af2e8160be8b10e299bf9e09788382822_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a2ca1d69cd12bc68b55d4dc83d840d45d}\label{class_achroma_1_1_achroma_firebase_controller_a2ca1d69cd12bc68b55d4dc83d840d45d} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!EmailSignIn@{EmailSignIn}}
+\index{EmailSignIn@{EmailSignIn}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{EmailSignIn()}{EmailSignIn()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Email\+Sign\+In (\begin{DoxyParamCaption}\item[{String}]{email,  }\item[{String}]{password,  }\item[{Unity\+Action$<$ bool, String, String, String $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+This method calls the login method using email and password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & User\textquotesingle{}s email\\
+\hline
+{\em password} & User\textquotesingle{}s password\\
+\hline
+{\em result} & callback function that returns\+: success, field name (when an error occurs, it returns which field was wrong), message (the error message) and user (user id from Firebase)\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a2ca1d69cd12bc68b55d4dc83d840d45d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a4c3d8e981c3970168260b53d500140e7}\label{class_achroma_1_1_achroma_firebase_controller_a4c3d8e981c3970168260b53d500140e7} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!EmailSignUp@{EmailSignUp}}
+\index{EmailSignUp@{EmailSignUp}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{EmailSignUp()}{EmailSignUp()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Email\+Sign\+Up (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{email,  }\item[{String}]{password,  }\item[{String}]{password\+Confirmation,  }\item[{Unity\+Action$<$ bool, String, String $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Function for the register button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & the user name (nick name)\\
+\hline
+{\em email} & e-\/mail address\\
+\hline
+{\em password} & password\\
+\hline
+{\em password\+Confirmation} & password confirmation\\
+\hline
+{\em result} & callback function, returns success flag, field name (in case of error) and error message (if any)\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a4c3d8e981c3970168260b53d500140e7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a3e3641c7a77dc451603a704eef5e7808}\label{class_achroma_1_1_achroma_firebase_controller_a3e3641c7a77dc451603a704eef5e7808} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!ForgotPassword@{ForgotPassword}}
+\index{ForgotPassword@{ForgotPassword}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{ForgotPassword()}{ForgotPassword()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Forgot\+Password (\begin{DoxyParamCaption}\item[{String}]{email,  }\item[{Unity\+Action$<$ bool, String $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+In case the user forgot the password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & User\textquotesingle{}s email\\
+\hline
+{\em result} & callback function that returns\+: success, message (the error message)\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a3e3641c7a77dc451603a704eef5e7808_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_aa761dbb9fcee9b07ed3b2942a6ae2b2f}\label{class_achroma_1_1_achroma_firebase_controller_aa761dbb9fcee9b07ed3b2942a6ae2b2f} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!GetAllCards@{GetAllCards}}
+\index{GetAllCards@{GetAllCards}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{GetAllCards()}{GetAllCards()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Get\+All\+Cards (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_card_collection}{Card\+Collection}}, bool, string $>$}]{finished }\end{DoxyParamCaption})}
+
+
+
+Returns a collection of all the cards from Firebase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em finished} & Returns a dictionary with the result of function, a success flag and an error message (if any)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_aa761dbb9fcee9b07ed3b2942a6ae2b2f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_aa761dbb9fcee9b07ed3b2942a6ae2b2f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a87b18ea6808d33646047c834b182dafa}\label{class_achroma_1_1_achroma_firebase_controller_a87b18ea6808d33646047c834b182dafa} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!GetAllCardsTask@{GetAllCardsTask}}
+\index{GetAllCardsTask@{GetAllCardsTask}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{GetAllCardsTask()}{GetAllCardsTask()}}
+{\footnotesize\ttfamily IEnumerator Achroma.\+Achroma\+Firebase\+Controller.\+Get\+All\+Cards\+Task (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ IDictionary, bool, string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Task to call the Get All Cards Cloud Function on Firebase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & Returns a dictionary with the result of function, a success flag and an error message (if any)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a87b18ea6808d33646047c834b182dafa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a60ba4be3e6e106d7bc8ed4864f4e67b6}\label{class_achroma_1_1_achroma_firebase_controller_a60ba4be3e6e106d7bc8ed4864f4e67b6} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!GetMatchCode@{GetMatchCode}}
+\index{GetMatchCode@{GetMatchCode}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{GetMatchCode()}{GetMatchCode()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Get\+Match\+Code (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ string $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Gets a new match code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & success/failure response\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a60ba4be3e6e106d7bc8ed4864f4e67b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a60ba4be3e6e106d7bc8ed4864f4e67b6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a7b3d5a50698bfc09ed5d51fa191f2f3e}\label{class_achroma_1_1_achroma_firebase_controller_a7b3d5a50698bfc09ed5d51fa191f2f3e} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!GetMatchCodeTask@{GetMatchCodeTask}}
+\index{GetMatchCodeTask@{GetMatchCodeTask}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{GetMatchCodeTask()}{GetMatchCodeTask()}}
+{\footnotesize\ttfamily IEnumerator Achroma.\+Achroma\+Firebase\+Controller.\+Get\+Match\+Code\+Task (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Gets a new match code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & success/failure response\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a7b3d5a50698bfc09ed5d51fa191f2f3e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_af26f0efa5f2b9be6502515156efb3d56}\label{class_achroma_1_1_achroma_firebase_controller_af26f0efa5f2b9be6502515156efb3d56} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!GetMatchData@{GetMatchData}}
+\index{GetMatchData@{GetMatchData}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{GetMatchData()}{GetMatchData()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Get\+Match\+Data (\begin{DoxyParamCaption}\item[{string}]{session\+Name,  }\item[{Unity\+Action$<$ bool, string, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Gets the json of a match given the session id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Name} & session id\\
+\hline
+{\em result} & success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_af26f0efa5f2b9be6502515156efb3d56_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_ad4be9fd22886adbfe2f47458604cc232}\label{class_achroma_1_1_achroma_firebase_controller_ad4be9fd22886adbfe2f47458604cc232} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!GetUserById@{GetUserById}}
+\index{GetUserById@{GetUserById}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{GetUserById()}{GetUserById()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Get\+User\+By\+Id (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{Unity\+Action$<$ bool, string, object $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Gets the user by their id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & User id\\
+\hline
+{\em callback} & Success/\+Failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_ad4be9fd22886adbfe2f47458604cc232_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_ad4be9fd22886adbfe2f47458604cc232_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a13b592a70ae12f12a3393e55c130ddc3}\label{class_achroma_1_1_achroma_firebase_controller_a13b592a70ae12f12a3393e55c130ddc3} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!GetUserByIdTask@{GetUserByIdTask}}
+\index{GetUserByIdTask@{GetUserByIdTask}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{GetUserByIdTask()}{GetUserByIdTask()}}
+{\footnotesize\ttfamily IEnumerator Achroma.\+Achroma\+Firebase\+Controller.\+Get\+User\+By\+Id\+Task (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{Unity\+Action$<$ bool, string, object $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Gets the user by their id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & User id\\
+\hline
+{\em callback} & Success/\+Failure feedback\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a13b592a70ae12f12a3393e55c130ddc3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_aa082ff5778b71f9a5788ec3f7a7d7d1c}\label{class_achroma_1_1_achroma_firebase_controller_aa082ff5778b71f9a5788ec3f7a7d7d1c} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!GetUserData@{GetUserData}}
+\index{GetUserData@{GetUserData}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{GetUserData()}{GetUserData()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Get\+User\+Data (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string, string $>$}]{result,  }\item[{string}]{custom\+User\+Id = {\ttfamily "{}"{}} }\end{DoxyParamCaption})}
+
+
+
+Method to get current user data and store it to a User\+Data variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & callback that returns success flag, message and the json file with the user data\\
+\hline
+{\em custom\+User\+Id} & This is just for testing using a custom user id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_aa082ff5778b71f9a5788ec3f7a7d7d1c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_aa58994ef9d7ebad43178e2adf6023b7f}\label{class_achroma_1_1_achroma_firebase_controller_aa58994ef9d7ebad43178e2adf6023b7f} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!GetUserIdByUniqueNumber@{GetUserIdByUniqueNumber}}
+\index{GetUserIdByUniqueNumber@{GetUserIdByUniqueNumber}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{GetUserIdByUniqueNumber()}{GetUserIdByUniqueNumber()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Get\+User\+Id\+By\+Unique\+Number (\begin{DoxyParamCaption}\item[{string}]{unique\+Number,  }\item[{Unity\+Action$<$ bool, string, object $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Gets the user by their id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & User id\\
+\hline
+{\em callback} & Success/\+Failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_aa58994ef9d7ebad43178e2adf6023b7f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a7466f4dbe007e0b9a2b173227f1df19c}\label{class_achroma_1_1_achroma_firebase_controller_a7466f4dbe007e0b9a2b173227f1df19c} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!GetUserIdByUniqueNumberTask@{GetUserIdByUniqueNumberTask}}
+\index{GetUserIdByUniqueNumberTask@{GetUserIdByUniqueNumberTask}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{GetUserIdByUniqueNumberTask()}{GetUserIdByUniqueNumberTask()}}
+{\footnotesize\ttfamily IEnumerator Achroma.\+Achroma\+Firebase\+Controller.\+Get\+User\+Id\+By\+Unique\+Number\+Task (\begin{DoxyParamCaption}\item[{string}]{unique\+Number,  }\item[{Unity\+Action$<$ bool, string, object $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Gets the user by their id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & User id\\
+\hline
+{\em callback} & Success/\+Failure feedback\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a7466f4dbe007e0b9a2b173227f1df19c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a4c57ab20c42decb71d88600f0fe29485}\label{class_achroma_1_1_achroma_firebase_controller_a4c57ab20c42decb71d88600f0fe29485} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Initialize (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Method to initialize Firebase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Returns the success or failure with a message\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a4c57ab20c42decb71d88600f0fe29485_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_aacb8303ac3668e017ae46483eef84f15}\label{class_achroma_1_1_achroma_firebase_controller_aacb8303ac3668e017ae46483eef84f15} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!LoadDatabase@{LoadDatabase}}
+\index{LoadDatabase@{LoadDatabase}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{LoadDatabase()}{LoadDatabase()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Load\+Database (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Loads the references to the used tables in the app. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Returns success flag and message describing error, if any\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_aacb8303ac3668e017ae46483eef84f15_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a80982f8eef057d3f128c663794ff71f8}\label{class_achroma_1_1_achroma_firebase_controller_a80982f8eef057d3f128c663794ff71f8} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!RemoveMatchChangedListener@{RemoveMatchChangedListener}}
+\index{RemoveMatchChangedListener@{RemoveMatchChangedListener}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{RemoveMatchChangedListener()}{RemoveMatchChangedListener()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Remove\+Match\+Changed\+Listener (\begin{DoxyParamCaption}\item[{string}]{session\+Name }\end{DoxyParamCaption})}
+
+
+
+Removes the listener from the match. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Name} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a80982f8eef057d3f128c663794ff71f8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a72ec14ffe315fc1c1d4cd1598eb3abea}\label{class_achroma_1_1_achroma_firebase_controller_a72ec14ffe315fc1c1d4cd1598eb3abea} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!RemoveUserChangedListener@{RemoveUserChangedListener}}
+\index{RemoveUserChangedListener@{RemoveUserChangedListener}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{RemoveUserChangedListener()}{RemoveUserChangedListener()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Remove\+User\+Changed\+Listener (\begin{DoxyParamCaption}\item[{string}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Removes the listener from the user record. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a72ec14ffe315fc1c1d4cd1598eb3abea_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a2bc45fdb6cdbbbf0effc45f4a94ab6cc}\label{class_achroma_1_1_achroma_firebase_controller_a2bc45fdb6cdbbbf0effc45f4a94ab6cc} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!SetMatchData@{SetMatchData}}
+\index{SetMatchData@{SetMatchData}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{SetMatchData()}{SetMatchData()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Set\+Match\+Data (\begin{DoxyParamCaption}\item[{string}]{session,  }\item[{\mbox{\hyperlink{class_achroma_1_1_match_data}{Match\+Data}}}]{match\+Data,  }\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Saves data to the match table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & Session id \\
+\hline
+{\em match\+Data} & The Match Data object\\
+\hline
+{\em result} & success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a2bc45fdb6cdbbbf0effc45f4a94ab6cc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_aeaebd8d6f8b4ae1933dded34b8c18a61}\label{class_achroma_1_1_achroma_firebase_controller_aeaebd8d6f8b4ae1933dded34b8c18a61} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!SetUserData@{SetUserData}}
+\index{SetUserData@{SetUserData}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{SetUserData()}{SetUserData()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Set\+User\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}}}]{user\+Data,  }\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Method to push the user data to Firebase using Json serialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Data} & \\
+\hline
+{\em result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_aeaebd8d6f8b4ae1933dded34b8c18a61_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+Apple\+Auth.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+Email\+Auth.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+Friends.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+General\+Database.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+Match.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+News.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+Remote\+Config.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+User.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+Auth.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+Cards.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+Google\+Auth.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+Ranking.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="AchromaAPI.AchromaInstanceDatabase.GetAchievementCompletionPct" name="AchromaAPI.AchromaInstanceDatabase.GetAchievementCompletionPct">
+<area shape="rect" id="Node000001" title="Returns the achievement value for a given name when the user logged in." alt="" coords="5,5,270,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_database.html#a571db3347bbadd19cc7f56b9cc0498da" title="This returns to the host application the state of the database." alt="" coords="318,5,519,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,23,303,23,303,28,270,28"/>
+</map>

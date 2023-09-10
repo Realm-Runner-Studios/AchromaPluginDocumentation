@@ -1,0 +1,130 @@
+\doxysection{Shopify.\+Unity.\+Blog Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_blog}{}\label{class_shopify_1_1_unity_1_1_blog}\index{Shopify.Unity.Blog@{Shopify.Unity.Blog}}
+
+
+An online store blog.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Blog\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Blog\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_blog_a1d78ee586f8a4ca7d3537bcd75421d75}{Blog}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_article}{Article}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_blog_abd927374cade14a9c01f28abfc354457}{article\+By\+Handle}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Find an article by its handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_article_connection}{Article\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_blog_a2df6e93c87fb2f6878d59c434333fbec}{articles}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the blog\textquotesingle{}s articles. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_blog_ad87e1b5df491ce9c47047eb3dcc8efcf}\label{class_shopify_1_1_unity_1_1_blog_ad87e1b5df491ce9c47047eb3dcc8efcf} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_article_author}{Article\+Author}} $>$ {\bfseries authors} ()
+\begin{DoxyCompactList}\small\item\em The authors who have contributed to the blog. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_blog_a0c349db653db98468acb819062c26414}\label{class_shopify_1_1_unity_1_1_blog_a0c349db653db98468acb819062c26414} 
+string {\bfseries handle} ()
+\begin{DoxyCompactList}\small\item\em A human-\/friendly unique string for the Blog automatically generated from its title. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_blog_a4da0e1546d99918bdf82542ec67440b6}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_blog_a06501f84fba2cb2982b80550030f0f16}\label{class_shopify_1_1_unity_1_1_blog_a06501f84fba2cb2982b80550030f0f16} 
+string {\bfseries title} ()
+\begin{DoxyCompactList}\small\item\em The blogs’s title. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_blog_ac60dc205f428b6e52d0408a4e84ed938}\label{class_shopify_1_1_unity_1_1_blog_ac60dc205f428b6e52d0408a4e84ed938} 
+string {\bfseries url} ()
+\begin{DoxyCompactList}\small\item\em The url pointing to the blog accessible from the web. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_blog_a22c6ccddb9d3ca6f04e1c240e1135a64}\label{class_shopify_1_1_unity_1_1_blog_a22c6ccddb9d3ca6f04e1c240e1135a64} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An online store blog. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_blog_a1d78ee586f8a4ca7d3537bcd75421d75}\label{class_shopify_1_1_unity_1_1_blog_a1d78ee586f8a4ca7d3537bcd75421d75} 
+\index{Shopify.Unity.Blog@{Shopify.Unity.Blog}!Blog@{Blog}}
+\index{Blog@{Blog}!Shopify.Unity.Blog@{Shopify.Unity.Blog}}
+\doxysubsubsection{\texorpdfstring{Blog()}{Blog()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Blog.\+Blog (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Blog\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_blog_abd927374cade14a9c01f28abfc354457}\label{class_shopify_1_1_unity_1_1_blog_abd927374cade14a9c01f28abfc354457} 
+\index{Shopify.Unity.Blog@{Shopify.Unity.Blog}!articleByHandle@{articleByHandle}}
+\index{articleByHandle@{articleByHandle}!Shopify.Unity.Blog@{Shopify.Unity.Blog}}
+\doxysubsubsection{\texorpdfstring{articleByHandle()}{articleByHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_article}{Article}} Shopify.\+Unity.\+Blog.\+article\+By\+Handle (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find an article by its handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_blog_a2df6e93c87fb2f6878d59c434333fbec}\label{class_shopify_1_1_unity_1_1_blog_a2df6e93c87fb2f6878d59c434333fbec} 
+\index{Shopify.Unity.Blog@{Shopify.Unity.Blog}!articles@{articles}}
+\index{articles@{articles}!Shopify.Unity.Blog@{Shopify.Unity.Blog}}
+\doxysubsubsection{\texorpdfstring{articles()}{articles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_article_connection}{Article\+Connection}} Shopify.\+Unity.\+Blog.\+articles (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the blog\textquotesingle{}s articles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_blog_a4da0e1546d99918bdf82542ec67440b6}\label{class_shopify_1_1_unity_1_1_blog_a4da0e1546d99918bdf82542ec67440b6} 
+\index{Shopify.Unity.Blog@{Shopify.Unity.Blog}!id@{id}}
+\index{id@{id}!Shopify.Unity.Blog@{Shopify.Unity.Blog}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Blog.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Blog.\+cs\end{DoxyCompactItemize}

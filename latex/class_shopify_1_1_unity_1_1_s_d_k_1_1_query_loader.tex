@@ -1,0 +1,129 @@
+\doxysection{Shopify.\+Unity.\+SDK.\+Query\+Loader Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader}{}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader}\index{Shopify.Unity.SDK.QueryLoader@{Shopify.Unity.SDK.QueryLoader}}
+
+
+Abstracts creating and sending queries and mutations via a Base\+Loader.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_a41dae9d623c5452e2380f5c1338feba1}{Query\+Loader}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader}{Base\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em Accepts the Base\+Loader 
+
+, which will do network communcation to send Graph\+QL queries. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_ab42be846a37faa5d7dcce28963c3f555}{Query}} (Query\+Root\+Delegate build\+Query, Query\+Response\+Handler callback)
+\begin{DoxyCompactList}\small\item\em Generates Graph\+QL queries. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_a152a3cbf3d6758a4d30adf5582650b15}{Query}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} query, Query\+Response\+Handler callback)
+\begin{DoxyCompactList}\small\item\em Sends Graph\+QL queries to the Graph\+QL endpoint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_a5a36f491f8f28a2941174ca5d88f6a09}{Mutation}} (Mutation\+Delegate build\+Query, Mutation\+Response\+Handler callback)
+\begin{DoxyCompactList}\small\item\em Generates Graph\+QL mutations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_aeb5949b8cc39c222ec4f54082bf30399}{Mutation}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} query, Mutation\+Response\+Handler callback)
+\begin{DoxyCompactList}\small\item\em Sends Graph\+QL mutations to a Graph\+QL endpoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstracts creating and sending queries and mutations via a Base\+Loader. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_a41dae9d623c5452e2380f5c1338feba1}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_a41dae9d623c5452e2380f5c1338feba1} 
+\index{Shopify.Unity.SDK.QueryLoader@{Shopify.Unity.SDK.QueryLoader}!QueryLoader@{QueryLoader}}
+\index{QueryLoader@{QueryLoader}!Shopify.Unity.SDK.QueryLoader@{Shopify.Unity.SDK.QueryLoader}}
+\doxysubsubsection{\texorpdfstring{QueryLoader()}{QueryLoader()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+SDK.\+Query\+Loader.\+Query\+Loader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader}{Base\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+
+
+Accepts the Base\+Loader 
+
+, which will do network communcation to send Graph\+QL queries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loader} & will perform network communication to send Graph\+QL queries to a Graph\+QL endpoint\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_a5a36f491f8f28a2941174ca5d88f6a09}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_a5a36f491f8f28a2941174ca5d88f6a09} 
+\index{Shopify.Unity.SDK.QueryLoader@{Shopify.Unity.SDK.QueryLoader}!Mutation@{Mutation}}
+\index{Mutation@{Mutation}!Shopify.Unity.SDK.QueryLoader@{Shopify.Unity.SDK.QueryLoader}}
+\doxysubsubsection{\texorpdfstring{Mutation()}{Mutation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+SDK.\+Query\+Loader.\+Mutation (\begin{DoxyParamCaption}\item[{Mutation\+Delegate}]{build\+Query,  }\item[{Mutation\+Response\+Handler}]{callback }\end{DoxyParamCaption})}
+
+
+
+Generates Graph\+QL mutations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em build\+Query} & Delegate to build a mutation query\\
+\hline
+{\em callback} & callback that receives the mutation response\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_aeb5949b8cc39c222ec4f54082bf30399}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_aeb5949b8cc39c222ec4f54082bf30399} 
+\index{Shopify.Unity.SDK.QueryLoader@{Shopify.Unity.SDK.QueryLoader}!Mutation@{Mutation}}
+\index{Mutation@{Mutation}!Shopify.Unity.SDK.QueryLoader@{Shopify.Unity.SDK.QueryLoader}}
+\doxysubsubsection{\texorpdfstring{Mutation()}{Mutation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+SDK.\+Query\+Loader.\+Mutation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}}}]{query,  }\item[{Mutation\+Response\+Handler}]{callback }\end{DoxyParamCaption})}
+
+
+
+Sends Graph\+QL mutations to a Graph\+QL endpoint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & mutation to be sent to Graph\+QL endpoint\\
+\hline
+{\em callback} & callback that receives the mutation response\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_ab42be846a37faa5d7dcce28963c3f555}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_ab42be846a37faa5d7dcce28963c3f555} 
+\index{Shopify.Unity.SDK.QueryLoader@{Shopify.Unity.SDK.QueryLoader}!Query@{Query}}
+\index{Query@{Query}!Shopify.Unity.SDK.QueryLoader@{Shopify.Unity.SDK.QueryLoader}}
+\doxysubsubsection{\texorpdfstring{Query()}{Query()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+SDK.\+Query\+Loader.\+Query (\begin{DoxyParamCaption}\item[{Query\+Root\+Delegate}]{build\+Query,  }\item[{Query\+Response\+Handler}]{callback }\end{DoxyParamCaption})}
+
+
+
+Generates Graph\+QL queries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em build\+Query} & Delegate to build query\\
+\hline
+{\em callback} & callback that receives the query response\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_a152a3cbf3d6758a4d30adf5582650b15}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_query_loader_a152a3cbf3d6758a4d30adf5582650b15} 
+\index{Shopify.Unity.SDK.QueryLoader@{Shopify.Unity.SDK.QueryLoader}!Query@{Query}}
+\index{Query@{Query}!Shopify.Unity.SDK.QueryLoader@{Shopify.Unity.SDK.QueryLoader}}
+\doxysubsubsection{\texorpdfstring{Query()}{Query()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+SDK.\+Query\+Loader.\+Query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}}}]{query,  }\item[{Query\+Response\+Handler}]{callback }\end{DoxyParamCaption})}
+
+
+
+Sends Graph\+QL queries to the Graph\+QL endpoint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & query to be sent to the Graph\+QL endpoint\\
+\hline
+{\em callback} & callback that receives the query response\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 3
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+SDK/Query\+Loader.\+cs\end{DoxyCompactItemize}

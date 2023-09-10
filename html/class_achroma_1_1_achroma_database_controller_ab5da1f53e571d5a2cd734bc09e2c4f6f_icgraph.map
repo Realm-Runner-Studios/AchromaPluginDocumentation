@@ -1,0 +1,9 @@
+<map id="Achroma.AchromaDatabaseController.SetUserEmail" name="Achroma.AchromaDatabaseController.SetUserEmail">
+<area shape="rect" id="Node000001" title="Sets the email for Apple login." alt="" coords="530,39,774,79"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a02bc8095f4c161c5b4f24248330bb2cf" title="Method that signs in to Apple from an Android device." alt="" coords="238,5,482,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="515,46,482,42,483,37,516,41"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_database_controller.html#a344a2985784742079272d23bd6456e07" title="Method that signs in to Apple from an Apple device." alt="" coords="238,71,482,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="516,77,483,80,482,75,515,71"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_sign_in_u_i.html#a21cceb3c00842102faa86f7957e5a703" title="This method calls the login method using Apple." alt="" coords="5,71,190,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="223,94,190,94,190,88,223,88"/>
+</map>

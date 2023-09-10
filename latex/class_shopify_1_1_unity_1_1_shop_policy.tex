@@ -1,0 +1,96 @@
+\doxysection{Shopify.\+Unity.\+Shop\+Policy Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_shop_policy}{}\label{class_shopify_1_1_unity_1_1_shop_policy}\index{Shopify.Unity.ShopPolicy@{Shopify.Unity.ShopPolicy}}
+
+
+Policy that a merchant has configured for their store, such as their refund or privacy policy.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Shop\+Policy\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Shop\+Policy\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_policy_a1b6cfdb31759a4e4c4e5481976d347c5}{Shop\+Policy}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_policy_a2acece9bf54e97cb84f9ed6319527c92}\label{class_shopify_1_1_unity_1_1_shop_policy_a2acece9bf54e97cb84f9ed6319527c92} 
+string {\bfseries body} ()
+\begin{DoxyCompactList}\small\item\em Policy text, maximum size of 64kb. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_policy_a62c030ca6d45b74cecbd7ba9be76426c}\label{class_shopify_1_1_unity_1_1_shop_policy_a62c030ca6d45b74cecbd7ba9be76426c} 
+string {\bfseries handle} ()
+\begin{DoxyCompactList}\small\item\em Policy’s handle. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shop_policy_aa0845fa1addd0ff27f47e71db63e8ea9}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_policy_aed6ec80603b4eda1fe14bc24562465d4}\label{class_shopify_1_1_unity_1_1_shop_policy_aed6ec80603b4eda1fe14bc24562465d4} 
+string {\bfseries title} ()
+\begin{DoxyCompactList}\small\item\em Policy’s title. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_policy_ac63073a0d7784e777692fdb62d0d7ebc}\label{class_shopify_1_1_unity_1_1_shop_policy_ac63073a0d7784e777692fdb62d0d7ebc} 
+string {\bfseries url} ()
+\begin{DoxyCompactList}\small\item\em Public URL to the policy. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_policy_a79ea2d934c85823cc4377511ebefdf95}\label{class_shopify_1_1_unity_1_1_shop_policy_a79ea2d934c85823cc4377511ebefdf95} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Policy that a merchant has configured for their store, such as their refund or privacy policy. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_policy_a1b6cfdb31759a4e4c4e5481976d347c5}\label{class_shopify_1_1_unity_1_1_shop_policy_a1b6cfdb31759a4e4c4e5481976d347c5} 
+\index{Shopify.Unity.ShopPolicy@{Shopify.Unity.ShopPolicy}!ShopPolicy@{ShopPolicy}}
+\index{ShopPolicy@{ShopPolicy}!Shopify.Unity.ShopPolicy@{Shopify.Unity.ShopPolicy}}
+\doxysubsubsection{\texorpdfstring{ShopPolicy()}{ShopPolicy()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Shop\+Policy.\+Shop\+Policy (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Shop\+Policy\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_shop_policy_aa0845fa1addd0ff27f47e71db63e8ea9}\label{class_shopify_1_1_unity_1_1_shop_policy_aa0845fa1addd0ff27f47e71db63e8ea9} 
+\index{Shopify.Unity.ShopPolicy@{Shopify.Unity.ShopPolicy}!id@{id}}
+\index{id@{id}!Shopify.Unity.ShopPolicy@{Shopify.Unity.ShopPolicy}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Shop\+Policy.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Shop\+Policy.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="AchromaAPI.AchromaInstanceMatch.RemoveLocalPlayerFromCurrentMatch" name="AchromaAPI.AchromaInstanceMatch.RemoveLocalPlayerFromCurrentMatch">
+<area shape="rect" id="Node000001" title="User removes themselves from the match." alt="" coords="5,5,293,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#acb01340ac32cbed6b4131e81fb48210f" title="User removes themselves from the match." alt="" coords="341,5,588,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,23,326,23,326,28,293,28"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_database_controller.html#a378ba405855c9f8d33c340b152cdb7e5" title="Pushes the match data to Firebase." alt="" coords="636,5,880,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="588,23,621,23,621,28,588,28"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_firebase_controller.html#a2bc45fdb6cdbbbf0effc45f4a94ab6cc" title="Saves data to the match table." alt="" coords="928,5,1167,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="881,23,913,23,913,28,881,28"/>
+</map>

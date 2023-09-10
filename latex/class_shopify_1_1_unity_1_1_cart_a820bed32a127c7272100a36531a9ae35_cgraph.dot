@@ -1,0 +1,11 @@
+digraph "Shopify.Unity.Cart.ShowNativePaySetup"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Shopify.Unity.Cart.ShowNative\lPaySetup",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Launch a native payment app to prompt the user to setup their payment card."];
+  Node1 -> Node2 [id="edge2_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Shopify.Unity.SDK.INative\lCheckout.ShowPaymentSetup",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout.html#a9807c0730a46228a1e77a2d187c6a486",tooltip="Invokes a native method that will prompt the user to setup the user's payment card via the native wal..."];
+}

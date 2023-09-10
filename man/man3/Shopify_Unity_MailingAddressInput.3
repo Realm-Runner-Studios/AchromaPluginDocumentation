@@ -1,0 +1,198 @@
+.TH "Shopify.Unity.MailingAddressInput" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.MailingAddressInput \- Specifies the fields accepted to create or update a mailing address\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.InputBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMailingAddressInput\fP (string \fBaddress1\fP=null, string \fBaddress2\fP=null, string \fBcity\fP=null, string \fBcompany\fP=null, string \fBcountry\fP=null, string \fBfirstName\fP=null, string \fBlastName\fP=null, string \fBphone\fP=null, string \fBprovince\fP=null, string \fBzip\fP=null)"
+.br
+.ti -1c
+.RI "\fBMailingAddressInput\fP (Dictionary< string, object > dataJSON)"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.InputBase\fP
+.in +1c
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Returns a string representing a GraphQL input object\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "const string \fBaddress1FieldKey\fP = 'address1'"
+.br
+.ti -1c
+.RI "const string \fBaddress2FieldKey\fP = 'address2'"
+.br
+.ti -1c
+.RI "const string \fBcityFieldKey\fP = 'city'"
+.br
+.ti -1c
+.RI "const string \fBcompanyFieldKey\fP = 'company'"
+.br
+.ti -1c
+.RI "const string \fBcountryFieldKey\fP = 'country'"
+.br
+.ti -1c
+.RI "const string \fBfirstNameFieldKey\fP = 'firstName'"
+.br
+.ti -1c
+.RI "const string \fBlastNameFieldKey\fP = 'lastName'"
+.br
+.ti -1c
+.RI "const string \fBphoneFieldKey\fP = 'phone'"
+.br
+.ti -1c
+.RI "const string \fBprovinceFieldKey\fP = 'province'"
+.br
+.ti -1c
+.RI "const string \fBzipFieldKey\fP = 'zip'"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBaddress1\fP\fC [get, set]\fP"
+.br
+.RI "The first line of the address\&. Typically the street address or PO Box number\&. "
+.ti -1c
+.RI "string \fBaddress2\fP\fC [get, set]\fP"
+.br
+.RI "The second line of the address\&. Typically the number of the apartment, suite, or unit\&. "
+.ti -1c
+.RI "string \fBcity\fP\fC [get, set]\fP"
+.br
+.RI "The name of the city, district, village, or town\&. "
+.ti -1c
+.RI "string \fBcompany\fP\fC [get, set]\fP"
+.br
+.RI "The name of the customer's company or organization\&. "
+.ti -1c
+.RI "string \fBcountry\fP\fC [get, set]\fP"
+.br
+.RI "The name of the country\&. "
+.ti -1c
+.RI "string \fBfirstName\fP\fC [get, set]\fP"
+.br
+.RI "The first name of the customer\&. "
+.ti -1c
+.RI "string \fBlastName\fP\fC [get, set]\fP"
+.br
+.RI "The last name of the customer\&. "
+.ti -1c
+.RI "string \fBphone\fP\fC [get, set]\fP"
+.br
+.RI "A unique phone number for the customer\&. "
+.ti -1c
+.RI "string \fBprovince\fP\fC [get, set]\fP"
+.br
+.RI "The region of the address, such as the province, state, or district\&. "
+.ti -1c
+.RI "string \fBzip\fP\fC [get, set]\fP"
+.br
+.RI "The zip or postal code of the address\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.InputBase\fP
+.in +1c
+.ti -1c
+.RI "void \fBSet\fP (string key, object value)"
+.br
+.ti -1c
+.RI "object \fBGet\fP (string key)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Specifies the fields accepted to create or update a mailing address\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.MailingAddressInput\&.MailingAddressInput (string address1 = \fCnull\fP, string address2 = \fCnull\fP, string city = \fCnull\fP, string company = \fCnull\fP, string country = \fCnull\fP, string firstName = \fCnull\fP, string lastName = \fCnull\fP, string phone = \fCnull\fP, string province = \fCnull\fP, string zip = \fCnull\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIaddress1\fP The first line of the address\&. Typically the street address or PO Box number\&. 
+.br
+\fIaddress2\fP The second line of the address\&. Typically the number of the apartment, suite, or unit\&. 
+.br
+\fIcity\fP The name of the city, district, village, or town\&. 
+.br
+\fIcompany\fP The name of the customer's company or organization\&. 
+.br
+\fIcountry\fP The name of the country\&. 
+.br
+\fIfirstName\fP The first name of the customer\&. 
+.br
+\fIlastName\fP The last name of the customer\&. 
+.br
+\fIphone\fP A unique phone number for the customer\&.
+.RE
+.PP
+Formatted using E\&.164 standard\&. For example, \fI+16135551111\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIprovince\fP The region of the address, such as the province, state, or district\&. 
+.br
+\fIzip\fP The zip or postal code of the address\&. 
+.RE
+.PP
+
+.SS "Shopify\&.Unity\&.MailingAddressInput\&.MailingAddressInput (Dictionary< string, object > dataJSON)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIaddress1\fP The first line of the address\&. Typically the street address or PO Box number\&. 
+.br
+\fIaddress2\fP The second line of the address\&. Typically the number of the apartment, suite, or unit\&. 
+.br
+\fIcity\fP The name of the city, district, village, or town\&. 
+.br
+\fIcompany\fP The name of the customer's company or organization\&. 
+.br
+\fIcountry\fP The name of the country\&. 
+.br
+\fIfirstName\fP The first name of the customer\&. 
+.br
+\fIlastName\fP The last name of the customer\&. 
+.br
+\fIphone\fP A unique phone number for the customer\&.
+.RE
+.PP
+Formatted using E\&.164 standard\&. For example, \fI+16135551111\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIprovince\fP The region of the address, such as the province, state, or district\&. 
+.br
+\fIzip\fP The zip or postal code of the address\&. 
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "string Shopify\&.Unity\&.MailingAddressInput\&.phone\fC [get]\fP, \fC [set]\fP"
+
+.PP
+A unique phone number for the customer\&. Formatted using E\&.164 standard\&. For example, \fI+16135551111\fP\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

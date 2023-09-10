@@ -1,0 +1,513 @@
+\doxysection{Achroma\+API.\+Achroma\+Instance\+Assets Class Reference}
+\hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets}{}\label{class_achroma_a_p_i_1_1_achroma_instance_assets}\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+
+
+Singleton with the methods to instantiate assets like Characters, Locations, Objects, Actions.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a5d4623e6cb42a5089e4bfb2067ed58c0}{Get\+Action\+Sprite\+By\+Id}} (int id, Unity\+Action$<$ Sprite $>$ callback)
+\begin{DoxyCompactList}\small\item\em Returns action sprite by giving an id. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a13a49be4e02c7d2dc208c0f184e33446}{Get\+Action\+Name\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Returns the name of the action that\textquotesingle{}s informed in the control file. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a4d86916148c69dceffd78585c82d1434}{Get\+Action\+Id\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the action id based on the name. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a70f849db9ac49f16fe9b25ed82a3c251}{Get\+Character\+Sprite\+By\+Id}} (int id, bool transparent, Unity\+Action$<$ Sprite $>$ callback)
+\begin{DoxyCompactList}\small\item\em Returns character sprite by giving an id. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a0d01cfb09606fe1787a121d22336d5d6}{Get\+Character\+Sprite\+Animation\+By\+Id}} (int id, bool transparent, Unity\+Action$<$ Game\+Object $>$ callback)
+\begin{DoxyCompactList}\small\item\em Returns character sprite animation by giving an id. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a6ef5432f243df34784228492d2908279}{Get\+Character\+Name\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Returns the name of the character that\textquotesingle{}s informed in the control file. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a914c10b465c052c9f6dad73928a9c827}{Get\+Character\+Id\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the Character id based on the name. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a55bf467498a21757e49461455e00bd05}{Get\+Character\+Hero}} (int id)
+\begin{DoxyCompactList}\small\item\em Returns the hero power when the character has one. \end{DoxyCompactList}\item 
+static Vector2 \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_ab07f4089b6df8e0d83dafa5b7d7eec05}{Get\+Character\+Avatar\+Position}} (int id)
+\begin{DoxyCompactList}\small\item\em Returns the avatar position for the home button. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_aa8e06b437074331ab824d028d8ec4d30}{Get\+Character\+Background}} (int id)
+\begin{DoxyCompactList}\small\item\em Returns the character location (backgroud) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a66aa4ba440513930a1885cc5fd718695}{Get\+Item\+Sprite\+By\+Id}} (int id, bool transparent, Unity\+Action$<$ Sprite $>$ callback)
+\begin{DoxyCompactList}\small\item\em Returns item sprite by giving an id. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a55dad63449a2ad1ca34be0946932af6c}{Get\+Item\+Name\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Returns the name of the item that\textquotesingle{}s informed in the control file. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a7ff9b540dde418fc2aa96e512caaf1be}{Get\+Item\+Id\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the item id based on the name. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a241a6463e890ed39fa291bf8ea2c1148}{Get\+Location\+Sprite\+By\+Id}} (int id, bool transparent, Unity\+Action$<$ Sprite $>$ callback)
+\begin{DoxyCompactList}\small\item\em Returns location sprite by giving an id. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_ad8a328a6bcc5ebcd1c7ed5b3b639b4aa}{Get\+Location\+Sprite\+Animation\+By\+Id}} (int id, Unity\+Action$<$ Game\+Object $>$ callback)
+\begin{DoxyCompactList}\small\item\em Returns location sprite animation by giving an id. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a2fcccb14a0e1e88fabcb53cae0963c72}{Get\+Location\+Sprite\+Animation\+By\+Name}} (string name, Unity\+Action$<$ Game\+Object $>$ callback)
+\begin{DoxyCompactList}\small\item\em Returns location sprite animation by giving a name. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a1d0a0113c6a58967aa4405c17794a772}{Get\+Location\+Name\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Returns the name of the locatioin that\textquotesingle{}s informed in the control file. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_assets_a55cbc13f46d0505175ad6929f2a02378}{Get\+Location\+Id\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the location id based on the name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton with the methods to instantiate assets like Characters, Locations, Objects, Actions. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a4d86916148c69dceffd78585c82d1434}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a4d86916148c69dceffd78585c82d1434} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetActionIdByName@{GetActionIdByName}}
+\index{GetActionIdByName@{GetActionIdByName}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetActionIdByName()}{GetActionIdByName()}}
+{\footnotesize\ttfamily static int Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Action\+Id\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the action id based on the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The action details
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a4d86916148c69dceffd78585c82d1434_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a13a49be4e02c7d2dc208c0f184e33446}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a13a49be4e02c7d2dc208c0f184e33446} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetActionNameById@{GetActionNameById}}
+\index{GetActionNameById@{GetActionNameById}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetActionNameById()}{GetActionNameById()}}
+{\footnotesize\ttfamily static string Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Action\+Name\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the name of the action that\textquotesingle{}s informed in the control file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id in the Actions array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The actions\textquotesingle{}s name
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a13a49be4e02c7d2dc208c0f184e33446_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a5d4623e6cb42a5089e4bfb2067ed58c0}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a5d4623e6cb42a5089e4bfb2067ed58c0} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetActionSpriteById@{GetActionSpriteById}}
+\index{GetActionSpriteById@{GetActionSpriteById}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetActionSpriteById()}{GetActionSpriteById()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Action\+Sprite\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{Unity\+Action$<$ Sprite $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns action sprite by giving an id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The index in the action array from the control file\\
+\hline
+{\em transparent} & if true, it will take the PNG version of the item\\
+\hline
+{\em callback} & callback with the Sprite\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a5d4623e6cb42a5089e4bfb2067ed58c0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_ab07f4089b6df8e0d83dafa5b7d7eec05}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_ab07f4089b6df8e0d83dafa5b7d7eec05} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetCharacterAvatarPosition@{GetCharacterAvatarPosition}}
+\index{GetCharacterAvatarPosition@{GetCharacterAvatarPosition}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetCharacterAvatarPosition()}{GetCharacterAvatarPosition()}}
+{\footnotesize\ttfamily static Vector2 Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Character\+Avatar\+Position (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the avatar position for the home button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & character id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The x and y position for avatar
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_ab07f4089b6df8e0d83dafa5b7d7eec05_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_aa8e06b437074331ab824d028d8ec4d30}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_aa8e06b437074331ab824d028d8ec4d30} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetCharacterBackground@{GetCharacterBackground}}
+\index{GetCharacterBackground@{GetCharacterBackground}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetCharacterBackground()}{GetCharacterBackground()}}
+{\footnotesize\ttfamily static string Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Character\+Background (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the character location (backgroud) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & character id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Hero power
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_aa8e06b437074331ab824d028d8ec4d30_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a55bf467498a21757e49461455e00bd05}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a55bf467498a21757e49461455e00bd05} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetCharacterHero@{GetCharacterHero}}
+\index{GetCharacterHero@{GetCharacterHero}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetCharacterHero()}{GetCharacterHero()}}
+{\footnotesize\ttfamily static string Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Character\+Hero (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the hero power when the character has one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & character id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Hero power
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a55bf467498a21757e49461455e00bd05_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a914c10b465c052c9f6dad73928a9c827}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a914c10b465c052c9f6dad73928a9c827} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetCharacterIdByName@{GetCharacterIdByName}}
+\index{GetCharacterIdByName@{GetCharacterIdByName}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetCharacterIdByName()}{GetCharacterIdByName()}}
+{\footnotesize\ttfamily static int Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Character\+Id\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the Character id based on the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Character details
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a914c10b465c052c9f6dad73928a9c827_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a6ef5432f243df34784228492d2908279}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a6ef5432f243df34784228492d2908279} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetCharacterNameById@{GetCharacterNameById}}
+\index{GetCharacterNameById@{GetCharacterNameById}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetCharacterNameById()}{GetCharacterNameById()}}
+{\footnotesize\ttfamily static string Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Character\+Name\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the name of the character that\textquotesingle{}s informed in the control file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id in the Characters array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Characters\textquotesingle{}s name
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a6ef5432f243df34784228492d2908279_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a0d01cfb09606fe1787a121d22336d5d6}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a0d01cfb09606fe1787a121d22336d5d6} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetCharacterSpriteAnimationById@{GetCharacterSpriteAnimationById}}
+\index{GetCharacterSpriteAnimationById@{GetCharacterSpriteAnimationById}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetCharacterSpriteAnimationById()}{GetCharacterSpriteAnimationById()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Character\+Sprite\+Animation\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{bool}]{transparent,  }\item[{Unity\+Action$<$ Game\+Object $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns character sprite animation by giving an id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The index in the character array from the control file\\
+\hline
+{\em transparent} & if true, it will take the PNG version of the character\\
+\hline
+{\em callback} & callback with the Sprite\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a0d01cfb09606fe1787a121d22336d5d6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a70f849db9ac49f16fe9b25ed82a3c251}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a70f849db9ac49f16fe9b25ed82a3c251} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetCharacterSpriteById@{GetCharacterSpriteById}}
+\index{GetCharacterSpriteById@{GetCharacterSpriteById}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetCharacterSpriteById()}{GetCharacterSpriteById()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Character\+Sprite\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{bool}]{transparent,  }\item[{Unity\+Action$<$ Sprite $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns character sprite by giving an id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The index in the character array from the control file\\
+\hline
+{\em transparent} & if true, it will take the PNG version of the character\\
+\hline
+{\em callback} & callback with the Sprite\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a70f849db9ac49f16fe9b25ed82a3c251_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a7ff9b540dde418fc2aa96e512caaf1be}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a7ff9b540dde418fc2aa96e512caaf1be} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetItemIdByName@{GetItemIdByName}}
+\index{GetItemIdByName@{GetItemIdByName}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetItemIdByName()}{GetItemIdByName()}}
+{\footnotesize\ttfamily static int Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Item\+Id\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the item id based on the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The item details
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a7ff9b540dde418fc2aa96e512caaf1be_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a55dad63449a2ad1ca34be0946932af6c}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a55dad63449a2ad1ca34be0946932af6c} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetItemNameById@{GetItemNameById}}
+\index{GetItemNameById@{GetItemNameById}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetItemNameById()}{GetItemNameById()}}
+{\footnotesize\ttfamily static string Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Item\+Name\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the name of the item that\textquotesingle{}s informed in the control file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id in the Items array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The item\textquotesingle{}s name
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a55dad63449a2ad1ca34be0946932af6c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a66aa4ba440513930a1885cc5fd718695}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a66aa4ba440513930a1885cc5fd718695} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetItemSpriteById@{GetItemSpriteById}}
+\index{GetItemSpriteById@{GetItemSpriteById}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetItemSpriteById()}{GetItemSpriteById()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Item\+Sprite\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{bool}]{transparent,  }\item[{Unity\+Action$<$ Sprite $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns item sprite by giving an id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The index in the item array from the control file\\
+\hline
+{\em transparent} & if true, it will take the PNG version of the item\\
+\hline
+{\em callback} & callback with the Sprite\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a66aa4ba440513930a1885cc5fd718695_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a55cbc13f46d0505175ad6929f2a02378}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a55cbc13f46d0505175ad6929f2a02378} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetLocationIdByName@{GetLocationIdByName}}
+\index{GetLocationIdByName@{GetLocationIdByName}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetLocationIdByName()}{GetLocationIdByName()}}
+{\footnotesize\ttfamily static int Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Location\+Id\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the location id based on the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The location details
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a55cbc13f46d0505175ad6929f2a02378_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a1d0a0113c6a58967aa4405c17794a772}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a1d0a0113c6a58967aa4405c17794a772} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetLocationNameById@{GetLocationNameById}}
+\index{GetLocationNameById@{GetLocationNameById}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetLocationNameById()}{GetLocationNameById()}}
+{\footnotesize\ttfamily static string Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Location\+Name\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the name of the locatioin that\textquotesingle{}s informed in the control file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id in the location array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The location\textquotesingle{}s name
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a1d0a0113c6a58967aa4405c17794a772_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_ad8a328a6bcc5ebcd1c7ed5b3b639b4aa}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_ad8a328a6bcc5ebcd1c7ed5b3b639b4aa} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetLocationSpriteAnimationById@{GetLocationSpriteAnimationById}}
+\index{GetLocationSpriteAnimationById@{GetLocationSpriteAnimationById}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetLocationSpriteAnimationById()}{GetLocationSpriteAnimationById()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Location\+Sprite\+Animation\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{Unity\+Action$<$ Game\+Object $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns location sprite animation by giving an id. 
+
+/// 
+\begin{DoxyParams}{Parameters}
+{\em id} & The index in the location array from the control file\\
+\hline
+{\em callback} & callback with the Game\+Object\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_ad8a328a6bcc5ebcd1c7ed5b3b639b4aa_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a2fcccb14a0e1e88fabcb53cae0963c72}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a2fcccb14a0e1e88fabcb53cae0963c72} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetLocationSpriteAnimationByName@{GetLocationSpriteAnimationByName}}
+\index{GetLocationSpriteAnimationByName@{GetLocationSpriteAnimationByName}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetLocationSpriteAnimationByName()}{GetLocationSpriteAnimationByName()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Location\+Sprite\+Animation\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{Unity\+Action$<$ Game\+Object $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns location sprite animation by giving a name. 
+
+/// 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name in the location array from the control file\\
+\hline
+{\em callback} & callback with the Game\+Object\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a2fcccb14a0e1e88fabcb53cae0963c72_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_assets_a241a6463e890ed39fa291bf8ea2c1148}\label{class_achroma_a_p_i_1_1_achroma_instance_assets_a241a6463e890ed39fa291bf8ea2c1148} 
+\index{AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}!GetLocationSpriteById@{GetLocationSpriteById}}
+\index{GetLocationSpriteById@{GetLocationSpriteById}!AchromaAPI.AchromaInstanceAssets@{AchromaAPI.AchromaInstanceAssets}}
+\doxysubsubsection{\texorpdfstring{GetLocationSpriteById()}{GetLocationSpriteById()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Assets.\+Get\+Location\+Sprite\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{bool}]{transparent,  }\item[{Unity\+Action$<$ Sprite $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns location sprite by giving an id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The index in the location array from the control file\\
+\hline
+{\em transparent} & if true, it will take the PNG version of the location\\
+\hline
+{\em callback} & callback with the Sprite\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_assets_a241a6463e890ed39fa291bf8ea2c1148_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Action.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Character.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Item.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Location.\+cs\end{DoxyCompactItemize}

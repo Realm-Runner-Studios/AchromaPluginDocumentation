@@ -1,0 +1,238 @@
+.TH "AchromaAPI.AchromaInstanceMatch" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AchromaAPI.AchromaInstanceMatch \- Singleton with methods related to the Companion match\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBNewMatch\fP (string sessionName, AchromaDatabaseController\&.CompanionGameType gameType)"
+.br
+.RI "Adds a new match to Firebase's match table\&. "
+.ti -1c
+.RI "static void \fBUpdatePlayerCharacter\fP (int character)"
+.br
+.RI "Updates the avatar of the current plyer so the other players can see the change\&. "
+.ti -1c
+.RI "static void \fBRemoveLocalPlayerFromCurrentMatch\fP (UnityAction< bool, string > result)"
+.br
+.RI "User removes themselves from the match\&. "
+.ti -1c
+.RI "static void \fBAddLocalPlayerToCurrentMatch\fP (AchromaDatabaseController\&.CompanionGameType gameType, UnityAction< bool, string > result)"
+.br
+.RI "Adds the local player to the match\&. "
+.ti -1c
+.RI "static void \fBSaveMatchData\fP (string sessionName='', UnityAction< bool, string > result=null)"
+.br
+.RI "Pushes the match data to Firebase\&. "
+.ti -1c
+.RI "static void \fBUnWatchMatch\fP ()"
+.br
+.RI "Detaches the listener for the current match\&. "
+.ti -1c
+.RI "static void \fBWatchMatch\fP (UnityAction< string > result)"
+.br
+.RI "Adds a listener to the match\&. "
+.ti -1c
+.RI "static void \fBRefreshMatch\fP (string sessionName, bool showLoading=true, UnityAction< bool, string, string > callback=null)"
+.br
+.RI "Forces an update to the local match data by retrieving it from the database\&. "
+.ti -1c
+.RI "static void \fBGetMatchData\fP (string sessionName, UnityAction< bool, string, \fBMatchData\fP > result)"
+.br
+.RI "Based on a session id, it gives back the MatchData object\&. "
+.ti -1c
+.RI "static List< \fBMatchPlayer\fP > \fBGetOponents\fP ()"
+.br
+.RI "Gets a list of opponents\&. "
+.ti -1c
+.RI "static void \fBGetCurrentSeasonName\fP (UnityAction< string > callback)"
+.br
+.RI "Gets the current season name from the seasons table\&. "
+.ti -1c
+.RI "static void \fBGetMatchCode\fP (UnityAction< string > callback)"
+.br
+.RI "Gets a unique match code\&. "
+.ti -1c
+.RI "static void \fBAddToUserTotalMatches\fP ()"
+.br
+.RI "Adds to the number of matches played by the user\&. "
+.ti -1c
+.RI "static void \fBUpdateUserWins\fP (string winner, string winType, UnityAction callback)"
+.br
+.RI "Updates the user's gameStats with the win\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBAmIMatchHost\fP\fC [get]\fP"
+.br
+.RI "Responds the question if the current user is the host of match\&. "
+.ti -1c
+.RI "static \fBMatchData\fP \fBmatchData\fP\fC [get, set]\fP"
+.br
+.RI "Exposes the match data object\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Singleton with methods related to the Companion match\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.AddLocalPlayerToCurrentMatch (AchromaDatabaseController::CompanionGameType gameType, UnityAction< bool, string > result)\fC [static]\fP"
+
+.PP
+Adds the local player to the match\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgameType\fP The type of match in question
+.br
+\fIresult\fP The callback with success feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.GetCurrentSeasonName (UnityAction< string > callback)\fC [static]\fP"
+
+.PP
+Gets the current season name from the seasons table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP success/failure feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.GetMatchCode (UnityAction< string > callback)\fC [static]\fP"
+
+.PP
+Gets a unique match code\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP Returns the match code
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.GetMatchData (string sessionName, UnityAction< bool, string, \fBMatchData\fP > result)\fC [static]\fP"
+
+.PP
+Based on a session id, it gives back the MatchData object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsessionName\fP Session id
+.br
+\fIresult\fP the success feedback and MatchData object
+.RE
+.PP
+
+.SS "static List< \fBMatchPlayer\fP > AchromaAPI\&.AchromaInstanceMatch\&.GetOponents ()\fC [static]\fP"
+
+.PP
+Gets a list of opponents\&. 
+.PP
+\fBReturns\fP
+.RS 4
+List of player's opponents
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.NewMatch (string sessionName, AchromaDatabaseController::CompanionGameType gameType)\fC [static]\fP"
+
+.PP
+Adds a new match to Firebase's match table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsessionName\fP The unique match id
+.br
+\fIgameType\fP The type of match in question
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.RefreshMatch (string sessionName, bool showLoading = \fCtrue\fP, UnityAction< bool, string, string > callback = \fCnull\fP)\fC [static]\fP"
+
+.PP
+Forces an update to the local match data by retrieving it from the database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsessionName\fP Session id
+.br
+\fIshowLoading\fP If true, shows the loading screen
+.br
+\fIcallback\fP Success/Failure feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.RemoveLocalPlayerFromCurrentMatch (UnityAction< bool, string > result)\fC [static]\fP"
+
+.PP
+User removes themselves from the match\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP The success/failure feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.SaveMatchData (string sessionName = \fC''\fP, UnityAction< bool, string > result = \fCnull\fP)\fC [static]\fP"
+
+.PP
+Pushes the match data to Firebase\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsessionName\fP Session Id, if null, will use the matchData object in memory
+.br
+\fIresult\fP Success/failure feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.UpdatePlayerCharacter (int character)\fC [static]\fP"
+
+.PP
+Updates the avatar of the current plyer so the other players can see the change\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcharacter\fP the new avatar id
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.UpdateUserWins (string winner, string winType, UnityAction callback)\fC [static]\fP"
+
+.PP
+Updates the user's gameStats with the win\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwinner\fP the userid of the winner
+.br
+\fIwinType\fP The type of win, chroma / achrom
+.br
+\fIcallback\fP The feedback result
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.WatchMatch (UnityAction< string > result)\fC [static]\fP"
+
+.PP
+Adds a listener to the match\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

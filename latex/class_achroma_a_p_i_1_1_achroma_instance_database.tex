@@ -1,0 +1,324 @@
+\doxysection{Achroma\+API.\+Achroma\+Instance\+Database Class Reference}
+\hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database}{}\label{class_achroma_a_p_i_1_1_achroma_instance_database}\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+
+
+Database Singleton responsible with all the tools to gather the relevant data from \doxylink{namespace_achroma}{Achroma} Database.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a571db3347bbadd19cc7f56b9cc0498da}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a571db3347bbadd19cc7f56b9cc0498da} 
+static bool {\bfseries Database\+Is\+Loaded} ()
+\begin{DoxyCompactList}\small\item\em This returns to the host application the state of the database. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_a92a8f292805bb1af7da03f3bb691779c}{Add\+User\+Data\+Change\+Listener}} (Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ listener, Unity\+Action$<$ bool, string $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em This adds a listener to the changes on the user data. If something happens to the user, this change is replicated on this method. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_a06d8415725f98f27646452e958e5255d}{Remove\+User\+Data\+Change\+Listener}} (Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ listener, Unity\+Action$<$ bool, string $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em This removes the user data listener to avoid accessing destroyed objects. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a5d08674ffd55794719163c0ae0dc0313}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a5d08674ffd55794719163c0ae0dc0313} 
+static int {\bfseries Get\+User\+Avatar} ()
+\begin{DoxyCompactList}\small\item\em Returns the avatar to the host application. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_a671ed2b3b7cfbf84ca3cee0368c230a1}{Get\+User\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the Firebase User id, in case the user is logged. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_af40d2cabd609095c897ed707b0ebf5ae}\label{class_achroma_a_p_i_1_1_achroma_instance_database_af40d2cabd609095c897ed707b0ebf5ae} 
+static void {\bfseries Set\+User\+Avatar} (int avatar)
+\begin{DoxyCompactList}\small\item\em Returns the avatar to the host application. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_adbaad750a02ff2bcc472ab420d83ac5e}\label{class_achroma_a_p_i_1_1_achroma_instance_database_adbaad750a02ff2bcc472ab420d83ac5e} 
+static string {\bfseries Get\+User\+Last\+Update} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s last update date. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_a1492df36598431ac95c7de743c27fd0d}{Subtract\+Shards}} (int shards, Unity\+Action$<$ bool, string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Takes shards from the user. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_a62a9efc9893d750000eefe8ce09ea6cd}{Get\+User\+Shards}} ()
+\begin{DoxyCompactList}\small\item\em Returns the amount of shards the user has. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_ad1b5e713a47c872ce4dc10cb11551201}{Get\+User\+Id\+By\+Unique\+Number}} (string unique\+Number, Unity\+Action$<$ bool, string, string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Returns the user id for a unique number. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_a182de23aa9294da397d2be79474bb742}{Save\+User\+Data}} (Unity\+Action$<$ bool, string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Uploads user data to the database. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_afa95fe0923dd34603479b5ecea4650cb}{Get\+Achievement\+Value}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the achievement value for a given name when the user logged in. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_ade3f60faee09880766f2cd688600676b}{Get\+Achievement\+Completion\+Pct}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the achievement value for a given name when the user logged in. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_ad81e5b729d048f1d489dd6a2a1db4eff}{Update\+Story\+Achrometer}} (int value)
+\begin{DoxyCompactList}\small\item\em Updates the Story Achrometer add the param value. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_a383d3e0516dc9cf1d3932b6c7f1c0ddf}{Am\+IFriends\+With}} (string id)
+\begin{DoxyCompactList}\small\item\em Responds if the current user is friends with the id informed. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_ad8a5800c5067248832b067b994a804d5}{Show\+Friend}} (string id, Unity\+Action callback)
+\begin{DoxyCompactList}\small\item\em Shows the Friends details for a given id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Database Singleton responsible with all the tools to gather the relevant data from \doxylink{namespace_achroma}{Achroma} Database. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a92a8f292805bb1af7da03f3bb691779c}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a92a8f292805bb1af7da03f3bb691779c} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!AddUserDataChangeListener@{AddUserDataChangeListener}}
+\index{AddUserDataChangeListener@{AddUserDataChangeListener}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{AddUserDataChangeListener()}{AddUserDataChangeListener()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Database.\+Add\+User\+Data\+Change\+Listener (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$}]{listener,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This adds a listener to the changes on the user data. If something happens to the user, this change is replicated on this method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener method will be called back to the host application with the changes\\
+\hline
+\end{DoxyParams}
+/// 
+\begin{DoxyParams}{Parameters}
+{\em callback} & The success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_a92a8f292805bb1af7da03f3bb691779c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_a92a8f292805bb1af7da03f3bb691779c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a383d3e0516dc9cf1d3932b6c7f1c0ddf}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a383d3e0516dc9cf1d3932b6c7f1c0ddf} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!AmIFriendsWith@{AmIFriendsWith}}
+\index{AmIFriendsWith@{AmIFriendsWith}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{AmIFriendsWith()}{AmIFriendsWith()}}
+{\footnotesize\ttfamily static bool Achroma\+API.\+Achroma\+Instance\+Database.\+Am\+IFriends\+With (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Responds if the current user is friends with the id informed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the friend id in question\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE or FALSE
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_a383d3e0516dc9cf1d3932b6c7f1c0ddf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_ade3f60faee09880766f2cd688600676b}\label{class_achroma_a_p_i_1_1_achroma_instance_database_ade3f60faee09880766f2cd688600676b} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!GetAchievementCompletionPct@{GetAchievementCompletionPct}}
+\index{GetAchievementCompletionPct@{GetAchievementCompletionPct}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{GetAchievementCompletionPct()}{GetAchievementCompletionPct()}}
+{\footnotesize\ttfamily static float Achroma\+API.\+Achroma\+Instance\+Database.\+Get\+Achievement\+Completion\+Pct (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the achievement value for a given name when the user logged in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & achievement name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_ade3f60faee09880766f2cd688600676b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_afa95fe0923dd34603479b5ecea4650cb}\label{class_achroma_a_p_i_1_1_achroma_instance_database_afa95fe0923dd34603479b5ecea4650cb} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!GetAchievementValue@{GetAchievementValue}}
+\index{GetAchievementValue@{GetAchievementValue}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{GetAchievementValue()}{GetAchievementValue()}}
+{\footnotesize\ttfamily static int Achroma\+API.\+Achroma\+Instance\+Database.\+Get\+Achievement\+Value (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the achievement value for a given name when the user logged in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & achievement name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_afa95fe0923dd34603479b5ecea4650cb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a671ed2b3b7cfbf84ca3cee0368c230a1}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a671ed2b3b7cfbf84ca3cee0368c230a1} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!GetUserId@{GetUserId}}
+\index{GetUserId@{GetUserId}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{GetUserId()}{GetUserId()}}
+{\footnotesize\ttfamily static string Achroma\+API.\+Achroma\+Instance\+Database.\+Get\+User\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the Firebase User id, in case the user is logged. 
+
+\begin{DoxyReturn}{Returns}
+Firebase User Id
+\end{DoxyReturn}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_ad1b5e713a47c872ce4dc10cb11551201}\label{class_achroma_a_p_i_1_1_achroma_instance_database_ad1b5e713a47c872ce4dc10cb11551201} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!GetUserIdByUniqueNumber@{GetUserIdByUniqueNumber}}
+\index{GetUserIdByUniqueNumber@{GetUserIdByUniqueNumber}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{GetUserIdByUniqueNumber()}{GetUserIdByUniqueNumber()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Database.\+Get\+User\+Id\+By\+Unique\+Number (\begin{DoxyParamCaption}\item[{string}]{unique\+Number,  }\item[{Unity\+Action$<$ bool, string, string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the user id for a unique number. 
+
+\begin{DoxyReturn}{Returns}
+The amount of shards 
+\end{DoxyReturn}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a62a9efc9893d750000eefe8ce09ea6cd}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a62a9efc9893d750000eefe8ce09ea6cd} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!GetUserShards@{GetUserShards}}
+\index{GetUserShards@{GetUserShards}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{GetUserShards()}{GetUserShards()}}
+{\footnotesize\ttfamily static int Achroma\+API.\+Achroma\+Instance\+Database.\+Get\+User\+Shards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the amount of shards the user has. 
+
+\begin{DoxyReturn}{Returns}
+The amount of shards 
+\end{DoxyReturn}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a06d8415725f98f27646452e958e5255d}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a06d8415725f98f27646452e958e5255d} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!RemoveUserDataChangeListener@{RemoveUserDataChangeListener}}
+\index{RemoveUserDataChangeListener@{RemoveUserDataChangeListener}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{RemoveUserDataChangeListener()}{RemoveUserDataChangeListener()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Database.\+Remove\+User\+Data\+Change\+Listener (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$}]{listener,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This removes the user data listener to avoid accessing destroyed objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener method will be called back to the host application with the changes\\
+\hline
+{\em callback} & The success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_a06d8415725f98f27646452e958e5255d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a182de23aa9294da397d2be79474bb742}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a182de23aa9294da397d2be79474bb742} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!SaveUserData@{SaveUserData}}
+\index{SaveUserData@{SaveUserData}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{SaveUserData()}{SaveUserData()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Database.\+Save\+User\+Data (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Uploads user data to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & callback if success or error feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_a182de23aa9294da397d2be79474bb742_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_ad8a5800c5067248832b067b994a804d5}\label{class_achroma_a_p_i_1_1_achroma_instance_database_ad8a5800c5067248832b067b994a804d5} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!ShowFriend@{ShowFriend}}
+\index{ShowFriend@{ShowFriend}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{ShowFriend()}{ShowFriend()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Database.\+Show\+Friend (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{Unity\+Action}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows the Friends details for a given id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & User id\\
+\hline
+{\em callback} & Callback when the window is shown\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_ad8a5800c5067248832b067b994a804d5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a1492df36598431ac95c7de743c27fd0d}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a1492df36598431ac95c7de743c27fd0d} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!SubtractShards@{SubtractShards}}
+\index{SubtractShards@{SubtractShards}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{SubtractShards()}{SubtractShards()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Database.\+Subtract\+Shards (\begin{DoxyParamCaption}\item[{int}]{shards,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Takes shards from the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shards} & Shards to subtract\\
+\hline
+{\em story\+Step\+Id} & The story step related to this gain\\
+\hline
+{\em callback} & The callback indicating success or failure\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_a1492df36598431ac95c7de743c27fd0d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_ad81e5b729d048f1d489dd6a2a1db4eff}\label{class_achroma_a_p_i_1_1_achroma_instance_database_ad81e5b729d048f1d489dd6a2a1db4eff} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!UpdateStoryAchrometer@{UpdateStoryAchrometer}}
+\index{UpdateStoryAchrometer@{UpdateStoryAchrometer}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{UpdateStoryAchrometer()}{UpdateStoryAchrometer()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Database.\+Update\+Story\+Achrometer (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the Story Achrometer add the param value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to add/subtract to the story achrometer\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_ad81e5b729d048f1d489dd6a2a1db4eff_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Database.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+User.\+cs\end{DoxyCompactItemize}

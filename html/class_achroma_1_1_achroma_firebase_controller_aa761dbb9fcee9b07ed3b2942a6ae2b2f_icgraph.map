@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaFirebaseController.GetAllCards" name="Achroma.AchromaFirebaseController.GetAllCards">
+<area shape="rect" id="Node000001" title="Returns a collection of all the cards from Firebase." alt="" coords="298,5,536,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#ab015604a046b96ae466b9945c2b05a6e" title="Gets a list of cards from the database." alt="" coords="5,5,250,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,28,250,28,250,23,283,23"/>
+</map>

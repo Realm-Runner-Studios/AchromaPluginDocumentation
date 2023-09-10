@@ -1,0 +1,23 @@
+<map id="Achroma.AchromaAssetManager.InstantiateObjectFromBundle" name="Achroma.AchromaAssetManager.InstantiateObjectFromBundle">
+<area shape="rect" id="Node000001" title="Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the obj..." alt="" coords="572,149,788,190"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_character.html#a732c4e1ee57babf1f51bf17810bbfb4b" title="Gets the sprite animation for a given avatar id in the array." alt="" coords="325,12,516,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="636,143,583,109,523,75,480,56,482,51,525,70,586,104,639,139"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_location.html#aba0c162f59ffcb788d6dc5b863015073" title="Gets the sprite for a given location id in the array." alt="" coords="329,84,512,125"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="582,148,503,128,505,123,583,143"/>
+<area shape="rect" id="Node000007" href="$class_achroma_1_1_achroma_location.html#a755564db259bd4bdcf1d3b7a51e759f9" title="Gets the sprite for a given location name in the array." alt="" coords="329,149,512,190"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="557,172,512,172,512,167,557,167"/>
+<area shape="rect" id="Node000008" href="$class_achroma_1_1_achroma_u_i_controller.html#acf9d4186ff833707ce0a49c1ada21631" title="This will load the background from the asset bundle to avoid embedding the background images to the p..." alt="" coords="319,215,522,255"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="583,197,505,217,503,211,582,192"/>
+<area shape="rect" id="Node000010" href="$class_achroma_1_1_achroma_u_i_controller.html#a49da583bb70d45edcb880d567efafb54" title="This will create the separator for the Message Dialog from Asset Bundles." alt="" coords="317,280,524,321"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="640,201,587,236,525,269,495,282,493,277,523,265,584,231,637,197"/>
+<area shape="rect" id="Node000003" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a0d01cfb09606fe1787a121d22336d5d6" title="Returns character sprite animation by giving an id." alt="" coords="5,5,269,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="310,32,269,31,269,26,310,27"/>
+<area shape="rect" id="Node000005" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#ad8a328a6bcc5ebcd1c7ed5b3b639b4aa" title="Returns location sprite animation by giving an id." alt="" coords="9,71,265,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="314,102,265,100,265,94,314,97"/>
+<area shape="rect" id="Node000006" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a2fcccb14a0e1e88fabcb53cae0963c72" title="Returns location sprite animation by giving a name." alt="" coords="23,135,251,191"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="315,129,252,142,251,137,314,124"/>
+<area shape="rect" id="Node000009" href="$class_achroma_a_p_i_1_1_achroma_instance_u_i.html#a29cb5418a29491f2c88bc6bbd743d94b" title="This will create a menu background." alt="" coords="36,215,238,255"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="305,238,238,238,238,232,305,232"/>
+<area shape="rect" id="Node000011" href="$class_achroma_1_1_achroma_u_i_controller.html#a488d782b3fd2d3f50cfb0d63eb532ae5" title="This will update all the UI components using Asset Bundles from Google Bucket." alt="" coords="36,280,238,321"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="302,303,238,303,238,298,302,298"/>
+</map>

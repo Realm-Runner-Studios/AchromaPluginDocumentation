@@ -1,0 +1,108 @@
+\doxysection{Shopify.\+Unity.\+Transaction Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_transaction}{}\label{class_shopify_1_1_unity_1_1_transaction}\index{Shopify.Unity.Transaction@{Shopify.Unity.Transaction}}
+
+
+An object representing exchange of money for a product or service.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Transaction\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Transaction\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_transaction_a38e527ea09ceb159b745eba2bd043eb1}{Transaction}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_transaction_ac4228f6b183dc72ce7feb75d71f3bd1f}{amount}} ()
+\begin{DoxyCompactList}\small\item\em The amount of money that the transaction was for. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_transaction_a473df966298d725aa34902e55f93260e}\label{class_shopify_1_1_unity_1_1_transaction_a473df966298d725aa34902e55f93260e} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries amount\+V2} ()
+\begin{DoxyCompactList}\small\item\em The amount of money that the transaction was for. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_transaction_a8156a301945640bc71996afac3729b70}\label{class_shopify_1_1_unity_1_1_transaction_a8156a301945640bc71996afac3729b70} 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_a619f6b3f97836413b365b0680c9a8341}{Transaction\+Kind}} {\bfseries kind} ()
+\begin{DoxyCompactList}\small\item\em The kind of the transaction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_a563254c727c0c2b9c2ba05215b497f18}{Transaction\+Status}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_transaction_a6c3c97002bf2b3aa0fe54ce9aa04c9c1}{status}} ()
+\begin{DoxyCompactList}\small\item\em The status of the transaction. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_transaction_aef48f7ae95a615af65c9fdd8f7d17b90}\label{class_shopify_1_1_unity_1_1_transaction_aef48f7ae95a615af65c9fdd8f7d17b90} 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_a563254c727c0c2b9c2ba05215b497f18}{Transaction\+Status}}? {\bfseries status\+V2} ()
+\begin{DoxyCompactList}\small\item\em The status of the transaction. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_transaction_ad4d919195a0e723cf05a8d7c135e3d66}\label{class_shopify_1_1_unity_1_1_transaction_ad4d919195a0e723cf05a8d7c135e3d66} 
+bool {\bfseries test} ()
+\begin{DoxyCompactList}\small\item\em Whether the transaction was done in test mode or not. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_transaction_a306dd69a4f50ed59783a6b454dc0503e}\label{class_shopify_1_1_unity_1_1_transaction_a306dd69a4f50ed59783a6b454dc0503e} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An object representing exchange of money for a product or service. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_transaction_a38e527ea09ceb159b745eba2bd043eb1}\label{class_shopify_1_1_unity_1_1_transaction_a38e527ea09ceb159b745eba2bd043eb1} 
+\index{Shopify.Unity.Transaction@{Shopify.Unity.Transaction}!Transaction@{Transaction}}
+\index{Transaction@{Transaction}!Shopify.Unity.Transaction@{Shopify.Unity.Transaction}}
+\doxysubsubsection{\texorpdfstring{Transaction()}{Transaction()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Transaction.\+Transaction (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Transaction\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_transaction_ac4228f6b183dc72ce7feb75d71f3bd1f}\label{class_shopify_1_1_unity_1_1_transaction_ac4228f6b183dc72ce7feb75d71f3bd1f} 
+\index{Shopify.Unity.Transaction@{Shopify.Unity.Transaction}!amount@{amount}}
+\index{amount@{amount}!Shopify.Unity.Transaction@{Shopify.Unity.Transaction}}
+\doxysubsubsection{\texorpdfstring{amount()}{amount()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Transaction.\+amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The amount of money that the transaction was for. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000161}{Deprecated}}]Use {\ttfamily amount\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_transaction_a6c3c97002bf2b3aa0fe54ce9aa04c9c1}\label{class_shopify_1_1_unity_1_1_transaction_a6c3c97002bf2b3aa0fe54ce9aa04c9c1} 
+\index{Shopify.Unity.Transaction@{Shopify.Unity.Transaction}!status@{status}}
+\index{status@{status}!Shopify.Unity.Transaction@{Shopify.Unity.Transaction}}
+\doxysubsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_shopify_1_1_unity_a563254c727c0c2b9c2ba05215b497f18}{Transaction\+Status}} Shopify.\+Unity.\+Transaction.\+status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The status of the transaction. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000162}{Deprecated}}]Use {\ttfamily status\+V2} instead \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Transaction.\+cs\end{DoxyCompactItemize}

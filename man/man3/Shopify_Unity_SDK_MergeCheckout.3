@@ -1,0 +1,49 @@
+.TH "Shopify.Unity.SDK.MergeCheckout" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.SDK.MergeCheckout
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.ResponseMergeUtil\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCheckout\fP \fBMerge\fP (\fBCheckout\fP checkoutA, \fBCheckout\fP checkoutB)"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.ResponseMergeUtil\fP
+.in +1c
+.ti -1c
+.RI "void \fBAddFieldMerger\fP (string field, MergeFieldDelegate merger)"
+.br
+.ti -1c
+.RI "void \fBAddObjectMerger\fP (string field, \fBResponseMergeUtil\fP merger)"
+.br
+.ti -1c
+.RI "Dictionary< string, object > \fBMerge\fP (Dictionary< string, object > responseA, Dictionary< string, object > responseB)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Static Public Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.ResponseMergeUtil\fP
+.in +1c
+.ti -1c
+.RI "static void \fBDoNotMergeIfExists\fP (string field, Dictionary< string, object > into, Dictionary< string, object > responseA, Dictionary< string, object > responseB)"
+.br
+.ti -1c
+.RI "static void \fBMergeOverwrite\fP (string field, Dictionary< string, object > into, Dictionary< string, object > responseA, Dictionary< string, object > responseB)"
+.br
+.ti -1c
+.RI "static void \fBMergeListsConcat\fP (string field, Dictionary< string, object > into, Dictionary< string, object > responseA, Dictionary< string, object > responseB)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

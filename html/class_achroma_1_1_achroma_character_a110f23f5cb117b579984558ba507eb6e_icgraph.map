@@ -1,0 +1,20 @@
+<map id="Achroma.AchromaCharacter.GetCharacterSpriteName" name="Achroma.AchromaCharacter.GetCharacterSpriteName">
+<area shape="rect" id="Node000001" title="Returns character sprite name to be found in the asset bundle." alt="" coords="863,108,1053,149"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a6ef5432f243df34784228492d2908279" title="Returns the name of the character that&#39;s informed in the control file." alt="" coords="609,13,815,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="897,104,814,69,780,57,782,52,816,65,899,99"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_character.html#a7ef8b65d41f7bcb62dcbd31a498dbee7" title="Gets the sprite for a given avatar id in the array." alt="" coords="618,79,807,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="848,118,807,113,807,108,849,113"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_u_i_controller.html#aad66560c74192bc128ebe181c5568c36" title="Loader user sprite into the home button." alt="" coords="328,136,531,177"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="849,137,531,154,531,148,848,131"/>
+<area shape="rect" id="Node000008" href="$class_achroma_1_1_achroma_character.html#a732c4e1ee57babf1f51bf17810bbfb4b" title="Gets the sprite animation for a given avatar id in the array." alt="" coords="617,197,808,238"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="887,157,771,199,770,194,885,152"/>
+<area shape="rect" id="Node000004" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a70f849db9ac49f16fe9b25ed82a3c251" title="Returns character sprite by giving an id." alt="" coords="327,5,532,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="619,77,560,62,512,49,514,44,562,56,620,72"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="604,124,532,138,530,133,602,118"/>
+<area shape="rect" id="Node000007" href="$class_achroma_1_1_achroma_shard_shop_u_i.html#ac6b5ed4a7e8df9d1280c3f9686f0f47b" title="Shows the purchase details for items that can be purchased using shards Used for the purchase of avat..." alt="" coords="325,71,534,111"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="603,99,534,97,534,91,603,93"/>
+<area shape="rect" id="Node000006" href="$class_achroma_1_1_achroma_database_controller.html#ac843e0393854c7257993d2373d4eceed" title="Event called when any change to the user data occurs This also calls the userDataChanged action point..." alt="" coords="5,136,250,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="313,159,250,159,250,154,313,154"/>
+<area shape="rect" id="Node000009" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a0d01cfb09606fe1787a121d22336d5d6" title="Returns character sprite animation by giving an id." alt="" coords="298,201,561,242"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="602,222,561,222,561,217,602,217"/>
+</map>

@@ -1,0 +1,85 @@
+.TH "Shopify.Unity.GraphQL.PaymentQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.PaymentQuery \- A payment applied to a checkout\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPaymentQuery\fP (StringBuilder query)"
+.br
+.RI "PaymentQuery is used to build queries\&. Typically PaymentQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBPaymentQuery\fP \fBamount\fP ()"
+.br
+.RI "The amount of the payment\&. "
+.ti -1c
+.RI "\fBPaymentQuery\fP \fBamountV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The amount of the payment\&. "
+.ti -1c
+.RI "\fBPaymentQuery\fP \fBbillingAddress\fP (MailingAddressDelegate buildQuery)"
+.br
+.RI "The billing address for the payment\&. "
+.ti -1c
+.RI "\fBPaymentQuery\fP \fBcheckout\fP (CheckoutDelegate buildQuery)"
+.br
+.RI "The checkout to which the payment belongs\&. "
+.ti -1c
+.RI "\fBPaymentQuery\fP \fBcreditCard\fP (CreditCardDelegate buildQuery)"
+.br
+.RI "The credit card used for the payment in the case of direct payments\&. "
+.ti -1c
+.RI "\fBPaymentQuery\fP \fBerrorMessage\fP ()"
+.br
+.RI "A message describing a processing error during asynchronous processing\&. "
+.ti -1c
+.RI "\fBPaymentQuery\fP \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBPaymentQuery\fP \fBidempotencyKey\fP ()"
+.br
+.RI "A client-side generated token to identify a payment and perform idempotent operations\&. "
+.ti -1c
+.RI "\fBPaymentQuery\fP \fBnextActionUrl\fP ()"
+.br
+.RI "The URL where the customer needs to be redirected so they can complete the 3D Secure payment flow\&. "
+.ti -1c
+.RI "\fBPaymentQuery\fP \fBready\fP ()"
+.br
+.RI "Whether or not the payment is still processing asynchronously\&. "
+.ti -1c
+.RI "\fBPaymentQuery\fP \fBtest\fP ()"
+.br
+.RI "A flag to indicate if the payment is to be done in test mode for gateways that support it\&. "
+.ti -1c
+.RI "\fBPaymentQuery\fP \fBtransaction\fP (TransactionDelegate buildQuery)"
+.br
+.RI "The actual transaction recorded by \fBShopify\fP after having processed the payment with the gateway\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A payment applied to a checkout\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBPaymentQuery\fP Shopify\&.Unity\&.GraphQL\&.PaymentQuery\&.amount ()"
+
+.PP
+The amount of the payment\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCamountV2\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

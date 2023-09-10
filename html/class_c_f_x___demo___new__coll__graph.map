@@ -1,0 +1,9 @@
+<map id="CFX_Demo_New" name="CFX_Demo_New">
+<area shape="rect" id="Node000001" title=" " alt="" coords="124,154,249,180"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,117,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,40,178,152,174,155,78,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="140,5,233,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,46,189,153,184,153,184,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="265,5,311,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="289,46,282,89,273,111,260,132,245,146,227,156,224,151,242,141,256,128,268,109,276,87,284,45"/>
+</map>

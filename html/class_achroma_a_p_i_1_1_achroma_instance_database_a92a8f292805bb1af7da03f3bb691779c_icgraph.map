@@ -1,0 +1,5 @@
+<map id="AchromaAPI.AchromaInstanceDatabase.AddUserDataChangeListener" name="AchromaAPI.AchromaInstanceDatabase.AddUserDataChangeListener">
+<area shape="rect" id="Node000001" title="This adds a listener to the changes on the user data. If something happens to the user,..." alt="" coords="259,5,510,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance.html#a4717d0a22f9bc3c8284bcb808f631163" title="This will initialize all the assets needed to use the plugin, like database layer UI,..." alt="" coords="5,5,211,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,28,211,28,211,23,244,23"/>
+</map>

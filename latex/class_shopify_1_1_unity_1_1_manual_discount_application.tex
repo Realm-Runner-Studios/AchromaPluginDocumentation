@@ -1,0 +1,140 @@
+\doxysection{Shopify.\+Unity.\+Manual\+Discount\+Application Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_manual_discount_application}{}\label{class_shopify_1_1_unity_1_1_manual_discount_application}\index{Shopify.Unity.ManualDiscountApplication@{Shopify.Unity.ManualDiscountApplication}}
+
+
+Manual discount applications capture the intentions of a discount that was manually created.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Manual\+Discount\+Application\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Manual\+Discount\+Application\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_manual_discount_application_ac196385266ef6c2e6bd83931dce706b6}{Manual\+Discount\+Application}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_aa7dcb120cf55ff25f6c2077973865ade}{Discount\+Application\+Allocation\+Method}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_manual_discount_application_a43c168d3ad19c1eed0c00bdb6e81a7bf}{allocation\+Method}} ()
+\begin{DoxyCompactList}\small\item\em The method by which the discount\textquotesingle{}s value is allocated to its entitled items. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_manual_discount_application_aee50876ee0f6b137097984d78dd21811}\label{class_shopify_1_1_unity_1_1_manual_discount_application_aee50876ee0f6b137097984d78dd21811} 
+string {\bfseries description} ()
+\begin{DoxyCompactList}\small\item\em The description of the application. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_aedfe530633ace88e06921803d9dd49a8}{Discount\+Application\+Target\+Selection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_manual_discount_application_aaba2272f64b489dd606758bbf7c4f7d1}{target\+Selection}} ()
+\begin{DoxyCompactList}\small\item\em Which lines of target\+Type that the discount is allocated over. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_ac28a83856a9609688abff89994c81e23}{Discount\+Application\+Target\+Type}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_manual_discount_application_a50aeea86006dc4c4565bec70e3f78e92}{target\+Type}} ()
+\begin{DoxyCompactList}\small\item\em The type of line that the discount is applicable towards. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_manual_discount_application_a4965cdd6ec13225329310dc780aafea4}\label{class_shopify_1_1_unity_1_1_manual_discount_application_a4965cdd6ec13225329310dc780aafea4} 
+string {\bfseries title} ()
+\begin{DoxyCompactList}\small\item\em The title of the application. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_shopify_1_1_unity_1_1_pricing_value}{Pricing\+Value}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_manual_discount_application_a0d93d4db53414b18af8f62ddfb155d75}{value}} ()
+\begin{DoxyCompactList}\small\item\em The value of the discount application. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_manual_discount_application_a9b5ad09424430b5800fb4a7e61e95917}\label{class_shopify_1_1_unity_1_1_manual_discount_application_a9b5ad09424430b5800fb4a7e61e95917} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manual discount applications capture the intentions of a discount that was manually created. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_manual_discount_application_ac196385266ef6c2e6bd83931dce706b6}\label{class_shopify_1_1_unity_1_1_manual_discount_application_ac196385266ef6c2e6bd83931dce706b6} 
+\index{Shopify.Unity.ManualDiscountApplication@{Shopify.Unity.ManualDiscountApplication}!ManualDiscountApplication@{ManualDiscountApplication}}
+\index{ManualDiscountApplication@{ManualDiscountApplication}!Shopify.Unity.ManualDiscountApplication@{Shopify.Unity.ManualDiscountApplication}}
+\doxysubsubsection{\texorpdfstring{ManualDiscountApplication()}{ManualDiscountApplication()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Manual\+Discount\+Application.\+Manual\+Discount\+Application (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Manual\+Discount\+Application\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_manual_discount_application_a43c168d3ad19c1eed0c00bdb6e81a7bf}\label{class_shopify_1_1_unity_1_1_manual_discount_application_a43c168d3ad19c1eed0c00bdb6e81a7bf} 
+\index{Shopify.Unity.ManualDiscountApplication@{Shopify.Unity.ManualDiscountApplication}!allocationMethod@{allocationMethod}}
+\index{allocationMethod@{allocationMethod}!Shopify.Unity.ManualDiscountApplication@{Shopify.Unity.ManualDiscountApplication}}
+\doxysubsubsection{\texorpdfstring{allocationMethod()}{allocationMethod()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_shopify_1_1_unity_aa7dcb120cf55ff25f6c2077973865ade}{Discount\+Application\+Allocation\+Method}} Shopify.\+Unity.\+Manual\+Discount\+Application.\+allocation\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The method by which the discount\textquotesingle{}s value is allocated to its entitled items. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_discount_application_a56510bd6c124c435344fc50ae4dfaba9}{Shopify.\+Unity.\+Discount\+Application}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_manual_discount_application_aaba2272f64b489dd606758bbf7c4f7d1}\label{class_shopify_1_1_unity_1_1_manual_discount_application_aaba2272f64b489dd606758bbf7c4f7d1} 
+\index{Shopify.Unity.ManualDiscountApplication@{Shopify.Unity.ManualDiscountApplication}!targetSelection@{targetSelection}}
+\index{targetSelection@{targetSelection}!Shopify.Unity.ManualDiscountApplication@{Shopify.Unity.ManualDiscountApplication}}
+\doxysubsubsection{\texorpdfstring{targetSelection()}{targetSelection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_shopify_1_1_unity_aedfe530633ace88e06921803d9dd49a8}{Discount\+Application\+Target\+Selection}} Shopify.\+Unity.\+Manual\+Discount\+Application.\+target\+Selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Which lines of target\+Type that the discount is allocated over. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_discount_application_a71dee594887b53803e7bfa6d414481b3}{Shopify.\+Unity.\+Discount\+Application}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_manual_discount_application_a50aeea86006dc4c4565bec70e3f78e92}\label{class_shopify_1_1_unity_1_1_manual_discount_application_a50aeea86006dc4c4565bec70e3f78e92} 
+\index{Shopify.Unity.ManualDiscountApplication@{Shopify.Unity.ManualDiscountApplication}!targetType@{targetType}}
+\index{targetType@{targetType}!Shopify.Unity.ManualDiscountApplication@{Shopify.Unity.ManualDiscountApplication}}
+\doxysubsubsection{\texorpdfstring{targetType()}{targetType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_shopify_1_1_unity_ac28a83856a9609688abff89994c81e23}{Discount\+Application\+Target\+Type}} Shopify.\+Unity.\+Manual\+Discount\+Application.\+target\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The type of line that the discount is applicable towards. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_discount_application_a83c995543a8e121dd9a2d508a3a507a0}{Shopify.\+Unity.\+Discount\+Application}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_manual_discount_application_a0d93d4db53414b18af8f62ddfb155d75}\label{class_shopify_1_1_unity_1_1_manual_discount_application_a0d93d4db53414b18af8f62ddfb155d75} 
+\index{Shopify.Unity.ManualDiscountApplication@{Shopify.Unity.ManualDiscountApplication}!value@{value}}
+\index{value@{value}!Shopify.Unity.ManualDiscountApplication@{Shopify.Unity.ManualDiscountApplication}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_pricing_value}{Pricing\+Value}} Shopify.\+Unity.\+Manual\+Discount\+Application.\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The value of the discount application. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_discount_application_ad224869d62cd401645ac6622a6adc7f8}{Shopify.\+Unity.\+Discount\+Application}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Manual\+Discount\+Application.\+cs\end{DoxyCompactItemize}

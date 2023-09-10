@@ -1,0 +1,138 @@
+\doxysection{Shopify.\+Unity.\+Customer Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_customer}{}\label{class_shopify_1_1_unity_1_1_customer}\index{Shopify.Unity.Customer@{Shopify.Unity.Customer}}
+
+
+A customer represents a customer account with the shop. Customer accounts store contact information for the customer, saving logged-\/in customers the trouble of having to provide it at every checkout.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Customer\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Customer\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_a0977bf7d0d201459d2f740fce23046f1}{Customer}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_a0ec3c9c79ba85da1d520742d69bedeba}\label{class_shopify_1_1_unity_1_1_customer_a0ec3c9c79ba85da1d520742d69bedeba} 
+bool {\bfseries accepts\+Marketing} ()
+\begin{DoxyCompactList}\small\item\em Indicates whether the customer has consented to be sent marketing material via email. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address_connection}{Mailing\+Address\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_a4f2522b8f3c2550d6eba43e228f15981}{addresses}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em A list of addresses for the customer. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_a64c28aa9346ca39c3fc1a49f4635bd69}\label{class_shopify_1_1_unity_1_1_customer_a64c28aa9346ca39c3fc1a49f4635bd69} 
+Date\+Time? {\bfseries created\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the customer was created. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_a5683745817c41266e39457acfaf93647}\label{class_shopify_1_1_unity_1_1_customer_a5683745817c41266e39457acfaf93647} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address}{Mailing\+Address}} {\bfseries default\+Address} ()
+\begin{DoxyCompactList}\small\item\em The customer’s default address. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_aad376c8b996be49956f721c463ea10a7}\label{class_shopify_1_1_unity_1_1_customer_aad376c8b996be49956f721c463ea10a7} 
+string {\bfseries display\+Name} ()
+\begin{DoxyCompactList}\small\item\em The customer’s name, email or phone number. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_ae34e9e770da0954f73d966c5e1a36c5b}\label{class_shopify_1_1_unity_1_1_customer_ae34e9e770da0954f73d966c5e1a36c5b} 
+string {\bfseries email} ()
+\begin{DoxyCompactList}\small\item\em The customer’s email address. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_a5838d0a660499841bc6db7a16940f85b}\label{class_shopify_1_1_unity_1_1_customer_a5838d0a660499841bc6db7a16940f85b} 
+string {\bfseries first\+Name} ()
+\begin{DoxyCompactList}\small\item\em The customer’s first name. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_ad93a28ac41420c3707cacec09ae6deb4}\label{class_shopify_1_1_unity_1_1_customer_ad93a28ac41420c3707cacec09ae6deb4} 
+string {\bfseries id} ()
+\begin{DoxyCompactList}\small\item\em A unique identifier for the customer. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_a60d5751950953feb6282e632505ba790}\label{class_shopify_1_1_unity_1_1_customer_a60d5751950953feb6282e632505ba790} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout}{Checkout}} {\bfseries last\+Incomplete\+Checkout} ()
+\begin{DoxyCompactList}\small\item\em The customer\textquotesingle{}s most recently updated, incomplete checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_abc8fc5e15bbe48d9777911ac48c1caae}\label{class_shopify_1_1_unity_1_1_customer_abc8fc5e15bbe48d9777911ac48c1caae} 
+string {\bfseries last\+Name} ()
+\begin{DoxyCompactList}\small\item\em The customer’s last name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_connection}{Order\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_a3a2811e012042973e159dfba943b2bf9}{orders}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em The orders associated with the customer. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_a1372c63846cf1b5162f97739e418734b}\label{class_shopify_1_1_unity_1_1_customer_a1372c63846cf1b5162f97739e418734b} 
+string {\bfseries phone} ()
+\begin{DoxyCompactList}\small\item\em The customer’s phone number. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_a0dff62275f5c83256b8921c0309288d4}\label{class_shopify_1_1_unity_1_1_customer_a0dff62275f5c83256b8921c0309288d4} 
+List$<$ string $>$ {\bfseries tags} ()
+\begin{DoxyCompactList}\small\item\em A comma separated list of tags that have been added to the customer. Additional access scope required\+: unauthenticated\+\_\+read\+\_\+customer\+\_\+tags. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_acc3fad7a27d92600e598e78b2a441fab}\label{class_shopify_1_1_unity_1_1_customer_acc3fad7a27d92600e598e78b2a441fab} 
+Date\+Time? {\bfseries updated\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the customer information was updated. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_ad873a3291d266e1c4f46dfe496aa249a}\label{class_shopify_1_1_unity_1_1_customer_ad873a3291d266e1c4f46dfe496aa249a} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A customer represents a customer account with the shop. Customer accounts store contact information for the customer, saving logged-\/in customers the trouble of having to provide it at every checkout. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_a0977bf7d0d201459d2f740fce23046f1}\label{class_shopify_1_1_unity_1_1_customer_a0977bf7d0d201459d2f740fce23046f1} 
+\index{Shopify.Unity.Customer@{Shopify.Unity.Customer}!Customer@{Customer}}
+\index{Customer@{Customer}!Shopify.Unity.Customer@{Shopify.Unity.Customer}}
+\doxysubsubsection{\texorpdfstring{Customer()}{Customer()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Customer.\+Customer (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Customer\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_a4f2522b8f3c2550d6eba43e228f15981}\label{class_shopify_1_1_unity_1_1_customer_a4f2522b8f3c2550d6eba43e228f15981} 
+\index{Shopify.Unity.Customer@{Shopify.Unity.Customer}!addresses@{addresses}}
+\index{addresses@{addresses}!Shopify.Unity.Customer@{Shopify.Unity.Customer}}
+\doxysubsubsection{\texorpdfstring{addresses()}{addresses()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address_connection}{Mailing\+Address\+Connection}} Shopify.\+Unity.\+Customer.\+addresses (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+A list of addresses for the customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_a3a2811e012042973e159dfba943b2bf9}\label{class_shopify_1_1_unity_1_1_customer_a3a2811e012042973e159dfba943b2bf9} 
+\index{Shopify.Unity.Customer@{Shopify.Unity.Customer}!orders@{orders}}
+\index{orders@{orders}!Shopify.Unity.Customer@{Shopify.Unity.Customer}}
+\doxysubsubsection{\texorpdfstring{orders()}{orders()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_connection}{Order\+Connection}} Shopify.\+Unity.\+Customer.\+orders (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+The orders associated with the customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Customer.\+cs\end{DoxyCompactItemize}

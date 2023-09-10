@@ -1,0 +1,5 @@
+<map id="UniWebViewHelper.StreamingAssetURLForPath" name="UniWebViewHelper.StreamingAssetURLForPath">
+<area shape="rect" id="Node000001" title="Get the local streaming asset path for a given file path related to the StreamingAssets folder." alt="" coords="5,5,202,46"/>
+<area shape="rect" id="Node000002" href="$class_uni_web_view_logger.html#abb0d3b3f645b881edb7147760211f31e" title="Log a critical message." alt="" coords="250,13,429,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,23,235,23,235,28,202,28"/>
+</map>

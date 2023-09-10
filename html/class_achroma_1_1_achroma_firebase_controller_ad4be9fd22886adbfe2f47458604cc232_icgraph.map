@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaFirebaseController.GetUserById" name="Achroma.AchromaFirebaseController.GetUserById">
+<area shape="rect" id="Node000001" title="Gets the user by their id." alt="" coords="298,5,536,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#aada7e17663e8859aea32cc58cf2548a9" title="Gets the user by their id." alt="" coords="5,5,250,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,28,250,28,250,23,283,23"/>
+</map>

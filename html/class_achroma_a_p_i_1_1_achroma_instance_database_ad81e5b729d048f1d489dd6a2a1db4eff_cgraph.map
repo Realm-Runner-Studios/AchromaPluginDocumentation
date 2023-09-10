@@ -1,0 +1,5 @@
+<map id="AchromaAPI.AchromaInstanceDatabase.UpdateStoryAchrometer" name="AchromaAPI.AchromaInstanceDatabase.UpdateStoryAchrometer">
+<area shape="rect" id="Node000001" title="Updates the Story Achrometer add the param value." alt="" coords="5,5,227,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_database.html#a571db3347bbadd19cc7f56b9cc0498da" title="This returns to the host application the state of the database." alt="" coords="275,5,476,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,23,260,23,260,28,227,28"/>
+</map>

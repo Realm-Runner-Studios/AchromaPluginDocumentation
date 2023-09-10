@@ -1,0 +1,13 @@
+<map id="Achroma.AchromaFirebaseController.LoadDatabase" name="Achroma.AchromaFirebaseController.LoadDatabase">
+<area shape="rect" id="Node000001" title="Loads the references to the used tables in the app." alt="" coords="822,71,1061,111"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a87a74899ec8cdf24cbba363b4762c3b3" title="Loads the database references to the tables the app uses." alt="" coords="530,71,774,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="808,94,775,94,775,88,808,88"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_database_controller.html#a02bc8095f4c161c5b4f24248330bb2cf" title="Method that signs in to Apple from an Android device." alt="" coords="238,5,482,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="543,69,453,49,455,44,544,64"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_database_controller.html#a344a2985784742079272d23bd6456e07" title="Method that signs in to Apple from an Apple device." alt="" coords="238,71,482,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="515,94,482,94,482,88,515,88"/>
+<area shape="rect" id="Node000006" href="$class_achroma_1_1_achroma_database_controller.html#a765dd443290a3abe4ba21860dfebe4ca" title="This method calls the login method using email and password." alt="" coords="238,136,482,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="544,118,455,138,453,133,543,113"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_sign_in_u_i.html#a21cceb3c00842102faa86f7957e5a703" title="This method calls the login method using Apple." alt="" coords="5,71,190,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="223,94,190,94,190,88,223,88"/>
+</map>

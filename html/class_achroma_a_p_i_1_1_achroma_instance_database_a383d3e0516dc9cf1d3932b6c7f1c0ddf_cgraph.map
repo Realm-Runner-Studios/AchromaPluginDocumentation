@@ -1,0 +1,7 @@
+<map id="AchromaAPI.AchromaInstanceDatabase.AmIFriendsWith" name="AchromaAPI.AchromaInstanceDatabase.AmIFriendsWith">
+<area shape="rect" id="Node000001" title="Responds if the current user is friends with the id informed." alt="" coords="5,39,207,79"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#af892aac6d5f552024bfc18098ec0f612" title=" " alt="" coords="255,5,499,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,44,239,40,240,45,208,49"/>
+<area shape="rect" id="Node000003" href="$class_achroma_a_p_i_1_1_achroma_instance_database.html#a571db3347bbadd19cc7f56b9cc0498da" title="This returns to the host application the state of the database." alt="" coords="276,71,478,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,68,262,75,261,80,207,74"/>
+</map>

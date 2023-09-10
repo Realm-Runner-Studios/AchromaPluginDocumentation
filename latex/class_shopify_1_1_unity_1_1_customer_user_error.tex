@@ -1,0 +1,103 @@
+\doxysection{Shopify.\+Unity.\+Customer\+User\+Error Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_customer_user_error}{}\label{class_shopify_1_1_unity_1_1_customer_user_error}\index{Shopify.Unity.CustomerUserError@{Shopify.Unity.CustomerUserError}}
+
+
+Represents an error that happens during execution of a customer mutation.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Customer\+User\+Error\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Customer\+User\+Error\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_user_error_aeeb3d61c4540fb9be2e1bd314270005f}{Customer\+User\+Error}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_user_error_a6b44cc4f1455ff1aaddb5d623a6383e1}\label{class_shopify_1_1_unity_1_1_customer_user_error_a6b44cc4f1455ff1aaddb5d623a6383e1} 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_ae516a5ae00064fc47e37436076b64d45}{Customer\+Error\+Code}}? {\bfseries code} ()
+\begin{DoxyCompactList}\small\item\em Error code to uniquely identify the error. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_user_error_ace41d8c074ffc7255136c02f6cfa0639}{field}} ()
+\begin{DoxyCompactList}\small\item\em Path to the input field which caused the error. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_user_error_ab8f2cda99f7f9851f1bc747efdfde0da}{message}} ()
+\begin{DoxyCompactList}\small\item\em The error message. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_user_error_a6415c9a41d5e3612981c40edc9348fd1}\label{class_shopify_1_1_unity_1_1_customer_user_error_a6415c9a41d5e3612981c40edc9348fd1} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an error that happens during execution of a customer mutation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_user_error_aeeb3d61c4540fb9be2e1bd314270005f}\label{class_shopify_1_1_unity_1_1_customer_user_error_aeeb3d61c4540fb9be2e1bd314270005f} 
+\index{Shopify.Unity.CustomerUserError@{Shopify.Unity.CustomerUserError}!CustomerUserError@{CustomerUserError}}
+\index{CustomerUserError@{CustomerUserError}!Shopify.Unity.CustomerUserError@{Shopify.Unity.CustomerUserError}}
+\doxysubsubsection{\texorpdfstring{CustomerUserError()}{CustomerUserError()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Customer\+User\+Error.\+Customer\+User\+Error (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Customer\+User\+Error\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_user_error_ace41d8c074ffc7255136c02f6cfa0639}\label{class_shopify_1_1_unity_1_1_customer_user_error_ace41d8c074ffc7255136c02f6cfa0639} 
+\index{Shopify.Unity.CustomerUserError@{Shopify.Unity.CustomerUserError}!field@{field}}
+\index{field@{field}!Shopify.Unity.CustomerUserError@{Shopify.Unity.CustomerUserError}}
+\doxysubsubsection{\texorpdfstring{field()}{field()}}
+{\footnotesize\ttfamily List$<$ string $>$ Shopify.\+Unity.\+Customer\+User\+Error.\+field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Path to the input field which caused the error. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_displayable_error_adae397a8181180b82e98793e21bee3a9}{Shopify.\+Unity.\+Displayable\+Error}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_customer_user_error_ab8f2cda99f7f9851f1bc747efdfde0da}\label{class_shopify_1_1_unity_1_1_customer_user_error_ab8f2cda99f7f9851f1bc747efdfde0da} 
+\index{Shopify.Unity.CustomerUserError@{Shopify.Unity.CustomerUserError}!message@{message}}
+\index{message@{message}!Shopify.Unity.CustomerUserError@{Shopify.Unity.CustomerUserError}}
+\doxysubsubsection{\texorpdfstring{message()}{message()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Customer\+User\+Error.\+message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The error message. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_displayable_error_a12e4d43556e97aacfcc821cbfcaa4c08}{Shopify.\+Unity.\+Displayable\+Error}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Customer\+User\+Error.\+cs\end{DoxyCompactItemize}

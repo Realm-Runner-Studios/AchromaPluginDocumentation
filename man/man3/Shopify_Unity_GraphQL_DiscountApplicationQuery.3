@@ -1,0 +1,56 @@
+.TH "Shopify.Unity.GraphQL.DiscountApplicationQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.DiscountApplicationQuery \- Discount applications capture the intentions of a discount source at the time of application\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDiscountApplicationQuery\fP (StringBuilder query)"
+.br
+.RI "DiscountApplicationQuery is used to build queries\&. Typically DiscountApplicationQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBDiscountApplicationQuery\fP \fBallocationMethod\fP ()"
+.br
+.RI "The method by which the discount's value is allocated to its entitled items\&. "
+.ti -1c
+.RI "\fBDiscountApplicationQuery\fP \fBtargetSelection\fP ()"
+.br
+.RI "Which lines of targetType that the discount is allocated over\&. "
+.ti -1c
+.RI "\fBDiscountApplicationQuery\fP \fBtargetType\fP ()"
+.br
+.RI "The type of line that the discount is applicable towards\&. "
+.ti -1c
+.RI "\fBDiscountApplicationQuery\fP \fBvalue\fP (PricingValueDelegate buildQuery)"
+.br
+.RI "The value of the discount application\&. "
+.ti -1c
+.RI "\fBDiscountApplicationQuery\fP \fBonAutomaticDiscountApplication\fP (AutomaticDiscountApplicationDelegate buildQuery)"
+.br
+.RI "will allow you to write queries on AutomaticDiscountApplication\&. "
+.ti -1c
+.RI "\fBDiscountApplicationQuery\fP \fBonDiscountCodeApplication\fP (DiscountCodeApplicationDelegate buildQuery)"
+.br
+.RI "will allow you to write queries on DiscountCodeApplication\&. "
+.ti -1c
+.RI "\fBDiscountApplicationQuery\fP \fBonManualDiscountApplication\fP (ManualDiscountApplicationDelegate buildQuery)"
+.br
+.RI "will allow you to write queries on ManualDiscountApplication\&. "
+.ti -1c
+.RI "\fBDiscountApplicationQuery\fP \fBonScriptDiscountApplication\fP (ScriptDiscountApplicationDelegate buildQuery)"
+.br
+.RI "will allow you to write queries on ScriptDiscountApplication\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Discount applications capture the intentions of a discount source at the time of application\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

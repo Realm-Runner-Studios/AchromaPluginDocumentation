@@ -1,0 +1,105 @@
+.TH "Shopify.Unity.Page" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Page \- \fBShopify\fP merchants can create pages to hold static HTML content\&. Each Page object represents a custom page on the online store\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.Node\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPage\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "string \fBbody\fP ()"
+.br
+.RI "The description of the page, complete with HTML formatting\&. "
+.ti -1c
+.RI "string \fBbodySummary\fP ()"
+.br
+.RI "Summary of the page body\&. "
+.ti -1c
+.RI "DateTime? \fBcreatedAt\fP ()"
+.br
+.RI "The timestamp of the page creation\&. "
+.ti -1c
+.RI "string \fBhandle\fP ()"
+.br
+.RI "A human-friendly unique string for the page automatically generated from its title\&. "
+.ti -1c
+.RI "string \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "string \fBtitle\fP ()"
+.br
+.RI "The title of the page\&. "
+.ti -1c
+.RI "DateTime? \fBupdatedAt\fP ()"
+.br
+.RI "The timestamp of the latest page update\&. "
+.ti -1c
+.RI "string \fBurl\fP ()"
+.br
+.RI "The url pointing to the page accessible from the web\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBShopify\fP merchants can create pages to hold static HTML content\&. Each Page object represents a custom page on the online store\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Page\&.Page (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Page
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "string Shopify\&.Unity\&.Page\&.id ()"
+
+.PP
+Globally unique identifier\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Node\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

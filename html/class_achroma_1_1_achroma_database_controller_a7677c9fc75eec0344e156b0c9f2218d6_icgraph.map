@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaDatabaseController.GetMatchData" name="Achroma.AchromaDatabaseController.GetMatchData">
+<area shape="rect" id="Node000001" title="Based on a session id, it gives back the MatchData object." alt="" coords="255,5,499,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_match.html#a281f8f20e1cbc35ea293ac76ef9713b4" title="Based on a session id, it gives back the MatchData object." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,28,207,28,207,23,240,23"/>
+</map>

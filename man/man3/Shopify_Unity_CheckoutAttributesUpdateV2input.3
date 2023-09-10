@@ -1,0 +1,105 @@
+.TH "Shopify.Unity.CheckoutAttributesUpdateV2input" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.CheckoutAttributesUpdateV2input \- Specifies the fields required to update a checkout's attributes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.InputBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCheckoutAttributesUpdateV2input\fP (string \fBnote\fP=null, List< \fBAttributeInput\fP > \fBcustomAttributes\fP=null, bool? \fBallowPartialAddresses\fP=null)"
+.br
+.ti -1c
+.RI "\fBCheckoutAttributesUpdateV2input\fP (Dictionary< string, object > dataJSON)"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.InputBase\fP
+.in +1c
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Returns a string representing a GraphQL input object\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "const string \fBnoteFieldKey\fP = 'note'"
+.br
+.ti -1c
+.RI "const string \fBcustomAttributesFieldKey\fP = 'customAttributes'"
+.br
+.ti -1c
+.RI "const string \fBallowPartialAddressesFieldKey\fP = 'allowPartialAddresses'"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBnote\fP\fC [get, set]\fP"
+.br
+.RI "The text of an optional note that a shop owner can attach to the checkout\&. "
+.ti -1c
+.RI "List< \fBAttributeInput\fP > \fBcustomAttributes\fP\fC [get, set]\fP"
+.br
+.RI "A list of extra information that is added to the checkout\&. "
+.ti -1c
+.RI "bool? \fBallowPartialAddresses\fP\fC [get, set]\fP"
+.br
+.RI "Allows setting partial addresses on a Checkout, skipping the full validation of attributes\&. The required attributes are city, province, and country\&. Full validation of the addresses is still done at complete time\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.InputBase\fP
+.in +1c
+.ti -1c
+.RI "void \fBSet\fP (string key, object value)"
+.br
+.ti -1c
+.RI "object \fBGet\fP (string key)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Specifies the fields required to update a checkout's attributes\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.CheckoutAttributesUpdateV2input\&.CheckoutAttributesUpdateV2input (string note = \fCnull\fP, List< \fBAttributeInput\fP > customAttributes = \fCnull\fP, bool? allowPartialAddresses = \fCnull\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fInote\fP The text of an optional note that a shop owner can attach to the checkout\&. 
+.br
+\fIcustomAttributes\fP A list of extra information that is added to the checkout\&. 
+.br
+\fIallowPartialAddresses\fP Allows setting partial addresses on a Checkout, skipping the full validation of attributes\&. The required attributes are city, province, and country\&. Full validation of the addresses is still done at complete time\&. 
+.RE
+.PP
+
+.SS "Shopify\&.Unity\&.CheckoutAttributesUpdateV2input\&.CheckoutAttributesUpdateV2input (Dictionary< string, object > dataJSON)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fInote\fP The text of an optional note that a shop owner can attach to the checkout\&. 
+.br
+\fIcustomAttributes\fP A list of extra information that is added to the checkout\&. 
+.br
+\fIallowPartialAddresses\fP Allows setting partial addresses on a Checkout, skipping the full validation of attributes\&. The required attributes are city, province, and country\&. Full validation of the addresses is still done at complete time\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

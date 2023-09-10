@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaItem.GetItemByName" name="Achroma.AchromaItem.GetItemByName">
+<area shape="rect" id="Node000001" title="Returns the Item based on its name." alt="" coords="5,5,212,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_control_file.html#a5f930199282c58987d0d921aba4e190a" title="Returns the item from the Control File with all its data." alt="" coords="260,5,456,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,23,245,23,245,28,212,28"/>
+</map>

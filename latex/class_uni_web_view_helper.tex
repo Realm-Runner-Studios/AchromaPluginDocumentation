@@ -1,0 +1,70 @@
+\doxysection{Uni\+Web\+View\+Helper Class Reference}
+\hypertarget{class_uni_web_view_helper}{}\label{class_uni_web_view_helper}\index{UniWebViewHelper@{UniWebViewHelper}}
+
+
+Provides some helper utility methods for \doxylink{class_uni_web_view}{Uni\+Web\+View}.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_uni_web_view_helper_ad13d0c0e23a296986a57c188b5578255}{Streaming\+Asset\+URLFor\+Path}} (string path)
+\begin{DoxyCompactList}\small\item\em Get the local streaming asset path for a given file path related to the Streaming\+Assets folder. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_uni_web_view_helper_aebeb03e38c2ddd986e6c5a4c2688ff50}{Persistent\+Data\+URLFor\+Path}} (string path)
+\begin{DoxyCompactList}\small\item\em Get the local persistent data path for a given file path related to the data folder of your host app. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides some helper utility methods for \doxylink{class_uni_web_view}{Uni\+Web\+View}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_uni_web_view_helper_aebeb03e38c2ddd986e6c5a4c2688ff50}\label{class_uni_web_view_helper_aebeb03e38c2ddd986e6c5a4c2688ff50} 
+\index{UniWebViewHelper@{UniWebViewHelper}!PersistentDataURLForPath@{PersistentDataURLForPath}}
+\index{PersistentDataURLForPath@{PersistentDataURLForPath}!UniWebViewHelper@{UniWebViewHelper}}
+\doxysubsubsection{\texorpdfstring{PersistentDataURLForPath()}{PersistentDataURLForPath()}}
+{\footnotesize\ttfamily static string Uni\+Web\+View\+Helper.\+Persistent\+Data\+URLFor\+Path (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the local persistent data path for a given file path related to the data folder of your host app. 
+
+This method will help you to create a URL string for a file under you stored in the {\ttfamily persistent\+Data\+Path}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The relative path to the persistent data path of your file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The path you could use as the url for the web view.
+\end{DoxyReturn}
+\Hypertarget{class_uni_web_view_helper_ad13d0c0e23a296986a57c188b5578255}\label{class_uni_web_view_helper_ad13d0c0e23a296986a57c188b5578255} 
+\index{UniWebViewHelper@{UniWebViewHelper}!StreamingAssetURLForPath@{StreamingAssetURLForPath}}
+\index{StreamingAssetURLForPath@{StreamingAssetURLForPath}!UniWebViewHelper@{UniWebViewHelper}}
+\doxysubsubsection{\texorpdfstring{StreamingAssetURLForPath()}{StreamingAssetURLForPath()}}
+{\footnotesize\ttfamily static string Uni\+Web\+View\+Helper.\+Streaming\+Asset\+URLFor\+Path (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the local streaming asset path for a given file path related to the Streaming\+Assets folder. 
+
+This method will help you to create a URL string for a file under your Streaming\+Assets folder for different platforms. 
+\begin{DoxyParams}{Parameters}
+{\em path} & The relative path to the Assets/\+Streaming\+Assets of your file. For example, if you placed a html file under Assets/\+Streaming\+Assets/www/index.\+html, you should pass {\ttfamily www/index.\+html} as parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The path you could use as the url for the web view.
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_uni_web_view_helper_ad13d0c0e23a296986a57c188b5578255_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Uni\+Web\+View/\+Script/Uni\+Web\+View\+Helper.\+cs\end{DoxyCompactItemize}

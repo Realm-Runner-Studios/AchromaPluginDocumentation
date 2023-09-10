@@ -1,0 +1,208 @@
+.TH "Shopify.Unity.Cart" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Cart \- Manages line items for an order\&. Can also be used to generate a web checkout link to check out in browser\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCart\fP (\fBShopifyClient\fP client)"
+.br
+.RI "Constructs a new cart using a ShopifyClient 
+.PP
+\&. Typically, carts won't be instantiated directly, but will rather be instatiated using ShopifyBuy\&.Client()\&.Cart() 
+.PP
+\&. "
+.ti -1c
+.RI "void \fBReset\fP ()"
+.br
+.RI "Resets the cart by removing all line items and resets all internal state\&. "
+.ti -1c
+.RI "decimal \fBSubtotal\fP ()"
+.br
+.RI "Returns the current sub total for the cart\&. "
+.ti -1c
+.RI "void \fBGetWebCheckoutLink\fP (GetWebCheckoutLinkSuccessCallback success, GetWebCheckoutLinkFailureCallback failure)"
+.br
+.RI "Returns the web URL for checking out the contents of this Cart\&. For presenting the user with a web view that loads this URL see \fBCheckoutWithWebView\fP\&. "
+.ti -1c
+.RI "void \fBCheckoutWithWebView\fP (CheckoutSuccessCallback success, CheckoutCancelCallback cancelled, CheckoutFailureCallback failure)"
+.br
+.RI "Launches a platform-specific web view screen with the Cart's web checkout link loaded\&. This can be used to perform a cart checkout from within your application instead of being directed to an external web application\&. Typically this can be used as a fallback measure in cases where the user's device doesn't support native pay methods\&. "
+.ti -1c
+.RI "void \fBCheckoutWithNativePay\fP (string key, CheckoutSuccessCallback success, CheckoutCancelCallback cancelled, CheckoutFailureCallback failure)"
+.br
+.RI "Launches a platform-specific native pay UI for checking out the Cart's contents\&. Currently supported native pay options include: "
+.ti -1c
+.RI "void \fBCanShowNativePaySetup\fP (CanShowNativePaySetupCallback callback)"
+.br
+.RI "Determine whether the user can be shown to setup their native payment solution\&. "
+.ti -1c
+.RI "void \fBShowNativePaySetup\fP ()"
+.br
+.RI "Launch a native payment app to prompt the user to setup their payment card\&. "
+.ti -1c
+.RI "void \fBCanCheckoutWithNativePay\fP (CanCheckoutWithNativePayCallback callback)"
+.br
+.RI "Determine whether the user can checkout by paying with their native payment solution\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBCartLineItems\fP \fBLineItems\fP\fC [get]\fP"
+.br
+.RI "Current line items 
+.PP
+for this Cart 
+.PP
+\&. "
+.ti -1c
+.RI "List< \fBCheckoutUserError\fP > \fBUserErrors\fP\fC [get]\fP"
+.br
+.RI "A list of all the user errors with the current checkout\&. For example, when a user enters invalid information in a field during checkout, the API will return a list of user errors which gets stored here\&. In general, a failure callback is invoked and the developer can reference this field to handle these issues\&. "
+.ti -1c
+.RI "\fBCheckout\fP \fBCurrentCheckout\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Manages line items for an order\&. Can also be used to generate a web checkout link to check out in browser\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Cart\&.Cart (\fBShopifyClient\fP client)"
+
+.PP
+Constructs a new cart using a ShopifyClient 
+.PP
+\&. Typically, carts won't be instantiated directly, but will rather be instatiated using ShopifyBuy\&.Client()\&.Cart() 
+.PP
+\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIclient\fP client associated with this cart
+.RE
+.PP
+.PP
+.nf
+// Example that creates a cart using a ShopifyClient and checks how many line items it has
+// (spoiler: it has 0 line items since the cart was just created)\&.
+ShopifyClient client = new ShopifyClient(accessToken, shopDomain);
+
+Cart cart = new Cart(client);
+
+Debug\&.Log(cart\&.LineItems\&.All()\&.Count);
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Shopify\&.Unity\&.Cart\&.CanCheckoutWithNativePay (CanCheckoutWithNativePayCallback callback)"
+
+.PP
+Determine whether the user can checkout by paying with their native payment solution\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP Closure that is invoked with the result\&. True is returned if the user is able to pay with their native payment solution 
+.RE
+.PP
+
+.SS "void Shopify\&.Unity\&.Cart\&.CanShowNativePaySetup (CanShowNativePaySetupCallback callback)"
+
+.PP
+Determine whether the user can be shown to setup their native payment solution\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP Closure that is invoked with the result\&. True is returned if the user can be shown a native payment app to setup their payment card 
+.RE
+.PP
+
+.SS "void Shopify\&.Unity\&.Cart\&.CheckoutWithNativePay (string key, CheckoutSuccessCallback success, CheckoutCancelCallback cancelled, CheckoutFailureCallback failure)"
+
+.PP
+Launches a platform-specific native pay UI for checking out the Cart's contents\&. Currently supported native pay options include: 
+.IP "\(bu" 2
+iOS: Launches Apple Pay\&.
+.PP
+.PP
+\fBExceptions\fP
+.RS 4
+\fISystem\&.PlatformNotSupportedException\fP Thrown when invoking this method on an unsupported platform\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP Vendor-specific key for identifying the merchant\&. For iOS devices this is the merchant ID\&.
+.br
+\fIsuccess\fP called whenever the checkout process has completed successfully\&.
+.br
+\fIcancelled\fP called whenever the user cancels out of the native pay flow\&.
+.br
+\fIfailure\fP called whenever an error or failure is encountered during native pay\&.
+.RE
+.PP
+
+.SS "void Shopify\&.Unity\&.Cart\&.CheckoutWithWebView (CheckoutSuccessCallback success, CheckoutCancelCallback cancelled, CheckoutFailureCallback failure)"
+
+.PP
+Launches a platform-specific web view screen with the Cart's web checkout link loaded\&. This can be used to perform a cart checkout from within your application instead of being directed to an external web application\&. Typically this can be used as a fallback measure in cases where the user's device doesn't support native pay methods\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsuccess\fP called when the web checkout screen has been dismissed and the checkout was successful\&.
+.br
+\fIcancelled\fP called when the web checkout screen was dismissed before completing a checkout\&.
+.br
+\fIfailure\fP called when an error was encountered after the web checkout screen has been dismissed\&.
+.RE
+.PP
+
+.SS "void Shopify\&.Unity\&.Cart\&.GetWebCheckoutLink (GetWebCheckoutLinkSuccessCallback success, GetWebCheckoutLinkFailureCallback failure)"
+
+.PP
+Returns the web URL for checking out the contents of this Cart\&. For presenting the user with a web view that loads this URL see \fBCheckoutWithWebView\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsuccess\fP called when the checkout url was successfully generated\&.
+.br
+\fIfailure\fP called when generating the checkout url failed\&.
+.RE
+.PP
+
+.SS "void Shopify\&.Unity\&.Cart\&.ShowNativePaySetup ()"
+
+.PP
+Launch a native payment app to prompt the user to setup their payment card\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIPlatformNotSupportedException\fP Thrown when the device does not support this feature
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "List<\fBCheckoutUserError\fP> Shopify\&.Unity\&.Cart\&.UserErrors\fC [get]\fP"
+
+.PP
+A list of all the user errors with the current checkout\&. For example, when a user enters invalid information in a field during checkout, the API will return a list of user errors which gets stored here\&. In general, a failure callback is invoked and the developer can reference this field to handle these issues\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A list of user errors
+.RE
+.PP
+for this Cart 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

@@ -1,0 +1,99 @@
+\doxysection{Unity\+Engine.\+Sign\+In\+With\+Apple.\+Sign\+In\+With\+Apple Class Reference}
+\hypertarget{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple}{}\label{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple}\index{UnityEngine.SignInWithApple.SignInWithApple@{UnityEngine.SignInWithApple.SignInWithApple}}
+
+
+Inheritance diagram for Unity\+Engine.\+Sign\+In\+With\+Apple.\+Sign\+In\+With\+Apple\+:
+% FIG 0
+
+
+Collaboration diagram for Unity\+Engine.\+Sign\+In\+With\+Apple.\+Sign\+In\+With\+Apple\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_a882b03a580b6855f96c0ada6db0a3763}\label{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_a882b03a580b6855f96c0ada6db0a3763} 
+delegate void {\bfseries Callback} (\mbox{\hyperlink{struct_unity_engine_1_1_sign_in_with_apple_1_1_callback_args}{Callback\+Args}} args)
+\item 
+void \mbox{\hyperlink{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_a036f561dd076204449ae54ea79b4f7ee}{Get\+Credential\+State}} (string user\+ID)
+\begin{DoxyCompactList}\small\item\em Get credential state and trigger on\+Credential\+State or on\+Error event when action is completed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_ac85347d9cb919a5c68c2f438c26bf150}{Get\+Credential\+State}} (string user\+ID, Callback callback)
+\begin{DoxyCompactList}\small\item\em Invoke login and provide a custom callback when action is completed. When a custom trigger is used, the on\+Credential\+State or on\+Error unity event won\textquotesingle{}t trigger. \end{DoxyCompactList}\item 
+\Hypertarget{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_ad553062323098c7bf4f000c9ea7c2650}\label{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_ad553062323098c7bf4f000c9ea7c2650} 
+void {\bfseries Login} ()
+\begin{DoxyCompactList}\small\item\em Invoke login and trigger on\+Login or on\+Error event when login is completed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_a2e538f472acd454c21a09309225f5d37}{Login}} (Callback callback)
+\begin{DoxyCompactList}\small\item\em Invoke login and provide a custom callback when login is completed. When a custom trigger is used, the on\+Login or on\+Error unity event won\textquotesingle{}t trigger. \end{DoxyCompactList}\item 
+\Hypertarget{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_aec73647640160ab4ab56bfec977cf8df}\label{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_aec73647640160ab4ab56bfec977cf8df} 
+void {\bfseries Update} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_ae77d8052a59cac8c8bdcfa4df22241fd}\label{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_ae77d8052a59cac8c8bdcfa4df22241fd} 
+Unity\+Action$<$ \mbox{\hyperlink{struct_unity_engine_1_1_sign_in_with_apple_1_1_callback_args}{Callback\+Args}} $>$ {\bfseries on\+Login}
+\item 
+\Hypertarget{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_af56ba976f7b80f716166d54c170762e9}\label{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_af56ba976f7b80f716166d54c170762e9} 
+Unity\+Action$<$ \mbox{\hyperlink{struct_unity_engine_1_1_sign_in_with_apple_1_1_callback_args}{Callback\+Args}} $>$ {\bfseries on\+Credential\+State}
+\item 
+\Hypertarget{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_a3b8f929fe40ddc19bb8f061a17db92c0}\label{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_a3b8f929fe40ddc19bb8f061a17db92c0} 
+Unity\+Action$<$ \mbox{\hyperlink{struct_unity_engine_1_1_sign_in_with_apple_1_1_callback_args}{Callback\+Args}} $>$ {\bfseries on\+Error}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_a036f561dd076204449ae54ea79b4f7ee}\label{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_a036f561dd076204449ae54ea79b4f7ee} 
+\index{UnityEngine.SignInWithApple.SignInWithApple@{UnityEngine.SignInWithApple.SignInWithApple}!GetCredentialState@{GetCredentialState}}
+\index{GetCredentialState@{GetCredentialState}!UnityEngine.SignInWithApple.SignInWithApple@{UnityEngine.SignInWithApple.SignInWithApple}}
+\doxysubsubsection{\texorpdfstring{GetCredentialState()}{GetCredentialState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Unity\+Engine.\+Sign\+In\+With\+Apple.\+Sign\+In\+With\+Apple.\+Get\+Credential\+State (\begin{DoxyParamCaption}\item[{string}]{user\+ID }\end{DoxyParamCaption})}
+
+
+
+Get credential state and trigger on\+Credential\+State or on\+Error event when action is completed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & The user id to query the credential state on.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_ac85347d9cb919a5c68c2f438c26bf150}\label{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_ac85347d9cb919a5c68c2f438c26bf150} 
+\index{UnityEngine.SignInWithApple.SignInWithApple@{UnityEngine.SignInWithApple.SignInWithApple}!GetCredentialState@{GetCredentialState}}
+\index{GetCredentialState@{GetCredentialState}!UnityEngine.SignInWithApple.SignInWithApple@{UnityEngine.SignInWithApple.SignInWithApple}}
+\doxysubsubsection{\texorpdfstring{GetCredentialState()}{GetCredentialState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Unity\+Engine.\+Sign\+In\+With\+Apple.\+Sign\+In\+With\+Apple.\+Get\+Credential\+State (\begin{DoxyParamCaption}\item[{string}]{user\+ID,  }\item[{Callback}]{callback }\end{DoxyParamCaption})}
+
+
+
+Invoke login and provide a custom callback when action is completed. When a custom trigger is used, the on\+Credential\+State or on\+Error unity event won\textquotesingle{}t trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & The user id to query the credential state on.\\
+\hline
+{\em callback} & The custom callback to trigger when action is completed.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_a2e538f472acd454c21a09309225f5d37}\label{class_unity_engine_1_1_sign_in_with_apple_1_1_sign_in_with_apple_a2e538f472acd454c21a09309225f5d37} 
+\index{UnityEngine.SignInWithApple.SignInWithApple@{UnityEngine.SignInWithApple.SignInWithApple}!Login@{Login}}
+\index{Login@{Login}!UnityEngine.SignInWithApple.SignInWithApple@{UnityEngine.SignInWithApple.SignInWithApple}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily void Unity\+Engine.\+Sign\+In\+With\+Apple.\+Sign\+In\+With\+Apple.\+Login (\begin{DoxyParamCaption}\item[{Callback}]{callback }\end{DoxyParamCaption})}
+
+
+
+Invoke login and provide a custom callback when login is completed. When a custom trigger is used, the on\+Login or on\+Error unity event won\textquotesingle{}t trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & The custom callback to trigger when login is completed.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Sign\+In\+With\+Apple/\+API/Sign\+In\+With\+Apple.\+cs\end{DoxyCompactItemize}

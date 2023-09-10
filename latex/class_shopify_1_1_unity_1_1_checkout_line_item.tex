@@ -1,0 +1,99 @@
+\doxysection{Shopify.\+Unity.\+Checkout\+Line\+Item Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item}{}\label{class_shopify_1_1_unity_1_1_checkout_line_item}\index{Shopify.Unity.CheckoutLineItem@{Shopify.Unity.CheckoutLineItem}}
+
+
+A single line item in the checkout, grouped by variant and attributes.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Checkout\+Line\+Item\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Checkout\+Line\+Item\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_a6c8814a0c9afe00bd7aedf167f7bb078}{Checkout\+Line\+Item}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_ada3c161b76b066bb976d0a4e9fbdb370}\label{class_shopify_1_1_unity_1_1_checkout_line_item_ada3c161b76b066bb976d0a4e9fbdb370} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_attribute}{Attribute}} $>$ {\bfseries custom\+Attributes} ()
+\begin{DoxyCompactList}\small\item\em Extra information in the form of an array of Key-\/\+Value pairs about the line item. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_aab102a2474c174b58405cc7c0567b5de}\label{class_shopify_1_1_unity_1_1_checkout_line_item_aab102a2474c174b58405cc7c0567b5de} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_discount_allocation}{Discount\+Allocation}} $>$ {\bfseries discount\+Allocations} ()
+\begin{DoxyCompactList}\small\item\em The discounts that have been allocated onto the checkout line item by discount applications. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_acc2e6f7ea5ee47c1b038b0f82c14babd}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_a503282f52d340c4bbbae91b5da4922c1}\label{class_shopify_1_1_unity_1_1_checkout_line_item_a503282f52d340c4bbbae91b5da4922c1} 
+long {\bfseries quantity} ()
+\begin{DoxyCompactList}\small\item\em The quantity of the line item. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_a45da3a3480e41b90627e523f18b45f9f}\label{class_shopify_1_1_unity_1_1_checkout_line_item_a45da3a3480e41b90627e523f18b45f9f} 
+string {\bfseries title} ()
+\begin{DoxyCompactList}\small\item\em Title of the line item. Defaults to the product\textquotesingle{}s title. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_a8ee21515786f3a0ad29cd6342d4ac950}\label{class_shopify_1_1_unity_1_1_checkout_line_item_a8ee21515786f3a0ad29cd6342d4ac950} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant}{Product\+Variant}} {\bfseries variant} ()
+\begin{DoxyCompactList}\small\item\em Product variant of the line item. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_a805ea868b9e43096df24e37efb56d894}\label{class_shopify_1_1_unity_1_1_checkout_line_item_a805ea868b9e43096df24e37efb56d894} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A single line item in the checkout, grouped by variant and attributes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_a6c8814a0c9afe00bd7aedf167f7bb078}\label{class_shopify_1_1_unity_1_1_checkout_line_item_a6c8814a0c9afe00bd7aedf167f7bb078} 
+\index{Shopify.Unity.CheckoutLineItem@{Shopify.Unity.CheckoutLineItem}!CheckoutLineItem@{CheckoutLineItem}}
+\index{CheckoutLineItem@{CheckoutLineItem}!Shopify.Unity.CheckoutLineItem@{Shopify.Unity.CheckoutLineItem}}
+\doxysubsubsection{\texorpdfstring{CheckoutLineItem()}{CheckoutLineItem()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Checkout\+Line\+Item.\+Checkout\+Line\+Item (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Checkout\+Line\+Item\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_line_item_acc2e6f7ea5ee47c1b038b0f82c14babd}\label{class_shopify_1_1_unity_1_1_checkout_line_item_acc2e6f7ea5ee47c1b038b0f82c14babd} 
+\index{Shopify.Unity.CheckoutLineItem@{Shopify.Unity.CheckoutLineItem}!id@{id}}
+\index{id@{id}!Shopify.Unity.CheckoutLineItem@{Shopify.Unity.CheckoutLineItem}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Checkout\+Line\+Item.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Checkout\+Line\+Item.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\doxysection{Shopify.\+Unity.\+User\+Error Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_user_error}{}\label{class_shopify_1_1_unity_1_1_user_error}\index{Shopify.Unity.UserError@{Shopify.Unity.UserError}}
+
+
+Represents an error in the input of a mutation.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+User\+Error\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+User\+Error\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_user_error_a7430a72f0a454614ed205b3ec054e4e8}{User\+Error}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_user_error_a9b096c013e18ecb350680c2ac2ba8ec3}{field}} ()
+\begin{DoxyCompactList}\small\item\em Path to the input field which caused the error. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_user_error_a89672573bce60f1902bc44f8fe2a1068}{message}} ()
+\begin{DoxyCompactList}\small\item\em The error message. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_user_error_acab63e7544afb328cd17857551c5c607}\label{class_shopify_1_1_unity_1_1_user_error_acab63e7544afb328cd17857551c5c607} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an error in the input of a mutation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_user_error_a7430a72f0a454614ed205b3ec054e4e8}\label{class_shopify_1_1_unity_1_1_user_error_a7430a72f0a454614ed205b3ec054e4e8} 
+\index{Shopify.Unity.UserError@{Shopify.Unity.UserError}!UserError@{UserError}}
+\index{UserError@{UserError}!Shopify.Unity.UserError@{Shopify.Unity.UserError}}
+\doxysubsubsection{\texorpdfstring{UserError()}{UserError()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+User\+Error.\+User\+Error (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for User\+Error\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_user_error_a9b096c013e18ecb350680c2ac2ba8ec3}\label{class_shopify_1_1_unity_1_1_user_error_a9b096c013e18ecb350680c2ac2ba8ec3} 
+\index{Shopify.Unity.UserError@{Shopify.Unity.UserError}!field@{field}}
+\index{field@{field}!Shopify.Unity.UserError@{Shopify.Unity.UserError}}
+\doxysubsubsection{\texorpdfstring{field()}{field()}}
+{\footnotesize\ttfamily List$<$ string $>$ Shopify.\+Unity.\+User\+Error.\+field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Path to the input field which caused the error. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_displayable_error_adae397a8181180b82e98793e21bee3a9}{Shopify.\+Unity.\+Displayable\+Error}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_user_error_a89672573bce60f1902bc44f8fe2a1068}\label{class_shopify_1_1_unity_1_1_user_error_a89672573bce60f1902bc44f8fe2a1068} 
+\index{Shopify.Unity.UserError@{Shopify.Unity.UserError}!message@{message}}
+\index{message@{message}!Shopify.Unity.UserError@{Shopify.Unity.UserError}}
+\doxysubsubsection{\texorpdfstring{message()}{message()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+User\+Error.\+message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The error message. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_displayable_error_a12e4d43556e97aacfcc821cbfcaa4c08}{Shopify.\+Unity.\+Displayable\+Error}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/User\+Error.\+cs\end{DoxyCompactItemize}

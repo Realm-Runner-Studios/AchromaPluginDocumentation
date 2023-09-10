@@ -1,0 +1,314 @@
+\doxysection{Achroma.\+Achroma\+Control\+File Class Reference}
+\hypertarget{class_achroma_1_1_achroma_control_file}{}\label{class_achroma_1_1_achroma_control_file}\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+
+
+Collaboration diagram for Achroma.\+Achroma\+Control\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_control_file__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_control_file_ab4dad9b120800c4e549a8799a8494746}\label{class_achroma_1_1_achroma_control_file_ab4dad9b120800c4e549a8799a8494746} 
+static void {\bfseries Load\+From\+JSON} (string json, Unity\+Action$<$ bool, string $>$ callback)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_control_file_ada4eb060981e586ee7a720a7897fbdba}\label{class_achroma_1_1_achroma_control_file_ada4eb060981e586ee7a720a7897fbdba} 
+static int {\bfseries Get\+File\+Version} (string file\+Name)
+\item 
+static int \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_a85f6e5f660792e82224da0ed1f739191}{Get\+Character\+Id\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the character id based on a name. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_achroma_1_1_character_avatar}{Character\+Avatar}} \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_a1ea313946783cbc2c9125d755c56957c}{Get\+Character\+Avatar\+By\+Id}} (int avatar)
+\begin{DoxyCompactList}\small\item\em Returns the character from the Control File with all its data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_achroma_1_1_character_avatar}{Character\+Avatar}} \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_a9ee41dd96fbfb875ffd3914275f16897}{Get\+Character\+Avatar\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the character from the Control File with all its data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_achroma_1_1_achroma_item_type}{Achroma\+Item\+Type}} \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_a870660b99635c1a94f04679ddaec7ec1}{Get\+Item\+By\+Id}} (int item)
+\begin{DoxyCompactList}\small\item\em Returns the item from the Control File with all its data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_achroma_1_1_achroma_item_type}{Achroma\+Item\+Type}} \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_a5f930199282c58987d0d921aba4e190a}{Get\+Item\+By\+Name}} (string item)
+\begin{DoxyCompactList}\small\item\em Returns the item from the Control File with all its data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_achroma_1_1_achroma_action_type}{Achroma\+Action\+Type}} \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_a8bfb151099ec647db73187db81f22987}{Get\+Action\+By\+Id}} (int Action)
+\begin{DoxyCompactList}\small\item\em Returns the Action from the Control File with all its data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_achroma_1_1_achroma_action_type}{Achroma\+Action\+Type}} \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_a3243e2dc8c5b34c2c482fe608b16c455}{Get\+Action\+By\+Name}} (string Action)
+\begin{DoxyCompactList}\small\item\em Returns the Action from the Control File with all its data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_achroma_1_1_location}{Location}} \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_a85f83e5119719e8c5a98d443275849fe}{Get\+Location\+By\+Id}} (int location)
+\begin{DoxyCompactList}\small\item\em Returns the character from the Control File with all its data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_achroma_1_1_location}{Location}} \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_a0069242c5acc2e083dbf822e6b51f4f2}{Get\+Location\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the character from the Control File with all its data. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{struct_achroma_1_1_achroma_file_story}{Achroma\+File\+Story}} $>$ \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_adc0f76ef40eb8f326e907b8e863516cf}{Get\+List\+Of\+Chapters}} ()
+\begin{DoxyCompactList}\small\item\em Returns a distinct descendant list of chapters. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{struct_achroma_1_1_achroma_file_story}{Achroma\+File\+Story}} $>$ \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_ab550fbce17df1ebe8c103aa0adad8180}{Get\+List\+Of\+Stories}} ()
+\begin{DoxyCompactList}\small\item\em Returns a distinct descendant list of stories. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_control_file_af7b2a97c0770afd702760c7c5016714a}\label{class_achroma_1_1_achroma_control_file_af7b2a97c0770afd702760c7c5016714a} 
+static \mbox{\hyperlink{struct_achroma_1_1_achroma_control_file_type}{Achroma\+Control\+File\+Type}} {\bfseries control\+File}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_1_1_achroma_control_file_a8bfb151099ec647db73187db81f22987}\label{class_achroma_1_1_achroma_control_file_a8bfb151099ec647db73187db81f22987} 
+\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}!GetActionById@{GetActionById}}
+\index{GetActionById@{GetActionById}!Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+\doxysubsubsection{\texorpdfstring{GetActionById()}{GetActionById()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_achroma_1_1_achroma_action_type}{Achroma\+Action\+Type}} Achroma.\+Achroma\+Control\+File.\+Get\+Action\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{Action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the Action from the Control File with all its data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Action} & The id reference of the character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the \doxylink{namespace_achroma}{Achroma} Action type with all the related data to the \doxylink{namespace_achroma}{Achroma} Action
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_control_file_a8bfb151099ec647db73187db81f22987_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_control_file_a3243e2dc8c5b34c2c482fe608b16c455}\label{class_achroma_1_1_achroma_control_file_a3243e2dc8c5b34c2c482fe608b16c455} 
+\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}!GetActionByName@{GetActionByName}}
+\index{GetActionByName@{GetActionByName}!Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+\doxysubsubsection{\texorpdfstring{GetActionByName()}{GetActionByName()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_achroma_1_1_achroma_action_type}{Achroma\+Action\+Type}} Achroma.\+Achroma\+Control\+File.\+Get\+Action\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{Action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the Action from the Control File with all its data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Action} & The id reference of the character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the \doxylink{namespace_achroma}{Achroma} Action type with all the related data to the \doxylink{namespace_achroma}{Achroma} Action
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_control_file_a3243e2dc8c5b34c2c482fe608b16c455_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_control_file_a1ea313946783cbc2c9125d755c56957c}\label{class_achroma_1_1_achroma_control_file_a1ea313946783cbc2c9125d755c56957c} 
+\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}!GetCharacterAvatarById@{GetCharacterAvatarById}}
+\index{GetCharacterAvatarById@{GetCharacterAvatarById}!Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+\doxysubsubsection{\texorpdfstring{GetCharacterAvatarById()}{GetCharacterAvatarById()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_achroma_1_1_character_avatar}{Character\+Avatar}} Achroma.\+Achroma\+Control\+File.\+Get\+Character\+Avatar\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{avatar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the character from the Control File with all its data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar} & The id reference of the character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the Characater\+Avatar type with all the related data to the Character
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_control_file_a1ea313946783cbc2c9125d755c56957c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_control_file_a9ee41dd96fbfb875ffd3914275f16897}\label{class_achroma_1_1_achroma_control_file_a9ee41dd96fbfb875ffd3914275f16897} 
+\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}!GetCharacterAvatarByName@{GetCharacterAvatarByName}}
+\index{GetCharacterAvatarByName@{GetCharacterAvatarByName}!Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+\doxysubsubsection{\texorpdfstring{GetCharacterAvatarByName()}{GetCharacterAvatarByName()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_achroma_1_1_character_avatar}{Character\+Avatar}} Achroma.\+Achroma\+Control\+File.\+Get\+Character\+Avatar\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the character from the Control File with all its data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the Characater\+Avatar type with all the related data to the Character
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_control_file_a9ee41dd96fbfb875ffd3914275f16897_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_control_file_a85f6e5f660792e82224da0ed1f739191}\label{class_achroma_1_1_achroma_control_file_a85f6e5f660792e82224da0ed1f739191} 
+\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}!GetCharacterIdByName@{GetCharacterIdByName}}
+\index{GetCharacterIdByName@{GetCharacterIdByName}!Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+\doxysubsubsection{\texorpdfstring{GetCharacterIdByName()}{GetCharacterIdByName()}}
+{\footnotesize\ttfamily static int Achroma.\+Achroma\+Control\+File.\+Get\+Character\+Id\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the character id based on a name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The chacater name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the character id 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_control_file_a85f6e5f660792e82224da0ed1f739191_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_control_file_a870660b99635c1a94f04679ddaec7ec1}\label{class_achroma_1_1_achroma_control_file_a870660b99635c1a94f04679ddaec7ec1} 
+\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}!GetItemById@{GetItemById}}
+\index{GetItemById@{GetItemById}!Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+\doxysubsubsection{\texorpdfstring{GetItemById()}{GetItemById()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_achroma_1_1_achroma_item_type}{Achroma\+Item\+Type}} Achroma.\+Achroma\+Control\+File.\+Get\+Item\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the item from the Control File with all its data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The id reference of the character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the \doxylink{namespace_achroma}{Achroma} Item type with all the related data to the \doxylink{namespace_achroma}{Achroma} Item
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_control_file_a870660b99635c1a94f04679ddaec7ec1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_control_file_a5f930199282c58987d0d921aba4e190a}\label{class_achroma_1_1_achroma_control_file_a5f930199282c58987d0d921aba4e190a} 
+\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}!GetItemByName@{GetItemByName}}
+\index{GetItemByName@{GetItemByName}!Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+\doxysubsubsection{\texorpdfstring{GetItemByName()}{GetItemByName()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_achroma_1_1_achroma_item_type}{Achroma\+Item\+Type}} Achroma.\+Achroma\+Control\+File.\+Get\+Item\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the item from the Control File with all its data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The id reference of the character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the \doxylink{namespace_achroma}{Achroma} Item type with all the related data to the \doxylink{namespace_achroma}{Achroma} Item
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_control_file_a5f930199282c58987d0d921aba4e190a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_control_file_adc0f76ef40eb8f326e907b8e863516cf}\label{class_achroma_1_1_achroma_control_file_adc0f76ef40eb8f326e907b8e863516cf} 
+\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}!GetListOfChapters@{GetListOfChapters}}
+\index{GetListOfChapters@{GetListOfChapters}!Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+\doxysubsubsection{\texorpdfstring{GetListOfChapters()}{GetListOfChapters()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{struct_achroma_1_1_achroma_file_story}{Achroma\+File\+Story}} $>$ Achroma.\+Achroma\+Control\+File.\+Get\+List\+Of\+Chapters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a distinct descendant list of chapters. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_control_file_adc0f76ef40eb8f326e907b8e863516cf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_control_file_ab550fbce17df1ebe8c103aa0adad8180}\label{class_achroma_1_1_achroma_control_file_ab550fbce17df1ebe8c103aa0adad8180} 
+\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}!GetListOfStories@{GetListOfStories}}
+\index{GetListOfStories@{GetListOfStories}!Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+\doxysubsubsection{\texorpdfstring{GetListOfStories()}{GetListOfStories()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{struct_achroma_1_1_achroma_file_story}{Achroma\+File\+Story}} $>$ Achroma.\+Achroma\+Control\+File.\+Get\+List\+Of\+Stories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a distinct descendant list of stories. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_achroma_1_1_achroma_control_file_a85f83e5119719e8c5a98d443275849fe}\label{class_achroma_1_1_achroma_control_file_a85f83e5119719e8c5a98d443275849fe} 
+\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}!GetLocationById@{GetLocationById}}
+\index{GetLocationById@{GetLocationById}!Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+\doxysubsubsection{\texorpdfstring{GetLocationById()}{GetLocationById()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_achroma_1_1_location}{Location}} Achroma.\+Achroma\+Control\+File.\+Get\+Location\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the character from the Control File with all its data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar} & The id reference of the character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the Characater\+Avatar type with all the related data to the Character
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_control_file_a85f83e5119719e8c5a98d443275849fe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_control_file_a0069242c5acc2e083dbf822e6b51f4f2}\label{class_achroma_1_1_achroma_control_file_a0069242c5acc2e083dbf822e6b51f4f2} 
+\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}!GetLocationByName@{GetLocationByName}}
+\index{GetLocationByName@{GetLocationByName}!Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+\doxysubsubsection{\texorpdfstring{GetLocationByName()}{GetLocationByName()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_achroma_1_1_location}{Location}} Achroma.\+Achroma\+Control\+File.\+Get\+Location\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the character from the Control File with all its data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the location\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the Location type with all the related data to the Location
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_control_file_a0069242c5acc2e083dbf822e6b51f4f2_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Data Schemes/Achroma\+Control\+File\+Data\+Model.\+cs\end{DoxyCompactItemize}

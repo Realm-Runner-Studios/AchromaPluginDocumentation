@@ -1,0 +1,5 @@
+<map id="UniWebView.SetHeaderField" name="UniWebView.SetHeaderField">
+<area shape="rect" id="Node000001" title="Sets a customized header field for web view requests." alt="" coords="5,5,194,31"/>
+<area shape="rect" id="Node000002" href="$class_uni_web_view_logger.html#abb0d3b3f645b881edb7147760211f31e" title="Log a critical message." alt="" coords="242,5,421,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,16,227,16,227,21,194,21"/>
+</map>

@@ -1,0 +1,184 @@
+.TH "Shopify.Unity.MailingAddress" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.MailingAddress \- Represents a mailing address for customers and shipping\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.Node\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMailingAddress\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "string \fBaddress1\fP ()"
+.br
+.RI "The first line of the address\&. Typically the street address or PO Box number\&. "
+.ti -1c
+.RI "string \fBaddress2\fP ()"
+.br
+.RI "The second line of the address\&. Typically the number of the apartment, suite, or unit\&. "
+.ti -1c
+.RI "string \fBcity\fP ()"
+.br
+.RI "The name of the city, district, village, or town\&. "
+.ti -1c
+.RI "string \fBcompany\fP ()"
+.br
+.RI "The name of the customer's company or organization\&. "
+.ti -1c
+.RI "string \fBcountry\fP ()"
+.br
+.RI "The name of the country\&. "
+.ti -1c
+.RI "string \fBcountryCode\fP ()"
+.br
+.RI "The two-letter code for the country of the address\&. "
+.ti -1c
+.RI "\fBCountryCode\fP? \fBcountryCodeV2\fP ()"
+.br
+.RI "The two-letter code for the country of the address\&. "
+.ti -1c
+.RI "string \fBfirstName\fP ()"
+.br
+.RI "The first name of the customer\&. "
+.ti -1c
+.RI "List< string > \fBformatted\fP (string alias=null)"
+.br
+.RI "A formatted version of the address, customized by the provided arguments\&. "
+.ti -1c
+.RI "string \fBformattedArea\fP ()"
+.br
+.RI "A comma-separated list of the values for city, province, and country\&. "
+.ti -1c
+.RI "string \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "string \fBlastName\fP ()"
+.br
+.RI "The last name of the customer\&. "
+.ti -1c
+.RI "double? \fBlatitude\fP ()"
+.br
+.RI "The latitude coordinate of the customer address\&. "
+.ti -1c
+.RI "double? \fBlongitude\fP ()"
+.br
+.RI "The longitude coordinate of the customer address\&. "
+.ti -1c
+.RI "string \fBname\fP ()"
+.br
+.RI "The full name of the customer, based on firstName and lastName\&. "
+.ti -1c
+.RI "string \fBphone\fP ()"
+.br
+.RI "A unique phone number for the customer\&. "
+.ti -1c
+.RI "string \fBprovince\fP ()"
+.br
+.RI "The region of the address, such as the province, state, or district\&. "
+.ti -1c
+.RI "string \fBprovinceCode\fP ()"
+.br
+.RI "The two-letter code for the region\&. "
+.ti -1c
+.RI "string \fBzip\fP ()"
+.br
+.RI "The zip or postal code of the address\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents a mailing address for customers and shipping\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.MailingAddress\&.MailingAddress (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for MailingAddress
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "string Shopify\&.Unity\&.MailingAddress\&.countryCode ()"
+
+.PP
+The two-letter code for the country of the address\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcountryCodeV2\fP instead 
+.RE
+.PP
+.PP
+For example, US\&. 
+.SS "\fBCountryCode\fP? Shopify\&.Unity\&.MailingAddress\&.countryCodeV2 ()"
+
+.PP
+The two-letter code for the country of the address\&. For example, US\&. 
+.SS "List< string > Shopify\&.Unity\&.MailingAddress\&.formatted (string alias = \fCnull\fP)"
+
+.PP
+A formatted version of the address, customized by the provided arguments\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.MailingAddress\&.id ()"
+
+.PP
+Globally unique identifier\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Node\fP\&.
+.SS "string Shopify\&.Unity\&.MailingAddress\&.phone ()"
+
+.PP
+A unique phone number for the customer\&. Formatted using E\&.164 standard\&. For example, \fI+16135551111\fP\&. 
+.SS "string Shopify\&.Unity\&.MailingAddress\&.provinceCode ()"
+
+.PP
+The two-letter code for the region\&. For example, ON\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

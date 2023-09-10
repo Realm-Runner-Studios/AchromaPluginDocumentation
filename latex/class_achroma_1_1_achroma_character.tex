@@ -1,0 +1,359 @@
+\doxysection{Achroma.\+Achroma\+Character Class Reference}
+\hypertarget{class_achroma_1_1_achroma_character}{}\label{class_achroma_1_1_achroma_character}\index{Achroma.AchromaCharacter@{Achroma.AchromaCharacter}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_achroma_1_1_achroma_character_a110f23f5cb117b579984558ba507eb6e}{Get\+Character\+Sprite\+Name}} (int avatar)
+\begin{DoxyCompactList}\small\item\em Returns character sprite name to be found in the asset bundle. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_1_1_achroma_character_acb0c81122ed86c0e758c6f329ecff0ac}{Get\+Character\+Story}} (int avatar)
+\begin{DoxyCompactList}\small\item\em Returns the story linked to the character. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_1_1_achroma_character_ae0bb3153584b5096635a78883a46ba25}{Get\+Character\+Name}} (int avatar)
+\begin{DoxyCompactList}\small\item\em Returns the name of the character. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_1_1_achroma_character_aa811a79deb32f0dac28ca4721ba86ac3}{Get\+Character\+Card}} (int avatar)
+\begin{DoxyCompactList}\small\item\em Returns the character\textquotesingle{}s card id. \end{DoxyCompactList}\item 
+static Vector2 \mbox{\hyperlink{class_achroma_1_1_achroma_character_a680e1266ff321b7886b91604a5be11a8}{Get\+Avatar\+Position}} (int avatar)
+\begin{DoxyCompactList}\small\item\em Returns the avatar position for the home button. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_1_1_achroma_character_a7ef8b65d41f7bcb62dcbd31a498dbee7}{Get\+Character\+Sprite}} (int avatar, bool transparent, Unity\+Action$<$ bool, string, Sprite $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the sprite for a given avatar id in the array. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_achroma_1_1_character_avatar}{Character\+Avatar}} \mbox{\hyperlink{class_achroma_1_1_achroma_character_a7394bc6b45ebbde332aa066e219761f9}{Get\+Character\+Avatar\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the character from the Control File with all its data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_achroma_1_1_character_avatar}{Character\+Avatar}} \mbox{\hyperlink{class_achroma_1_1_achroma_character_a3941566719d44de2f5cfddeecb6cdf3a}{Get\+Character\+Avatar\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Returns the character from the Control File with all its data. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_1_1_achroma_character_a732c4e1ee57babf1f51bf17810bbfb4b}{Get\+Character\+Sprite\+Animation}} (int avatar, Unity\+Action$<$ bool, string, Game\+Object $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the sprite animation for a given avatar id in the array. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_achroma_1_1_achroma_character_a204f20c52067c86fe7b359f109ff7cb4}{Get\+Character\+Id\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns character id based on the name. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_1_1_achroma_character_aec019c0edecc9e79f745a5cf7c6cf725}{Get\+Character\+Background\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Returns background based on character id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_1_1_achroma_character_a680e1266ff321b7886b91604a5be11a8}\label{class_achroma_1_1_achroma_character_a680e1266ff321b7886b91604a5be11a8} 
+\index{Achroma.AchromaCharacter@{Achroma.AchromaCharacter}!GetAvatarPosition@{GetAvatarPosition}}
+\index{GetAvatarPosition@{GetAvatarPosition}!Achroma.AchromaCharacter@{Achroma.AchromaCharacter}}
+\doxysubsubsection{\texorpdfstring{GetAvatarPosition()}{GetAvatarPosition()}}
+{\footnotesize\ttfamily static Vector2 Achroma.\+Achroma\+Character.\+Get\+Avatar\+Position (\begin{DoxyParamCaption}\item[{int}]{avatar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the avatar position for the home button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar} & Id in the character array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the Vector2 position for the avatar in the home button
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_a680e1266ff321b7886b91604a5be11a8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_a680e1266ff321b7886b91604a5be11a8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_character_a3941566719d44de2f5cfddeecb6cdf3a}\label{class_achroma_1_1_achroma_character_a3941566719d44de2f5cfddeecb6cdf3a} 
+\index{Achroma.AchromaCharacter@{Achroma.AchromaCharacter}!GetCharacterAvatarById@{GetCharacterAvatarById}}
+\index{GetCharacterAvatarById@{GetCharacterAvatarById}!Achroma.AchromaCharacter@{Achroma.AchromaCharacter}}
+\doxysubsubsection{\texorpdfstring{GetCharacterAvatarById()}{GetCharacterAvatarById()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_achroma_1_1_character_avatar}{Character\+Avatar}} Achroma.\+Achroma\+Character.\+Get\+Character\+Avatar\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the character from the Control File with all its data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the Characater\+Avatar type with all the related data to the Character
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_a3941566719d44de2f5cfddeecb6cdf3a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_character_a7394bc6b45ebbde332aa066e219761f9}\label{class_achroma_1_1_achroma_character_a7394bc6b45ebbde332aa066e219761f9} 
+\index{Achroma.AchromaCharacter@{Achroma.AchromaCharacter}!GetCharacterAvatarByName@{GetCharacterAvatarByName}}
+\index{GetCharacterAvatarByName@{GetCharacterAvatarByName}!Achroma.AchromaCharacter@{Achroma.AchromaCharacter}}
+\doxysubsubsection{\texorpdfstring{GetCharacterAvatarByName()}{GetCharacterAvatarByName()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_achroma_1_1_character_avatar}{Character\+Avatar}} Achroma.\+Achroma\+Character.\+Get\+Character\+Avatar\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the character from the Control File with all its data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the Characater\+Avatar type with all the related data to the Character
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_a7394bc6b45ebbde332aa066e219761f9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_a7394bc6b45ebbde332aa066e219761f9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_character_aec019c0edecc9e79f745a5cf7c6cf725}\label{class_achroma_1_1_achroma_character_aec019c0edecc9e79f745a5cf7c6cf725} 
+\index{Achroma.AchromaCharacter@{Achroma.AchromaCharacter}!GetCharacterBackgroundById@{GetCharacterBackgroundById}}
+\index{GetCharacterBackgroundById@{GetCharacterBackgroundById}!Achroma.AchromaCharacter@{Achroma.AchromaCharacter}}
+\doxysubsubsection{\texorpdfstring{GetCharacterBackgroundById()}{GetCharacterBackgroundById()}}
+{\footnotesize\ttfamily static string Achroma.\+Achroma\+Character.\+Get\+Character\+Background\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns background based on character id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar} & Id in the character array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the character id
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_aec019c0edecc9e79f745a5cf7c6cf725_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_character_aa811a79deb32f0dac28ca4721ba86ac3}\label{class_achroma_1_1_achroma_character_aa811a79deb32f0dac28ca4721ba86ac3} 
+\index{Achroma.AchromaCharacter@{Achroma.AchromaCharacter}!GetCharacterCard@{GetCharacterCard}}
+\index{GetCharacterCard@{GetCharacterCard}!Achroma.AchromaCharacter@{Achroma.AchromaCharacter}}
+\doxysubsubsection{\texorpdfstring{GetCharacterCard()}{GetCharacterCard()}}
+{\footnotesize\ttfamily static string Achroma.\+Achroma\+Character.\+Get\+Character\+Card (\begin{DoxyParamCaption}\item[{int}]{avatar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the character\textquotesingle{}s card id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar} & Id in the character array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the character\textquotesingle{}s card id
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_aa811a79deb32f0dac28ca4721ba86ac3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_aa811a79deb32f0dac28ca4721ba86ac3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_character_a204f20c52067c86fe7b359f109ff7cb4}\label{class_achroma_1_1_achroma_character_a204f20c52067c86fe7b359f109ff7cb4} 
+\index{Achroma.AchromaCharacter@{Achroma.AchromaCharacter}!GetCharacterIdByName@{GetCharacterIdByName}}
+\index{GetCharacterIdByName@{GetCharacterIdByName}!Achroma.AchromaCharacter@{Achroma.AchromaCharacter}}
+\doxysubsubsection{\texorpdfstring{GetCharacterIdByName()}{GetCharacterIdByName()}}
+{\footnotesize\ttfamily static int Achroma.\+Achroma\+Character.\+Get\+Character\+Id\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns character id based on the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name in the character array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the character id
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_a204f20c52067c86fe7b359f109ff7cb4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_character_ae0bb3153584b5096635a78883a46ba25}\label{class_achroma_1_1_achroma_character_ae0bb3153584b5096635a78883a46ba25} 
+\index{Achroma.AchromaCharacter@{Achroma.AchromaCharacter}!GetCharacterName@{GetCharacterName}}
+\index{GetCharacterName@{GetCharacterName}!Achroma.AchromaCharacter@{Achroma.AchromaCharacter}}
+\doxysubsubsection{\texorpdfstring{GetCharacterName()}{GetCharacterName()}}
+{\footnotesize\ttfamily static string Achroma.\+Achroma\+Character.\+Get\+Character\+Name (\begin{DoxyParamCaption}\item[{int}]{avatar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the name of the character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar} & Id in the character array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the character\textquotesingle{}s name
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_ae0bb3153584b5096635a78883a46ba25_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_ae0bb3153584b5096635a78883a46ba25_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_character_a7ef8b65d41f7bcb62dcbd31a498dbee7}\label{class_achroma_1_1_achroma_character_a7ef8b65d41f7bcb62dcbd31a498dbee7} 
+\index{Achroma.AchromaCharacter@{Achroma.AchromaCharacter}!GetCharacterSprite@{GetCharacterSprite}}
+\index{GetCharacterSprite@{GetCharacterSprite}!Achroma.AchromaCharacter@{Achroma.AchromaCharacter}}
+\doxysubsubsection{\texorpdfstring{GetCharacterSprite()}{GetCharacterSprite()}}
+{\footnotesize\ttfamily static void Achroma.\+Achroma\+Character.\+Get\+Character\+Sprite (\begin{DoxyParamCaption}\item[{int}]{avatar,  }\item[{bool}]{transparent,  }\item[{Unity\+Action$<$ bool, string, Sprite $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the sprite for a given avatar id in the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar} & avatar id in the array\\
+\hline
+{\em transparent} & if transparent is true, it will look for PNG versions of the character\\
+\hline
+{\em callback} & result callback with a success flat, an error message and the instance of the instantiated sprite\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_a7ef8b65d41f7bcb62dcbd31a498dbee7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_a7ef8b65d41f7bcb62dcbd31a498dbee7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_character_a732c4e1ee57babf1f51bf17810bbfb4b}\label{class_achroma_1_1_achroma_character_a732c4e1ee57babf1f51bf17810bbfb4b} 
+\index{Achroma.AchromaCharacter@{Achroma.AchromaCharacter}!GetCharacterSpriteAnimation@{GetCharacterSpriteAnimation}}
+\index{GetCharacterSpriteAnimation@{GetCharacterSpriteAnimation}!Achroma.AchromaCharacter@{Achroma.AchromaCharacter}}
+\doxysubsubsection{\texorpdfstring{GetCharacterSpriteAnimation()}{GetCharacterSpriteAnimation()}}
+{\footnotesize\ttfamily static void Achroma.\+Achroma\+Character.\+Get\+Character\+Sprite\+Animation (\begin{DoxyParamCaption}\item[{int}]{avatar,  }\item[{Unity\+Action$<$ bool, string, Game\+Object $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the sprite animation for a given avatar id in the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar} & avatar id in the array\\
+\hline
+{\em callback} & result callback with a success flat, an error message and the instance of the instantiated sprite animation\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_a732c4e1ee57babf1f51bf17810bbfb4b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_a732c4e1ee57babf1f51bf17810bbfb4b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_character_a110f23f5cb117b579984558ba507eb6e}\label{class_achroma_1_1_achroma_character_a110f23f5cb117b579984558ba507eb6e} 
+\index{Achroma.AchromaCharacter@{Achroma.AchromaCharacter}!GetCharacterSpriteName@{GetCharacterSpriteName}}
+\index{GetCharacterSpriteName@{GetCharacterSpriteName}!Achroma.AchromaCharacter@{Achroma.AchromaCharacter}}
+\doxysubsubsection{\texorpdfstring{GetCharacterSpriteName()}{GetCharacterSpriteName()}}
+{\footnotesize\ttfamily static string Achroma.\+Achroma\+Character.\+Get\+Character\+Sprite\+Name (\begin{DoxyParamCaption}\item[{int}]{avatar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns character sprite name to be found in the asset bundle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar} & Id in the character array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns name of the sprite in the asset bundle file
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_a110f23f5cb117b579984558ba507eb6e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_a110f23f5cb117b579984558ba507eb6e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_character_acb0c81122ed86c0e758c6f329ecff0ac}\label{class_achroma_1_1_achroma_character_acb0c81122ed86c0e758c6f329ecff0ac} 
+\index{Achroma.AchromaCharacter@{Achroma.AchromaCharacter}!GetCharacterStory@{GetCharacterStory}}
+\index{GetCharacterStory@{GetCharacterStory}!Achroma.AchromaCharacter@{Achroma.AchromaCharacter}}
+\doxysubsubsection{\texorpdfstring{GetCharacterStory()}{GetCharacterStory()}}
+{\footnotesize\ttfamily static string Achroma.\+Achroma\+Character.\+Get\+Character\+Story (\begin{DoxyParamCaption}\item[{int}]{avatar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the story linked to the character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar} & Id in the character array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the story id
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_character_acb0c81122ed86c0e758c6f329ecff0ac_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Data Schemes/Achroma\+Character\+Data\+Model.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,145 @@
+.TH "Shopify.Unity.Customer" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Customer \- A customer represents a customer account with the shop\&. Customer accounts store contact information for the customer, saving logged-in customers the trouble of having to provide it at every checkout\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, and ICloneable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCustomer\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "bool \fBacceptsMarketing\fP ()"
+.br
+.RI "Indicates whether the customer has consented to be sent marketing material via email\&. "
+.ti -1c
+.RI "\fBMailingAddressConnection\fP \fBaddresses\fP (string alias=null)"
+.br
+.RI "A list of addresses for the customer\&. "
+.ti -1c
+.RI "DateTime? \fBcreatedAt\fP ()"
+.br
+.RI "The date and time when the customer was created\&. "
+.ti -1c
+.RI "\fBMailingAddress\fP \fBdefaultAddress\fP ()"
+.br
+.RI "The customer’s default address\&. "
+.ti -1c
+.RI "string \fBdisplayName\fP ()"
+.br
+.RI "The customer’s name, email or phone number\&. "
+.ti -1c
+.RI "string \fBemail\fP ()"
+.br
+.RI "The customer’s email address\&. "
+.ti -1c
+.RI "string \fBfirstName\fP ()"
+.br
+.RI "The customer’s first name\&. "
+.ti -1c
+.RI "string \fBid\fP ()"
+.br
+.RI "A unique identifier for the customer\&. "
+.ti -1c
+.RI "\fBCheckout\fP \fBlastIncompleteCheckout\fP ()"
+.br
+.RI "The customer's most recently updated, incomplete checkout\&. "
+.ti -1c
+.RI "string \fBlastName\fP ()"
+.br
+.RI "The customer’s last name\&. "
+.ti -1c
+.RI "\fBOrderConnection\fP \fBorders\fP (string alias=null)"
+.br
+.RI "The orders associated with the customer\&. "
+.ti -1c
+.RI "string \fBphone\fP ()"
+.br
+.RI "The customer’s phone number\&. "
+.ti -1c
+.RI "List< string > \fBtags\fP ()"
+.br
+.RI "A comma separated list of tags that have been added to the customer\&. Additional access scope required: unauthenticated_read_customer_tags\&. "
+.ti -1c
+.RI "DateTime? \fBupdatedAt\fP ()"
+.br
+.RI "The date and time when the customer information was updated\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A customer represents a customer account with the shop\&. Customer accounts store contact information for the customer, saving logged-in customers the trouble of having to provide it at every checkout\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Customer\&.Customer (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Customer
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBMailingAddressConnection\fP Shopify\&.Unity\&.Customer\&.addresses (string alias = \fCnull\fP)"
+
+.PP
+A list of addresses for the customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBOrderConnection\fP Shopify\&.Unity\&.Customer\&.orders (string alias = \fCnull\fP)"
+
+.PP
+The orders associated with the customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

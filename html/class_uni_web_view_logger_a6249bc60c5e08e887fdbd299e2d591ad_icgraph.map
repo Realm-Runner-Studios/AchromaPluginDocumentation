@@ -1,0 +1,5 @@
+<map id="UniWebViewLogger.Debug" name="UniWebViewLogger.Debug">
+<area shape="rect" id="Node000001" title="Log a debug message." alt="" coords="253,13,429,39"/>
+<area shape="rect" id="Node000002" href="$struct_uni_web_view_message.html#ad91720c2afab4ab395cfe7ad15f4edd1" title="Initializes a new instance of the UniWebViewMessage struct." alt="" coords="5,5,205,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,28,205,28,205,23,238,23"/>
+</map>

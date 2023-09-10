@@ -1,0 +1,10 @@
+<map id="Achroma.AchromaDatabaseController.CheckForUpdates" name="Achroma.AchromaDatabaseController.CheckForUpdates">
+<area shape="rect" id="Node000001" title="Checks if the user has the latest version installed. If the user has an outdated version,..." alt="" coords="5,71,250,111"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="73,71,70,61,79,51,98,46,128,44,160,47,179,53,177,58,159,52,127,49,99,51,82,56,76,62,78,69"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_remote_config_manager.html#a8871381f26adaaea9baff1c8df1f46c7" title="Returns the string name of a Remote Config. The name may vary according to the platfrom." alt="" coords="313,5,527,46"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="221,67,311,47,312,52,222,73"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_database_controller.html#a80d74680852fff23abc3a4fb12a57e16" title="Opens the App store address to allow the user to update the app." alt="" coords="298,71,542,111"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="250,88,283,88,283,94,250,94"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_u_i_controller.html#a3c7be0cda2d569b14f41c8eb8fbc8206" title="This method shows the loading screen." alt="" coords="319,136,521,177"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="222,109,312,130,311,135,221,115"/>
+</map>

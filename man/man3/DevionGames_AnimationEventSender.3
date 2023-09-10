@@ -1,0 +1,40 @@
+.TH "DevionGames.AnimationEventSender" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DevionGames.AnimationEventSender
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits StateMachineBehaviour\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAnimationEventType\fP { \fBOnStateEnter\fP, \fBOnStateUpdate\fP, \fBOnStateExit\fP, \fBOnStateMachineEnter\fP, \fBOnStateMachineExit\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBOnStateMachineEnter\fP (Animator animator, int stateMachinePathHash)"
+.br
+.ti -1c
+.RI "override void \fBOnStateMachineExit\fP (Animator animator, int stateMachinePathHash)"
+.br
+.ti -1c
+.RI "override void \fBOnStateEnter\fP (Animator animator, AnimatorStateInfo stateInfo, int layerIndex)"
+.br
+.ti -1c
+.RI "override void \fBOnStateUpdate\fP (Animator animator, AnimatorStateInfo stateInfo, int layerIndex)"
+.br
+.ti -1c
+.RI "override void \fBOnStateExit\fP (Animator animator, AnimatorStateInfo stateInfo, int layerIndex)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

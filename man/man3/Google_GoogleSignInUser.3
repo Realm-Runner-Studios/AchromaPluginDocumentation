@@ -1,0 +1,70 @@
+.TH "Google.GoogleSignInUser" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Google.GoogleSignInUser \- Information for the authenticated user\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBAuthCode\fP\fC [get, set]\fP"
+.br
+.RI "Server AuthCode to be exchanged for an auth token\&. "
+.ti -1c
+.RI "string \fBEmail\fP\fC [get, set]\fP"
+.br
+.RI "Email address\&. "
+.ti -1c
+.RI "string \fBIdToken\fP\fC [get, set]\fP"
+.br
+.RI "Id token\&. "
+.ti -1c
+.RI "string \fBDisplayName\fP\fC [get, set]\fP"
+.br
+.RI "Display Name\&. "
+.ti -1c
+.RI "string \fBGivenName\fP\fC [get, set]\fP"
+.br
+.RI "Given Name\&. "
+.ti -1c
+.RI "string \fBFamilyName\fP\fC [get, set]\fP"
+.br
+.RI "Family Name\&. "
+.ti -1c
+.RI "Uri \fBImageUrl\fP\fC [get, set]\fP"
+.br
+.RI "Profile photo\&. "
+.ti -1c
+.RI "string \fBUserId\fP\fC [get, set]\fP"
+.br
+.RI "User ID\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Information for the authenticated user\&. 
+.SH "Property Documentation"
+.PP 
+.SS "string Google\&.GoogleSignInUser\&.AuthCode\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Server AuthCode to be exchanged for an auth token\&. remarks> null if not requested, or if there was an error\&.
+.SS "string Google\&.GoogleSignInUser\&.Email\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Email address\&. remarks> null if not requested, or if there was an error\&.
+.SS "string Google\&.GoogleSignInUser\&.IdToken\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Id token\&. remarks> null if not requested, or if there was an error\&.
+.SS "Uri Google\&.GoogleSignInUser\&.ImageUrl\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Profile photo\&. Can be null if the profile is not requested, or none set\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

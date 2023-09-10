@@ -1,0 +1,7 @@
+<map id="Achroma.AchromaDatabaseController.GetUserData" name="Achroma.AchromaDatabaseController.GetUserData">
+<area shape="rect" id="Node000001" title="Method to get current user data and store it to a UserData variable." alt="" coords="5,39,250,79"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_firebase_controller.html#aa082ff5778b71f9a5788ec3f7a7d7d1c" title="Method to get current user data and store it to a UserData variable." alt="" coords="298,5,536,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,42,282,38,283,44,250,48"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_u_i_controller.html#a3c7be0cda2d569b14f41c8eb8fbc8206" title="This method shows the loading screen." alt="" coords="316,71,518,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,70,301,76,300,81,250,75"/>
+</map>

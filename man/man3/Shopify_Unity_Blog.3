@@ -1,0 +1,123 @@
+.TH "Shopify.Unity.Blog" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Blog \- An online store blog\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.Node\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBlog\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "\fBArticle\fP \fBarticleByHandle\fP (string alias=null)"
+.br
+.RI "Find an article by its handle\&. "
+.ti -1c
+.RI "\fBArticleConnection\fP \fBarticles\fP (string alias=null)"
+.br
+.RI "List of the blog's articles\&. "
+.ti -1c
+.RI "List< \fBArticleAuthor\fP > \fBauthors\fP ()"
+.br
+.RI "The authors who have contributed to the blog\&. "
+.ti -1c
+.RI "string \fBhandle\fP ()"
+.br
+.RI "A human-friendly unique string for the Blog automatically generated from its title\&. "
+.ti -1c
+.RI "string \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "string \fBtitle\fP ()"
+.br
+.RI "The blogs’s title\&. "
+.ti -1c
+.RI "string \fBurl\fP ()"
+.br
+.RI "The url pointing to the blog accessible from the web\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+An online store blog\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Blog\&.Blog (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Blog
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBArticle\fP Shopify\&.Unity\&.Blog\&.articleByHandle (string alias = \fCnull\fP)"
+
+.PP
+Find an article by its handle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBArticleConnection\fP Shopify\&.Unity\&.Blog\&.articles (string alias = \fCnull\fP)"
+
+.PP
+List of the blog's articles\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.Blog\&.id ()"
+
+.PP
+Globally unique identifier\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Node\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

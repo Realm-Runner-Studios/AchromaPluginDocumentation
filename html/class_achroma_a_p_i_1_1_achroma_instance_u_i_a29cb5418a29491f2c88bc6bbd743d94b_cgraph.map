@@ -1,0 +1,11 @@
+<map id="AchromaAPI.AchromaInstanceUI.LoadBackground" name="AchromaAPI.AchromaInstanceUI.LoadBackground">
+<area shape="rect" id="Node000001" title="This will create a menu background." alt="" coords="5,39,207,79"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_manager.html#a9da982e1b6bb0676daa31316949e642a" title="Method to load everything that&#39;s needed to call Achroma plugin features." alt="" coords="255,5,465,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,43,240,39,240,44,208,48"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_u_i_controller.html#acf9d4186ff833707ce0a49c1ada21631" title="This will load the background from the asset bundle to avoid embedding the background images to the p..." alt="" coords="259,71,461,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="208,69,244,74,243,79,207,74"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_parent_controller.html#a9b7cd6b8a910602b1472e2d5be3b8bf8" title="This method loads a scene synchronously and returns a callback when the scene is ended loading." alt="" coords="513,5,739,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="465,23,498,23,498,28,465,28"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_asset_manager.html#a419fc2d427990cc742d38f80b677cb5c" title="Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the obj..." alt="" coords="518,71,734,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="462,88,503,88,503,94,462,94"/>
+</map>

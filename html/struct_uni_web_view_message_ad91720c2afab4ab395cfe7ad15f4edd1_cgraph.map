@@ -1,0 +1,9 @@
+<map id="UniWebViewMessage.UniWebViewMessage" name="UniWebViewMessage.UniWebViewMessage">
+<area shape="rect" id="Node000001" title="Initializes a new instance of the UniWebViewMessage struct." alt="" coords="5,47,205,88"/>
+<area shape="rect" id="Node000002" href="$class_uni_web_view_logger.html#abb0d3b3f645b881edb7147760211f31e" title="Log a critical message." alt="" coords="256,5,436,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,44,265,32,266,37,206,50"/>
+<area shape="rect" id="Node000003" href="$class_uni_web_view_logger.html#a6249bc60c5e08e887fdbd299e2d591ad" title="Log a debug message." alt="" coords="258,55,434,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,65,243,65,243,70,205,70"/>
+<area shape="rect" id="Node000004" href="$class_uni_web_view_logger.html#a63b885d50cf417c53a4327f715b5bfba" title="Log a verbose message." alt="" coords="253,104,439,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,85,266,98,265,103,205,91"/>
+</map>

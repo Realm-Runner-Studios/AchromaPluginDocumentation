@@ -1,0 +1,140 @@
+\doxysection{Shopify.\+Unity.\+Unknown\+Media Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_unknown_media}{}\label{class_shopify_1_1_unity_1_1_unknown_media}\index{Shopify.Unity.UnknownMedia@{Shopify.Unity.UnknownMedia}}
+
+
+Unknown\+Media is a response object. With Unknown\+Media.\+Create you\textquotesingle{}ll be able instantiate objects implementing Media. {\ttfamily Unknown\+Media.\+Create} will return one of the following types\+: 
+\begin{DoxyItemize}
+\item External\+Video 
+\item Media\+Image 
+\item Model3d 
+\item Video 
+\end{DoxyItemize} 
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Unknown\+Media\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Unknown\+Media\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_unknown_media_af6ad657f928d70ddd47ec378ba9ecb2f}{Unknown\+Media}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_unknown_media_aed0ff61323c3503b122a6a8ded252a40}{alt}} ()
+\begin{DoxyCompactList}\small\item\em A word or phrase to share the nature or contents of a media. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_a77748a51af71ba309012114131d72c42}{Media\+Content\+Type}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_unknown_media_aa155347145356ebe074e5aad458bad0b}{media\+Content\+Type}} ()
+\begin{DoxyCompactList}\small\item\em The media content type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_image}{Image}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_unknown_media_a3c825a5f0cfd33e95ae320e3e9433583}{preview\+Image}} ()
+\begin{DoxyCompactList}\small\item\em The preview image for the media. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_unknown_media_a6b51ed0b3f09c4a1e3aef756e21847cf}\label{class_shopify_1_1_unity_1_1_unknown_media_a6b51ed0b3f09c4a1e3aef756e21847cf} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_unknown_media_a8f25443eb11ef5f50007f89d8014ff9a}\label{class_shopify_1_1_unity_1_1_unknown_media_a8f25443eb11ef5f50007f89d8014ff9a} 
+static \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_media}{Media}} {\bfseries Create} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Instantiate objects implementing Media. Possible types are\+: 
+\begin{DoxyItemize}
+\item External\+Video 
+\item Media\+Image 
+\item Model3d 
+\item Video 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Unknown\+Media is a response object. With Unknown\+Media.\+Create you\textquotesingle{}ll be able instantiate objects implementing Media. {\ttfamily Unknown\+Media.\+Create} will return one of the following types\+: 
+\begin{DoxyItemize}
+\item External\+Video 
+\item Media\+Image 
+\item Model3d 
+\item Video 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_unknown_media_af6ad657f928d70ddd47ec378ba9ecb2f}\label{class_shopify_1_1_unity_1_1_unknown_media_af6ad657f928d70ddd47ec378ba9ecb2f} 
+\index{Shopify.Unity.UnknownMedia@{Shopify.Unity.UnknownMedia}!UnknownMedia@{UnknownMedia}}
+\index{UnknownMedia@{UnknownMedia}!Shopify.Unity.UnknownMedia@{Shopify.Unity.UnknownMedia}}
+\doxysubsubsection{\texorpdfstring{UnknownMedia()}{UnknownMedia()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Unknown\+Media.\+Unknown\+Media (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Media\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_unknown_media_aed0ff61323c3503b122a6a8ded252a40}\label{class_shopify_1_1_unity_1_1_unknown_media_aed0ff61323c3503b122a6a8ded252a40} 
+\index{Shopify.Unity.UnknownMedia@{Shopify.Unity.UnknownMedia}!alt@{alt}}
+\index{alt@{alt}!Shopify.Unity.UnknownMedia@{Shopify.Unity.UnknownMedia}}
+\doxysubsubsection{\texorpdfstring{alt()}{alt()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Unknown\+Media.\+alt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A word or phrase to share the nature or contents of a media. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_media_ab639fbe3f4567d6e070f62ca823a7aac}{Shopify.\+Unity.\+Media}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_unknown_media_aa155347145356ebe074e5aad458bad0b}\label{class_shopify_1_1_unity_1_1_unknown_media_aa155347145356ebe074e5aad458bad0b} 
+\index{Shopify.Unity.UnknownMedia@{Shopify.Unity.UnknownMedia}!mediaContentType@{mediaContentType}}
+\index{mediaContentType@{mediaContentType}!Shopify.Unity.UnknownMedia@{Shopify.Unity.UnknownMedia}}
+\doxysubsubsection{\texorpdfstring{mediaContentType()}{mediaContentType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_shopify_1_1_unity_a77748a51af71ba309012114131d72c42}{Media\+Content\+Type}} Shopify.\+Unity.\+Unknown\+Media.\+media\+Content\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The media content type. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_media_ad9401dc56ac3a1b8793c3f885f3d1371}{Shopify.\+Unity.\+Media}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_unknown_media_a3c825a5f0cfd33e95ae320e3e9433583}\label{class_shopify_1_1_unity_1_1_unknown_media_a3c825a5f0cfd33e95ae320e3e9433583} 
+\index{Shopify.Unity.UnknownMedia@{Shopify.Unity.UnknownMedia}!previewImage@{previewImage}}
+\index{previewImage@{previewImage}!Shopify.Unity.UnknownMedia@{Shopify.Unity.UnknownMedia}}
+\doxysubsubsection{\texorpdfstring{previewImage()}{previewImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_image}{Image}} Shopify.\+Unity.\+Unknown\+Media.\+preview\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The preview image for the media. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_media_a4a62934f762bacf045326d57a92969ee}{Shopify.\+Unity.\+Media}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Media.\+cs\end{DoxyCompactItemize}

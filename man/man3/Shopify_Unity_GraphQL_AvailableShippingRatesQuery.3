@@ -1,0 +1,32 @@
+.TH "Shopify.Unity.GraphQL.AvailableShippingRatesQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.AvailableShippingRatesQuery \- A collection of available shipping rates for a checkout\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAvailableShippingRatesQuery\fP (StringBuilder query)"
+.br
+.RI "AvailableShippingRatesQuery is used to build queries\&. Typically AvailableShippingRatesQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBAvailableShippingRatesQuery\fP \fBready\fP ()"
+.br
+.RI "Whether or not the shipping rates are ready\&. The \fCshippingRates\fP field is \fCnull\fP when this value is \fCfalse\fP\&. This field should be polled until its value becomes \fCtrue\fP\&. "
+.ti -1c
+.RI "\fBAvailableShippingRatesQuery\fP \fBshippingRates\fP (ShippingRateDelegate buildQuery)"
+.br
+.RI "The fetched shipping rates\&. \fCnull\fP until the \fCready\fP field is \fCtrue\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A collection of available shipping rates for a checkout\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

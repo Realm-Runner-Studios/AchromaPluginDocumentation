@@ -1,0 +1,737 @@
+.TH "Shopify.Unity.Mutation" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Mutation \- The schema’s entry-point for mutations\&. This acts as the public, top-level API from which all mutation queries must start\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, and ICloneable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMutation\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "\fBCheckoutAttributesUpdatePayload\fP \fBcheckoutAttributesUpdate\fP (string alias=null)"
+.br
+.RI "Updates the attributes of a checkout\&. "
+.ti -1c
+.RI "\fBCheckoutAttributesUpdateV2payload\fP \fBcheckoutAttributesUpdateV2\fP (string alias=null)"
+.br
+.RI "Updates the attributes of a checkout\&. "
+.ti -1c
+.RI "\fBCheckoutCompleteFreePayload\fP \fBcheckoutCompleteFree\fP (string alias=null)"
+.br
+.RI "Completes a checkout without providing payment information\&. You can use this mutation for free items or items whose purchase price is covered by a gift card\&. "
+.ti -1c
+.RI "\fBCheckoutCompleteWithCreditCardPayload\fP \fBcheckoutCompleteWithCreditCard\fP (string alias=null)"
+.br
+.RI "Completes a checkout using a credit card token from \fBShopify\fP's Vault\&. "
+.ti -1c
+.RI "\fBCheckoutCompleteWithCreditCardV2payload\fP \fBcheckoutCompleteWithCreditCardV2\fP (string alias=null)"
+.br
+.RI "Completes a checkout using a credit card token from \fBShopify\fP's card vault\&. Before you can complete checkouts using CheckoutCompleteWithCreditCardV2, you need to \fC\fIrequest payment processing\fP\fP\&. "
+.ti -1c
+.RI "\fBCheckoutCompleteWithTokenizedPaymentPayload\fP \fBcheckoutCompleteWithTokenizedPayment\fP (string alias=null)"
+.br
+.RI "Completes a checkout with a tokenized payment\&. "
+.ti -1c
+.RI "\fBCheckoutCompleteWithTokenizedPaymentV2payload\fP \fBcheckoutCompleteWithTokenizedPaymentV2\fP (string alias=null)"
+.br
+.RI "Completes a checkout with a tokenized payment\&. "
+.ti -1c
+.RI "\fBCheckoutCreatePayload\fP \fBcheckoutCreate\fP (string alias=null)"
+.br
+.RI "Creates a new checkout\&. "
+.ti -1c
+.RI "\fBCheckoutCustomerAssociatePayload\fP \fBcheckoutCustomerAssociate\fP (string alias=null)"
+.br
+.RI "Associates a customer to the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutCustomerAssociateV2payload\fP \fBcheckoutCustomerAssociateV2\fP (string alias=null)"
+.br
+.RI "Associates a customer to the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutCustomerDisassociatePayload\fP \fBcheckoutCustomerDisassociate\fP (string alias=null)"
+.br
+.RI "Disassociates the current checkout customer from the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutCustomerDisassociateV2payload\fP \fBcheckoutCustomerDisassociateV2\fP (string alias=null)"
+.br
+.RI "Disassociates the current checkout customer from the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutDiscountCodeApplyPayload\fP \fBcheckoutDiscountCodeApply\fP (string alias=null)"
+.br
+.RI "Applies a discount to an existing checkout using a discount code\&. "
+.ti -1c
+.RI "\fBCheckoutDiscountCodeApplyV2payload\fP \fBcheckoutDiscountCodeApplyV2\fP (string alias=null)"
+.br
+.RI "Applies a discount to an existing checkout using a discount code\&. "
+.ti -1c
+.RI "\fBCheckoutDiscountCodeRemovePayload\fP \fBcheckoutDiscountCodeRemove\fP (string alias=null)"
+.br
+.RI "Removes the applied discount from an existing checkout\&. "
+.ti -1c
+.RI "\fBCheckoutEmailUpdatePayload\fP \fBcheckoutEmailUpdate\fP (string alias=null)"
+.br
+.RI "Updates the email on an existing checkout\&. "
+.ti -1c
+.RI "\fBCheckoutEmailUpdateV2payload\fP \fBcheckoutEmailUpdateV2\fP (string alias=null)"
+.br
+.RI "Updates the email on an existing checkout\&. "
+.ti -1c
+.RI "\fBCheckoutGiftCardApplyPayload\fP \fBcheckoutGiftCardApply\fP (string alias=null)"
+.br
+.RI "Applies a gift card to an existing checkout using a gift card code\&. This will replace all currently applied gift cards\&. "
+.ti -1c
+.RI "\fBCheckoutGiftCardRemovePayload\fP \fBcheckoutGiftCardRemove\fP (string alias=null)"
+.br
+.RI "Removes an applied gift card from the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutGiftCardRemoveV2payload\fP \fBcheckoutGiftCardRemoveV2\fP (string alias=null)"
+.br
+.RI "Removes an applied gift card from the checkout\&. "
+.ti -1c
+.RI "\fBCheckoutGiftCardsAppendPayload\fP \fBcheckoutGiftCardsAppend\fP (string alias=null)"
+.br
+.RI "Appends gift cards to an existing checkout\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemsAddPayload\fP \fBcheckoutLineItemsAdd\fP (string alias=null)"
+.br
+.RI "Adds a list of line items to a checkout\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemsRemovePayload\fP \fBcheckoutLineItemsRemove\fP (string alias=null)"
+.br
+.RI "Removes line items from an existing checkout\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemsReplacePayload\fP \fBcheckoutLineItemsReplace\fP (string alias=null)"
+.br
+.RI "Sets a list of line items to a checkout\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemsUpdatePayload\fP \fBcheckoutLineItemsUpdate\fP (string alias=null)"
+.br
+.RI "Updates line items on a checkout\&. "
+.ti -1c
+.RI "\fBCheckoutShippingAddressUpdatePayload\fP \fBcheckoutShippingAddressUpdate\fP (string alias=null)"
+.br
+.RI "Updates the shipping address of an existing checkout\&. "
+.ti -1c
+.RI "\fBCheckoutShippingAddressUpdateV2payload\fP \fBcheckoutShippingAddressUpdateV2\fP (string alias=null)"
+.br
+.RI "Updates the shipping address of an existing checkout\&. "
+.ti -1c
+.RI "\fBCheckoutShippingLineUpdatePayload\fP \fBcheckoutShippingLineUpdate\fP (string alias=null)"
+.br
+.RI "Updates the shipping lines on an existing checkout\&. "
+.ti -1c
+.RI "\fBCustomerAccessTokenCreatePayload\fP \fBcustomerAccessTokenCreate\fP (string alias=null)"
+.br
+.RI "Creates a customer access token\&. The customer access token is required to modify the customer object in any way\&. "
+.ti -1c
+.RI "\fBCustomerAccessTokenDeletePayload\fP \fBcustomerAccessTokenDelete\fP (string alias=null)"
+.br
+.RI "Permanently destroys a customer access token\&. "
+.ti -1c
+.RI "\fBCustomerAccessTokenRenewPayload\fP \fBcustomerAccessTokenRenew\fP (string alias=null)"
+.br
+.RI "Renews a customer access token\&. "
+.ti -1c
+.RI "\fBCustomerActivatePayload\fP \fBcustomerActivate\fP (string alias=null)"
+.br
+.RI "Activates a customer\&. "
+.ti -1c
+.RI "\fBCustomerAddressCreatePayload\fP \fBcustomerAddressCreate\fP (string alias=null)"
+.br
+.RI "Creates a new address for a customer\&. "
+.ti -1c
+.RI "\fBCustomerAddressDeletePayload\fP \fBcustomerAddressDelete\fP (string alias=null)"
+.br
+.RI "Permanently deletes the address of an existing customer\&. "
+.ti -1c
+.RI "\fBCustomerAddressUpdatePayload\fP \fBcustomerAddressUpdate\fP (string alias=null)"
+.br
+.RI "Updates the address of an existing customer\&. "
+.ti -1c
+.RI "\fBCustomerCreatePayload\fP \fBcustomerCreate\fP (string alias=null)"
+.br
+.RI "Creates a new customer\&. "
+.ti -1c
+.RI "\fBCustomerDefaultAddressUpdatePayload\fP \fBcustomerDefaultAddressUpdate\fP (string alias=null)"
+.br
+.RI "Updates the default address of an existing customer\&. "
+.ti -1c
+.RI "\fBCustomerRecoverPayload\fP \fBcustomerRecover\fP (string alias=null)"
+.br
+.RI "Sends a reset password email to the customer, as the first step in the reset password process\&. "
+.ti -1c
+.RI "\fBCustomerResetPayload\fP \fBcustomerReset\fP (string alias=null)"
+.br
+.RI "Resets a customer’s password with a token received from \fCCustomerRecover\fP\&. "
+.ti -1c
+.RI "\fBCustomerResetByUrlPayload\fP \fBcustomerResetByUrl\fP (string alias=null)"
+.br
+.RI "Resets a customer’s password with the reset password url received from \fCCustomerRecover\fP\&. "
+.ti -1c
+.RI "\fBCustomerUpdatePayload\fP \fBcustomerUpdate\fP (string alias=null)"
+.br
+.RI "Updates an existing customer\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The schema’s entry-point for mutations\&. This acts as the public, top-level API from which all mutation queries must start\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Mutation\&.Mutation (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Mutation
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCheckoutAttributesUpdatePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutAttributesUpdate (string alias = \fCnull\fP)"
+
+.PP
+Updates the attributes of a checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutAttributesUpdateV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutAttributesUpdateV2payload\fP Shopify\&.Unity\&.Mutation\&.checkoutAttributesUpdateV2 (string alias = \fCnull\fP)"
+
+.PP
+Updates the attributes of a checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutCompleteFreePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutCompleteFree (string alias = \fCnull\fP)"
+
+.PP
+Completes a checkout without providing payment information\&. You can use this mutation for free items or items whose purchase price is covered by a gift card\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutCompleteWithCreditCardPayload\fP Shopify\&.Unity\&.Mutation\&.checkoutCompleteWithCreditCard (string alias = \fCnull\fP)"
+
+.PP
+Completes a checkout using a credit card token from \fBShopify\fP's Vault\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutCompleteWithCreditCardV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutCompleteWithCreditCardV2payload\fP Shopify\&.Unity\&.Mutation\&.checkoutCompleteWithCreditCardV2 (string alias = \fCnull\fP)"
+
+.PP
+Completes a checkout using a credit card token from \fBShopify\fP's card vault\&. Before you can complete checkouts using CheckoutCompleteWithCreditCardV2, you need to \fC\fIrequest payment processing\fP\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutCompleteWithTokenizedPaymentPayload\fP Shopify\&.Unity\&.Mutation\&.checkoutCompleteWithTokenizedPayment (string alias = \fCnull\fP)"
+
+.PP
+Completes a checkout with a tokenized payment\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutCompleteWithTokenizedPaymentV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutCompleteWithTokenizedPaymentV2payload\fP Shopify\&.Unity\&.Mutation\&.checkoutCompleteWithTokenizedPaymentV2 (string alias = \fCnull\fP)"
+
+.PP
+Completes a checkout with a tokenized payment\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutCompleteWithTokenizedPaymentV3\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutCreatePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutCreate (string alias = \fCnull\fP)"
+
+.PP
+Creates a new checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutCustomerAssociatePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutCustomerAssociate (string alias = \fCnull\fP)"
+
+.PP
+Associates a customer to the checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutCustomerAssociateV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutCustomerAssociateV2payload\fP Shopify\&.Unity\&.Mutation\&.checkoutCustomerAssociateV2 (string alias = \fCnull\fP)"
+
+.PP
+Associates a customer to the checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutCustomerDisassociatePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutCustomerDisassociate (string alias = \fCnull\fP)"
+
+.PP
+Disassociates the current checkout customer from the checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutCustomerDisassociateV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutCustomerDisassociateV2payload\fP Shopify\&.Unity\&.Mutation\&.checkoutCustomerDisassociateV2 (string alias = \fCnull\fP)"
+
+.PP
+Disassociates the current checkout customer from the checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutDiscountCodeApplyPayload\fP Shopify\&.Unity\&.Mutation\&.checkoutDiscountCodeApply (string alias = \fCnull\fP)"
+
+.PP
+Applies a discount to an existing checkout using a discount code\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutDiscountCodeApplyV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutDiscountCodeApplyV2payload\fP Shopify\&.Unity\&.Mutation\&.checkoutDiscountCodeApplyV2 (string alias = \fCnull\fP)"
+
+.PP
+Applies a discount to an existing checkout using a discount code\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutDiscountCodeRemovePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutDiscountCodeRemove (string alias = \fCnull\fP)"
+
+.PP
+Removes the applied discount from an existing checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutEmailUpdatePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutEmailUpdate (string alias = \fCnull\fP)"
+
+.PP
+Updates the email on an existing checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutEmailUpdateV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutEmailUpdateV2payload\fP Shopify\&.Unity\&.Mutation\&.checkoutEmailUpdateV2 (string alias = \fCnull\fP)"
+
+.PP
+Updates the email on an existing checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutGiftCardApplyPayload\fP Shopify\&.Unity\&.Mutation\&.checkoutGiftCardApply (string alias = \fCnull\fP)"
+
+.PP
+Applies a gift card to an existing checkout using a gift card code\&. This will replace all currently applied gift cards\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutGiftCardsAppend\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutGiftCardRemovePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutGiftCardRemove (string alias = \fCnull\fP)"
+
+.PP
+Removes an applied gift card from the checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutGiftCardRemoveV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutGiftCardRemoveV2payload\fP Shopify\&.Unity\&.Mutation\&.checkoutGiftCardRemoveV2 (string alias = \fCnull\fP)"
+
+.PP
+Removes an applied gift card from the checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutGiftCardsAppendPayload\fP Shopify\&.Unity\&.Mutation\&.checkoutGiftCardsAppend (string alias = \fCnull\fP)"
+
+.PP
+Appends gift cards to an existing checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutLineItemsAddPayload\fP Shopify\&.Unity\&.Mutation\&.checkoutLineItemsAdd (string alias = \fCnull\fP)"
+
+.PP
+Adds a list of line items to a checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutLineItemsRemovePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutLineItemsRemove (string alias = \fCnull\fP)"
+
+.PP
+Removes line items from an existing checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutLineItemsReplacePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutLineItemsReplace (string alias = \fCnull\fP)"
+
+.PP
+Sets a list of line items to a checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutLineItemsUpdatePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutLineItemsUpdate (string alias = \fCnull\fP)"
+
+.PP
+Updates line items on a checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutShippingAddressUpdatePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutShippingAddressUpdate (string alias = \fCnull\fP)"
+
+.PP
+Updates the shipping address of an existing checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutShippingAddressUpdateV2\fP instead 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutShippingAddressUpdateV2payload\fP Shopify\&.Unity\&.Mutation\&.checkoutShippingAddressUpdateV2 (string alias = \fCnull\fP)"
+
+.PP
+Updates the shipping address of an existing checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCheckoutShippingLineUpdatePayload\fP Shopify\&.Unity\&.Mutation\&.checkoutShippingLineUpdate (string alias = \fCnull\fP)"
+
+.PP
+Updates the shipping lines on an existing checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerAccessTokenCreatePayload\fP Shopify\&.Unity\&.Mutation\&.customerAccessTokenCreate (string alias = \fCnull\fP)"
+
+.PP
+Creates a customer access token\&. The customer access token is required to modify the customer object in any way\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerAccessTokenDeletePayload\fP Shopify\&.Unity\&.Mutation\&.customerAccessTokenDelete (string alias = \fCnull\fP)"
+
+.PP
+Permanently destroys a customer access token\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerAccessTokenRenewPayload\fP Shopify\&.Unity\&.Mutation\&.customerAccessTokenRenew (string alias = \fCnull\fP)"
+
+.PP
+Renews a customer access token\&. Access token renewal must happen \fIbefore\fP a token expires\&. If a token has already expired, a new one should be created instead via \fCcustomerAccessTokenCreate\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerActivatePayload\fP Shopify\&.Unity\&.Mutation\&.customerActivate (string alias = \fCnull\fP)"
+
+.PP
+Activates a customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerAddressCreatePayload\fP Shopify\&.Unity\&.Mutation\&.customerAddressCreate (string alias = \fCnull\fP)"
+
+.PP
+Creates a new address for a customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerAddressDeletePayload\fP Shopify\&.Unity\&.Mutation\&.customerAddressDelete (string alias = \fCnull\fP)"
+
+.PP
+Permanently deletes the address of an existing customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerAddressUpdatePayload\fP Shopify\&.Unity\&.Mutation\&.customerAddressUpdate (string alias = \fCnull\fP)"
+
+.PP
+Updates the address of an existing customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerCreatePayload\fP Shopify\&.Unity\&.Mutation\&.customerCreate (string alias = \fCnull\fP)"
+
+.PP
+Creates a new customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerDefaultAddressUpdatePayload\fP Shopify\&.Unity\&.Mutation\&.customerDefaultAddressUpdate (string alias = \fCnull\fP)"
+
+.PP
+Updates the default address of an existing customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerRecoverPayload\fP Shopify\&.Unity\&.Mutation\&.customerRecover (string alias = \fCnull\fP)"
+
+.PP
+Sends a reset password email to the customer, as the first step in the reset password process\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerResetPayload\fP Shopify\&.Unity\&.Mutation\&.customerReset (string alias = \fCnull\fP)"
+
+.PP
+Resets a customer’s password with a token received from \fCCustomerRecover\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerResetByUrlPayload\fP Shopify\&.Unity\&.Mutation\&.customerResetByUrl (string alias = \fCnull\fP)"
+
+.PP
+Resets a customer’s password with the reset password url received from \fCCustomerRecover\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCustomerUpdatePayload\fP Shopify\&.Unity\&.Mutation\&.customerUpdate (string alias = \fCnull\fP)"
+
+.PP
+Updates an existing customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

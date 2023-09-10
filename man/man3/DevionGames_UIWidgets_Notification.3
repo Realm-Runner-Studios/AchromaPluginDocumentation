@@ -1,0 +1,108 @@
+.TH "DevionGames.UIWidgets.Notification" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DevionGames.UIWidgets.Notification
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBDevionGames\&.UIWidgets\&.UIContainer< NotificationOptions >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual bool \fBAddItem\fP (\fBNotificationOptions\fP item, params string[] replacements)"
+.br
+.ti -1c
+.RI "virtual bool \fBAddItem\fP (string text, params string[] replacements)"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBDevionGames\&.UIWidgets\&.UIContainer< NotificationOptions >\fP
+.in +1c
+.ti -1c
+.RI "virtual bool \fBAddItem\fP (T item)"
+.br
+.RI "Adds a new item to a free or dynamicly created slot in this container\&. "
+.ti -1c
+.RI "virtual bool \fBRemoveItem\fP (int index)"
+.br
+.RI "Removes the item at index\&. Sometimes an item requires more then one slot(two-handed weapon), this will remove the item with the extra slots\&. "
+.ti -1c
+.RI "virtual T \fBReplaceItem\fP (int index, T item)"
+.br
+.RI "Replaces the items at index and returns the previous item\&. "
+.ti -1c
+.RI "virtual bool \fBCanAddItem\fP (T item, out \fBUISlot\fP< T > slot, bool createSlot=false)"
+.br
+.RI "Checks if the item can be added to this container\&. "
+.ti -1c
+.RI "void \fBRefreshSlots\fP ()"
+.br
+.RI "Refreshs the slot list and reorganize indices\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBfade\fP = true"
+.br
+.ti -1c
+.RI "string \fBtimeFormat\fP = 'HH:mm:ss'"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBDevionGames\&.UIWidgets\&.UIContainer< NotificationOptions >\fP
+.in +1c
+.ti -1c
+.RI "override void \fBOnAwake\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBUISlot\fP< T > \fBCreateSlot\fP ()"
+.br
+.RI "Creates a new slot\&. "
+.ti -1c
+.RI "virtual void \fBDestroySlot\fP (int index)"
+.br
+.RI "Destroy the slot and reorganize indices\&. "
+.in -1c
+
+Protected Attributes inherited from \fBDevionGames\&.UIWidgets\&.UIContainer< NotificationOptions >\fP
+.in +1c
+.ti -1c
+.RI "bool \fBm_DynamicContainer\fP"
+.br
+.RI "Sets the container as dynamic\&. Slots are instantiated at runtime\&. "
+.ti -1c
+.RI "Transform \fBm_SlotParent\fP"
+.br
+.RI "The parent transform of slots\&. "
+.ti -1c
+.RI "GameObject \fBm_SlotPrefab\fP"
+.br
+.RI "The slot prefab\&. This game object should contain the Slot component or a child class of Slot\&. "
+.ti -1c
+.RI "List< \fBUISlot\fP< T > > \fBm_Slots\fP"
+.br
+.ti -1c
+.RI "List< T > \fBm_Collection\fP"
+.br
+.in -1c
+
+Properties inherited from \fBDevionGames\&.UIWidgets\&.UIContainer< NotificationOptions >\fP
+.in +1c
+.ti -1c
+.RI "override string[] \fBCallbacks\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "ReadOnlyCollection< \fBUISlot\fP< T > > \fBSlots\fP\fC [get]\fP"
+.br
+.RI "Collection of slots this container is holding\&. "
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

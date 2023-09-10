@@ -1,0 +1,90 @@
+.TH "UnityEngine.SignInWithApple.SignInWithApple" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UnityEngine.SignInWithApple.SignInWithApple
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "delegate void \fBCallback\fP (\fBCallbackArgs\fP args)"
+.br
+.ti -1c
+.RI "void \fBGetCredentialState\fP (string userID)"
+.br
+.RI "Get credential state and trigger onCredentialState or onError event when action is completed\&. "
+.ti -1c
+.RI "void \fBGetCredentialState\fP (string userID, Callback callback)"
+.br
+.RI "Invoke login and provide a custom callback when action is completed\&. When a custom trigger is used, the onCredentialState or onError unity event won't trigger\&. "
+.ti -1c
+.RI "void \fBLogin\fP ()"
+.br
+.RI "Invoke login and trigger onLogin or onError event when login is completed\&. "
+.ti -1c
+.RI "void \fBLogin\fP (Callback callback)"
+.br
+.RI "Invoke login and provide a custom callback when login is completed\&. When a custom trigger is used, the onLogin or onError unity event won't trigger\&. "
+.ti -1c
+.RI "void \fBUpdate\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "UnityAction< \fBCallbackArgs\fP > \fBonLogin\fP"
+.br
+.ti -1c
+.RI "UnityAction< \fBCallbackArgs\fP > \fBonCredentialState\fP"
+.br
+.ti -1c
+.RI "UnityAction< \fBCallbackArgs\fP > \fBonError\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void UnityEngine\&.SignInWithApple\&.SignInWithApple\&.GetCredentialState (string userID)"
+
+.PP
+Get credential state and trigger onCredentialState or onError event when action is completed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserID\fP The user id to query the credential state on\&.
+.RE
+.PP
+
+.SS "void UnityEngine\&.SignInWithApple\&.SignInWithApple\&.GetCredentialState (string userID, Callback callback)"
+
+.PP
+Invoke login and provide a custom callback when action is completed\&. When a custom trigger is used, the onCredentialState or onError unity event won't trigger\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserID\fP The user id to query the credential state on\&.
+.br
+\fIcallback\fP The custom callback to trigger when action is completed\&.
+.RE
+.PP
+
+.SS "void UnityEngine\&.SignInWithApple\&.SignInWithApple\&.Login (Callback callback)"
+
+.PP
+Invoke login and provide a custom callback when login is completed\&. When a custom trigger is used, the onLogin or onError unity event won't trigger\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP The custom callback to trigger when login is completed\&.
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

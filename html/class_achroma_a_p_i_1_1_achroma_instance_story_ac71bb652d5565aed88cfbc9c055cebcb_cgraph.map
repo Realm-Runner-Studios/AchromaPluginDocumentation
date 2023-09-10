@@ -1,0 +1,7 @@
+<map id="AchromaAPI.AchromaInstanceStory.UpdateStoryMilestoneValue" name="AchromaAPI.AchromaInstanceStory.UpdateStoryMilestoneValue">
+<area shape="rect" id="Node000001" title="Updates the variable inside a story and returns the value to the user." alt="" coords="5,5,221,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_manager.html#a9da982e1b6bb0676daa31316949e642a" title="Method to load everything that&#39;s needed to call Achroma plugin features." alt="" coords="269,5,479,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,23,254,23,254,28,221,28"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_parent_controller.html#a9b7cd6b8a910602b1472e2d5be3b8bf8" title="This method loads a scene synchronously and returns a callback when the scene is ended loading." alt="" coords="527,5,753,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,23,512,23,512,28,479,28"/>
+</map>

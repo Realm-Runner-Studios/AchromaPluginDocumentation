@@ -1,0 +1,101 @@
+.TH "Shopify.Unity.Fulfillment" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Fulfillment \- Represents a single fulfillment in an order\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, and ICloneable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFulfillment\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "\fBFulfillmentLineItemConnection\fP \fBfulfillmentLineItems\fP (string alias=null)"
+.br
+.RI "List of the fulfillment's line items\&. "
+.ti -1c
+.RI "string \fBtrackingCompany\fP ()"
+.br
+.RI "The name of the tracking company\&. "
+.ti -1c
+.RI "List< \fBFulfillmentTrackingInfo\fP > \fBtrackingInfo\fP (string alias=null)"
+.br
+.RI "Tracking information associated with the fulfillment, such as the tracking number and tracking URL\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents a single fulfillment in an order\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Fulfillment\&.Fulfillment (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Fulfillment
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBFulfillmentLineItemConnection\fP Shopify\&.Unity\&.Fulfillment\&.fulfillmentLineItems (string alias = \fCnull\fP)"
+
+.PP
+List of the fulfillment's line items\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "List< \fBFulfillmentTrackingInfo\fP > Shopify\&.Unity\&.Fulfillment\&.trackingInfo (string alias = \fCnull\fP)"
+
+.PP
+Tracking information associated with the fulfillment, such as the tracking number and tracking URL\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

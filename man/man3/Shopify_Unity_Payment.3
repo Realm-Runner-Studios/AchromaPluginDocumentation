@@ -1,0 +1,132 @@
+.TH "Shopify.Unity.Payment" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Payment \- A payment applied to a checkout\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.Node\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPayment\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "decimal \fBamount\fP ()"
+.br
+.RI "The amount of the payment\&. "
+.ti -1c
+.RI "\fBMoneyV2\fP \fBamountV2\fP ()"
+.br
+.RI "The amount of the payment\&. "
+.ti -1c
+.RI "\fBMailingAddress\fP \fBbillingAddress\fP ()"
+.br
+.RI "The billing address for the payment\&. "
+.ti -1c
+.RI "\fBCheckout\fP \fBcheckout\fP ()"
+.br
+.RI "The checkout to which the payment belongs\&. "
+.ti -1c
+.RI "\fBCreditCard\fP \fBcreditCard\fP ()"
+.br
+.RI "The credit card used for the payment in the case of direct payments\&. "
+.ti -1c
+.RI "string \fBerrorMessage\fP ()"
+.br
+.RI "A message describing a processing error during asynchronous processing\&. "
+.ti -1c
+.RI "string \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "string \fBidempotencyKey\fP ()"
+.br
+.RI "A client-side generated token to identify a payment and perform idempotent operations\&. "
+.ti -1c
+.RI "string \fBnextActionUrl\fP ()"
+.br
+.RI "The URL where the customer needs to be redirected so they can complete the 3D Secure payment flow\&. "
+.ti -1c
+.RI "bool \fBready\fP ()"
+.br
+.RI "Whether or not the payment is still processing asynchronously\&. "
+.ti -1c
+.RI "bool \fBtest\fP ()"
+.br
+.RI "A flag to indicate if the payment is to be done in test mode for gateways that support it\&. "
+.ti -1c
+.RI "\fBTransaction\fP \fBtransaction\fP ()"
+.br
+.RI "The actual transaction recorded by \fBShopify\fP after having processed the payment with the gateway\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A payment applied to a checkout\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Payment\&.Payment (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Payment
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "decimal Shopify\&.Unity\&.Payment\&.amount ()"
+
+.PP
+The amount of the payment\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCamountV2\fP instead 
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.Payment\&.id ()"
+
+.PP
+Globally unique identifier\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Node\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

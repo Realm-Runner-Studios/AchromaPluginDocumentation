@@ -1,0 +1,66 @@
+.TH "Shopify.Unity.CartState" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.CartState \- Internal state class for a Cart\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCartState\fP (\fBShopifyClient\fP client)"
+.br
+.ti -1c
+.RI "void \fBReset\fP ()"
+.br
+.ti -1c
+.RI "decimal \fBSubtotal\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetShippingLine\fP (string shippingRateHandle, CompletionCallback callback)"
+.br
+.ti -1c
+.RI "void \fBSetEmailAddress\fP (string email, CompletionCallback callback)"
+.br
+.ti -1c
+.RI "void \fBSetShippingAddress\fP (\fBMailingAddressInput\fP mailingAddressInput, CompletionCallback callback)"
+.br
+.ti -1c
+.RI "void \fBSetFinalCheckoutFields\fP (string email, \fBShippingFields\fP? shippingFields, CompletionCallback callback)"
+.br
+.ti -1c
+.RI "void \fBCheckoutSave\fP (CompletionCallback callback)"
+.br
+.ti -1c
+.RI "void \fBCheckoutWithTokenizedPaymentV2\fP (\fBTokenizedPaymentInputV2\fP tokenizedPaymentInputV2, CompletionCallback callback)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBCartLineItems\fP \fBLineItems\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "List< \fBCheckoutUserError\fP > \fBUserErrors\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "bool \fBIsSaved\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "bool \fBIsCreated\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "\fBCheckout\fP \fBCurrentCheckout\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Internal state class for a Cart\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

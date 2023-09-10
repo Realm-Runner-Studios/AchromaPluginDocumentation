@@ -1,0 +1,157 @@
+.TH "UniWebViewSafeBrowsing" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UniWebViewSafeBrowsing \- \fBUniWebView\fP Safe Browsing provides a way for browsing the web content in a more browser-like way, such as Safari on iOS and Chrome on Android\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits UnityEngine\&.Object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "delegate void \fBOnSafeBrowsingFinishedDelegate\fP (\fBUniWebViewSafeBrowsing\fP browsing)"
+.br
+.RI "Delegate for safe browsing finish event\&. "
+.ti -1c
+.RI "void \fBShow\fP ()"
+.br
+.RI "Shows the safe browsing content above current screen\&. "
+.ti -1c
+.RI "void \fBDismiss\fP ()"
+.br
+.RI "Dismisses the safe browsing component\&. "
+.ti -1c
+.RI "void \fBSetToolbarColor\fP (Color color)"
+.br
+.RI "Sets the color for toolbar background in the safe browsing component\&. The changes are ignored after \fCShow\fP method is called\&. "
+.ti -1c
+.RI "void \fBSetToolbarItemColor\fP (Color color)"
+.br
+.RI "Sets the color for toolbar controls in the safe browsing component\&. The changes are ignored after \fCShow\fP method is called\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBUniWebViewSafeBrowsing\fP \fBCreate\fP (string url)"
+.br
+.RI "Creates a new \fC\fBUniWebViewSafeBrowsing\fP\fP instance with a given URL\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBIsSafeBrowsingSupported\fP\fC [get]\fP"
+.br
+.RI "Whether the safe browsing mode is supported in current runtime or not\&. "
+.in -1c
+.SS "Events"
+
+.in +1c
+.ti -1c
+.RI "\fBOnSafeBrowsingFinishedDelegate\fP \fBOnSafeBrowsingFinished\fP"
+.br
+.RI "Raised when user dismisses safe browsing by tapping the Done button or Back button\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBUniWebView\fP Safe Browsing provides a way for browsing the web content in a more browser-like way, such as Safari on iOS and Chrome on Android\&. 
+
+This class wraps \fCSFSafariViewController\fP on iOS and 'Custom Tabs' on Android\&. It shares cookies, auto-fill completion and other more data with the browser on device\&. Most of permissions are also built-in supported\&. You can use this class for some tasks that are limited for a normal web view, such as using Apple Pay or Progressive Web Apps (PWA)\&.
+.PP
+You create a \fC\fBUniWebViewSafeBrowsing\fP\fP instance by calling the static \fC\fBUniWebViewSafeBrowsing\&.Create\fP\fP method with a destination URL\&. You cannot change this URL once the instance is created\&. To show the safe browsing, call \fCShow\fP on the instance\&. The web content will be displayed in full screen with a toolbar containing the loaded URL, as well as some basic controls like Go Back, Go Forward and Done\&.
+.PP
+Browsing web content in \fC\fBUniWebViewSafeBrowsing\fP\fP is only supported on iOS and Android\&. There is no such component in Unity Editor\&. Creating and showing a \fC\fBUniWebViewSafeBrowsing\fP\fP on Unity Editor will fall back to open the URL in external browser by using Unity's \fCApplication\&.OpenURL\fP\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBUniWebViewSafeBrowsing\fP UniWebViewSafeBrowsing\&.Create (string url)\fC [static]\fP"
+
+.PP
+Creates a new \fC\fBUniWebViewSafeBrowsing\fP\fP instance with a given URL\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIurl\fP The URL to navigate to\&. The URL must use the \fChttp\fP or \fChttps\fP scheme\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A newly created \fC\fBUniWebViewSafeBrowsing\fP\fP instance\&.
+.RE
+.PP
+
+.SS "void UniWebViewSafeBrowsing\&.Dismiss ()"
+
+.PP
+Dismisses the safe browsing component\&. This method only works on iOS\&. On Android, there is no way to dismiss the safe browsing component programatically as the result of the limitation from the native (Android) side\&. 
+.SS "delegate void UniWebViewSafeBrowsing\&.OnSafeBrowsingFinishedDelegate (\fBUniWebViewSafeBrowsing\fP browsing)"
+
+.PP
+Delegate for safe browsing finish event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbrowsing\fP The \fC\fBUniWebViewSafeBrowsing\fP\fP object raised this event\&.
+.RE
+.PP
+
+.SS "void UniWebViewSafeBrowsing\&.SetToolbarColor (Color color)"
+
+.PP
+Sets the color for toolbar background in the safe browsing component\&. The changes are ignored after \fCShow\fP method is called\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP The color to tint the toolbar\&.
+.RE
+.PP
+
+.SS "void UniWebViewSafeBrowsing\&.SetToolbarItemColor (Color color)"
+
+.PP
+Sets the color for toolbar controls in the safe browsing component\&. The changes are ignored after \fCShow\fP method is called\&. This method only works on iOS\&. On Android, the controls color is determined by system to keep a reasonable contrast, based on the toolbar background color you provided in \fCSetToolbarColor\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP The color to tint the controls on toolbar\&.
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "bool UniWebViewSafeBrowsing\&.IsSafeBrowsingSupported\fC [static]\fP, \fC [get]\fP"
+
+.PP
+Whether the safe browsing mode is supported in current runtime or not\&. If supported, the safe browsing mode will be used when \fCShow\fP is called on a \fC\fBUniWebViewSafeBrowsing\fP\fP instance\&. Otherwise, the system default browser will be used to open the page when \fCShow\fP is called\&.
+.PP
+This property always returns \fCtrue\fP on iOS runtime platform\&. On Android, it depends on whether there is an Intent can handle the safe browsing request\&. Usually it is provided by Chrome\&. If there is no Intent can open the URL in safe browsing mode, this property will return \fCfalse\fP\&.
+.PP
+To use this API on Android when you set your Target SDK to Android 11 or later, you need to declare the correct intent query explicitly in your AndroidManifest\&.xml, to follow the Package Visibility (https://developer.android.com/about/versions/11/privacy/package-visibility):
+.PP
+.PP
+.nf
+<queries>
+  <intent>
+    <action android:name="android\&.support\&.customtabs\&.action\&.CustomTabsService" />
+  </intent>
+</queries>
+.fi
+.PP
+.PP
+Returns \fCtrue\fP if the safe browsing mode is supported and the page will be opened in safe browsing mode\&. Otherwise, \fCfalse\fP\&. 
+.SH "Event Documentation"
+.PP 
+.SS "\fBOnSafeBrowsingFinishedDelegate\fP UniWebViewSafeBrowsing\&.OnSafeBrowsingFinished"
+
+.PP
+Raised when user dismisses safe browsing by tapping the Done button or Back button\&. The dismissed safe browsing instance will be invalid after this event being raised, and you should not use it for another browsing purpose\&. Instead, create a new one for a new browsing session\&.
+.PP
+This event will not happen in Unity Editor, because the whole \fC\fBUniWebViewSafeBrowsing\fP\fP will fall back to an external browser\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

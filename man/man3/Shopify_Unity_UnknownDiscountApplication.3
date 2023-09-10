@@ -1,0 +1,148 @@
+.TH "Shopify.Unity.UnknownDiscountApplication" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.UnknownDiscountApplication \- UnknownDiscountApplication is a response object\&. With UnknownDiscountApplication\&.Create you'll be able instantiate objects implementing DiscountApplication\&. \fCUnknownDiscountApplication\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+AutomaticDiscountApplication 
+.IP "\(bu" 2
+DiscountCodeApplication 
+.IP "\(bu" 2
+ManualDiscountApplication 
+.IP "\(bu" 2
+ScriptDiscountApplication 
+.PP
+ 
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.DiscountApplication\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUnknownDiscountApplication\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "\fBDiscountApplicationAllocationMethod\fP \fBallocationMethod\fP ()"
+.br
+.RI "The method by which the discount's value is allocated to its entitled items\&. "
+.ti -1c
+.RI "\fBDiscountApplicationTargetSelection\fP \fBtargetSelection\fP ()"
+.br
+.RI "Which lines of targetType that the discount is allocated over\&. "
+.ti -1c
+.RI "\fBDiscountApplicationTargetType\fP \fBtargetType\fP ()"
+.br
+.RI "The type of line that the discount is applicable towards\&. "
+.ti -1c
+.RI "\fBPricingValue\fP \fBvalue\fP ()"
+.br
+.RI "The value of the discount application\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBDiscountApplication\fP \fBCreate\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Instantiate objects implementing DiscountApplication\&. Possible types are: 
+.PD 0
+.IP "\(bu" 2
+AutomaticDiscountApplication 
+.IP "\(bu" 2
+DiscountCodeApplication 
+.IP "\(bu" 2
+ManualDiscountApplication 
+.IP "\(bu" 2
+ScriptDiscountApplication 
+.PP
+"
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+UnknownDiscountApplication is a response object\&. With UnknownDiscountApplication\&.Create you'll be able instantiate objects implementing DiscountApplication\&. \fCUnknownDiscountApplication\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+AutomaticDiscountApplication 
+.IP "\(bu" 2
+DiscountCodeApplication 
+.IP "\(bu" 2
+ManualDiscountApplication 
+.IP "\(bu" 2
+ScriptDiscountApplication 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.UnknownDiscountApplication\&.UnknownDiscountApplication (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for DiscountApplication
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBDiscountApplicationAllocationMethod\fP Shopify\&.Unity\&.UnknownDiscountApplication\&.allocationMethod ()"
+
+.PP
+The method by which the discount's value is allocated to its entitled items\&. 
+.PP
+Implements \fBShopify\&.Unity\&.DiscountApplication\fP\&.
+.SS "\fBDiscountApplicationTargetSelection\fP Shopify\&.Unity\&.UnknownDiscountApplication\&.targetSelection ()"
+
+.PP
+Which lines of targetType that the discount is allocated over\&. 
+.PP
+Implements \fBShopify\&.Unity\&.DiscountApplication\fP\&.
+.SS "\fBDiscountApplicationTargetType\fP Shopify\&.Unity\&.UnknownDiscountApplication\&.targetType ()"
+
+.PP
+The type of line that the discount is applicable towards\&. 
+.PP
+Implements \fBShopify\&.Unity\&.DiscountApplication\fP\&.
+.SS "\fBPricingValue\fP Shopify\&.Unity\&.UnknownDiscountApplication\&.value ()"
+
+.PP
+The value of the discount application\&. 
+.PP
+Implements \fBShopify\&.Unity\&.DiscountApplication\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

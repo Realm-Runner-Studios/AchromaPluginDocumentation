@@ -1,0 +1,186 @@
+.TH "Shopify.Unity.ShopifyBuy" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.ShopifyBuy \- Is the main entry point for the \fBShopify\fP SDK for Unity\&. Using  you'll create a client which can create queries on the Storefront API\&. ShopifyClient 
+.PP
+can also be used to create a Cart 
+.PP
+\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBShopifyClient\fP \fBClient\fP ()"
+.br
+.RI "Returns the default ShopifyClient 
+.PP
+\&. The default client is the first client created after calling ShopifyBuy\&.Init 
+.PP
+\&. Note that ShopifyBuy\&.Init 
+.PP
+must be called before trying to call this function\&. "
+.ti -1c
+.RI "static \fBShopifyClient\fP \fBClient\fP (string domain)"
+.br
+.RI "Returns a ShopifyClient 
+.PP
+for the \fCdomain<c> passed in\&. This is useful when you have multiple Shops your application is querying\&. Note that ShopifyBuy\&.Init \fP
+.PP
+\fC must be called before trying to call this function\&. \fP"
+.ti -1c
+.RI "static \fBShopifyClient\fP \fBInit\fP (string accessToken, string domain, string locale=null)"
+.br
+.RI "Initializes a ShopifyClient 
+.PP
+that can be used to query the Storefront API\&. The default client which can be accessed by calling ShopifyBuy\&.Client() 
+.PP
+which is initialized after ShopifyBuy\&.Init 
+.PP
+is called\&. To access the client for the specific domain passed, use ShopifyBuy\&.Client(domain) 
+.PP
+\&. "
+.ti -1c
+.RI "static \fBShopifyClient\fP \fBInit\fP (\fBBaseLoader\fP loader)"
+.br
+.RI "Typically not used, but it is possible to create a ShopifyClient 
+.PP
+by passing an instance that implements BaseLoader 
+.PP
+\&. BaseLoaders 
+.PP
+handle network communicationication with the Storefront API\&. This functionality is useful if you'd like to use the \fBShopify\fP SDK for Unity in a C# environment outside of Unity\&. The \fCdomain\fP string used to access specific initialized clients is inferred from BaseLoader\&.Domain
+.PP
+which can be used to request a specific client\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Is the main entry point for the \fBShopify\fP SDK for Unity\&. Using  you'll create a client which can create queries on the Storefront API\&. ShopifyClient 
+.PP
+can also be used to create a Cart 
+.PP
+\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBShopifyClient\fP Shopify\&.Unity\&.ShopifyBuy\&.Client ()\fC [static]\fP"
+
+.PP
+Returns the default ShopifyClient 
+.PP
+\&. The default client is the first client created after calling ShopifyBuy\&.Init 
+.PP
+\&. Note that ShopifyBuy\&.Init 
+.PP
+must be called before trying to call this function\&. 
+.PP
+.nf
+// Example usage querying all products using `Client`
+ShopifyBuy\&.Client()\&.products((products, error) => {
+    Debug\&.Log(products[0]\&.title());
+    Debug\&.Log(products[1]\&.title());
+    Debug\&.Log(products\&.Count);
+});
+
+.fi
+.PP
+ 
+.SS "static \fBShopifyClient\fP Shopify\&.Unity\&.ShopifyBuy\&.Client (string domain)\fC [static]\fP"
+
+.PP
+Returns a ShopifyClient 
+.PP
+for the \fCdomain<c> passed in\&. This is useful when you have multiple Shops your application is querying\&. Note that ShopifyBuy\&.Init \fP
+.PP
+\fC must be called before trying to call this function\&. \fP
+.PP
+\fBParameters\fP
+.RS 4
+\fIdomain\fP the domain associated to a client
+.RE
+.PP
+.PP
+.nf
+// Example usage querying all products using `Client` and a domain
+ShopifyBuy\&.Client("unity\-buy\-sdk\&.myshopify\&.com")\&.products((products, error) => {
+    Debug\&.Log(products[0]\&.title());
+    Debug\&.Log(products[1]\&.title());
+    Debug\&.Log(products\&.Count);
+});
+.fi
+.PP
+ 
+.SS "static \fBShopifyClient\fP Shopify\&.Unity\&.ShopifyBuy\&.Init (\fBBaseLoader\fP loader)\fC [static]\fP"
+
+.PP
+Typically not used, but it is possible to create a ShopifyClient 
+.PP
+by passing an instance that implements BaseLoader 
+.PP
+\&. BaseLoaders 
+.PP
+handle network communicationication with the Storefront API\&. This functionality is useful if you'd like to use the \fBShopify\fP SDK for Unity in a C# environment outside of Unity\&. The \fCdomain\fP string used to access specific initialized clients is inferred from BaseLoader\&.Domain
+.PP
+which can be used to request a specific client\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIloader\fP a loader which will handle network communicationication with the Storefront API
+.RE
+.PP
+.PP
+.nf
+// Mock example using a custom loader for another C# platform
+string accessToken = "b8d417759a62f7b342f3735dbe86b322";
+string shopDomain = "unity\-buy\-sdk\&.myshopify\&.com";
+
+CustomLoaderForNonUnityPlatform loader = new CustomLoaderForNonUnityPlatform(accessToken, shopDomain);
+
+// Init only needs to be called once
+ShopifyBuy\&.Init(loader);
+.fi
+.PP
+ 
+.SS "static \fBShopifyClient\fP Shopify\&.Unity\&.ShopifyBuy\&.Init (string accessToken, string domain, string locale = \fCnull\fP)\fC [static]\fP"
+
+.PP
+Initializes a ShopifyClient 
+.PP
+that can be used to query the Storefront API\&. The default client which can be accessed by calling ShopifyBuy\&.Client() 
+.PP
+which is initialized after ShopifyBuy\&.Init 
+.PP
+is called\&. To access the client for the specific domain passed, use ShopifyBuy\&.Client(domain) 
+.PP
+\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIaccessToken\fP access token that was generated for your store
+.br
+\fIdomain\fP domain of your \fBShopify\fP store
+.br
+\fIlocale\fP optional locale for translated content of supported types and fields
+.RE
+.PP
+.PP
+.nf
+// Example that initializes the Shopify SDK for Unity
+string accessToken = "b8d417759a62f7b342f3735dbe86b322";
+string shopDomain = "unity\-buy\-sdk\&.myshopify\&.com";
+string locale = "es";
+
+// Init only needs to be called once
+ShopifyBuy\&.Init(accessToken, shopDomain);
+// To return translated content, include the `locale` parameter:
+ShopifyBuy\&.Init(accessToken, shopDomain, locale);
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

@@ -1,0 +1,298 @@
+\doxysection{Shopify.\+Unity.\+Product Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_product}{}\label{class_shopify_1_1_unity_1_1_product}\index{Shopify.Unity.Product@{Shopify.Unity.Product}}
+
+
+A product represents an individual item for sale in a \doxylink{namespace_shopify}{Shopify} store. Products are often physical, but they don\textquotesingle{}t have to be. For example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty).  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Product\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Product\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_ad3394592c3eae3165eba01e94a440fc4}{Product}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_ae15f0c342dfbaf4623d7d7f24d27e5c4}\label{class_shopify_1_1_unity_1_1_product_ae15f0c342dfbaf4623d7d7f24d27e5c4} 
+bool {\bfseries available\+For\+Sale} ()
+\begin{DoxyCompactList}\small\item\em Indicates if at least one product variant is available for sale. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection_connection}{Collection\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_aa4574f5802680f0fa00b907d3dc76b73}{collections}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of collections a product belongs to. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a8aa85acd4ddbe07f4b60bfd042daa62a}\label{class_shopify_1_1_unity_1_1_product_a8aa85acd4ddbe07f4b60bfd042daa62a} 
+Date\+Time? {\bfseries created\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the product was created. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_ac8d1ae28800ec7981bffb380bb31d574}{description}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Stripped description of the product, single line with HTML tags removed. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_ab1f0e0e3905d55c67a6ef177cb96cc19}\label{class_shopify_1_1_unity_1_1_product_ab1f0e0e3905d55c67a6ef177cb96cc19} 
+string {\bfseries description\+Html} ()
+\begin{DoxyCompactList}\small\item\em The description of the product, complete with HTML formatting. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_ae4d763b01f1e1735eb6f6a161cde618a}\label{class_shopify_1_1_unity_1_1_product_ae4d763b01f1e1735eb6f6a161cde618a} 
+string {\bfseries handle} ()
+\begin{DoxyCompactList}\small\item\em A human-\/friendly unique string for the Product automatically generated from its title. They are used by the Liquid templating language to refer to objects. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_a5e634f0d3ef5aaf0c6cb43f13778a0fb}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_image_connection}{Image\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_a254bf6a4a437376b99fc9bc21c26a4c7}{images}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of images associated with the product. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_media_connection}{Media\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_a5962136cb35187ed7be43e0c0c50a78e}{media}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em The media associated with the product. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield}{Metafield}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_a56d80248bd50fa65b6648dee89f6c352}{metafield}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em The metafield associated with the resource. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield_connection}{Metafield\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_aff716152136f63de3a8cc4b1e3043d96}{metafields}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em A paginated list of metafields associated with the resource. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a1359be9bc7860e0ab4d8c735e2e1c7c9}\label{class_shopify_1_1_unity_1_1_product_a1359be9bc7860e0ab4d8c735e2e1c7c9} 
+string {\bfseries online\+Store\+Url} ()
+\begin{DoxyCompactList}\small\item\em The online store URL for the product. A value of {\ttfamily null} indicates that the product is not published to the Online Store sales channel. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_option}{Product\+Option}} $>$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_ab475f71e5eda9128edb050f771f42412}{options}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of product options. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_price_range_connection}{Product\+Price\+Range\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_af63014c2c2a178f012a22c8efe8f8313}{presentment\+Price\+Ranges}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of price ranges in the presentment currencies for this shop. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a9113d7f11b29fefe5b19e739dfc84e53}\label{class_shopify_1_1_unity_1_1_product_a9113d7f11b29fefe5b19e739dfc84e53} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_price_range}{Product\+Price\+Range}} {\bfseries price\+Range} ()
+\begin{DoxyCompactList}\small\item\em The price range. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_ab899e3bbaa36f5d8cd2ebe971da207f5}\label{class_shopify_1_1_unity_1_1_product_ab899e3bbaa36f5d8cd2ebe971da207f5} 
+string {\bfseries product\+Type} ()
+\begin{DoxyCompactList}\small\item\em A categorization that a product can be tagged with, commonly used for filtering and searching. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a73501b44b4a7379c9adc2593a0701fd4}\label{class_shopify_1_1_unity_1_1_product_a73501b44b4a7379c9adc2593a0701fd4} 
+Date\+Time? {\bfseries published\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the product was published to the channel. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a9b058da48370dc699a99b11031e1bc9b}\label{class_shopify_1_1_unity_1_1_product_a9b058da48370dc699a99b11031e1bc9b} 
+List$<$ string $>$ {\bfseries tags} ()
+\begin{DoxyCompactList}\small\item\em A comma separated list of tags that have been added to the product. Additional access scope required for private apps\+: unauthenticated\+\_\+read\+\_\+product\+\_\+tags. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a64b411eaee3d6b08b0ecfd7868205039}\label{class_shopify_1_1_unity_1_1_product_a64b411eaee3d6b08b0ecfd7868205039} 
+string {\bfseries title} ()
+\begin{DoxyCompactList}\small\item\em The product’s title. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a0ebed2db347a8e6931fbfd4177514bc5}\label{class_shopify_1_1_unity_1_1_product_a0ebed2db347a8e6931fbfd4177514bc5} 
+Date\+Time? {\bfseries updated\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the product was last modified. A product\textquotesingle{}s {\ttfamily updated\+At} value can change for different reasons. For example, if an order is placed for a product that has inventory tracking set up, then the inventory adjustment is counted as an update. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant}{Product\+Variant}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_aee8d70ff69aa1ad0b92737fdd0da7fda}{variant\+By\+Selected\+Options}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Find a product’s variant based on its selected options. This is useful for converting a user’s selection of product options into a single matching variant. If there is not a variant for the selected options, {\ttfamily null} will be returned. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_connection}{Product\+Variant\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_aa254fcae299c6b8ed01da6d2eda984b9}{variants}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of the product’s variants. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a2c7bdb2fb1407572db0615614cac5d12}\label{class_shopify_1_1_unity_1_1_product_a2c7bdb2fb1407572db0615614cac5d12} 
+string {\bfseries vendor} ()
+\begin{DoxyCompactList}\small\item\em The product’s vendor name. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a7ac961866e08b6dd801be4bebd11eccd}\label{class_shopify_1_1_unity_1_1_product_a7ac961866e08b6dd801be4bebd11eccd} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A product represents an individual item for sale in a \doxylink{namespace_shopify}{Shopify} store. Products are often physical, but they don\textquotesingle{}t have to be. For example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_ad3394592c3eae3165eba01e94a440fc4}\label{class_shopify_1_1_unity_1_1_product_ad3394592c3eae3165eba01e94a440fc4} 
+\index{Shopify.Unity.Product@{Shopify.Unity.Product}!Product@{Product}}
+\index{Product@{Product}!Shopify.Unity.Product@{Shopify.Unity.Product}}
+\doxysubsubsection{\texorpdfstring{Product()}{Product()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Product.\+Product (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Product\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_aa4574f5802680f0fa00b907d3dc76b73}\label{class_shopify_1_1_unity_1_1_product_aa4574f5802680f0fa00b907d3dc76b73} 
+\index{Shopify.Unity.Product@{Shopify.Unity.Product}!collections@{collections}}
+\index{collections@{collections}!Shopify.Unity.Product@{Shopify.Unity.Product}}
+\doxysubsubsection{\texorpdfstring{collections()}{collections()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection_connection}{Collection\+Connection}} Shopify.\+Unity.\+Product.\+collections (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of collections a product belongs to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_ac8d1ae28800ec7981bffb380bb31d574}\label{class_shopify_1_1_unity_1_1_product_ac8d1ae28800ec7981bffb380bb31d574} 
+\index{Shopify.Unity.Product@{Shopify.Unity.Product}!description@{description}}
+\index{description@{description}!Shopify.Unity.Product@{Shopify.Unity.Product}}
+\doxysubsubsection{\texorpdfstring{description()}{description()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Product.\+description (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Stripped description of the product, single line with HTML tags removed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a5e634f0d3ef5aaf0c6cb43f13778a0fb}\label{class_shopify_1_1_unity_1_1_product_a5e634f0d3ef5aaf0c6cb43f13778a0fb} 
+\index{Shopify.Unity.Product@{Shopify.Unity.Product}!id@{id}}
+\index{id@{id}!Shopify.Unity.Product@{Shopify.Unity.Product}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Product.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a254bf6a4a437376b99fc9bc21c26a4c7}\label{class_shopify_1_1_unity_1_1_product_a254bf6a4a437376b99fc9bc21c26a4c7} 
+\index{Shopify.Unity.Product@{Shopify.Unity.Product}!images@{images}}
+\index{images@{images}!Shopify.Unity.Product@{Shopify.Unity.Product}}
+\doxysubsubsection{\texorpdfstring{images()}{images()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_image_connection}{Image\+Connection}} Shopify.\+Unity.\+Product.\+images (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of images associated with the product. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a5962136cb35187ed7be43e0c0c50a78e}\label{class_shopify_1_1_unity_1_1_product_a5962136cb35187ed7be43e0c0c50a78e} 
+\index{Shopify.Unity.Product@{Shopify.Unity.Product}!media@{media}}
+\index{media@{media}!Shopify.Unity.Product@{Shopify.Unity.Product}}
+\doxysubsubsection{\texorpdfstring{media()}{media()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_media_connection}{Media\+Connection}} Shopify.\+Unity.\+Product.\+media (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+The media associated with the product. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_a56d80248bd50fa65b6648dee89f6c352}\label{class_shopify_1_1_unity_1_1_product_a56d80248bd50fa65b6648dee89f6c352} 
+\index{Shopify.Unity.Product@{Shopify.Unity.Product}!metafield@{metafield}}
+\index{metafield@{metafield}!Shopify.Unity.Product@{Shopify.Unity.Product}}
+\doxysubsubsection{\texorpdfstring{metafield()}{metafield()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield}{Metafield}} Shopify.\+Unity.\+Product.\+metafield (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+The metafield associated with the resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_has_metafields_ad004d783f29769df68f6c80971c6e0b1}{Shopify.\+Unity.\+Has\+Metafields}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_product_aff716152136f63de3a8cc4b1e3043d96}\label{class_shopify_1_1_unity_1_1_product_aff716152136f63de3a8cc4b1e3043d96} 
+\index{Shopify.Unity.Product@{Shopify.Unity.Product}!metafields@{metafields}}
+\index{metafields@{metafields}!Shopify.Unity.Product@{Shopify.Unity.Product}}
+\doxysubsubsection{\texorpdfstring{metafields()}{metafields()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield_connection}{Metafield\+Connection}} Shopify.\+Unity.\+Product.\+metafields (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+A paginated list of metafields associated with the resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_has_metafields_ae41aec2da94c9f8007eaecefd83b4fe1}{Shopify.\+Unity.\+Has\+Metafields}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_product_ab475f71e5eda9128edb050f771f42412}\label{class_shopify_1_1_unity_1_1_product_ab475f71e5eda9128edb050f771f42412} 
+\index{Shopify.Unity.Product@{Shopify.Unity.Product}!options@{options}}
+\index{options@{options}!Shopify.Unity.Product@{Shopify.Unity.Product}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_option}{Product\+Option}} $>$ Shopify.\+Unity.\+Product.\+options (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of product options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_af63014c2c2a178f012a22c8efe8f8313}\label{class_shopify_1_1_unity_1_1_product_af63014c2c2a178f012a22c8efe8f8313} 
+\index{Shopify.Unity.Product@{Shopify.Unity.Product}!presentmentPriceRanges@{presentmentPriceRanges}}
+\index{presentmentPriceRanges@{presentmentPriceRanges}!Shopify.Unity.Product@{Shopify.Unity.Product}}
+\doxysubsubsection{\texorpdfstring{presentmentPriceRanges()}{presentmentPriceRanges()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_price_range_connection}{Product\+Price\+Range\+Connection}} Shopify.\+Unity.\+Product.\+presentment\+Price\+Ranges (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of price ranges in the presentment currencies for this shop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_aee8d70ff69aa1ad0b92737fdd0da7fda}\label{class_shopify_1_1_unity_1_1_product_aee8d70ff69aa1ad0b92737fdd0da7fda} 
+\index{Shopify.Unity.Product@{Shopify.Unity.Product}!variantBySelectedOptions@{variantBySelectedOptions}}
+\index{variantBySelectedOptions@{variantBySelectedOptions}!Shopify.Unity.Product@{Shopify.Unity.Product}}
+\doxysubsubsection{\texorpdfstring{variantBySelectedOptions()}{variantBySelectedOptions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant}{Product\+Variant}} Shopify.\+Unity.\+Product.\+variant\+By\+Selected\+Options (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Find a product’s variant based on its selected options. This is useful for converting a user’s selection of product options into a single matching variant. If there is not a variant for the selected options, {\ttfamily null} will be returned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_aa254fcae299c6b8ed01da6d2eda984b9}\label{class_shopify_1_1_unity_1_1_product_aa254fcae299c6b8ed01da6d2eda984b9} 
+\index{Shopify.Unity.Product@{Shopify.Unity.Product}!variants@{variants}}
+\index{variants@{variants}!Shopify.Unity.Product@{Shopify.Unity.Product}}
+\doxysubsubsection{\texorpdfstring{variants()}{variants()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_connection}{Product\+Variant\+Connection}} Shopify.\+Unity.\+Product.\+variants (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of the product’s variants. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Product.\+cs\end{DoxyCompactItemize}

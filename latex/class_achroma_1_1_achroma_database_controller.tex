@@ -1,0 +1,1417 @@
+\doxysection{Achroma.\+Achroma\+Database\+Controller Class Reference}
+\hypertarget{class_achroma_1_1_achroma_database_controller}{}\label{class_achroma_1_1_achroma_database_controller}\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+
+
+Inheritance diagram for Achroma.\+Achroma\+Database\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{class_achroma_1_1_achroma_database_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Achroma.\+Achroma\+Database\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a0288857965e3b10a79b5bee888ac3dea}\label{class_achroma_1_1_achroma_database_controller_a0288857965e3b10a79b5bee888ac3dea} 
+enum {\bfseries Companion\+Game\+Type} \{ {\bfseries Canvas}
+, {\bfseries Hero}
+, {\bfseries RPG}
+ \}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a64705a0f2160c697aa2e515b287237fc}\label{class_achroma_1_1_achroma_database_controller_a64705a0f2160c697aa2e515b287237fc} 
+enum {\bfseries Companion\+Game\+Mode} \{ {\bfseries Companion\+New}
+, {\bfseries Companion\+Join}
+, {\bfseries Companion\+Solo}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ac8c6f2c9a5f3166de9797b9093cbff06}\label{class_achroma_1_1_achroma_database_controller_ac8c6f2c9a5f3166de9797b9093cbff06} 
+delegate void {\bfseries Callback} (Callback\+Args args)
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a0ba799702050785b2b75c63d01108219}{Get\+Apple\+Credential\+State}} (string user\+ID)
+\begin{DoxyCompactList}\small\item\em Get credential state and trigger on\+Credential\+State or on\+Error event when action is completed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_aa66bfe02b964c9c967b71d24f13c0a95}{Get\+Apple\+Credential\+State}} (string user\+ID, Callback callback)
+\begin{DoxyCompactList}\small\item\em Invoke login and provide a custom callback when action is completed. When a custom trigger is used, the on\+Credential\+State or on\+Error unity event won\textquotesingle{}t trigger. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a351387b527c8156ec632e6e40de35b64}\label{class_achroma_1_1_achroma_database_controller_a351387b527c8156ec632e6e40de35b64} 
+void {\bfseries Apple\+Login\+Fromi\+OS} ()
+\begin{DoxyCompactList}\small\item\em Invoke login and trigger on\+Apple\+Login or on\+Apple\+Error event when login is completed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a34e64ab826b81c76d3a13891b83a21ae}{Apple\+Login}} (Callback callback)
+\begin{DoxyCompactList}\small\item\em Invoke login and provide a custom callback when login is completed. When a custom trigger is used, the on\+Login or on\+Error unity event won\textquotesingle{}t trigger. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a4027f552bea310754502efe29d5e813f}\label{class_achroma_1_1_achroma_database_controller_a4027f552bea310754502efe29d5e813f} 
+void {\bfseries Update} ()
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a2dcc29108c7b265f63cd5136b60fee53}\label{class_achroma_1_1_achroma_database_controller_a2dcc29108c7b265f63cd5136b60fee53} 
+void {\bfseries Get\+Apple\+Credential\+State} ()
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a61bf5d466fd2981824337fee9c0612bd}\label{class_achroma_1_1_achroma_database_controller_a61bf5d466fd2981824337fee9c0612bd} 
+void {\bfseries On\+Apple\+Credential\+State} (Callback\+Args args)
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a0b5654960a835464f35eaaeea20e95ba}{On\+Apple\+Login}} (Callback\+Args args)
+\begin{DoxyCompactList}\small\item\em This is called after a successful Apple sign in happns. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a5ab6d47f003fd69ccb4705505b75e974}{On\+Apple\+Error}} (Callback\+Args args)
+\begin{DoxyCompactList}\small\item\em This is called if something wrong happens during Apple sign in. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a344a2985784742079272d23bd6456e07}{Apple\+Sign\+In\+Fromi\+OS}} (\mbox{\hyperlink{struct_user_info}{User\+Info}} user\+Info, Unity\+Action$<$ bool, String, String $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Method that signs in to Apple from an Apple device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_ab5da1f53e571d5a2cd734bc09e2c4f6f}{Set\+User\+Email}} (\mbox{\hyperlink{struct_user_info}{User\+Info}} user\+Info)
+\begin{DoxyCompactList}\small\item\em Sets the email for Apple login. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a02bc8095f4c161c5b4f24248330bb2cf}{Apple\+Sign\+In\+From\+Android}} (Unity\+Action$<$ bool, String, String $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Method that signs in to Apple from an Android device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_ab015604a046b96ae466b9945c2b05a6e}{Get\+Cards\+Data}} (Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Gets a list of cards from the database. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a7cfebd0f96cd1f112131a4971b9c21e5}{Get\+Hero\+For\+Character}} (int avatar)
+\begin{DoxyCompactList}\small\item\em Gets the hero power from the database based on an avatar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a765dd443290a3abe4ba21860dfebe4ca}{Email\+Sign\+In}} (string email, string password, Unity\+Action$<$ bool, string, string, string $>$ result)
+\begin{DoxyCompactList}\small\item\em This method calls the login method using email and password. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_ab38541617c96aa469a2113c29249a109}{Forgot\+Password}} (string email, Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em In case the user forgot the password. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a8a6e56ab6a20039130069439386fe572}{Email\+Sign\+Up}} (string userame, string email, string password, string password\+Confirmation, Unity\+Action$<$ bool, string, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Function for the register button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_aa63ec19b3a00dfcf1b056f20b66ed52d}{Push\+Friends\+Data}} (Unity\+Action$<$ bool, string $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Saves friends data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a34be8de8e043f3ecebe5104a16b9b5b4}{Request\+Friendship}} (string id, Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Requests a new friendship for the user informed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a44a2efb93a1f57d09b08ad5c7a3854dd}{Get\+Users\+Friends}} (Unity\+Action$<$ string, int $>$ result)
+\begin{DoxyCompactList}\small\item\em Returns the list of friends for the current user. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a39b0f74e37756e78a44e6ffd54bd7c5f}\label{class_achroma_1_1_achroma_database_controller_a39b0f74e37756e78a44e6ffd54bd7c5f} 
+void {\bfseries Update\+Friendship} (string requesting\+User, string requested\+User)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a462c04e15c3507e99ab5baa9d120d22e}\label{class_achroma_1_1_achroma_database_controller_a462c04e15c3507e99ab5baa9d120d22e} 
+\mbox{\hyperlink{class_achroma_1_1_friend_request_data}{Friend\+Request\+Data}} {\bfseries Get\+Friend\+Request\+Data} (string requesting\+User, string requested\+User)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a7dddf3f95e9208f74a8f66eae0012d23}\label{class_achroma_1_1_achroma_database_controller_a7dddf3f95e9208f74a8f66eae0012d23} 
+void {\bfseries Remove\+Friendship} (string requesting\+User, string requested\+User)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a82c3c416d05bc3cf09070f002e9184f5}\label{class_achroma_1_1_achroma_database_controller_a82c3c416d05bc3cf09070f002e9184f5} 
+void {\bfseries Un\+Watch\+Friends} ()
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a5ba4615b0513b0a5fce16a82adc45f47}{Google\+Get\+Auth\+Token}} (Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Collects the auth token using the Google Sign in plugin. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ac371a8afa04f4ca351976a29eacc2604}\label{class_achroma_1_1_achroma_database_controller_ac371a8afa04f4ca351976a29eacc2604} 
+void {\bfseries Google\+Sign\+In} (string google\+Access\+Token, string google\+Id\+Token, Unity\+Action$<$ bool, String, String $>$ result=null)
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_af85af5010e60fbddfe6ee30942ae9295}{New\+Match}} (string session\+Name, Companion\+Game\+Type game\+Type)
+\begin{DoxyCompactList}\small\item\em Adds a new match to Firebase\textquotesingle{}s match table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a4db967ef31c2ace7a92460fb8637466e}{Add\+Local\+Player\+To\+Current\+Match}} (Companion\+Game\+Type game\+Type, Unity\+Action$<$ bool, string $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Adds the local player to the match. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_af0e55391bb2a377be75e0edeeff71b07}{Update\+Player\+Character}} (int character)
+\begin{DoxyCompactList}\small\item\em Updates the avatar of the current plyer so the other players can see the change. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_acb01340ac32cbed6b4131e81fb48210f}{Remove\+Local\+Player\+From\+Current\+Match}} (Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em User removes themselves from the match. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a378ba405855c9f8d33c340b152cdb7e5}{Push\+Match\+Data}} (string session\+Name="{}"{}, Unity\+Action$<$ bool, string $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Pushes the match data to Firebase. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a13005b360c72b2bbd911f209182604c6}\label{class_achroma_1_1_achroma_database_controller_a13005b360c72b2bbd911f209182604c6} 
+void {\bfseries Un\+Watch\+Match} ()
+\begin{DoxyCompactList}\small\item\em Detaches the listener for the current match. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a5389ade644c5dbcfd847f8c7f88dd52c}{Watch\+Match}} (Unity\+Action$<$ string $>$ result)
+\begin{DoxyCompactList}\small\item\em Adds a listener to the match. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_aa63b48152c5a84373e98b257c7c66588}{Refresh\+Match}} (string session\+Name, bool show\+Loading=true, Unity\+Action$<$ bool, string, string $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em Forces an update to the local match data by retrieving it from the database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a7677c9fc75eec0344e156b0c9f2218d6}{Get\+Match\+Data}} (string session\+Name, Unity\+Action$<$ bool, string, \mbox{\hyperlink{class_achroma_1_1_match_data}{Match\+Data}} $>$ result)
+\begin{DoxyCompactList}\small\item\em Based on a session id, it gives back the Match\+Data object. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_achroma_1_1_match_player}{Match\+Player}} $>$ \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a1b8e907c4041b477d7ff49abe898273b}{Get\+Oponents}} ()
+\begin{DoxyCompactList}\small\item\em Gets a list of opponents. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a6277b697b97ae8fd6c858977616c34aa}{Get\+Current\+Season\+Name}} (Unity\+Action$<$ string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the current season name from the seasons table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_ac8f647abd3d62aeb99276847e391eeeb}{Get\+Match\+Code}} (Unity\+Action$<$ string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets a unique match code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a47e5b60b208ce8178279085c74086f02}{Query\+Ranking\+Cloud}} (int hero=-\/1, string user\+Id=null, bool current\+Season=false, bool show\+Loading=true, Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Returns a list with the ranking list for a certain type of game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a7463418c27b769cfcd731335300077be}{Query\+Story\+Ranking\+Cloud}} (bool show\+Loading=true, string user\+Id="{}"{}, Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Returns the ranking for story mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a5da47b29fb19dc245f218dbab1c92fec}{Get\+Achrometer\+Tier}} (int total\+Chroma\+Wins, int total\+Achrom\+Wins, int story\+Achrometer, Unity\+Action$<$ bool, int, int $>$ callback)
+\begin{DoxyCompactList}\small\item\em Gets the Achrometer tier (-\/6 .. 6) \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ac794c39313a6321ddd57268908da0f60}\label{class_achroma_1_1_achroma_database_controller_ac794c39313a6321ddd57268908da0f60} 
+void {\bfseries Add\+To\+User\+Total\+Matches} ()
+\begin{DoxyCompactList}\small\item\em Adds to the number of matches played by the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a017c91c4bb26ffe4c322b6c8b75c9f57}{Update\+User\+Wins}} (string winner, string win\+Type, Unity\+Action callback)
+\begin{DoxyCompactList}\small\item\em Updates the user\textquotesingle{}s game\+Stats with the win. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a96a5db42984320000ab41b3773be571d}\label{class_achroma_1_1_achroma_database_controller_a96a5db42984320000ab41b3773be571d} 
+void {\bfseries Get\+News} (Unity\+Action$<$ bool, string $>$ result)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a80d74680852fff23abc3a4fb12a57e16}\label{class_achroma_1_1_achroma_database_controller_a80d74680852fff23abc3a4fb12a57e16} 
+void {\bfseries Go\+To\+Address} ()
+\begin{DoxyCompactList}\small\item\em Opens the App store address to allow the user to update the app. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a7032324784b1c707ba3d0db75e7f9b7c}{Check\+For\+Updates}} (string scene\+To\+Reload, Unity\+Action$<$ bool, string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Checks if the user has the latest version installed. If the user has an outdated version, the app will take them to the app store and force the update. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a03986e5eae700e1314b4a0c020f1946d}\label{class_achroma_1_1_achroma_database_controller_a03986e5eae700e1314b4a0c020f1946d} 
+string {\bfseries Get\+String\+Config} (string name)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a6aecd8897e6260ff1f6c3574141b656f}\label{class_achroma_1_1_achroma_database_controller_a6aecd8897e6260ff1f6c3574141b656f} 
+bool {\bfseries Get\+Boolean\+Config} (string name)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a4410f7bca0960b3b3302d3d656a76ae0}\label{class_achroma_1_1_achroma_database_controller_a4410f7bca0960b3b3302d3d656a76ae0} 
+int {\bfseries Get\+Variable\+Value} (string Story, string Name)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ae543f74549166a26fe1815f76c8e9c39}\label{class_achroma_1_1_achroma_database_controller_ae543f74549166a26fe1815f76c8e9c39} 
+int {\bfseries Get\+Milestone\+Value} (string Name, string Story)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a52e735311d5433d72bd9d7b57267616f}\label{class_achroma_1_1_achroma_database_controller_a52e735311d5433d72bd9d7b57267616f} 
+void {\bfseries Add\+Achrom} (int value)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a4fc069f14006e2bfcfe92b87eed7fb56}\label{class_achroma_1_1_achroma_database_controller_a4fc069f14006e2bfcfe92b87eed7fb56} 
+void {\bfseries Reset\+Variable} (string story, string name, Unity\+Action$<$ string $>$ result)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a3118ecce835fc7a563eaeabb9b873da9}\label{class_achroma_1_1_achroma_database_controller_a3118ecce835fc7a563eaeabb9b873da9} 
+void {\bfseries Update\+Variable} (string story, string name, int value, Unity\+Action$<$ string, int $>$ result)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_aa7a0fd81d3e31c0c76e5af605721f5f5}\label{class_achroma_1_1_achroma_database_controller_aa7a0fd81d3e31c0c76e5af605721f5f5} 
+void {\bfseries Update\+Milestone} (string story, string name, int value, Unity\+Action$<$ string, int $>$ result)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_acef83ef1045e9db438c3e1928f5f7674}\label{class_achroma_1_1_achroma_database_controller_acef83ef1045e9db438c3e1928f5f7674} 
+void {\bfseries Clear\+Progress} (string story, Unity\+Action$<$ bool, string $>$ result)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a6ea2bc783717c55cb724c35a5fc6e500}\label{class_achroma_1_1_achroma_database_controller_a6ea2bc783717c55cb724c35a5fc6e500} 
+void {\bfseries Add\+Story\+Step} (string story, string step, int Story\+Character, int Story\+Relic, Unity\+Action$<$ bool, string $>$ result)
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_aedd3a3bf10a86289dc099e698efb024b}{Push\+User\+Data}} (Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Method to update Firebase with the user\textquotesingle{}s updates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a85e4fb83fbe91c323abe7155581beb72}{Get\+User\+Data}} (Unity\+Action$<$ bool, string, string $>$ result, string custom\+User\+Id="{}"{})
+\begin{DoxyCompactList}\small\item\em Method to get current user data and store it to a User\+Data variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_ac843e0393854c7257993d2373d4eceed}{On\+User\+Change}} (string json)
+\begin{DoxyCompactList}\small\item\em Event called when any change to the user data occurs This also calls the user\+Data\+Changed action pointed to a method on host app. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a89267a26e359cf0e47ab8f4c3598b5fe}{Merge\+Data}} (\mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} local\+Data, \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} final\+Data)
+\begin{DoxyCompactList}\small\item\em This will compare the. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_ab2ffc8ae7283248f92d068aa952b6e28}{Purchase\+Shards}} (int shards, Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em This will add shards to the user account after they buy shards from the shard shop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a9d9a56d1047fe11507377617508c5d75}{Purchase\+Avatar}} (int shards, int character, Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em This will deduct shards from the user account after they buy an avatar from the shard shop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a6660d025ddffc030ef2c7ce0f3421f3e}{Add\+Story\+Shards}} (int shards, string story\+Step\+Id, Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em This will add shards to the user account after they reached a step in the story. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a5c0ae8cd96efac1ba1fc06ac1a40f57f}{Subtract\+Shards}} (int shards, Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em This will take shards from the user account. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_aff64aab13b1d82d01669f0d5783f481c}{Get\+Friends\+Data}} (Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Gets friends data ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_aada7e17663e8859aea32cc58cf2548a9}{Get\+User\+By\+Id}} (string id, Unity\+Action$<$ bool, string, \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ result)
+\begin{DoxyCompactList}\small\item\em Gets the user by their id. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a149c7e31c3132185e912cd0d681ee68b}\label{class_achroma_1_1_achroma_database_controller_a149c7e31c3132185e912cd0d681ee68b} 
+void {\bfseries Get\+User\+Id\+By\+Unique\+Number} (string unique\+Number, Unity\+Action$<$ bool, string, string $>$ callback)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ad1281e7865819c89471d70eb458f753c}\label{class_achroma_1_1_achroma_database_controller_ad1281e7865819c89471d70eb458f753c} 
+void {\bfseries Cancel\+Operations} ()
+\begin{DoxyCompactList}\small\item\em This method will stop any Firebase operation. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_aa067be092d81670013028bbdd0d42577}\label{class_achroma_1_1_achroma_database_controller_aa067be092d81670013028bbdd0d42577} 
+void {\bfseries Sign\+Out} ()
+\begin{DoxyCompactList}\small\item\em This method will log out. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a87a74899ec8cdf24cbba363b4762c3b3}{Load\+Database}} (Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Loads the database references to the tables the app uses. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_af892aac6d5f552024bfc18098ec0f612}{Am\+IFriends\+With}} (string id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a1e341f5b7d2015f29514503c77b4db0f}\label{class_achroma_1_1_achroma_database_controller_a1e341f5b7d2015f29514503c77b4db0f} 
+Unity\+Action$<$ Callback\+Args $>$ {\bfseries on\+Apple\+Login}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a5b58299eb558b417af343efe1a732252}\label{class_achroma_1_1_achroma_database_controller_a5b58299eb558b417af343efe1a732252} 
+Unity\+Action$<$ Callback\+Args $>$ {\bfseries on\+Apple\+Credential\+State}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a1ae6ca0085110d1c26cec7d8d5c0f4c0}\label{class_achroma_1_1_achroma_database_controller_a1ae6ca0085110d1c26cec7d8d5c0f4c0} 
+Unity\+Action$<$ Callback\+Args $>$ {\bfseries on\+Apple\+Error}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a346348e37beb0fe513b9314ca4d1bf57}\label{class_achroma_1_1_achroma_database_controller_a346348e37beb0fe513b9314ca4d1bf57} 
+\mbox{\hyperlink{class_achroma_1_1_card_collection}{Card\+Collection}} {\bfseries card\+Collection} = new \mbox{\hyperlink{class_achroma_1_1_card_collection}{Card\+Collection}}()
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_aed881c050cffffc85690aad77c131ff2}\label{class_achroma_1_1_achroma_database_controller_aed881c050cffffc85690aad77c131ff2} 
+Unity\+Action {\bfseries friends\+Updated}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a073e0cfc80e9a87ea8d79cec907c03e8}\label{class_achroma_1_1_achroma_database_controller_a073e0cfc80e9a87ea8d79cec907c03e8} 
+\mbox{\hyperlink{class_achroma_1_1_match_data}{Match\+Data}} {\bfseries match\+Data}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_abe42b55e415f22a364d35d87d4bbcb80}\label{class_achroma_1_1_achroma_database_controller_abe42b55e415f22a364d35d87d4bbcb80} 
+\mbox{\hyperlink{class_achroma_1_1_news_collection}{News\+Collection}} {\bfseries news\+Collection}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ad3a3b621d77f6307fbaab30050357962}\label{class_achroma_1_1_achroma_database_controller_ad3a3b621d77f6307fbaab30050357962} 
+\mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} {\bfseries user\+Data}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ae7de00bf55077deb4acafe4f61b8f4b7}\label{class_achroma_1_1_achroma_database_controller_ae7de00bf55077deb4acafe4f61b8f4b7} 
+string {\bfseries Current\+Story\+Id}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_abc1a3d32c8491950dc81e86a1cfc6f7e}\label{class_achroma_1_1_achroma_database_controller_abc1a3d32c8491950dc81e86a1cfc6f7e} 
+Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ {\bfseries user\+Data\+Changed}
+\begin{DoxyCompactList}\small\item\em This will be called every time a change to user happens This is a reference to a method created by the host app. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a8949945c6f407cda27241325583ed02e}\label{class_achroma_1_1_achroma_database_controller_a8949945c6f407cda27241325583ed02e} 
+\mbox{\hyperlink{class_achroma_1_1_friends_data}{Friends\+Data}} {\bfseries friends\+Data}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a74513709ea2469d26c68141d0a9998da}\label{class_achroma_1_1_achroma_database_controller_a74513709ea2469d26c68141d0a9998da} 
+bool {\bfseries Am\+IMatch\+Host}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Responds the question if the current user is the host of match. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a50ba882b1f50caced5ecf231342ddb23}\label{class_achroma_1_1_achroma_database_controller_a50ba882b1f50caced5ecf231342ddb23} 
+static \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller}{Achroma\+Database\+Controller}} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ac02cffa15e868f083181309dbf7065c5}\label{class_achroma_1_1_achroma_database_controller_ac02cffa15e868f083181309dbf7065c5} 
+bool {\bfseries Initialized}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Checks if Firebase has been initialized. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ac14b65d5ddf9ad345c97bbab904a0c00}\label{class_achroma_1_1_achroma_database_controller_ac14b65d5ddf9ad345c97bbab904a0c00} 
+bool {\bfseries Authenticated}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Checks if user has authenticated. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a7d225e72607a341454997dc5c17e9c97}\label{class_achroma_1_1_achroma_database_controller_a7d225e72607a341454997dc5c17e9c97} 
+bool {\bfseries Database\+Loaded}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Checks if database has been loaded. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_aa585157e244e377cbc45ab9f818df161}\label{class_achroma_1_1_achroma_database_controller_aa585157e244e377cbc45ab9f818df161} 
+bool {\bfseries Database\+Updated}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Checks if the user\textquotesingle{}s data has been previously updated. This is to guarantee everything has been updated since the user\textquotesingle{}s data is updated after login. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a4db967ef31c2ace7a92460fb8637466e}\label{class_achroma_1_1_achroma_database_controller_a4db967ef31c2ace7a92460fb8637466e} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!AddLocalPlayerToCurrentMatch@{AddLocalPlayerToCurrentMatch}}
+\index{AddLocalPlayerToCurrentMatch@{AddLocalPlayerToCurrentMatch}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{AddLocalPlayerToCurrentMatch()}{AddLocalPlayerToCurrentMatch()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Add\+Local\+Player\+To\+Current\+Match (\begin{DoxyParamCaption}\item[{Companion\+Game\+Type}]{game\+Type,  }\item[{Unity\+Action$<$ bool, string $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Adds the local player to the match. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Type} & The type of match in question\\
+\hline
+{\em result} & The callback with success feedback\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a4db967ef31c2ace7a92460fb8637466e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a6660d025ddffc030ef2c7ce0f3421f3e}\label{class_achroma_1_1_achroma_database_controller_a6660d025ddffc030ef2c7ce0f3421f3e} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!AddStoryShards@{AddStoryShards}}
+\index{AddStoryShards@{AddStoryShards}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{AddStoryShards()}{AddStoryShards()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Add\+Story\+Shards (\begin{DoxyParamCaption}\item[{int}]{shards,  }\item[{string}]{story\+Step\+Id,  }\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+This will add shards to the user account after they reached a step in the story. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shards} & amount of shards involved\\
+\hline
+{\em result} & Returns a success flag and error message (if any)\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a6660d025ddffc030ef2c7ce0f3421f3e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_af892aac6d5f552024bfc18098ec0f612}\label{class_achroma_1_1_achroma_database_controller_af892aac6d5f552024bfc18098ec0f612} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!AmIFriendsWith@{AmIFriendsWith}}
+\index{AmIFriendsWith@{AmIFriendsWith}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{AmIFriendsWith()}{AmIFriendsWith()}}
+{\footnotesize\ttfamily bool Achroma.\+Achroma\+Database\+Controller.\+Am\+IFriends\+With (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_af892aac6d5f552024bfc18098ec0f612_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a34e64ab826b81c76d3a13891b83a21ae}\label{class_achroma_1_1_achroma_database_controller_a34e64ab826b81c76d3a13891b83a21ae} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!AppleLogin@{AppleLogin}}
+\index{AppleLogin@{AppleLogin}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{AppleLogin()}{AppleLogin()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Apple\+Login (\begin{DoxyParamCaption}\item[{Callback}]{callback }\end{DoxyParamCaption})}
+
+
+
+Invoke login and provide a custom callback when login is completed. When a custom trigger is used, the on\+Login or on\+Error unity event won\textquotesingle{}t trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & The custom callback to trigger when login is completed.\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a34e64ab826b81c76d3a13891b83a21ae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a02bc8095f4c161c5b4f24248330bb2cf}\label{class_achroma_1_1_achroma_database_controller_a02bc8095f4c161c5b4f24248330bb2cf} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!AppleSignInFromAndroid@{AppleSignInFromAndroid}}
+\index{AppleSignInFromAndroid@{AppleSignInFromAndroid}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{AppleSignInFromAndroid()}{AppleSignInFromAndroid()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Apple\+Sign\+In\+From\+Android (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, String, String $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Method that signs in to Apple from an Android device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Resul with bool flag, message (if any error) and user id (if successful) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a02bc8095f4c161c5b4f24248330bb2cf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a344a2985784742079272d23bd6456e07}\label{class_achroma_1_1_achroma_database_controller_a344a2985784742079272d23bd6456e07} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!AppleSignInFromiOS@{AppleSignInFromiOS}}
+\index{AppleSignInFromiOS@{AppleSignInFromiOS}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{AppleSignInFromiOS()}{AppleSignInFromiOS()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Apple\+Sign\+In\+Fromi\+OS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_user_info}{User\+Info}}}]{user\+Info,  }\item[{Unity\+Action$<$ bool, String, String $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Method that signs in to Apple from an Apple device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Info} & credential data collected previously from Get\+Credential\\
+\hline
+{\em result} & Resul with bool flag, message (if any error) and user id (if successful) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a344a2985784742079272d23bd6456e07_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a344a2985784742079272d23bd6456e07_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a7032324784b1c707ba3d0db75e7f9b7c}\label{class_achroma_1_1_achroma_database_controller_a7032324784b1c707ba3d0db75e7f9b7c} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!CheckForUpdates@{CheckForUpdates}}
+\index{CheckForUpdates@{CheckForUpdates}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{CheckForUpdates()}{CheckForUpdates()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Check\+For\+Updates (\begin{DoxyParamCaption}\item[{string}]{scene\+To\+Reload,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Checks if the user has the latest version installed. If the user has an outdated version, the app will take them to the app store and force the update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+To\+Reload} & The scene to be reloaded after if something goes wrong\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a7032324784b1c707ba3d0db75e7f9b7c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a7032324784b1c707ba3d0db75e7f9b7c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a765dd443290a3abe4ba21860dfebe4ca}\label{class_achroma_1_1_achroma_database_controller_a765dd443290a3abe4ba21860dfebe4ca} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!EmailSignIn@{EmailSignIn}}
+\index{EmailSignIn@{EmailSignIn}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{EmailSignIn()}{EmailSignIn()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Email\+Sign\+In (\begin{DoxyParamCaption}\item[{string}]{email,  }\item[{string}]{password,  }\item[{Unity\+Action$<$ bool, string, string, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+This method calls the login method using email and password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & User\textquotesingle{}s email\\
+\hline
+{\em password} & User\textquotesingle{}s password\\
+\hline
+{\em result} & callback function that returns\+: success, field name (when an error occurs, it returns which field was wrong), message (the error message) and user (user id from Firebase)\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a765dd443290a3abe4ba21860dfebe4ca_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a8a6e56ab6a20039130069439386fe572}\label{class_achroma_1_1_achroma_database_controller_a8a6e56ab6a20039130069439386fe572} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!EmailSignUp@{EmailSignUp}}
+\index{EmailSignUp@{EmailSignUp}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{EmailSignUp()}{EmailSignUp()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Email\+Sign\+Up (\begin{DoxyParamCaption}\item[{string}]{userame,  }\item[{string}]{email,  }\item[{string}]{password,  }\item[{string}]{password\+Confirmation,  }\item[{Unity\+Action$<$ bool, string, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Function for the register button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & the user name (nick name)\\
+\hline
+{\em email} & e-\/mail address\\
+\hline
+{\em password} & password\\
+\hline
+{\em password\+Confirmation} & password confirmation\\
+\hline
+{\em result} & callback function, returns success flag, field name (in case of error) and error message (if any)\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a8a6e56ab6a20039130069439386fe572_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ab38541617c96aa469a2113c29249a109}\label{class_achroma_1_1_achroma_database_controller_ab38541617c96aa469a2113c29249a109} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!ForgotPassword@{ForgotPassword}}
+\index{ForgotPassword@{ForgotPassword}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{ForgotPassword()}{ForgotPassword()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Forgot\+Password (\begin{DoxyParamCaption}\item[{string}]{email,  }\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+In case the user forgot the password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & User\textquotesingle{}s email\\
+\hline
+{\em result} & callback function that returns\+: success, message (the error message)\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_ab38541617c96aa469a2113c29249a109_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_ab38541617c96aa469a2113c29249a109_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a5da47b29fb19dc245f218dbab1c92fec}\label{class_achroma_1_1_achroma_database_controller_a5da47b29fb19dc245f218dbab1c92fec} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetAchrometerTier@{GetAchrometerTier}}
+\index{GetAchrometerTier@{GetAchrometerTier}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetAchrometerTier()}{GetAchrometerTier()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Get\+Achrometer\+Tier (\begin{DoxyParamCaption}\item[{int}]{total\+Chroma\+Wins,  }\item[{int}]{total\+Achrom\+Wins,  }\item[{int}]{story\+Achrometer,  }\item[{Unity\+Action$<$ bool, int, int $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Gets the Achrometer tier (-\/6 .. 6) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em total\+Chroma\+Wins} & Number of Chroma wins (30+)\\
+\hline
+{\em total\+Achrom\+Wins} & Number of Achrom Wins (Drained all others to zero)\\
+\hline
+{\em story\+Achrometer} & The achrometer from the story mode\\
+\hline
+{\em callback} & Success feedback and achrometer + total points \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a5da47b29fb19dc245f218dbab1c92fec_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a0ba799702050785b2b75c63d01108219}\label{class_achroma_1_1_achroma_database_controller_a0ba799702050785b2b75c63d01108219} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetAppleCredentialState@{GetAppleCredentialState}}
+\index{GetAppleCredentialState@{GetAppleCredentialState}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetAppleCredentialState()}{GetAppleCredentialState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Get\+Apple\+Credential\+State (\begin{DoxyParamCaption}\item[{string}]{user\+ID }\end{DoxyParamCaption})}
+
+
+
+Get credential state and trigger on\+Credential\+State or on\+Error event when action is completed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & The user id to query the credential state on.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{class_achroma_1_1_achroma_database_controller_a0ba799702050785b2b75c63d01108219_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a0ba799702050785b2b75c63d01108219_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_aa66bfe02b964c9c967b71d24f13c0a95}\label{class_achroma_1_1_achroma_database_controller_aa66bfe02b964c9c967b71d24f13c0a95} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetAppleCredentialState@{GetAppleCredentialState}}
+\index{GetAppleCredentialState@{GetAppleCredentialState}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetAppleCredentialState()}{GetAppleCredentialState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Get\+Apple\+Credential\+State (\begin{DoxyParamCaption}\item[{string}]{user\+ID,  }\item[{Callback}]{callback }\end{DoxyParamCaption})}
+
+
+
+Invoke login and provide a custom callback when action is completed. When a custom trigger is used, the on\+Credential\+State or on\+Error unity event won\textquotesingle{}t trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & The user id to query the credential state on.\\
+\hline
+{\em callback} & The custom callback to trigger when action is completed.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ab015604a046b96ae466b9945c2b05a6e}\label{class_achroma_1_1_achroma_database_controller_ab015604a046b96ae466b9945c2b05a6e} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetCardsData@{GetCardsData}}
+\index{GetCardsData@{GetCardsData}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetCardsData()}{GetCardsData()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Get\+Cards\+Data (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Gets a list of cards from the database. 
+
+Loads the cards from Firebase database into memory 
+\begin{DoxyParams}{Parameters}
+{\em result} & Returns success flag and an error messasge (if any)\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_ab015604a046b96ae466b9945c2b05a6e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a6277b697b97ae8fd6c858977616c34aa}\label{class_achroma_1_1_achroma_database_controller_a6277b697b97ae8fd6c858977616c34aa} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetCurrentSeasonName@{GetCurrentSeasonName}}
+\index{GetCurrentSeasonName@{GetCurrentSeasonName}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetCurrentSeasonName()}{GetCurrentSeasonName()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Get\+Current\+Season\+Name (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ string $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Gets the current season name from the seasons table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a6277b697b97ae8fd6c858977616c34aa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_aff64aab13b1d82d01669f0d5783f481c}\label{class_achroma_1_1_achroma_database_controller_aff64aab13b1d82d01669f0d5783f481c} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetFriendsData@{GetFriendsData}}
+\index{GetFriendsData@{GetFriendsData}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetFriendsData()}{GetFriendsData()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Get\+Friends\+Data (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Gets friends data ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_aff64aab13b1d82d01669f0d5783f481c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a7cfebd0f96cd1f112131a4971b9c21e5}\label{class_achroma_1_1_achroma_database_controller_a7cfebd0f96cd1f112131a4971b9c21e5} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetHeroForCharacter@{GetHeroForCharacter}}
+\index{GetHeroForCharacter@{GetHeroForCharacter}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetHeroForCharacter()}{GetHeroForCharacter()}}
+{\footnotesize\ttfamily string Achroma.\+Achroma\+Database\+Controller.\+Get\+Hero\+For\+Character (\begin{DoxyParamCaption}\item[{int}]{avatar }\end{DoxyParamCaption})}
+
+
+
+Gets the hero power from the database based on an avatar. 
+
+Loads the cards from Firebase database into memory \begin{DoxyReturn}{Returns}
+The character\textquotesingle{}s hero power
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a7cfebd0f96cd1f112131a4971b9c21e5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a7cfebd0f96cd1f112131a4971b9c21e5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ac8f647abd3d62aeb99276847e391eeeb}\label{class_achroma_1_1_achroma_database_controller_ac8f647abd3d62aeb99276847e391eeeb} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetMatchCode@{GetMatchCode}}
+\index{GetMatchCode@{GetMatchCode}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetMatchCode()}{GetMatchCode()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Get\+Match\+Code (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ string $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Gets a unique match code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & Returns the match code\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_ac8f647abd3d62aeb99276847e391eeeb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_ac8f647abd3d62aeb99276847e391eeeb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a7677c9fc75eec0344e156b0c9f2218d6}\label{class_achroma_1_1_achroma_database_controller_a7677c9fc75eec0344e156b0c9f2218d6} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetMatchData@{GetMatchData}}
+\index{GetMatchData@{GetMatchData}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetMatchData()}{GetMatchData()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Get\+Match\+Data (\begin{DoxyParamCaption}\item[{string}]{session\+Name,  }\item[{Unity\+Action$<$ bool, string, \mbox{\hyperlink{class_achroma_1_1_match_data}{Match\+Data}} $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Based on a session id, it gives back the Match\+Data object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Name} & Session id\\
+\hline
+{\em result} & the success feedback and Match\+Data object\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a7677c9fc75eec0344e156b0c9f2218d6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a7677c9fc75eec0344e156b0c9f2218d6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a1b8e907c4041b477d7ff49abe898273b}\label{class_achroma_1_1_achroma_database_controller_a1b8e907c4041b477d7ff49abe898273b} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetOponents@{GetOponents}}
+\index{GetOponents@{GetOponents}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetOponents()}{GetOponents()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_achroma_1_1_match_player}{Match\+Player}} $>$ Achroma.\+Achroma\+Database\+Controller.\+Get\+Oponents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets a list of opponents. 
+
+\begin{DoxyReturn}{Returns}
+List of player\textquotesingle{}s opponents
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a1b8e907c4041b477d7ff49abe898273b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_aada7e17663e8859aea32cc58cf2548a9}\label{class_achroma_1_1_achroma_database_controller_aada7e17663e8859aea32cc58cf2548a9} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetUserById@{GetUserById}}
+\index{GetUserById@{GetUserById}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetUserById()}{GetUserById()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Get\+User\+By\+Id (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{Unity\+Action$<$ bool, string, \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Gets the user by their id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & User id\\
+\hline
+{\em callback} & Success/\+Failure feedback and the User\+Data object\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_aada7e17663e8859aea32cc58cf2548a9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a85e4fb83fbe91c323abe7155581beb72}\label{class_achroma_1_1_achroma_database_controller_a85e4fb83fbe91c323abe7155581beb72} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetUserData@{GetUserData}}
+\index{GetUserData@{GetUserData}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetUserData()}{GetUserData()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Get\+User\+Data (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string, string $>$}]{result,  }\item[{string}]{custom\+User\+Id = {\ttfamily "{}"{}} }\end{DoxyParamCaption})}
+
+
+
+Method to get current user data and store it to a User\+Data variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & callback that returns success flag, message and the json file with the user data\\
+\hline
+{\em custom\+User\+Id} & This is just for testing using a custom user id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a85e4fb83fbe91c323abe7155581beb72_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a85e4fb83fbe91c323abe7155581beb72_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a44a2efb93a1f57d09b08ad5c7a3854dd}\label{class_achroma_1_1_achroma_database_controller_a44a2efb93a1f57d09b08ad5c7a3854dd} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetUsersFriends@{GetUsersFriends}}
+\index{GetUsersFriends@{GetUsersFriends}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetUsersFriends()}{GetUsersFriends()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Get\+Users\+Friends (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ string, int $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Returns the list of friends for the current user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & callback for each row of friendship\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a5ba4615b0513b0a5fce16a82adc45f47}\label{class_achroma_1_1_achroma_database_controller_a5ba4615b0513b0a5fce16a82adc45f47} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GoogleGetAuthToken@{GoogleGetAuthToken}}
+\index{GoogleGetAuthToken@{GoogleGetAuthToken}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GoogleGetAuthToken()}{GoogleGetAuthToken()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Google\+Get\+Auth\+Token (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Collects the auth token using the Google Sign in plugin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Returns a flag of success and message\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a5ba4615b0513b0a5fce16a82adc45f47_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a87a74899ec8cdf24cbba363b4762c3b3}\label{class_achroma_1_1_achroma_database_controller_a87a74899ec8cdf24cbba363b4762c3b3} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!LoadDatabase@{LoadDatabase}}
+\index{LoadDatabase@{LoadDatabase}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{LoadDatabase()}{LoadDatabase()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Load\+Database (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Loads the database references to the tables the app uses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Callback with a success flag and the error message (if any)\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a87a74899ec8cdf24cbba363b4762c3b3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a87a74899ec8cdf24cbba363b4762c3b3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a89267a26e359cf0e47ab8f4c3598b5fe}\label{class_achroma_1_1_achroma_database_controller_a89267a26e359cf0e47ab8f4c3598b5fe} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!MergeData@{MergeData}}
+\index{MergeData@{MergeData}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{MergeData()}{MergeData()}}
+{\footnotesize\ttfamily bool Achroma.\+Achroma\+Database\+Controller.\+Merge\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}}}]{local\+Data,  }\item[{\mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}}}]{final\+Data }\end{DoxyParamCaption})}
+
+
+
+This will compare the. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em local\+Data} & \\
+\hline
+{\em final\+Data} & \\
+\hline
+{\em result} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a89267a26e359cf0e47ab8f4c3598b5fe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_af85af5010e60fbddfe6ee30942ae9295}\label{class_achroma_1_1_achroma_database_controller_af85af5010e60fbddfe6ee30942ae9295} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!NewMatch@{NewMatch}}
+\index{NewMatch@{NewMatch}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{NewMatch()}{NewMatch()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+New\+Match (\begin{DoxyParamCaption}\item[{string}]{session\+Name,  }\item[{Companion\+Game\+Type}]{game\+Type }\end{DoxyParamCaption})}
+
+
+
+Adds a new match to Firebase\textquotesingle{}s match table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Name} & The unique match id\\
+\hline
+{\em game\+Type} & The type of match in question\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_af85af5010e60fbddfe6ee30942ae9295_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_af85af5010e60fbddfe6ee30942ae9295_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a5ab6d47f003fd69ccb4705505b75e974}\label{class_achroma_1_1_achroma_database_controller_a5ab6d47f003fd69ccb4705505b75e974} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!OnAppleError@{OnAppleError}}
+\index{OnAppleError@{OnAppleError}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{OnAppleError()}{OnAppleError()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+On\+Apple\+Error (\begin{DoxyParamCaption}\item[{Callback\+Args}]{args }\end{DoxyParamCaption})}
+
+
+
+This is called if something wrong happens during Apple sign in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a5ab6d47f003fd69ccb4705505b75e974_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a0b5654960a835464f35eaaeea20e95ba}\label{class_achroma_1_1_achroma_database_controller_a0b5654960a835464f35eaaeea20e95ba} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!OnAppleLogin@{OnAppleLogin}}
+\index{OnAppleLogin@{OnAppleLogin}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{OnAppleLogin()}{OnAppleLogin()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+On\+Apple\+Login (\begin{DoxyParamCaption}\item[{Callback\+Args}]{args }\end{DoxyParamCaption})}
+
+
+
+This is called after a successful Apple sign in happns. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a0b5654960a835464f35eaaeea20e95ba_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ac843e0393854c7257993d2373d4eceed}\label{class_achroma_1_1_achroma_database_controller_ac843e0393854c7257993d2373d4eceed} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!OnUserChange@{OnUserChange}}
+\index{OnUserChange@{OnUserChange}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{OnUserChange()}{OnUserChange()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+On\+User\+Change (\begin{DoxyParamCaption}\item[{string}]{json }\end{DoxyParamCaption})}
+
+
+
+Event called when any change to the user data occurs This also calls the user\+Data\+Changed action pointed to a method on host app. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_ac843e0393854c7257993d2373d4eceed_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a9d9a56d1047fe11507377617508c5d75}\label{class_achroma_1_1_achroma_database_controller_a9d9a56d1047fe11507377617508c5d75} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!PurchaseAvatar@{PurchaseAvatar}}
+\index{PurchaseAvatar@{PurchaseAvatar}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{PurchaseAvatar()}{PurchaseAvatar()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Purchase\+Avatar (\begin{DoxyParamCaption}\item[{int}]{shards,  }\item[{int}]{character,  }\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+This will deduct shards from the user account after they buy an avatar from the shard shop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shards} & amount of shards involved\\
+\hline
+{\em character} & character id involved\\
+\hline
+{\em result} & Returns a success flag and error message (if any)\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ab2ffc8ae7283248f92d068aa952b6e28}\label{class_achroma_1_1_achroma_database_controller_ab2ffc8ae7283248f92d068aa952b6e28} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!PurchaseShards@{PurchaseShards}}
+\index{PurchaseShards@{PurchaseShards}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{PurchaseShards()}{PurchaseShards()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Purchase\+Shards (\begin{DoxyParamCaption}\item[{int}]{shards,  }\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+This will add shards to the user account after they buy shards from the shard shop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shards} & amount of shards involved\\
+\hline
+{\em result} & Returns a success flag and error message (if any)\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_aa63ec19b3a00dfcf1b056f20b66ed52d}\label{class_achroma_1_1_achroma_database_controller_aa63ec19b3a00dfcf1b056f20b66ed52d} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!PushFriendsData@{PushFriendsData}}
+\index{PushFriendsData@{PushFriendsData}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{PushFriendsData()}{PushFriendsData()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Push\+Friends\+Data (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Saves friends data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_aa63ec19b3a00dfcf1b056f20b66ed52d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a378ba405855c9f8d33c340b152cdb7e5}\label{class_achroma_1_1_achroma_database_controller_a378ba405855c9f8d33c340b152cdb7e5} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!PushMatchData@{PushMatchData}}
+\index{PushMatchData@{PushMatchData}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{PushMatchData()}{PushMatchData()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Push\+Match\+Data (\begin{DoxyParamCaption}\item[{string}]{session\+Name = {\ttfamily "{}"{}},  }\item[{Unity\+Action$<$ bool, string $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Pushes the match data to Firebase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Name} & Session Id, if null, will use the match\+Data object in memory\\
+\hline
+{\em result} & Success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a378ba405855c9f8d33c340b152cdb7e5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a378ba405855c9f8d33c340b152cdb7e5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_aedd3a3bf10a86289dc099e698efb024b}\label{class_achroma_1_1_achroma_database_controller_aedd3a3bf10a86289dc099e698efb024b} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!PushUserData@{PushUserData}}
+\index{PushUserData@{PushUserData}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{PushUserData()}{PushUserData()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Push\+User\+Data (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Method to update Firebase with the user\textquotesingle{}s updates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_aedd3a3bf10a86289dc099e698efb024b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_aedd3a3bf10a86289dc099e698efb024b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a47e5b60b208ce8178279085c74086f02}\label{class_achroma_1_1_achroma_database_controller_a47e5b60b208ce8178279085c74086f02} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!QueryRankingCloud@{QueryRankingCloud}}
+\index{QueryRankingCloud@{QueryRankingCloud}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{QueryRankingCloud()}{QueryRankingCloud()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Query\+Ranking\+Cloud (\begin{DoxyParamCaption}\item[{int}]{hero = {\ttfamily -\/1},  }\item[{string}]{user\+Id = {\ttfamily null},  }\item[{bool}]{current\+Season = {\ttfamily false},  }\item[{bool}]{show\+Loading = {\ttfamily true},  }\item[{Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Returns a list with the ranking list for a certain type of game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero} & if == 1 it will return only the hero ranking\\
+\hline
+{\em user\+Id} & if informed, will give the ranking for just the friends of the user\\
+\hline
+{\em current\+Season} & if true, it will give the ranking just for the current season\\
+\hline
+{\em show\+Loading} & if true, shows the loading screen\\
+\hline
+{\em result} & success feedback and list with all the users\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a7463418c27b769cfcd731335300077be}\label{class_achroma_1_1_achroma_database_controller_a7463418c27b769cfcd731335300077be} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!QueryStoryRankingCloud@{QueryStoryRankingCloud}}
+\index{QueryStoryRankingCloud@{QueryStoryRankingCloud}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{QueryStoryRankingCloud()}{QueryStoryRankingCloud()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Query\+Story\+Ranking\+Cloud (\begin{DoxyParamCaption}\item[{bool}]{show\+Loading = {\ttfamily true},  }\item[{string}]{user\+Id = {\ttfamily "{}"{}},  }\item[{Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Returns the ranking for story mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em show\+Loading} & if true, shows the loading screen\\
+\hline
+{\em user\+Id} & if true, shows only the ranking for the user\textquotesingle{}s friends\\
+\hline
+{\em result} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_aa63b48152c5a84373e98b257c7c66588}\label{class_achroma_1_1_achroma_database_controller_aa63b48152c5a84373e98b257c7c66588} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!RefreshMatch@{RefreshMatch}}
+\index{RefreshMatch@{RefreshMatch}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{RefreshMatch()}{RefreshMatch()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Refresh\+Match (\begin{DoxyParamCaption}\item[{string}]{session\+Name,  }\item[{bool}]{show\+Loading = {\ttfamily true},  }\item[{Unity\+Action$<$ bool, string, string $>$}]{callback = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Forces an update to the local match data by retrieving it from the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Name} & Session id\\
+\hline
+{\em show\+Loading} & If true, shows the loading screen\\
+\hline
+{\em callback} & Success/\+Failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_aa63b48152c5a84373e98b257c7c66588_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_aa63b48152c5a84373e98b257c7c66588_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_acb01340ac32cbed6b4131e81fb48210f}\label{class_achroma_1_1_achroma_database_controller_acb01340ac32cbed6b4131e81fb48210f} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!RemoveLocalPlayerFromCurrentMatch@{RemoveLocalPlayerFromCurrentMatch}}
+\index{RemoveLocalPlayerFromCurrentMatch@{RemoveLocalPlayerFromCurrentMatch}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{RemoveLocalPlayerFromCurrentMatch()}{RemoveLocalPlayerFromCurrentMatch()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Remove\+Local\+Player\+From\+Current\+Match (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+User removes themselves from the match. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_acb01340ac32cbed6b4131e81fb48210f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_acb01340ac32cbed6b4131e81fb48210f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a34be8de8e043f3ecebe5104a16b9b5b4}\label{class_achroma_1_1_achroma_database_controller_a34be8de8e043f3ecebe5104a16b9b5b4} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!RequestFriendship@{RequestFriendship}}
+\index{RequestFriendship@{RequestFriendship}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{RequestFriendship()}{RequestFriendship()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Request\+Friendship (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Requests a new friendship for the user informed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em result} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a34be8de8e043f3ecebe5104a16b9b5b4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ab5da1f53e571d5a2cd734bc09e2c4f6f}\label{class_achroma_1_1_achroma_database_controller_ab5da1f53e571d5a2cd734bc09e2c4f6f} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!SetUserEmail@{SetUserEmail}}
+\index{SetUserEmail@{SetUserEmail}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{SetUserEmail()}{SetUserEmail()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Set\+User\+Email (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_user_info}{User\+Info}}}]{user\+Info }\end{DoxyParamCaption})}
+
+
+
+Sets the email for Apple login. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Info} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_ab5da1f53e571d5a2cd734bc09e2c4f6f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a5c0ae8cd96efac1ba1fc06ac1a40f57f}\label{class_achroma_1_1_achroma_database_controller_a5c0ae8cd96efac1ba1fc06ac1a40f57f} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!SubtractShards@{SubtractShards}}
+\index{SubtractShards@{SubtractShards}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{SubtractShards()}{SubtractShards()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Subtract\+Shards (\begin{DoxyParamCaption}\item[{int}]{shards,  }\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+This will take shards from the user account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shards} & amount of shards involved\\
+\hline
+{\em result} & Returns a success flag and error message (if any)\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a5c0ae8cd96efac1ba1fc06ac1a40f57f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_af0e55391bb2a377be75e0edeeff71b07}\label{class_achroma_1_1_achroma_database_controller_af0e55391bb2a377be75e0edeeff71b07} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!UpdatePlayerCharacter@{UpdatePlayerCharacter}}
+\index{UpdatePlayerCharacter@{UpdatePlayerCharacter}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{UpdatePlayerCharacter()}{UpdatePlayerCharacter()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Update\+Player\+Character (\begin{DoxyParamCaption}\item[{int}]{character }\end{DoxyParamCaption})}
+
+
+
+Updates the avatar of the current plyer so the other players can see the change. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & the new avatar id\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_af0e55391bb2a377be75e0edeeff71b07_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a017c91c4bb26ffe4c322b6c8b75c9f57}\label{class_achroma_1_1_achroma_database_controller_a017c91c4bb26ffe4c322b6c8b75c9f57} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!UpdateUserWins@{UpdateUserWins}}
+\index{UpdateUserWins@{UpdateUserWins}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{UpdateUserWins()}{UpdateUserWins()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Update\+User\+Wins (\begin{DoxyParamCaption}\item[{string}]{winner,  }\item[{string}]{win\+Type,  }\item[{Unity\+Action}]{callback }\end{DoxyParamCaption})}
+
+
+
+Updates the user\textquotesingle{}s game\+Stats with the win. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner} & the userid of the winner\\
+\hline
+{\em win\+Type} & The type of win, chroma / achrom\\
+\hline
+{\em callback} & The feedback result\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a017c91c4bb26ffe4c322b6c8b75c9f57_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a017c91c4bb26ffe4c322b6c8b75c9f57_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a5389ade644c5dbcfd847f8c7f88dd52c}\label{class_achroma_1_1_achroma_database_controller_a5389ade644c5dbcfd847f8c7f88dd52c} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!WatchMatch@{WatchMatch}}
+\index{WatchMatch@{WatchMatch}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{WatchMatch()}{WatchMatch()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Watch\+Match (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Adds a listener to the match. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a5389ade644c5dbcfd847f8c7f88dd52c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a5389ade644c5dbcfd847f8c7f88dd52c_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+Apple\+Auth.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+Cards.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+Friends.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+Google\+Auth.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+Match.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+News.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+Remote\+Config.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+User.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+Email\+Auth.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+Story.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller1.\+cs\end{DoxyCompactItemize}

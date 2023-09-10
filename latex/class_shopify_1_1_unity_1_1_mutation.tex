@@ -1,0 +1,789 @@
+\doxysection{Shopify.\+Unity.\+Mutation Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_mutation}{}\label{class_shopify_1_1_unity_1_1_mutation}\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+
+
+The schema’s entry-\/point for mutations. This acts as the public, top-\/level API from which all mutation queries must start.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Mutation\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Mutation\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_ab24319aee71c61b43a99ea4cd62c68e6}{Mutation}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_payload}{Checkout\+Attributes\+Update\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a80cbbbd6548091ef12630c5257e00d6e}{checkout\+Attributes\+Update}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the attributes of a checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_v2payload}{Checkout\+Attributes\+Update\+V2payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a459325dffa4f9d806cdf0175256b7f4d}{checkout\+Attributes\+Update\+V2}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the attributes of a checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_complete_free_payload}{Checkout\+Complete\+Free\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a5c57a44821dc9a1b05c7f34fa6781d2f}{checkout\+Complete\+Free}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Completes a checkout without providing payment information. You can use this mutation for free items or items whose purchase price is covered by a gift card. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_complete_with_credit_card_payload}{Checkout\+Complete\+With\+Credit\+Card\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_adec0f0950d4d680f0fa2c8526a14b364}{checkout\+Complete\+With\+Credit\+Card}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Completes a checkout using a credit card token from \doxylink{namespace_shopify}{Shopify}\textquotesingle{}s Vault. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_complete_with_credit_card_v2payload}{Checkout\+Complete\+With\+Credit\+Card\+V2payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_ae23f607e2e322fbafe85a002147d95e4}{checkout\+Complete\+With\+Credit\+Card\+V2}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Completes a checkout using a credit card token from \doxylink{namespace_shopify}{Shopify}\textquotesingle{}s card vault. Before you can complete checkouts using Checkout\+Complete\+With\+Credit\+Card\+V2, you need to \href{https://help.shopify.com/api/guides/sales-channel-sdk/getting-started\#request-payment-processing}{\texttt{ {\itshape request payment processing}}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_complete_with_tokenized_payment_payload}{Checkout\+Complete\+With\+Tokenized\+Payment\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_af02679e8a8fab6cea1a5b0b733e76375}{checkout\+Complete\+With\+Tokenized\+Payment}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Completes a checkout with a tokenized payment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_complete_with_tokenized_payment_v2payload}{Checkout\+Complete\+With\+Tokenized\+Payment\+V2payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a96541ac4375a4d3cc46be34eaf15eff1}{checkout\+Complete\+With\+Tokenized\+Payment\+V2}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Completes a checkout with a tokenized payment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_create_payload}{Checkout\+Create\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_aa3e61af1ba00c67fefc431e00c58baa4}{checkout\+Create}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Creates a new checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_customer_associate_payload}{Checkout\+Customer\+Associate\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a9dbfc1f4e487cd74d0af5290e5ba73de}{checkout\+Customer\+Associate}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Associates a customer to the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_customer_associate_v2payload}{Checkout\+Customer\+Associate\+V2payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a4b63df543b2c44803dc320cd1b45d177}{checkout\+Customer\+Associate\+V2}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Associates a customer to the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_customer_disassociate_payload}{Checkout\+Customer\+Disassociate\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a7ba28ed468fe532bd7152b61b7d43ac8}{checkout\+Customer\+Disassociate}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Disassociates the current checkout customer from the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_customer_disassociate_v2payload}{Checkout\+Customer\+Disassociate\+V2payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a5636f41fcece6d16de930b2d7b67c7c0}{checkout\+Customer\+Disassociate\+V2}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Disassociates the current checkout customer from the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_discount_code_apply_payload}{Checkout\+Discount\+Code\+Apply\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_aa5f08e1d7d3f74ad3982c11e2a091163}{checkout\+Discount\+Code\+Apply}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Applies a discount to an existing checkout using a discount code. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_discount_code_apply_v2payload}{Checkout\+Discount\+Code\+Apply\+V2payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_aabc63bf758b1c8e07968f3fc54589395}{checkout\+Discount\+Code\+Apply\+V2}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Applies a discount to an existing checkout using a discount code. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_discount_code_remove_payload}{Checkout\+Discount\+Code\+Remove\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a4852892808654a6ede16fdebe8553845}{checkout\+Discount\+Code\+Remove}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Removes the applied discount from an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_email_update_payload}{Checkout\+Email\+Update\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a61f3f85784a0481389d33edee60c95a7}{checkout\+Email\+Update}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the email on an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_email_update_v2payload}{Checkout\+Email\+Update\+V2payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a9a244c29420757a6e0742482f205c9d9}{checkout\+Email\+Update\+V2}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the email on an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_gift_card_apply_payload}{Checkout\+Gift\+Card\+Apply\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a43345ce098fd87572357a5cd8a673bc3}{checkout\+Gift\+Card\+Apply}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Applies a gift card to an existing checkout using a gift card code. This will replace all currently applied gift cards. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_gift_card_remove_payload}{Checkout\+Gift\+Card\+Remove\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_ac45551f5ee7a8bbcd28d39251395c7c8}{checkout\+Gift\+Card\+Remove}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Removes an applied gift card from the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_gift_card_remove_v2payload}{Checkout\+Gift\+Card\+Remove\+V2payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a6f62256ee5a4cb0969face3128a46841}{checkout\+Gift\+Card\+Remove\+V2}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Removes an applied gift card from the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_gift_cards_append_payload}{Checkout\+Gift\+Cards\+Append\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_ac7d786cf27f953bc6f5ab7006509d1ad}{checkout\+Gift\+Cards\+Append}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Appends gift cards to an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_items_add_payload}{Checkout\+Line\+Items\+Add\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a9be9b2dcf820af14b59b751d9c031703}{checkout\+Line\+Items\+Add}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Adds a list of line items to a checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_items_remove_payload}{Checkout\+Line\+Items\+Remove\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a7820b179af5f1dd4e50189bd384d4921}{checkout\+Line\+Items\+Remove}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Removes line items from an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_items_replace_payload}{Checkout\+Line\+Items\+Replace\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a14a7433543a78de41acb58989e16cc1a}{checkout\+Line\+Items\+Replace}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Sets a list of line items to a checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_items_update_payload}{Checkout\+Line\+Items\+Update\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_afdeb475661ba356ceae6aecc993dc52a}{checkout\+Line\+Items\+Update}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates line items on a checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_shipping_address_update_payload}{Checkout\+Shipping\+Address\+Update\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a3d01317b9e11cfbfd8ff713c79c3b451}{checkout\+Shipping\+Address\+Update}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the shipping address of an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_shipping_address_update_v2payload}{Checkout\+Shipping\+Address\+Update\+V2payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a324a1fd08a95d0d5680a692b8f7dfe61}{checkout\+Shipping\+Address\+Update\+V2}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the shipping address of an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_shipping_line_update_payload}{Checkout\+Shipping\+Line\+Update\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_adff0bb7cc44b114304955fa41589ec6f}{checkout\+Shipping\+Line\+Update}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the shipping lines on an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_access_token_create_payload}{Customer\+Access\+Token\+Create\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a65a04144832190d054e0ff12c57e73fa}{customer\+Access\+Token\+Create}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Creates a customer access token. The customer access token is required to modify the customer object in any way. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_access_token_delete_payload}{Customer\+Access\+Token\+Delete\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a3973ccf0b97b49269990326963a7737e}{customer\+Access\+Token\+Delete}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Permanently destroys a customer access token. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_access_token_renew_payload}{Customer\+Access\+Token\+Renew\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_ae2b35195434f2626b7b273a951ce89ad}{customer\+Access\+Token\+Renew}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Renews a customer access token. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_activate_payload}{Customer\+Activate\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_ab845e80fdd4b91f4f8f593b0364e69fb}{customer\+Activate}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Activates a customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_address_create_payload}{Customer\+Address\+Create\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_acd9a018b640c846690f5b7e05e7103bc}{customer\+Address\+Create}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Creates a new address for a customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_address_delete_payload}{Customer\+Address\+Delete\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_ac581c62d51560a2ceb9eeef5e44cdff8}{customer\+Address\+Delete}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Permanently deletes the address of an existing customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_address_update_payload}{Customer\+Address\+Update\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_ad23053431a3d87e5f83a2ff0e9d81355}{customer\+Address\+Update}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the address of an existing customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_create_payload}{Customer\+Create\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a54b7adcd62d34f339dab691559f5ea6d}{customer\+Create}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Creates a new customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_default_address_update_payload}{Customer\+Default\+Address\+Update\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a59cd6e0342297d2d0a66823c470c6308}{customer\+Default\+Address\+Update}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the default address of an existing customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_recover_payload}{Customer\+Recover\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a7e4b1695a18082d1de6a6a842317b0ba}{customer\+Recover}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Sends a reset password email to the customer, as the first step in the reset password process. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_reset_payload}{Customer\+Reset\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_aa191cf6b4b435d6f2a5e67fba62ec78a}{customer\+Reset}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Resets a customer’s password with a token received from {\ttfamily Customer\+Recover}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_reset_by_url_payload}{Customer\+Reset\+By\+Url\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_a94dc7c70080f2d8794f90da40baee03f}{customer\+Reset\+By\+Url}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Resets a customer’s password with the reset password url received from {\ttfamily Customer\+Recover}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_update_payload}{Customer\+Update\+Payload}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mutation_adc61e8f73a6187d13bac660757a9c097}{customer\+Update}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates an existing customer. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a8b7945812dd29129bf452e0bfb058db4}\label{class_shopify_1_1_unity_1_1_mutation_a8b7945812dd29129bf452e0bfb058db4} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The schema’s entry-\/point for mutations. This acts as the public, top-\/level API from which all mutation queries must start. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_ab24319aee71c61b43a99ea4cd62c68e6}\label{class_shopify_1_1_unity_1_1_mutation_ab24319aee71c61b43a99ea4cd62c68e6} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!Mutation@{Mutation}}
+\index{Mutation@{Mutation}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{Mutation()}{Mutation()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Mutation.\+Mutation (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Mutation\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a80cbbbd6548091ef12630c5257e00d6e}\label{class_shopify_1_1_unity_1_1_mutation_a80cbbbd6548091ef12630c5257e00d6e} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutAttributesUpdate@{checkoutAttributesUpdate}}
+\index{checkoutAttributesUpdate@{checkoutAttributesUpdate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutAttributesUpdate()}{checkoutAttributesUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_payload}{Checkout\+Attributes\+Update\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Attributes\+Update (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the attributes of a checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000129}{Deprecated}}]Use {\ttfamily checkout\+Attributes\+Update\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a459325dffa4f9d806cdf0175256b7f4d}\label{class_shopify_1_1_unity_1_1_mutation_a459325dffa4f9d806cdf0175256b7f4d} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutAttributesUpdateV2@{checkoutAttributesUpdateV2}}
+\index{checkoutAttributesUpdateV2@{checkoutAttributesUpdateV2}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutAttributesUpdateV2()}{checkoutAttributesUpdateV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_v2payload}{Checkout\+Attributes\+Update\+V2payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Attributes\+Update\+V2 (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the attributes of a checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a5c57a44821dc9a1b05c7f34fa6781d2f}\label{class_shopify_1_1_unity_1_1_mutation_a5c57a44821dc9a1b05c7f34fa6781d2f} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutCompleteFree@{checkoutCompleteFree}}
+\index{checkoutCompleteFree@{checkoutCompleteFree}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutCompleteFree()}{checkoutCompleteFree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_complete_free_payload}{Checkout\+Complete\+Free\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Complete\+Free (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Completes a checkout without providing payment information. You can use this mutation for free items or items whose purchase price is covered by a gift card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_adec0f0950d4d680f0fa2c8526a14b364}\label{class_shopify_1_1_unity_1_1_mutation_adec0f0950d4d680f0fa2c8526a14b364} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutCompleteWithCreditCard@{checkoutCompleteWithCreditCard}}
+\index{checkoutCompleteWithCreditCard@{checkoutCompleteWithCreditCard}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutCompleteWithCreditCard()}{checkoutCompleteWithCreditCard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_complete_with_credit_card_payload}{Checkout\+Complete\+With\+Credit\+Card\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Complete\+With\+Credit\+Card (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Completes a checkout using a credit card token from \doxylink{namespace_shopify}{Shopify}\textquotesingle{}s Vault. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000130}{Deprecated}}]Use {\ttfamily checkout\+Complete\+With\+Credit\+Card\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_ae23f607e2e322fbafe85a002147d95e4}\label{class_shopify_1_1_unity_1_1_mutation_ae23f607e2e322fbafe85a002147d95e4} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutCompleteWithCreditCardV2@{checkoutCompleteWithCreditCardV2}}
+\index{checkoutCompleteWithCreditCardV2@{checkoutCompleteWithCreditCardV2}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutCompleteWithCreditCardV2()}{checkoutCompleteWithCreditCardV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_complete_with_credit_card_v2payload}{Checkout\+Complete\+With\+Credit\+Card\+V2payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Complete\+With\+Credit\+Card\+V2 (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Completes a checkout using a credit card token from \doxylink{namespace_shopify}{Shopify}\textquotesingle{}s card vault. Before you can complete checkouts using Checkout\+Complete\+With\+Credit\+Card\+V2, you need to \href{https://help.shopify.com/api/guides/sales-channel-sdk/getting-started\#request-payment-processing}{\texttt{ {\itshape request payment processing}}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_af02679e8a8fab6cea1a5b0b733e76375}\label{class_shopify_1_1_unity_1_1_mutation_af02679e8a8fab6cea1a5b0b733e76375} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutCompleteWithTokenizedPayment@{checkoutCompleteWithTokenizedPayment}}
+\index{checkoutCompleteWithTokenizedPayment@{checkoutCompleteWithTokenizedPayment}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutCompleteWithTokenizedPayment()}{checkoutCompleteWithTokenizedPayment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_complete_with_tokenized_payment_payload}{Checkout\+Complete\+With\+Tokenized\+Payment\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Complete\+With\+Tokenized\+Payment (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Completes a checkout with a tokenized payment. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000131}{Deprecated}}]Use {\ttfamily checkout\+Complete\+With\+Tokenized\+Payment\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a96541ac4375a4d3cc46be34eaf15eff1}\label{class_shopify_1_1_unity_1_1_mutation_a96541ac4375a4d3cc46be34eaf15eff1} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutCompleteWithTokenizedPaymentV2@{checkoutCompleteWithTokenizedPaymentV2}}
+\index{checkoutCompleteWithTokenizedPaymentV2@{checkoutCompleteWithTokenizedPaymentV2}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutCompleteWithTokenizedPaymentV2()}{checkoutCompleteWithTokenizedPaymentV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_complete_with_tokenized_payment_v2payload}{Checkout\+Complete\+With\+Tokenized\+Payment\+V2payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Complete\+With\+Tokenized\+Payment\+V2 (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Completes a checkout with a tokenized payment. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000132}{Deprecated}}]Use {\ttfamily checkout\+Complete\+With\+Tokenized\+Payment\+V3} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_aa3e61af1ba00c67fefc431e00c58baa4}\label{class_shopify_1_1_unity_1_1_mutation_aa3e61af1ba00c67fefc431e00c58baa4} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutCreate@{checkoutCreate}}
+\index{checkoutCreate@{checkoutCreate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutCreate()}{checkoutCreate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_create_payload}{Checkout\+Create\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Create (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Creates a new checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a9dbfc1f4e487cd74d0af5290e5ba73de}\label{class_shopify_1_1_unity_1_1_mutation_a9dbfc1f4e487cd74d0af5290e5ba73de} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutCustomerAssociate@{checkoutCustomerAssociate}}
+\index{checkoutCustomerAssociate@{checkoutCustomerAssociate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutCustomerAssociate()}{checkoutCustomerAssociate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_customer_associate_payload}{Checkout\+Customer\+Associate\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Customer\+Associate (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Associates a customer to the checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000133}{Deprecated}}]Use {\ttfamily checkout\+Customer\+Associate\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a4b63df543b2c44803dc320cd1b45d177}\label{class_shopify_1_1_unity_1_1_mutation_a4b63df543b2c44803dc320cd1b45d177} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutCustomerAssociateV2@{checkoutCustomerAssociateV2}}
+\index{checkoutCustomerAssociateV2@{checkoutCustomerAssociateV2}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutCustomerAssociateV2()}{checkoutCustomerAssociateV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_customer_associate_v2payload}{Checkout\+Customer\+Associate\+V2payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Customer\+Associate\+V2 (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Associates a customer to the checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a7ba28ed468fe532bd7152b61b7d43ac8}\label{class_shopify_1_1_unity_1_1_mutation_a7ba28ed468fe532bd7152b61b7d43ac8} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutCustomerDisassociate@{checkoutCustomerDisassociate}}
+\index{checkoutCustomerDisassociate@{checkoutCustomerDisassociate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutCustomerDisassociate()}{checkoutCustomerDisassociate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_customer_disassociate_payload}{Checkout\+Customer\+Disassociate\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Customer\+Disassociate (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Disassociates the current checkout customer from the checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000134}{Deprecated}}]Use {\ttfamily checkout\+Customer\+Disassociate\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a5636f41fcece6d16de930b2d7b67c7c0}\label{class_shopify_1_1_unity_1_1_mutation_a5636f41fcece6d16de930b2d7b67c7c0} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutCustomerDisassociateV2@{checkoutCustomerDisassociateV2}}
+\index{checkoutCustomerDisassociateV2@{checkoutCustomerDisassociateV2}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutCustomerDisassociateV2()}{checkoutCustomerDisassociateV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_customer_disassociate_v2payload}{Checkout\+Customer\+Disassociate\+V2payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Customer\+Disassociate\+V2 (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Disassociates the current checkout customer from the checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_aa5f08e1d7d3f74ad3982c11e2a091163}\label{class_shopify_1_1_unity_1_1_mutation_aa5f08e1d7d3f74ad3982c11e2a091163} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutDiscountCodeApply@{checkoutDiscountCodeApply}}
+\index{checkoutDiscountCodeApply@{checkoutDiscountCodeApply}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutDiscountCodeApply()}{checkoutDiscountCodeApply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_discount_code_apply_payload}{Checkout\+Discount\+Code\+Apply\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Discount\+Code\+Apply (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Applies a discount to an existing checkout using a discount code. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000135}{Deprecated}}]Use {\ttfamily checkout\+Discount\+Code\+Apply\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_aabc63bf758b1c8e07968f3fc54589395}\label{class_shopify_1_1_unity_1_1_mutation_aabc63bf758b1c8e07968f3fc54589395} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutDiscountCodeApplyV2@{checkoutDiscountCodeApplyV2}}
+\index{checkoutDiscountCodeApplyV2@{checkoutDiscountCodeApplyV2}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutDiscountCodeApplyV2()}{checkoutDiscountCodeApplyV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_discount_code_apply_v2payload}{Checkout\+Discount\+Code\+Apply\+V2payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Discount\+Code\+Apply\+V2 (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Applies a discount to an existing checkout using a discount code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a4852892808654a6ede16fdebe8553845}\label{class_shopify_1_1_unity_1_1_mutation_a4852892808654a6ede16fdebe8553845} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutDiscountCodeRemove@{checkoutDiscountCodeRemove}}
+\index{checkoutDiscountCodeRemove@{checkoutDiscountCodeRemove}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutDiscountCodeRemove()}{checkoutDiscountCodeRemove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_discount_code_remove_payload}{Checkout\+Discount\+Code\+Remove\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Discount\+Code\+Remove (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Removes the applied discount from an existing checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a61f3f85784a0481389d33edee60c95a7}\label{class_shopify_1_1_unity_1_1_mutation_a61f3f85784a0481389d33edee60c95a7} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutEmailUpdate@{checkoutEmailUpdate}}
+\index{checkoutEmailUpdate@{checkoutEmailUpdate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutEmailUpdate()}{checkoutEmailUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_email_update_payload}{Checkout\+Email\+Update\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Email\+Update (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the email on an existing checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000136}{Deprecated}}]Use {\ttfamily checkout\+Email\+Update\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a9a244c29420757a6e0742482f205c9d9}\label{class_shopify_1_1_unity_1_1_mutation_a9a244c29420757a6e0742482f205c9d9} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutEmailUpdateV2@{checkoutEmailUpdateV2}}
+\index{checkoutEmailUpdateV2@{checkoutEmailUpdateV2}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutEmailUpdateV2()}{checkoutEmailUpdateV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_email_update_v2payload}{Checkout\+Email\+Update\+V2payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Email\+Update\+V2 (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the email on an existing checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a43345ce098fd87572357a5cd8a673bc3}\label{class_shopify_1_1_unity_1_1_mutation_a43345ce098fd87572357a5cd8a673bc3} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutGiftCardApply@{checkoutGiftCardApply}}
+\index{checkoutGiftCardApply@{checkoutGiftCardApply}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutGiftCardApply()}{checkoutGiftCardApply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_gift_card_apply_payload}{Checkout\+Gift\+Card\+Apply\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Gift\+Card\+Apply (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Applies a gift card to an existing checkout using a gift card code. This will replace all currently applied gift cards. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000137}{Deprecated}}]Use {\ttfamily checkout\+Gift\+Cards\+Append} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_ac45551f5ee7a8bbcd28d39251395c7c8}\label{class_shopify_1_1_unity_1_1_mutation_ac45551f5ee7a8bbcd28d39251395c7c8} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutGiftCardRemove@{checkoutGiftCardRemove}}
+\index{checkoutGiftCardRemove@{checkoutGiftCardRemove}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutGiftCardRemove()}{checkoutGiftCardRemove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_gift_card_remove_payload}{Checkout\+Gift\+Card\+Remove\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Gift\+Card\+Remove (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Removes an applied gift card from the checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000138}{Deprecated}}]Use {\ttfamily checkout\+Gift\+Card\+Remove\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a6f62256ee5a4cb0969face3128a46841}\label{class_shopify_1_1_unity_1_1_mutation_a6f62256ee5a4cb0969face3128a46841} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutGiftCardRemoveV2@{checkoutGiftCardRemoveV2}}
+\index{checkoutGiftCardRemoveV2@{checkoutGiftCardRemoveV2}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutGiftCardRemoveV2()}{checkoutGiftCardRemoveV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_gift_card_remove_v2payload}{Checkout\+Gift\+Card\+Remove\+V2payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Gift\+Card\+Remove\+V2 (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Removes an applied gift card from the checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_ac7d786cf27f953bc6f5ab7006509d1ad}\label{class_shopify_1_1_unity_1_1_mutation_ac7d786cf27f953bc6f5ab7006509d1ad} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutGiftCardsAppend@{checkoutGiftCardsAppend}}
+\index{checkoutGiftCardsAppend@{checkoutGiftCardsAppend}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutGiftCardsAppend()}{checkoutGiftCardsAppend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_gift_cards_append_payload}{Checkout\+Gift\+Cards\+Append\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Gift\+Cards\+Append (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Appends gift cards to an existing checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a9be9b2dcf820af14b59b751d9c031703}\label{class_shopify_1_1_unity_1_1_mutation_a9be9b2dcf820af14b59b751d9c031703} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutLineItemsAdd@{checkoutLineItemsAdd}}
+\index{checkoutLineItemsAdd@{checkoutLineItemsAdd}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutLineItemsAdd()}{checkoutLineItemsAdd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_items_add_payload}{Checkout\+Line\+Items\+Add\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Line\+Items\+Add (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Adds a list of line items to a checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a7820b179af5f1dd4e50189bd384d4921}\label{class_shopify_1_1_unity_1_1_mutation_a7820b179af5f1dd4e50189bd384d4921} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutLineItemsRemove@{checkoutLineItemsRemove}}
+\index{checkoutLineItemsRemove@{checkoutLineItemsRemove}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutLineItemsRemove()}{checkoutLineItemsRemove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_items_remove_payload}{Checkout\+Line\+Items\+Remove\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Line\+Items\+Remove (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Removes line items from an existing checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a14a7433543a78de41acb58989e16cc1a}\label{class_shopify_1_1_unity_1_1_mutation_a14a7433543a78de41acb58989e16cc1a} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutLineItemsReplace@{checkoutLineItemsReplace}}
+\index{checkoutLineItemsReplace@{checkoutLineItemsReplace}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutLineItemsReplace()}{checkoutLineItemsReplace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_items_replace_payload}{Checkout\+Line\+Items\+Replace\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Line\+Items\+Replace (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Sets a list of line items to a checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_afdeb475661ba356ceae6aecc993dc52a}\label{class_shopify_1_1_unity_1_1_mutation_afdeb475661ba356ceae6aecc993dc52a} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutLineItemsUpdate@{checkoutLineItemsUpdate}}
+\index{checkoutLineItemsUpdate@{checkoutLineItemsUpdate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutLineItemsUpdate()}{checkoutLineItemsUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_items_update_payload}{Checkout\+Line\+Items\+Update\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Line\+Items\+Update (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates line items on a checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a3d01317b9e11cfbfd8ff713c79c3b451}\label{class_shopify_1_1_unity_1_1_mutation_a3d01317b9e11cfbfd8ff713c79c3b451} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutShippingAddressUpdate@{checkoutShippingAddressUpdate}}
+\index{checkoutShippingAddressUpdate@{checkoutShippingAddressUpdate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutShippingAddressUpdate()}{checkoutShippingAddressUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_shipping_address_update_payload}{Checkout\+Shipping\+Address\+Update\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Shipping\+Address\+Update (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the shipping address of an existing checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000139}{Deprecated}}]Use {\ttfamily checkout\+Shipping\+Address\+Update\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a324a1fd08a95d0d5680a692b8f7dfe61}\label{class_shopify_1_1_unity_1_1_mutation_a324a1fd08a95d0d5680a692b8f7dfe61} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutShippingAddressUpdateV2@{checkoutShippingAddressUpdateV2}}
+\index{checkoutShippingAddressUpdateV2@{checkoutShippingAddressUpdateV2}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutShippingAddressUpdateV2()}{checkoutShippingAddressUpdateV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_shipping_address_update_v2payload}{Checkout\+Shipping\+Address\+Update\+V2payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Shipping\+Address\+Update\+V2 (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the shipping address of an existing checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_adff0bb7cc44b114304955fa41589ec6f}\label{class_shopify_1_1_unity_1_1_mutation_adff0bb7cc44b114304955fa41589ec6f} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!checkoutShippingLineUpdate@{checkoutShippingLineUpdate}}
+\index{checkoutShippingLineUpdate@{checkoutShippingLineUpdate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{checkoutShippingLineUpdate()}{checkoutShippingLineUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_shipping_line_update_payload}{Checkout\+Shipping\+Line\+Update\+Payload}} Shopify.\+Unity.\+Mutation.\+checkout\+Shipping\+Line\+Update (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the shipping lines on an existing checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a65a04144832190d054e0ff12c57e73fa}\label{class_shopify_1_1_unity_1_1_mutation_a65a04144832190d054e0ff12c57e73fa} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerAccessTokenCreate@{customerAccessTokenCreate}}
+\index{customerAccessTokenCreate@{customerAccessTokenCreate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerAccessTokenCreate()}{customerAccessTokenCreate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_access_token_create_payload}{Customer\+Access\+Token\+Create\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Access\+Token\+Create (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Creates a customer access token. The customer access token is required to modify the customer object in any way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a3973ccf0b97b49269990326963a7737e}\label{class_shopify_1_1_unity_1_1_mutation_a3973ccf0b97b49269990326963a7737e} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerAccessTokenDelete@{customerAccessTokenDelete}}
+\index{customerAccessTokenDelete@{customerAccessTokenDelete}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerAccessTokenDelete()}{customerAccessTokenDelete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_access_token_delete_payload}{Customer\+Access\+Token\+Delete\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Access\+Token\+Delete (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Permanently destroys a customer access token. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_ae2b35195434f2626b7b273a951ce89ad}\label{class_shopify_1_1_unity_1_1_mutation_ae2b35195434f2626b7b273a951ce89ad} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerAccessTokenRenew@{customerAccessTokenRenew}}
+\index{customerAccessTokenRenew@{customerAccessTokenRenew}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerAccessTokenRenew()}{customerAccessTokenRenew()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_access_token_renew_payload}{Customer\+Access\+Token\+Renew\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Access\+Token\+Renew (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Renews a customer access token. 
+
+Access token renewal must happen {\itshape before} a token expires. If a token has already expired, a new one should be created instead via {\ttfamily customer\+Access\+Token\+Create}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_ab845e80fdd4b91f4f8f593b0364e69fb}\label{class_shopify_1_1_unity_1_1_mutation_ab845e80fdd4b91f4f8f593b0364e69fb} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerActivate@{customerActivate}}
+\index{customerActivate@{customerActivate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerActivate()}{customerActivate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_activate_payload}{Customer\+Activate\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Activate (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Activates a customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_acd9a018b640c846690f5b7e05e7103bc}\label{class_shopify_1_1_unity_1_1_mutation_acd9a018b640c846690f5b7e05e7103bc} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerAddressCreate@{customerAddressCreate}}
+\index{customerAddressCreate@{customerAddressCreate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerAddressCreate()}{customerAddressCreate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_address_create_payload}{Customer\+Address\+Create\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Address\+Create (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Creates a new address for a customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_ac581c62d51560a2ceb9eeef5e44cdff8}\label{class_shopify_1_1_unity_1_1_mutation_ac581c62d51560a2ceb9eeef5e44cdff8} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerAddressDelete@{customerAddressDelete}}
+\index{customerAddressDelete@{customerAddressDelete}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerAddressDelete()}{customerAddressDelete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_address_delete_payload}{Customer\+Address\+Delete\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Address\+Delete (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Permanently deletes the address of an existing customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_ad23053431a3d87e5f83a2ff0e9d81355}\label{class_shopify_1_1_unity_1_1_mutation_ad23053431a3d87e5f83a2ff0e9d81355} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerAddressUpdate@{customerAddressUpdate}}
+\index{customerAddressUpdate@{customerAddressUpdate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerAddressUpdate()}{customerAddressUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_address_update_payload}{Customer\+Address\+Update\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Address\+Update (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the address of an existing customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a54b7adcd62d34f339dab691559f5ea6d}\label{class_shopify_1_1_unity_1_1_mutation_a54b7adcd62d34f339dab691559f5ea6d} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerCreate@{customerCreate}}
+\index{customerCreate@{customerCreate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerCreate()}{customerCreate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_create_payload}{Customer\+Create\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Create (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Creates a new customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a59cd6e0342297d2d0a66823c470c6308}\label{class_shopify_1_1_unity_1_1_mutation_a59cd6e0342297d2d0a66823c470c6308} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerDefaultAddressUpdate@{customerDefaultAddressUpdate}}
+\index{customerDefaultAddressUpdate@{customerDefaultAddressUpdate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerDefaultAddressUpdate()}{customerDefaultAddressUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_default_address_update_payload}{Customer\+Default\+Address\+Update\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Default\+Address\+Update (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the default address of an existing customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a7e4b1695a18082d1de6a6a842317b0ba}\label{class_shopify_1_1_unity_1_1_mutation_a7e4b1695a18082d1de6a6a842317b0ba} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerRecover@{customerRecover}}
+\index{customerRecover@{customerRecover}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerRecover()}{customerRecover()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_recover_payload}{Customer\+Recover\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Recover (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Sends a reset password email to the customer, as the first step in the reset password process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_aa191cf6b4b435d6f2a5e67fba62ec78a}\label{class_shopify_1_1_unity_1_1_mutation_aa191cf6b4b435d6f2a5e67fba62ec78a} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerReset@{customerReset}}
+\index{customerReset@{customerReset}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerReset()}{customerReset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_reset_payload}{Customer\+Reset\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Reset (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Resets a customer’s password with a token received from {\ttfamily Customer\+Recover}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_a94dc7c70080f2d8794f90da40baee03f}\label{class_shopify_1_1_unity_1_1_mutation_a94dc7c70080f2d8794f90da40baee03f} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerResetByUrl@{customerResetByUrl}}
+\index{customerResetByUrl@{customerResetByUrl}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerResetByUrl()}{customerResetByUrl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_reset_by_url_payload}{Customer\+Reset\+By\+Url\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Reset\+By\+Url (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Resets a customer’s password with the reset password url received from {\ttfamily Customer\+Recover}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_mutation_adc61e8f73a6187d13bac660757a9c097}\label{class_shopify_1_1_unity_1_1_mutation_adc61e8f73a6187d13bac660757a9c097} 
+\index{Shopify.Unity.Mutation@{Shopify.Unity.Mutation}!customerUpdate@{customerUpdate}}
+\index{customerUpdate@{customerUpdate}!Shopify.Unity.Mutation@{Shopify.Unity.Mutation}}
+\doxysubsubsection{\texorpdfstring{customerUpdate()}{customerUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_update_payload}{Customer\+Update\+Payload}} Shopify.\+Unity.\+Mutation.\+customer\+Update (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates an existing customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Mutation.\+cs\end{DoxyCompactItemize}

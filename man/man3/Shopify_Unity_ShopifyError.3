@@ -1,0 +1,89 @@
+.TH "Shopify.Unity.ShopifyError" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.ShopifyError \- A class describing an error that has occurred within the SDK\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.Serializable\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBErrorType\fP { \fBHTTP\fP, \fBGraphQL\fP, \fBUserError\fP, \fBNativePaymentProcessingError\fP }"
+.br
+.RI "Type describing the error in more detail\&. "
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShopifyError\fP (\fBErrorType\fP type, string description)"
+.br
+.ti -1c
+.RI "override object \fBToJson\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.Serializable\fP
+.in +1c
+.ti -1c
+.RI "string \fBToJsonString\fP ()"
+.br
+.ti -1c
+.RI "object \fBToJson\fP ()"
+.br
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBoperator ShopifyError\fP (\fBTopLevelResponse\fP response)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "readonly \fBErrorType\fP \fBType\fP"
+.br
+.RI "Error type for determining what specific error was encountered\&. "
+.ti -1c
+.RI "readonly string \fBDescription\fP"
+.br
+.RI "Readable description of the error\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A class describing an error that has occurred within the SDK\&. 
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBShopify\&.Unity\&.ShopifyError\&.ErrorType\fP"
+
+.PP
+Type describing the error in more detail\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIHTTP \fP\fP
+Encountered an HTTP issue or failed connection\&. 
+.TP
+\fB\fIGraphQL \fP\fP
+Encountered an internal GraphQL issue with the API\&. 
+.TP
+\fB\fIUserError \fP\fP
+UserErrors from the GraphQL API\&. For example, invalid form fields\&. 
+.TP
+\fB\fINativePaymentProcessingError \fP\fP
+Error while handling payment using a native pay method such as Apple Pay\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

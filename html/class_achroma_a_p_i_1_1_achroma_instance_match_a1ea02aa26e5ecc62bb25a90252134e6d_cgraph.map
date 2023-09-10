@@ -1,0 +1,5 @@
+<map id="AchromaAPI.AchromaInstanceMatch.GetCurrentSeasonName" name="AchromaAPI.AchromaInstanceMatch.GetCurrentSeasonName">
+<area shape="rect" id="Node000001" title="Gets the current season name from the seasons table." alt="" coords="5,5,210,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a6277b697b97ae8fd6c858977616c34aa" title="Gets the current season name from the seasons table." alt="" coords="258,5,502,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,23,243,23,243,28,210,28"/>
+</map>

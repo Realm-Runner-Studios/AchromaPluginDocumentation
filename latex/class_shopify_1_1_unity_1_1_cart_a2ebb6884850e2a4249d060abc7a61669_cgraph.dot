@@ -1,0 +1,11 @@
+digraph "Shopify.Unity.Cart.CanShowNativePaySetup"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Shopify.Unity.Cart.CanShow\lNativePaySetup",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Determine whether the user can be shown to setup their native payment solution."];
+  Node1 -> Node2 [id="edge2_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Shopify.Unity.SDK.INative\lCheckout.CanShowPaymentSetup",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout.html#a5e18dcb0891c74f44129fb253a35bc6a",tooltip="Check whether the device supports displaying a native wallet application to setup the user's payment ..."];
+}

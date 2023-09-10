@@ -1,0 +1,53 @@
+.TH "Shopify.Unity.GraphQL.CustomerUpdatePayloadQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.CustomerUpdatePayloadQuery \- Return type for \fCcustomerUpdate\fP mutation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCustomerUpdatePayloadQuery\fP (StringBuilder query)"
+.br
+.RI "CustomerUpdatePayloadQuery is used to build queries\&. Typically CustomerUpdatePayloadQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBCustomerUpdatePayloadQuery\fP \fBcustomer\fP (CustomerDelegate buildQuery)"
+.br
+.RI "The updated customer object\&. "
+.ti -1c
+.RI "\fBCustomerUpdatePayloadQuery\fP \fBcustomerAccessToken\fP (CustomerAccessTokenDelegate buildQuery)"
+.br
+.RI "The newly created customer access token\&. If the customer's password is updated, all previous access tokens (including the one used to perform this mutation) become invalid, and a new token is generated\&. "
+.ti -1c
+.RI "\fBCustomerUpdatePayloadQuery\fP \fBcustomerUserErrors\fP (CustomerUserErrorDelegate buildQuery)"
+.br
+.RI "List of errors that occurred executing the mutation\&. "
+.ti -1c
+.RI "\fBCustomerUpdatePayloadQuery\fP \fBuserErrors\fP (UserErrorDelegate buildQuery)"
+.br
+.RI "List of errors that occurred executing the mutation\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Return type for \fCcustomerUpdate\fP mutation\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCustomerUpdatePayloadQuery\fP Shopify\&.Unity\&.GraphQL\&.CustomerUpdatePayloadQuery\&.userErrors (UserErrorDelegate buildQuery)"
+
+.PP
+List of errors that occurred executing the mutation\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcustomerUserErrors\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

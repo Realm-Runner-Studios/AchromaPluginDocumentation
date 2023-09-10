@@ -1,0 +1,7 @@
+<map id="AchromaAPI.AchromaInstanceAssets.GetLocationNameById" name="AchromaAPI.AchromaInstanceAssets.GetLocationNameById">
+<area shape="rect" id="Node000001" title="Returns the name of the locatioin that&#39;s informed in the control file." alt="" coords="5,5,207,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_location.html#ac1d5c9cc95ada9b361c45a9a8bbf0405" title="Returns the location from the Control File with all its data." alt="" coords="255,5,437,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,23,240,23,240,28,207,28"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_control_file.html#a85f83e5119719e8c5a98d443275849fe" title="Returns the character from the Control File with all its data." alt="" coords="485,5,681,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="438,23,470,23,470,28,438,28"/>
+</map>

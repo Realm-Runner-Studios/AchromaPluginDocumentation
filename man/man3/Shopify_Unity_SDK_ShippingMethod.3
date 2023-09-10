@@ -1,0 +1,89 @@
+.TH "Shopify.Unity.SDK.ShippingMethod" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.SDK.ShippingMethod
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.SummaryItem\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShippingMethod\fP (string label, string amount, string identifier, string detail=null)"
+.br
+.ti -1c
+.RI "override object \fBToJson\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.SummaryItem\fP
+.in +1c
+.ti -1c
+.RI "\fBSummaryItem\fP (string label, string amount)"
+.br
+.ti -1c
+.RI "override object \fBToJson\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.Serializable\fP
+.in +1c
+.ti -1c
+.RI "string \fBToJsonString\fP ()"
+.br
+.ti -1c
+.RI "object \fBToJson\fP ()"
+.br
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBShippingMethod\fP \fBCreateFromJson\fP (Dictionary< string, object > dataJSON)"
+.br
+.ti -1c
+.RI "static List< object > \fBListToJson\fP (List< \fBShippingMethod\fP > shippingMethods)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBIdentifier\fP"
+.br
+.ti -1c
+.RI "string \fBDetail\fP"
+.br
+.in -1c
+
+Public Attributes inherited from \fBShopify\&.Unity\&.SDK\&.SummaryItem\fP
+.in +1c
+.ti -1c
+.RI "string \fBLabel\fP"
+.br
+.ti -1c
+.RI "string \fBAmount\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Static Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.SummaryItem\fP
+.in +1c
+.ti -1c
+.RI "const string \fBLABEL\fP = 'Label'"
+.br
+.ti -1c
+.RI "const string \fBAMOUNT\fP = 'Amount'"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

@@ -1,0 +1,90 @@
+.TH "Shopify.Unity.CheckoutDiscountCodeApplyPayload" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.CheckoutDiscountCodeApplyPayload \- Return type for \fCcheckoutDiscountCodeApply\fP mutation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, and ICloneable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCheckoutDiscountCodeApplyPayload\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "\fBCheckout\fP \fBcheckout\fP ()"
+.br
+.RI "The updated checkout object\&. "
+.ti -1c
+.RI "List< \fBCheckoutUserError\fP > \fBcheckoutUserErrors\fP ()"
+.br
+.RI "List of errors that occurred executing the mutation\&. "
+.ti -1c
+.RI "List< \fBUserError\fP > \fBuserErrors\fP ()"
+.br
+.RI "List of errors that occurred executing the mutation\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Return type for \fCcheckoutDiscountCodeApply\fP mutation\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.CheckoutDiscountCodeApplyPayload\&.CheckoutDiscountCodeApplyPayload (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for CheckoutDiscountCodeApplyPayload
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "List< \fBUserError\fP > Shopify\&.Unity\&.CheckoutDiscountCodeApplyPayload\&.userErrors ()"
+
+.PP
+List of errors that occurred executing the mutation\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcheckoutUserErrors\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

@@ -1,0 +1,95 @@
+\doxysection{Shopify.\+Unity.\+SDK.\+Base\+Loader Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader}{}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader}\index{Shopify.Unity.SDK.BaseLoader@{Shopify.Unity.SDK.BaseLoader}}
+
+
+An abstract base that must be defined by classes that will perform network communication.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+SDK.\+Base\+Loader\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_ab6882098cb58c8dd76b9084b7b64aea8}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_ab6882098cb58c8dd76b9084b7b64aea8} 
+{\bfseries Base\+Loader} (string domain, string access\+Token, string locale=null)
+\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a63fe8f10bde183cfc0cc269b3ad76e7f}{Load}} (string query, Loader\+Response\+Handler callback)
+\begin{DoxyCompactList}\small\item\em Sends the Graph\+QL query to the Graph\+QL endpoint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a0a98c14a644449b5fcf0db0e236940cb}{Set\+Header}} (string key, string value)
+\begin{DoxyCompactList}\small\item\em Assigns a custom header field to the loader. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_aef4c2a43c9dd245a5e94d61b43237ff5}{SDKVariant\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the loader\textquotesingle{}s X-\/\+SDK-\/\+Variant header value. Required by a Base\+Loader implementation to let the server know who is sending the request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a240ddea70de762183f8c50979ea0efae}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a240ddea70de762183f8c50979ea0efae} 
+string {\bfseries Domain}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Domain of a \doxylink{namespace_shopify}{Shopify} store. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a469b1a687a46443ee4602ef773130b2a}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a469b1a687a46443ee4602ef773130b2a} 
+string {\bfseries Access\+Token}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Access token used to communicate with a \doxylink{namespace_shopify}{Shopify} store. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a4204351c194080c017a1c51dfade1add}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a4204351c194080c017a1c51dfade1add} 
+string {\bfseries Locale}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Locale for translated content of supported types and fields. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract base that must be defined by classes that will perform network communication. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a63fe8f10bde183cfc0cc269b3ad76e7f}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a63fe8f10bde183cfc0cc269b3ad76e7f} 
+\index{Shopify.Unity.SDK.BaseLoader@{Shopify.Unity.SDK.BaseLoader}!Load@{Load}}
+\index{Load@{Load}!Shopify.Unity.SDK.BaseLoader@{Shopify.Unity.SDK.BaseLoader}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+SDK.\+Base\+Loader.\+Load (\begin{DoxyParamCaption}\item[{string}]{query,  }\item[{Loader\+Response\+Handler}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Sends the Graph\+QL query to the Graph\+QL endpoint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & a Graph\+QL query\\
+\hline
+{\em callback} & a callback which will receive a response from the Graph\+QL query\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_aef4c2a43c9dd245a5e94d61b43237ff5}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_aef4c2a43c9dd245a5e94d61b43237ff5} 
+\index{Shopify.Unity.SDK.BaseLoader@{Shopify.Unity.SDK.BaseLoader}!SDKVariantName@{SDKVariantName}}
+\index{SDKVariantName@{SDKVariantName}!Shopify.Unity.SDK.BaseLoader@{Shopify.Unity.SDK.BaseLoader}}
+\doxysubsubsection{\texorpdfstring{SDKVariantName()}{SDKVariantName()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+SDK.\+Base\+Loader.\+SDKVariant\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Returns the loader\textquotesingle{}s X-\/\+SDK-\/\+Variant header value. Required by a Base\+Loader implementation to let the server know who is sending the request. 
+
+\begin{DoxyReturn}{Returns}
+Identifying name of the loader to be sent to the server using the X-\/\+SDK-\/\+Variant header.
+\end{DoxyReturn}
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a0a98c14a644449b5fcf0db0e236940cb}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader_a0a98c14a644449b5fcf0db0e236940cb} 
+\index{Shopify.Unity.SDK.BaseLoader@{Shopify.Unity.SDK.BaseLoader}!SetHeader@{SetHeader}}
+\index{SetHeader@{SetHeader}!Shopify.Unity.SDK.BaseLoader@{Shopify.Unity.SDK.BaseLoader}}
+\doxysubsubsection{\texorpdfstring{SetHeader()}{SetHeader()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+SDK.\+Base\+Loader.\+Set\+Header (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Assigns a custom header field to the loader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Header field name\\
+\hline
+{\em value} & Header field value\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+SDK/Base\+Loader.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="AchromaAPI.AchromaInstanceAssets.GetCharacterHero" name="AchromaAPI.AchromaInstanceAssets.GetCharacterHero">
+<area shape="rect" id="Node000001" title="Returns the hero power when the character has one." alt="" coords="5,5,207,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_control_file.html#a1ea313946783cbc2c9125d755c56957c" title="Returns the character from the Control File with all its data." alt="" coords="255,5,451,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,23,240,23,240,28,207,28"/>
+</map>

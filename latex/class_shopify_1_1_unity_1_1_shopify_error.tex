@@ -1,0 +1,96 @@
+\doxysection{Shopify.\+Unity.\+Shopify\+Error Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_shopify_error}{}\label{class_shopify_1_1_unity_1_1_shopify_error}\index{Shopify.Unity.ShopifyError@{Shopify.Unity.ShopifyError}}
+
+
+A class describing an error that has occurred within the SDK.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Shopify\+Error\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Shopify\+Error\+:
+% FIG 1
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3}{Error\+Type}} \{ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3a293c9ea246ff9985dc6f62a650f78986}{HTTP}}
+, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3a524de3d2ade4544176f60702b36fbfdf}{Graph\+QL}}
+, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3a7fd67633e31b9bb36438b53def8cf0e5}{User\+Error}}
+, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3a94ade1a948703e0772dab28788f3d1d7}{Native\+Payment\+Processing\+Error}}
+ \}
+\begin{DoxyCompactList}\small\item\em Type describing the error in more detail. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_error_a423da02c4d99a9477c88e9a25ab950db}\label{class_shopify_1_1_unity_1_1_shopify_error_a423da02c4d99a9477c88e9a25ab950db} 
+{\bfseries Shopify\+Error} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3}{Error\+Type}} type, string description)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_error_a6446b3dfe1d6860da220aa1c374fd39c}\label{class_shopify_1_1_unity_1_1_shopify_error_a6446b3dfe1d6860da220aa1c374fd39c} 
+override object {\bfseries To\+Json} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_serializable}{Shopify.\+Unity.\+SDK.\+Serializable}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries To\+Json\+String} ()
+\item 
+object {\bfseries To\+Json} ()
+\item 
+override string {\bfseries To\+String} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_error_acc7226943eabcce05c2678d27dfca9d1}\label{class_shopify_1_1_unity_1_1_shopify_error_acc7226943eabcce05c2678d27dfca9d1} 
+static {\bfseries operator Shopify\+Error} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_top_level_response}{Top\+Level\+Response}} response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_error_a987a998ee0069785468f9d6f0da6d567}\label{class_shopify_1_1_unity_1_1_shopify_error_a987a998ee0069785468f9d6f0da6d567} 
+readonly \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3}{Error\+Type}} {\bfseries Type}
+\begin{DoxyCompactList}\small\item\em Error type for determining what specific error was encountered. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_error_a324e76b239b16440706db01d98297368}\label{class_shopify_1_1_unity_1_1_shopify_error_a324e76b239b16440706db01d98297368} 
+readonly string {\bfseries Description}
+\begin{DoxyCompactList}\small\item\em Readable description of the error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class describing an error that has occurred within the SDK. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3}\label{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3} 
+\index{Shopify.Unity.ShopifyError@{Shopify.Unity.ShopifyError}!ErrorType@{ErrorType}}
+\index{ErrorType@{ErrorType}!Shopify.Unity.ShopifyError@{Shopify.Unity.ShopifyError}}
+\doxysubsubsection{\texorpdfstring{ErrorType}{ErrorType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3}{Shopify.\+Unity.\+Shopify\+Error.\+Error\+Type}}}
+
+
+
+Type describing the error in more detail. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HTTP@{HTTP}!Shopify.Unity.ShopifyError@{Shopify.Unity.ShopifyError}}\index{Shopify.Unity.ShopifyError@{Shopify.Unity.ShopifyError}!HTTP@{HTTP}}}\Hypertarget{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3a293c9ea246ff9985dc6f62a650f78986}\label{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3a293c9ea246ff9985dc6f62a650f78986} 
+HTTP&Encountered an HTTP issue or failed connection. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GraphQL@{GraphQL}!Shopify.Unity.ShopifyError@{Shopify.Unity.ShopifyError}}\index{Shopify.Unity.ShopifyError@{Shopify.Unity.ShopifyError}!GraphQL@{GraphQL}}}\Hypertarget{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3a524de3d2ade4544176f60702b36fbfdf}\label{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3a524de3d2ade4544176f60702b36fbfdf} 
+Graph\+QL&Encountered an internal Graph\+QL issue with the API. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UserError@{UserError}!Shopify.Unity.ShopifyError@{Shopify.Unity.ShopifyError}}\index{Shopify.Unity.ShopifyError@{Shopify.Unity.ShopifyError}!UserError@{UserError}}}\Hypertarget{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3a7fd67633e31b9bb36438b53def8cf0e5}\label{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3a7fd67633e31b9bb36438b53def8cf0e5} 
+User\+Error&User\+Errors from the Graph\+QL API. For example, invalid form fields. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NativePaymentProcessingError@{NativePaymentProcessingError}!Shopify.Unity.ShopifyError@{Shopify.Unity.ShopifyError}}\index{Shopify.Unity.ShopifyError@{Shopify.Unity.ShopifyError}!NativePaymentProcessingError@{NativePaymentProcessingError}}}\Hypertarget{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3a94ade1a948703e0772dab28788f3d1d7}\label{class_shopify_1_1_unity_1_1_shopify_error_a2bcff1633886cd81a955ead359f113c3a94ade1a948703e0772dab28788f3d1d7} 
+Native\+Payment\+Processing\+Error&Error while handling payment using a native pay method such as Apple Pay. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/Shopify\+Error.\+cs\end{DoxyCompactItemize}

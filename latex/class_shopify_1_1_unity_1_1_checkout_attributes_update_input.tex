@@ -1,0 +1,100 @@
+\doxysection{Shopify.\+Unity.\+Checkout\+Attributes\+Update\+Input Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_checkout_attributes_update_input}{}\label{class_shopify_1_1_unity_1_1_checkout_attributes_update_input}\index{Shopify.Unity.CheckoutAttributesUpdateInput@{Shopify.Unity.CheckoutAttributesUpdateInput}}
+
+
+Specifies the fields required to update a checkout\textquotesingle{}s attributes.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Checkout\+Attributes\+Update\+Input\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Checkout\+Attributes\+Update\+Input\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_afe868468949a45e60c09f0b6dbafef24}{Checkout\+Attributes\+Update\+Input}} (string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a95613dc1d8fed4af86da1863c91d1a48}{note}}=null, List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_attribute_input}{Attribute\+Input}} $>$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a7397a0aec591b5b3d48e44e1347f2789}{custom\+Attributes}}=null, bool? \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_ace4720a857bc1ef08c89c5eb4e41cb41}{allow\+Partial\+Addresses}}=null)
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a0d2595a3b63ff4df0aa8e59e9d0a6c6a}{Checkout\+Attributes\+Update\+Input}} (Dictionary$<$ string, object $>$ data\+JSON)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_input_base}{Shopify.\+Unity.\+SDK.\+Input\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+override string {\bfseries To\+String} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representing a Graph\+QL input object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a65b11b7debb3b80139e2e75c841fe767}\label{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a65b11b7debb3b80139e2e75c841fe767} 
+const string {\bfseries note\+Field\+Key} = "{}note"{}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a1ddbc613c3217c268e64839d2f38e23a}\label{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a1ddbc613c3217c268e64839d2f38e23a} 
+const string {\bfseries custom\+Attributes\+Field\+Key} = "{}custom\+Attributes"{}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_ada57f4aa4181b606abbc27f10ccf224f}\label{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_ada57f4aa4181b606abbc27f10ccf224f} 
+const string {\bfseries allow\+Partial\+Addresses\+Field\+Key} = "{}allow\+Partial\+Addresses"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a95613dc1d8fed4af86da1863c91d1a48}\label{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a95613dc1d8fed4af86da1863c91d1a48} 
+string {\bfseries note}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The text of an optional note that a shop owner can attach to the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a7397a0aec591b5b3d48e44e1347f2789}\label{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a7397a0aec591b5b3d48e44e1347f2789} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_attribute_input}{Attribute\+Input}} $>$ {\bfseries custom\+Attributes}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A list of extra information that is added to the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_ace4720a857bc1ef08c89c5eb4e41cb41}\label{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_ace4720a857bc1ef08c89c5eb4e41cb41} 
+bool? {\bfseries allow\+Partial\+Addresses}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Allows setting partial addresses on a Checkout, skipping the full validation of attributes. The required attributes are city, province, and country. Full validation of the addresses is still done at complete time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_input_base}{Shopify.\+Unity.\+SDK.\+Input\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Set} (string key, object value)
+\item 
+object {\bfseries Get} (string key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Specifies the fields required to update a checkout\textquotesingle{}s attributes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_afe868468949a45e60c09f0b6dbafef24}\label{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_afe868468949a45e60c09f0b6dbafef24} 
+\index{Shopify.Unity.CheckoutAttributesUpdateInput@{Shopify.Unity.CheckoutAttributesUpdateInput}!CheckoutAttributesUpdateInput@{CheckoutAttributesUpdateInput}}
+\index{CheckoutAttributesUpdateInput@{CheckoutAttributesUpdateInput}!Shopify.Unity.CheckoutAttributesUpdateInput@{Shopify.Unity.CheckoutAttributesUpdateInput}}
+\doxysubsubsection{\texorpdfstring{CheckoutAttributesUpdateInput()}{CheckoutAttributesUpdateInput()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Checkout\+Attributes\+Update\+Input.\+Checkout\+Attributes\+Update\+Input (\begin{DoxyParamCaption}\item[{string}]{note = {\ttfamily null},  }\item[{List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_attribute_input}{Attribute\+Input}} $>$}]{custom\+Attributes = {\ttfamily null},  }\item[{bool?}]{allow\+Partial\+Addresses = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em note} & The text of an optional note that a shop owner can attach to the checkout. \\
+\hline
+{\em custom\+Attributes} & A list of extra information that is added to the checkout. \\
+\hline
+{\em allow\+Partial\+Addresses} & Allows setting partial addresses on a Checkout, skipping the full validation of attributes. The required attributes are city, province, and country. Full validation of the addresses is still done at complete time. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a0d2595a3b63ff4df0aa8e59e9d0a6c6a}\label{class_shopify_1_1_unity_1_1_checkout_attributes_update_input_a0d2595a3b63ff4df0aa8e59e9d0a6c6a} 
+\index{Shopify.Unity.CheckoutAttributesUpdateInput@{Shopify.Unity.CheckoutAttributesUpdateInput}!CheckoutAttributesUpdateInput@{CheckoutAttributesUpdateInput}}
+\index{CheckoutAttributesUpdateInput@{CheckoutAttributesUpdateInput}!Shopify.Unity.CheckoutAttributesUpdateInput@{Shopify.Unity.CheckoutAttributesUpdateInput}}
+\doxysubsubsection{\texorpdfstring{CheckoutAttributesUpdateInput()}{CheckoutAttributesUpdateInput()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Checkout\+Attributes\+Update\+Input.\+Checkout\+Attributes\+Update\+Input (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em note} & The text of an optional note that a shop owner can attach to the checkout. \\
+\hline
+{\em custom\+Attributes} & A list of extra information that is added to the checkout. \\
+\hline
+{\em allow\+Partial\+Addresses} & Allows setting partial addresses on a Checkout, skipping the full validation of attributes. The required attributes are city, province, and country. Full validation of the addresses is still done at complete time. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Checkout\+Attributes\+Update\+Input.\+cs\end{DoxyCompactItemize}

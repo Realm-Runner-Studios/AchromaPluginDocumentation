@@ -1,0 +1,7 @@
+<map id="Achroma.AchromaDatabaseController.EmailSignUp" name="Achroma.AchromaDatabaseController.EmailSignUp">
+<area shape="rect" id="Node000001" title="Function for the register button." alt="" coords="5,39,250,79"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_firebase_controller.html#a4c3d8e981c3970168260b53d500140e7" title="Function for the register button." alt="" coords="298,5,536,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,42,282,38,283,44,250,48"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_firebase_controller.html#a4c57ab20c42decb71d88600f0fe29485" title="Method to initialize Firebase." alt="" coords="298,71,536,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,70,283,74,282,79,250,75"/>
+</map>

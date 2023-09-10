@@ -1,0 +1,77 @@
+.TH "Achroma.AchromaParentController" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaParentController
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.PP
+Inherited by \fBAchroma\&.AchromaManager\fP, \fBAchroma\&.AchromaUIController\fP, \fBAchroma\&.AchromaUIController\fP, \fBAchroma\&.AchromaUIController\fP, \fBAchroma\&.AchromaUIController\fP, \fBAchroma\&.AchromaUIController\fP, \fBAchroma\&.AchromaUIController\fP, \fBAchroma\&.AchromaUIController\fP, \fBAchroma\&.AchromaUIController\fP, \fBAchroma\&.AchromaUIController\fP, and \fBAchroma\&.AchromaUIController\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBLoadScene\fP (string sceneName, string message, Object instanceToCheckExistance=null, LoadSceneMode sceneMode=LoadSceneMode\&.Single, UnityAction result=null, bool forceReload=false, bool hideLoadingScreenAfterLoaded=true)"
+.br
+.RI "This method loads a scene synchronously and returns a callback when the scene is ended loading\&. "
+.ti -1c
+.RI "void \fBUnloadScene\fP (string name)"
+.br
+.RI "This method simply unloads a scene\&. "
+.ti -1c
+.RI "void \fBLoadPreviousScene\fP (string message)"
+.br
+.RI "This method calls the scene that called the current scene back\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void Achroma\&.AchromaParentController\&.LoadPreviousScene (string message)"
+
+.PP
+This method calls the scene that called the current scene back\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessage\fP The text that will be shown to the user in the loading screen
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaParentController\&.LoadScene (string sceneName, string message, Object instanceToCheckExistance = \fCnull\fP, LoadSceneMode sceneMode = \fCLoadSceneMode::Single\fP, UnityAction result = \fCnull\fP, bool forceReload = \fCfalse\fP, bool hideLoadingScreenAfterLoaded = \fCtrue\fP)"
+
+.PP
+This method loads a scene synchronously and returns a callback when the scene is ended loading\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsceneName\fP The name of the scene
+.br
+\fImessage\fP The text that will be shown to the user in the loading screen
+.br
+\fIinstanceToCheckExistance\fP This is the singleton of the main class in the scene\&. If the Singleton exists, it means the scene is already loaded
+.br
+\fIsceneMode\fP The scene mode: Single (will load on top of the current scene) or Additive (will load a scene along with the current scene)
+.br
+\fIresult\fP The callback
+.br
+\fIforceReload\fP This is to ignore all the checks and just force the scene to be loaded anyway
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaParentController\&.UnloadScene (string name)"
+
+.PP
+This method simply unloads a scene\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The scene name
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

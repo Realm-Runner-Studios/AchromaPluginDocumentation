@@ -1,0 +1,72 @@
+.TH "Shopify.Unity.GraphQL.TransactionQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.TransactionQuery \- An object representing exchange of money for a product or service\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTransactionQuery\fP (StringBuilder query)"
+.br
+.RI "TransactionQuery is used to build queries\&. Typically TransactionQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBTransactionQuery\fP \fBamount\fP ()"
+.br
+.RI "The amount of money that the transaction was for\&. "
+.ti -1c
+.RI "\fBTransactionQuery\fP \fBamountV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The amount of money that the transaction was for\&. "
+.ti -1c
+.RI "\fBTransactionQuery\fP \fBkind\fP ()"
+.br
+.RI "The kind of the transaction\&. "
+.ti -1c
+.RI "\fBTransactionQuery\fP \fBstatus\fP ()"
+.br
+.RI "The status of the transaction\&. "
+.ti -1c
+.RI "\fBTransactionQuery\fP \fBstatusV2\fP ()"
+.br
+.RI "The status of the transaction\&. "
+.ti -1c
+.RI "\fBTransactionQuery\fP \fBtest\fP ()"
+.br
+.RI "Whether the transaction was done in test mode or not\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+An object representing exchange of money for a product or service\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBTransactionQuery\fP Shopify\&.Unity\&.GraphQL\&.TransactionQuery\&.amount ()"
+
+.PP
+The amount of money that the transaction was for\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCamountV2\fP instead 
+.RE
+.PP
+
+.SS "\fBTransactionQuery\fP Shopify\&.Unity\&.GraphQL\&.TransactionQuery\&.status ()"
+
+.PP
+The status of the transaction\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCstatusV2\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

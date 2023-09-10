@@ -1,0 +1,7 @@
+<map id="AchromaAPI.AchromaInstanceAssets.GetItemIdByName" name="AchromaAPI.AchromaInstanceAssets.GetItemIdByName">
+<area shape="rect" id="Node000001" title="Returns the item id based on the name." alt="" coords="5,5,207,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_item.html#ae554fa23877ce098096f65dfacaee03e" title="Returns the Item based on its name." alt="" coords="255,5,461,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,23,239,23,239,28,207,28"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_control_file.html#a5f930199282c58987d0d921aba4e190a" title="Returns the item from the Control File with all its data." alt="" coords="509,5,705,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,23,494,23,494,28,462,28"/>
+</map>

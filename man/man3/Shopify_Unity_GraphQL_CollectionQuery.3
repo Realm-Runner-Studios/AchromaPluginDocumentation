@@ -1,0 +1,107 @@
+.TH "Shopify.Unity.GraphQL.CollectionQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.CollectionQuery \- A collection represents a grouping of products that a shop owner can create to organize them or make their shops easier to browse\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCollectionQuery\fP (StringBuilder query)"
+.br
+.RI "CollectionQuery is used to build queries\&. Typically CollectionQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBCollectionQuery\fP \fBdescription\fP (long? truncateAt=null, string alias=null)"
+.br
+.RI "Stripped description of the collection, single line with HTML tags removed\&. "
+.ti -1c
+.RI "\fBCollectionQuery\fP \fBdescriptionHtml\fP ()"
+.br
+.RI "The description of the collection, complete with HTML formatting\&. "
+.ti -1c
+.RI "\fBCollectionQuery\fP \fBhandle\fP ()"
+.br
+.RI "A human-friendly unique string for the collection automatically generated from its title\&. Limit of 255 characters\&. "
+.ti -1c
+.RI "\fBCollectionQuery\fP \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBCollectionQuery\fP \fBimage\fP (ImageDelegate buildQuery, long? maxWidth=null, long? maxHeight=null, \fBCropRegion\fP? crop=null, long? scale=null, string alias=null)"
+.br
+.RI "Image associated with the collection\&. "
+.ti -1c
+.RI "\fBCollectionQuery\fP \fBproducts\fP (ProductConnectionDelegate buildQuery, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, \fBProductCollectionSortKeys\fP? sortKey=null, string alias=null)"
+.br
+.RI "List of products in the collection\&. "
+.ti -1c
+.RI "\fBCollectionQuery\fP \fBtitle\fP ()"
+.br
+.RI "The collection’s name\&. Limit of 255 characters\&. "
+.ti -1c
+.RI "\fBCollectionQuery\fP \fBupdatedAt\fP ()"
+.br
+.RI "The date and time when the collection was last modified\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A collection represents a grouping of products that a shop owner can create to organize them or make their shops easier to browse\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCollectionQuery\fP Shopify\&.Unity\&.GraphQL\&.CollectionQuery\&.description (long? truncateAt = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+Stripped description of the collection, single line with HTML tags removed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItruncateAt\fP Truncates string after the given length\&. 
+.RE
+.PP
+
+.SS "\fBCollectionQuery\fP Shopify\&.Unity\&.GraphQL\&.CollectionQuery\&.image (ImageDelegate buildQuery, long? maxWidth = \fCnull\fP, long? maxHeight = \fCnull\fP, \fBCropRegion\fP? crop = \fCnull\fP, long? scale = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+Image associated with the collection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImaxWidth\fP Image width in pixels between 1 and 2048\&. This argument is deprecated: Use \fCmaxWidth\fP on \fCImage\&.transformedSrc\fP instead\&. 
+.br
+\fImaxHeight\fP Image height in pixels between 1 and 2048\&. This argument is deprecated: Use \fCmaxHeight\fP on \fCImage\&.transformedSrc\fP instead\&. 
+.br
+\fIcrop\fP Crops the image according to the specified region\&. This argument is deprecated: Use \fCcrop\fP on \fCImage\&.transformedSrc\fP instead\&. 
+.br
+\fIscale\fP Image size multiplier for high-resolution retina displays\&. Must be between 1 and 3\&. This argument is deprecated: Use \fCscale\fP on \fCImage\&.transformedSrc\fP instead\&. 
+.RE
+.PP
+
+.SS "\fBCollectionQuery\fP Shopify\&.Unity\&.GraphQL\&.CollectionQuery\&.products (ProductConnectionDelegate buildQuery, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, \fBProductCollectionSortKeys\fP? sortKey = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of products in the collection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.br
+\fIsortKey\fP Sort the underlying list by the given key\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

@@ -1,0 +1,236 @@
+.TH "Shopify.Unity.GraphQL.ProductVariantQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.ProductVariantQuery \- A product variant represents a different version of a product, such as differing sizes or differing colors\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProductVariantQuery\fP (StringBuilder query)"
+.br
+.RI "ProductVariantQuery is used to build queries\&. Typically ProductVariantQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBavailable\fP ()"
+.br
+.RI "Indicates if the product variant is in stock\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBavailableForSale\fP ()"
+.br
+.RI "Indicates if the product variant is available for sale\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBcompareAtPrice\fP ()"
+.br
+.RI "The compare at price of the variant\&. This can be used to mark a variant as on sale, when \fCcompareAtPrice\fP is higher than \fCprice\fP\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBcompareAtPriceV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The compare at price of the variant\&. This can be used to mark a variant as on sale, when \fCcompareAtPriceV2\fP is higher than \fCpriceV2\fP\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBimage\fP (ImageDelegate buildQuery, long? maxWidth=null, long? maxHeight=null, \fBCropRegion\fP? crop=null, long? scale=null, string alias=null)"
+.br
+.RI "Image associated with the product variant\&. This field falls back to the product image if no image is available\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBmetafield\fP (MetafieldDelegate buildQuery, string namespaceValue, string key, string alias=null)"
+.br
+.RI "The metafield associated with the resource\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBmetafields\fP (MetafieldConnectionDelegate buildQuery, string namespaceValue=null, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "A paginated list of metafields associated with the resource\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBpresentmentPrices\fP (ProductVariantPricePairConnectionDelegate buildQuery, List< \fBCurrencyCode\fP > presentmentCurrencies=null, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "List of prices and compare-at prices in the presentment currencies for this shop\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBpresentmentUnitPrices\fP (MoneyV2connectionDelegate buildQuery, List< \fBCurrencyCode\fP > presentmentCurrencies=null, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "List of unit prices in the presentment currencies for this shop\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBprice\fP ()"
+.br
+.RI "The product variant’s price\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBpriceV2\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The product variant’s price\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBproduct\fP (ProductDelegate buildQuery)"
+.br
+.RI "The product object that the product variant belongs to\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBrequiresShipping\fP ()"
+.br
+.RI "Whether a customer needs to provide a shipping address when placing an order for the product variant\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBselectedOptions\fP (SelectedOptionDelegate buildQuery)"
+.br
+.RI "List of product options applied to the variant\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBsku\fP ()"
+.br
+.RI "The SKU (stock keeping unit) associated with the variant\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBtitle\fP ()"
+.br
+.RI "The product variant’s title\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBunitPrice\fP (MoneyV2Delegate buildQuery)"
+.br
+.RI "The unit price value for the variant based on the variant's measurement\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBunitPriceMeasurement\fP (UnitPriceMeasurementDelegate buildQuery)"
+.br
+.RI "The unit price measurement for the variant\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBweight\fP ()"
+.br
+.RI "The weight of the product variant in the unit system specified with \fCweight_unit\fP\&. "
+.ti -1c
+.RI "\fBProductVariantQuery\fP \fBweightUnit\fP ()"
+.br
+.RI "Unit of measurement for weight\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A product variant represents a different version of a product, such as differing sizes or differing colors\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBProductVariantQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductVariantQuery\&.available ()"
+
+.PP
+Indicates if the product variant is in stock\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCavailableForSale\fP instead 
+.RE
+.PP
+
+.SS "\fBProductVariantQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductVariantQuery\&.compareAtPrice ()"
+
+.PP
+The compare at price of the variant\&. This can be used to mark a variant as on sale, when \fCcompareAtPrice\fP is higher than \fCprice\fP\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcompareAtPriceV2\fP instead 
+.RE
+.PP
+
+.SS "\fBProductVariantQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductVariantQuery\&.image (ImageDelegate buildQuery, long? maxWidth = \fCnull\fP, long? maxHeight = \fCnull\fP, \fBCropRegion\fP? crop = \fCnull\fP, long? scale = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+Image associated with the product variant\&. This field falls back to the product image if no image is available\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImaxWidth\fP Image width in pixels between 1 and 2048\&. This argument is deprecated: Use \fCmaxWidth\fP on \fCImage\&.transformedSrc\fP instead\&. 
+.br
+\fImaxHeight\fP Image height in pixels between 1 and 2048\&. This argument is deprecated: Use \fCmaxHeight\fP on \fCImage\&.transformedSrc\fP instead\&. 
+.br
+\fIcrop\fP Crops the image according to the specified region\&. This argument is deprecated: Use \fCcrop\fP on \fCImage\&.transformedSrc\fP instead\&. 
+.br
+\fIscale\fP Image size multiplier for high-resolution retina displays\&. Must be between 1 and 3\&. This argument is deprecated: Use \fCscale\fP on \fCImage\&.transformedSrc\fP instead\&. 
+.RE
+.PP
+
+.SS "\fBProductVariantQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductVariantQuery\&.metafield (MetafieldDelegate buildQuery, string namespaceValue, string key, string alias = \fCnull\fP)"
+
+.PP
+The metafield associated with the resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInamespace\fP Container for a set of metafields (maximum of 20 characters)\&. 
+.br
+\fIkey\fP Identifier for the metafield (maximum of 30 characters)\&. 
+.RE
+.PP
+
+.SS "\fBProductVariantQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductVariantQuery\&.metafields (MetafieldConnectionDelegate buildQuery, string namespaceValue = \fCnull\fP, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+A paginated list of metafields associated with the resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInamespace\fP Container for a set of metafields (maximum of 20 characters)\&. 
+.br
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBProductVariantQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductVariantQuery\&.presentmentPrices (ProductVariantPricePairConnectionDelegate buildQuery, List< \fBCurrencyCode\fP > presentmentCurrencies = \fCnull\fP, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of prices and compare-at prices in the presentment currencies for this shop\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpresentmentCurrencies\fP The presentment currencies prices should return in\&. 
+.br
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBProductVariantQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductVariantQuery\&.presentmentUnitPrices (MoneyV2connectionDelegate buildQuery, List< \fBCurrencyCode\fP > presentmentCurrencies = \fCnull\fP, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+List of unit prices in the presentment currencies for this shop\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpresentmentCurrencies\fP Specify the currencies in which to return presentment unit prices\&. 
+.br
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+.SS "\fBProductVariantQuery\fP Shopify\&.Unity\&.GraphQL\&.ProductVariantQuery\&.price ()"
+
+.PP
+The product variant’s price\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCpriceV2\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

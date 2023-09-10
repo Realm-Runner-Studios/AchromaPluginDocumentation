@@ -1,0 +1,74 @@
+\doxysection{Uni\+Web\+View\+Message Struct Reference}
+\hypertarget{struct_uni_web_view_message}{}\label{struct_uni_web_view_message}\index{UniWebViewMessage@{UniWebViewMessage}}
+
+
+A structure represents a message from webview.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_uni_web_view_message_ad91720c2afab4ab395cfe7ad15f4edd1}{Uni\+Web\+View\+Message}} (string raw\+Message)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the {\ttfamily \doxylink{struct_uni_web_view_message}{Uni\+Web\+View\+Message}} struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_uni_web_view_message_ab4e7cdc06795eae1e403bd7bb621ffa4}\label{struct_uni_web_view_message_ab4e7cdc06795eae1e403bd7bb621ffa4} 
+string {\bfseries Raw\+Message}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the raw message. It is the original url which initialized this message. \end{DoxyCompactList}\item 
+\Hypertarget{struct_uni_web_view_message_ae560240f9bba706837540b12b2edd42f}\label{struct_uni_web_view_message_ae560240f9bba706837540b12b2edd42f} 
+string {\bfseries Scheme}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The url scheme of this \doxylink{struct_uni_web_view_message}{Uni\+Web\+View\+Message}. "{}uniwebview"{} was added to message scheme list by default. You can add your own scheme by using {\ttfamily \doxylink{class_uni_web_view_a785e560917f32efe65d91874c632f7d5}{Uni\+Web\+View.\+Add\+Url\+Scheme}}. \end{DoxyCompactList}\item 
+\Hypertarget{struct_uni_web_view_message_a6a949d485b592c2a96974c6b833b5e71}\label{struct_uni_web_view_message_a6a949d485b592c2a96974c6b833b5e71} 
+string {\bfseries Path}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The path of this \doxylink{struct_uni_web_view_message}{Uni\+Web\+View\+Message}. This will be the decoded value for the path of original url. \end{DoxyCompactList}\item 
+Dictionary$<$ string, string $>$ \mbox{\hyperlink{struct_uni_web_view_message_a531ad8a1cbf761e5a7dbf9c1940fbea8}{Args}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The arguments of this \doxylink{struct_uni_web_view_message}{Uni\+Web\+View\+Message}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A structure represents a message from webview. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_uni_web_view_message_ad91720c2afab4ab395cfe7ad15f4edd1}\label{struct_uni_web_view_message_ad91720c2afab4ab395cfe7ad15f4edd1} 
+\index{UniWebViewMessage@{UniWebViewMessage}!UniWebViewMessage@{UniWebViewMessage}}
+\index{UniWebViewMessage@{UniWebViewMessage}!UniWebViewMessage@{UniWebViewMessage}}
+\doxysubsubsection{\texorpdfstring{UniWebViewMessage()}{UniWebViewMessage()}}
+{\footnotesize\ttfamily Uni\+Web\+View\+Message.\+Uni\+Web\+View\+Message (\begin{DoxyParamCaption}\item[{string}]{raw\+Message }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the {\ttfamily \doxylink{struct_uni_web_view_message}{Uni\+Web\+View\+Message}} struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Message} & Raw message which will be parsed to a \doxylink{struct_uni_web_view_message}{Uni\+Web\+View\+Message}.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_uni_web_view_message_ad91720c2afab4ab395cfe7ad15f4edd1_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{struct_uni_web_view_message_a531ad8a1cbf761e5a7dbf9c1940fbea8}\label{struct_uni_web_view_message_a531ad8a1cbf761e5a7dbf9c1940fbea8} 
+\index{UniWebViewMessage@{UniWebViewMessage}!Args@{Args}}
+\index{Args@{Args}!UniWebViewMessage@{UniWebViewMessage}}
+\doxysubsubsection{\texorpdfstring{Args}{Args}}
+{\footnotesize\ttfamily Dictionary$<$string, string$>$ Uni\+Web\+View\+Message.\+Args\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The arguments of this \doxylink{struct_uni_web_view_message}{Uni\+Web\+View\+Message}. 
+
+When received url "{}uniwebview\+://your\+Path?param1=value1\&param2=value2"{}, the args is a Dictionary with\+: Args\mbox{[}"{}param1"{}\mbox{]} = value1, Args\mbox{[}"{}param2"{}\mbox{]} = value2
+
+Both the key and valud will be url decoded from the original url. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Uni\+Web\+View/\+Script/Uni\+Web\+View\+Message.\+cs\end{DoxyCompactItemize}

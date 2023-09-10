@@ -1,0 +1,68 @@
+.TH "AchromaPopupWindow" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AchromaPopupWindow
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.PP
+Inherited by \fBAchroma\&.AchromaNewsUI\fP, \fBAchroma\&.AchromaShardShopUI\fP, \fBAchroma\&.AchromaSignInUI\fP, \fBAchroma\&.AchromaSignInUI\fP, \fBAchroma\&.AchromaSignInUI\fP, and \fBAchroma\&.AchromaSignInUI\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBHide\fP ()"
+.br
+.RI "This will set the element position to the bottom, making it disappear from the screen\&. "
+.ti -1c
+.RI "virtual void \fBFadeIn\fP (UnityAction result=null)"
+.br
+.RI "The method that will move the UI element up\&. "
+.ti -1c
+.RI "virtual void \fBFadeOut\fP (UnityAction result=null)"
+.br
+.RI "The Coroutine that will move the UI element down\&. "
+.ti -1c
+.RI "virtual void \fBUpdate\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float \fBspeed\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void AchromaPopupWindow\&.FadeIn (UnityAction result = \fCnull\fP)\fC [virtual]\fP"
+
+.PP
+The method that will move the UI element up\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresukt\fP The callback method that will be called once the element is on the top position
+.RE
+.PP
+
+.PP
+Reimplemented in \fBAchroma\&.AchromaNewsUI\fP, and \fBAchroma\&.AchromaShardShopUI\fP\&.
+.SS "virtual void AchromaPopupWindow\&.FadeOut (UnityAction result = \fCnull\fP)\fC [virtual]\fP"
+
+.PP
+The Coroutine that will move the UI element down\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresukt\fP The callback method that will be called once the element is on the bottom position
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

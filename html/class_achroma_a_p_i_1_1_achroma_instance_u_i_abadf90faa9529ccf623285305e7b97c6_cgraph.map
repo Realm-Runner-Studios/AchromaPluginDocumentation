@@ -1,0 +1,6 @@
+<map id="AchromaAPI.AchromaInstanceUI.AddUserNotification" name="AchromaAPI.AchromaInstanceUI.AddUserNotification">
+<area shape="rect" id="Node000001" title="Sends a notification on top of the screen with more paramenters, like color and a sprite reference,..." alt="" coords="5,29,207,70"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_u_i_controller.html#aeb9c26d1cfe7cd7c62357f6edcaa986d" title="Shows a notification on top of the screen with a message." alt="" coords="255,29,457,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,47,240,47,240,52,207,52"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="309,29,307,19,314,10,331,5,356,3,383,5,399,12,397,17,382,10,356,8,332,10,317,15,312,21,314,28"/>
+</map>

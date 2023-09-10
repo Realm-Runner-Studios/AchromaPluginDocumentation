@@ -1,0 +1,11 @@
+<map id="Achroma.AchromaFirebaseController.GetMatchData" name="Achroma.AchromaFirebaseController.GetMatchData">
+<area shape="rect" id="Node000001" title="Gets the json of a match given the session id." alt="" coords="547,39,785,79"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a7677c9fc75eec0344e156b0c9f2218d6" title="Based on a session id, it gives back the MatchData object." alt="" coords="255,5,499,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="532,46,499,42,500,37,533,41"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_database_controller.html#aa63b48152c5a84373e98b257c7c66588" title="Forces an update to the local match data by retrieving it from the database." alt="" coords="255,71,499,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="533,76,500,80,499,75,532,71"/>
+<area shape="rect" id="Node000003" href="$class_achroma_a_p_i_1_1_achroma_instance_match.html#a281f8f20e1cbc35ea293ac76ef9713b4" title="Based on a session id, it gives back the MatchData object." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="240,28,207,28,207,23,240,23"/>
+<area shape="rect" id="Node000005" href="$class_achroma_a_p_i_1_1_achroma_instance_match.html#a4fe70e7b7909bfa5fc13f54d46867bbd" title="Forces an update to the local match data by retrieving it from the database." alt="" coords="5,71,207,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="240,94,207,94,207,88,240,88"/>
+</map>

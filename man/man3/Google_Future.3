@@ -1,0 +1,32 @@
+.TH "Google.Future< T >" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Google.Future< T > \- Future return value\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "bool \fBPending\fP\fC [get]\fP"
+.br
+.RI "Gets a value indicating whether this T:Google\&.Future`1 is pending\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Future return value\&. 
+
+This class provides a promise of a result from a method call\&. The typical usage is to check the Pending property until it is false\&. At this time either the Status or Result will be available for use\&. Result is only set if the operation was successful\&. As a convience, a coroutine to complete a Task is provided\&. 
+.SH "Property Documentation"
+.PP 
+.SS "bool \fBGoogle\&.Future\fP< T >\&.Pending\fC [get]\fP"
+
+.PP
+Gets a value indicating whether this T:Google\&.Future`1 is pending\&. \fCtrue\fP if pending; otherwise, \fCfalse\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

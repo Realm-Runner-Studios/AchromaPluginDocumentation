@@ -1,0 +1,46 @@
+\doxysection{Shopify.\+Unity.\+SDK.\+Default\+Checkout\+Queries Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries}{}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries}\index{Shopify.Unity.SDK.DefaultCheckoutQueries@{Shopify.Unity.SDK.DefaultCheckoutQueries}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a7b9b4d77d2f7925244aba868daff7d02}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a7b9b4d77d2f7925244aba868daff7d02} 
+void {\bfseries Create} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} query, List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input}{Checkout\+Line\+Item\+Input}} $>$ line\+Items)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a2f6d9fe32c2f1dd09f60d52ab402a6dc}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a2f6d9fe32c2f1dd09f60d52ab402a6dc} 
+void {\bfseries Checkout\+Complete\+With\+Tokenized\+Payment\+V2} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} query, string checkout\+Id, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_tokenized_payment_input_v2}{Tokenized\+Payment\+Input\+V2}} tokenized\+Payment\+Input\+V2)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a945cb1bb6c89970317fba2cec7cdc3a6}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a945cb1bb6c89970317fba2cec7cdc3a6} 
+void {\bfseries Poll} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} query, string checkout\+Id)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_aea15072d29344fa60908ae11031538c6}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_aea15072d29344fa60908ae11031538c6} 
+void {\bfseries Completed} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} query, string checkout\+Id)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a40953ea7cb071f46f16f76c99ee4d44e}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a40953ea7cb071f46f16f76c99ee4d44e} 
+void {\bfseries Payment\+Poll} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} query, string payment\+Id)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a2b494d27194861c5d5bbd0c78f22d683}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a2b494d27194861c5d5bbd0c78f22d683} 
+void {\bfseries Available\+Shipping\+Rates\+Poll} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} query, string checkout\+Id)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_aab09ba9b3dbcccb50a41a1025c7db405}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_aab09ba9b3dbcccb50a41a1025c7db405} 
+void {\bfseries Line\+Items\+Remove} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} query, string checkout\+Id, List$<$ string $>$ line\+Item\+Ids)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a21b6727cc18a8640b63e9d0dbb15c73e}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a21b6727cc18a8640b63e9d0dbb15c73e} 
+void {\bfseries Line\+Items\+Add} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} query, string checkout\+Id, List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input}{Checkout\+Line\+Item\+Input}} $>$ line\+Items)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a981f840ff5f9fa112f67655c70429ca9}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a981f840ff5f9fa112f67655c70429ca9} 
+void {\bfseries Checkout\+Line\+Items\+Page} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_query_root_query}{Query\+Root\+Query}} query, string checkout\+Id, int first=250, string after=null)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a9c3b5c30ef700b2e11b39eef945d45c5}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a9c3b5c30ef700b2e11b39eef945d45c5} 
+void {\bfseries Shipping\+Address\+Update} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} query, string checkout\+Id, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address_input}{Mailing\+Address\+Input}} shipping\+Address)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_acdc0830806f9651991a337c534147163}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_acdc0830806f9651991a337c534147163} 
+void {\bfseries Email\+Update} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} query, string checkout\+Id, String email)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a2bdf57ec240faab46d6b146378e39ab9}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_default_checkout_queries_a2bdf57ec240faab46d6b146378e39ab9} 
+void {\bfseries Shipping\+Line\+Update} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} query, string checkout\+Id, String shipping\+Rate\+Handle)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+SDK/Default\+Checkout\+Queries.\+cs\end{DoxyCompactItemize}

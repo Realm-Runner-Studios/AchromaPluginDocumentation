@@ -1,0 +1,272 @@
+.TH "DevionGames.UIWidgets.DialogBox" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DevionGames.UIWidgets.DialogBox
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBDevionGames\&.UIWidgets\&.UIWidget\fP\&.
+.PP
+Inherited by \fBAchroma\&.AchromaShardShopDialogBox\fP, and \fBAchroma\&.FriendVisualizer\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBShow\fP (\fBNotificationOptions\fP settings, UnityAction< int > result, params string[] buttons)"
+.br
+.ti -1c
+.RI "virtual void \fBShow\fP (string \fBtitle\fP, string \fBtext\fP, params string[] buttons)"
+.br
+.RI "Show the MessageBox\&. "
+.ti -1c
+.RI "virtual void \fBShow\fP (string \fBtitle\fP, string \fBtext\fP, UnityAction< int > result, params string[] buttons)"
+.br
+.RI "Show the MessageBox\&. "
+.ti -1c
+.RI "virtual void \fBShow\fP (string \fBtitle\fP, string \fBtext\fP, Sprite \fBicon\fP, UnityAction< int > result, params string[] buttons)"
+.br
+.ti -1c
+.RI "virtual void \fBShow\fP (string \fBtitle\fP, string \fBtext\fP, Sprite \fBicon\fP, Sprite \fBicon2\fP, UnityAction< int > result, params string[] buttons)"
+.br
+.RI "Show the MessageBox\&. "
+.in -1c
+
+Public Member Functions inherited from \fBDevionGames\&.UIWidgets\&.UIWidget\fP
+.in +1c
+.ti -1c
+.RI "virtual void \fBShow\fP ()"
+.br
+.RI "Show this widget\&. "
+.ti -1c
+.RI "virtual void \fBClose\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBClose\fP (UnityAction result=null)"
+.br
+.RI "Close this widget\&. "
+.ti -1c
+.RI "virtual IEnumerator \fBDelayedClose\fP (UnityAction result)"
+.br
+.ti -1c
+.RI "virtual void \fBHide\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBToggle\fP ()"
+.br
+.RI "Toggle the visibility of this widget\&. "
+.ti -1c
+.RI "virtual void \fBFocus\fP ()"
+.br
+.RI "Brings the widget to the top\&. "
+.in -1c
+
+Public Member Functions inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "void \fBRegisterListener\fP (string eventID, UnityAction< \fBCallbackEventData\fP > call)"
+.br
+.ti -1c
+.RI "void \fBRemoveListener\fP (string eventID, UnityAction< \fBCallbackEventData\fP > call)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBautoClose\fP = true"
+.br
+.RI "Closes the window when a button is clicked\&. "
+.ti -1c
+.RI "TMP_Text \fBtitle_TMP\fP"
+.br
+.ti -1c
+.RI "Text \fBtitle\fP"
+.br
+.RI "The title component reference\&. "
+.ti -1c
+.RI "Text \fBtext\fP"
+.br
+.RI "The text component reference\&. "
+.ti -1c
+.RI "Image \fBicon\fP"
+.br
+.RI "The icon sprite reference\&. "
+.ti -1c
+.RI "Image \fBicon2\fP"
+.br
+.RI "The icon sprite reference\&. "
+.ti -1c
+.RI "Button \fBbutton\fP"
+.br
+.RI "The button prefab reference\&. "
+.ti -1c
+.RI "GameObject \fBiconParent\fP"
+.br
+.in -1c
+
+Public Attributes inherited from \fBDevionGames\&.UIWidgets\&.UIWidget\fP
+.in +1c
+.ti -1c
+.RI "int \fBpriority\fP"
+.br
+.ti -1c
+.RI "AudioClip \fBshowSound\fP"
+.br
+.RI "The AudioClip that will be played when this widget shows\&. "
+.ti -1c
+.RI "AudioClip \fBcloseSound\fP"
+.br
+.RI "The AudioClip that will be played when this widget closes\&. "
+.ti -1c
+.RI "\fBWidgetEvent\fP \fBonShow\fP"
+.br
+.RI "Events that will be invoked when this widget is shows\&. "
+.ti -1c
+.RI "\fBWidgetEvent\fP \fBonClose\fP"
+.br
+.RI "Events that will be invoked when this widget closes\&. "
+.in -1c
+
+Public Attributes inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "List< \fBCallbackHandler\&.Entry\fP > \fBdelegates\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBOnStart\fP ()"
+.br
+.in -1c
+
+Protected Member Functions inherited from \fBDevionGames\&.UIWidgets\&.UIWidget\fP
+.in +1c
+.ti -1c
+.RI "virtual void \fBOnAwake\fP ()"
+.br
+.in -1c
+
+Protected Member Functions inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "void \fBExecute\fP (string eventID, \fBCallbackEventData\fP eventData)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Types inherited from \fBDevionGames\&.UIWidgets\&.UIWidget\fP
+.in +1c
+.ti -1c
+.RI "enum \fBState\fP { \fBShowing\fP, \fBVisible\fP, \fBClosing\fP, \fBInvisible\fP }"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBDevionGames\&.UIWidgets\&.UIWidget\fP
+.in +1c
+.ti -1c
+.RI "bool \fBm_DeactivateOnClose\fP = true"
+.br
+.RI "If true deactivates the gameobject when closed\&. "
+.ti -1c
+.RI "RectTransform \fBm_RectTransform\fP"
+.br
+.RI "The RectTransform of the widget\&. "
+.ti -1c
+.RI "CanvasGroup \fBm_CanvasGroup\fP"
+.br
+.RI "The CanvasGroup of the widget\&. "
+.ti -1c
+.RI "State \fBm_CurrentState\fP"
+.br
+.in -1c
+
+Properties inherited from \fBDevionGames\&.UIWidgets\&.UIWidget\fP
+.in +1c
+.ti -1c
+.RI "string \fBName\fP\fC [get, set]\fP"
+.br
+.RI "Gets or sets the name\&. "
+.ti -1c
+.RI "override string[] \fBCallbacks\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "State \fBIsStateVisible\fP\fC [get]\fP"
+.br
+.RI "Gets a value indicating whether this widget is visible\&. "
+.ti -1c
+.RI "bool \fBIsVisible\fP\fC [get]\fP"
+.br
+.in -1c
+
+Properties inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "string[] \fBCallbacks\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "override void DevionGames\&.UIWidgets\&.DialogBox\&.OnStart ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBDevionGames\&.UIWidgets\&.UIWidget\fP\&.
+.SS "virtual void DevionGames\&.UIWidgets\&.DialogBox\&.Show (string title, string text, params string[] buttons)\fC [virtual]\fP"
+
+.PP
+Show the MessageBox\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItitle\fP Title\&.
+.br
+\fItext\fP Text\&.
+.br
+\fIbuttons\fP Buttons\&.
+.RE
+.PP
+
+.SS "virtual void DevionGames\&.UIWidgets\&.DialogBox\&.Show (string title, string text, Sprite icon, Sprite icon2, UnityAction< int > result, params string[] buttons)\fC [virtual]\fP"
+
+.PP
+Show the MessageBox\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItitle\fP Title\&.
+.br
+\fItext\fP Text\&.
+.br
+\fIicon\fP Icon\&.
+.br
+\fIresult\fP Result\&.
+.br
+\fIbuttons\fP Buttons\&.
+.RE
+.PP
+
+.SS "virtual void DevionGames\&.UIWidgets\&.DialogBox\&.Show (string title, string text, UnityAction< int > result, params string[] buttons)\fC [virtual]\fP"
+
+.PP
+Show the MessageBox\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItitle\fP Title\&.
+.br
+\fItext\fP Text\&.
+.br
+\fIresult\fP Result\&.
+.br
+\fIbuttons\fP Buttons\&.
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

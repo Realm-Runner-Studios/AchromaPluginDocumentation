@@ -1,0 +1,66 @@
+.TH "DevionGames.CameraEffects" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DevionGames.CameraEffects \- Camera Effects\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBShake\fP (float duration=1f, float speed=10f, Vector3? amount=null, Camera camera=null, bool deltaMovement=true, AnimationCurve curve=null)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "Vector3 \fBamount\fP = new Vector3(1f, 1f, 0)"
+.br
+.ti -1c
+.RI "float \fBduration\fP = 1"
+.br
+.ti -1c
+.RI "float \fBspeed\fP = 10"
+.br
+.ti -1c
+.RI "AnimationCurve \fBcurve\fP = AnimationCurve\&.EaseInOut(0, 1, 1, 0)"
+.br
+.ti -1c
+.RI "bool \fBdeltaMovement\fP = true"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "Camera \fBm_Camera\fP"
+.br
+.ti -1c
+.RI "float \fBm_Time\fP = 0"
+.br
+.ti -1c
+.RI "Vector3 \fBm_LastPosition\fP"
+.br
+.ti -1c
+.RI "Vector3 \fBm_NextPosition\fP"
+.br
+.ti -1c
+.RI "float \fBm_LastFieldOfView\fP"
+.br
+.ti -1c
+.RI "float \fBm_NextFieldOfView\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Camera Effects\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

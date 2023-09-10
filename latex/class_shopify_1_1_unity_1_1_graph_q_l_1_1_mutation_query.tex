@@ -1,0 +1,894 @@
+\doxysection{Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+
+
+Mutation\+Query is the root mutation builder. All Storefront API mutation queries are built off of Mutation\+Query.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a96441cb1d2cbac8ff01c6d2964672c54}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a96441cb1d2cbac8ff01c6d2964672c54} 
+{\bfseries Mutation\+Query} ()
+\begin{DoxyCompactList}\small\item\em Mutation\+Query constructor accepts no parameters but it will create a root mutation builder. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a747ce9e4444984226e603753e1d0a552}{checkout\+Attributes\+Update}} (Checkout\+Attributes\+Update\+Payload\+Delegate build\+Query, string checkout\+Id, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_input}{Checkout\+Attributes\+Update\+Input}} input, string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the attributes of a checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_af18025d78dd5d06be971c4c3e6b1535c}{checkout\+Attributes\+Update\+V2}} (Checkout\+Attributes\+Update\+V2payload\+Delegate build\+Query, string checkout\+Id, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_v2input}{Checkout\+Attributes\+Update\+V2input}} input, string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the attributes of a checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ae040cdd0bf19da7d6d6a1912096c602c}{checkout\+Complete\+Free}} (Checkout\+Complete\+Free\+Payload\+Delegate build\+Query, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Completes a checkout without providing payment information. You can use this mutation for free items or items whose purchase price is covered by a gift card. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a34582d5956d44b84502ce7ff59b1ad80}{checkout\+Complete\+With\+Credit\+Card}} (Checkout\+Complete\+With\+Credit\+Card\+Payload\+Delegate build\+Query, string checkout\+Id, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_credit_card_payment_input}{Credit\+Card\+Payment\+Input}} payment, string alias=null)
+\begin{DoxyCompactList}\small\item\em Completes a checkout using a credit card token from \doxylink{namespace_shopify}{Shopify}\textquotesingle{}s Vault. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a8af05d93d2ffa353dc8a1ee80fc6b38c}{checkout\+Complete\+With\+Credit\+Card\+V2}} (Checkout\+Complete\+With\+Credit\+Card\+V2payload\+Delegate build\+Query, string checkout\+Id, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_credit_card_payment_input_v2}{Credit\+Card\+Payment\+Input\+V2}} payment, string alias=null)
+\begin{DoxyCompactList}\small\item\em Completes a checkout using a credit card token from \doxylink{namespace_shopify}{Shopify}\textquotesingle{}s card vault. Before you can complete checkouts using Checkout\+Complete\+With\+Credit\+Card\+V2, you need to \href{https://help.shopify.com/api/guides/sales-channel-sdk/getting-started\#request-payment-processing}{\texttt{ {\itshape request payment processing}}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a2fafc07bebdcbf9c11dbcf9cfedcb74b}{checkout\+Complete\+With\+Tokenized\+Payment}} (Checkout\+Complete\+With\+Tokenized\+Payment\+Payload\+Delegate build\+Query, string checkout\+Id, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_tokenized_payment_input}{Tokenized\+Payment\+Input}} payment, string alias=null)
+\begin{DoxyCompactList}\small\item\em Completes a checkout with a tokenized payment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a3298337db1d15fb8da43992b283ffcf2}{checkout\+Complete\+With\+Tokenized\+Payment\+V2}} (Checkout\+Complete\+With\+Tokenized\+Payment\+V2payload\+Delegate build\+Query, string checkout\+Id, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_tokenized_payment_input_v2}{Tokenized\+Payment\+Input\+V2}} payment, string alias=null)
+\begin{DoxyCompactList}\small\item\em Completes a checkout with a tokenized payment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a2c510c9774ae36e0797cd7c5cbaa2f48}{checkout\+Create}} (Checkout\+Create\+Payload\+Delegate build\+Query, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_create_input}{Checkout\+Create\+Input}} input, string alias=null)
+\begin{DoxyCompactList}\small\item\em Creates a new checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a9a480a300ccd201d73634a9d065e97b3}{checkout\+Customer\+Associate}} (Checkout\+Customer\+Associate\+Payload\+Delegate build\+Query, string checkout\+Id, string customer\+Access\+Token, string alias=null)
+\begin{DoxyCompactList}\small\item\em Associates a customer to the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_afda0a8cc2beefde3ec18a2bd33ff23ac}{checkout\+Customer\+Associate\+V2}} (Checkout\+Customer\+Associate\+V2payload\+Delegate build\+Query, string checkout\+Id, string customer\+Access\+Token, string alias=null)
+\begin{DoxyCompactList}\small\item\em Associates a customer to the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aecc44434929f04b715c9e928b5ebc0e9}{checkout\+Customer\+Disassociate}} (Checkout\+Customer\+Disassociate\+Payload\+Delegate build\+Query, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Disassociates the current checkout customer from the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a572f9ce95caab283c08a24449e0b225f}{checkout\+Customer\+Disassociate\+V2}} (Checkout\+Customer\+Disassociate\+V2payload\+Delegate build\+Query, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Disassociates the current checkout customer from the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aa3c1b897d6c5ba3a4845f08650061a2f}{checkout\+Discount\+Code\+Apply}} (Checkout\+Discount\+Code\+Apply\+Payload\+Delegate build\+Query, string discount\+Code, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Applies a discount to an existing checkout using a discount code. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a9669d6c39238645651227c3c17fe377c}{checkout\+Discount\+Code\+Apply\+V2}} (Checkout\+Discount\+Code\+Apply\+V2payload\+Delegate build\+Query, string discount\+Code, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Applies a discount to an existing checkout using a discount code. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_adbaf8b48fe1f5e74c8a4570c278ab996}{checkout\+Discount\+Code\+Remove}} (Checkout\+Discount\+Code\+Remove\+Payload\+Delegate build\+Query, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Removes the applied discount from an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a32bc7fe496a8f3cc4f15dae419a717ef}{checkout\+Email\+Update}} (Checkout\+Email\+Update\+Payload\+Delegate build\+Query, string checkout\+Id, string email, string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the email on an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a2bcabf5f5c0af11dc98fd93a13483824}{checkout\+Email\+Update\+V2}} (Checkout\+Email\+Update\+V2payload\+Delegate build\+Query, string checkout\+Id, string email, string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the email on an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a5fe767f93285932741e18bad5ac5e2dd}{checkout\+Gift\+Card\+Apply}} (Checkout\+Gift\+Card\+Apply\+Payload\+Delegate build\+Query, string gift\+Card\+Code, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Applies a gift card to an existing checkout using a gift card code. This will replace all currently applied gift cards. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a6eeb8bbd32b3d40a70271f75c023a0f8}{checkout\+Gift\+Card\+Remove}} (Checkout\+Gift\+Card\+Remove\+Payload\+Delegate build\+Query, string applied\+Gift\+Card\+Id, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Removes an applied gift card from the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ad8ccc8d2bb2ba04e1b2f30156da00183}{checkout\+Gift\+Card\+Remove\+V2}} (Checkout\+Gift\+Card\+Remove\+V2payload\+Delegate build\+Query, string applied\+Gift\+Card\+Id, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Removes an applied gift card from the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a1fd2b638000d959c475d60f408e0fd5b}{checkout\+Gift\+Cards\+Append}} (Checkout\+Gift\+Cards\+Append\+Payload\+Delegate build\+Query, List$<$ string $>$ gift\+Card\+Codes, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Appends gift cards to an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_abbf3a9e481e369d711b25a47bb9c08ee}{checkout\+Line\+Items\+Add}} (Checkout\+Line\+Items\+Add\+Payload\+Delegate build\+Query, List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input}{Checkout\+Line\+Item\+Input}} $>$ line\+Items, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Adds a list of line items to a checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a7a1ebf379589a1393032936c40636c89}{checkout\+Line\+Items\+Remove}} (Checkout\+Line\+Items\+Remove\+Payload\+Delegate build\+Query, string checkout\+Id, List$<$ string $>$ line\+Item\+Ids, string alias=null)
+\begin{DoxyCompactList}\small\item\em Removes line items from an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_af717b66aa511fadab07ed855f539f78f}{checkout\+Line\+Items\+Replace}} (Checkout\+Line\+Items\+Replace\+Payload\+Delegate build\+Query, List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input}{Checkout\+Line\+Item\+Input}} $>$ line\+Items, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Sets a list of line items to a checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a9fd9b601cee14bbc47afd8a0444e73de}{checkout\+Line\+Items\+Update}} (Checkout\+Line\+Items\+Update\+Payload\+Delegate build\+Query, string checkout\+Id, List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_update_input}{Checkout\+Line\+Item\+Update\+Input}} $>$ line\+Items, string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates line items on a checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_abfa707237c19596bcd8c6a5b7a199bba}{checkout\+Shipping\+Address\+Update}} (Checkout\+Shipping\+Address\+Update\+Payload\+Delegate build\+Query, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address_input}{Mailing\+Address\+Input}} shipping\+Address, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the shipping address of an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a38d7c42a9b5ecea2aaff7d47f840c688}{checkout\+Shipping\+Address\+Update\+V2}} (Checkout\+Shipping\+Address\+Update\+V2payload\+Delegate build\+Query, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address_input}{Mailing\+Address\+Input}} shipping\+Address, string checkout\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the shipping address of an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a03133cce6516ecad4dde844688462201}{checkout\+Shipping\+Line\+Update}} (Checkout\+Shipping\+Line\+Update\+Payload\+Delegate build\+Query, string checkout\+Id, string shipping\+Rate\+Handle, string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the shipping lines on an existing checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a7ed722dad6ef3db50b1a5c24cfd7c990}{customer\+Access\+Token\+Create}} (Customer\+Access\+Token\+Create\+Payload\+Delegate build\+Query, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_access_token_create_input}{Customer\+Access\+Token\+Create\+Input}} input, string alias=null)
+\begin{DoxyCompactList}\small\item\em Creates a customer access token. The customer access token is required to modify the customer object in any way. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aa163d2d8cde264a3f39c54870ea63c59}{customer\+Access\+Token\+Delete}} (Customer\+Access\+Token\+Delete\+Payload\+Delegate build\+Query, string customer\+Access\+Token, string alias=null)
+\begin{DoxyCompactList}\small\item\em Permanently destroys a customer access token. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ab4cbf6ee70501526966aba96d5e0c7d8}{customer\+Access\+Token\+Renew}} (Customer\+Access\+Token\+Renew\+Payload\+Delegate build\+Query, string customer\+Access\+Token, string alias=null)
+\begin{DoxyCompactList}\small\item\em Renews a customer access token. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ac33d5ca02f5ebb370dbefd66c81a266f}{customer\+Activate}} (Customer\+Activate\+Payload\+Delegate build\+Query, string id, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_activate_input}{Customer\+Activate\+Input}} input, string alias=null)
+\begin{DoxyCompactList}\small\item\em Activates a customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a50e59df7d9f7396f323b9a992501eebc}{customer\+Address\+Create}} (Customer\+Address\+Create\+Payload\+Delegate build\+Query, string customer\+Access\+Token, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address_input}{Mailing\+Address\+Input}} address, string alias=null)
+\begin{DoxyCompactList}\small\item\em Creates a new address for a customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a2db69c3cb01e684ed40507bc6e2b1d88}{customer\+Address\+Delete}} (Customer\+Address\+Delete\+Payload\+Delegate build\+Query, string id, string customer\+Access\+Token, string alias=null)
+\begin{DoxyCompactList}\small\item\em Permanently deletes the address of an existing customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a136e7a545599fe02811fb37bf907fd09}{customer\+Address\+Update}} (Customer\+Address\+Update\+Payload\+Delegate build\+Query, string customer\+Access\+Token, string id, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address_input}{Mailing\+Address\+Input}} address, string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the address of an existing customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aab0fc2b162c58bfdd4625cc80e309f83}{customer\+Create}} (Customer\+Create\+Payload\+Delegate build\+Query, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_create_input}{Customer\+Create\+Input}} input, string alias=null)
+\begin{DoxyCompactList}\small\item\em Creates a new customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a4b8244029fbb06bc34b31e10af0ed553}{customer\+Default\+Address\+Update}} (Customer\+Default\+Address\+Update\+Payload\+Delegate build\+Query, string customer\+Access\+Token, string address\+Id, string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates the default address of an existing customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a32c4191f953b125e77b8b333c40e32c9}{customer\+Recover}} (Customer\+Recover\+Payload\+Delegate build\+Query, string email, string alias=null)
+\begin{DoxyCompactList}\small\item\em Sends a reset password email to the customer, as the first step in the reset password process. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a7fb4189e7952df6a72257ef5f73259d1}{customer\+Reset}} (Customer\+Reset\+Payload\+Delegate build\+Query, string id, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_reset_input}{Customer\+Reset\+Input}} input, string alias=null)
+\begin{DoxyCompactList}\small\item\em Resets a customer’s password with a token received from {\ttfamily Customer\+Recover}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ac32e7efab1bb015ea0118b3e9e98bc46}{customer\+Reset\+By\+Url}} (Customer\+Reset\+By\+Url\+Payload\+Delegate build\+Query, string reset\+Url, string password, string alias=null)
+\begin{DoxyCompactList}\small\item\em Resets a customer’s password with the reset password url received from {\ttfamily Customer\+Recover}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a26786d9e4956a1b9e17b65f98d14cf8c}{customer\+Update}} (Customer\+Update\+Payload\+Delegate build\+Query, string customer\+Access\+Token, \mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_update_input}{Customer\+Update\+Input}} customer, string alias=null)
+\begin{DoxyCompactList}\small\item\em Updates an existing customer. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aee662595ec70cd6fe76d0bbf85523923}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aee662595ec70cd6fe76d0bbf85523923} 
+override string {\bfseries To\+String} ()
+\begin{DoxyCompactList}\small\item\em Will return a Graph\+QL query. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Mutation\+Query is the root mutation builder. All Storefront API mutation queries are built off of Mutation\+Query. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a747ce9e4444984226e603753e1d0a552}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a747ce9e4444984226e603753e1d0a552} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutAttributesUpdate@{checkoutAttributesUpdate}}
+\index{checkoutAttributesUpdate@{checkoutAttributesUpdate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutAttributesUpdate()}{checkoutAttributesUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Attributes\+Update (\begin{DoxyParamCaption}\item[{Checkout\+Attributes\+Update\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_input}{Checkout\+Attributes\+Update\+Input}}}]{input,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the attributes of a checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000093}{Deprecated}}]Use {\ttfamily checkout\+Attributes\+Update\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+{\em input} & The fields used to update a checkout\textquotesingle{}s attributes. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_af18025d78dd5d06be971c4c3e6b1535c}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_af18025d78dd5d06be971c4c3e6b1535c} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutAttributesUpdateV2@{checkoutAttributesUpdateV2}}
+\index{checkoutAttributesUpdateV2@{checkoutAttributesUpdateV2}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutAttributesUpdateV2()}{checkoutAttributesUpdateV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Attributes\+Update\+V2 (\begin{DoxyParamCaption}\item[{Checkout\+Attributes\+Update\+V2payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_attributes_update_v2input}{Checkout\+Attributes\+Update\+V2input}}}]{input,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the attributes of a checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+{\em input} & The checkout attributes to update. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 1
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ae040cdd0bf19da7d6d6a1912096c602c}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ae040cdd0bf19da7d6d6a1912096c602c} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutCompleteFree@{checkoutCompleteFree}}
+\index{checkoutCompleteFree@{checkoutCompleteFree}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutCompleteFree()}{checkoutCompleteFree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Complete\+Free (\begin{DoxyParamCaption}\item[{Checkout\+Complete\+Free\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Completes a checkout without providing payment information. You can use this mutation for free items or items whose purchase price is covered by a gift card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a34582d5956d44b84502ce7ff59b1ad80}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a34582d5956d44b84502ce7ff59b1ad80} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutCompleteWithCreditCard@{checkoutCompleteWithCreditCard}}
+\index{checkoutCompleteWithCreditCard@{checkoutCompleteWithCreditCard}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutCompleteWithCreditCard()}{checkoutCompleteWithCreditCard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Complete\+With\+Credit\+Card (\begin{DoxyParamCaption}\item[{Checkout\+Complete\+With\+Credit\+Card\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_credit_card_payment_input}{Credit\+Card\+Payment\+Input}}}]{payment,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Completes a checkout using a credit card token from \doxylink{namespace_shopify}{Shopify}\textquotesingle{}s Vault. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000094}{Deprecated}}]Use {\ttfamily checkout\+Complete\+With\+Credit\+Card\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+{\em payment} & The credit card info to apply as a payment. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 3
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a8af05d93d2ffa353dc8a1ee80fc6b38c}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a8af05d93d2ffa353dc8a1ee80fc6b38c} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutCompleteWithCreditCardV2@{checkoutCompleteWithCreditCardV2}}
+\index{checkoutCompleteWithCreditCardV2@{checkoutCompleteWithCreditCardV2}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutCompleteWithCreditCardV2()}{checkoutCompleteWithCreditCardV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Complete\+With\+Credit\+Card\+V2 (\begin{DoxyParamCaption}\item[{Checkout\+Complete\+With\+Credit\+Card\+V2payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_credit_card_payment_input_v2}{Credit\+Card\+Payment\+Input\+V2}}}]{payment,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Completes a checkout using a credit card token from \doxylink{namespace_shopify}{Shopify}\textquotesingle{}s card vault. Before you can complete checkouts using Checkout\+Complete\+With\+Credit\+Card\+V2, you need to \href{https://help.shopify.com/api/guides/sales-channel-sdk/getting-started\#request-payment-processing}{\texttt{ {\itshape request payment processing}}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+{\em payment} & The credit card info to apply as a payment. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 4
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a2fafc07bebdcbf9c11dbcf9cfedcb74b}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a2fafc07bebdcbf9c11dbcf9cfedcb74b} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutCompleteWithTokenizedPayment@{checkoutCompleteWithTokenizedPayment}}
+\index{checkoutCompleteWithTokenizedPayment@{checkoutCompleteWithTokenizedPayment}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutCompleteWithTokenizedPayment()}{checkoutCompleteWithTokenizedPayment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Complete\+With\+Tokenized\+Payment (\begin{DoxyParamCaption}\item[{Checkout\+Complete\+With\+Tokenized\+Payment\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_tokenized_payment_input}{Tokenized\+Payment\+Input}}}]{payment,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Completes a checkout with a tokenized payment. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000095}{Deprecated}}]Use {\ttfamily checkout\+Complete\+With\+Tokenized\+Payment\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+{\em payment} & The info to apply as a tokenized payment. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 5
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a3298337db1d15fb8da43992b283ffcf2}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a3298337db1d15fb8da43992b283ffcf2} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutCompleteWithTokenizedPaymentV2@{checkoutCompleteWithTokenizedPaymentV2}}
+\index{checkoutCompleteWithTokenizedPaymentV2@{checkoutCompleteWithTokenizedPaymentV2}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutCompleteWithTokenizedPaymentV2()}{checkoutCompleteWithTokenizedPaymentV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Complete\+With\+Tokenized\+Payment\+V2 (\begin{DoxyParamCaption}\item[{Checkout\+Complete\+With\+Tokenized\+Payment\+V2payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_tokenized_payment_input_v2}{Tokenized\+Payment\+Input\+V2}}}]{payment,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Completes a checkout with a tokenized payment. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000096}{Deprecated}}]Use {\ttfamily checkout\+Complete\+With\+Tokenized\+Payment\+V3} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+{\em payment} & The info to apply as a tokenized payment. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 6
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a2c510c9774ae36e0797cd7c5cbaa2f48}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a2c510c9774ae36e0797cd7c5cbaa2f48} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutCreate@{checkoutCreate}}
+\index{checkoutCreate@{checkoutCreate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutCreate()}{checkoutCreate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Create (\begin{DoxyParamCaption}\item[{Checkout\+Create\+Payload\+Delegate}]{build\+Query,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_create_input}{Checkout\+Create\+Input}}}]{input,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Creates a new checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The fields used to create a checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 7
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a9a480a300ccd201d73634a9d065e97b3}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a9a480a300ccd201d73634a9d065e97b3} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutCustomerAssociate@{checkoutCustomerAssociate}}
+\index{checkoutCustomerAssociate@{checkoutCustomerAssociate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutCustomerAssociate()}{checkoutCustomerAssociate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Customer\+Associate (\begin{DoxyParamCaption}\item[{Checkout\+Customer\+Associate\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{string}]{customer\+Access\+Token,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Associates a customer to the checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000097}{Deprecated}}]Use {\ttfamily checkout\+Customer\+Associate\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+{\em customer\+Access\+Token} & The customer access token of the customer to associate. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 8
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_afda0a8cc2beefde3ec18a2bd33ff23ac}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_afda0a8cc2beefde3ec18a2bd33ff23ac} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutCustomerAssociateV2@{checkoutCustomerAssociateV2}}
+\index{checkoutCustomerAssociateV2@{checkoutCustomerAssociateV2}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutCustomerAssociateV2()}{checkoutCustomerAssociateV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Customer\+Associate\+V2 (\begin{DoxyParamCaption}\item[{Checkout\+Customer\+Associate\+V2payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{string}]{customer\+Access\+Token,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Associates a customer to the checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+{\em customer\+Access\+Token} & The customer access token of the customer to associate. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 9
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aecc44434929f04b715c9e928b5ebc0e9}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aecc44434929f04b715c9e928b5ebc0e9} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutCustomerDisassociate@{checkoutCustomerDisassociate}}
+\index{checkoutCustomerDisassociate@{checkoutCustomerDisassociate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutCustomerDisassociate()}{checkoutCustomerDisassociate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Customer\+Disassociate (\begin{DoxyParamCaption}\item[{Checkout\+Customer\+Disassociate\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Disassociates the current checkout customer from the checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000098}{Deprecated}}]Use {\ttfamily checkout\+Customer\+Disassociate\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 10
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a572f9ce95caab283c08a24449e0b225f}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a572f9ce95caab283c08a24449e0b225f} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutCustomerDisassociateV2@{checkoutCustomerDisassociateV2}}
+\index{checkoutCustomerDisassociateV2@{checkoutCustomerDisassociateV2}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutCustomerDisassociateV2()}{checkoutCustomerDisassociateV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Customer\+Disassociate\+V2 (\begin{DoxyParamCaption}\item[{Checkout\+Customer\+Disassociate\+V2payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Disassociates the current checkout customer from the checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 11
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aa3c1b897d6c5ba3a4845f08650061a2f}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aa3c1b897d6c5ba3a4845f08650061a2f} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutDiscountCodeApply@{checkoutDiscountCodeApply}}
+\index{checkoutDiscountCodeApply@{checkoutDiscountCodeApply}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutDiscountCodeApply()}{checkoutDiscountCodeApply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Discount\+Code\+Apply (\begin{DoxyParamCaption}\item[{Checkout\+Discount\+Code\+Apply\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{discount\+Code,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Applies a discount to an existing checkout using a discount code. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000099}{Deprecated}}]Use {\ttfamily checkout\+Discount\+Code\+Apply\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em discount\+Code} & The discount code to apply to the checkout. \\
+\hline
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 12
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a9669d6c39238645651227c3c17fe377c}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a9669d6c39238645651227c3c17fe377c} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutDiscountCodeApplyV2@{checkoutDiscountCodeApplyV2}}
+\index{checkoutDiscountCodeApplyV2@{checkoutDiscountCodeApplyV2}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutDiscountCodeApplyV2()}{checkoutDiscountCodeApplyV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Discount\+Code\+Apply\+V2 (\begin{DoxyParamCaption}\item[{Checkout\+Discount\+Code\+Apply\+V2payload\+Delegate}]{build\+Query,  }\item[{string}]{discount\+Code,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Applies a discount to an existing checkout using a discount code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em discount\+Code} & The discount code to apply to the checkout. \\
+\hline
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 13
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_adbaf8b48fe1f5e74c8a4570c278ab996}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_adbaf8b48fe1f5e74c8a4570c278ab996} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutDiscountCodeRemove@{checkoutDiscountCodeRemove}}
+\index{checkoutDiscountCodeRemove@{checkoutDiscountCodeRemove}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutDiscountCodeRemove()}{checkoutDiscountCodeRemove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Discount\+Code\+Remove (\begin{DoxyParamCaption}\item[{Checkout\+Discount\+Code\+Remove\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Removes the applied discount from an existing checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 14
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a32bc7fe496a8f3cc4f15dae419a717ef}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a32bc7fe496a8f3cc4f15dae419a717ef} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutEmailUpdate@{checkoutEmailUpdate}}
+\index{checkoutEmailUpdate@{checkoutEmailUpdate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutEmailUpdate()}{checkoutEmailUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Email\+Update (\begin{DoxyParamCaption}\item[{Checkout\+Email\+Update\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{string}]{email,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the email on an existing checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000100}{Deprecated}}]Use {\ttfamily checkout\+Email\+Update\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+{\em email} & The email to update the checkout with. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 15
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a2bcabf5f5c0af11dc98fd93a13483824}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a2bcabf5f5c0af11dc98fd93a13483824} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutEmailUpdateV2@{checkoutEmailUpdateV2}}
+\index{checkoutEmailUpdateV2@{checkoutEmailUpdateV2}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutEmailUpdateV2()}{checkoutEmailUpdateV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Email\+Update\+V2 (\begin{DoxyParamCaption}\item[{Checkout\+Email\+Update\+V2payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{string}]{email,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the email on an existing checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+{\em email} & The email to update the checkout with. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 16
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a5fe767f93285932741e18bad5ac5e2dd}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a5fe767f93285932741e18bad5ac5e2dd} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutGiftCardApply@{checkoutGiftCardApply}}
+\index{checkoutGiftCardApply@{checkoutGiftCardApply}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutGiftCardApply()}{checkoutGiftCardApply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Gift\+Card\+Apply (\begin{DoxyParamCaption}\item[{Checkout\+Gift\+Card\+Apply\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{gift\+Card\+Code,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Applies a gift card to an existing checkout using a gift card code. This will replace all currently applied gift cards. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000101}{Deprecated}}]Use {\ttfamily checkout\+Gift\+Cards\+Append} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em gift\+Card\+Code} & The code of the gift card to apply on the checkout. \\
+\hline
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 17
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a6eeb8bbd32b3d40a70271f75c023a0f8}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a6eeb8bbd32b3d40a70271f75c023a0f8} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutGiftCardRemove@{checkoutGiftCardRemove}}
+\index{checkoutGiftCardRemove@{checkoutGiftCardRemove}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutGiftCardRemove()}{checkoutGiftCardRemove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Gift\+Card\+Remove (\begin{DoxyParamCaption}\item[{Checkout\+Gift\+Card\+Remove\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{applied\+Gift\+Card\+Id,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Removes an applied gift card from the checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000102}{Deprecated}}]Use {\ttfamily checkout\+Gift\+Card\+Remove\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em applied\+Gift\+Card\+Id} & The ID of the Applied Gift Card to remove from the Checkout. \\
+\hline
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 18
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ad8ccc8d2bb2ba04e1b2f30156da00183}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ad8ccc8d2bb2ba04e1b2f30156da00183} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutGiftCardRemoveV2@{checkoutGiftCardRemoveV2}}
+\index{checkoutGiftCardRemoveV2@{checkoutGiftCardRemoveV2}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutGiftCardRemoveV2()}{checkoutGiftCardRemoveV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Gift\+Card\+Remove\+V2 (\begin{DoxyParamCaption}\item[{Checkout\+Gift\+Card\+Remove\+V2payload\+Delegate}]{build\+Query,  }\item[{string}]{applied\+Gift\+Card\+Id,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Removes an applied gift card from the checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em applied\+Gift\+Card\+Id} & The ID of the Applied Gift Card to remove from the Checkout. \\
+\hline
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 19
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a1fd2b638000d959c475d60f408e0fd5b}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a1fd2b638000d959c475d60f408e0fd5b} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutGiftCardsAppend@{checkoutGiftCardsAppend}}
+\index{checkoutGiftCardsAppend@{checkoutGiftCardsAppend}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutGiftCardsAppend()}{checkoutGiftCardsAppend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Gift\+Cards\+Append (\begin{DoxyParamCaption}\item[{Checkout\+Gift\+Cards\+Append\+Payload\+Delegate}]{build\+Query,  }\item[{List$<$ string $>$}]{gift\+Card\+Codes,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Appends gift cards to an existing checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gift\+Card\+Codes} & A list of gift card codes to append to the checkout. \\
+\hline
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 20
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_abbf3a9e481e369d711b25a47bb9c08ee}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_abbf3a9e481e369d711b25a47bb9c08ee} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutLineItemsAdd@{checkoutLineItemsAdd}}
+\index{checkoutLineItemsAdd@{checkoutLineItemsAdd}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutLineItemsAdd()}{checkoutLineItemsAdd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Line\+Items\+Add (\begin{DoxyParamCaption}\item[{Checkout\+Line\+Items\+Add\+Payload\+Delegate}]{build\+Query,  }\item[{List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input}{Checkout\+Line\+Item\+Input}} $>$}]{line\+Items,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Adds a list of line items to a checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+Items} & A list of line item objects to add to the checkout. \\
+\hline
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 21
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a7a1ebf379589a1393032936c40636c89}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a7a1ebf379589a1393032936c40636c89} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutLineItemsRemove@{checkoutLineItemsRemove}}
+\index{checkoutLineItemsRemove@{checkoutLineItemsRemove}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutLineItemsRemove()}{checkoutLineItemsRemove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Line\+Items\+Remove (\begin{DoxyParamCaption}\item[{Checkout\+Line\+Items\+Remove\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{List$<$ string $>$}]{line\+Item\+Ids,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Removes line items from an existing checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The checkout on which to remove line items. \\
+\hline
+{\em line\+Item\+Ids} & Line item ids to remove. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 22
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_af717b66aa511fadab07ed855f539f78f}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_af717b66aa511fadab07ed855f539f78f} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutLineItemsReplace@{checkoutLineItemsReplace}}
+\index{checkoutLineItemsReplace@{checkoutLineItemsReplace}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutLineItemsReplace()}{checkoutLineItemsReplace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Line\+Items\+Replace (\begin{DoxyParamCaption}\item[{Checkout\+Line\+Items\+Replace\+Payload\+Delegate}]{build\+Query,  }\item[{List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input}{Checkout\+Line\+Item\+Input}} $>$}]{line\+Items,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Sets a list of line items to a checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+Items} & A list of line item objects to set on the checkout. \\
+\hline
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 23
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a9fd9b601cee14bbc47afd8a0444e73de}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a9fd9b601cee14bbc47afd8a0444e73de} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutLineItemsUpdate@{checkoutLineItemsUpdate}}
+\index{checkoutLineItemsUpdate@{checkoutLineItemsUpdate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutLineItemsUpdate()}{checkoutLineItemsUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Line\+Items\+Update (\begin{DoxyParamCaption}\item[{Checkout\+Line\+Items\+Update\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_update_input}{Checkout\+Line\+Item\+Update\+Input}} $>$}]{line\+Items,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates line items on a checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The checkout on which to update line items. \\
+\hline
+{\em line\+Items} & Line items to update. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 24
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_abfa707237c19596bcd8c6a5b7a199bba}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_abfa707237c19596bcd8c6a5b7a199bba} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutShippingAddressUpdate@{checkoutShippingAddressUpdate}}
+\index{checkoutShippingAddressUpdate@{checkoutShippingAddressUpdate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutShippingAddressUpdate()}{checkoutShippingAddressUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Shipping\+Address\+Update (\begin{DoxyParamCaption}\item[{Checkout\+Shipping\+Address\+Update\+Payload\+Delegate}]{build\+Query,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address_input}{Mailing\+Address\+Input}}}]{shipping\+Address,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the shipping address of an existing checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000103}{Deprecated}}]Use {\ttfamily checkout\+Shipping\+Address\+Update\+V2} instead \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em shipping\+Address} & The shipping address to where the line items will be shipped. \\
+\hline
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 25
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a38d7c42a9b5ecea2aaff7d47f840c688}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a38d7c42a9b5ecea2aaff7d47f840c688} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutShippingAddressUpdateV2@{checkoutShippingAddressUpdateV2}}
+\index{checkoutShippingAddressUpdateV2@{checkoutShippingAddressUpdateV2}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutShippingAddressUpdateV2()}{checkoutShippingAddressUpdateV2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Shipping\+Address\+Update\+V2 (\begin{DoxyParamCaption}\item[{Checkout\+Shipping\+Address\+Update\+V2payload\+Delegate}]{build\+Query,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address_input}{Mailing\+Address\+Input}}}]{shipping\+Address,  }\item[{string}]{checkout\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the shipping address of an existing checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shipping\+Address} & The shipping address to where the line items will be shipped. \\
+\hline
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 26
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a03133cce6516ecad4dde844688462201}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a03133cce6516ecad4dde844688462201} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!checkoutShippingLineUpdate@{checkoutShippingLineUpdate}}
+\index{checkoutShippingLineUpdate@{checkoutShippingLineUpdate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{checkoutShippingLineUpdate()}{checkoutShippingLineUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+checkout\+Shipping\+Line\+Update (\begin{DoxyParamCaption}\item[{Checkout\+Shipping\+Line\+Update\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{checkout\+Id,  }\item[{string}]{shipping\+Rate\+Handle,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the shipping lines on an existing checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checkout\+Id} & The ID of the checkout. \\
+\hline
+{\em shipping\+Rate\+Handle} & A unique identifier to a Checkout’s shipping provider, price, and title combination, enabling the customer to select the available\+Shipping\+Rates. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 27
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a7ed722dad6ef3db50b1a5c24cfd7c990}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a7ed722dad6ef3db50b1a5c24cfd7c990} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerAccessTokenCreate@{customerAccessTokenCreate}}
+\index{customerAccessTokenCreate@{customerAccessTokenCreate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerAccessTokenCreate()}{customerAccessTokenCreate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Access\+Token\+Create (\begin{DoxyParamCaption}\item[{Customer\+Access\+Token\+Create\+Payload\+Delegate}]{build\+Query,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_access_token_create_input}{Customer\+Access\+Token\+Create\+Input}}}]{input,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Creates a customer access token. The customer access token is required to modify the customer object in any way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The fields used to create a customer access token. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 28
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aa163d2d8cde264a3f39c54870ea63c59}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aa163d2d8cde264a3f39c54870ea63c59} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerAccessTokenDelete@{customerAccessTokenDelete}}
+\index{customerAccessTokenDelete@{customerAccessTokenDelete}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerAccessTokenDelete()}{customerAccessTokenDelete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Access\+Token\+Delete (\begin{DoxyParamCaption}\item[{Customer\+Access\+Token\+Delete\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{customer\+Access\+Token,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Permanently destroys a customer access token. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+Access\+Token} & The access token used to identify the customer. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 29
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ab4cbf6ee70501526966aba96d5e0c7d8}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ab4cbf6ee70501526966aba96d5e0c7d8} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerAccessTokenRenew@{customerAccessTokenRenew}}
+\index{customerAccessTokenRenew@{customerAccessTokenRenew}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerAccessTokenRenew()}{customerAccessTokenRenew()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Access\+Token\+Renew (\begin{DoxyParamCaption}\item[{Customer\+Access\+Token\+Renew\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{customer\+Access\+Token,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Renews a customer access token. 
+
+Access token renewal must happen {\itshape before} a token expires. If a token has already expired, a new one should be created instead via {\ttfamily customer\+Access\+Token\+Create}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+Access\+Token} & The access token used to identify the customer. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 30
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ac33d5ca02f5ebb370dbefd66c81a266f}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ac33d5ca02f5ebb370dbefd66c81a266f} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerActivate@{customerActivate}}
+\index{customerActivate@{customerActivate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerActivate()}{customerActivate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Activate (\begin{DoxyParamCaption}\item[{Customer\+Activate\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{id,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_activate_input}{Customer\+Activate\+Input}}}]{input,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Activates a customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Specifies the customer to activate. \\
+\hline
+{\em input} & The fields used to activate a customer. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 31
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a50e59df7d9f7396f323b9a992501eebc}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a50e59df7d9f7396f323b9a992501eebc} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerAddressCreate@{customerAddressCreate}}
+\index{customerAddressCreate@{customerAddressCreate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerAddressCreate()}{customerAddressCreate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Address\+Create (\begin{DoxyParamCaption}\item[{Customer\+Address\+Create\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{customer\+Access\+Token,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address_input}{Mailing\+Address\+Input}}}]{address,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Creates a new address for a customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+Access\+Token} & The access token used to identify the customer. \\
+\hline
+{\em address} & The customer mailing address to create. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 32
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a2db69c3cb01e684ed40507bc6e2b1d88}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a2db69c3cb01e684ed40507bc6e2b1d88} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerAddressDelete@{customerAddressDelete}}
+\index{customerAddressDelete@{customerAddressDelete}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerAddressDelete()}{customerAddressDelete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Address\+Delete (\begin{DoxyParamCaption}\item[{Customer\+Address\+Delete\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{id,  }\item[{string}]{customer\+Access\+Token,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Permanently deletes the address of an existing customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Specifies the address to delete. \\
+\hline
+{\em customer\+Access\+Token} & The access token used to identify the customer. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 33
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a136e7a545599fe02811fb37bf907fd09}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a136e7a545599fe02811fb37bf907fd09} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerAddressUpdate@{customerAddressUpdate}}
+\index{customerAddressUpdate@{customerAddressUpdate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerAddressUpdate()}{customerAddressUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Address\+Update (\begin{DoxyParamCaption}\item[{Customer\+Address\+Update\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{customer\+Access\+Token,  }\item[{string}]{id,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address_input}{Mailing\+Address\+Input}}}]{address,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the address of an existing customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+Access\+Token} & The access token used to identify the customer. \\
+\hline
+{\em id} & Specifies the customer address to update. \\
+\hline
+{\em address} & The customer’s mailing address. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 34
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aab0fc2b162c58bfdd4625cc80e309f83}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_aab0fc2b162c58bfdd4625cc80e309f83} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerCreate@{customerCreate}}
+\index{customerCreate@{customerCreate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerCreate()}{customerCreate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Create (\begin{DoxyParamCaption}\item[{Customer\+Create\+Payload\+Delegate}]{build\+Query,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_create_input}{Customer\+Create\+Input}}}]{input,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Creates a new customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The fields used to create a new customer. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 35
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a4b8244029fbb06bc34b31e10af0ed553}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a4b8244029fbb06bc34b31e10af0ed553} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerDefaultAddressUpdate@{customerDefaultAddressUpdate}}
+\index{customerDefaultAddressUpdate@{customerDefaultAddressUpdate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerDefaultAddressUpdate()}{customerDefaultAddressUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Default\+Address\+Update (\begin{DoxyParamCaption}\item[{Customer\+Default\+Address\+Update\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{customer\+Access\+Token,  }\item[{string}]{address\+Id,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the default address of an existing customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+Access\+Token} & The access token used to identify the customer. \\
+\hline
+{\em address\+Id} & ID of the address to set as the new default for the customer. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 36
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a32c4191f953b125e77b8b333c40e32c9}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a32c4191f953b125e77b8b333c40e32c9} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerRecover@{customerRecover}}
+\index{customerRecover@{customerRecover}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerRecover()}{customerRecover()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Recover (\begin{DoxyParamCaption}\item[{Customer\+Recover\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{email,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Sends a reset password email to the customer, as the first step in the reset password process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email address of the customer to recover. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 37
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a7fb4189e7952df6a72257ef5f73259d1}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a7fb4189e7952df6a72257ef5f73259d1} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerReset@{customerReset}}
+\index{customerReset@{customerReset}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerReset()}{customerReset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Reset (\begin{DoxyParamCaption}\item[{Customer\+Reset\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{id,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_reset_input}{Customer\+Reset\+Input}}}]{input,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Resets a customer’s password with a token received from {\ttfamily Customer\+Recover}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Specifies the customer to reset. \\
+\hline
+{\em input} & The fields used to reset a customer’s password. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 38
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ac32e7efab1bb015ea0118b3e9e98bc46}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_ac32e7efab1bb015ea0118b3e9e98bc46} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerResetByUrl@{customerResetByUrl}}
+\index{customerResetByUrl@{customerResetByUrl}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerResetByUrl()}{customerResetByUrl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Reset\+By\+Url (\begin{DoxyParamCaption}\item[{Customer\+Reset\+By\+Url\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{reset\+Url,  }\item[{string}]{password,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Resets a customer’s password with the reset password url received from {\ttfamily Customer\+Recover}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reset\+Url} & The customer\textquotesingle{}s reset password url. \\
+\hline
+{\em password} & New password that will be set as part of the reset password process. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 39
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a26786d9e4956a1b9e17b65f98d14cf8c}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query_a26786d9e4956a1b9e17b65f98d14cf8c} 
+\index{Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}!customerUpdate@{customerUpdate}}
+\index{customerUpdate@{customerUpdate}!Shopify.Unity.GraphQL.MutationQuery@{Shopify.Unity.GraphQL.MutationQuery}}
+\doxysubsubsection{\texorpdfstring{customerUpdate()}{customerUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_mutation_query}{Mutation\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Mutation\+Query.\+customer\+Update (\begin{DoxyParamCaption}\item[{Customer\+Update\+Payload\+Delegate}]{build\+Query,  }\item[{string}]{customer\+Access\+Token,  }\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_customer_update_input}{Customer\+Update\+Input}}}]{customer,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates an existing customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+Access\+Token} & The access token used to identify the customer. \\
+\hline
+{\em customer} & The customer object input. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 40
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/\+Graph\+QL/Mutation\+Query.\+cs\end{DoxyCompactItemize}

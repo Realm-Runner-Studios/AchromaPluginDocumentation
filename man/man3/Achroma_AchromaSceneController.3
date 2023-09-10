@@ -1,0 +1,54 @@
+.TH "Achroma.AchromaSceneController" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaSceneController
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static AsyncOperation \fBLoadAsyncScene\fP (string sceneName, LoadSceneMode loadSceneMode=LoadSceneMode\&.Single)"
+.br
+.RI "This static method loads the scene asynchronously and returns the operation so the loading progress can be tracked\&. "
+.ti -1c
+.RI "static void \fBUnloadScene\fP ()"
+.br
+.RI "This static method unloads the current single active scene\&. "
+.ti -1c
+.RI "static AsyncOperation \fBLoadPreviousScene\fP ()"
+.br
+.RI "This method calls the scene that called the current scene back\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "static AsyncOperation Achroma\&.AchromaSceneController\&.LoadAsyncScene (string sceneName, LoadSceneMode loadSceneMode = \fCLoadSceneMode::Single\fP)\fC [static]\fP"
+
+.PP
+This static method loads the scene asynchronously and returns the operation so the loading progress can be tracked\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsceneName\fP The name of the scene
+.br
+\fIsceneMode\fP The scene mode: Single (will load on top of the current scene) or Additive (will load a scene along with the current scene)
+.RE
+.PP
+
+.SS "static AsyncOperation Achroma\&.AchromaSceneController\&.LoadPreviousScene ()\fC [static]\fP"
+
+.PP
+This method calls the scene that called the current scene back\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessage\fP The text that will be shown to the user in the loading screen
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

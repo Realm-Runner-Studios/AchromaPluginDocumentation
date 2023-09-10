@@ -1,0 +1,119 @@
+\doxysection{Google.\+Google\+Sign\+In Class Reference}
+\hypertarget{class_google_1_1_google_sign_in}{}\label{class_google_1_1_google_sign_in}\index{Google.GoogleSignIn@{Google.GoogleSignIn}}
+
+
+\doxylink{namespace_google}{Google} sign in API.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_google_1_1_google_sign_in_1_1_sign_in_exception}{Sign\+In\+Exception}}
+\begin{DoxyCompactList}\small\item\em Sign in exception. This is a checked exception for handling specific errors during the sign-\/in process. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_google_1_1_google_sign_in_a5f352b32d3a60e39908bf3e84e9feb22}\label{class_google_1_1_google_sign_in_a5f352b32d3a60e39908bf3e84e9feb22} 
+void {\bfseries Enable\+Debug\+Logging} (bool flag)
+\item 
+Task$<$ \mbox{\hyperlink{class_google_1_1_google_sign_in_user}{Google\+Sign\+In\+User}} $>$ \mbox{\hyperlink{class_google_1_1_google_sign_in_a7c2698c9ff1f137c3b9997db7852c179}{Sign\+In}} ()
+\begin{DoxyCompactList}\small\item\em Starts the authentication process. \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{class_google_1_1_google_sign_in_user}{Google\+Sign\+In\+User}} $>$ \mbox{\hyperlink{class_google_1_1_google_sign_in_a920caac862ebd586783d26b21f79477f}{Sign\+In\+Silently}} ()
+\begin{DoxyCompactList}\small\item\em Starts the silent authentication process. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_google_1_1_google_sign_in_ab714a305d400a8eccff93111881cc4d6}{Sign\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Signs out the User. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_google_1_1_google_sign_in_a0b935deed46231eee347625afa693e53}{Disconnect}} ()
+\begin{DoxyCompactList}\small\item\em Disconnect this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_google_1_1_google_sign_in_a449762e01cf177ddfc0b7787d898940b}\label{class_google_1_1_google_sign_in_a449762e01cf177ddfc0b7787d898940b} 
+static \mbox{\hyperlink{class_google_1_1_google_sign_in_configuration}{Google\+Sign\+In\+Configuration}} {\bfseries Configuration}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+static \mbox{\hyperlink{class_google_1_1_google_sign_in}{Google\+Sign\+In}} \mbox{\hyperlink{class_google_1_1_google_sign_in_a3063dafa505a6d383166c6123bdf3dbe}{Default\+Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Singleton instance of this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_google}{Google} sign in API. 
+
+This class implements the Google\+Sign\+In\+API for Unity. Typical usage is to set the Configuration options as needed, then get the Default\+Instance and call sign\+In or sign\+In\+Silently. See the \href{https://developers.google.com/identity}{\texttt{ Google Sign-\/\+In API documentation for more details.}} 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{private}\ \textcolor{keyword}{static}\ readonly\ GoogleSignInConfiguration\ configuration\ =}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ GoogleSignInConfiguration\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ WebClientId\ =\ \textcolor{stringliteral}{"{}<your\ client\ id\ here\ >"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ RequestIdToken\ =\ \textcolor{keyword}{true}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ OnSignIn()\ \{}
+\DoxyCodeLine{\ \ GoogleSignIn.Configuration\ =\ configuration;}
+\DoxyCodeLine{\ \ GoogleSignIn.Configuration.UseGameSignIn\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ GoogleSignIn.Configuration.RequestIdToken\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ GoogleSignIn.DefaultInstance.SignIn().ContinueWith(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ OnAuthenticationFinished);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_google_1_1_google_sign_in_a0b935deed46231eee347625afa693e53}\label{class_google_1_1_google_sign_in_a0b935deed46231eee347625afa693e53} 
+\index{Google.GoogleSignIn@{Google.GoogleSignIn}!Disconnect@{Disconnect}}
+\index{Disconnect@{Disconnect}!Google.GoogleSignIn@{Google.GoogleSignIn}}
+\doxysubsubsection{\texorpdfstring{Disconnect()}{Disconnect()}}
+{\footnotesize\ttfamily void Google.\+Google\+Sign\+In.\+Disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disconnect this instance. 
+
+When the user is disconnected, it revokes all access that may have been granted to this application. This includes any server side access tokens derived from server auth codes. As a result, future sign-\/in attempts will require the user to re-\/consent to the requested scopes. \Hypertarget{class_google_1_1_google_sign_in_a7c2698c9ff1f137c3b9997db7852c179}\label{class_google_1_1_google_sign_in_a7c2698c9ff1f137c3b9997db7852c179} 
+\index{Google.GoogleSignIn@{Google.GoogleSignIn}!SignIn@{SignIn}}
+\index{SignIn@{SignIn}!Google.GoogleSignIn@{Google.GoogleSignIn}}
+\doxysubsubsection{\texorpdfstring{SignIn()}{SignIn()}}
+{\footnotesize\ttfamily Task$<$ \mbox{\hyperlink{class_google_1_1_google_sign_in_user}{Google\+Sign\+In\+User}} $>$ Google.\+Google\+Sign\+In.\+Sign\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the authentication process. 
+
+The authenication process is started and may display account picker popups and consent prompts based on the state of authentication and the requested elements. \Hypertarget{class_google_1_1_google_sign_in_a920caac862ebd586783d26b21f79477f}\label{class_google_1_1_google_sign_in_a920caac862ebd586783d26b21f79477f} 
+\index{Google.GoogleSignIn@{Google.GoogleSignIn}!SignInSilently@{SignInSilently}}
+\index{SignInSilently@{SignInSilently}!Google.GoogleSignIn@{Google.GoogleSignIn}}
+\doxysubsubsection{\texorpdfstring{SignInSilently()}{SignInSilently()}}
+{\footnotesize\ttfamily Task$<$ \mbox{\hyperlink{class_google_1_1_google_sign_in_user}{Google\+Sign\+In\+User}} $>$ Google.\+Google\+Sign\+In.\+Sign\+In\+Silently (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the silent authentication process. 
+
+The authenication process is started and will attempt to sign in without displaying any UI. If this cannot be done, the developer should call Sign\+In(). \Hypertarget{class_google_1_1_google_sign_in_ab714a305d400a8eccff93111881cc4d6}\label{class_google_1_1_google_sign_in_ab714a305d400a8eccff93111881cc4d6} 
+\index{Google.GoogleSignIn@{Google.GoogleSignIn}!SignOut@{SignOut}}
+\index{SignOut@{SignOut}!Google.GoogleSignIn@{Google.GoogleSignIn}}
+\doxysubsubsection{\texorpdfstring{SignOut()}{SignOut()}}
+{\footnotesize\ttfamily void Google.\+Google\+Sign\+In.\+Sign\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Signs out the User. 
+
+Future sign-\/in attempts will require the user to select the account to use when signing in. 
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_google_1_1_google_sign_in_a3063dafa505a6d383166c6123bdf3dbe}\label{class_google_1_1_google_sign_in_a3063dafa505a6d383166c6123bdf3dbe} 
+\index{Google.GoogleSignIn@{Google.GoogleSignIn}!DefaultInstance@{DefaultInstance}}
+\index{DefaultInstance@{DefaultInstance}!Google.GoogleSignIn@{Google.GoogleSignIn}}
+\doxysubsubsection{\texorpdfstring{DefaultInstance}{DefaultInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_google_1_1_google_sign_in}{Google\+Sign\+In}} Google.\+Google\+Sign\+In.\+Default\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Singleton instance of this class. 
+
+The instance.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Google\+Sign\+In/Google\+Sign\+In.\+cs\end{DoxyCompactItemize}

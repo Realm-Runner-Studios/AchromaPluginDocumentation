@@ -1,0 +1,315 @@
+.TH "Achroma" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBAccomplishment\fP"
+.br
+.ti -1c
+.RI "struct \fBAchievement\fP"
+.br
+.ti -1c
+.RI "struct \fBAchievementTierSprite\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaAction\fP"
+.br
+.ti -1c
+.RI "struct \fBAchromaActionType\fP"
+.br
+.ti -1c
+.RI "struct \fBAchromaAssetBundleFile\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaAssetManager\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaCanvas\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaCharacter\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaControlFile\fP"
+.br
+.ti -1c
+.RI "struct \fBAchromaControlFileType\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaDatabaseController\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaErrorDescription\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaErrorEnum\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaFadeIn\fP"
+.br
+.ti -1c
+.RI "struct \fBAchromaFileStory\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaFirebaseController\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaFlippableCard\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaHomeButton\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaItem\fP"
+.br
+.ti -1c
+.RI "struct \fBAchromaItemType\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaLoadFromBundle\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaLocation\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaManager\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaNewsItem\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaNewsUI\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaParentController\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaPurchaseOption\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaRemoteConfigDependency\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaRotateShard\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaSceneController\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaShardAttraction\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaShardParticle\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaShardsController\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaShardShopDialogBox\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaShardShopUI\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaShopAvatarChapter\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaShopAvatarGrid\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaShopAvatars\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaShopAvatarStory\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaShopItem\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaSignInUI\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaStoryDependency\fP"
+.br
+.RI "This is the component to be attached to any object that has sub-objects that can be activated/deactivated according to the user's avatar story Example: a Curdle Hill character will disable all objects in the 'components' array but will activate the components set with Curdle Hill flag\&. "
+.ti -1c
+.RI "class \fBAchromaStoryProgress\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaTrueParallax\fP"
+.br
+.RI "Adds parallax effect by using device orientation\&. "
+.ti -1c
+.RI "class \fBAchromaUIController\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaUtils\fP"
+.br
+.ti -1c
+.RI "struct \fBAchrometerTier\fP"
+.br
+.ti -1c
+.RI "class \fBAllMatches\fP"
+.br
+.ti -1c
+.RI "class \fBAllUsers\fP"
+.br
+.ti -1c
+.RI "class \fBCardCollection\fP"
+.br
+.ti -1c
+.RI "class \fBCardCollectionItem\fP"
+.br
+.ti -1c
+.RI "class \fBCardCollectionItemCode\fP"
+.br
+.ti -1c
+.RI "struct \fBCharacterAvatar\fP"
+.br
+.ti -1c
+.RI "class \fBDeck\fP"
+.br
+.ti -1c
+.RI "class \fBDeckCard\fP"
+.br
+.ti -1c
+.RI "class \fBDeckCollection\fP"
+.br
+.ti -1c
+.RI "class \fBFriendCard\fP"
+.br
+.ti -1c
+.RI "class \fBFriendRequestData\fP"
+.br
+.ti -1c
+.RI "class \fBFriendsData\fP"
+.br
+.ti -1c
+.RI "class \fBFriendVisualizer\fP"
+.br
+.ti -1c
+.RI "class \fBGameAchievement\fP"
+.br
+.ti -1c
+.RI "struct \fBHistory\fP"
+.br
+.ti -1c
+.RI "struct \fBHistoryStep\fP"
+.br
+.ti -1c
+.RI "class \fBIAPManager\fP"
+.br
+.ti -1c
+.RI "struct \fBLocation\fP"
+.br
+.ti -1c
+.RI "class \fBLoginHistory\fP"
+.br
+.ti -1c
+.RI "class \fBMatchData\fP"
+.br
+.ti -1c
+.RI "class \fBMatchPlayer\fP"
+.br
+.ti -1c
+.RI "class \fBNewsCollection\fP"
+.br
+.ti -1c
+.RI "class \fBNewsItem\fP"
+.br
+.ti -1c
+.RI "class \fBPowerUp\fP"
+.br
+.ti -1c
+.RI "class \fBPowerUpTypeDescriptiopn\fP"
+.br
+.ti -1c
+.RI "class \fBPowerUpTypeEnum\fP"
+.br
+.ti -1c
+.RI "class \fBRemoteConfigManager\fP"
+.br
+.ti -1c
+.RI "struct \fBRemoteConfigVariable\fP"
+.br
+.ti -1c
+.RI "struct \fBStoryDependencyComponent\fP"
+.br
+.ti -1c
+.RI "class \fBStoryDescription\fP"
+.br
+.ti -1c
+.RI "class \fBStoryeEnum\fP"
+.br
+.ti -1c
+.RI "class \fBTransaction\fP"
+.br
+.ti -1c
+.RI "class \fBTransactionHelper\fP"
+.br
+.ti -1c
+.RI "class \fBUserCard\fP"
+.br
+.ti -1c
+.RI "class \fBUserData\fP"
+.br
+.ti -1c
+.RI "class \fBUserDetail\fP"
+.br
+.ti -1c
+.RI "struct \fBUserMatchData\fP"
+.br
+.ti -1c
+.RI "class \fBValue\fP"
+.br
+.ti -1c
+.RI "class \fBVariable\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBMatchStatus\fP { \fBWaitingForOpponent\fP = 0, \fBOn\fP = 1, \fBFinished\fP = 2, \fBCanceled\fP = 4 }"
+.br
+.ti -1c
+.RI "enum \fBRemoteConfigVariableType\fP { \fBLastVersion\fP = 0, \fBLastVersionMessage\fP = 1, \fBStoreAddress\fP = 2, \fBCurdleHillStory\fP = 3, \fBHeroMode\fP = 4, \fBRPGMode\fP = 5 }"
+.br
+.ti -1c
+.RI "enum \fBAchromaStory\fP { \fBNone\fP = -1, \fBCurdleHill\fP = 0, \fBSiegeOfDraco\fP = 1, \fBFlutterby\fP = 2, \fBRealmRunners\fP = 3, \fBWarriorsOfWishwell\fP = 4, \fBCurdleCove\fP = 5 }"
+.br
+.ti -1c
+.RI "enum \fBImportType\fP { \fBfile\fP, \fBjson\fP }"
+.br
+.ti -1c
+.RI "enum \fBPowerUpType\fP { \fBNone\fP = 0, \fBTimeStep\fP = 1, \fBRevive\fP = 2, \fBDrain\fP = 3, \fBReveal\fP = 4, \fBChromaFlare\fP = 5, \fBChromaticShield\fP = 6 }"
+.br
+.ti -1c
+.RI "enum \fBUserCardStatus\fP { \fBNone\fP = -1, \fBHidden\fP = 0, \fBLocked\fP = 1, \fBUnlocked\fP = 2 }"
+.br
+.ti -1c
+.RI "enum \fBAchromaNotificationSprite\fP { \fBNone\fP = -1, \fBUser\fP = 8, \fBShard\fP = 0, \fBSave\fP = 1, \fBConnection\fP = 2, \fBAccomplishment\fP = 14, \fBTimestepPower\fP = 4, \fBRevealPower\fP = 5, \fBRevivePower\fP = 7, \fBChromaFlarePower\fP = 9, \fBChromaticShieldPower\fP = 10, \fBDrainPower\fP = 15, \fBMoneyPower\fP = 3, \fBChroma\fP = 12, \fBAchrom\fP = 11 }"
+.br
+.RI "References to the sprites on the Notification Sprite Sheet\&. "
+.ti -1c
+.RI "enum \fBAchromaShopItemType\fP { \fBAvatar\fP, \fBShardPack\fP }"
+.br
+.RI "The type of item\&. A character, that can be purchased using shards or a shard pack that can be purchased with money\&. "
+.ti -1c
+.RI "enum \fBAchromaShopCurrency\fP { \fBShards\fP, \fBMoney\fP }"
+.br
+.RI "The type of currency to purchase an item\&. "
+.ti -1c
+.RI "enum \fBAchromaError\fP { \fBERR_ASSIGN_USERCHANGE_LISTENER\fP, \fBERR_USER_NOT_AUTHENTICATED\fP, \fBERR_USER_NOT_SIGNED_IN\fP, \fBERR_DATABASE_INITIALIZATON\fP, \fBERR_DATABASE_INITIALIZATON_FIREBASE_NOT_READY\fP, \fBERR_DATABASE_INITIALIZATON_CANCELLED\fP, \fBERR_DATABASE_INITIALIZATON_FAULTED\fP, \fBERR_DATABASE_INITIALIZATON_TIMEOUT\fP, \fBERR_APPLELOGIN_ACCOUNT_DOESNT_EXIST\fP, \fBERR_APPLELOGIN_CANCELLED\fP, \fBERR_APPLELOGIN_FAULTED\fP, \fBERR_APPLELOGIN_TIMEOUT\fP, \fBERR_APPLELOGIN_GENERIC\fP, \fBERR_GOOGLELOGIN_ACCOUNT_DOESNT_EXIST\fP, \fBERR_GOOGLELOGIN_CANCELLED\fP, \fBERR_GOOGLELOGIN_FAULTED\fP, \fBERR_GOOGLELOGIN_TIMEOUT\fP, \fBERR_GOOGLELOGIN_GENERIC\fP, \fBERR_EMAILLOGIN_EMAIL_NOT_VERIFIED\fP, \fBERR_EMAILLOGIN_CANCELLED\fP, \fBERR_EMAILLOGIN_FAULTED\fP, \fBERR_EMAILLOGIN_TIMEOUT\fP, \fBERR_EMAILLOGIN_GENERIC\fP, \fBERR_EMAILLOGIN_ACCOUNT_DOESNT_EXIST\fP, \fBERR_FORGOTPASSWORD_CANCELLED\fP, \fBERR_FORGOTPASSWORD_FAULTED\fP, \fBERR_FORGOTPASSWORD_TIMEOUT\fP, \fBERR_EMAILREGISTRATION_CANCELLED\fP, \fBERR_EMAILREGISTRATION_FAULTED\fP, \fBERR_EMAILREGISTRATION_TIMEOUT\fP, \fBERR_EMAILREGISTRATION_GENERIC\fP, \fBERR_AUTH_GET_CUSTOM_TOKEN\fP, \fBERR_FILE_DOWNLOAD\fP, \fBERR_ASSETBUNDLE_DOWNLOAD\fP, \fBERR_ASSETBUNDLE_DOWNLOAD_REQUEST\fP, \fBERR_REMOTE_CONFIG_FETCH\fP, \fBERR_SHOP_NOT_INITIALIZED\fP, \fBERR_SHOP_FAIL_TO_GET_PRICE\fP, \fBERR_SHOP_FAILED_TO_PURCHASE\fP, \fBERR_CARDS_RETRIEVE\fP, \fBERR_COULD_NOT_LOAD_SEPARATORS\fP, \fBERR_COULD_NOT_ADD_SHARDS\fP, \fBERR_COULD_NOT_GO_BACK_IN_TIME\fP, \fBERR_TRANSACTION_ALREADY_FOUND\fP }"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

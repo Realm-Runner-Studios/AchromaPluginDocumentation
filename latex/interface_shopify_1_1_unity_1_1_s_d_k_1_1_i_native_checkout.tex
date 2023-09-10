@@ -1,0 +1,89 @@
+\doxysection{Shopify.\+Unity.\+SDK.\+INative\+Checkout Interface Reference}
+\hypertarget{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout}{}\label{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout}\index{Shopify.Unity.SDK.INativeCheckout@{Shopify.Unity.SDK.INativeCheckout}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout_a5e18dcb0891c74f44129fb253a35bc6a}{Can\+Show\+Payment\+Setup}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_payment_settings}{Payment\+Settings}} payment\+Settings)
+\begin{DoxyCompactList}\small\item\em Check whether the device supports displaying a native wallet application to setup the user\textquotesingle{}s payment card. \end{DoxyCompactList}\item 
+\Hypertarget{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout_a9807c0730a46228a1e77a2d187c6a486}\label{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout_a9807c0730a46228a1e77a2d187c6a486} 
+void {\bfseries Show\+Payment\+Setup} ()
+\begin{DoxyCompactList}\small\item\em Invokes a native method that will prompt the user to setup the user\textquotesingle{}s payment card via the native wallet application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout_ac069469d47322f7a8df9e0ebe1d3855b}{Can\+Checkout}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_payment_settings}{Payment\+Settings}} payment\+Settings, Can\+Checkout\+With\+Native\+Pay\+Callback callback)
+\begin{DoxyCompactList}\small\item\em Check whether the device supports making a native payment given the Shop\textquotesingle{}s payment settings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout_a52ad5e23601913a59210394a25d88f86}{Checkout}} (string key, \mbox{\hyperlink{struct_shopify_1_1_unity_1_1_shop_metadata}{Shop\+Metadata}} shop\+Metadata, Checkout\+Success\+Callback success, Checkout\+Cancel\+Callback canceled, Checkout\+Failure\+Callback failure)
+\begin{DoxyCompactList}\small\item\em Display the native payment sheet to perform a native payment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout_ac069469d47322f7a8df9e0ebe1d3855b}\label{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout_ac069469d47322f7a8df9e0ebe1d3855b} 
+\index{Shopify.Unity.SDK.INativeCheckout@{Shopify.Unity.SDK.INativeCheckout}!CanCheckout@{CanCheckout}}
+\index{CanCheckout@{CanCheckout}!Shopify.Unity.SDK.INativeCheckout@{Shopify.Unity.SDK.INativeCheckout}}
+\doxysubsubsection{\texorpdfstring{CanCheckout()}{CanCheckout()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+SDK.\+INative\+Checkout.\+Can\+Checkout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_payment_settings}{Payment\+Settings}}}]{payment\+Settings,  }\item[{Can\+Checkout\+With\+Native\+Pay\+Callback}]{callback }\end{DoxyParamCaption})}
+
+
+
+Check whether the device supports making a native payment given the Shop\textquotesingle{}s payment settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payment\+Settings} & The Shop\textquotesingle{}s payment settings\\
+\hline
+{\em callback} & The callback that will deliver the result to tha caller\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the device supports making a native payment
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\Hypertarget{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout_a5e18dcb0891c74f44129fb253a35bc6a}\label{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout_a5e18dcb0891c74f44129fb253a35bc6a} 
+\index{Shopify.Unity.SDK.INativeCheckout@{Shopify.Unity.SDK.INativeCheckout}!CanShowPaymentSetup@{CanShowPaymentSetup}}
+\index{CanShowPaymentSetup@{CanShowPaymentSetup}!Shopify.Unity.SDK.INativeCheckout@{Shopify.Unity.SDK.INativeCheckout}}
+\doxysubsubsection{\texorpdfstring{CanShowPaymentSetup()}{CanShowPaymentSetup()}}
+{\footnotesize\ttfamily bool Shopify.\+Unity.\+SDK.\+INative\+Checkout.\+Can\+Show\+Payment\+Setup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_payment_settings}{Payment\+Settings}}}]{payment\+Settings }\end{DoxyParamCaption})}
+
+
+
+Check whether the device supports displaying a native wallet application to setup the user\textquotesingle{}s payment card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payment\+Settings} & The Shop\textquotesingle{}s payment settings\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the device supports displaying a native wallet application
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout_a52ad5e23601913a59210394a25d88f86}\label{interface_shopify_1_1_unity_1_1_s_d_k_1_1_i_native_checkout_a52ad5e23601913a59210394a25d88f86} 
+\index{Shopify.Unity.SDK.INativeCheckout@{Shopify.Unity.SDK.INativeCheckout}!Checkout@{Checkout}}
+\index{Checkout@{Checkout}!Shopify.Unity.SDK.INativeCheckout@{Shopify.Unity.SDK.INativeCheckout}}
+\doxysubsubsection{\texorpdfstring{Checkout()}{Checkout()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+SDK.\+INative\+Checkout.\+Checkout (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{\mbox{\hyperlink{struct_shopify_1_1_unity_1_1_shop_metadata}{Shop\+Metadata}}}]{shop\+Metadata,  }\item[{Checkout\+Success\+Callback}]{success,  }\item[{Checkout\+Cancel\+Callback}]{canceled,  }\item[{Checkout\+Failure\+Callback}]{failure }\end{DoxyParamCaption})}
+
+
+
+Display the native payment sheet to perform a native payment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The public key that is used for encrypting a native payment\textquotesingle{}s token data\\
+\hline
+{\em shop\+Metadata} & The shop\textquotesingle{}s metadata containing name and payment settings\\
+\hline
+{\em success} & The closure that is invoked upon success of the payment\\
+\hline
+{\em canceled} & The closure that is invoked upon cancelation of the payment\\
+\hline
+{\em failure} & The closure that is invoked upon failure of the payment\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+SDK/INative\+Checkout.\+cs\end{DoxyCompactItemize}

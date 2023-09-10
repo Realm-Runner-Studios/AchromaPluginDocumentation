@@ -1,0 +1,5 @@
+<map id="AchromaAPI.AchromaInstanceAssets.GetCharacterAvatarPosition" name="AchromaAPI.AchromaInstanceAssets.GetCharacterAvatarPosition">
+<area shape="rect" id="Node000001" title="Returns the avatar position for the home button." alt="" coords="5,5,235,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_control_file.html#a1ea313946783cbc2c9125d755c56957c" title="Returns the character from the Control File with all its data." alt="" coords="283,5,479,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,23,268,23,268,28,235,28"/>
+</map>

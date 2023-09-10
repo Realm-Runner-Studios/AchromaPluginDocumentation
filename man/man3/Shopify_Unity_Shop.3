@@ -1,0 +1,293 @@
+.TH "Shopify.Unity.Shop" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Shop \- Shop represents a collection of the general settings and information about the shop\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, and ICloneable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShop\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "\fBArticleConnection\fP \fBarticles\fP (string alias=null)"
+.br
+.RI "List of the shop' articles\&. "
+.ti -1c
+.RI "\fBBlogConnection\fP \fBblogs\fP (string alias=null)"
+.br
+.RI "List of the shop' blogs\&. "
+.ti -1c
+.RI "\fBCollection\fP \fBcollectionByHandle\fP (string alias=null)"
+.br
+.RI "Find a collection by its handle\&. "
+.ti -1c
+.RI "\fBCollectionConnection\fP \fBcollections\fP (string alias=null)"
+.br
+.RI "List of the shop’s collections\&. "
+.ti -1c
+.RI "\fBCurrencyCode\fP \fBcurrencyCode\fP ()"
+.br
+.RI "The three-letter code for the currency that the shop accepts\&. "
+.ti -1c
+.RI "string \fBdescription\fP ()"
+.br
+.RI "A description of the shop\&. "
+.ti -1c
+.RI "string \fBmoneyFormat\fP ()"
+.br
+.RI "A string representing the way currency is formatted when the currency isn’t specified\&. "
+.ti -1c
+.RI "string \fBname\fP ()"
+.br
+.RI "The shop’s name\&. "
+.ti -1c
+.RI "\fBPaymentSettings\fP \fBpaymentSettings\fP ()"
+.br
+.RI "Settings related to payments\&. "
+.ti -1c
+.RI "\fBDomain\fP \fBprimaryDomain\fP ()"
+.br
+.RI "The shop’s primary domain\&. "
+.ti -1c
+.RI "\fBShopPolicy\fP \fBprivacyPolicy\fP ()"
+.br
+.RI "The shop’s privacy policy\&. "
+.ti -1c
+.RI "\fBProduct\fP \fBproductByHandle\fP (string alias=null)"
+.br
+.RI "Find a product by its handle\&. "
+.ti -1c
+.RI "\fBStringConnection\fP \fBproductTags\fP (string alias=null)"
+.br
+.RI "A list of tags that have been added to products\&. Additional access scope required: unauthenticated_read_product_tags\&. "
+.ti -1c
+.RI "\fBStringConnection\fP \fBproductTypes\fP (string alias=null)"
+.br
+.RI "List of the shop’s product types\&. "
+.ti -1c
+.RI "\fBProductConnection\fP \fBproducts\fP (string alias=null)"
+.br
+.RI "List of the shop’s products\&. "
+.ti -1c
+.RI "\fBShopPolicy\fP \fBrefundPolicy\fP ()"
+.br
+.RI "The shop’s refund policy\&. "
+.ti -1c
+.RI "List< \fBCountryCode\fP > \fBshipsToCountries\fP ()"
+.br
+.RI "Countries that the shop ships to\&. "
+.ti -1c
+.RI "string \fBshopifyPaymentsAccountId\fP ()"
+.br
+.RI "The shop’s \fBShopify\fP Payments account id\&. "
+.ti -1c
+.RI "\fBShopPolicy\fP \fBtermsOfService\fP ()"
+.br
+.RI "The shop’s terms of service\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Shop represents a collection of the general settings and information about the shop\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Shop\&.Shop (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Shop
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBArticleConnection\fP Shopify\&.Unity\&.Shop\&.articles (string alias = \fCnull\fP)"
+
+.PP
+List of the shop' articles\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.articles\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBBlogConnection\fP Shopify\&.Unity\&.Shop\&.blogs (string alias = \fCnull\fP)"
+
+.PP
+List of the shop' blogs\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.blogs\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCollection\fP Shopify\&.Unity\&.Shop\&.collectionByHandle (string alias = \fCnull\fP)"
+
+.PP
+Find a collection by its handle\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.collectionByHandle\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCollectionConnection\fP Shopify\&.Unity\&.Shop\&.collections (string alias = \fCnull\fP)"
+
+.PP
+List of the shop’s collections\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.collections\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBCurrencyCode\fP Shopify\&.Unity\&.Shop\&.currencyCode ()"
+
+.PP
+The three-letter code for the currency that the shop accepts\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCpaymentSettings\fP instead 
+.RE
+.PP
+
+.SS "\fBProduct\fP Shopify\&.Unity\&.Shop\&.productByHandle (string alias = \fCnull\fP)"
+
+.PP
+Find a product by its handle\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.productByHandle\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBProductConnection\fP Shopify\&.Unity\&.Shop\&.products (string alias = \fCnull\fP)"
+
+.PP
+List of the shop’s products\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.products\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBStringConnection\fP Shopify\&.Unity\&.Shop\&.productTags (string alias = \fCnull\fP)"
+
+.PP
+A list of tags that have been added to products\&. Additional access scope required: unauthenticated_read_product_tags\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.productTags\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBStringConnection\fP Shopify\&.Unity\&.Shop\&.productTypes (string alias = \fCnull\fP)"
+
+.PP
+List of the shop’s product types\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCQueryRoot\&.productTypes\fP instead\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.Shop\&.shopifyPaymentsAccountId ()"
+
+.PP
+The shop’s \fBShopify\fP Payments account id\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCpaymentSettings\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

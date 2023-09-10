@@ -1,0 +1,76 @@
+.TH "Shopify.Unity.GraphQL.HasMetafieldsQuery" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.GraphQL.HasMetafieldsQuery \- Represents information about the metafields associated to the specified resource\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHasMetafieldsQuery\fP (StringBuilder query)"
+.br
+.RI "HasMetafieldsQuery is used to build queries\&. Typically HasMetafieldsQuery will not be used directly but instead will be used when building queries from either QueryRootQuery or MutationQuery\&. "
+.ti -1c
+.RI "\fBHasMetafieldsQuery\fP \fBmetafield\fP (MetafieldDelegate buildQuery, string namespaceValue, string key, string alias=null)"
+.br
+.RI "The metafield associated with the resource\&. "
+.ti -1c
+.RI "\fBHasMetafieldsQuery\fP \fBmetafields\fP (MetafieldConnectionDelegate buildQuery, string namespaceValue=null, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)"
+.br
+.RI "A paginated list of metafields associated with the resource\&. "
+.ti -1c
+.RI "\fBHasMetafieldsQuery\fP \fBonProduct\fP (ProductDelegate buildQuery)"
+.br
+.RI "will allow you to write queries on Product\&. "
+.ti -1c
+.RI "\fBHasMetafieldsQuery\fP \fBonProductVariant\fP (ProductVariantDelegate buildQuery)"
+.br
+.RI "will allow you to write queries on ProductVariant\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents information about the metafields associated to the specified resource\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBHasMetafieldsQuery\fP Shopify\&.Unity\&.GraphQL\&.HasMetafieldsQuery\&.metafield (MetafieldDelegate buildQuery, string namespaceValue, string key, string alias = \fCnull\fP)"
+
+.PP
+The metafield associated with the resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInamespace\fP Container for a set of metafields (maximum of 20 characters)\&. 
+.br
+\fIkey\fP Identifier for the metafield (maximum of 30 characters)\&. 
+.RE
+.PP
+
+.SS "\fBHasMetafieldsQuery\fP Shopify\&.Unity\&.GraphQL\&.HasMetafieldsQuery\&.metafields (MetafieldConnectionDelegate buildQuery, string namespaceValue = \fCnull\fP, long? first = \fCnull\fP, string after = \fCnull\fP, long? last = \fCnull\fP, string before = \fCnull\fP, bool? reverse = \fCnull\fP, string alias = \fCnull\fP)"
+
+.PP
+A paginated list of metafields associated with the resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInamespace\fP Container for a set of metafields (maximum of 20 characters)\&. 
+.br
+\fIfirst\fP Returns up to the first \fCn\fP elements from the list\&. 
+.br
+\fIafter\fP Returns the elements that come after the specified cursor\&. 
+.br
+\fIlast\fP Returns up to the last \fCn\fP elements from the list\&. 
+.br
+\fIbefore\fP Returns the elements that come before the specified cursor\&. 
+.br
+\fIreverse\fP Reverse the order of the underlying list\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

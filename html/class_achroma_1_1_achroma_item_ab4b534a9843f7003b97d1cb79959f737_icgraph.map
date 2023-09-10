@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaItem.GetItemSprite" name="Achroma.AchromaItem.GetItemSprite">
+<area shape="rect" id="Node000001" title="Gets the sprite for a given item id in the array." alt="" coords="255,5,461,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a66aa4ba440513930a1885cc5fd718695" title="Returns item sprite by giving an id." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,28,207,28,207,23,240,23"/>
+</map>

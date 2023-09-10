@@ -1,0 +1,128 @@
+\doxysection{Shopify.\+Unity.\+Payment Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_payment}{}\label{class_shopify_1_1_unity_1_1_payment}\index{Shopify.Unity.Payment@{Shopify.Unity.Payment}}
+
+
+A payment applied to a checkout.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Payment\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Payment\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_payment_a1554a4e701bce8c56e450f1ae9484bce}{Payment}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_payment_af8de17ba2dc58ffdd2f33bbda368cf6a}{amount}} ()
+\begin{DoxyCompactList}\small\item\em The amount of the payment. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_aa5051b5326e53823b25ecab84cbca865}\label{class_shopify_1_1_unity_1_1_payment_aa5051b5326e53823b25ecab84cbca865} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries amount\+V2} ()
+\begin{DoxyCompactList}\small\item\em The amount of the payment. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_aea7518b3f9fdcbb7b9b9b8b1396ac258}\label{class_shopify_1_1_unity_1_1_payment_aea7518b3f9fdcbb7b9b9b8b1396ac258} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_mailing_address}{Mailing\+Address}} {\bfseries billing\+Address} ()
+\begin{DoxyCompactList}\small\item\em The billing address for the payment. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_ad186f77647e781763eeddfe5e13ab7fc}\label{class_shopify_1_1_unity_1_1_payment_ad186f77647e781763eeddfe5e13ab7fc} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout}{Checkout}} {\bfseries checkout} ()
+\begin{DoxyCompactList}\small\item\em The checkout to which the payment belongs. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_aa3e4e30b24bf6b61a6eedaa2733d3c39}\label{class_shopify_1_1_unity_1_1_payment_aa3e4e30b24bf6b61a6eedaa2733d3c39} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_credit_card}{Credit\+Card}} {\bfseries credit\+Card} ()
+\begin{DoxyCompactList}\small\item\em The credit card used for the payment in the case of direct payments. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_a808937690326c3deb57a6f8a4b5c0e3a}\label{class_shopify_1_1_unity_1_1_payment_a808937690326c3deb57a6f8a4b5c0e3a} 
+string {\bfseries error\+Message} ()
+\begin{DoxyCompactList}\small\item\em A message describing a processing error during asynchronous processing. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_payment_ad786acf271db06d1729aeb4ced12be11}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_ad1f53b5466e56a964d0dcbb61720f071}\label{class_shopify_1_1_unity_1_1_payment_ad1f53b5466e56a964d0dcbb61720f071} 
+string {\bfseries idempotency\+Key} ()
+\begin{DoxyCompactList}\small\item\em A client-\/side generated token to identify a payment and perform idempotent operations. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_a48f89783a6f27bf6208d980890299e47}\label{class_shopify_1_1_unity_1_1_payment_a48f89783a6f27bf6208d980890299e47} 
+string {\bfseries next\+Action\+Url} ()
+\begin{DoxyCompactList}\small\item\em The URL where the customer needs to be redirected so they can complete the 3D Secure payment flow. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_a6d2006c871333930388b2dc247e374ea}\label{class_shopify_1_1_unity_1_1_payment_a6d2006c871333930388b2dc247e374ea} 
+bool {\bfseries ready} ()
+\begin{DoxyCompactList}\small\item\em Whether or not the payment is still processing asynchronously. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_a9fa555439d23e8faf2795c327ad6fa97}\label{class_shopify_1_1_unity_1_1_payment_a9fa555439d23e8faf2795c327ad6fa97} 
+bool {\bfseries test} ()
+\begin{DoxyCompactList}\small\item\em A flag to indicate if the payment is to be done in test mode for gateways that support it. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_a1c1f9886024c0a64c1724dbf0e4dc40b}\label{class_shopify_1_1_unity_1_1_payment_a1c1f9886024c0a64c1724dbf0e4dc40b} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_transaction}{Transaction}} {\bfseries transaction} ()
+\begin{DoxyCompactList}\small\item\em The actual transaction recorded by \doxylink{namespace_shopify}{Shopify} after having processed the payment with the gateway. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_aee098dcc8c7b4625787843b1c6d204b1}\label{class_shopify_1_1_unity_1_1_payment_aee098dcc8c7b4625787843b1c6d204b1} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A payment applied to a checkout. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_a1554a4e701bce8c56e450f1ae9484bce}\label{class_shopify_1_1_unity_1_1_payment_a1554a4e701bce8c56e450f1ae9484bce} 
+\index{Shopify.Unity.Payment@{Shopify.Unity.Payment}!Payment@{Payment}}
+\index{Payment@{Payment}!Shopify.Unity.Payment@{Shopify.Unity.Payment}}
+\doxysubsubsection{\texorpdfstring{Payment()}{Payment()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Payment.\+Payment (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Payment\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_af8de17ba2dc58ffdd2f33bbda368cf6a}\label{class_shopify_1_1_unity_1_1_payment_af8de17ba2dc58ffdd2f33bbda368cf6a} 
+\index{Shopify.Unity.Payment@{Shopify.Unity.Payment}!amount@{amount}}
+\index{amount@{amount}!Shopify.Unity.Payment@{Shopify.Unity.Payment}}
+\doxysubsubsection{\texorpdfstring{amount()}{amount()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Payment.\+amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The amount of the payment. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000145}{Deprecated}}]Use {\ttfamily amount\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_payment_ad786acf271db06d1729aeb4ced12be11}\label{class_shopify_1_1_unity_1_1_payment_ad786acf271db06d1729aeb4ced12be11} 
+\index{Shopify.Unity.Payment@{Shopify.Unity.Payment}!id@{id}}
+\index{id@{id}!Shopify.Unity.Payment@{Shopify.Unity.Payment}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Payment.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Payment.\+cs\end{DoxyCompactItemize}

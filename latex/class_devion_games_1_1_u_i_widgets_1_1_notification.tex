@@ -1,0 +1,76 @@
+\doxysection{Devion\+Games.\+UIWidgets.\+Notification Class Reference}
+\hypertarget{class_devion_games_1_1_u_i_widgets_1_1_notification}{}\label{class_devion_games_1_1_u_i_widgets_1_1_notification}\index{DevionGames.UIWidgets.Notification@{DevionGames.UIWidgets.Notification}}
+
+
+Inheritance diagram for Devion\+Games.\+UIWidgets.\+Notification\+:
+% FIG 0
+
+
+Collaboration diagram for Devion\+Games.\+UIWidgets.\+Notification\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_devion_games_1_1_u_i_widgets_1_1_notification_ad2c0d5803f64092121bd7630a3bbe5d4}\label{class_devion_games_1_1_u_i_widgets_1_1_notification_ad2c0d5803f64092121bd7630a3bbe5d4} 
+virtual bool {\bfseries Add\+Item} (\mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_notification_options}{Notification\+Options}} item, params string\mbox{[}$\,$\mbox{]} replacements)
+\item 
+\Hypertarget{class_devion_games_1_1_u_i_widgets_1_1_notification_a133c26cde8e481951cebe663d9e34aab}\label{class_devion_games_1_1_u_i_widgets_1_1_notification_a133c26cde8e481951cebe663d9e34aab} 
+virtual bool {\bfseries Add\+Item} (string text, params string\mbox{[}$\,$\mbox{]} replacements)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_container}{Devion\+Games.\+UIWidgets.\+UIContainer$<$ Notification\+Options $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_container_ae7bea15f1f21a7ce370299296180308d}{Add\+Item}} (T item)
+\begin{DoxyCompactList}\small\item\em Adds a new item to a free or dynamicly created slot in this container. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_container_a4bb8280906901929d581f8fd6f70bb67}{Remove\+Item}} (int index)
+\begin{DoxyCompactList}\small\item\em Removes the item at index. Sometimes an item requires more then one slot(two-\/handed weapon), this will remove the item with the extra slots. \end{DoxyCompactList}\item 
+virtual T \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_container_aea83b97efd6decc136cbcb19a10c1b2c}{Replace\+Item}} (int index, T item)
+\begin{DoxyCompactList}\small\item\em Replaces the items at index and returns the previous item. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_container_a6dbcf81fd487b83721e7274ce50e1852}{Can\+Add\+Item}} (T item, out \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_slot}{UISlot}}$<$ T $>$ slot, bool create\+Slot=false)
+\begin{DoxyCompactList}\small\item\em Checks if the item can be added to this container. \end{DoxyCompactList}\item 
+void {\bfseries Refresh\+Slots} ()
+\begin{DoxyCompactList}\small\item\em Refreshs the slot list and reorganize indices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_devion_games_1_1_u_i_widgets_1_1_notification_aa4c5b9e17a5f8d9437b19073ceb6c975}\label{class_devion_games_1_1_u_i_widgets_1_1_notification_aa4c5b9e17a5f8d9437b19073ceb6c975} 
+bool {\bfseries fade} = true
+\item 
+\Hypertarget{class_devion_games_1_1_u_i_widgets_1_1_notification_aee63edfab74c071f037763aa605704af}\label{class_devion_games_1_1_u_i_widgets_1_1_notification_aee63edfab74c071f037763aa605704af} 
+string {\bfseries time\+Format} = "{}HH\+:mm\+:ss"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_container}{Devion\+Games.\+UIWidgets.\+UIContainer$<$ Notification\+Options $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+override void {\bfseries On\+Awake} ()
+\item 
+virtual \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_slot}{UISlot}}$<$ T $>$ {\bfseries Create\+Slot} ()
+\begin{DoxyCompactList}\small\item\em Creates a new slot. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_container_ada785d2978ad6aa370e1fad01ac23501}{Destroy\+Slot}} (int index)
+\begin{DoxyCompactList}\small\item\em Destroy the slot and reorganize indices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_container}{Devion\+Games.\+UIWidgets.\+UIContainer$<$ Notification\+Options $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries m\+\_\+\+Dynamic\+Container}
+\begin{DoxyCompactList}\small\item\em Sets the container as dynamic. Slots are instantiated at runtime. \end{DoxyCompactList}\item 
+Transform {\bfseries m\+\_\+\+Slot\+Parent}
+\begin{DoxyCompactList}\small\item\em The parent transform of slots. \end{DoxyCompactList}\item 
+Game\+Object {\bfseries m\+\_\+\+Slot\+Prefab}
+\begin{DoxyCompactList}\small\item\em The slot prefab. This game object should contain the Slot component or a child class of Slot. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_slot}{UISlot}}$<$ T $>$ $>$ {\bfseries m\+\_\+\+Slots}
+\item 
+List$<$ T $>$ {\bfseries m\+\_\+\+Collection}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_container}{Devion\+Games.\+UIWidgets.\+UIContainer$<$ Notification\+Options $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+override string\mbox{[}$\,$\mbox{]} {\bfseries Callbacks}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Read\+Only\+Collection$<$ \mbox{\hyperlink{class_devion_games_1_1_u_i_widgets_1_1_u_i_slot}{UISlot}}$<$ T $>$ $>$ {\bfseries Slots}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collection of slots this container is holding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Devion Games/\+UI Widgets/\+Scripts/\+Runtime/Notification.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,172 @@
+.TH "Achroma.AchromaUtils" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaUtils
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static string \fBGenerateRandomString\fP (int length)"
+.br
+.RI "Method to generate random string for apple sign in\&. "
+.ti -1c
+.RI "static string \fBGenerateSHA256NonceFromRawNonce\fP (string rawNonce)"
+.br
+.RI "Method to generate SHA-256 hash string for Apple Sign in\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static string \fBRESTARTREQUIRED\fP = 'Not initialized\&. Restart required'"
+.br
+.ti -1c
+.RI "static string \fBACCOUNTDOESNTEXIST\fP = 'Account doesn't exist'"
+.br
+.ti -1c
+.RI "const string \fBLOGIN_CANCELLED\fP = 'Login cancelled'"
+.br
+.ti -1c
+.RI "static string \fBALREADY_LOGGED_IN\fP = 'Already logged in'"
+.br
+.ti -1c
+.RI "static string \fBSUCCESS_TITLE\fP = 'Success'"
+.br
+.ti -1c
+.RI "static string \fBERROR_TITLE\fP = 'Sorry'"
+.br
+.ti -1c
+.RI "static string \fBWARNING_TITLE\fP = 'Attention'"
+.br
+.ti -1c
+.RI "static string \fBCONFIRMATION_TITLE\fP = 'Confirmation'"
+.br
+.ti -1c
+.RI "static string[] \fBOK_BUTTON\fP = new string[] { 'OK' }"
+.br
+.ti -1c
+.RI "static string[] \fBYES_NO_BUTTONS\fP = new string[] { 'Yes', 'No' }"
+.br
+.ti -1c
+.RI "static string \fBUSER_SPRITE\fP = '8'"
+.br
+.ti -1c
+.RI "static string \fBSHARD_SPRITE\fP = '0'"
+.br
+.ti -1c
+.RI "static string \fBSAVE_SPRITE\fP = '1'"
+.br
+.ti -1c
+.RI "static string \fBCONNECT_SPRITE\fP = '2'"
+.br
+.ti -1c
+.RI "static string \fBACCOMPLISHMENT_SPRITE\fP = '14'"
+.br
+.ti -1c
+.RI "static string \fBHOURGLASS_SPRITE\fP = '4'"
+.br
+.ti -1c
+.RI "static string \fBREVEAL_SPRITE\fP = '5'"
+.br
+.ti -1c
+.RI "static string \fBREVIVE_SPRITE\fP = '7'"
+.br
+.ti -1c
+.RI "static string \fBCHROMAFLARE_SPRITE\fP = '9'"
+.br
+.ti -1c
+.RI "static string \fBCHROMATICSHIELD_SPRITE\fP = '10'"
+.br
+.ti -1c
+.RI "static string \fBDRAIN_SPRITE\fP = '15'"
+.br
+.ti -1c
+.RI "static string \fBMONEY_SPRITE\fP = '3'"
+.br
+.ti -1c
+.RI "static string \fBCHROMA_SPRITE\fP = '12'"
+.br
+.ti -1c
+.RI "static string \fBACHROM_SPRITE\fP = '11'"
+.br
+.ti -1c
+.RI "static string \fBCHARACTERJPG_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/characterjpg\&.unity3d'"
+.br
+.ti -1c
+.RI "static string \fBLOCATIONJPG_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/locationsjpg\&.unity3d'"
+.br
+.ti -1c
+.RI "static string \fBLOCATIONPNG_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/locationspng\&.unity3d'"
+.br
+.ti -1c
+.RI "static string \fBLOCATIONANIMATION_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/locationspriteanimation\&.unity3d'"
+.br
+.ti -1c
+.RI "static string \fBCHARACTERPNG_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/characterpng\&.unity3d'"
+.br
+.ti -1c
+.RI "static string \fBCHARACTERANIMATION_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/characterspriteanimation\&.unity3d'"
+.br
+.ti -1c
+.RI "static string \fBSEPARATOR_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/separators\&.unity3d'"
+.br
+.ti -1c
+.RI "static string \fBMENU_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/menu\&.unity3d'"
+.br
+.ti -1c
+.RI "static string \fBITEMJPG_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/itemsjpg\&.unity3d'"
+.br
+.ti -1c
+.RI "static string \fBITEMPNG_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/itemspng\&.unity3d'"
+.br
+.ti -1c
+.RI "static string \fBACTIONPNG_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/actionspng\&.unity3d'"
+.br
+.ti -1c
+.RI "static string \fBACHIEVEMENTPNG_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/achievementspng\&.unity3d'"
+.br
+.ti -1c
+.RI "static string \fBADVENTUREVIDEOS_ASSETBUNDLE\fP = 'Media/Bundles/{PLATFORM}/storyvideos\&.unity3d'"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "static string Achroma\&.AchromaUtils\&.GenerateRandomString (int length)\fC [static]\fP"
+
+.PP
+Method to generate random string for apple sign in\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlength\fP size of the string
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "static string Achroma\&.AchromaUtils\&.GenerateSHA256NonceFromRawNonce (string rawNonce)\fC [static]\fP"
+
+.PP
+Method to generate SHA-256 hash string for Apple Sign in\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrawNonce\fP Given string to generate the SHA hash
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+SHA-256 hash
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

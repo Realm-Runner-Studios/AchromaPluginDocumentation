@@ -1,0 +1,108 @@
+\doxysection{Shopify.\+Unity.\+Money\+V2connection Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_money_v2connection}{}\label{class_shopify_1_1_unity_1_1_money_v2connection}\index{Shopify.Unity.MoneyV2connection@{Shopify.Unity.MoneyV2connection}}
+
+
+An auto-\/generated type for paginating through multiple Money\+V2s. . Money\+V2connection can be cast to {\ttfamily List$<$\+Money\+V2$>$}.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Money\+V2connection\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Money\+V2connection\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2connection_aaed00306da8a94fe27709fb5fec51cd3}{Money\+V2connection}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_money_v2connection_a13cebbfdd1c49f53de7e6c930684f2b9}\label{class_shopify_1_1_unity_1_1_money_v2connection_a13cebbfdd1c49f53de7e6c930684f2b9} 
+IEnumerator {\bfseries Get\+Enumerator} ()
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_money_v2connection_aae15e3198f5d52cf70ac19f320dd8c46}\label{class_shopify_1_1_unity_1_1_money_v2connection_aae15e3198f5d52cf70ac19f320dd8c46} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2edge}{Money\+V2edge}} $>$ {\bfseries edges} ()
+\begin{DoxyCompactList}\small\item\em A list of edges. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_money_v2connection_aa59d7f4cb43166a4a9c27aa7346c7939}\label{class_shopify_1_1_unity_1_1_money_v2connection_aa59d7f4cb43166a4a9c27aa7346c7939} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_page_info}{Page\+Info}} {\bfseries page\+Info} ()
+\begin{DoxyCompactList}\small\item\em Information to aid in pagination. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_money_v2connection_ad640de268669d6f5f13a431700bbb356}\label{class_shopify_1_1_unity_1_1_money_v2connection_ad640de268669d6f5f13a431700bbb356} 
+object {\bfseries Clone} ()
+\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2connection_a549b430666421605b3d44ed2ca04059e}{Add\+From\+Connection}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2connection}{Money\+V2connection}} connection)
+\begin{DoxyCompactList}\small\item\em This is a utility function that allows you to append newly queried data from a connection into this one. The passed in Connection will be appended into this Connection. The {\ttfamily edges} will receive all new {\ttfamily nodes}, and both the {\ttfamily cursors} and {\ttfamily page\+Info} will be updated based on the passed Connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_money_v2connection_a0bb5202cc50b5b113b88c34b5ddde067}\label{class_shopify_1_1_unity_1_1_money_v2connection_a0bb5202cc50b5b113b88c34b5ddde067} 
+static {\bfseries operator List$<$ Money\+V2 $>$} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2connection}{Money\+V2connection}} connection)
+\begin{DoxyCompactList}\small\item\em Adds the ability to cast Money\+V2connection to {\ttfamily List$<$\+Money\+V2$>$}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_money_v2connection_a95c3e232bd1cbbf7bd6a26424aab2a75}\label{class_shopify_1_1_unity_1_1_money_v2connection_a95c3e232bd1cbbf7bd6a26424aab2a75} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} $>$ {\bfseries Nodes}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An auto-\/generated type for paginating through multiple Money\+V2s. . Money\+V2connection can be cast to {\ttfamily List$<$\+Money\+V2$>$}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_money_v2connection_aaed00306da8a94fe27709fb5fec51cd3}\label{class_shopify_1_1_unity_1_1_money_v2connection_aaed00306da8a94fe27709fb5fec51cd3} 
+\index{Shopify.Unity.MoneyV2connection@{Shopify.Unity.MoneyV2connection}!MoneyV2connection@{MoneyV2connection}}
+\index{MoneyV2connection@{MoneyV2connection}!Shopify.Unity.MoneyV2connection@{Shopify.Unity.MoneyV2connection}}
+\doxysubsubsection{\texorpdfstring{MoneyV2connection()}{MoneyV2connection()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Money\+V2connection.\+Money\+V2connection (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Money\+V2connection\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_money_v2connection_a549b430666421605b3d44ed2ca04059e}\label{class_shopify_1_1_unity_1_1_money_v2connection_a549b430666421605b3d44ed2ca04059e} 
+\index{Shopify.Unity.MoneyV2connection@{Shopify.Unity.MoneyV2connection}!AddFromConnection@{AddFromConnection}}
+\index{AddFromConnection@{AddFromConnection}!Shopify.Unity.MoneyV2connection@{Shopify.Unity.MoneyV2connection}}
+\doxysubsubsection{\texorpdfstring{AddFromConnection()}{AddFromConnection()}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+Money\+V2connection.\+Add\+From\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2connection}{Money\+V2connection}}}]{connection }\end{DoxyParamCaption})}
+
+
+
+This is a utility function that allows you to append newly queried data from a connection into this one. The passed in Connection will be appended into this Connection. The {\ttfamily edges} will receive all new {\ttfamily nodes}, and both the {\ttfamily cursors} and {\ttfamily page\+Info} will be updated based on the passed Connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & response\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Money\+V2\+Connection.\+cs\end{DoxyCompactItemize}

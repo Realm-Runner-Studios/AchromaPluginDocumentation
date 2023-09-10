@@ -1,0 +1,190 @@
+\doxysection{Achroma.\+Game\+Achievement Class Reference}
+\hypertarget{class_achroma_1_1_game_achievement}{}\label{class_achroma_1_1_game_achievement}\index{Achroma.GameAchievement@{Achroma.GameAchievement}}
+
+
+Collaboration diagram for Achroma.\+Game\+Achievement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{class_achroma_1_1_game_achievement__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a7f453b20079fd836bd8ec9ea3fa5038f}\label{class_achroma_1_1_game_achievement_a7f453b20079fd836bd8ec9ea3fa5038f} 
+enum {\bfseries Game\+Achievement\+State} \{ {\bfseries Not\+Completed}
+, {\bfseries Partially\+Completed}
+, {\bfseries Completed}
+ \}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_ae7d6b2f7faa24dd3f72d022bec113d3b}\label{class_achroma_1_1_game_achievement_ae7d6b2f7faa24dd3f72d022bec113d3b} 
+enum {\bfseries Game\+Achievement\+Operation} \{ {\bfseries Add}
+, {\bfseries Subtract}
+, {\bfseries Update}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a82b3b3bb212799e6e7c7ab54d7ca13fc}\label{class_achroma_1_1_game_achievement_a82b3b3bb212799e6e7c7ab54d7ca13fc} 
+static string {\bfseries Get\+Achievement\+Title} (string name)
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a24874ba8d11756d3016d64c6c90d71ce}\label{class_achroma_1_1_game_achievement_a24874ba8d11756d3016d64c6c90d71ce} 
+static int {\bfseries Get\+Achievement\+Completion\+Value} (string name)
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a3c9968afcb1f0e588b9c71918b9865e4}\label{class_achroma_1_1_game_achievement_a3c9968afcb1f0e588b9c71918b9865e4} 
+static string {\bfseries Get\+Achievement\+Sprite} (string name, int value)
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a55f4f4ec548ee78df81a34d9c43c1a2e}\label{class_achroma_1_1_game_achievement_a55f4f4ec548ee78df81a34d9c43c1a2e} 
+static string {\bfseries Get\+Achievement\+Description} (string name)
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_aebf054cb4552291003ce93957bc03d45}\label{class_achroma_1_1_game_achievement_aebf054cb4552291003ce93957bc03d45} 
+static \mbox{\hyperlink{struct_achroma_1_1_achievement}{Achievement}} {\bfseries Get\+Achievement\+By\+Name} (string name)
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a24080374d68bfe03a2ed03a3a6b83fc5}\label{class_achroma_1_1_game_achievement_a24080374d68bfe03a2ed03a3a6b83fc5} 
+static void {\bfseries Update\+Achievement} (string name, int value, bool push\+To\+DB=true, Game\+Achievement\+Operation operation=Game\+Achievement\+Operation.\+Update, Unity\+Action callback=null)
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_add824e79507657174722be46d6512da5}\label{class_achroma_1_1_game_achievement_add824e79507657174722be46d6512da5} 
+static void {\bfseries Update\+Victory\+Achievements} (Unity\+Action callback=null)
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a3571a64660f64f3cb82730f5f68567f6}\label{class_achroma_1_1_game_achievement_a3571a64660f64f3cb82730f5f68567f6} 
+static void {\bfseries Update\+Adventure\+Death\+Achievement} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a5ddaa1c7170d68518f0029f0cb760a9b}\label{class_achroma_1_1_game_achievement_a5ddaa1c7170d68518f0029f0cb760a9b} 
+static Color {\bfseries UNLOCKED\+\_\+\+COLOR} = new Color((float)(163.\+0f / 255.\+0f), (float)(243.\+0f / 255.\+0f), (float)(136 / 255.\+0f))
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a7f4842c29005378e5fd70f8edd24f49b}\label{class_achroma_1_1_game_achievement_a7f4842c29005378e5fd70f8edd24f49b} 
+const string {\bfseries WELCOME} = "{}Welcome"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_aca23ce4bbc4e96b1c11ac940d2b96410}\label{class_achroma_1_1_game_achievement_aca23ce4bbc4e96b1c11ac940d2b96410} 
+const string {\bfseries BIGSPENDER} = "{}Big\+Spender"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_ab1c1bc17a5246d70866992ab869020f1}\label{class_achroma_1_1_game_achievement_ab1c1bc17a5246d70866992ab869020f1} 
+const string {\bfseries CHROMAVICTORY} = "{}Chroma\+Victory"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_aed065912dabef42c56dd40679b641a4d}\label{class_achroma_1_1_game_achievement_aed065912dabef42c56dd40679b641a4d} 
+const string {\bfseries CHROMAVICTORY2} = "{}Chroma\+Victory2"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a5b573a03ce1072541f20392a87b9f1af}\label{class_achroma_1_1_game_achievement_a5b573a03ce1072541f20392a87b9f1af} 
+const string {\bfseries CHROMAVICTORY3} = "{}Chroma\+Victory3"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_acb1dbc2558acd9dcb6893dd919c22282}\label{class_achroma_1_1_game_achievement_acb1dbc2558acd9dcb6893dd919c22282} 
+const string {\bfseries CHROMAVICTORY4} = "{}Chroma\+Victory4"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_accf318cdda213ac3086d0d21e1a104c0}\label{class_achroma_1_1_game_achievement_accf318cdda213ac3086d0d21e1a104c0} 
+const string {\bfseries ACHROMVICTORY} = "{}Achrom\+Victory"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a2b63b46080bae635ac5de1e6fa718d8d}\label{class_achroma_1_1_game_achievement_a2b63b46080bae635ac5de1e6fa718d8d} 
+const string {\bfseries ACHROMVICTORY2} = "{}Achrom\+Victory2"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a30106bc89e74f1b4633fa567e0af5a4b}\label{class_achroma_1_1_game_achievement_a30106bc89e74f1b4633fa567e0af5a4b} 
+const string {\bfseries ACHROMVICTORY3} = "{}Achrom\+Victory3"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a3c92893d44f0e7fee7827c2ddd5c7e5f}\label{class_achroma_1_1_game_achievement_a3c92893d44f0e7fee7827c2ddd5c7e5f} 
+const string {\bfseries ACHROMVICTORY4} = "{}Achrom\+Victory4"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a7ba25a2cd75bafc6ba6b9c0d9b3258ba}\label{class_achroma_1_1_game_achievement_a7ba25a2cd75bafc6ba6b9c0d9b3258ba} 
+const string {\bfseries GRACIOUSHOST} = "{}Gracious\+Host"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a7793d2338c80b11891cf43af4c51d207}\label{class_achroma_1_1_game_achievement_a7793d2338c80b11891cf43af4c51d207} 
+const string {\bfseries JOINTHEFUN} = "{}Join\+The\+Fun"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a8d5c8fba899806049c285e2c8b4318f2}\label{class_achroma_1_1_game_achievement_a8d5c8fba899806049c285e2c8b4318f2} 
+const string {\bfseries LOOKATME} = "{}Look\+At\+Me"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a6bd5c5e5d89f220bf34944628cf33f41}\label{class_achroma_1_1_game_achievement_a6bd5c5e5d89f220bf34944628cf33f41} 
+const string {\bfseries FIRSTLEGENDARY} = "{}First\+Legendary"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a9c2b4d13e7038eb2684f50b544246fee}\label{class_achroma_1_1_game_achievement_a9c2b4d13e7038eb2684f50b544246fee} 
+const string {\bfseries NEWSLETTERREADER} = "{}Newsletter\+Reader"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a317f3fc4a55866a6f8301385f61415bb}\label{class_achroma_1_1_game_achievement_a317f3fc4a55866a6f8301385f61415bb} 
+const string {\bfseries DISCORDMEMBER} = "{}Discord\+Member"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a15088ac5da79ee4ee4a1bc1c009276e7}\label{class_achroma_1_1_game_achievement_a15088ac5da79ee4ee4a1bc1c009276e7} 
+const string {\bfseries CURDLEHILLCOLLECTOR} = "{}Curdle\+Hill\+Collector"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a279c0431654cfeb5c3830c4139cc0c0d}\label{class_achroma_1_1_game_achievement_a279c0431654cfeb5c3830c4139cc0c0d} 
+const string {\bfseries NORSOCOLLECTOR} = "{}Norso\+Collector"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_aeb688a454fbded22050f32c098600d66}\label{class_achroma_1_1_game_achievement_aeb688a454fbded22050f32c098600d66} 
+const string {\bfseries FLUTTERBYCOLLECTOR} = "{}Flutterby\+Collector"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a7c70b38d70b5b7acae2d84251f075f59}\label{class_achroma_1_1_game_achievement_a7c70b38d70b5b7acae2d84251f075f59} 
+const string {\bfseries REALMRUNNERSCOLLECTOR} = "{}Realm\+Runners\+Collector"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a4f32ac7c9ff8e5957e75f4939e6d3c03}\label{class_achroma_1_1_game_achievement_a4f32ac7c9ff8e5957e75f4939e6d3c03} 
+const string {\bfseries DRACOCOLLECTOR} = "{}Draco\+Collector"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a1e7dfd4546cae9ae6a76005e0f5d8072}\label{class_achroma_1_1_game_achievement_a1e7dfd4546cae9ae6a76005e0f5d8072} 
+const string {\bfseries CHAPTER1\+COLLECTOR} = "{}Chapter1\+Collector"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a9732389322adad02c523aeef55ab80ad}\label{class_achroma_1_1_game_achievement_a9732389322adad02c523aeef55ab80ad} 
+const string {\bfseries CANVASMASTER} = "{}Canvas\+Master"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a6ebe1033f3e6ac17c35a2d2d454ae9b1}\label{class_achroma_1_1_game_achievement_a6ebe1033f3e6ac17c35a2d2d454ae9b1} 
+const string {\bfseries HEROESMASTER} = "{}Heroes\+Master"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_acd0b960fe525800a374fb12d7637e18d}\label{class_achroma_1_1_game_achievement_acd0b960fe525800a374fb12d7637e18d} 
+const string {\bfseries ADDFRIEND} = "{}Adda\+Friend"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a187c28f1f269008f7d5ec916b5717c75}\label{class_achroma_1_1_game_achievement_a187c28f1f269008f7d5ec916b5717c75} 
+const string {\bfseries MAGUSELITEENDING} = "{}Reach\+Magus\+Elite\+Ending"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a659b599513a956f6e317c68c2ca4a380}\label{class_achroma_1_1_game_achievement_a659b599513a956f6e317c68c2ca4a380} 
+const string {\bfseries OCCULTISTENDING} = "{}Reach\+Occultist\+Ending"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_ab44b1df93611901ce044d53088355340}\label{class_achroma_1_1_game_achievement_ab44b1df93611901ce044d53088355340} 
+const string {\bfseries VONRUTHROENDING} = "{}Reach\+Von\+Ruthro\+Ending"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a2c3129c3a584b132c9350c292db25c38}\label{class_achroma_1_1_game_achievement_a2c3129c3a584b132c9350c292db25c38} 
+const string {\bfseries COLLECTEDMILESTONES} = "{}100\%collection(Rare)"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a4c85fbba638fdf4a480f9ecfc5310b8e}\label{class_achroma_1_1_game_achievement_a4c85fbba638fdf4a480f9ecfc5310b8e} 
+const string {\bfseries COLLECTALLRELICPOWERS} = "{}Collectedall5\+Relic\+Powers."{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_ab64c3eafd22cb338070e22d777402897}\label{class_achroma_1_1_game_achievement_ab64c3eafd22cb338070e22d777402897} 
+const string {\bfseries STARTADVENTURE} = "{}Startanadventure."{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_aac466d5b10c094b1e589b24384a29e56}\label{class_achroma_1_1_game_achievement_aac466d5b10c094b1e589b24384a29e56} 
+const string {\bfseries USETIMESTEP} = "{}Use\+Timestep"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a7a6649c74640ba36979202e2eea57da1}\label{class_achroma_1_1_game_achievement_a7a6649c74640ba36979202e2eea57da1} 
+const string {\bfseries USEREVEAL} = "{}Use\+Reveal"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_af95cad947fb1bc5c65328a5f8c262784}\label{class_achroma_1_1_game_achievement_af95cad947fb1bc5c65328a5f8c262784} 
+const string {\bfseries USEREVIVE} = "{}Use\+Revive"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a93b345ecd19a81ba9defe87b6861a08a}\label{class_achroma_1_1_game_achievement_a93b345ecd19a81ba9defe87b6861a08a} 
+const string {\bfseries USECHROMAFLARE} = "{}Use\+Chroma\+Flare"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_ae27183607a376db00192d040333dab69}\label{class_achroma_1_1_game_achievement_ae27183607a376db00192d040333dab69} 
+const string {\bfseries USECHROMATICSHIELD} = "{}Use\+Chromatic\+Shield"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a9d95ba0eb4dd043fc403e85014e5f5bf}\label{class_achroma_1_1_game_achievement_a9d95ba0eb4dd043fc403e85014e5f5bf} 
+const string {\bfseries USEACHROMSURGE} = "{}Use\+Achrom\+Surge"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_adb89a2421c42e8d5c3469a13100d0ea7}\label{class_achroma_1_1_game_achievement_adb89a2421c42e8d5c3469a13100d0ea7} 
+const string {\bfseries YOUDIED} = "{}You\+Died"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_af1db46ecb418f478b7c16c2a205596d9}\label{class_achroma_1_1_game_achievement_af1db46ecb418f478b7c16c2a205596d9} 
+const string {\bfseries YOUDIED2} = "{}You\+Died2"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a8f6efc9a9bd5119bf439f95f5dbd9964}\label{class_achroma_1_1_game_achievement_a8f6efc9a9bd5119bf439f95f5dbd9964} 
+const string {\bfseries YOUDIED3} = "{}You\+Died3"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_aca24dbdda435a4ac673270a51a738372}\label{class_achroma_1_1_game_achievement_aca24dbdda435a4ac673270a51a738372} 
+const string {\bfseries YOUDIED4} = "{}You\+Died4"{}
+\item 
+\Hypertarget{class_achroma_1_1_game_achievement_a173ab954a2c08d382da94830ef3f9bc8}\label{class_achroma_1_1_game_achievement_a173ab954a2c08d382da94830ef3f9bc8} 
+static \mbox{\hyperlink{struct_achroma_1_1_achievement}{Achievement}}\mbox{[}$\,$\mbox{]} {\bfseries achievements}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Data Schemes/Achroma\+Achievement\+Data\+Model.\+cs\end{DoxyCompactItemize}

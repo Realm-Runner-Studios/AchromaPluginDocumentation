@@ -1,0 +1,278 @@
+.TH "Shopify.Unity.Checkout" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Checkout \- A container for all the information required to checkout items and pay\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.Node\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCheckout\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "List< \fBAppliedGiftCard\fP > \fBappliedGiftCards\fP ()"
+.br
+.RI "The gift cards used on the checkout\&. "
+.ti -1c
+.RI "\fBAvailableShippingRates\fP \fBavailableShippingRates\fP ()"
+.br
+.RI "The available shipping rates for this Checkout\&. Should only be used when checkout \fCrequiresShipping\fP is \fCtrue\fP and the shipping address is valid\&. "
+.ti -1c
+.RI "DateTime? \fBcompletedAt\fP ()"
+.br
+.RI "The date and time when the checkout was completed\&. "
+.ti -1c
+.RI "DateTime? \fBcreatedAt\fP ()"
+.br
+.RI "The date and time when the checkout was created\&. "
+.ti -1c
+.RI "\fBCurrencyCode\fP \fBcurrencyCode\fP ()"
+.br
+.RI "The currency code for the Checkout\&. "
+.ti -1c
+.RI "List< \fBAttribute\fP > \fBcustomAttributes\fP ()"
+.br
+.RI "A list of extra information that is added to the checkout\&. "
+.ti -1c
+.RI "\fBCustomer\fP \fBcustomer\fP ()"
+.br
+.RI "The customer associated with the checkout\&. "
+.ti -1c
+.RI "\fBDiscountApplicationConnection\fP \fBdiscountApplications\fP (string alias=null)"
+.br
+.RI "Discounts that have been applied on the checkout\&. "
+.ti -1c
+.RI "string \fBemail\fP ()"
+.br
+.RI "The email attached to this checkout\&. "
+.ti -1c
+.RI "string \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemConnection\fP \fBlineItems\fP (string alias=null)"
+.br
+.RI "A list of line item objects, each one containing information about an item in the checkout\&. "
+.ti -1c
+.RI "\fBMoneyV2\fP \fBlineItemsSubtotalPrice\fP ()"
+.br
+.RI "The sum of all the prices of all the items in the checkout\&. Duties, taxes, shipping and discounts excluded\&. "
+.ti -1c
+.RI "string \fBnote\fP ()"
+.br
+.RI "The note associated with the checkout\&. "
+.ti -1c
+.RI "\fBOrder\fP \fBorder\fP ()"
+.br
+.RI "The resulting order from a paid checkout\&. "
+.ti -1c
+.RI "string \fBorderStatusUrl\fP ()"
+.br
+.RI "The Order Status Page for this Checkout, null when checkout is not completed\&. "
+.ti -1c
+.RI "decimal \fBpaymentDue\fP ()"
+.br
+.RI "The amount left to be paid\&. This is equal to the cost of the line items, taxes and shipping minus discounts and gift cards\&. "
+.ti -1c
+.RI "\fBMoneyV2\fP \fBpaymentDueV2\fP ()"
+.br
+.RI "The amount left to be paid\&. This is equal to the cost of the line items, duties, taxes and shipping minus discounts and gift cards\&. "
+.ti -1c
+.RI "bool \fBready\fP ()"
+.br
+.RI "Whether or not the Checkout is ready and can be completed\&. Checkouts may have asynchronous operations that can take time to finish\&. If you want to complete a checkout or ensure all the fields are populated and up to date, polling is required until the value is true\&. "
+.ti -1c
+.RI "bool \fBrequiresShipping\fP ()"
+.br
+.RI "States whether or not the fulfillment requires shipping\&. "
+.ti -1c
+.RI "\fBMailingAddress\fP \fBshippingAddress\fP ()"
+.br
+.RI "The shipping address to where the line items will be shipped\&. "
+.ti -1c
+.RI "List< \fBDiscountAllocation\fP > \fBshippingDiscountAllocations\fP ()"
+.br
+.RI "The discounts that have been allocated onto the shipping line by discount applications\&. "
+.ti -1c
+.RI "\fBShippingRate\fP \fBshippingLine\fP ()"
+.br
+.RI "Once a shipping rate is selected by the customer it is transitioned to a \fCshipping_line\fP object\&. "
+.ti -1c
+.RI "decimal \fBsubtotalPrice\fP ()"
+.br
+.RI "Price of the checkout before shipping and taxes\&. "
+.ti -1c
+.RI "\fBMoneyV2\fP \fBsubtotalPriceV2\fP ()"
+.br
+.RI "Price of the checkout before duties, shipping and taxes\&. "
+.ti -1c
+.RI "bool \fBtaxExempt\fP ()"
+.br
+.RI "Specifies if the Checkout is tax exempt\&. "
+.ti -1c
+.RI "bool \fBtaxesIncluded\fP ()"
+.br
+.RI "Specifies if taxes are included in the line item and shipping line prices\&. "
+.ti -1c
+.RI "decimal \fBtotalPrice\fP ()"
+.br
+.RI "The sum of all the prices of all the items in the checkout, taxes and discounts included\&. "
+.ti -1c
+.RI "\fBMoneyV2\fP \fBtotalPriceV2\fP ()"
+.br
+.RI "The sum of all the prices of all the items in the checkout, duties, taxes and discounts included\&. "
+.ti -1c
+.RI "decimal \fBtotalTax\fP ()"
+.br
+.RI "The sum of all the taxes applied to the line items and shipping lines in the checkout\&. "
+.ti -1c
+.RI "\fBMoneyV2\fP \fBtotalTaxV2\fP ()"
+.br
+.RI "The sum of all the taxes applied to the line items and shipping lines in the checkout\&. "
+.ti -1c
+.RI "DateTime? \fBupdatedAt\fP ()"
+.br
+.RI "The date and time when the checkout was last updated\&. "
+.ti -1c
+.RI "string \fBwebUrl\fP ()"
+.br
+.RI "The url pointing to the checkout accessible from the web\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A container for all the information required to checkout items and pay\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Checkout\&.Checkout (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Checkout
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCustomer\fP Shopify\&.Unity\&.Checkout\&.customer ()"
+
+.PP
+The customer associated with the checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+This field will always return null\&. If you have an authentication token for the customer, you can use the \fCcustomer\fP field on the query root to retrieve it\&. 
+.RE
+.PP
+
+.SS "\fBDiscountApplicationConnection\fP Shopify\&.Unity\&.Checkout\&.discountApplications (string alias = \fCnull\fP)"
+
+.PP
+Discounts that have been applied on the checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.Checkout\&.id ()"
+
+.PP
+Globally unique identifier\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Node\fP\&.
+.SS "\fBCheckoutLineItemConnection\fP Shopify\&.Unity\&.Checkout\&.lineItems (string alias = \fCnull\fP)"
+
+.PP
+A list of line item objects, each one containing information about an item in the checkout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "decimal Shopify\&.Unity\&.Checkout\&.paymentDue ()"
+
+.PP
+The amount left to be paid\&. This is equal to the cost of the line items, taxes and shipping minus discounts and gift cards\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCpaymentDueV2\fP instead 
+.RE
+.PP
+
+.SS "decimal Shopify\&.Unity\&.Checkout\&.subtotalPrice ()"
+
+.PP
+Price of the checkout before shipping and taxes\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCsubtotalPriceV2\fP instead 
+.RE
+.PP
+
+.SS "decimal Shopify\&.Unity\&.Checkout\&.totalPrice ()"
+
+.PP
+The sum of all the prices of all the items in the checkout, taxes and discounts included\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCtotalPriceV2\fP instead 
+.RE
+.PP
+
+.SS "decimal Shopify\&.Unity\&.Checkout\&.totalTax ()"
+
+.PP
+The sum of all the taxes applied to the line items and shipping lines in the checkout\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCtotalTaxV2\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

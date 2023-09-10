@@ -1,0 +1,246 @@
+.TH "AchromaAPI.AchromaInstanceDatabase" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AchromaAPI.AchromaInstanceDatabase \- Database Singleton responsible with all the tools to gather the relevant data from \fBAchroma\fP Database\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBDatabaseIsLoaded\fP ()"
+.br
+.RI "This returns to the host application the state of the database\&. "
+.ti -1c
+.RI "static void \fBAddUserDataChangeListener\fP (UnityAction< \fBUserData\fP > listener, UnityAction< bool, string > callback=null)"
+.br
+.RI "This adds a listener to the changes on the user data\&. If something happens to the user, this change is replicated on this method\&. "
+.ti -1c
+.RI "static void \fBRemoveUserDataChangeListener\fP (UnityAction< \fBUserData\fP > listener, UnityAction< bool, string > callback=null)"
+.br
+.RI "This removes the user data listener to avoid accessing destroyed objects\&. "
+.ti -1c
+.RI "static int \fBGetUserAvatar\fP ()"
+.br
+.RI "Returns the avatar to the host application\&. "
+.ti -1c
+.RI "static string \fBGetUserId\fP ()"
+.br
+.RI "Returns the Firebase User id, in case the user is logged\&. "
+.ti -1c
+.RI "static void \fBSetUserAvatar\fP (int avatar)"
+.br
+.RI "Returns the avatar to the host application\&. "
+.ti -1c
+.RI "static string \fBGetUserLastUpdate\fP ()"
+.br
+.RI "Returns the user's last update date\&. "
+.ti -1c
+.RI "static void \fBSubtractShards\fP (int shards, UnityAction< bool, string > callback)"
+.br
+.RI "Takes shards from the user\&. "
+.ti -1c
+.RI "static int \fBGetUserShards\fP ()"
+.br
+.RI "Returns the amount of shards the user has\&. "
+.ti -1c
+.RI "static void \fBGetUserIdByUniqueNumber\fP (string uniqueNumber, UnityAction< bool, string, string > callback)"
+.br
+.RI "Returns the user id for a unique number\&. "
+.ti -1c
+.RI "static void \fBSaveUserData\fP (UnityAction< bool, string > callback)"
+.br
+.RI "Uploads user data to the database\&. "
+.ti -1c
+.RI "static int \fBGetAchievementValue\fP (string name)"
+.br
+.RI "Returns the achievement value for a given name when the user logged in\&. "
+.ti -1c
+.RI "static float \fBGetAchievementCompletionPct\fP (string name)"
+.br
+.RI "Returns the achievement value for a given name when the user logged in\&. "
+.ti -1c
+.RI "static void \fBUpdateStoryAchrometer\fP (int value)"
+.br
+.RI "Updates the Story Achrometer add the param value\&. "
+.ti -1c
+.RI "static bool \fBAmIFriendsWith\fP (string id)"
+.br
+.RI "Responds if the current user is friends with the id informed\&. "
+.ti -1c
+.RI "static void \fBShowFriend\fP (string id, UnityAction callback)"
+.br
+.RI "Shows the Friends details for a given id\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Database Singleton responsible with all the tools to gather the relevant data from \fBAchroma\fP Database\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static void AchromaAPI\&.AchromaInstanceDatabase\&.AddUserDataChangeListener (UnityAction< \fBUserData\fP > listener, UnityAction< bool, string > callback = \fCnull\fP)\fC [static]\fP"
+
+.PP
+This adds a listener to the changes on the user data\&. If something happens to the user, this change is replicated on this method\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlistener\fP The listener method will be called back to the host application with the changes
+.RE
+.PP
+/// 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP The success/failure feedback
+.RE
+.PP
+
+.SS "static bool AchromaAPI\&.AchromaInstanceDatabase\&.AmIFriendsWith (string id)\fC [static]\fP"
+
+.PP
+Responds if the current user is friends with the id informed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP the friend id in question
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+TRUE or FALSE
+.RE
+.PP
+
+.SS "static float AchromaAPI\&.AchromaInstanceDatabase\&.GetAchievementCompletionPct (string name)\fC [static]\fP"
+
+.PP
+Returns the achievement value for a given name when the user logged in\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP achievement name
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "static int AchromaAPI\&.AchromaInstanceDatabase\&.GetAchievementValue (string name)\fC [static]\fP"
+
+.PP
+Returns the achievement value for a given name when the user logged in\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP achievement name
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "static string AchromaAPI\&.AchromaInstanceDatabase\&.GetUserId ()\fC [static]\fP"
+
+.PP
+Returns the Firebase User id, in case the user is logged\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Firebase User Id
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceDatabase\&.GetUserIdByUniqueNumber (string uniqueNumber, UnityAction< bool, string, string > callback)\fC [static]\fP"
+
+.PP
+Returns the user id for a unique number\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The amount of shards 
+.RE
+.PP
+
+.SS "static int AchromaAPI\&.AchromaInstanceDatabase\&.GetUserShards ()\fC [static]\fP"
+
+.PP
+Returns the amount of shards the user has\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The amount of shards 
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceDatabase\&.RemoveUserDataChangeListener (UnityAction< \fBUserData\fP > listener, UnityAction< bool, string > callback = \fCnull\fP)\fC [static]\fP"
+
+.PP
+This removes the user data listener to avoid accessing destroyed objects\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlistener\fP The listener method will be called back to the host application with the changes
+.br
+\fIcallback\fP The success/failure feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceDatabase\&.SaveUserData (UnityAction< bool, string > callback)\fC [static]\fP"
+
+.PP
+Uploads user data to the database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP callback if success or error feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceDatabase\&.ShowFriend (string id, UnityAction callback)\fC [static]\fP"
+
+.PP
+Shows the Friends details for a given id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP User id
+.br
+\fIcallback\fP Callback when the window is shown
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceDatabase\&.SubtractShards (int shards, UnityAction< bool, string > callback)\fC [static]\fP"
+
+.PP
+Takes shards from the user\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshards\fP Shards to subtract
+.br
+\fIstoryStepId\fP The story step related to this gain
+.br
+\fIcallback\fP The callback indicating success or failure
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceDatabase\&.UpdateStoryAchrometer (int value)\fC [static]\fP"
+
+.PP
+Updates the Story Achrometer add the param value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP The value to add/subtract to the story achrometer
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

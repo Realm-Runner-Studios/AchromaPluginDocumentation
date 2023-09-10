@@ -1,0 +1,214 @@
+.TH "Shopify.Unity.UnknownNode" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.UnknownNode \- UnknownNode is a response object\&. With UnknownNode\&.Create you'll be able instantiate objects implementing Node\&. \fCUnknownNode\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+AppliedGiftCard 
+.IP "\(bu" 2
+Article 
+.IP "\(bu" 2
+Blog 
+.IP "\(bu" 2
+Checkout 
+.IP "\(bu" 2
+CheckoutLineItem 
+.IP "\(bu" 2
+Collection 
+.IP "\(bu" 2
+Comment 
+.IP "\(bu" 2
+ExternalVideo 
+.IP "\(bu" 2
+MailingAddress 
+.IP "\(bu" 2
+MediaImage 
+.IP "\(bu" 2
+Metafield 
+.IP "\(bu" 2
+Model3d 
+.IP "\(bu" 2
+Order 
+.IP "\(bu" 2
+Page 
+.IP "\(bu" 2
+Payment 
+.IP "\(bu" 2
+Product 
+.IP "\(bu" 2
+ProductOption 
+.IP "\(bu" 2
+ProductVariant 
+.IP "\(bu" 2
+ShopPolicy 
+.IP "\(bu" 2
+Video 
+.PP
+ 
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, and \fBShopify\&.Unity\&.Node\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUnknownNode\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "string \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBNode\fP \fBCreate\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Instantiate objects implementing Node\&. Possible types are: 
+.PD 0
+.IP "\(bu" 2
+AppliedGiftCard 
+.IP "\(bu" 2
+Article 
+.IP "\(bu" 2
+Blog 
+.IP "\(bu" 2
+Checkout 
+.IP "\(bu" 2
+CheckoutLineItem 
+.IP "\(bu" 2
+Collection 
+.IP "\(bu" 2
+Comment 
+.IP "\(bu" 2
+ExternalVideo 
+.IP "\(bu" 2
+MailingAddress 
+.IP "\(bu" 2
+MediaImage 
+.IP "\(bu" 2
+Metafield 
+.IP "\(bu" 2
+Model3d 
+.IP "\(bu" 2
+Order 
+.IP "\(bu" 2
+Page 
+.IP "\(bu" 2
+Payment 
+.IP "\(bu" 2
+Product 
+.IP "\(bu" 2
+ProductOption 
+.IP "\(bu" 2
+ProductVariant 
+.IP "\(bu" 2
+ShopPolicy 
+.IP "\(bu" 2
+Video 
+.PP
+"
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+UnknownNode is a response object\&. With UnknownNode\&.Create you'll be able instantiate objects implementing Node\&. \fCUnknownNode\&.Create\fP will return one of the following types: 
+.PD 0
+.IP "\(bu" 2
+AppliedGiftCard 
+.IP "\(bu" 2
+Article 
+.IP "\(bu" 2
+Blog 
+.IP "\(bu" 2
+Checkout 
+.IP "\(bu" 2
+CheckoutLineItem 
+.IP "\(bu" 2
+Collection 
+.IP "\(bu" 2
+Comment 
+.IP "\(bu" 2
+ExternalVideo 
+.IP "\(bu" 2
+MailingAddress 
+.IP "\(bu" 2
+MediaImage 
+.IP "\(bu" 2
+Metafield 
+.IP "\(bu" 2
+Model3d 
+.IP "\(bu" 2
+Order 
+.IP "\(bu" 2
+Page 
+.IP "\(bu" 2
+Payment 
+.IP "\(bu" 2
+Product 
+.IP "\(bu" 2
+ProductOption 
+.IP "\(bu" 2
+ProductVariant 
+.IP "\(bu" 2
+ShopPolicy 
+.IP "\(bu" 2
+Video 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.UnknownNode\&.UnknownNode (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Node
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "string Shopify\&.Unity\&.UnknownNode\&.id ()"
+
+.PP
+Globally unique identifier\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Node\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

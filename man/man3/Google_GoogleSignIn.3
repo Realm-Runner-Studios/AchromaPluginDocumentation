@@ -1,0 +1,103 @@
+.TH "Google.GoogleSignIn" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Google.GoogleSignIn \- \fBGoogle\fP sign in API\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBSignInException\fP"
+.br
+.RI "Sign in exception\&. This is a checked exception for handling specific errors during the sign-in process\&. "
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBEnableDebugLogging\fP (bool flag)"
+.br
+.ti -1c
+.RI "Task< \fBGoogleSignInUser\fP > \fBSignIn\fP ()"
+.br
+.RI "Starts the authentication process\&. "
+.ti -1c
+.RI "Task< \fBGoogleSignInUser\fP > \fBSignInSilently\fP ()"
+.br
+.RI "Starts the silent authentication process\&. "
+.ti -1c
+.RI "void \fBSignOut\fP ()"
+.br
+.RI "Signs out the User\&. "
+.ti -1c
+.RI "void \fBDisconnect\fP ()"
+.br
+.RI "Disconnect this instance\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "static \fBGoogleSignInConfiguration\fP \fBConfiguration\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "static \fBGoogleSignIn\fP \fBDefaultInstance\fP\fC [get]\fP"
+.br
+.RI "Singleton instance of this class\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBGoogle\fP sign in API\&. 
+
+This class implements the GoogleSignInAPI for Unity\&. Typical usage is to set the Configuration options as needed, then get the DefaultInstance and call signIn or signInSilently\&. See the \fCGoogle Sign-In API documentation for more details\&.\fP 
+.PP
+.PP
+.nf
+private static readonly GoogleSignInConfiguration configuration =
+                       new GoogleSignInConfiguration {
+                         WebClientId = "<your client id here >",
+                         RequestIdToken = true
+                       };
+
+public void OnSignIn() {
+  GoogleSignIn\&.Configuration = configuration;
+  GoogleSignIn\&.Configuration\&.UseGameSignIn = false;
+  GoogleSignIn\&.Configuration\&.RequestIdToken = true;
+  GoogleSignIn\&.DefaultInstance\&.SignIn()\&.ContinueWith(
+          OnAuthenticationFinished);
+}
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Google\&.GoogleSignIn\&.Disconnect ()"
+
+.PP
+Disconnect this instance\&. When the user is disconnected, it revokes all access that may have been granted to this application\&. This includes any server side access tokens derived from server auth codes\&. As a result, future sign-in attempts will require the user to re-consent to the requested scopes\&. 
+.SS "Task< \fBGoogleSignInUser\fP > Google\&.GoogleSignIn\&.SignIn ()"
+
+.PP
+Starts the authentication process\&. The authenication process is started and may display account picker popups and consent prompts based on the state of authentication and the requested elements\&. 
+.SS "Task< \fBGoogleSignInUser\fP > Google\&.GoogleSignIn\&.SignInSilently ()"
+
+.PP
+Starts the silent authentication process\&. The authenication process is started and will attempt to sign in without displaying any UI\&. If this cannot be done, the developer should call SignIn()\&. 
+.SS "void Google\&.GoogleSignIn\&.SignOut ()"
+
+.PP
+Signs out the User\&. Future sign-in attempts will require the user to select the account to use when signing in\&. 
+.SH "Property Documentation"
+.PP 
+.SS "\fBGoogleSignIn\fP Google\&.GoogleSignIn\&.DefaultInstance\fC [static]\fP, \fC [get]\fP"
+
+.PP
+Singleton instance of this class\&. The instance\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

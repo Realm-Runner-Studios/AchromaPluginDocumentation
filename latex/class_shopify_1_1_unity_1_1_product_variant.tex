@@ -1,0 +1,257 @@
+\doxysection{Shopify.\+Unity.\+Product\+Variant Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_product_variant}{}\label{class_shopify_1_1_unity_1_1_product_variant}\index{Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}}
+
+
+A product variant represents a different version of a product, such as differing sizes or differing colors.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Product\+Variant\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Product\+Variant\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_a19110e0dc8484d7daa1a5ab77c0c0c35}{Product\+Variant}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_a627049b6eaaee255aef1cc028bb18d81}{available}} ()
+\begin{DoxyCompactList}\small\item\em Indicates if the product variant is in stock. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_afbb7d691bffe65541829ee78fe9d9fea}\label{class_shopify_1_1_unity_1_1_product_variant_afbb7d691bffe65541829ee78fe9d9fea} 
+bool {\bfseries available\+For\+Sale} ()
+\begin{DoxyCompactList}\small\item\em Indicates if the product variant is available for sale. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_a828b63ce70488fe00251f9eeaff3422d}{compare\+At\+Price}} ()
+\begin{DoxyCompactList}\small\item\em The compare at price of the variant. This can be used to mark a variant as on sale, when {\ttfamily compare\+At\+Price} is higher than {\ttfamily price}. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a12505ec776b0e2bcaf4f64fb28146592}\label{class_shopify_1_1_unity_1_1_product_variant_a12505ec776b0e2bcaf4f64fb28146592} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries compare\+At\+Price\+V2} ()
+\begin{DoxyCompactList}\small\item\em The compare at price of the variant. This can be used to mark a variant as on sale, when {\ttfamily compare\+At\+Price\+V2} is higher than {\ttfamily price\+V2}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_a6263f6adb76bf929f9eafa32173045c3}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_image}{Image}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_a7fa3a0d4a22d057f83711e6e2d68525f}{image}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Image associated with the product variant. This field falls back to the product image if no image is available. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield}{Metafield}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_a19648b459ec69e79ca0171874074a755}{metafield}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em The metafield associated with the resource. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield_connection}{Metafield\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_a8fe7bc64d8607446312491a9c69e7fd0}{metafields}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em A paginated list of metafields associated with the resource. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_price_pair_connection}{Product\+Variant\+Price\+Pair\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_a0c3e1f20abbd3e7b7ed6e66b01849141}{presentment\+Prices}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of prices and compare-\/at prices in the presentment currencies for this shop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2connection}{Money\+V2connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_a1de45e2b01cbb8c4db72fff470747196}{presentment\+Unit\+Prices}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of unit prices in the presentment currencies for this shop. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_a6660cbb4a85a52b972b947896d48912e}{price}} ()
+\begin{DoxyCompactList}\small\item\em The product variant’s price. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_ab2a6ad3b29112b6a2893ebfb20a12520}\label{class_shopify_1_1_unity_1_1_product_variant_ab2a6ad3b29112b6a2893ebfb20a12520} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries price\+V2} ()
+\begin{DoxyCompactList}\small\item\em The product variant’s price. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a7ac4f46c8191b2e1d138661afc4af820}\label{class_shopify_1_1_unity_1_1_product_variant_a7ac4f46c8191b2e1d138661afc4af820} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}} {\bfseries product} ()
+\begin{DoxyCompactList}\small\item\em The product object that the product variant belongs to. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_af8701a012ac5b8cc3f4fbaff6dddd08a}\label{class_shopify_1_1_unity_1_1_product_variant_af8701a012ac5b8cc3f4fbaff6dddd08a} 
+bool {\bfseries requires\+Shipping} ()
+\begin{DoxyCompactList}\small\item\em Whether a customer needs to provide a shipping address when placing an order for the product variant. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_aee6c6885618f8ddbf1d17913ed5dec6f}\label{class_shopify_1_1_unity_1_1_product_variant_aee6c6885618f8ddbf1d17913ed5dec6f} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_selected_option}{Selected\+Option}} $>$ {\bfseries selected\+Options} ()
+\begin{DoxyCompactList}\small\item\em List of product options applied to the variant. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a6c13503b201433e529a7cf2fe35e963e}\label{class_shopify_1_1_unity_1_1_product_variant_a6c13503b201433e529a7cf2fe35e963e} 
+string {\bfseries sku} ()
+\begin{DoxyCompactList}\small\item\em The SKU (stock keeping unit) associated with the variant. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a19e404dd44fc9bf2143f803a11f0eacc}\label{class_shopify_1_1_unity_1_1_product_variant_a19e404dd44fc9bf2143f803a11f0eacc} 
+string {\bfseries title} ()
+\begin{DoxyCompactList}\small\item\em The product variant’s title. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a69cb2523df868c619ac6f10c07199f60}\label{class_shopify_1_1_unity_1_1_product_variant_a69cb2523df868c619ac6f10c07199f60} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2}{Money\+V2}} {\bfseries unit\+Price} ()
+\begin{DoxyCompactList}\small\item\em The unit price value for the variant based on the variant\textquotesingle{}s measurement. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_ab17b9ea1faca6ffad38e233b7be06239}\label{class_shopify_1_1_unity_1_1_product_variant_ab17b9ea1faca6ffad38e233b7be06239} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_unit_price_measurement}{Unit\+Price\+Measurement}} {\bfseries unit\+Price\+Measurement} ()
+\begin{DoxyCompactList}\small\item\em The unit price measurement for the variant. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_af6fc6601454f0d943833e9f3d4b6d7cd}\label{class_shopify_1_1_unity_1_1_product_variant_af6fc6601454f0d943833e9f3d4b6d7cd} 
+double? {\bfseries weight} ()
+\begin{DoxyCompactList}\small\item\em The weight of the product variant in the unit system specified with {\ttfamily weight\+\_\+unit}. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a1375572e2aaaa88af35f68d32312ce2d}\label{class_shopify_1_1_unity_1_1_product_variant_a1375572e2aaaa88af35f68d32312ce2d} 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_a9c80a62d5cdcbf5c90b26b9a827a6932}{Weight\+Unit}} {\bfseries weight\+Unit} ()
+\begin{DoxyCompactList}\small\item\em Unit of measurement for weight. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a1394ce45dc7e150c164a7e5b7388e655}\label{class_shopify_1_1_unity_1_1_product_variant_a1394ce45dc7e150c164a7e5b7388e655} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A product variant represents a different version of a product, such as differing sizes or differing colors. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a19110e0dc8484d7daa1a5ab77c0c0c35}\label{class_shopify_1_1_unity_1_1_product_variant_a19110e0dc8484d7daa1a5ab77c0c0c35} 
+\index{Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}!ProductVariant@{ProductVariant}}
+\index{ProductVariant@{ProductVariant}!Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}}
+\doxysubsubsection{\texorpdfstring{ProductVariant()}{ProductVariant()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Product\+Variant.\+Product\+Variant (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Product\+Variant\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a627049b6eaaee255aef1cc028bb18d81}\label{class_shopify_1_1_unity_1_1_product_variant_a627049b6eaaee255aef1cc028bb18d81} 
+\index{Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}!available@{available}}
+\index{available@{available}!Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}}
+\doxysubsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily bool? Shopify.\+Unity.\+Product\+Variant.\+available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Indicates if the product variant is in stock. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000146}{Deprecated}}]Use {\ttfamily available\+For\+Sale} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a828b63ce70488fe00251f9eeaff3422d}\label{class_shopify_1_1_unity_1_1_product_variant_a828b63ce70488fe00251f9eeaff3422d} 
+\index{Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}!compareAtPrice@{compareAtPrice}}
+\index{compareAtPrice@{compareAtPrice}!Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}}
+\doxysubsubsection{\texorpdfstring{compareAtPrice()}{compareAtPrice()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Product\+Variant.\+compare\+At\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The compare at price of the variant. This can be used to mark a variant as on sale, when {\ttfamily compare\+At\+Price} is higher than {\ttfamily price}. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000147}{Deprecated}}]Use {\ttfamily compare\+At\+Price\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a6263f6adb76bf929f9eafa32173045c3}\label{class_shopify_1_1_unity_1_1_product_variant_a6263f6adb76bf929f9eafa32173045c3} 
+\index{Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}!id@{id}}
+\index{id@{id}!Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Product\+Variant.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a7fa3a0d4a22d057f83711e6e2d68525f}\label{class_shopify_1_1_unity_1_1_product_variant_a7fa3a0d4a22d057f83711e6e2d68525f} 
+\index{Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}!image@{image}}
+\index{image@{image}!Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_image}{Image}} Shopify.\+Unity.\+Product\+Variant.\+image (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Image associated with the product variant. This field falls back to the product image if no image is available. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a19648b459ec69e79ca0171874074a755}\label{class_shopify_1_1_unity_1_1_product_variant_a19648b459ec69e79ca0171874074a755} 
+\index{Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}!metafield@{metafield}}
+\index{metafield@{metafield}!Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}}
+\doxysubsubsection{\texorpdfstring{metafield()}{metafield()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield}{Metafield}} Shopify.\+Unity.\+Product\+Variant.\+metafield (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+The metafield associated with the resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_has_metafields_ad004d783f29769df68f6c80971c6e0b1}{Shopify.\+Unity.\+Has\+Metafields}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a8fe7bc64d8607446312491a9c69e7fd0}\label{class_shopify_1_1_unity_1_1_product_variant_a8fe7bc64d8607446312491a9c69e7fd0} 
+\index{Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}!metafields@{metafields}}
+\index{metafields@{metafields}!Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}}
+\doxysubsubsection{\texorpdfstring{metafields()}{metafields()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield_connection}{Metafield\+Connection}} Shopify.\+Unity.\+Product\+Variant.\+metafields (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+A paginated list of metafields associated with the resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_has_metafields_ae41aec2da94c9f8007eaecefd83b4fe1}{Shopify.\+Unity.\+Has\+Metafields}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a0c3e1f20abbd3e7b7ed6e66b01849141}\label{class_shopify_1_1_unity_1_1_product_variant_a0c3e1f20abbd3e7b7ed6e66b01849141} 
+\index{Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}!presentmentPrices@{presentmentPrices}}
+\index{presentmentPrices@{presentmentPrices}!Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}}
+\doxysubsubsection{\texorpdfstring{presentmentPrices()}{presentmentPrices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant_price_pair_connection}{Product\+Variant\+Price\+Pair\+Connection}} Shopify.\+Unity.\+Product\+Variant.\+presentment\+Prices (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of prices and compare-\/at prices in the presentment currencies for this shop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a1de45e2b01cbb8c4db72fff470747196}\label{class_shopify_1_1_unity_1_1_product_variant_a1de45e2b01cbb8c4db72fff470747196} 
+\index{Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}!presentmentUnitPrices@{presentmentUnitPrices}}
+\index{presentmentUnitPrices@{presentmentUnitPrices}!Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}}
+\doxysubsubsection{\texorpdfstring{presentmentUnitPrices()}{presentmentUnitPrices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_money_v2connection}{Money\+V2connection}} Shopify.\+Unity.\+Product\+Variant.\+presentment\+Unit\+Prices (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of unit prices in the presentment currencies for this shop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_product_variant_a6660cbb4a85a52b972b947896d48912e}\label{class_shopify_1_1_unity_1_1_product_variant_a6660cbb4a85a52b972b947896d48912e} 
+\index{Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}!price@{price}}
+\index{price@{price}!Shopify.Unity.ProductVariant@{Shopify.Unity.ProductVariant}}
+\doxysubsubsection{\texorpdfstring{price()}{price()}}
+{\footnotesize\ttfamily decimal Shopify.\+Unity.\+Product\+Variant.\+price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The product variant’s price. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000148}{Deprecated}}]Use {\ttfamily price\+V2} instead \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Product\+Variant.\+cs\end{DoxyCompactItemize}

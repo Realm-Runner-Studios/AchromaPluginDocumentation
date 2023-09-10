@@ -1,0 +1,113 @@
+.TH "Shopify.Unity.Transaction" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.Transaction \- An object representing exchange of money for a product or service\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, and ICloneable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTransaction\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "decimal \fBamount\fP ()"
+.br
+.RI "The amount of money that the transaction was for\&. "
+.ti -1c
+.RI "\fBMoneyV2\fP \fBamountV2\fP ()"
+.br
+.RI "The amount of money that the transaction was for\&. "
+.ti -1c
+.RI "\fBTransactionKind\fP \fBkind\fP ()"
+.br
+.RI "The kind of the transaction\&. "
+.ti -1c
+.RI "\fBTransactionStatus\fP \fBstatus\fP ()"
+.br
+.RI "The status of the transaction\&. "
+.ti -1c
+.RI "\fBTransactionStatus\fP? \fBstatusV2\fP ()"
+.br
+.RI "The status of the transaction\&. "
+.ti -1c
+.RI "bool \fBtest\fP ()"
+.br
+.RI "Whether the transaction was done in test mode or not\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+An object representing exchange of money for a product or service\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.Transaction\&.Transaction (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for Transaction
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "decimal Shopify\&.Unity\&.Transaction\&.amount ()"
+
+.PP
+The amount of money that the transaction was for\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCamountV2\fP instead 
+.RE
+.PP
+
+.SS "\fBTransactionStatus\fP Shopify\&.Unity\&.Transaction\&.status ()"
+
+.PP
+The status of the transaction\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCstatusV2\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

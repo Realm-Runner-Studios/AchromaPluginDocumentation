@@ -1,0 +1,55 @@
+\doxysection{Achroma\+API.\+Achroma\+Instance Class Reference}
+\hypertarget{class_achroma_a_p_i_1_1_achroma_instance}{}\label{class_achroma_a_p_i_1_1_achroma_instance}\index{AchromaAPI.AchromaInstance@{AchromaAPI.AchromaInstance}}
+
+
+Main Singleton responsible for initializing the \doxylink{namespace_achroma}{Achroma} Instance, which will add the scenes needed as well as the objects required to connect to Firebase.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_af3821af509fedf5a7572f5bff84510da}{Check\+For\+Updates}} (string scene\+To\+Reload, Unity\+Action$<$ bool, string $>$ callback)
+\begin{DoxyCompactList}\small\item\em Checks if the user has the latest version installed. If the user has an outdated version, the app will take them to the app store and force the update. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_a4717d0a22f9bc3c8284bcb808f631163}\label{class_achroma_a_p_i_1_1_achroma_instance_a4717d0a22f9bc3c8284bcb808f631163} 
+static void {\bfseries Initialize} (List$<$ \mbox{\hyperlink{class_achroma_1_1_achroma_purchase_option}{Achroma\+Purchase\+Option}} $>$ purchase\+Options, Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ user\+Data\+Changed=null, Unity\+Action$<$ bool, string $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em This will initialize all the assets needed to use the plugin, like database layer UI, etc This should be called after the app is initialized. Don\textquotesingle{}t use this on Awake or Start. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_a44ad1393ae09e37c8024bce83cfc1e37}\label{class_achroma_a_p_i_1_1_achroma_instance_a44ad1393ae09e37c8024bce83cfc1e37} 
+static \mbox{\hyperlink{class_achroma_1_1_achroma_manager}{Achroma.\+Achroma\+Manager}} {\bfseries Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main Singleton responsible for initializing the \doxylink{namespace_achroma}{Achroma} Instance, which will add the scenes needed as well as the objects required to connect to Firebase. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_af3821af509fedf5a7572f5bff84510da}\label{class_achroma_a_p_i_1_1_achroma_instance_af3821af509fedf5a7572f5bff84510da} 
+\index{AchromaAPI.AchromaInstance@{AchromaAPI.AchromaInstance}!CheckForUpdates@{CheckForUpdates}}
+\index{CheckForUpdates@{CheckForUpdates}!AchromaAPI.AchromaInstance@{AchromaAPI.AchromaInstance}}
+\doxysubsubsection{\texorpdfstring{CheckForUpdates()}{CheckForUpdates()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance.\+Check\+For\+Updates (\begin{DoxyParamCaption}\item[{string}]{scene\+To\+Reload,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if the user has the latest version installed. If the user has an outdated version, the app will take them to the app store and force the update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+To\+Reload} & The scene to be reloaded after if something goes wrong\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_af3821af509fedf5a7572f5bff84510da_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Remote\+Config.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API.\+cs\end{DoxyCompactItemize}

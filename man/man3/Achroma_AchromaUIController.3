@@ -1,0 +1,308 @@
+.TH "Achroma.AchromaUIController" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaUIController
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, and \fBAchroma\&.AchromaParentController\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBLoadMessageHeaderSeparators\fP ()"
+.br
+.RI "This will create the separator for the Message Dialog from Asset Bundles\&. "
+.ti -1c
+.RI "void \fBLoadMenuBackground\fP (Transform parent, UnityAction< bool, string > callback)"
+.br
+.RI "This will load the background from the asset bundle to avoid embedding the background images to the project and increase the size of the app\&. "
+.ti -1c
+.RI "void \fBInitializeUIAssetBundles\fP ()"
+.br
+.RI "This will update all the UI components using Asset Bundles from Google Bucket\&. "
+.ti -1c
+.RI "void \fBShowFriendRequested\fP (string id)"
+.br
+.ti -1c
+.RI "void \fBShowFriendRequest\fP ()"
+.br
+.ti -1c
+.RI "void \fBShowFriend\fP (string id, UnityAction result)"
+.br
+.ti -1c
+.RI "void \fBShowHomeButton\fP ()"
+.br
+.RI "Method that shows the home button on the bottom of the screen, in case it has been allowed to do so\&. "
+.ti -1c
+.RI "void \fBHideHomeButton\fP ()"
+.br
+.RI "Method to hide the Home button from the screen\&. "
+.ti -1c
+.RI "void \fBCloseSignInUI\fP ()"
+.br
+.RI "This method will close the UI with Login/Register information\&. "
+.ti -1c
+.RI "void \fBShowSignInUI\fP (bool showCloseButton, UnityAction< bool, string > callback)"
+.br
+.RI "Shows the login UI 
+.br
+ "
+.ti -1c
+.RI "void \fBSignIn\fP (bool automatic=true, UnityAction< bool, string > callback=null)"
+.br
+.RI "Exposed method to login\&. "
+.ti -1c
+.RI "void \fBCloseNewsUI\fP ()"
+.br
+.ti -1c
+.RI "void \fBShowNewsUI\fP ()"
+.br
+.ti -1c
+.RI "void \fBUpdateNewsPending\fP ()"
+.br
+.RI "Will show the small red circle on the news button to alert the user about any news they might have missed\&. "
+.ti -1c
+.RI "void \fBAddNotification\fP (string message)"
+.br
+.RI "Shows a notification on top of the screen with a message\&. "
+.ti -1c
+.RI "void \fBAddNotification\fP (String message, Color color, \fBAchromaNotificationSprite\fP sprite=AchromaNotificationSprite\&.None)"
+.br
+.RI "Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed\&. "
+.ti -1c
+.RI "void \fBAddShardNotification\fP (String message, Color color, \fBAchromaNotificationSprite\fP sprite=AchromaNotificationSprite\&.None)"
+.br
+.RI "Notification on the top right of the screen, indicating that shards have been gained by the user\&. "
+.ti -1c
+.RI "void \fBShowSavingIndicator\fP ()"
+.br
+.RI "Shows the floppy disk indicative to saving data\&. "
+.ti -1c
+.RI "void \fBCloseShardShopUI\fP ()"
+.br
+.ti -1c
+.RI "void \fBShowShardShopUI\fP ()"
+.br
+.ti -1c
+.RI "void \fBUpdateShardShopShardBank\fP ()"
+.br
+.ti -1c
+.RI "void \fBLoadUserAvatar\fP (UnityAction< bool, string > callback)"
+.br
+.RI "Loader user sprite into the home button\&. "
+.ti -1c
+.RI "void \fBOpenURL\fP (string url, string loadingMessage='Loading profile')"
+.br
+.ti -1c
+.RI "void \fBShowLoading\fP (string text, float delay=0\&.1f, UnityAction cancelAction=null, float waitAfter=0\&.0f, UnityAction finishedAction=null)"
+.br
+.RI "This method shows the loading screen\&. "
+.ti -1c
+.RI "void \fBHideLoading\fP ()"
+.br
+.RI "This method cancel and closes the loading screen\&. "
+.ti -1c
+.RI "void \fBShowSuccessMessage\fP (string message, UnityAction< int > result=null)"
+.br
+.ti -1c
+.RI "void \fBShowErrorMessage\fP (string message, UnityAction< int > result=null)"
+.br
+.ti -1c
+.RI "void \fBShowWarningMessage\fP (string message, UnityAction< int > result=null)"
+.br
+.ti -1c
+.RI "void \fBShowQuestionMessage\fP (string message, UnityAction< int > result)"
+.br
+.ti -1c
+.RI "void \fBCloseMessage\fP ()"
+.br
+.RI "The method that closes the message manually\&. "
+.in -1c
+
+Public Member Functions inherited from \fBAchroma\&.AchromaParentController\fP
+.in +1c
+.ti -1c
+.RI "void \fBLoadScene\fP (string sceneName, string message, Object instanceToCheckExistance=null, LoadSceneMode sceneMode=LoadSceneMode\&.Single, UnityAction result=null, bool forceReload=false, bool hideLoadingScreenAfterLoaded=true)"
+.br
+.RI "This method loads a scene synchronously and returns a callback when the scene is ended loading\&. "
+.ti -1c
+.RI "void \fBUnloadScene\fP (string name)"
+.br
+.RI "This method simply unloads a scene\&. "
+.ti -1c
+.RI "void \fBLoadPreviousScene\fP (string message)"
+.br
+.RI "This method calls the scene that called the current scene back\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "Transform \fBmessageHeaderContent\fP"
+.br
+.ti -1c
+.RI "TMP_InputField \fBfriendIdInput\fP"
+.br
+.ti -1c
+.RI "DialogBox \fBfriendRequest\fP"
+.br
+.ti -1c
+.RI "Image \fBfriendAvatar\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBfriendName\fP"
+.br
+.ti -1c
+.RI "DialogBox \fBfriendRequested\fP"
+.br
+.ti -1c
+.RI "\fBFriendVisualizer\fP \fBfriendVisualizer\fP"
+.br
+.ti -1c
+.RI "\fBAchromaHomeButton\fP \fBhomeButton\fP"
+.br
+.ti -1c
+.RI "\fBAchromaSignInUI\fP \fBloginUI\fP"
+.br
+.ti -1c
+.RI "\fBAchromaLoadingUI\fP \fBloading\fP = null"
+.br
+.ti -1c
+.RI "DialogBox \fBmessageDialogBox\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "bool \fBAllowHomeButton\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBAchromaHomeButton\&.AchromaHomeButtonOption\fP[] \fBhomeButtonSideOptions\fP\fC [get, set]\fP"
+.br
+.RI "The current mode the user might be in\&. This will determine which options are available when the user sees the home button\&. "
+.ti -1c
+.RI "static \fBAchromaUIController\fP \fBInstance\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "bool \fBIsShowingLoading\fP\fC [get]\fP"
+.br
+.RI "Returns if the loading screen is being shown\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void Achroma\&.AchromaUIController\&.AddNotification (string message)"
+
+.PP
+Shows a notification on top of the screen with a message\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessage\fP Message
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaUIController\&.AddNotification (String message, Color color, \fBAchromaNotificationSprite\fP sprite = \fCAchromaNotificationSprite::None\fP)"
+
+.PP
+Sends a notification on top of the screen with more paramenters, like color and a sprite reference, if needed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessage\fP Message
+.br
+\fIcolor\fP Color of the text
+.br
+\fIsprite\fP Reference to the sprite in the Notification sprite sheet
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaUIController\&.AddShardNotification (String message, Color color, \fBAchromaNotificationSprite\fP sprite = \fCAchromaNotificationSprite::None\fP)"
+
+.PP
+Notification on the top right of the screen, indicating that shards have been gained by the user\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessage\fP Message
+.br
+\fIcolor\fP Color of the text
+.br
+\fIsprite\fP Reference to the sprite in the Notification sprite sheet
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaUIController\&.LoadMenuBackground (Transform parent, UnityAction< bool, string > callback)"
+
+.PP
+This will load the background from the asset bundle to avoid embedding the background images to the project and increase the size of the app\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIparent\fP The parent where the background will be created on
+.br
+\fIcallback\fP The call back with a sucess flag and error message (if any)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaUIController\&.LoadUserAvatar (UnityAction< bool, string > callback)"
+
+.PP
+Loader user sprite into the home button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP returns a success flag and an error message (if any)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaUIController\&.ShowLoading (string text, float delay = \fC0::1f\fP, UnityAction cancelAction = \fCnull\fP, float waitAfter = \fC0::0f\fP, UnityAction finishedAction = \fCnull\fP)"
+
+.PP
+This method shows the loading screen\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP The text that will appear describing the reason for the loading
+.br
+\fIdelay\fP In case the loading screen needs some time to show
+.br
+\fIwaitAfter\fP A delay after it's shown
+.br
+\fIfinishedAction\fP The action triggered when the loading screen finished showing
+.br
+\fIcancelAction\fP The reference to the method in case the user cancels the loading\&. If this is not informed, the cancel button will not be seen
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaUIController\&.ShowSignInUI (bool showCloseButton, UnityAction< bool, string > callback)"
+
+.PP
+Shows the login UI 
+.br
+ 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP Saves the login callback reference\&. This callback will be triggered when the login succeeds
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaUIController\&.SignIn (bool automatic = \fCtrue\fP, UnityAction< bool, string > callback = \fCnull\fP)"
+
+.PP
+Exposed method to login\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIautomatic\fP If the user has already logged in before, this will skip the login screen and use what's in the PlayerPrefs to log in
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

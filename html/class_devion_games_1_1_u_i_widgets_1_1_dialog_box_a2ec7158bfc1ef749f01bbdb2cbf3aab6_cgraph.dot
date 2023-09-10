@@ -1,0 +1,11 @@
+digraph "DevionGames.UIWidgets.DialogBox.Show"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="DevionGames.UIWidgets.Dialog\lBox.Show",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Show the MessageBox."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="DevionGames.UIWidgets.UIWidget.Show",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_devion_games_1_1_u_i_widgets_1_1_u_i_widget.html#a9fee2e7a7acd2028b2dd6a6e0176b082",tooltip="Show this widget."];
+}

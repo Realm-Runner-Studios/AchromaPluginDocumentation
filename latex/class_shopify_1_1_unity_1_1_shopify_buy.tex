@@ -1,0 +1,193 @@
+\doxysection{Shopify.\+Unity.\+Shopify\+Buy Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_shopify_buy}{}\label{class_shopify_1_1_unity_1_1_shopify_buy}\index{Shopify.Unity.ShopifyBuy@{Shopify.Unity.ShopifyBuy}}
+
+
+Is the main entry point for the \doxylink{namespace_shopify}{Shopify} SDK for Unity. Using  you\textquotesingle{}ll create a client which can create queries on the Storefront API. Shopify\+Client 
+
+can also be used to create a Cart 
+
+.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client}{Shopify\+Client}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_buy_ac15beb2a8534e89ffe4f30d27e87740e}{Client}} ()
+\begin{DoxyCompactList}\small\item\em Returns the default Shopify\+Client 
+
+. The default client is the first client created after calling Shopify\+Buy.\+Init 
+
+. Note that Shopify\+Buy.\+Init 
+
+must be called before trying to call this function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client}{Shopify\+Client}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_buy_ae89c44893224b84dfb470124db6c112a}{Client}} (string domain)
+\begin{DoxyCompactList}\small\item\em Returns a Shopify\+Client 
+
+for the {\ttfamily domain$<$c$>$ passed in. This is useful when you have multiple Shops your application is querying. Note that Shopify\+Buy.\+Init }
+
+{\ttfamily  must be called before trying to call this function. }\end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client}{Shopify\+Client}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_buy_afc08aad85f03b7cec9bc6bd4234abc8b}{Init}} (string access\+Token, string domain, string locale=null)
+\begin{DoxyCompactList}\small\item\em Initializes a Shopify\+Client 
+
+that can be used to query the Storefront API. The default client which can be accessed by calling Shopify\+Buy.\+Client() 
+
+which is initialized after Shopify\+Buy.\+Init 
+
+is called. To access the client for the specific domain passed, use Shopify\+Buy.\+Client(domain) 
+
+. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client}{Shopify\+Client}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_buy_a3985faad28b040e2f4e8e68b6d3c6586}{Init}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader}{Base\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em Typically not used, but it is possible to create a Shopify\+Client 
+
+by passing an instance that implements Base\+Loader 
+
+. Base\+Loaders 
+
+handle network communicationication with the Storefront API. This functionality is useful if you\textquotesingle{}d like to use the \doxylink{namespace_shopify}{Shopify} SDK for Unity in a C\# environment outside of Unity. The {\ttfamily domain} string used to access specific initialized clients is inferred from Base\+Loader.\+Domain
+
+which can be used to request a specific client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is the main entry point for the \doxylink{namespace_shopify}{Shopify} SDK for Unity. Using  you\textquotesingle{}ll create a client which can create queries on the Storefront API. Shopify\+Client 
+
+can also be used to create a Cart 
+
+. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_shopify_buy_ac15beb2a8534e89ffe4f30d27e87740e}\label{class_shopify_1_1_unity_1_1_shopify_buy_ac15beb2a8534e89ffe4f30d27e87740e} 
+\index{Shopify.Unity.ShopifyBuy@{Shopify.Unity.ShopifyBuy}!Client@{Client}}
+\index{Client@{Client}!Shopify.Unity.ShopifyBuy@{Shopify.Unity.ShopifyBuy}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client}{Shopify\+Client}} Shopify.\+Unity.\+Shopify\+Buy.\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the default Shopify\+Client 
+
+. The default client is the first client created after calling Shopify\+Buy.\+Init 
+
+. Note that Shopify\+Buy.\+Init 
+
+must be called before trying to call this function. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ usage\ querying\ all\ products\ using\ \`{}Client`}}
+\DoxyCodeLine{ShopifyBuy.Client().products((products,\ error)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[0].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[1].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products.Count);}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+ \Hypertarget{class_shopify_1_1_unity_1_1_shopify_buy_ae89c44893224b84dfb470124db6c112a}\label{class_shopify_1_1_unity_1_1_shopify_buy_ae89c44893224b84dfb470124db6c112a} 
+\index{Shopify.Unity.ShopifyBuy@{Shopify.Unity.ShopifyBuy}!Client@{Client}}
+\index{Client@{Client}!Shopify.Unity.ShopifyBuy@{Shopify.Unity.ShopifyBuy}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client}{Shopify\+Client}} Shopify.\+Unity.\+Shopify\+Buy.\+Client (\begin{DoxyParamCaption}\item[{string}]{domain }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a Shopify\+Client 
+
+for the {\ttfamily domain$<$c$>$ passed in. This is useful when you have multiple Shops your application is querying. Note that Shopify\+Buy.\+Init }
+
+{\ttfamily  must be called before trying to call this function. }
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain} & the domain associated to a client\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ usage\ querying\ all\ products\ using\ \`{}Client`\ and\ a\ domain}}
+\DoxyCodeLine{ShopifyBuy.Client(\textcolor{stringliteral}{"{}unity-\/buy-\/sdk.myshopify.com"{}}).products((products,\ error)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[0].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products[1].title());}
+\DoxyCodeLine{\ \ \ \ Debug.Log(products.Count);}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+ \Hypertarget{class_shopify_1_1_unity_1_1_shopify_buy_a3985faad28b040e2f4e8e68b6d3c6586}\label{class_shopify_1_1_unity_1_1_shopify_buy_a3985faad28b040e2f4e8e68b6d3c6586} 
+\index{Shopify.Unity.ShopifyBuy@{Shopify.Unity.ShopifyBuy}!Init@{Init}}
+\index{Init@{Init}!Shopify.Unity.ShopifyBuy@{Shopify.Unity.ShopifyBuy}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client}{Shopify\+Client}} Shopify.\+Unity.\+Shopify\+Buy.\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_base_loader}{Base\+Loader}}}]{loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Typically not used, but it is possible to create a Shopify\+Client 
+
+by passing an instance that implements Base\+Loader 
+
+. Base\+Loaders 
+
+handle network communicationication with the Storefront API. This functionality is useful if you\textquotesingle{}d like to use the \doxylink{namespace_shopify}{Shopify} SDK for Unity in a C\# environment outside of Unity. The {\ttfamily domain} string used to access specific initialized clients is inferred from Base\+Loader.\+Domain
+
+which can be used to request a specific client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loader} & a loader which will handle network communicationication with the Storefront API\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Mock\ example\ using\ a\ custom\ loader\ for\ another\ C\#\ platform}}
+\DoxyCodeLine{\textcolor{keywordtype}{string}\ accessToken\ =\ \textcolor{stringliteral}{"{}b8d417759a62f7b342f3735dbe86b322"{}};}
+\DoxyCodeLine{\textcolor{keywordtype}{string}\ shopDomain\ =\ \textcolor{stringliteral}{"{}unity-\/buy-\/sdk.myshopify.com"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{CustomLoaderForNonUnityPlatform\ loader\ =\ \textcolor{keyword}{new}\ CustomLoaderForNonUnityPlatform(accessToken,\ shopDomain);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Init\ only\ needs\ to\ be\ called\ once}}
+\DoxyCodeLine{ShopifyBuy.Init(loader);}
+
+\end{DoxyCode}
+ \Hypertarget{class_shopify_1_1_unity_1_1_shopify_buy_afc08aad85f03b7cec9bc6bd4234abc8b}\label{class_shopify_1_1_unity_1_1_shopify_buy_afc08aad85f03b7cec9bc6bd4234abc8b} 
+\index{Shopify.Unity.ShopifyBuy@{Shopify.Unity.ShopifyBuy}!Init@{Init}}
+\index{Init@{Init}!Shopify.Unity.ShopifyBuy@{Shopify.Unity.ShopifyBuy}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_shopify_1_1_unity_1_1_shopify_client}{Shopify\+Client}} Shopify.\+Unity.\+Shopify\+Buy.\+Init (\begin{DoxyParamCaption}\item[{string}]{access\+Token,  }\item[{string}]{domain,  }\item[{string}]{locale = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initializes a Shopify\+Client 
+
+that can be used to query the Storefront API. The default client which can be accessed by calling Shopify\+Buy.\+Client() 
+
+which is initialized after Shopify\+Buy.\+Init 
+
+is called. To access the client for the specific domain passed, use Shopify\+Buy.\+Client(domain) 
+
+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & access token that was generated for your store\\
+\hline
+{\em domain} & domain of your \doxylink{namespace_shopify}{Shopify} store\\
+\hline
+{\em locale} & optional locale for translated content of supported types and fields\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ initializes\ the\ Shopify\ SDK\ for\ Unity}}
+\DoxyCodeLine{\textcolor{keywordtype}{string}\ accessToken\ =\ \textcolor{stringliteral}{"{}b8d417759a62f7b342f3735dbe86b322"{}};}
+\DoxyCodeLine{\textcolor{keywordtype}{string}\ shopDomain\ =\ \textcolor{stringliteral}{"{}unity-\/buy-\/sdk.myshopify.com"{}};}
+\DoxyCodeLine{\textcolor{keywordtype}{string}\ locale\ =\ \textcolor{stringliteral}{"{}es"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Init\ only\ needs\ to\ be\ called\ once}}
+\DoxyCodeLine{ShopifyBuy.Init(accessToken,\ shopDomain);}
+\DoxyCodeLine{\textcolor{comment}{//\ To\ return\ translated\ content,\ include\ the\ \`{}locale`\ parameter:}}
+\DoxyCodeLine{ShopifyBuy.Init(accessToken,\ shopDomain,\ locale);}
+
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/Shopify\+Buy.\+cs\end{DoxyCompactItemize}

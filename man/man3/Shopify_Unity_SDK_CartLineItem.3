@@ -1,0 +1,115 @@
+.TH "Shopify.Unity.SDK.CartLineItem" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.SDK.CartLineItem \- A line item on an order\&. A line item is defined by a variant id and the quantity of that variant that you'll be ordering\&. Custom Attributes are used to define customizations or any additional meta data on the line item\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCartLineItem\fP (\fBProductVariant\fP variant, LineItemChangeHandler onChange, long quantity=1, IDictionary< string, string > customAttributes=null)"
+.br
+.RI "Used internally by the SDK to construct a CartLineItem\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemInput\fP \fBGetCheckoutLineItemInput\fP ()"
+.br
+.RI "Will convert this CartLineItem to a CheckoutLineItemInput\&. This is used internally by the sdk for the checkout process\&. "
+.ti -1c
+.RI "\fBCheckoutLineItemUpdateInput\fP \fBGetCheckoutLineItemUpdateInput\fP ()"
+.br
+.RI "Will convert this CartLineItem to a CheckoutLineItemUpdateInput\&. This is used internally by the sdk for the checkout process\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBoperator CheckoutLineItemInput\fP (\fBCartLineItem\fP lineItem)"
+.br
+.RI "Will convert a CartLineItem to a CheckoutLineItemInput\&. These are used internally by the sdk for the checkout process\&. "
+.ti -1c
+.RI "static \fBoperator CheckoutLineItemUpdateInput\fP (\fBCartLineItem\fP lineItem)"
+.br
+.RI "Will convert a CartLineItem to a CheckoutLineItemUpdateInput\&. These are used internally by the sdk for the checkout process\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBID\fP = null"
+.br
+.RI "The ID variable is used internally by the SDK and will be used to associate checkout line item's to CartLineItem's\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBVariantId\fP\fC [get]\fP"
+.br
+.RI "All products have variants which are used to create orders\&. eg\&. A variant id could be associated to a Small Blue T-Shirt where another variant id could be associated to a Large Red T-Shirt\&. "
+.ti -1c
+.RI "decimal \fBPrice\fP\fC [get]\fP"
+.br
+.RI "The product variant’s price\&. "
+.ti -1c
+.RI "long \fBQuantity\fP\fC [get, set]\fP"
+.br
+.RI "The quantity or count of items for the line item\&. eg\&. 3 Red T-Shirts\&. "
+.ti -1c
+.RI "IDictionary< string, string > \fBCustomAttributes\fP\fC [get, set]\fP"
+.br
+.RI "Custom Attributes for the line item\&. Custom attributes are used to add customization information or meta data to a line item\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A line item on an order\&. A line item is defined by a variant id and the quantity of that variant that you'll be ordering\&. Custom Attributes are used to define customizations or any additional meta data on the line item\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.SDK\&.CartLineItem\&.CartLineItem (\fBProductVariant\fP variant, LineItemChangeHandler onChange, long quantity = \fC1\fP, IDictionary< string, string > customAttributes = \fCnull\fP)"
+
+.PP
+Used internally by the SDK to construct a CartLineItem\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvariant\fP The variant this CartLineItem will be associated to
+.br
+\fIonChange\fP This function will be called whenever the CartLineItem is modified
+.br
+\fIquantity\fP The count of items to be ordered
+.br
+\fIcustomAttributes\fP Custom attributes for this line item used to customize and add meta data
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "static Shopify\&.Unity\&.SDK\&.CartLineItem\&.operator \fBCheckoutLineItemInput\fP (\fBCartLineItem\fP lineItem)\fC [explicit]\fP, \fC [static]\fP"
+
+.PP
+Will convert a CartLineItem to a CheckoutLineItemInput\&. These are used internally by the sdk for the checkout process\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlineItem\fP The CartLineItem to be converted
+.RE
+.PP
+
+.SS "static Shopify\&.Unity\&.SDK\&.CartLineItem\&.operator \fBCheckoutLineItemUpdateInput\fP (\fBCartLineItem\fP lineItem)\fC [explicit]\fP, \fC [static]\fP"
+
+.PP
+Will convert a CartLineItem to a CheckoutLineItemUpdateInput\&. These are used internally by the sdk for the checkout process\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlineItem\fP The CartLineItem to be converted
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

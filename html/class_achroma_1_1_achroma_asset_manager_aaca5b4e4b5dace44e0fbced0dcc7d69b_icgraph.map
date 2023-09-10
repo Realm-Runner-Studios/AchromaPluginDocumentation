@@ -1,0 +1,27 @@
+<map id="Achroma.AchromaAssetManager.InstantiateSpriteFromBundle" name="Achroma.AchromaAssetManager.InstantiateSpriteFromBundle">
+<area shape="rect" id="Node000001" title="Instantiate a sprite from an Asset Bundle, given the name of the asset bundle and the name of the obj..." alt="" coords="809,251,1026,291"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_action.html#a15a8ba8bc2982dd77b3d95eb7a7c41d9" title="Gets the sprite for a given Action id in the array." alt="" coords="563,39,754,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="879,243,760,144,684,82,687,78,763,140,882,239"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_character.html#a7ef8b65d41f7bcb62dcbd31a498dbee7" title="Gets the sprite for a given avatar id in the array." alt="" coords="564,153,753,194"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="846,247,714,197,715,192,848,242"/>
+<area shape="rect" id="Node000009" href="$class_achroma_1_1_achroma_item.html#ab4b534a9843f7003b97d1cb79959f737" title="Gets the sprite for a given item id in the array." alt="" coords="555,251,761,291"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="794,274,762,274,762,268,794,268"/>
+<area shape="rect" id="Node000011" href="$class_achroma_1_1_achroma_location.html#a70d937c8c9e1ef1a9fe694da36ccdc52" title="Gets the sprite for a given avatar id in the array." alt="" coords="567,316,749,357"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="820,298,742,318,741,313,819,293"/>
+<area shape="rect" id="Node000013" href="$class_achroma_1_1_achroma_location.html#a5cc1df67dcd56fe309da8e49e90745fa" title="Gets the sprite for a given location name in the array." alt="" coords="567,381,749,422"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="877,302,824,337,762,371,732,383,730,378,760,366,821,333,874,298"/>
+<area shape="rect" id="Node000003" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a5d4623e6cb42a5089e4bfb2067ed58c0" title="Returns action sprite by giving an id." alt="" coords="302,5,503,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="547,47,503,41,504,36,548,42"/>
+<area shape="rect" id="Node000005" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a70f849db9ac49f16fe9b25ed82a3c251" title="Returns character sprite by giving an id." alt="" coords="300,71,505,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="579,151,506,127,468,114,470,109,508,122,581,146"/>
+<area shape="rect" id="Node000006" href="$class_achroma_1_1_achroma_u_i_controller.html#aad66560c74192bc128ebe181c5568c36" title="Loader user sprite into the home button." alt="" coords="301,136,504,177"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="548,169,504,166,504,161,548,164"/>
+<area shape="rect" id="Node000008" href="$class_achroma_1_1_achroma_shard_shop_u_i.html#ac6b5ed4a7e8df9d1280c3f9686f0f47b" title="Shows the purchase details for items that can be purchased using shards Used for the purchase of avat..." alt="" coords="298,201,507,242"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="549,197,508,205,507,199,548,192"/>
+<area shape="rect" id="Node000007" href="$class_achroma_1_1_achroma_database_controller.html#ac843e0393854c7257993d2373d4eceed" title="Event called when any change to the user data occurs This also calls the userDataChanged action point..." alt="" coords="5,136,250,177"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="286,159,250,159,250,154,286,154"/>
+<area shape="rect" id="Node000010" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a66aa4ba440513930a1885cc5fd718695" title="Returns item sprite by giving an id." alt="" coords="302,267,503,307"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="540,281,504,283,503,278,540,276"/>
+<area shape="rect" id="Node000012" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a241a6463e890ed39fa291bf8ea2c1148" title="Returns location sprite by giving an id." alt="" coords="302,332,503,373"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="552,346,504,349,503,343,552,340"/>
+</map>

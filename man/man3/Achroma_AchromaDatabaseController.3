@@ -1,0 +1,938 @@
+.TH "Achroma.AchromaDatabaseController" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaDatabaseController
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, and MonoBehaviour\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBCompanionGameType\fP { \fBCanvas\fP, \fBHero\fP, \fBRPG\fP }"
+.br
+.ti -1c
+.RI "enum \fBCompanionGameMode\fP { \fBCompanionNew\fP, \fBCompanionJoin\fP, \fBCompanionSolo\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "delegate void \fBCallback\fP (CallbackArgs args)"
+.br
+.ti -1c
+.RI "void \fBGetAppleCredentialState\fP (string userID)"
+.br
+.RI "Get credential state and trigger onCredentialState or onError event when action is completed\&. "
+.ti -1c
+.RI "void \fBGetAppleCredentialState\fP (string userID, Callback callback)"
+.br
+.RI "Invoke login and provide a custom callback when action is completed\&. When a custom trigger is used, the onCredentialState or onError unity event won't trigger\&. "
+.ti -1c
+.RI "void \fBAppleLoginFromiOS\fP ()"
+.br
+.RI "Invoke login and trigger onAppleLogin or onAppleError event when login is completed\&. "
+.ti -1c
+.RI "void \fBAppleLogin\fP (Callback callback)"
+.br
+.RI "Invoke login and provide a custom callback when login is completed\&. When a custom trigger is used, the onLogin or onError unity event won't trigger\&. "
+.ti -1c
+.RI "void \fBUpdate\fP ()"
+.br
+.ti -1c
+.RI "void \fBGetAppleCredentialState\fP ()"
+.br
+.ti -1c
+.RI "void \fBOnAppleCredentialState\fP (CallbackArgs args)"
+.br
+.ti -1c
+.RI "void \fBOnAppleLogin\fP (CallbackArgs args)"
+.br
+.RI "This is called after a successful Apple sign in happns\&. "
+.ti -1c
+.RI "void \fBOnAppleError\fP (CallbackArgs args)"
+.br
+.RI "This is called if something wrong happens during Apple sign in\&. "
+.ti -1c
+.RI "void \fBAppleSignInFromiOS\fP (\fBUserInfo\fP userInfo, UnityAction< bool, String, String > result=null)"
+.br
+.RI "Method that signs in to Apple from an Apple device\&. "
+.ti -1c
+.RI "void \fBSetUserEmail\fP (\fBUserInfo\fP userInfo)"
+.br
+.RI "Sets the email for Apple login\&. "
+.ti -1c
+.RI "void \fBAppleSignInFromAndroid\fP (UnityAction< bool, String, String > result=null)"
+.br
+.RI "Method that signs in to Apple from an Android device\&. "
+.ti -1c
+.RI "void \fBGetCardsData\fP (UnityAction< bool, string > result)"
+.br
+.RI "Gets a list of cards from the database\&. "
+.ti -1c
+.RI "string \fBGetHeroForCharacter\fP (int avatar)"
+.br
+.RI "Gets the hero power from the database based on an avatar\&. "
+.ti -1c
+.RI "void \fBEmailSignIn\fP (string email, string password, UnityAction< bool, string, string, string > result)"
+.br
+.RI "This method calls the login method using email and password\&. "
+.ti -1c
+.RI "void \fBForgotPassword\fP (string email, UnityAction< bool, string > result)"
+.br
+.RI "In case the user forgot the password\&. "
+.ti -1c
+.RI "void \fBEmailSignUp\fP (string userame, string email, string password, string passwordConfirmation, UnityAction< bool, string, string > result)"
+.br
+.RI "Function for the register button\&. "
+.ti -1c
+.RI "void \fBPushFriendsData\fP (UnityAction< bool, string > result=null)"
+.br
+.RI "Saves friends data\&. "
+.ti -1c
+.RI "void \fBRequestFriendship\fP (string id, UnityAction< bool, string > result)"
+.br
+.RI "Requests a new friendship for the user informed\&. "
+.ti -1c
+.RI "void \fBGetUsersFriends\fP (UnityAction< string, int > result)"
+.br
+.RI "Returns the list of friends for the current user\&. "
+.ti -1c
+.RI "void \fBUpdateFriendship\fP (string requestingUser, string requestedUser)"
+.br
+.ti -1c
+.RI "\fBFriendRequestData\fP \fBGetFriendRequestData\fP (string requestingUser, string requestedUser)"
+.br
+.ti -1c
+.RI "void \fBRemoveFriendship\fP (string requestingUser, string requestedUser)"
+.br
+.ti -1c
+.RI "void \fBUnWatchFriends\fP ()"
+.br
+.ti -1c
+.RI "void \fBGoogleGetAuthToken\fP (UnityAction< bool, string > result)"
+.br
+.RI "Collects the auth token using the Google Sign in plugin\&. "
+.ti -1c
+.RI "void \fBGoogleSignIn\fP (string googleAccessToken, string googleIdToken, UnityAction< bool, String, String > result=null)"
+.br
+.ti -1c
+.RI "void \fBNewMatch\fP (string sessionName, CompanionGameType gameType)"
+.br
+.RI "Adds a new match to Firebase's match table\&. "
+.ti -1c
+.RI "void \fBAddLocalPlayerToCurrentMatch\fP (CompanionGameType gameType, UnityAction< bool, string > result=null)"
+.br
+.RI "Adds the local player to the match\&. "
+.ti -1c
+.RI "void \fBUpdatePlayerCharacter\fP (int character)"
+.br
+.RI "Updates the avatar of the current plyer so the other players can see the change\&. "
+.ti -1c
+.RI "void \fBRemoveLocalPlayerFromCurrentMatch\fP (UnityAction< bool, string > result)"
+.br
+.RI "User removes themselves from the match\&. "
+.ti -1c
+.RI "void \fBPushMatchData\fP (string sessionName='', UnityAction< bool, string > result=null)"
+.br
+.RI "Pushes the match data to Firebase\&. "
+.ti -1c
+.RI "void \fBUnWatchMatch\fP ()"
+.br
+.RI "Detaches the listener for the current match\&. "
+.ti -1c
+.RI "void \fBWatchMatch\fP (UnityAction< string > result)"
+.br
+.RI "Adds a listener to the match\&. "
+.ti -1c
+.RI "void \fBRefreshMatch\fP (string sessionName, bool showLoading=true, UnityAction< bool, string, string > callback=null)"
+.br
+.RI "Forces an update to the local match data by retrieving it from the database\&. "
+.ti -1c
+.RI "void \fBGetMatchData\fP (string sessionName, UnityAction< bool, string, \fBMatchData\fP > result)"
+.br
+.RI "Based on a session id, it gives back the MatchData object\&. "
+.ti -1c
+.RI "List< \fBMatchPlayer\fP > \fBGetOponents\fP ()"
+.br
+.RI "Gets a list of opponents\&. "
+.ti -1c
+.RI "void \fBGetCurrentSeasonName\fP (UnityAction< string > callback)"
+.br
+.RI "Gets the current season name from the seasons table\&. "
+.ti -1c
+.RI "void \fBGetMatchCode\fP (UnityAction< string > callback)"
+.br
+.RI "Gets a unique match code\&. "
+.ti -1c
+.RI "void \fBQueryRankingCloud\fP (int hero=\-1, string userId=null, bool currentSeason=false, bool showLoading=true, UnityAction< List< IDictionary >, bool > result=null)"
+.br
+.RI "Returns a list with the ranking list for a certain type of game\&. "
+.ti -1c
+.RI "void \fBQueryStoryRankingCloud\fP (bool showLoading=true, string userId='', UnityAction< List< IDictionary >, bool > result=null)"
+.br
+.RI "Returns the ranking for story mode\&. "
+.ti -1c
+.RI "void \fBGetAchrometerTier\fP (int totalChromaWins, int totalAchromWins, int storyAchrometer, UnityAction< bool, int, int > callback)"
+.br
+.RI "Gets the Achrometer tier (-6 \&.\&. 6) "
+.ti -1c
+.RI "void \fBAddToUserTotalMatches\fP ()"
+.br
+.RI "Adds to the number of matches played by the user\&. "
+.ti -1c
+.RI "void \fBUpdateUserWins\fP (string winner, string winType, UnityAction callback)"
+.br
+.RI "Updates the user's gameStats with the win\&. "
+.ti -1c
+.RI "void \fBGetNews\fP (UnityAction< bool, string > result)"
+.br
+.ti -1c
+.RI "void \fBGoToAddress\fP ()"
+.br
+.RI "Opens the App store address to allow the user to update the app\&. "
+.ti -1c
+.RI "void \fBCheckForUpdates\fP (string sceneToReload, UnityAction< bool, string > callback)"
+.br
+.RI "Checks if the user has the latest version installed\&. If the user has an outdated version, the app will take them to the app store and force the update\&. "
+.ti -1c
+.RI "string \fBGetStringConfig\fP (string name)"
+.br
+.ti -1c
+.RI "bool \fBGetBooleanConfig\fP (string name)"
+.br
+.ti -1c
+.RI "int \fBGetVariableValue\fP (string Story, string Name)"
+.br
+.ti -1c
+.RI "int \fBGetMilestoneValue\fP (string Name, string Story)"
+.br
+.ti -1c
+.RI "void \fBAddAchrom\fP (int value)"
+.br
+.ti -1c
+.RI "void \fBResetVariable\fP (string story, string name, UnityAction< string > result)"
+.br
+.ti -1c
+.RI "void \fBUpdateVariable\fP (string story, string name, int value, UnityAction< string, int > result)"
+.br
+.ti -1c
+.RI "void \fBUpdateMilestone\fP (string story, string name, int value, UnityAction< string, int > result)"
+.br
+.ti -1c
+.RI "void \fBClearProgress\fP (string story, UnityAction< bool, string > result)"
+.br
+.ti -1c
+.RI "void \fBAddStoryStep\fP (string story, string step, int StoryCharacter, int StoryRelic, UnityAction< bool, string > result)"
+.br
+.ti -1c
+.RI "void \fBPushUserData\fP (UnityAction< bool, string > result)"
+.br
+.RI "Method to update Firebase with the user's updates\&. "
+.ti -1c
+.RI "void \fBGetUserData\fP (UnityAction< bool, string, string > result, string customUserId='')"
+.br
+.RI "Method to get current user data and store it to a UserData variable\&. "
+.ti -1c
+.RI "void \fBOnUserChange\fP (string json)"
+.br
+.RI "Event called when any change to the user data occurs This also calls the userDataChanged action pointed to a method on host app\&. "
+.ti -1c
+.RI "bool \fBMergeData\fP (\fBUserData\fP localData, \fBUserData\fP finalData)"
+.br
+.RI "This will compare the\&. "
+.ti -1c
+.RI "void \fBPurchaseShards\fP (int shards, UnityAction< bool, string > result)"
+.br
+.RI "This will add shards to the user account after they buy shards from the shard shop\&. "
+.ti -1c
+.RI "void \fBPurchaseAvatar\fP (int shards, int character, UnityAction< bool, string > result)"
+.br
+.RI "This will deduct shards from the user account after they buy an avatar from the shard shop\&. "
+.ti -1c
+.RI "void \fBAddStoryShards\fP (int shards, string storyStepId, UnityAction< bool, string > result)"
+.br
+.RI "This will add shards to the user account after they reached a step in the story\&. "
+.ti -1c
+.RI "void \fBSubtractShards\fP (int shards, UnityAction< bool, string > result)"
+.br
+.RI "This will take shards from the user account\&. "
+.ti -1c
+.RI "void \fBGetFriendsData\fP (UnityAction< bool, string > result)"
+.br
+.RI "Gets friends data 
+.br
+ "
+.ti -1c
+.RI "void \fBGetUserById\fP (string id, UnityAction< bool, string, \fBUserData\fP > result)"
+.br
+.RI "Gets the user by their id\&. "
+.ti -1c
+.RI "void \fBGetUserIdByUniqueNumber\fP (string uniqueNumber, UnityAction< bool, string, string > callback)"
+.br
+.ti -1c
+.RI "void \fBCancelOperations\fP ()"
+.br
+.RI "This method will stop any Firebase operation\&. "
+.ti -1c
+.RI "void \fBSignOut\fP ()"
+.br
+.RI "This method will log out\&. "
+.ti -1c
+.RI "void \fBLoadDatabase\fP (UnityAction< bool, string > result)"
+.br
+.RI "Loads the database references to the tables the app uses\&. "
+.ti -1c
+.RI "bool \fBAmIFriendsWith\fP (string id)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "UnityAction< CallbackArgs > \fBonAppleLogin\fP"
+.br
+.ti -1c
+.RI "UnityAction< CallbackArgs > \fBonAppleCredentialState\fP"
+.br
+.ti -1c
+.RI "UnityAction< CallbackArgs > \fBonAppleError\fP"
+.br
+.ti -1c
+.RI "\fBCardCollection\fP \fBcardCollection\fP = new \fBCardCollection\fP()"
+.br
+.ti -1c
+.RI "UnityAction \fBfriendsUpdated\fP"
+.br
+.ti -1c
+.RI "\fBMatchData\fP \fBmatchData\fP"
+.br
+.ti -1c
+.RI "\fBNewsCollection\fP \fBnewsCollection\fP"
+.br
+.ti -1c
+.RI "\fBUserData\fP \fBuserData\fP"
+.br
+.ti -1c
+.RI "string \fBCurrentStoryId\fP"
+.br
+.ti -1c
+.RI "UnityAction< \fBUserData\fP > \fBuserDataChanged\fP"
+.br
+.RI "This will be called every time a change to user happens This is a reference to a method created by the host app\&. "
+.ti -1c
+.RI "\fBFriendsData\fP \fBfriendsData\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "bool \fBAmIMatchHost\fP\fC [get]\fP"
+.br
+.RI "Responds the question if the current user is the host of match\&. "
+.ti -1c
+.RI "static \fBAchromaDatabaseController\fP \fBInstance\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "bool \fBInitialized\fP\fC [get]\fP"
+.br
+.RI "Checks if Firebase has been initialized\&. "
+.ti -1c
+.RI "bool \fBAuthenticated\fP\fC [get]\fP"
+.br
+.RI "Checks if user has authenticated\&. "
+.ti -1c
+.RI "bool \fBDatabaseLoaded\fP\fC [get]\fP"
+.br
+.RI "Checks if database has been loaded\&. "
+.ti -1c
+.RI "bool \fBDatabaseUpdated\fP\fC [get]\fP"
+.br
+.RI "Checks if the user's data has been previously updated\&. This is to guarantee everything has been updated since the user's data is updated after login\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void Achroma\&.AchromaDatabaseController\&.AddLocalPlayerToCurrentMatch (CompanionGameType gameType, UnityAction< bool, string > result = \fCnull\fP)"
+
+.PP
+Adds the local player to the match\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgameType\fP The type of match in question
+.br
+\fIresult\fP The callback with success feedback
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.AddStoryShards (int shards, string storyStepId, UnityAction< bool, string > result)"
+
+.PP
+This will add shards to the user account after they reached a step in the story\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshards\fP amount of shards involved
+.br
+\fIresult\fP Returns a success flag and error message (if any)
+.RE
+.PP
+
+.SS "bool Achroma\&.AchromaDatabaseController\&.AmIFriendsWith (string id)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.AppleLogin (Callback callback)"
+
+.PP
+Invoke login and provide a custom callback when login is completed\&. When a custom trigger is used, the onLogin or onError unity event won't trigger\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP The custom callback to trigger when login is completed\&.
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.AppleSignInFromAndroid (UnityAction< bool, String, String > result = \fCnull\fP)"
+
+.PP
+Method that signs in to Apple from an Android device\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP Resul with bool flag, message (if any error) and user id (if successful) 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.AppleSignInFromiOS (\fBUserInfo\fP userInfo, UnityAction< bool, String, String > result = \fCnull\fP)"
+
+.PP
+Method that signs in to Apple from an Apple device\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserInfo\fP credential data collected previously from GetCredential
+.br
+\fIresult\fP Resul with bool flag, message (if any error) and user id (if successful) 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.CheckForUpdates (string sceneToReload, UnityAction< bool, string > callback)"
+
+.PP
+Checks if the user has the latest version installed\&. If the user has an outdated version, the app will take them to the app store and force the update\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsceneToReload\fP The scene to be reloaded after if something goes wrong
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.EmailSignIn (string email, string password, UnityAction< bool, string, string, string > result)"
+
+.PP
+This method calls the login method using email and password\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIemail\fP User's email
+.br
+\fIpassword\fP User's password
+.br
+\fIresult\fP callback function that returns: success, field name (when an error occurs, it returns which field was wrong), message (the error message) and user (user id from Firebase)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.EmailSignUp (string userame, string email, string password, string passwordConfirmation, UnityAction< bool, string, string > result)"
+
+.PP
+Function for the register button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIusername\fP the user name (nick name)
+.br
+\fIemail\fP e-mail address
+.br
+\fIpassword\fP password
+.br
+\fIpasswordConfirmation\fP password confirmation
+.br
+\fIresult\fP callback function, returns success flag, field name (in case of error) and error message (if any)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.ForgotPassword (string email, UnityAction< bool, string > result)"
+
+.PP
+In case the user forgot the password\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIemail\fP User's email
+.br
+\fIresult\fP callback function that returns: success, message (the error message)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.GetAchrometerTier (int totalChromaWins, int totalAchromWins, int storyAchrometer, UnityAction< bool, int, int > callback)"
+
+.PP
+Gets the Achrometer tier (-6 \&.\&. 6) 
+.PP
+\fBParameters\fP
+.RS 4
+\fItotalChromaWins\fP Number of Chroma wins (30+)
+.br
+\fItotalAchromWins\fP Number of Achrom Wins (Drained all others to zero)
+.br
+\fIstoryAchrometer\fP The achrometer from the story mode
+.br
+\fIcallback\fP Success feedback and achrometer + total points 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.GetAppleCredentialState (string userID)"
+
+.PP
+Get credential state and trigger onCredentialState or onError event when action is completed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserID\fP The user id to query the credential state on\&.
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.GetAppleCredentialState (string userID, Callback callback)"
+
+.PP
+Invoke login and provide a custom callback when action is completed\&. When a custom trigger is used, the onCredentialState or onError unity event won't trigger\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserID\fP The user id to query the credential state on\&.
+.br
+\fIcallback\fP The custom callback to trigger when action is completed\&.
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.GetCardsData (UnityAction< bool, string > result)"
+
+.PP
+Gets a list of cards from the database\&. Loads the cards from Firebase database into memory 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP Returns success flag and an error messasge (if any)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.GetCurrentSeasonName (UnityAction< string > callback)"
+
+.PP
+Gets the current season name from the seasons table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP success/failure feedback
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.GetFriendsData (UnityAction< bool, string > result)"
+
+.PP
+Gets friends data 
+.br
+ 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP 
+.RE
+.PP
+
+.SS "string Achroma\&.AchromaDatabaseController\&.GetHeroForCharacter (int avatar)"
+
+.PP
+Gets the hero power from the database based on an avatar\&. Loads the cards from Firebase database into memory 
+.PP
+\fBReturns\fP
+.RS 4
+The character's hero power
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.GetMatchCode (UnityAction< string > callback)"
+
+.PP
+Gets a unique match code\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP Returns the match code
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.GetMatchData (string sessionName, UnityAction< bool, string, \fBMatchData\fP > result)"
+
+.PP
+Based on a session id, it gives back the MatchData object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsessionName\fP Session id
+.br
+\fIresult\fP the success feedback and MatchData object
+.RE
+.PP
+
+.SS "List< \fBMatchPlayer\fP > Achroma\&.AchromaDatabaseController\&.GetOponents ()"
+
+.PP
+Gets a list of opponents\&. 
+.PP
+\fBReturns\fP
+.RS 4
+List of player's opponents
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.GetUserById (string id, UnityAction< bool, string, \fBUserData\fP > result)"
+
+.PP
+Gets the user by their id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP User id
+.br
+\fIcallback\fP Success/Failure feedback and the UserData object
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.GetUserData (UnityAction< bool, string, string > result, string customUserId = \fC''\fP)"
+
+.PP
+Method to get current user data and store it to a UserData variable\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP callback that returns success flag, message and the json file with the user data
+.br
+\fIcustomUserId\fP This is just for testing using a custom user id
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.GetUsersFriends (UnityAction< string, int > result)"
+
+.PP
+Returns the list of friends for the current user\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP callback for each row of friendship
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.GoogleGetAuthToken (UnityAction< bool, string > result)"
+
+.PP
+Collects the auth token using the Google Sign in plugin\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP Returns a flag of success and message
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.LoadDatabase (UnityAction< bool, string > result)"
+
+.PP
+Loads the database references to the tables the app uses\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP Callback with a success flag and the error message (if any)
+.RE
+.PP
+
+.SS "bool Achroma\&.AchromaDatabaseController\&.MergeData (\fBUserData\fP localData, \fBUserData\fP finalData)"
+
+.PP
+This will compare the\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlocalData\fP 
+.br
+\fIfinalData\fP 
+.br
+\fIresult\fP 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.NewMatch (string sessionName, CompanionGameType gameType)"
+
+.PP
+Adds a new match to Firebase's match table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsessionName\fP The unique match id
+.br
+\fIgameType\fP The type of match in question
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.OnAppleError (CallbackArgs args)"
+
+.PP
+This is called if something wrong happens during Apple sign in\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargs\fP 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.OnAppleLogin (CallbackArgs args)"
+
+.PP
+This is called after a successful Apple sign in happns\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargs\fP 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.OnUserChange (string json)"
+
+.PP
+Event called when any change to the user data occurs This also calls the userDataChanged action pointed to a method on host app\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIjson\fP 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.PurchaseAvatar (int shards, int character, UnityAction< bool, string > result)"
+
+.PP
+This will deduct shards from the user account after they buy an avatar from the shard shop\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshards\fP amount of shards involved
+.br
+\fIcharacter\fP character id involved
+.br
+\fIresult\fP Returns a success flag and error message (if any)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.PurchaseShards (int shards, UnityAction< bool, string > result)"
+
+.PP
+This will add shards to the user account after they buy shards from the shard shop\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshards\fP amount of shards involved
+.br
+\fIresult\fP Returns a success flag and error message (if any)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.PushFriendsData (UnityAction< bool, string > result = \fCnull\fP)"
+
+.PP
+Saves friends data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP Success/failure feedback
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.PushMatchData (string sessionName = \fC''\fP, UnityAction< bool, string > result = \fCnull\fP)"
+
+.PP
+Pushes the match data to Firebase\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsessionName\fP Session Id, if null, will use the matchData object in memory
+.br
+\fIresult\fP Success/failure feedback
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.PushUserData (UnityAction< bool, string > result)"
+
+.PP
+Method to update Firebase with the user's updates\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.QueryRankingCloud (int hero = \fC\-1\fP, string userId = \fCnull\fP, bool currentSeason = \fCfalse\fP, bool showLoading = \fCtrue\fP, UnityAction< List< IDictionary >, bool > result = \fCnull\fP)"
+
+.PP
+Returns a list with the ranking list for a certain type of game\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhero\fP if == 1 it will return only the hero ranking
+.br
+\fIuserId\fP if informed, will give the ranking for just the friends of the user
+.br
+\fIcurrentSeason\fP if true, it will give the ranking just for the current season
+.br
+\fIshowLoading\fP if true, shows the loading screen
+.br
+\fIresult\fP success feedback and list with all the users
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.QueryStoryRankingCloud (bool showLoading = \fCtrue\fP, string userId = \fC''\fP, UnityAction< List< IDictionary >, bool > result = \fCnull\fP)"
+
+.PP
+Returns the ranking for story mode\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshowLoading\fP if true, shows the loading screen
+.br
+\fIuserId\fP if true, shows only the ranking for the user's friends
+.br
+\fIresult\fP 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.RefreshMatch (string sessionName, bool showLoading = \fCtrue\fP, UnityAction< bool, string, string > callback = \fCnull\fP)"
+
+.PP
+Forces an update to the local match data by retrieving it from the database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsessionName\fP Session id
+.br
+\fIshowLoading\fP If true, shows the loading screen
+.br
+\fIcallback\fP Success/Failure feedback
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.RemoveLocalPlayerFromCurrentMatch (UnityAction< bool, string > result)"
+
+.PP
+User removes themselves from the match\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP The success/failure feedback
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.RequestFriendship (string id, UnityAction< bool, string > result)"
+
+.PP
+Requests a new friendship for the user informed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP 
+.br
+\fIresult\fP 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.SetUserEmail (\fBUserInfo\fP userInfo)"
+
+.PP
+Sets the email for Apple login\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserInfo\fP 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.SubtractShards (int shards, UnityAction< bool, string > result)"
+
+.PP
+This will take shards from the user account\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshards\fP amount of shards involved
+.br
+\fIresult\fP Returns a success flag and error message (if any)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.UpdatePlayerCharacter (int character)"
+
+.PP
+Updates the avatar of the current plyer so the other players can see the change\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcharacter\fP the new avatar id
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.UpdateUserWins (string winner, string winType, UnityAction callback)"
+
+.PP
+Updates the user's gameStats with the win\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwinner\fP the userid of the winner
+.br
+\fIwinType\fP The type of win, chroma / achrom
+.br
+\fIcallback\fP The feedback result
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.WatchMatch (UnityAction< string > result)"
+
+.PP
+Adds a listener to the match\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

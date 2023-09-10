@@ -1,0 +1,5 @@
+<map id="UniWebView.RemoveSslExceptionDomain" name="UniWebView.RemoveSslExceptionDomain">
+<area shape="rect" id="Node000001" title="Removes a domain from the SSL checking white list." alt="" coords="5,5,230,46"/>
+<area shape="rect" id="Node000002" href="$class_uni_web_view_logger.html#abb0d3b3f645b881edb7147760211f31e" title="Log a critical message." alt="" coords="278,13,457,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,23,263,23,263,28,230,28"/>
+</map>

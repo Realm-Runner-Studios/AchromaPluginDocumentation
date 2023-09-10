@@ -1,0 +1,308 @@
+.TH "DevionGames.UIWidgets.UIContainer< T >" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DevionGames.UIWidgets.UIContainer< T >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBDevionGames\&.UIWidgets\&.UIWidget\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual bool \fBAddItem\fP (T item)"
+.br
+.RI "Adds a new item to a free or dynamicly created slot in this container\&. "
+.ti -1c
+.RI "virtual bool \fBRemoveItem\fP (int index)"
+.br
+.RI "Removes the item at index\&. Sometimes an item requires more then one slot(two-handed weapon), this will remove the item with the extra slots\&. "
+.ti -1c
+.RI "virtual T \fBReplaceItem\fP (int index, T item)"
+.br
+.RI "Replaces the items at index and returns the previous item\&. "
+.ti -1c
+.RI "virtual bool \fBCanAddItem\fP (T item, out \fBUISlot\fP< T > slot, bool createSlot=false)"
+.br
+.RI "Checks if the item can be added to this container\&. "
+.ti -1c
+.RI "void \fBRefreshSlots\fP ()"
+.br
+.RI "Refreshs the slot list and reorganize indices\&. "
+.in -1c
+
+Public Member Functions inherited from \fBDevionGames\&.UIWidgets\&.UIWidget\fP
+.in +1c
+.ti -1c
+.RI "virtual void \fBShow\fP ()"
+.br
+.RI "Show this widget\&. "
+.ti -1c
+.RI "virtual void \fBClose\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBClose\fP (UnityAction result=null)"
+.br
+.RI "Close this widget\&. "
+.ti -1c
+.RI "virtual IEnumerator \fBDelayedClose\fP (UnityAction result)"
+.br
+.ti -1c
+.RI "virtual void \fBHide\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBToggle\fP ()"
+.br
+.RI "Toggle the visibility of this widget\&. "
+.ti -1c
+.RI "virtual void \fBFocus\fP ()"
+.br
+.RI "Brings the widget to the top\&. "
+.in -1c
+
+Public Member Functions inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "void \fBRegisterListener\fP (string eventID, UnityAction< \fBCallbackEventData\fP > call)"
+.br
+.ti -1c
+.RI "void \fBRemoveListener\fP (string eventID, UnityAction< \fBCallbackEventData\fP > call)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBOnAwake\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBUISlot\fP< T > \fBCreateSlot\fP ()"
+.br
+.RI "Creates a new slot\&. "
+.ti -1c
+.RI "virtual void \fBDestroySlot\fP (int index)"
+.br
+.RI "Destroy the slot and reorganize indices\&. "
+.in -1c
+
+Protected Member Functions inherited from \fBDevionGames\&.UIWidgets\&.UIWidget\fP
+.in +1c
+.ti -1c
+.RI "virtual void \fBOnStart\fP ()"
+.br
+.in -1c
+
+Protected Member Functions inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "void \fBExecute\fP (string eventID, \fBCallbackEventData\fP eventData)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBm_DynamicContainer\fP = false"
+.br
+.RI "Sets the container as dynamic\&. Slots are instantiated at runtime\&. "
+.ti -1c
+.RI "Transform \fBm_SlotParent\fP"
+.br
+.RI "The parent transform of slots\&. "
+.ti -1c
+.RI "GameObject \fBm_SlotPrefab\fP"
+.br
+.RI "The slot prefab\&. This game object should contain the Slot component or a child class of Slot\&. "
+.ti -1c
+.RI "List< \fBUISlot\fP< T > > \fBm_Slots\fP = new List<\fBUISlot\fP<T>>()"
+.br
+.ti -1c
+.RI "List< T > \fBm_Collection\fP"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBDevionGames\&.UIWidgets\&.UIWidget\fP
+.in +1c
+.ti -1c
+.RI "bool \fBm_DeactivateOnClose\fP = true"
+.br
+.RI "If true deactivates the gameobject when closed\&. "
+.ti -1c
+.RI "RectTransform \fBm_RectTransform\fP"
+.br
+.RI "The RectTransform of the widget\&. "
+.ti -1c
+.RI "CanvasGroup \fBm_CanvasGroup\fP"
+.br
+.RI "The CanvasGroup of the widget\&. "
+.ti -1c
+.RI "State \fBm_CurrentState\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "override string[] \fBCallbacks\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "ReadOnlyCollection< \fBUISlot\fP< T > > \fBSlots\fP\fC [get]\fP"
+.br
+.RI "Collection of slots this container is holding\&. "
+.in -1c
+
+Properties inherited from \fBDevionGames\&.UIWidgets\&.UIWidget\fP
+.in +1c
+.ti -1c
+.RI "string \fBName\fP\fC [get, set]\fP"
+.br
+.RI "Gets or sets the name\&. "
+.ti -1c
+.RI "override string[] \fBCallbacks\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "State \fBIsStateVisible\fP\fC [get]\fP"
+.br
+.RI "Gets a value indicating whether this widget is visible\&. "
+.ti -1c
+.RI "bool \fBIsVisible\fP\fC [get]\fP"
+.br
+.in -1c
+
+Properties inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "string[] \fBCallbacks\fP\fC [get]\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Public Attributes inherited from \fBDevionGames\&.UIWidgets\&.UIWidget\fP
+.in +1c
+.ti -1c
+.RI "int \fBpriority\fP"
+.br
+.ti -1c
+.RI "AudioClip \fBshowSound\fP"
+.br
+.RI "The AudioClip that will be played when this widget shows\&. "
+.ti -1c
+.RI "AudioClip \fBcloseSound\fP"
+.br
+.RI "The AudioClip that will be played when this widget closes\&. "
+.ti -1c
+.RI "\fBWidgetEvent\fP \fBonShow\fP"
+.br
+.RI "Events that will be invoked when this widget is shows\&. "
+.ti -1c
+.RI "\fBWidgetEvent\fP \fBonClose\fP"
+.br
+.RI "Events that will be invoked when this widget closes\&. "
+.in -1c
+
+Public Attributes inherited from \fBDevionGames\&.CallbackHandler\fP
+.in +1c
+.ti -1c
+.RI "List< \fBCallbackHandler\&.Entry\fP > \fBdelegates\fP"
+.br
+.in -1c
+
+Protected Types inherited from \fBDevionGames\&.UIWidgets\&.UIWidget\fP
+.in +1c
+.ti -1c
+.RI "enum \fBState\fP { \fBShowing\fP, \fBVisible\fP, \fBClosing\fP, \fBInvisible\fP }"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool \fBDevionGames\&.UIWidgets\&.UIContainer\fP< T >\&.AddItem (T item)\fC [virtual]\fP"
+
+.PP
+Adds a new item to a free or dynamicly created slot in this container\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIitem\fP Item to add
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if item was added\&.
+.RE
+.PP
+
+.SS "virtual bool \fBDevionGames\&.UIWidgets\&.UIContainer\fP< T >\&.CanAddItem (T item, out \fBUISlot\fP< T > slot, bool createSlot = \fCfalse\fP)\fC [virtual]\fP"
+
+.PP
+Checks if the item can be added to this container\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIitem\fP The item to check\&.
+.br
+\fIslot\fP Required or next free slot
+.br
+\fIcreateSlot\fP Should a slot be created if the container is dynamic\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns true if the item can be added\&.
+.RE
+.PP
+
+.SS "virtual void \fBDevionGames\&.UIWidgets\&.UIContainer\fP< T >\&.DestroySlot (int index)\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Destroy the slot and reorganize indices\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIslotID\fP Slot I\&.
+.RE
+.PP
+
+.SS "override void \fBDevionGames\&.UIWidgets\&.UIContainer\fP< T >\&.OnAwake ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBDevionGames\&.UIWidgets\&.UIWidget\fP\&.
+.SS "virtual bool \fBDevionGames\&.UIWidgets\&.UIContainer\fP< T >\&.RemoveItem (int index)\fC [virtual]\fP"
+
+.PP
+Removes the item at index\&. Sometimes an item requires more then one slot(two-handed weapon), this will remove the item with the extra slots\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP The slot index where to remove the item\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns true if the item was removed\&.
+.RE
+.PP
+
+.SS "virtual T \fBDevionGames\&.UIWidgets\&.UIContainer\fP< T >\&.ReplaceItem (int index, T item)\fC [virtual]\fP"
+
+.PP
+Replaces the items at index and returns the previous item\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP Index of slot to repalce\&.
+.br
+\fIitem\fP Item to replace with\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

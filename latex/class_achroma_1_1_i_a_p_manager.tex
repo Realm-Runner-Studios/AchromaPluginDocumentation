@@ -1,0 +1,79 @@
+\doxysection{Achroma.\+IAPManager Class Reference}
+\hypertarget{class_achroma_1_1_i_a_p_manager}{}\label{class_achroma_1_1_i_a_p_manager}\index{Achroma.IAPManager@{Achroma.IAPManager}}
+
+
+Inheritance diagram for Achroma.\+IAPManager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_achroma_1_1_i_a_p_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Achroma.\+IAPManager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_achroma_1_1_i_a_p_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_a20a4511cf3ff4ad4d441da8d0a0d3032}\label{class_achroma_1_1_i_a_p_manager_a20a4511cf3ff4ad4d441da8d0a0d3032} 
+async void {\bfseries Initialize} (List$<$ \mbox{\hyperlink{class_achroma_1_1_achroma_purchase_option}{Achroma\+Purchase\+Option}} $>$ purchase\+Options, Unity\+Action$<$ bool, string $>$ callback)
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_a88c3bec72ac8186590c8472c58e04c66}\label{class_achroma_1_1_i_a_p_manager_a88c3bec72ac8186590c8472c58e04c66} 
+\mbox{\hyperlink{class_achroma_1_1_achroma_purchase_option}{Achroma\+Purchase\+Option}} {\bfseries Get\+Purchase\+Option} (int index)
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_af888a6b044ba01e543ebb96bb0b38b88}\label{class_achroma_1_1_i_a_p_manager_af888a6b044ba01e543ebb96bb0b38b88} 
+\mbox{\hyperlink{class_achroma_1_1_achroma_purchase_option}{Achroma\+Purchase\+Option}} {\bfseries Get\+Purchase\+Option\+By\+String} (string id)
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_aa67c2ea517fa4ca2a35a2ad6eaf03abe}\label{class_achroma_1_1_i_a_p_manager_aa67c2ea517fa4ca2a35a2ad6eaf03abe} 
+void {\bfseries Initialize\+Purchasing} ()
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_a3fd3e9c259731d54a23119551c941dcb}\label{class_achroma_1_1_i_a_p_manager_a3fd3e9c259731d54a23119551c941dcb} 
+bool {\bfseries Is\+Initialized} ()
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_a9f8bff6cf410a6a79da2282dea200f43}\label{class_achroma_1_1_i_a_p_manager_a9f8bff6cf410a6a79da2282dea200f43} 
+void {\bfseries Buy} (string Product\+Id, Unity\+Action$<$ bool, string $>$ result)
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_ad5174c06ce4c4bfa78351c282358d6b7}\label{class_achroma_1_1_i_a_p_manager_ad5174c06ce4c4bfa78351c282358d6b7} 
+void {\bfseries Restore\+Purchases} ()
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_a6c8245017faf4cf9094c7cdb26bce09b}\label{class_achroma_1_1_i_a_p_manager_a6c8245017faf4cf9094c7cdb26bce09b} 
+void {\bfseries On\+Initialized} (IStore\+Controller controller, IExtension\+Provider extensions)
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_a4eeaf1d9fda27bb1c4994eb2bf21b58f}\label{class_achroma_1_1_i_a_p_manager_a4eeaf1d9fda27bb1c4994eb2bf21b58f} 
+void {\bfseries On\+Initialize\+Failed} (Initialization\+Failure\+Reason error)
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_abcaf2f234ce03e5c2bd9a0a80895b244}\label{class_achroma_1_1_i_a_p_manager_abcaf2f234ce03e5c2bd9a0a80895b244} 
+Purchase\+Processing\+Result {\bfseries Process\+Purchase} (Purchase\+Event\+Args args)
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_a6999723a65963f5b017c375f829d61fd}\label{class_achroma_1_1_i_a_p_manager_a6999723a65963f5b017c375f829d61fd} 
+void {\bfseries On\+Purchase\+Failed} (Product product, Purchase\+Failure\+Reason failure\+Reason)
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_a563d0572848f82fa04fc89a920bdddd9}\label{class_achroma_1_1_i_a_p_manager_a563d0572848f82fa04fc89a920bdddd9} 
+void {\bfseries On\+Initialize\+Failed} (Initialization\+Failure\+Reason error, string message)
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_aa2b3db2790c7db98b3593df68092a762}\label{class_achroma_1_1_i_a_p_manager_aa2b3db2790c7db98b3593df68092a762} 
+void {\bfseries On\+Purchase\+Failed} (Product product, Purchase\+Failure\+Description failure\+Description)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_a44f463c63c3736d29aee4a8f299db3fa}\label{class_achroma_1_1_i_a_p_manager_a44f463c63c3736d29aee4a8f299db3fa} 
+string {\bfseries environment} = "{}production"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_i_a_p_manager_a39fc36d36a8de000b3392110e6b62c11}\label{class_achroma_1_1_i_a_p_manager_a39fc36d36a8de000b3392110e6b62c11} 
+static \mbox{\hyperlink{class_achroma_1_1_i_a_p_manager}{IAPManager}} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Purchase/IAPManager.\+cs\end{DoxyCompactItemize}

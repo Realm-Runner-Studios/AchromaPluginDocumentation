@@ -1,0 +1,13 @@
+<map id="Achroma.AchromaControlFile.GetActionById" name="Achroma.AchromaControlFile.GetActionById">
+<area shape="rect" id="Node000001" title="Returns the Action from the Control File with all its data." alt="" coords="743,39,940,79"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_action.html#ae423afebac87081b558a6f35725fc267" title="Returns the Action based on its id." alt="" coords="504,5,695,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="728,46,696,42,696,36,729,41"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_action.html#a60fe6f5557bdd9b86221922d79778a7a" title="Returns Action sprite name to be found in the asset bundle." alt="" coords="504,71,695,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="729,77,696,81,696,76,728,71"/>
+<area shape="rect" id="Node000003" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a13a49be4e02c7d2dc208c0f184e33446" title="Returns the name of the action that&#39;s informed in the control file." alt="" coords="255,5,456,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="489,28,456,28,456,23,489,23"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_action.html#a15a8ba8bc2982dd77b3d95eb7a7c41d9" title="Gets the sprite for a given Action id in the array." alt="" coords="260,71,451,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="489,94,452,94,452,88,489,88"/>
+<area shape="rect" id="Node000006" href="$class_achroma_a_p_i_1_1_achroma_instance_assets.html#a5d4623e6cb42a5089e4bfb2067ed58c0" title="Returns action sprite by giving an id." alt="" coords="5,71,207,111"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="245,94,207,94,207,88,245,88"/>
+</map>

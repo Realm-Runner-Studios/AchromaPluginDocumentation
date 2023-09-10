@@ -1,0 +1,7 @@
+<map id="RadialMenuTrigger" name="RadialMenuTrigger">
+<area shape="rect" id="Node000001" title=" " alt="" coords="72,79,202,105"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,117,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,40,126,77,122,81,83,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="140,5,286,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,43,152,81,148,77,188,40"/>
+</map>

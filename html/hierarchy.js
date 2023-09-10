@@ -1,0 +1,236 @@
+var hierarchy =
+[
+    [ "Achroma.Accomplishment", "struct_achroma_1_1_accomplishment.html", null ],
+    [ "Achroma.Achievement", "struct_achroma_1_1_achievement.html", null ],
+    [ "Achroma.AchievementTierSprite", "struct_achroma_1_1_achievement_tier_sprite.html", null ],
+    [ "Achroma.AchromaAction", "class_achroma_1_1_achroma_action.html", null ],
+    [ "Achroma.AchromaActionType", "struct_achroma_1_1_achroma_action_type.html", null ],
+    [ "Achroma.AchromaAssetBundleFile", "struct_achroma_1_1_achroma_asset_bundle_file.html", null ],
+    [ "Achroma.AchromaCharacter", "class_achroma_1_1_achroma_character.html", null ],
+    [ "Achroma.AchromaControlFile", "class_achroma_1_1_achroma_control_file.html", null ],
+    [ "Achroma.AchromaControlFileType", "struct_achroma_1_1_achroma_control_file_type.html", null ],
+    [ "Achroma.AchromaAssetManager.AchromaDownloadToken", "struct_achroma_1_1_achroma_asset_manager_1_1_achroma_download_token.html", null ],
+    [ "Achroma.AchromaErrorEnum", "class_achroma_1_1_achroma_error_enum.html", null ],
+    [ "Achroma.AchromaFileStory", "struct_achroma_1_1_achroma_file_story.html", null ],
+    [ "Achroma.AchromaHomeButton.AchromaHomeButtonOptionButton", "struct_achroma_1_1_achroma_home_button_1_1_achroma_home_button_option_button.html", null ],
+    [ "AchromaAPI.AchromaInstance", "class_achroma_a_p_i_1_1_achroma_instance.html", null ],
+    [ "AchromaAPI.AchromaInstanceAchievements", "class_achroma_a_p_i_1_1_achroma_instance_achievements.html", null ],
+    [ "AchromaAPI.AchromaInstanceAssets", "class_achroma_a_p_i_1_1_achroma_instance_assets.html", null ],
+    [ "AchromaAPI.AchromaInstanceAuth", "class_achroma_a_p_i_1_1_achroma_instance_auth.html", null ],
+    [ "AchromaAPI.AchromaInstanceControl", "class_achroma_a_p_i_1_1_achroma_instance_control.html", null ],
+    [ "AchromaAPI.AchromaInstanceDatabase", "class_achroma_a_p_i_1_1_achroma_instance_database.html", null ],
+    [ "AchromaAPI.AchromaInstanceMatch", "class_achroma_a_p_i_1_1_achroma_instance_match.html", null ],
+    [ "AchromaAPI.AchromaInstanceShards", "class_achroma_a_p_i_1_1_achroma_instance_shards.html", null ],
+    [ "AchromaAPI.AchromaInstanceStory", "class_achroma_a_p_i_1_1_achroma_instance_story.html", null ],
+    [ "AchromaAPI.AchromaInstanceUI", "class_achroma_a_p_i_1_1_achroma_instance_u_i.html", null ],
+    [ "Achroma.AchromaItem", "class_achroma_1_1_achroma_item.html", null ],
+    [ "Achroma.AchromaItemType", "struct_achroma_1_1_achroma_item_type.html", null ],
+    [ "Achroma.AchromaLocation", "class_achroma_1_1_achroma_location.html", null ],
+    [ "Achroma.AchromaPurchaseOption", "class_achroma_1_1_achroma_purchase_option.html", null ],
+    [ "Achroma.AchromaSceneController", "class_achroma_1_1_achroma_scene_controller.html", null ],
+    [ "Achroma.AchromaStoryProgress", "class_achroma_1_1_achroma_story_progress.html", null ],
+    [ "Achroma.AchromaUtils", "class_achroma_1_1_achroma_utils.html", null ],
+    [ "Achroma.AchrometerTier", "struct_achroma_1_1_achrometer_tier.html", null ],
+    [ "Achroma.AllMatches", "class_achroma_1_1_all_matches.html", null ],
+    [ "Achroma.AllUsers", "class_achroma_1_1_all_users.html", null ],
+    [ "<ASAuthorizationControllerDelegate>", null, [
+      [ "UnitySignInWithApple", "interface_unity_sign_in_with_apple.html", null ]
+    ] ],
+    [ "<ASAuthorizationControllerPresentationContextProviding>", null, [
+      [ "UnitySignInWithApple", "interface_unity_sign_in_with_apple.html", null ]
+    ] ],
+    [ "System.Attribute", null, [
+      [ "Achroma.AchromaErrorDescription", "class_achroma_1_1_achroma_error_description.html", null ],
+      [ "Achroma.PowerUpTypeDescriptiopn", "class_achroma_1_1_power_up_type_descriptiopn.html", null ],
+      [ "Achroma.StoryDescription", "class_achroma_1_1_story_description.html", null ]
+    ] ],
+    [ "Achroma.CardCollection", "class_achroma_1_1_card_collection.html", null ],
+    [ "Achroma.CardCollectionItem", "class_achroma_1_1_card_collection_item.html", null ],
+    [ "Achroma.CardCollectionItemCode", "class_achroma_1_1_card_collection_item_code.html", null ],
+    [ "Achroma.CharacterAvatar", "struct_achroma_1_1_character_avatar.html", null ],
+    [ "Achroma.Deck", "class_achroma_1_1_deck.html", null ],
+    [ "Achroma.DeckCard", "class_achroma_1_1_deck_card.html", null ],
+    [ "Achroma.DeckCollection", "class_achroma_1_1_deck_collection.html", null ],
+    [ "Achroma.FriendRequestData", "class_achroma_1_1_friend_request_data.html", null ],
+    [ "Achroma.FriendsData", "class_achroma_1_1_friends_data.html", null ],
+    [ "Achroma.GameAchievement", "class_achroma_1_1_game_achievement.html", null ],
+    [ "GoogleSignInHandler", "interface_google_sign_in_handler.html", null ],
+    [ "Achroma.History", "struct_achroma_1_1_history.html", null ],
+    [ "Achroma.HistoryStep", "struct_achroma_1_1_history_step.html", null ],
+    [ "IDetailedStoreListener", null, [
+      [ "Achroma.IAPManager", "class_achroma_1_1_i_a_p_manager.html", null ]
+    ] ],
+    [ "IPointerClickHandler", null, [
+      [ "Cooldown", "class_cooldown.html", null ]
+    ] ],
+    [ "IPointerDownHandler", null, [
+      [ "ContextMenuTrigger", "class_context_menu_trigger.html", null ],
+      [ "RadialMenuTrigger", "class_radial_menu_trigger.html", null ]
+    ] ],
+    [ "IPostGenerateGradleAndroidProject", null, [
+      [ "UniWebViewPostBuildProcessor", "class_uni_web_view_post_build_processor.html", null ]
+    ] ],
+    [ "Achroma.Location", "struct_achroma_1_1_location.html", null ],
+    [ "Achroma.LoginHistory", "class_achroma_1_1_login_history.html", null ],
+    [ "MaskableGraphic", null, [
+      [ "UIOutline", "class_u_i_outline.html", null ],
+      [ "UIOutlineFilled", "class_u_i_outline_filled.html", null ],
+      [ "UIOutlineHexagon", "class_u_i_outline_hexagon.html", null ]
+    ] ],
+    [ "Achroma.MatchData", "class_achroma_1_1_match_data.html", null ],
+    [ "Achroma.MatchPlayer", "class_achroma_1_1_match_player.html", null ],
+    [ "MonoBehaviour", null, [
+      [ "Achroma.AchromaAssetManager", "class_achroma_1_1_achroma_asset_manager.html", null ],
+      [ "Achroma.AchromaCanvas", "class_achroma_1_1_achroma_canvas.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaFadeIn", "class_achroma_1_1_achroma_fade_in.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
+      [ "Achroma.AchromaFlippableCard", "class_achroma_1_1_achroma_flippable_card.html", [
+        [ "Achroma.FriendCard", "class_achroma_1_1_friend_card.html", null ]
+      ] ],
+      [ "Achroma.AchromaHomeButton", "class_achroma_1_1_achroma_home_button.html", null ],
+      [ "Achroma.AchromaLoadFromBundle", "class_achroma_1_1_achroma_load_from_bundle.html", null ],
+      [ "Achroma.AchromaNewsItem", "class_achroma_1_1_achroma_news_item.html", null ],
+      [ "Achroma.AchromaParentController", "class_achroma_1_1_achroma_parent_controller.html", [
+        [ "Achroma.AchromaManager", "class_achroma_1_1_achroma_manager.html", null ],
+        [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
+        [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
+        [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
+        [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
+        [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
+        [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
+        [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
+        [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
+        [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
+        [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ]
+      ] ],
+      [ "Achroma.AchromaRemoteConfigDependency", "class_achroma_1_1_achroma_remote_config_dependency.html", null ],
+      [ "Achroma.AchromaRotateShard", "class_achroma_1_1_achroma_rotate_shard.html", null ],
+      [ "Achroma.AchromaShardAttraction", "class_achroma_1_1_achroma_shard_attraction.html", null ],
+      [ "Achroma.AchromaShardParticle", "class_achroma_1_1_achroma_shard_particle.html", null ],
+      [ "Achroma.AchromaShardsController", "class_achroma_1_1_achroma_shards_controller.html", null ],
+      [ "Achroma.AchromaShopAvatarChapter", "class_achroma_1_1_achroma_shop_avatar_chapter.html", null ],
+      [ "Achroma.AchromaShopAvatarGrid", "class_achroma_1_1_achroma_shop_avatar_grid.html", null ],
+      [ "Achroma.AchromaShopAvatarStory", "class_achroma_1_1_achroma_shop_avatar_story.html", null ],
+      [ "Achroma.AchromaShopAvatars", "class_achroma_1_1_achroma_shop_avatars.html", null ],
+      [ "Achroma.AchromaShopItem", "class_achroma_1_1_achroma_shop_item.html", null ],
+      [ "Achroma.AchromaStoryDependency", "class_achroma_1_1_achroma_story_dependency.html", null ],
+      [ "Achroma.AchromaTrueParallax", "class_achroma_1_1_achroma_true_parallax.html", null ],
+      [ "Achroma.IAPManager", "class_achroma_1_1_i_a_p_manager.html", null ],
+      [ "AchromaFormField", "class_achroma_form_field.html", null ],
+      [ "AchromaLoadingUI", "class_achroma_loading_u_i.html", null ],
+      [ "AchromaPlugin", "class_achroma_plugin.html", null ],
+      [ "AchromaPopupWindow", "class_achroma_popup_window.html", [
+        [ "Achroma.AchromaNewsUI", "class_achroma_1_1_achroma_news_u_i.html", null ],
+        [ "Achroma.AchromaShardShopUI", "class_achroma_1_1_achroma_shard_shop_u_i.html", null ],
+        [ "Achroma.AchromaSignInUI", "class_achroma_1_1_achroma_sign_in_u_i.html", null ],
+        [ "Achroma.AchromaSignInUI", "class_achroma_1_1_achroma_sign_in_u_i.html", null ],
+        [ "Achroma.AchromaSignInUI", "class_achroma_1_1_achroma_sign_in_u_i.html", null ],
+        [ "Achroma.AchromaSignInUI", "class_achroma_1_1_achroma_sign_in_u_i.html", null ]
+      ] ],
+      [ "AnimationCanvas", "class_animation_canvas.html", null ],
+      [ "CFX_AutoDestructShuriken", "class_c_f_x___auto_destruct_shuriken.html", null ],
+      [ "CFX_AutoRotate", "class_c_f_x___auto_rotate.html", null ],
+      [ "CFX_AutoStopLoopedEffect", "class_c_f_x___auto_stop_looped_effect.html", null ],
+      [ "CFX_Demo_New", "class_c_f_x___demo___new.html", null ],
+      [ "CFX_Demo_RandomDir", "class_c_f_x___demo___random_dir.html", null ],
+      [ "CFX_Demo_RandomDirectionTranslate", "class_c_f_x___demo___random_direction_translate.html", null ],
+      [ "CFX_Demo_RotateCamera", "class_c_f_x___demo___rotate_camera.html", null ],
+      [ "CFX_Demo_Translate", "class_c_f_x___demo___translate.html", null ],
+      [ "CFX_LightFlicker", "class_c_f_x___light_flicker.html", null ],
+      [ "CFX_LightIntensityFade", "class_c_f_x___light_intensity_fade.html", null ],
+      [ "ChatController", "class_chat_controller.html", null ],
+      [ "ContextMenuTrigger", "class_context_menu_trigger.html", null ],
+      [ "Cooldown", "class_cooldown.html", null ],
+      [ "DevionGames.CallbackHandler", null, [
+        [ "DevionGames.UIWidgets.UIWidget", null, [
+          [ "DevionGames.UIWidgets.DialogBox", null, [
+            [ "Achroma.AchromaShardShopDialogBox", "class_achroma_1_1_achroma_shard_shop_dialog_box.html", null ],
+            [ "Achroma.FriendVisualizer", "class_achroma_1_1_friend_visualizer.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "DialogBoxTrigger", "class_dialog_box_trigger.html", null ],
+      [ "DropdownSample", "class_dropdown_sample.html", null ],
+      [ "EnvMapAnimator", "class_env_map_animator.html", null ],
+      [ "FrameRateManager", "class_frame_rate_manager.html", null ],
+      [ "NotificationTrigger", "class_notification_trigger.html", null ],
+      [ "RadialMenuTrigger", "class_radial_menu_trigger.html", null ],
+      [ "ShopPopup", "class_shop_popup.html", null ],
+      [ "UniWebView", "class_uni_web_view.html", null ],
+      [ "UniWebViewAndroidStaticListener", "class_uni_web_view_android_static_listener.html", null ],
+      [ "UniWebViewNativeListener", "class_uni_web_view_native_listener.html", null ],
+      [ "UniWebViewSafeBrowingComponent", "class_uni_web_view_safe_browing_component.html", null ]
+    ] ],
+    [ "Achroma.NewsCollection", "class_achroma_1_1_news_collection.html", null ],
+    [ "Achroma.NewsItem", "class_achroma_1_1_news_item.html", null ],
+    [ "NSObject", null, [
+      [ "UnitySignInWithApple", "interface_unity_sign_in_with_apple.html", null ]
+    ] ],
+    [ "UnityEngine.Object", null, [
+      [ "UniWebViewSafeBrowsing", "class_uni_web_view_safe_browsing.html", null ]
+    ] ],
+    [ "Achroma.PowerUp", "class_achroma_1_1_power_up.html", null ],
+    [ "Achroma.PowerUpTypeEnum", "class_achroma_1_1_power_up_type_enum.html", null ],
+    [ "PropertyAttribute", null, [
+      [ "ReadOnlyAttribute", "class_read_only_attribute.html", null ]
+    ] ],
+    [ "Achroma.RemoteConfigManager", "class_achroma_1_1_remote_config_manager.html", null ],
+    [ "Achroma.RemoteConfigVariable", "struct_achroma_1_1_remote_config_variable.html", null ],
+    [ "ScriptableObject", null, [
+      [ "UniWebViewEditorSettings", "class_uni_web_view_editor_settings.html", null ]
+    ] ],
+    [ "SignInResult", "struct_sign_in_result.html", null ],
+    [ "Achroma.StoryDependencyComponent", "struct_achroma_1_1_story_dependency_component.html", null ],
+    [ "Achroma.StoryeEnum", "class_achroma_1_1_storye_enum.html", null ],
+    [ "Achroma.Transaction", "class_achroma_1_1_transaction.html", null ],
+    [ "Achroma.TransactionHelper", "class_achroma_1_1_transaction_helper.html", null ],
+    [ "UnityAppController", null, [
+      [ "UnityBuyAppController", "interface_unity_buy_app_controller.html", null ]
+    ] ],
+    [ "UnityAppController(GoogleSignInAppController)", "category_unity_app_controller_07_google_sign_in_app_controller_08.html", null ],
+    [ "UnityAppController(GoogleSignInController)", "category_unity_app_controller_07_google_sign_in_controller_08.html", null ],
+    [ "UniWebViewGradleConfig", "class_uni_web_view_gradle_config.html", null ],
+    [ "UniWebViewGradleNode", "class_uni_web_view_gradle_node.html", [
+      [ "UniWebViewGradleCommentNode", "class_uni_web_view_gradle_comment_node.html", null ],
+      [ "UniWebViewGradleContentNode", "class_uni_web_view_gradle_content_node.html", null ]
+    ] ],
+    [ "UniWebViewGradlePropertyPatcher", "class_uni_web_view_gradle_property_patcher.html", null ],
+    [ "UniWebViewHelper", "class_uni_web_view_helper.html", null ],
+    [ "UniWebViewInterface", "class_uni_web_view_interface.html", null ],
+    [ "UniWebViewLogger", "class_uni_web_view_logger.html", null ],
+    [ "UniWebViewMessage", "struct_uni_web_view_message.html", null ],
+    [ "UniWebViewNativeResultPayload", "class_uni_web_view_native_result_payload.html", null ],
+    [ "UniWebViewSettingsProvider", "class_uni_web_view_settings_provider.html", null ],
+    [ "Achroma.UserCard", "class_achroma_1_1_user_card.html", null ],
+    [ "Achroma.UserData", "class_achroma_1_1_user_data.html", null ],
+    [ "Achroma.UserDetail", "class_achroma_1_1_user_detail.html", null ],
+    [ "UserInfo", "struct_user_info.html", null ],
+    [ "Achroma.UserMatchData", "struct_achroma_1_1_user_match_data.html", null ],
+    [ "Achroma.Value", "class_achroma_1_1_value.html", null ],
+    [ "Achroma.Variable", "class_achroma_1_1_variable.html", null ],
+    [ "WindowsRuntimeExtension", "class_windows_runtime_extension.html", null ]
+];

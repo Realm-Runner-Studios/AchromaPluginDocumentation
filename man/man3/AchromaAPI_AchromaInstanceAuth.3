@@ -1,0 +1,62 @@
+.TH "AchromaAPI.AchromaInstanceAuth" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AchromaAPI.AchromaInstanceAuth \- Singleton to sign in to \fBAchroma\fP Database\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBSignIn\fP (bool automatic, bool showHomeButton=true, UnityAction< \fBUserData\fP > userDataChanged=null, string sceneToReload='', \fBAchromaHomeButton\&.AchromaHomeButtonOption\fP[] options=null, UnityAction< bool, string > callback=null)"
+.br
+.RI "API method to log in\&. This will load the necessary scenes and call login\&. "
+.ti -1c
+.RI "static void \fBSignOut\fP (UnityAction callback=null)"
+.br
+.RI "API method to log out of Firebase\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Singleton to sign in to \fBAchroma\fP Database\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static void AchromaAPI\&.AchromaInstanceAuth\&.SignIn (bool automatic, bool showHomeButton = \fCtrue\fP, UnityAction< \fBUserData\fP > userDataChanged = \fCnull\fP, string sceneToReload = \fC''\fP, \fBAchromaHomeButton::AchromaHomeButtonOption\fP[] options = \fCnull\fP, UnityAction< bool, string > callback = \fCnull\fP)\fC [static]\fP"
+
+.PP
+API method to log in\&. This will load the necessary scenes and call login\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIautomatic\fP If the user has already logged in before, this will skip the login screen and use what's in the PlayerPrefs to log in
+.br
+\fIshowHomeButton\fP If true, will show the home button as much as possible
+.br
+\fIuserDataChanged\fP Reference to a method that will be triggered every time the user data is modified in the database
+.br
+\fIsceneToReload\fP The name of the scene to be reloaded if something goes wrong in checking for a version on Remote Config
+.br
+\fImode\fP The home button mode indicates what options will be seen alongside the home button when the home button is shown
+.br
+\fIcallback\fP The callback function that's called when the sign in process finishes
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceAuth\&.SignOut (UnityAction callback = \fCnull\fP)\fC [static]\fP"
+
+.PP
+API method to log out of Firebase\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP Response after sign out is done
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

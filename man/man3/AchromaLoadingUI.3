@@ -1,0 +1,56 @@
+.TH "AchromaLoadingUI" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AchromaLoadingUI
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBShowText\fP (string text, float delay=0\&.1f, UnityAction cancelAction=null)"
+.br
+.RI "This method shows the loading screen\&. "
+.ti -1c
+.RI "void \fBCancel\fP ()"
+.br
+.RI "This method cancels the loading screen\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "Button \fBcloseButton\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBloadingText\fP"
+.br
+.ti -1c
+.RI "GameObject \fBloadingIndicator\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void AchromaLoadingUI\&.ShowText (string text, float delay = \fC0::1f\fP, UnityAction cancelAction = \fCnull\fP)"
+
+.PP
+This method shows the loading screen\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP The text that will appear describing the reason for the loading
+.br
+\fIdelay\fP In case the loading screen needs some time to show
+.br
+\fIcancelAction\fP The reference to the method in case the user cancels the loading\&. If this is not informed, the cancel button will not be seen
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

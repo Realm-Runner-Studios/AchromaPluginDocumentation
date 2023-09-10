@@ -1,0 +1,241 @@
+.TH "Achroma.AchromaControlFile" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaControlFile
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBLoadFromJSON\fP (string json, UnityAction< bool, string > callback)"
+.br
+.ti -1c
+.RI "static int \fBGetFileVersion\fP (string fileName)"
+.br
+.ti -1c
+.RI "static int \fBGetCharacterIdByName\fP (string name)"
+.br
+.RI "Returns the character id based on a name\&. "
+.ti -1c
+.RI "static \fBCharacterAvatar\fP \fBGetCharacterAvatarById\fP (int avatar)"
+.br
+.RI "Returns the character from the Control File with all its data\&. "
+.ti -1c
+.RI "static \fBCharacterAvatar\fP \fBGetCharacterAvatarByName\fP (string name)"
+.br
+.RI "Returns the character from the Control File with all its data\&. "
+.ti -1c
+.RI "static \fBAchromaItemType\fP \fBGetItemById\fP (int item)"
+.br
+.RI "Returns the item from the Control File with all its data\&. "
+.ti -1c
+.RI "static \fBAchromaItemType\fP \fBGetItemByName\fP (string item)"
+.br
+.RI "Returns the item from the Control File with all its data\&. "
+.ti -1c
+.RI "static \fBAchromaActionType\fP \fBGetActionById\fP (int Action)"
+.br
+.RI "Returns the Action from the Control File with all its data\&. "
+.ti -1c
+.RI "static \fBAchromaActionType\fP \fBGetActionByName\fP (string Action)"
+.br
+.RI "Returns the Action from the Control File with all its data\&. "
+.ti -1c
+.RI "static \fBLocation\fP \fBGetLocationById\fP (int location)"
+.br
+.RI "Returns the character from the Control File with all its data\&. "
+.ti -1c
+.RI "static \fBLocation\fP \fBGetLocationByName\fP (string name)"
+.br
+.RI "Returns the character from the Control File with all its data\&. "
+.ti -1c
+.RI "static List< \fBAchromaFileStory\fP > \fBGetListOfChapters\fP ()"
+.br
+.RI "Returns a distinct descendant list of chapters\&. "
+.ti -1c
+.RI "static List< \fBAchromaFileStory\fP > \fBGetListOfStories\fP ()"
+.br
+.RI "Returns a distinct descendant list of stories\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static \fBAchromaControlFileType\fP \fBcontrolFile\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBAchromaActionType\fP Achroma\&.AchromaControlFile\&.GetActionById (int Action)\fC [static]\fP"
+
+.PP
+Returns the Action from the Control File with all its data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIAction\fP The id reference of the character
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the \fBAchroma\fP Action type with all the related data to the \fBAchroma\fP Action
+.RE
+.PP
+
+.SS "static \fBAchromaActionType\fP Achroma\&.AchromaControlFile\&.GetActionByName (string Action)\fC [static]\fP"
+
+.PP
+Returns the Action from the Control File with all its data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIAction\fP The id reference of the character
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the \fBAchroma\fP Action type with all the related data to the \fBAchroma\fP Action
+.RE
+.PP
+
+.SS "static \fBCharacterAvatar\fP Achroma\&.AchromaControlFile\&.GetCharacterAvatarById (int avatar)\fC [static]\fP"
+
+.PP
+Returns the character from the Control File with all its data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIavatar\fP The id reference of the character
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the CharacaterAvatar type with all the related data to the Character
+.RE
+.PP
+
+.SS "static \fBCharacterAvatar\fP Achroma\&.AchromaControlFile\&.GetCharacterAvatarByName (string name)\fC [static]\fP"
+
+.PP
+Returns the character from the Control File with all its data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the character
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the CharacaterAvatar type with all the related data to the Character
+.RE
+.PP
+
+.SS "static int Achroma\&.AchromaControlFile\&.GetCharacterIdByName (string name)\fC [static]\fP"
+
+.PP
+Returns the character id based on a name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The chacater name
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the character id 
+.RE
+.PP
+
+.SS "static \fBAchromaItemType\fP Achroma\&.AchromaControlFile\&.GetItemById (int item)\fC [static]\fP"
+
+.PP
+Returns the item from the Control File with all its data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIitem\fP The id reference of the character
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the \fBAchroma\fP Item type with all the related data to the \fBAchroma\fP Item
+.RE
+.PP
+
+.SS "static \fBAchromaItemType\fP Achroma\&.AchromaControlFile\&.GetItemByName (string item)\fC [static]\fP"
+
+.PP
+Returns the item from the Control File with all its data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIitem\fP The id reference of the character
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the \fBAchroma\fP Item type with all the related data to the \fBAchroma\fP Item
+.RE
+.PP
+
+.SS "static List< \fBAchromaFileStory\fP > Achroma\&.AchromaControlFile\&.GetListOfChapters ()\fC [static]\fP"
+
+.PP
+Returns a distinct descendant list of chapters\&. 
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.SS "static List< \fBAchromaFileStory\fP > Achroma\&.AchromaControlFile\&.GetListOfStories ()\fC [static]\fP"
+
+.PP
+Returns a distinct descendant list of stories\&. 
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.SS "static \fBLocation\fP Achroma\&.AchromaControlFile\&.GetLocationById (int location)\fC [static]\fP"
+
+.PP
+Returns the character from the Control File with all its data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIavatar\fP The id reference of the character
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the CharacaterAvatar type with all the related data to the Character
+.RE
+.PP
+
+.SS "static \fBLocation\fP Achroma\&.AchromaControlFile\&.GetLocationByName (string name)\fC [static]\fP"
+
+.PP
+Returns the character from the Control File with all its data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the location
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the Location type with all the related data to the Location
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

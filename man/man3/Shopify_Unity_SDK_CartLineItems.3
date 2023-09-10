@@ -1,0 +1,354 @@
+.TH "Shopify.Unity.SDK.CartLineItems" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.SDK.CartLineItems \- Is used to add, update, or delete line items in a Cart 
+.PP
+\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBLineItemChangeType\fP { \fBAdd\fP, \fBRemove\fP, \fBUpdate\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAddOrUpdate\fP (\fBProductVariant\fP variant, long? quantity=null, Dictionary< string, string > customAttributes=null)"
+.br
+.RI "Adds or updates a line item using a ProductVariant 
+.PP
+\&. "
+.ti -1c
+.RI "void \fBAddOrUpdate\fP (\fBProduct\fP product, Dictionary< string, string > selectedOptions, long? quantity=null, Dictionary< string, string > customAttributes=null)"
+.br
+.RI "Adds a new line item using a Product 
+.PP
+and selected options\&. If an existing line item exists for the variant id, then that line item will be updated\&. "
+.ti -1c
+.RI "List< \fBCartLineItem\fP > \fBAll\fP ()"
+.br
+.RI "Returns all Line Items 
+.PP
+that have been created\&. "
+.ti -1c
+.RI "\fBCartLineItem\fP \fBGet\fP (string variantId)"
+.br
+.RI "Returns one Line Item 
+.PP
+based on a variant id\&. If no line item exists for the variant id \fCnull\fP will be returned\&. "
+.ti -1c
+.RI "\fBCartLineItem\fP \fBGet\fP (\fBProductVariant\fP variant)"
+.br
+.RI "Returns one Line Item 
+.PP
+based on a ProductVariant 
+.PP
+\&. If no line item exists for the variant, \fCnull\fP will be returned\&. "
+.ti -1c
+.RI "\fBCartLineItem\fP \fBGet\fP (\fBProduct\fP product, Dictionary< string, string > selectedOptions)"
+.br
+.RI "Returns one Line Item 
+.PP
+based on a product 
+.PP
+and selected options\&. If no line item exists for the matching variant, \fCnull\fP will be returned\&. "
+.ti -1c
+.RI "bool \fBDelete\fP (string variantId)"
+.br
+.RI "Deletes one Line Item 
+.PP
+based on a variant id\&. If a line item was deleted, \fCtrue\fP will be returned\&. If no line items were deleted, \fCfalse\fP will be returned\&. "
+.ti -1c
+.RI "bool \fBDelete\fP (\fBProductVariant\fP variant)"
+.br
+.RI "Deletes one Line Item 
+.PP
+based on a ProductVariant 
+.PP
+\&. If a line item was deleted, \fCtrue\fP will be returned\&. If no line items were deleted, \fCfalse\fP will be returned\&. "
+.ti -1c
+.RI "bool \fBDelete\fP (\fBProduct\fP product, Dictionary< string, string > selectedOptions)"
+.br
+.RI "Deletes one Line Item 
+.PP
+based on a Product 
+.PP
+and selected options\&. If a line item was deleted, \fCtrue\fP will be returned\&. If no line item was deleted, \fCfalse\fP will be returned\&. "
+.ti -1c
+.RI "void \fBReset\fP ()"
+.br
+.RI "Deletes all line items\&. "
+.ti -1c
+.RI "void \fBUpdateLineItemsFromCheckoutLineItems\fP (List< \fBCheckoutLineItem\fP > checkoutLineItems)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static List< \fBCheckoutLineItemInput\fP > \fBConvertToCheckoutLineItemInput\fP (List< \fBCartLineItem\fP > lineItems)"
+.br
+.ti -1c
+.RI "static List< string > \fBConvertToLineItemIds\fP (List< \fBCartLineItem\fP > lineItems)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "bool \fBIsSaved\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "decimal \fBSubtotal\fP\fC [get]\fP"
+.br
+.in -1c
+.SS "Events"
+
+.in +1c
+.ti -1c
+.RI "LineItemChangeHandler \fBOnChange\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Is used to add, update, or delete line items in a Cart 
+.PP
+\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Shopify\&.Unity\&.SDK\&.CartLineItems\&.AddOrUpdate (\fBProduct\fP product, Dictionary< string, string > selectedOptions, long? quantity = \fCnull\fP, Dictionary< string, string > customAttributes = \fCnull\fP)"
+
+.PP
+Adds a new line item using a Product 
+.PP
+and selected options\&. If an existing line item exists for the variant id, then that line item will be updated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIproduct\fP product to check selected options against
+.br
+\fIselectedOptions\fP a Dictionary used to define user selected options
+.br
+\fIquantity\fP the number of items you'd like to order for variantId
+.br
+\fIcustomAttributes\fP customAttributes can be used to define extra information for this line item
+.RE
+.PP
+Throws when no matching variant could be found for selected options in product
+.PP
+.PP
+.nf
+// Example that updates the quantity of items to be purchased to 3\&.
+// If no line item exists for `variantId`, then a new line item is created
+Cart cart = ShopifyBuy\&.Client()\&.Cart();
+
+Dictionary<string, string> selectedOptions = new Dictionary<string, string>() {
+    {"Size", "Small"},
+    {"Color", "Red"}
+};
+
+cart\&.LineItems\&.AddOrUpdate(product, selectedOptions, 3);
+.fi
+.PP
+ 
+.SS "void Shopify\&.Unity\&.SDK\&.CartLineItems\&.AddOrUpdate (\fBProductVariant\fP variant, long? quantity = \fCnull\fP, Dictionary< string, string > customAttributes = \fCnull\fP)"
+
+.PP
+Adds or updates a line item using a ProductVariant 
+.PP
+\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvariant\fP ProductVariant whose id will be used to create or update a line item
+.br
+\fIquantity\fP the number of items you'd like to order for variantId
+.br
+\fIcustomAttributes\fP can be used to define extra information for this line item
+.RE
+.PP
+.PP
+.nf
+// Example that updates the quantity of items to be purchased to 3\&.
+// If no line item exists for `variantId`, then a new line item is created
+Cart cart = ShopifyBuy\&.Client()\&.Cart();
+
+cart\&.LineItems\&.AddOrUpdate(variant, 3);
+.fi
+.PP
+ 
+.SS "List< \fBCartLineItem\fP > Shopify\&.Unity\&.SDK\&.CartLineItems\&.All ()"
+
+.PP
+Returns all Line Items 
+.PP
+that have been created\&. 
+.PP
+.nf
+// Example that checks how many line items the cart contains
+Cart cart = ShopifyBuy\&.Client()\&.Cart();
+
+Debug\&.Log("The cart has " + cart\&.LineItems\&.All()\&.Count + " line items");
+
+.fi
+.PP
+ 
+.SS "bool Shopify\&.Unity\&.SDK\&.CartLineItems\&.Delete (\fBProduct\fP product, Dictionary< string, string > selectedOptions)"
+
+.PP
+Deletes one Line Item 
+.PP
+based on a Product 
+.PP
+and selected options\&. If a line item was deleted, \fCtrue\fP will be returned\&. If no line item was deleted, \fCfalse\fP will be returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIproduct\fP product whose options will be used to determine which line item is deleted
+.br
+\fIselectedOptions\fP a Dictionary used to define user selected options
+.RE
+.PP
+.PP
+.nf
+// Example that deletes a line item based on a product and selected options
+Cart cart = ShopifyBuy\&.Client()\&.Cart();
+
+Dictionary<string, string> selectedOptions = new Dictionary<string, string>() {
+    {"Size", "Small"},
+    {"Color", "Red"}
+};
+
+Debug\&.Log("Did delete? " + cart\&.LineItems\&.Delete(product, selectedOptions));
+.fi
+.PP
+ 
+.SS "bool Shopify\&.Unity\&.SDK\&.CartLineItems\&.Delete (\fBProductVariant\fP variant)"
+
+.PP
+Deletes one Line Item 
+.PP
+based on a ProductVariant 
+.PP
+\&. If a line item was deleted, \fCtrue\fP will be returned\&. If no line items were deleted, \fCfalse\fP will be returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvariant\fP variant to provide the ID to delete a line item
+.RE
+.PP
+.PP
+.nf
+// Example that deletes a line item based on a product variant
+Cart cart = ShopifyBuy\&.Client()\&.Cart();
+
+Debug\&.Log("Did delete? " + cart\&.LineItems\&.Delete(variant));
+.fi
+.PP
+ 
+.SS "bool Shopify\&.Unity\&.SDK\&.CartLineItems\&.Delete (string variantId)"
+
+.PP
+Deletes one Line Item 
+.PP
+based on a variant id\&. If a line item was deleted, \fCtrue\fP will be returned\&. If no line items were deleted, \fCfalse\fP will be returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvariantId\fP variant id used to delete a line item
+.RE
+.PP
+.PP
+.nf
+// Example that deletes a line item based on variantId
+Cart cart = ShopifyBuy\&.Client()\&.Cart();
+
+Debug\&.Log("Did delete? " + cart\&.LineItems\&.Delete(variantId));
+.fi
+.PP
+ 
+.SS "\fBCartLineItem\fP Shopify\&.Unity\&.SDK\&.CartLineItems\&.Get (\fBProduct\fP product, Dictionary< string, string > selectedOptions)"
+
+.PP
+Returns one Line Item 
+.PP
+based on a product 
+.PP
+and selected options\&. If no line item exists for the matching variant, \fCnull\fP will be returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIproduct\fP product whose options will be selected
+.br
+\fIselectedOptions\fP a Dictionary used to define user selected options
+.RE
+.PP
+.PP
+.nf
+// Example that checks the quantity of a line item based on a product and selected options
+Cart cart = ShopifyBuy\&.Client()\&.Cart();
+
+Dictionary<string, string> selectedOptions = new Dictionary<string, string>() {
+    {"Size", "Small"},
+    {"Color", "Red"}
+};
+
+Debug\&.Log(cart\&.LineItems\&.Get(product, selectedOptions)\&.quantity);
+.fi
+.PP
+ 
+.SS "\fBCartLineItem\fP Shopify\&.Unity\&.SDK\&.CartLineItems\&.Get (\fBProductVariant\fP variant)"
+
+.PP
+Returns one Line Item 
+.PP
+based on a ProductVariant 
+.PP
+\&. If no line item exists for the variant, \fCnull\fP will be returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvariant\fP variant whose variant id used to create a line item
+.RE
+.PP
+.PP
+.nf
+// Example that checks the quantity of a line item based on a variant
+Cart cart = ShopifyBuy\&.Client()\&.Cart();
+
+Debug\&.Log(cart\&.LineItems\&.Get(variant)\&.quantity);
+.fi
+.PP
+ 
+.SS "\fBCartLineItem\fP Shopify\&.Unity\&.SDK\&.CartLineItems\&.Get (string variantId)"
+
+.PP
+Returns one Line Item 
+.PP
+based on a variant id\&. If no line item exists for the variant id \fCnull\fP will be returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvariantId\fP variant id used to create a line item
+.RE
+.PP
+.PP
+.nf
+// Example that checks the quantity of a line item based on variantId
+Cart cart = ShopifyBuy\&.Client()\&.Cart();
+
+Debug\&.Log(cart\&.LineItems\&.Get(variantId)\&.quantity);
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

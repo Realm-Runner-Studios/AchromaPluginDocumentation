@@ -1,0 +1,106 @@
+\doxysection{Achroma.\+Achroma\+Parent\+Controller Class Reference}
+\hypertarget{class_achroma_1_1_achroma_parent_controller}{}\label{class_achroma_1_1_achroma_parent_controller}\index{Achroma.AchromaParentController@{Achroma.AchromaParentController}}
+
+
+Inheritance diagram for Achroma.\+Achroma\+Parent\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_parent_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Achroma.\+Achroma\+Parent\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{class_achroma_1_1_achroma_parent_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_parent_controller_a9b7cd6b8a910602b1472e2d5be3b8bf8}{Load\+Scene}} (string scene\+Name, string message, Object instance\+To\+Check\+Existance=null, Load\+Scene\+Mode scene\+Mode=Load\+Scene\+Mode.\+Single, Unity\+Action result=null, bool force\+Reload=false, bool hide\+Loading\+Screen\+After\+Loaded=true)
+\begin{DoxyCompactList}\small\item\em This method loads a scene synchronously and returns a callback when the scene is ended loading. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_parent_controller_a071ac42bdd0ba771e8ddcad7d4e71b0c}{Unload\+Scene}} (string name)
+\begin{DoxyCompactList}\small\item\em This method simply unloads a scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_parent_controller_a5a2862ca45481939108f74a297779060}{Load\+Previous\+Scene}} (string message)
+\begin{DoxyCompactList}\small\item\em This method calls the scene that called the current scene back. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_1_1_achroma_parent_controller_a5a2862ca45481939108f74a297779060}\label{class_achroma_1_1_achroma_parent_controller_a5a2862ca45481939108f74a297779060} 
+\index{Achroma.AchromaParentController@{Achroma.AchromaParentController}!LoadPreviousScene@{LoadPreviousScene}}
+\index{LoadPreviousScene@{LoadPreviousScene}!Achroma.AchromaParentController@{Achroma.AchromaParentController}}
+\doxysubsubsection{\texorpdfstring{LoadPreviousScene()}{LoadPreviousScene()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Parent\+Controller.\+Load\+Previous\+Scene (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})}
+
+
+
+This method calls the scene that called the current scene back. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The text that will be shown to the user in the loading screen\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_parent_controller_a5a2862ca45481939108f74a297779060_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_parent_controller_a9b7cd6b8a910602b1472e2d5be3b8bf8}\label{class_achroma_1_1_achroma_parent_controller_a9b7cd6b8a910602b1472e2d5be3b8bf8} 
+\index{Achroma.AchromaParentController@{Achroma.AchromaParentController}!LoadScene@{LoadScene}}
+\index{LoadScene@{LoadScene}!Achroma.AchromaParentController@{Achroma.AchromaParentController}}
+\doxysubsubsection{\texorpdfstring{LoadScene()}{LoadScene()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Parent\+Controller.\+Load\+Scene (\begin{DoxyParamCaption}\item[{string}]{scene\+Name,  }\item[{string}]{message,  }\item[{Object}]{instance\+To\+Check\+Existance = {\ttfamily null},  }\item[{Load\+Scene\+Mode}]{scene\+Mode = {\ttfamily LoadSceneMode\+:\+:Single},  }\item[{Unity\+Action}]{result = {\ttfamily null},  }\item[{bool}]{force\+Reload = {\ttfamily false},  }\item[{bool}]{hide\+Loading\+Screen\+After\+Loaded = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+This method loads a scene synchronously and returns a callback when the scene is ended loading. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & The name of the scene\\
+\hline
+{\em message} & The text that will be shown to the user in the loading screen\\
+\hline
+{\em instance\+To\+Check\+Existance} & This is the singleton of the main class in the scene. If the Singleton exists, it means the scene is already loaded\\
+\hline
+{\em scene\+Mode} & The scene mode\+: Single (will load on top of the current scene) or Additive (will load a scene along with the current scene)\\
+\hline
+{\em result} & The callback\\
+\hline
+{\em force\+Reload} & This is to ignore all the checks and just force the scene to be loaded anyway\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_parent_controller_a9b7cd6b8a910602b1472e2d5be3b8bf8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_parent_controller_a071ac42bdd0ba771e8ddcad7d4e71b0c}\label{class_achroma_1_1_achroma_parent_controller_a071ac42bdd0ba771e8ddcad7d4e71b0c} 
+\index{Achroma.AchromaParentController@{Achroma.AchromaParentController}!UnloadScene@{UnloadScene}}
+\index{UnloadScene@{UnloadScene}!Achroma.AchromaParentController@{Achroma.AchromaParentController}}
+\doxysubsubsection{\texorpdfstring{UnloadScene()}{UnloadScene()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Parent\+Controller.\+Unload\+Scene (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+This method simply unloads a scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The scene name\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/Achroma\+Parent\+Controller.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,151 @@
+.TH "Achroma.AchromaAssetManager" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaAssetManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBAchromaDownloadToken\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAchromaDataPathType\fP { \fBPersistentDataPath\fP, \fBStreamingAssetsPath\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDownloadAssetBundles\fP (UnityAction< string > progress, UnityAction< bool, string > callback)"
+.br
+.RI "This will download all the asset bundles at once\&. "
+.ti -1c
+.RI "void \fBDownloadTextFile\fP (string remoteFile, string localFile, UnityAction< bool, string, string > result)"
+.br
+.RI "Method to download files that usually don't need the download token after alt?media=\&. "
+.ti -1c
+.RI "void \fBDownloadTextFileUsingToken\fP (string remoteFile, string localFile, UnityAction< bool, string, string > result)"
+.br
+.RI "Method to download text files that usually need the download token after alt?media=\&. "
+.ti -1c
+.RI "void \fBInstantiateSpriteFromBundle\fP (string assetBundleName, string assetName, UnityAction< bool, string, Sprite > callback=null)"
+.br
+.RI "Instantiate a sprite from an Asset Bundle, given the name of the asset bundle and the name of the object\&. "
+.ti -1c
+.RI "void \fBInstantiateObjectFromBundle\fP (string assetBundleName, string assetName, UnityAction< bool, string, GameObject > callback=null)"
+.br
+.RI "Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the object\&. "
+.ti -1c
+.RI "void \fBUnloadAssetBundles\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static string \fBLocalFileLocation\fP (string fileName, bool fileSuffix, AchromaDataPathType pathType)"
+.br
+.ti -1c
+.RI "static string \fBGetFileContent\fP (string fileName)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "static \fBAchromaAssetManager\fP \fBInstance\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void Achroma\&.AchromaAssetManager\&.DownloadAssetBundles (UnityAction< string > progress, UnityAction< bool, string > callback)"
+
+.PP
+This will download all the asset bundles at once\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIprogress\fP This will update the progress loading screen
+.br
+\fIcallback\fP This is the callback indicating when the downloads are finished
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaAssetManager\&.DownloadTextFile (string remoteFile, string localFile, UnityAction< bool, string, string > result)"
+
+.PP
+Method to download files that usually don't need the download token after alt?media=\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIremoteFile\fP The location of the file on the web
+.br
+\fIlocalFile\fP The location of the file on the local disk
+.br
+\fIresult\fP callback function, returns success flag, an error message (if any) and a string with the file content (if the file is text type) 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaAssetManager\&.DownloadTextFileUsingToken (string remoteFile, string localFile, UnityAction< bool, string, string > result)"
+
+.PP
+Method to download text files that usually need the download token after alt?media=\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIremoteFile\fP The location of the file on the web
+.br
+\fIlocalFile\fP The location of the file on the local disk
+.br
+\fIresult\fP callback function, returns success flag, an error message (if any) and a string with the file content (if the file is text type) 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaAssetManager\&.InstantiateObjectFromBundle (string assetBundleName, string assetName, UnityAction< bool, string, GameObject > callback = \fCnull\fP)"
+
+.PP
+Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIassetBundleName\fP Name of the asset bundle that will be added to the bucket URL
+.br
+\fIassetName\fP The name of the object to be instantiated
+.br
+\fIcallback\fP The result of the the method, that will return a success flag, an error message (if any) and a Sprite (if successful)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaAssetManager\&.InstantiateSpriteFromBundle (string assetBundleName, string assetName, UnityAction< bool, string, Sprite > callback = \fCnull\fP)"
+
+.PP
+Instantiate a sprite from an Asset Bundle, given the name of the asset bundle and the name of the object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIassetBundleName\fP Name of the asset bundle that will be added to the bucket URL
+.br
+\fIassetName\fP The name of the object to be instantiated
+.br
+\fIcallback\fP The result of the the method, that will return a success flag, an error message (if any) and a Sprite (if successful)
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

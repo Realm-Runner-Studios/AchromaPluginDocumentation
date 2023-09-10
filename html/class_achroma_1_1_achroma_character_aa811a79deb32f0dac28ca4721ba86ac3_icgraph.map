@@ -1,0 +1,7 @@
+<map id="Achroma.AchromaCharacter.GetCharacterCard" name="Achroma.AchromaCharacter.GetCharacterCard">
+<area shape="rect" id="Node000001" title="Returns the character&#39;s card id." alt="" coords="555,5,744,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a7cfebd0f96cd1f112131a4971b9c21e5" title="Gets the hero power from the database based on an avatar." alt="" coords="263,5,507,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="540,28,507,28,507,23,540,23"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_shard_shop_u_i.html#ac6b5ed4a7e8df9d1280c3f9686f0f47b" title="Shows the purchase details for items that can be purchased using shards Used for the purchase of avat..." alt="" coords="5,5,215,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="248,28,215,28,215,23,248,23"/>
+</map>

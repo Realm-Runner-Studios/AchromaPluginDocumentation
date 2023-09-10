@@ -1,0 +1,16 @@
+<map id="Achroma.AchromaDatabaseController" name="Achroma.AchromaDatabaseController">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,79,247,105"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="70,5,182,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,31,37,42,30,53,34,65,51,76,48,81,30,68,24,53,34,38,55,26"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="59,37,50,47,48,57,53,67,65,76,62,81,48,70,42,58,45,45,56,33"/>
+<area shape="poly" id="edge3_Node000001_Node000002" title=" " alt="" coords="70,43,66,52,66,60,71,69,79,76,75,80,66,72,61,62,61,51,65,41"/>
+<area shape="poly" id="edge4_Node000001_Node000002" title=" " alt="" coords="86,44,84,61,94,77,89,80,79,63,80,44"/>
+<area shape="poly" id="edge5_Node000001_Node000002" title=" " alt="" coords="103,45,102,62,108,78,103,79,97,63,97,44"/>
+<area shape="poly" id="edge6_Node000001_Node000002" title=" " alt="" coords="120,46,122,78,116,79,115,46"/>
+<area shape="poly" id="edge7_Node000001_Node000002" title=" " alt="" coords="137,46,136,79,130,78,132,46"/>
+<area shape="poly" id="edge8_Node000001_Node000002" title=" " alt="" coords="155,44,155,63,149,79,144,78,150,62,149,45"/>
+<area shape="poly" id="edge9_Node000001_Node000002" title=" " alt="" coords="172,44,173,63,163,80,158,77,168,61,166,44"/>
+<area shape="poly" id="edge10_Node000001_Node000002" title=" " alt="" coords="187,41,191,51,191,62,186,72,177,80,173,76,181,69,186,60,186,52,182,43"/>
+<area shape="poly" id="edge11_Node000001_Node000002" title=" " alt="" coords="196,33,207,45,210,58,204,70,190,81,187,76,199,67,204,57,202,47,193,37"/>
+<area shape="poly" id="edge12_Node000001_Node000002" title=" " alt="" coords="197,26,218,38,228,53,222,68,204,81,201,76,218,65,222,53,215,42,194,31"/>
+</map>

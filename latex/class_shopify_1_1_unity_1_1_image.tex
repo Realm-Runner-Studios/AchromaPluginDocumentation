@@ -1,0 +1,165 @@
+\doxysection{Shopify.\+Unity.\+Image Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_image}{}\label{class_shopify_1_1_unity_1_1_image}\index{Shopify.Unity.Image@{Shopify.Unity.Image}}
+
+
+Represents an image resource.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Image\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Image\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_image_a5c736cb692951389443739a5e117fc26}{Image}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_image_a431589454f8ffff532d2f7a5bd7c6c1f}\label{class_shopify_1_1_unity_1_1_image_a431589454f8ffff532d2f7a5bd7c6c1f} 
+string {\bfseries alt\+Text} ()
+\begin{DoxyCompactList}\small\item\em A word or phrase to share the nature or contents of an image. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_image_a5f1323bd9c0659ccb203ff64511e51d0}\label{class_shopify_1_1_unity_1_1_image_a5f1323bd9c0659ccb203ff64511e51d0} 
+string {\bfseries id} ()
+\begin{DoxyCompactList}\small\item\em A unique identifier for the image. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_image_ac5d719003ade99d031f202861585f9c9}{original\+Src}} ()
+\begin{DoxyCompactList}\small\item\em The location of the original image as a URL. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_image_a18260a4ead295cfe3861853746f6133e}{src}} ()
+\begin{DoxyCompactList}\small\item\em The location of the image as a URL. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_image_affd296d13ad33e8008a6a748ff46e353}{transformed\+Src}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em The location of the transformed image as a URL. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_image_a9ceb791c8551dd19b49c524aab772832}\label{class_shopify_1_1_unity_1_1_image_a9ceb791c8551dd19b49c524aab772832} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an image resource. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_image_a5c736cb692951389443739a5e117fc26}\label{class_shopify_1_1_unity_1_1_image_a5c736cb692951389443739a5e117fc26} 
+\index{Shopify.Unity.Image@{Shopify.Unity.Image}!Image@{Image}}
+\index{Image@{Image}!Shopify.Unity.Image@{Shopify.Unity.Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Image.\+Image (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Image\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_image_ac5d719003ade99d031f202861585f9c9}\label{class_shopify_1_1_unity_1_1_image_ac5d719003ade99d031f202861585f9c9} 
+\index{Shopify.Unity.Image@{Shopify.Unity.Image}!originalSrc@{originalSrc}}
+\index{originalSrc@{originalSrc}!Shopify.Unity.Image@{Shopify.Unity.Image}}
+\doxysubsubsection{\texorpdfstring{originalSrc()}{originalSrc()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Image.\+original\+Src (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The location of the original image as a URL. 
+
+If there are any existing transformations in the original source URL, they will remain and not be stripped. \Hypertarget{class_shopify_1_1_unity_1_1_image_a18260a4ead295cfe3861853746f6133e}\label{class_shopify_1_1_unity_1_1_image_a18260a4ead295cfe3861853746f6133e} 
+\index{Shopify.Unity.Image@{Shopify.Unity.Image}!src@{src}}
+\index{src@{src}!Shopify.Unity.Image@{Shopify.Unity.Image}}
+\doxysubsubsection{\texorpdfstring{src()}{src()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Image.\+src (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The location of the image as a URL. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000127}{Deprecated}}]Previously an image had a single {\ttfamily src} field. This could either return the original image location or a URL that contained transformations such as sizing or scale.\end{DoxyRefDesc}
+
+
+These transformations were specified by arguments on the parent field.
+
+Now an image has two distinct URL fields\+: {\ttfamily original\+Src} and {\ttfamily transformed\+Src}.
+
+
+\begin{DoxyItemize}
+\item {\ttfamily original\+Src} -\/ the original unmodified image URL
+\item {\ttfamily transformed\+Src} -\/ the image URL with the specified transformations included
+\end{DoxyItemize}
+
+To migrate to the new fields, image transformations should be moved from the parent field to {\ttfamily transformed\+Src}.
+
+Before\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{shop\ \{}
+\DoxyCodeLine{productImages(maxWidth:\ 200,\ scale:\ 2)\ \{}
+\DoxyCodeLine{edges\ \{}
+\DoxyCodeLine{node\ \{}
+\DoxyCodeLine{src}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+After\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{shop\ \{}
+\DoxyCodeLine{productImages\ \{}
+\DoxyCodeLine{edges\ \{}
+\DoxyCodeLine{node\ \{}
+\DoxyCodeLine{transformedSrc(maxWidth:\ 200,\ scale:\ 2)}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \Hypertarget{class_shopify_1_1_unity_1_1_image_affd296d13ad33e8008a6a748ff46e353}\label{class_shopify_1_1_unity_1_1_image_affd296d13ad33e8008a6a748ff46e353} 
+\index{Shopify.Unity.Image@{Shopify.Unity.Image}!transformedSrc@{transformedSrc}}
+\index{transformedSrc@{transformedSrc}!Shopify.Unity.Image@{Shopify.Unity.Image}}
+\doxysubsubsection{\texorpdfstring{transformedSrc()}{transformedSrc()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Image.\+transformed\+Src (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+The location of the transformed image as a URL. 
+
+All transformation arguments are considered "{}best-\/effort"{}. If they can be applied to an image, they will be. Otherwise any transformations which an image type does not support will be ignored.
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Image.\+cs\end{DoxyCompactItemize}

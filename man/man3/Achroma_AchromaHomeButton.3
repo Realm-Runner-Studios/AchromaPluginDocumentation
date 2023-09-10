@@ -1,0 +1,94 @@
+.TH "Achroma.AchromaHomeButton" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaHomeButton
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBAchromaHomeButtonOptionButton\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAchromaHomeButtonOption\fP { \fBShardShop\fP, \fBAR\fP, \fBProgress\fP, \fBNews\fP, \fBRules\fP, \fBTurnSummary\fP }"
+.br
+.RI "The different types of mode the home button might be in\&. "
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBShow\fP ()"
+.br
+.RI "Shows the hexagon button on the bottom of the screen with regular size\&. "
+.ti -1c
+.RI "void \fBHide\fP ()"
+.br
+.RI "Hides the hexagon button\&. "
+.ti -1c
+.RI "void \fBShowLarge\fP ()"
+.br
+.RI "Shows the hexagon button on the center of the screen with large size\&. "
+.ti -1c
+.RI "void \fBHideOptions\fP ()"
+.br
+.RI "Hide all the options\&. Used for the case of showing home button when the database is not loaded\&. "
+.ti -1c
+.RI "void \fBOpen\fP ()"
+.br
+.RI "Opens the webview with the user's profile\&. "
+.ti -1c
+.RI "void \fBClose\fP ()"
+.br
+.RI "Closes the profile\&. "
+.ti -1c
+.RI "void \fBSetAvatarSprite\fP (Sprite sprite, Vector2 position)"
+.br
+.RI "Sets the avatar image on the home button\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAchromaHomeButtonOptionButton\fP[] \fBoptions\fP"
+.br
+.ti -1c
+.RI "\fBAchromaHomeButtonOption\fP[] \fBselectedOptions\fP"
+.br
+.ti -1c
+.RI "GameObject \fBcloseButton\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "bool \fBShowing\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void Achroma\&.AchromaHomeButton\&.SetAvatarSprite (Sprite sprite, Vector2 position)"
+
+.PP
+Sets the avatar image on the home button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsprite\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

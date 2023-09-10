@@ -1,0 +1,223 @@
+\doxysection{Shopify.\+Unity.\+Graph\+QL.\+Checkout\+Query Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}\index{Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}}
+
+
+A container for all the information required to checkout items and pay.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_ad09d3d083b7812504c4a363bc9992cad}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_ad09d3d083b7812504c4a363bc9992cad} 
+{\bfseries Checkout\+Query} (String\+Builder query)
+\begin{DoxyCompactList}\small\item\em Checkout\+Query is used to build queries. Typically Checkout\+Query will not be used directly but instead will be used when building queries from either Query\+Root\+Query or Mutation\+Query. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a6af1610f3a67dba7f90a5fac3f95c188}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a6af1610f3a67dba7f90a5fac3f95c188} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries applied\+Gift\+Cards} (Applied\+Gift\+Card\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The gift cards used on the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a91647c5eac84c33b2677757424f4c5ef}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a91647c5eac84c33b2677757424f4c5ef} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries available\+Shipping\+Rates} (Available\+Shipping\+Rates\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The available shipping rates for this Checkout. Should only be used when checkout {\ttfamily requires\+Shipping} is {\ttfamily true} and the shipping address is valid. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_aff265c41af995903bf6e2c93b1748743}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_aff265c41af995903bf6e2c93b1748743} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries completed\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the checkout was completed. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a78a683ec826815d93b08f1de790a6d85}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a78a683ec826815d93b08f1de790a6d85} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries created\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the checkout was created. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a827771f2fefb5333f1d70306a937313c}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a827771f2fefb5333f1d70306a937313c} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries currency\+Code} ()
+\begin{DoxyCompactList}\small\item\em The currency code for the Checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a13ad3067645e51f3cd2e2e788b87492f}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a13ad3067645e51f3cd2e2e788b87492f} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries custom\+Attributes} (Attribute\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em A list of extra information that is added to the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a9bbfe6a9faed0068ac9ec919f63f9607}{customer}} (Customer\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The customer associated with the checkout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a0d6a33a2c0b25fad95e290012db9444d}{discount\+Applications}} (Discount\+Application\+Connection\+Delegate build\+Query, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em Discounts that have been applied on the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_af878c33655f16d1001d1141de5617501}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_af878c33655f16d1001d1141de5617501} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries email} ()
+\begin{DoxyCompactList}\small\item\em The email attached to this checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_aaecf8759dd8717d71733d9fa9f063f3d}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_aaecf8759dd8717d71733d9fa9f063f3d} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries id} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_adedb3542848fceaa08649b1b878416ff}{line\+Items}} (Checkout\+Line\+Item\+Connection\+Delegate build\+Query, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em A list of line item objects, each one containing information about an item in the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a499214426a44998f40cd8963f5fcecf5}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a499214426a44998f40cd8963f5fcecf5} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries line\+Items\+Subtotal\+Price} (Money\+V2\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The sum of all the prices of all the items in the checkout. Duties, taxes, shipping and discounts excluded. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a587b4a996a14ea84beeff3f082254ab6}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a587b4a996a14ea84beeff3f082254ab6} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries note} ()
+\begin{DoxyCompactList}\small\item\em The note associated with the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_ac86b57cf1b92413038c8ad1f6c9577a5}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_ac86b57cf1b92413038c8ad1f6c9577a5} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries order} (Order\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The resulting order from a paid checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a1fae14afd91c463174b46918a29efbe7}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a1fae14afd91c463174b46918a29efbe7} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries order\+Status\+Url} ()
+\begin{DoxyCompactList}\small\item\em The Order Status Page for this Checkout, null when checkout is not completed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a19e6c2342f77f4abe877f2bb6fd4aa29}{payment\+Due}} ()
+\begin{DoxyCompactList}\small\item\em The amount left to be paid. This is equal to the cost of the line items, taxes and shipping minus discounts and gift cards. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a7dfae7a8aa627e7cca636196dce7316b}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a7dfae7a8aa627e7cca636196dce7316b} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries payment\+Due\+V2} (Money\+V2\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The amount left to be paid. This is equal to the cost of the line items, duties, taxes and shipping minus discounts and gift cards. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a33289054a4014a3b6e281d26b4e12736}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a33289054a4014a3b6e281d26b4e12736} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries ready} ()
+\begin{DoxyCompactList}\small\item\em Whether or not the Checkout is ready and can be completed. Checkouts may have asynchronous operations that can take time to finish. If you want to complete a checkout or ensure all the fields are populated and up to date, polling is required until the value is true. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a5f807901f422397d04512e56c14f2bb6}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a5f807901f422397d04512e56c14f2bb6} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries requires\+Shipping} ()
+\begin{DoxyCompactList}\small\item\em States whether or not the fulfillment requires shipping. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_ab20546c99077f92634f4f6b1371307fd}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_ab20546c99077f92634f4f6b1371307fd} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries shipping\+Address} (Mailing\+Address\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The shipping address to where the line items will be shipped. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a04a7d77e9c81f4fe35766b6e42381fbe}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a04a7d77e9c81f4fe35766b6e42381fbe} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries shipping\+Discount\+Allocations} (Discount\+Allocation\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The discounts that have been allocated onto the shipping line by discount applications. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_ac5b9fee5e4912ef889e74fa43080c7eb}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_ac5b9fee5e4912ef889e74fa43080c7eb} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries shipping\+Line} (Shipping\+Rate\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em Once a shipping rate is selected by the customer it is transitioned to a {\ttfamily shipping\+\_\+line} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a59dae2f6ad3cf0045038b32e9c0b29c9}{subtotal\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Price of the checkout before shipping and taxes. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a293305ea1e06ac80e7353b5c64da5226}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a293305ea1e06ac80e7353b5c64da5226} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries subtotal\+Price\+V2} (Money\+V2\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em Price of the checkout before duties, shipping and taxes. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_ae581a5340ff43d431ea29d87dc70920b}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_ae581a5340ff43d431ea29d87dc70920b} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries tax\+Exempt} ()
+\begin{DoxyCompactList}\small\item\em Specifies if the Checkout is tax exempt. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a1fe3c11eafdc22510530d90271bb0319}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a1fe3c11eafdc22510530d90271bb0319} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries taxes\+Included} ()
+\begin{DoxyCompactList}\small\item\em Specifies if taxes are included in the line item and shipping line prices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_abd115d53690397bf8271a123ef33f35b}{total\+Price}} ()
+\begin{DoxyCompactList}\small\item\em The sum of all the prices of all the items in the checkout, taxes and discounts included. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_acb72c384f07b8b8df68838ec732b0ab5}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_acb72c384f07b8b8df68838ec732b0ab5} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries total\+Price\+V2} (Money\+V2\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The sum of all the prices of all the items in the checkout, duties, taxes and discounts included. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a70cd66861b950a43d861ceb3685b26eb}{total\+Tax}} ()
+\begin{DoxyCompactList}\small\item\em The sum of all the taxes applied to the line items and shipping lines in the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a3ddcf580f217b8ca41ae504cb469f62f}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a3ddcf580f217b8ca41ae504cb469f62f} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries total\+Tax\+V2} (Money\+V2\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The sum of all the taxes applied to the line items and shipping lines in the checkout. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_aca6776215017010016ebe456d765c0d3}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_aca6776215017010016ebe456d765c0d3} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries updated\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the checkout was last updated. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a640a5f4f84761dc716fc21b4d19262f6}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a640a5f4f84761dc716fc21b4d19262f6} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} {\bfseries web\+Url} ()
+\begin{DoxyCompactList}\small\item\em The url pointing to the checkout accessible from the web. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A container for all the information required to checkout items and pay. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a9bbfe6a9faed0068ac9ec919f63f9607}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a9bbfe6a9faed0068ac9ec919f63f9607} 
+\index{Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}!customer@{customer}}
+\index{customer@{customer}!Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}}
+\doxysubsubsection{\texorpdfstring{customer()}{customer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Checkout\+Query.\+customer (\begin{DoxyParamCaption}\item[{Customer\+Delegate}]{build\+Query }\end{DoxyParamCaption})}
+
+
+
+The customer associated with the checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000072}{Deprecated}}]This field will always return null. If you have an authentication token for the customer, you can use the {\ttfamily customer} field on the query root to retrieve it. \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a0d6a33a2c0b25fad95e290012db9444d}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a0d6a33a2c0b25fad95e290012db9444d} 
+\index{Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}!discountApplications@{discountApplications}}
+\index{discountApplications@{discountApplications}!Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}}
+\doxysubsubsection{\texorpdfstring{discountApplications()}{discountApplications()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Checkout\+Query.\+discount\+Applications (\begin{DoxyParamCaption}\item[{Discount\+Application\+Connection\+Delegate}]{build\+Query,  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Discounts that have been applied on the checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_adedb3542848fceaa08649b1b878416ff}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_adedb3542848fceaa08649b1b878416ff} 
+\index{Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}!lineItems@{lineItems}}
+\index{lineItems@{lineItems}!Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}}
+\doxysubsubsection{\texorpdfstring{lineItems()}{lineItems()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Checkout\+Query.\+line\+Items (\begin{DoxyParamCaption}\item[{Checkout\+Line\+Item\+Connection\+Delegate}]{build\+Query,  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+A list of line item objects, each one containing information about an item in the checkout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 1
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a19e6c2342f77f4abe877f2bb6fd4aa29}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a19e6c2342f77f4abe877f2bb6fd4aa29} 
+\index{Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}!paymentDue@{paymentDue}}
+\index{paymentDue@{paymentDue}!Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}}
+\doxysubsubsection{\texorpdfstring{paymentDue()}{paymentDue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Checkout\+Query.\+payment\+Due (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The amount left to be paid. This is equal to the cost of the line items, taxes and shipping minus discounts and gift cards. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000073}{Deprecated}}]Use {\ttfamily payment\+Due\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a59dae2f6ad3cf0045038b32e9c0b29c9}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a59dae2f6ad3cf0045038b32e9c0b29c9} 
+\index{Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}!subtotalPrice@{subtotalPrice}}
+\index{subtotalPrice@{subtotalPrice}!Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}}
+\doxysubsubsection{\texorpdfstring{subtotalPrice()}{subtotalPrice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Checkout\+Query.\+subtotal\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Price of the checkout before shipping and taxes. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000074}{Deprecated}}]Use {\ttfamily subtotal\+Price\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_abd115d53690397bf8271a123ef33f35b}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_abd115d53690397bf8271a123ef33f35b} 
+\index{Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}!totalPrice@{totalPrice}}
+\index{totalPrice@{totalPrice}!Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}}
+\doxysubsubsection{\texorpdfstring{totalPrice()}{totalPrice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Checkout\+Query.\+total\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The sum of all the prices of all the items in the checkout, taxes and discounts included. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000075}{Deprecated}}]Use {\ttfamily total\+Price\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a70cd66861b950a43d861ceb3685b26eb}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query_a70cd66861b950a43d861ceb3685b26eb} 
+\index{Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}!totalTax@{totalTax}}
+\index{totalTax@{totalTax}!Shopify.Unity.GraphQL.CheckoutQuery@{Shopify.Unity.GraphQL.CheckoutQuery}}
+\doxysubsubsection{\texorpdfstring{totalTax()}{totalTax()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_checkout_query}{Checkout\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Checkout\+Query.\+total\+Tax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The sum of all the taxes applied to the line items and shipping lines in the checkout. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000076}{Deprecated}}]Use {\ttfamily total\+Tax\+V2} instead \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/\+Graph\+QL/Checkout\+Query.\+cs\end{DoxyCompactItemize}

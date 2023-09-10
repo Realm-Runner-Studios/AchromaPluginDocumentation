@@ -1,0 +1,238 @@
+\doxysection{Shopify.\+Unity.\+Graph\+QL.\+Product\+Variant\+Query Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}\index{Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}}
+
+
+A product variant represents a different version of a product, such as differing sizes or differing colors.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_ad705369d0abb6fca7b3cf0c2d0700745}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_ad705369d0abb6fca7b3cf0c2d0700745} 
+{\bfseries Product\+Variant\+Query} (String\+Builder query)
+\begin{DoxyCompactList}\small\item\em Product\+Variant\+Query is used to build queries. Typically Product\+Variant\+Query will not be used directly but instead will be used when building queries from either Query\+Root\+Query or Mutation\+Query. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_aabb1b8806a75f1a383eceb83faa97f1f}{available}} ()
+\begin{DoxyCompactList}\small\item\em Indicates if the product variant is in stock. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_aa8a3b02ee6bbeb150ffb9e691f257a85}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_aa8a3b02ee6bbeb150ffb9e691f257a85} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries available\+For\+Sale} ()
+\begin{DoxyCompactList}\small\item\em Indicates if the product variant is available for sale. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_ad7c19eaf00ae16de86fa882cf62e136c}{compare\+At\+Price}} ()
+\begin{DoxyCompactList}\small\item\em The compare at price of the variant. This can be used to mark a variant as on sale, when {\ttfamily compare\+At\+Price} is higher than {\ttfamily price}. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a6f8077b13305cadf3a604009f3f7f1d9}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a6f8077b13305cadf3a604009f3f7f1d9} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries compare\+At\+Price\+V2} (Money\+V2\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The compare at price of the variant. This can be used to mark a variant as on sale, when {\ttfamily compare\+At\+Price\+V2} is higher than {\ttfamily price\+V2}. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a9ac92cded1a0a6f898d54d93575586e3}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a9ac92cded1a0a6f898d54d93575586e3} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries id} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a66298e9b6da3c88135bb7a87b42f4463}{image}} (Image\+Delegate build\+Query, long? max\+Width=null, long? max\+Height=null, \mbox{\hyperlink{namespace_shopify_1_1_unity_ae6f7c4d6eba107063bbcd35e801753c1}{Crop\+Region}}? crop=null, long? scale=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em Image associated with the product variant. This field falls back to the product image if no image is available. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a1827b5a0b109f1dac7f6b19ed9935411}{metafield}} (Metafield\+Delegate build\+Query, string namespace\+Value, string key, string alias=null)
+\begin{DoxyCompactList}\small\item\em The metafield associated with the resource. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_af106c74e3f9f3ef310f87e4263255cda}{metafields}} (Metafield\+Connection\+Delegate build\+Query, string namespace\+Value=null, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em A paginated list of metafields associated with the resource. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a2f43c9815305f450480e678960df1f03}{presentment\+Prices}} (Product\+Variant\+Price\+Pair\+Connection\+Delegate build\+Query, List$<$ \mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} $>$ presentment\+Currencies=null, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of prices and compare-\/at prices in the presentment currencies for this shop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a96fc87c2e2e4dd892fac72f7fc91c597}{presentment\+Unit\+Prices}} (Money\+V2connection\+Delegate build\+Query, List$<$ \mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} $>$ presentment\+Currencies=null, long? first=null, string after=null, long? last=null, string before=null, bool? reverse=null, string alias=null)
+\begin{DoxyCompactList}\small\item\em List of unit prices in the presentment currencies for this shop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_ac012b883f83c2ac026d20ae60a39fd01}{price}} ()
+\begin{DoxyCompactList}\small\item\em The product variant’s price. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a06438a9ca735096897dc7d04a0254fe3}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a06438a9ca735096897dc7d04a0254fe3} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries price\+V2} (Money\+V2\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The product variant’s price. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_ae9ed92a17b87ecd7ab193a8e0c7fc474}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_ae9ed92a17b87ecd7ab193a8e0c7fc474} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries product} (Product\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The product object that the product variant belongs to. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_aa0dadf0a645787d9350ed25dc31b58e1}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_aa0dadf0a645787d9350ed25dc31b58e1} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries requires\+Shipping} ()
+\begin{DoxyCompactList}\small\item\em Whether a customer needs to provide a shipping address when placing an order for the product variant. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_aa30112fa9dd8e74c9284b98a760fd7ee}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_aa30112fa9dd8e74c9284b98a760fd7ee} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries selected\+Options} (Selected\+Option\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em List of product options applied to the variant. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a17919751fda32fcec5adbbf1b37afab3}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a17919751fda32fcec5adbbf1b37afab3} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries sku} ()
+\begin{DoxyCompactList}\small\item\em The SKU (stock keeping unit) associated with the variant. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a2cb7a90cf616456d8e4cafeccb8e03a3}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a2cb7a90cf616456d8e4cafeccb8e03a3} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries title} ()
+\begin{DoxyCompactList}\small\item\em The product variant’s title. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a1e2ae805503713437c1e8f11a2f551ef}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a1e2ae805503713437c1e8f11a2f551ef} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries unit\+Price} (Money\+V2\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The unit price value for the variant based on the variant\textquotesingle{}s measurement. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a00071c093f22f1df93dee8b47d1627a0}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a00071c093f22f1df93dee8b47d1627a0} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries unit\+Price\+Measurement} (Unit\+Price\+Measurement\+Delegate build\+Query)
+\begin{DoxyCompactList}\small\item\em The unit price measurement for the variant. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_af2eee3a9c10d948dd326de9132cbad88}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_af2eee3a9c10d948dd326de9132cbad88} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries weight} ()
+\begin{DoxyCompactList}\small\item\em The weight of the product variant in the unit system specified with {\ttfamily weight\+\_\+unit}. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a3a69c6c6ac812fc2f3bdf8b887f35dd8}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a3a69c6c6ac812fc2f3bdf8b887f35dd8} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} {\bfseries weight\+Unit} ()
+\begin{DoxyCompactList}\small\item\em Unit of measurement for weight. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A product variant represents a different version of a product, such as differing sizes or differing colors. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_aabb1b8806a75f1a383eceb83faa97f1f}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_aabb1b8806a75f1a383eceb83faa97f1f} 
+\index{Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}!available@{available}}
+\index{available@{available}!Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}}
+\doxysubsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Variant\+Query.\+available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Indicates if the product variant is in stock. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000110}{Deprecated}}]Use {\ttfamily available\+For\+Sale} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_ad7c19eaf00ae16de86fa882cf62e136c}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_ad7c19eaf00ae16de86fa882cf62e136c} 
+\index{Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}!compareAtPrice@{compareAtPrice}}
+\index{compareAtPrice@{compareAtPrice}!Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}}
+\doxysubsubsection{\texorpdfstring{compareAtPrice()}{compareAtPrice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Variant\+Query.\+compare\+At\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The compare at price of the variant. This can be used to mark a variant as on sale, when {\ttfamily compare\+At\+Price} is higher than {\ttfamily price}. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000111}{Deprecated}}]Use {\ttfamily compare\+At\+Price\+V2} instead \end{DoxyRefDesc}
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a66298e9b6da3c88135bb7a87b42f4463}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a66298e9b6da3c88135bb7a87b42f4463} 
+\index{Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}!image@{image}}
+\index{image@{image}!Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Variant\+Query.\+image (\begin{DoxyParamCaption}\item[{Image\+Delegate}]{build\+Query,  }\item[{long?}]{max\+Width = {\ttfamily null},  }\item[{long?}]{max\+Height = {\ttfamily null},  }\item[{\mbox{\hyperlink{namespace_shopify_1_1_unity_ae6f7c4d6eba107063bbcd35e801753c1}{Crop\+Region}}?}]{crop = {\ttfamily null},  }\item[{long?}]{scale = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Image associated with the product variant. This field falls back to the product image if no image is available. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Width} & Image width in pixels between 1 and 2048. This argument is deprecated\+: Use {\ttfamily max\+Width} on {\ttfamily Image.\+transformed\+Src} instead. \\
+\hline
+{\em max\+Height} & Image height in pixels between 1 and 2048. This argument is deprecated\+: Use {\ttfamily max\+Height} on {\ttfamily Image.\+transformed\+Src} instead. \\
+\hline
+{\em crop} & Crops the image according to the specified region. This argument is deprecated\+: Use {\ttfamily crop} on {\ttfamily Image.\+transformed\+Src} instead. \\
+\hline
+{\em scale} & Image size multiplier for high-\/resolution retina displays. Must be between 1 and 3. This argument is deprecated\+: Use {\ttfamily scale} on {\ttfamily Image.\+transformed\+Src} instead. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a1827b5a0b109f1dac7f6b19ed9935411}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a1827b5a0b109f1dac7f6b19ed9935411} 
+\index{Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}!metafield@{metafield}}
+\index{metafield@{metafield}!Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}}
+\doxysubsubsection{\texorpdfstring{metafield()}{metafield()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Variant\+Query.\+metafield (\begin{DoxyParamCaption}\item[{Metafield\+Delegate}]{build\+Query,  }\item[{string}]{namespace\+Value,  }\item[{string}]{key,  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+The metafield associated with the resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em namespace} & Container for a set of metafields (maximum of 20 characters). \\
+\hline
+{\em key} & Identifier for the metafield (maximum of 30 characters). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 1
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_af106c74e3f9f3ef310f87e4263255cda}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_af106c74e3f9f3ef310f87e4263255cda} 
+\index{Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}!metafields@{metafields}}
+\index{metafields@{metafields}!Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}}
+\doxysubsubsection{\texorpdfstring{metafields()}{metafields()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Variant\+Query.\+metafields (\begin{DoxyParamCaption}\item[{Metafield\+Connection\+Delegate}]{build\+Query,  }\item[{string}]{namespace\+Value = {\ttfamily null},  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+A paginated list of metafields associated with the resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em namespace} & Container for a set of metafields (maximum of 20 characters). \\
+\hline
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a2f43c9815305f450480e678960df1f03}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a2f43c9815305f450480e678960df1f03} 
+\index{Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}!presentmentPrices@{presentmentPrices}}
+\index{presentmentPrices@{presentmentPrices}!Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}}
+\doxysubsubsection{\texorpdfstring{presentmentPrices()}{presentmentPrices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Variant\+Query.\+presentment\+Prices (\begin{DoxyParamCaption}\item[{Product\+Variant\+Price\+Pair\+Connection\+Delegate}]{build\+Query,  }\item[{List$<$ \mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} $>$}]{presentment\+Currencies = {\ttfamily null},  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of prices and compare-\/at prices in the presentment currencies for this shop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em presentment\+Currencies} & The presentment currencies prices should return in. \\
+\hline
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 3
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a96fc87c2e2e4dd892fac72f7fc91c597}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_a96fc87c2e2e4dd892fac72f7fc91c597} 
+\index{Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}!presentmentUnitPrices@{presentmentUnitPrices}}
+\index{presentmentUnitPrices@{presentmentUnitPrices}!Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}}
+\doxysubsubsection{\texorpdfstring{presentmentUnitPrices()}{presentmentUnitPrices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Variant\+Query.\+presentment\+Unit\+Prices (\begin{DoxyParamCaption}\item[{Money\+V2connection\+Delegate}]{build\+Query,  }\item[{List$<$ \mbox{\hyperlink{namespace_shopify_1_1_unity_a99d081e99a38fbef1b41ea929d1eabbb}{Currency\+Code}} $>$}]{presentment\+Currencies = {\ttfamily null},  }\item[{long?}]{first = {\ttfamily null},  }\item[{string}]{after = {\ttfamily null},  }\item[{long?}]{last = {\ttfamily null},  }\item[{string}]{before = {\ttfamily null},  }\item[{bool?}]{reverse = {\ttfamily null},  }\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of unit prices in the presentment currencies for this shop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em presentment\+Currencies} & Specify the currencies in which to return presentment unit prices. \\
+\hline
+{\em first} & Returns up to the first {\ttfamily n} elements from the list. \\
+\hline
+{\em after} & Returns the elements that come after the specified cursor. \\
+\hline
+{\em last} & Returns up to the last {\ttfamily n} elements from the list. \\
+\hline
+{\em before} & Returns the elements that come before the specified cursor. \\
+\hline
+{\em reverse} & Reverse the order of the underlying list. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 4
+\Hypertarget{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_ac012b883f83c2ac026d20ae60a39fd01}\label{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query_ac012b883f83c2ac026d20ae60a39fd01} 
+\index{Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}!price@{price}}
+\index{price@{price}!Shopify.Unity.GraphQL.ProductVariantQuery@{Shopify.Unity.GraphQL.ProductVariantQuery}}
+\doxysubsubsection{\texorpdfstring{price()}{price()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_graph_q_l_1_1_product_variant_query}{Product\+Variant\+Query}} Shopify.\+Unity.\+Graph\+QL.\+Product\+Variant\+Query.\+price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The product variant’s price. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000112}{Deprecated}}]Use {\ttfamily price\+V2} instead \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/\+Graph\+QL/Product\+Variant\+Query.\+cs\end{DoxyCompactItemize}

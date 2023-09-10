@@ -1,0 +1,235 @@
+.TH "UniWebViewInterface" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UniWebViewInterface
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBSetLogLevel\fP (int level)"
+.br
+.ti -1c
+.RI "static void \fBInit\fP (string name, int x, int y, int width, int height)"
+.br
+.ti -1c
+.RI "static void \fBDestroy\fP (string name)"
+.br
+.ti -1c
+.RI "static void \fBLoad\fP (string name, string url, bool skipEncoding, string readAccessURL)"
+.br
+.ti -1c
+.RI "static void \fBLoadHTMLString\fP (string name, string html, string baseUrl, bool skipEncoding)"
+.br
+.ti -1c
+.RI "static void \fBReload\fP (string name)"
+.br
+.ti -1c
+.RI "static void \fBStop\fP (string name)"
+.br
+.ti -1c
+.RI "static string \fBGetUrl\fP (string name)"
+.br
+.ti -1c
+.RI "static void \fBSetFrame\fP (string name, int x, int y, int width, int height)"
+.br
+.ti -1c
+.RI "static void \fBSetPosition\fP (string name, int x, int y)"
+.br
+.ti -1c
+.RI "static void \fBSetSize\fP (string name, int width, int height)"
+.br
+.ti -1c
+.RI "static bool \fBShow\fP (string name, bool fade, int edge, float duration, bool useAsync, string identifier)"
+.br
+.ti -1c
+.RI "static bool \fBHide\fP (string name, bool fade, int edge, float duration, bool useAsync, string identifier)"
+.br
+.ti -1c
+.RI "static bool \fBAnimateTo\fP (string name, int x, int y, int width, int height, float duration, float delay, string identifier)"
+.br
+.ti -1c
+.RI "static void \fBAddJavaScript\fP (string name, string jsString, string identifier)"
+.br
+.ti -1c
+.RI "static void \fBEvaluateJavaScript\fP (string name, string jsString, string identifier)"
+.br
+.ti -1c
+.RI "static void \fBAddUrlScheme\fP (string name, string scheme)"
+.br
+.ti -1c
+.RI "static void \fBRemoveUrlScheme\fP (string name, string scheme)"
+.br
+.ti -1c
+.RI "static void \fBAddSslExceptionDomain\fP (string name, string domain)"
+.br
+.ti -1c
+.RI "static void \fBRemoveSslExceptionDomain\fP (string name, string domain)"
+.br
+.ti -1c
+.RI "static void \fBSetHeaderField\fP (string name, string key, string value)"
+.br
+.ti -1c
+.RI "static void \fBSetUserAgent\fP (string name, string userAgent)"
+.br
+.ti -1c
+.RI "static string \fBGetUserAgent\fP (string name)"
+.br
+.ti -1c
+.RI "static void \fBSetAllowAutoPlay\fP (bool flag)"
+.br
+.ti -1c
+.RI "static void \fBSetAllowInlinePlay\fP (bool flag)"
+.br
+.ti -1c
+.RI "static void \fBSetAllowJavaScriptOpenWindow\fP (bool flag)"
+.br
+.ti -1c
+.RI "static void \fBSetAllowFileAccess\fP (string name, bool flag)"
+.br
+.ti -1c
+.RI "static void \fBSetAllowFileAccessFromFileURLs\fP (string name, bool flag)"
+.br
+.ti -1c
+.RI "static void \fBSetAllowUniversalAccessFromFileURLs\fP (bool flag)"
+.br
+.ti -1c
+.RI "static void \fBSetJavaScriptEnabled\fP (bool flag)"
+.br
+.ti -1c
+.RI "static void \fBCleanCache\fP (string name)"
+.br
+.ti -1c
+.RI "static void \fBClearCookies\fP ()"
+.br
+.ti -1c
+.RI "static void \fBSetCookie\fP (string url, string cookie, bool skipEncoding)"
+.br
+.ti -1c
+.RI "static void \fBRemoveCookies\fP (string url, bool skipEncoding)"
+.br
+.ti -1c
+.RI "static void \fBRemoveCookie\fP (string url, string key, bool skipEncoding)"
+.br
+.ti -1c
+.RI "static string \fBGetCookie\fP (string url, string key, bool skipEncoding)"
+.br
+.ti -1c
+.RI "static void \fBClearHttpAuthUsernamePassword\fP (string host, string realm)"
+.br
+.ti -1c
+.RI "static void \fBSetBackgroundColor\fP (string name, float r, float g, float b, float a)"
+.br
+.ti -1c
+.RI "static void \fBSetWebViewAlpha\fP (string name, float alpha)"
+.br
+.ti -1c
+.RI "static float \fBGetWebViewAlpha\fP (string name)"
+.br
+.ti -1c
+.RI "static void \fBSetShowSpinnerWhileLoading\fP (string name, bool show)"
+.br
+.ti -1c
+.RI "static void \fBSetSpinnerText\fP (string name, string text)"
+.br
+.ti -1c
+.RI "static bool \fBCanGoBack\fP (string name)"
+.br
+.ti -1c
+.RI "static bool \fBCanGoForward\fP (string name)"
+.br
+.ti -1c
+.RI "static void \fBGoBack\fP (string name)"
+.br
+.ti -1c
+.RI "static void \fBGoForward\fP (string name)"
+.br
+.ti -1c
+.RI "static void \fBSetOpenLinksInExternalBrowser\fP (string name, bool flag)"
+.br
+.ti -1c
+.RI "static void \fBSetHorizontalScrollBarEnabled\fP (string name, bool enabled)"
+.br
+.ti -1c
+.RI "static void \fBSetVerticalScrollBarEnabled\fP (string name, bool enabled)"
+.br
+.ti -1c
+.RI "static void \fBSetBouncesEnabled\fP (string name, bool enabled)"
+.br
+.ti -1c
+.RI "static void \fBSetZoomEnabled\fP (string name, bool enabled)"
+.br
+.ti -1c
+.RI "static void \fBSetShowToolbar\fP (string name, bool show, bool animated, bool onTop, bool adjustInset)"
+.br
+.ti -1c
+.RI "static void \fBSetToolbarDoneButtonText\fP (string name, string text)"
+.br
+.ti -1c
+.RI "static void \fBSetToolbarGoBackButtonText\fP (string name, string text)"
+.br
+.ti -1c
+.RI "static void \fBSetToolbarGoForwardButtonText\fP (string name, string text)"
+.br
+.ti -1c
+.RI "static void \fBSetToolbarTintColor\fP (string name, float r, float g, float b)"
+.br
+.ti -1c
+.RI "static void \fBSetToolbarTextColor\fP (string name, float r, float g, float b)"
+.br
+.ti -1c
+.RI "static void \fBSetUserInteractionEnabled\fP (string name, bool enabled)"
+.br
+.ti -1c
+.RI "static void \fBSetTransparencyClickingThroughEnabled\fP (string name, bool enabled)"
+.br
+.ti -1c
+.RI "static void \fBSetWebContentsDebuggingEnabled\fP (bool enabled)"
+.br
+.ti -1c
+.RI "static void \fBSetAllowHTTPAuthPopUpWindow\fP (string name, bool flag)"
+.br
+.ti -1c
+.RI "static void \fBPrint\fP (string name)"
+.br
+.ti -1c
+.RI "static void \fBCaptureSnapshot\fP (string name, string filename)"
+.br
+.ti -1c
+.RI "static void \fBSetCalloutEnabled\fP (string name, bool flag)"
+.br
+.ti -1c
+.RI "static void \fBSetSupportMultipleWindows\fP (string name, bool enabled, bool allowJavaScriptOpening)"
+.br
+.ti -1c
+.RI "static void \fBSetDragInteractionEnabled\fP (string name, bool flag)"
+.br
+.ti -1c
+.RI "static void \fBScrollTo\fP (string name, int x, int y, bool animated)"
+.br
+.ti -1c
+.RI "static float \fBNativeScreenWidth\fP ()"
+.br
+.ti -1c
+.RI "static float \fBNativeScreenHeight\fP ()"
+.br
+.ti -1c
+.RI "static void \fBSafeBrowsingInit\fP (string name, string url)"
+.br
+.ti -1c
+.RI "static void \fBSafeBrowsingSetToolbarColor\fP (string name, float r, float g, float b)"
+.br
+.ti -1c
+.RI "static void \fBSafeBrowsingShow\fP (string name)"
+.br
+.ti -1c
+.RI "static void \fBCheckPlatform\fP ()"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

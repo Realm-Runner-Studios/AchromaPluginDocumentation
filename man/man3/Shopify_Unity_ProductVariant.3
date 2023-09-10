@@ -1,0 +1,249 @@
+.TH "Shopify.Unity.ProductVariant" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.ProductVariant \- A product variant represents a different version of a product, such as differing sizes or differing colors\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP, ICloneable, \fBShopify\&.Unity\&.HasMetafields\fP, and \fBShopify\&.Unity\&.Node\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProductVariant\fP (Dictionary< string, object > dataJSON)"
+.br
+.RI "Accepts deserialized json data\&.  Will further parse passed in data\&. "
+.ti -1c
+.RI "bool? \fBavailable\fP ()"
+.br
+.RI "Indicates if the product variant is in stock\&. "
+.ti -1c
+.RI "bool \fBavailableForSale\fP ()"
+.br
+.RI "Indicates if the product variant is available for sale\&. "
+.ti -1c
+.RI "decimal \fBcompareAtPrice\fP ()"
+.br
+.RI "The compare at price of the variant\&. This can be used to mark a variant as on sale, when \fCcompareAtPrice\fP is higher than \fCprice\fP\&. "
+.ti -1c
+.RI "\fBMoneyV2\fP \fBcompareAtPriceV2\fP ()"
+.br
+.RI "The compare at price of the variant\&. This can be used to mark a variant as on sale, when \fCcompareAtPriceV2\fP is higher than \fCpriceV2\fP\&. "
+.ti -1c
+.RI "string \fBid\fP ()"
+.br
+.RI "Globally unique identifier\&. "
+.ti -1c
+.RI "\fBImage\fP \fBimage\fP (string alias=null)"
+.br
+.RI "Image associated with the product variant\&. This field falls back to the product image if no image is available\&. "
+.ti -1c
+.RI "\fBMetafield\fP \fBmetafield\fP (string alias=null)"
+.br
+.RI "The metafield associated with the resource\&. "
+.ti -1c
+.RI "\fBMetafieldConnection\fP \fBmetafields\fP (string alias=null)"
+.br
+.RI "A paginated list of metafields associated with the resource\&. "
+.ti -1c
+.RI "\fBProductVariantPricePairConnection\fP \fBpresentmentPrices\fP (string alias=null)"
+.br
+.RI "List of prices and compare-at prices in the presentment currencies for this shop\&. "
+.ti -1c
+.RI "\fBMoneyV2connection\fP \fBpresentmentUnitPrices\fP (string alias=null)"
+.br
+.RI "List of unit prices in the presentment currencies for this shop\&. "
+.ti -1c
+.RI "decimal \fBprice\fP ()"
+.br
+.RI "The product variant’s price\&. "
+.ti -1c
+.RI "\fBMoneyV2\fP \fBpriceV2\fP ()"
+.br
+.RI "The product variant’s price\&. "
+.ti -1c
+.RI "\fBProduct\fP \fBproduct\fP ()"
+.br
+.RI "The product object that the product variant belongs to\&. "
+.ti -1c
+.RI "bool \fBrequiresShipping\fP ()"
+.br
+.RI "Whether a customer needs to provide a shipping address when placing an order for the product variant\&. "
+.ti -1c
+.RI "List< \fBSelectedOption\fP > \fBselectedOptions\fP ()"
+.br
+.RI "List of product options applied to the variant\&. "
+.ti -1c
+.RI "string \fBsku\fP ()"
+.br
+.RI "The SKU (stock keeping unit) associated with the variant\&. "
+.ti -1c
+.RI "string \fBtitle\fP ()"
+.br
+.RI "The product variant’s title\&. "
+.ti -1c
+.RI "\fBMoneyV2\fP \fBunitPrice\fP ()"
+.br
+.RI "The unit price value for the variant based on the variant's measurement\&. "
+.ti -1c
+.RI "\fBUnitPriceMeasurement\fP \fBunitPriceMeasurement\fP ()"
+.br
+.RI "The unit price measurement for the variant\&. "
+.ti -1c
+.RI "double? \fBweight\fP ()"
+.br
+.RI "The weight of the product variant in the unit system specified with \fCweight_unit\fP\&. "
+.ti -1c
+.RI "\fBWeightUnit\fP \fBweightUnit\fP ()"
+.br
+.RI "Unit of measurement for weight\&. "
+.ti -1c
+.RI "object \fBClone\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "T \fBGet< T >\fP (string field, string alias=null)"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBData\fP"
+.br
+.in -1c
+
+Properties inherited from \fBShopify\&.Unity\&.SDK\&.AbstractResponse\fP
+.in +1c
+.ti -1c
+.RI "Dictionary< string, object > \fBDataJSON\fP\fC [get, protected set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A product variant represents a different version of a product, such as differing sizes or differing colors\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shopify\&.Unity\&.ProductVariant\&.ProductVariant (Dictionary< string, object > dataJSON)"
+
+.PP
+Accepts deserialized json data\&.  Will further parse passed in data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdataJSON\fP Deserialized JSON data for ProductVariant
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool? Shopify\&.Unity\&.ProductVariant\&.available ()"
+
+.PP
+Indicates if the product variant is in stock\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCavailableForSale\fP instead 
+.RE
+.PP
+
+.SS "decimal Shopify\&.Unity\&.ProductVariant\&.compareAtPrice ()"
+
+.PP
+The compare at price of the variant\&. This can be used to mark a variant as on sale, when \fCcompareAtPrice\fP is higher than \fCprice\fP\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCcompareAtPriceV2\fP instead 
+.RE
+.PP
+
+.SS "string Shopify\&.Unity\&.ProductVariant\&.id ()"
+
+.PP
+Globally unique identifier\&. 
+.PP
+Implements \fBShopify\&.Unity\&.Node\fP\&.
+.SS "\fBImage\fP Shopify\&.Unity\&.ProductVariant\&.image (string alias = \fCnull\fP)"
+
+.PP
+Image associated with the product variant\&. This field falls back to the product image if no image is available\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBMetafield\fP Shopify\&.Unity\&.ProductVariant\&.metafield (string alias = \fCnull\fP)"
+
+.PP
+The metafield associated with the resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.PP
+Implements \fBShopify\&.Unity\&.HasMetafields\fP\&.
+.SS "\fBMetafieldConnection\fP Shopify\&.Unity\&.ProductVariant\&.metafields (string alias = \fCnull\fP)"
+
+.PP
+A paginated list of metafields associated with the resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.PP
+Implements \fBShopify\&.Unity\&.HasMetafields\fP\&.
+.SS "\fBProductVariantPricePairConnection\fP Shopify\&.Unity\&.ProductVariant\&.presentmentPrices (string alias = \fCnull\fP)"
+
+.PP
+List of prices and compare-at prices in the presentment currencies for this shop\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "\fBMoneyV2connection\fP Shopify\&.Unity\&.ProductVariant\&.presentmentUnitPrices (string alias = \fCnull\fP)"
+
+.PP
+List of unit prices in the presentment currencies for this shop\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalias\fP If the original field queried was queried using an alias, then pass the matching string\&. 
+.RE
+.PP
+
+.SS "decimal Shopify\&.Unity\&.ProductVariant\&.price ()"
+
+.PP
+The product variant’s price\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+Use \fCpriceV2\fP instead 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

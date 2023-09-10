@@ -1,0 +1,147 @@
+\doxysection{Shopify.\+Unity.\+Collection Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_collection}{}\label{class_shopify_1_1_unity_1_1_collection}\index{Shopify.Unity.Collection@{Shopify.Unity.Collection}}
+
+
+A collection represents a grouping of products that a shop owner can create to organize them or make their shops easier to browse.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Collection\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Collection\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection_aa5d0e7ebdb92c21628fc879fe6c24f26}{Collection}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection_a3932bb62ddc2e5b9d4c999df61fbc8cf}{description}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Stripped description of the collection, single line with HTML tags removed. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_collection_a4ffe4b630a5776fedfb94df10cc96c8d}\label{class_shopify_1_1_unity_1_1_collection_a4ffe4b630a5776fedfb94df10cc96c8d} 
+string {\bfseries description\+Html} ()
+\begin{DoxyCompactList}\small\item\em The description of the collection, complete with HTML formatting. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_collection_a10a89cc9b2638cd055b571b0e049f811}\label{class_shopify_1_1_unity_1_1_collection_a10a89cc9b2638cd055b571b0e049f811} 
+string {\bfseries handle} ()
+\begin{DoxyCompactList}\small\item\em A human-\/friendly unique string for the collection automatically generated from its title. Limit of 255 characters. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection_a4b36674bb7941119005127e341fafa38}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_image}{Image}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection_acb8c22804530ceeb3a141edb4f203bd0}{image}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em Image associated with the collection. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_connection}{Product\+Connection}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_collection_a79a2e23e1c0d458162d7dbe5a021c666}{products}} (string alias=null)
+\begin{DoxyCompactList}\small\item\em List of products in the collection. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_collection_ab7ef25c2ff2d2cbfe75c6603ae3f5868}\label{class_shopify_1_1_unity_1_1_collection_ab7ef25c2ff2d2cbfe75c6603ae3f5868} 
+string {\bfseries title} ()
+\begin{DoxyCompactList}\small\item\em The collection’s name. Limit of 255 characters. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_collection_a2c2be9d1b387dfdd66a4fbfaf1ffc7c0}\label{class_shopify_1_1_unity_1_1_collection_a2c2be9d1b387dfdd66a4fbfaf1ffc7c0} 
+Date\+Time? {\bfseries updated\+At} ()
+\begin{DoxyCompactList}\small\item\em The date and time when the collection was last modified. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_collection_a416327264d80c460caa6806c0a32f713}\label{class_shopify_1_1_unity_1_1_collection_a416327264d80c460caa6806c0a32f713} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A collection represents a grouping of products that a shop owner can create to organize them or make their shops easier to browse. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_collection_aa5d0e7ebdb92c21628fc879fe6c24f26}\label{class_shopify_1_1_unity_1_1_collection_aa5d0e7ebdb92c21628fc879fe6c24f26} 
+\index{Shopify.Unity.Collection@{Shopify.Unity.Collection}!Collection@{Collection}}
+\index{Collection@{Collection}!Shopify.Unity.Collection@{Shopify.Unity.Collection}}
+\doxysubsubsection{\texorpdfstring{Collection()}{Collection()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Collection.\+Collection (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Collection\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_collection_a3932bb62ddc2e5b9d4c999df61fbc8cf}\label{class_shopify_1_1_unity_1_1_collection_a3932bb62ddc2e5b9d4c999df61fbc8cf} 
+\index{Shopify.Unity.Collection@{Shopify.Unity.Collection}!description@{description}}
+\index{description@{description}!Shopify.Unity.Collection@{Shopify.Unity.Collection}}
+\doxysubsubsection{\texorpdfstring{description()}{description()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Collection.\+description (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Stripped description of the collection, single line with HTML tags removed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_collection_a4b36674bb7941119005127e341fafa38}\label{class_shopify_1_1_unity_1_1_collection_a4b36674bb7941119005127e341fafa38} 
+\index{Shopify.Unity.Collection@{Shopify.Unity.Collection}!id@{id}}
+\index{id@{id}!Shopify.Unity.Collection@{Shopify.Unity.Collection}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Collection.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+\Hypertarget{class_shopify_1_1_unity_1_1_collection_acb8c22804530ceeb3a141edb4f203bd0}\label{class_shopify_1_1_unity_1_1_collection_acb8c22804530ceeb3a141edb4f203bd0} 
+\index{Shopify.Unity.Collection@{Shopify.Unity.Collection}!image@{image}}
+\index{image@{image}!Shopify.Unity.Collection@{Shopify.Unity.Collection}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_image}{Image}} Shopify.\+Unity.\+Collection.\+image (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Image associated with the collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shopify_1_1_unity_1_1_collection_a79a2e23e1c0d458162d7dbe5a021c666}\label{class_shopify_1_1_unity_1_1_collection_a79a2e23e1c0d458162d7dbe5a021c666} 
+\index{Shopify.Unity.Collection@{Shopify.Unity.Collection}!products@{products}}
+\index{products@{products}!Shopify.Unity.Collection@{Shopify.Unity.Collection}}
+\doxysubsubsection{\texorpdfstring{products()}{products()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_connection}{Product\+Connection}} Shopify.\+Unity.\+Collection.\+products (\begin{DoxyParamCaption}\item[{string}]{alias = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+List of products in the collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & If the original field queried was queried using an alias, then pass the matching string. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Collection.\+cs\end{DoxyCompactItemize}

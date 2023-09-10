@@ -1,0 +1,104 @@
+\doxysection{Shopify.\+Unity.\+Metafield Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_metafield}{}\label{class_shopify_1_1_unity_1_1_metafield}\index{Shopify.Unity.Metafield@{Shopify.Unity.Metafield}}
+
+
+Metafields represent custom metadata attached to a resource. Metafields can be sorted into namespaces and are comprised of keys, values, and value types.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Metafield\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Metafield\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield_ac016eb72d79d63bfed37dd71376bc6bc}{Metafield}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_a4dfe5e862e27a7fb1a6b7aab77563700}\label{class_shopify_1_1_unity_1_1_metafield_a4dfe5e862e27a7fb1a6b7aab77563700} 
+string {\bfseries description} ()
+\begin{DoxyCompactList}\small\item\em The description of a metafield. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_shopify_1_1_unity_1_1_metafield_a7aaa1b821c37726be1fe96f7001a9ae8}{id}} ()
+\begin{DoxyCompactList}\small\item\em Globally unique identifier. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_ae833bfdc3ca9c64a9cc2188c5a737773}\label{class_shopify_1_1_unity_1_1_metafield_ae833bfdc3ca9c64a9cc2188c5a737773} 
+string {\bfseries key} ()
+\begin{DoxyCompactList}\small\item\em The key name for a metafield. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_a647dd13c57c7071d4f1ce2493b850375}\label{class_shopify_1_1_unity_1_1_metafield_a647dd13c57c7071d4f1ce2493b850375} 
+string {\bfseries namespace\+Value} ()
+\begin{DoxyCompactList}\small\item\em The namespace for a metafield. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_a2b9363de5b5ccb753eb20f3ce17efcba}\label{class_shopify_1_1_unity_1_1_metafield_a2b9363de5b5ccb753eb20f3ce17efcba} 
+\mbox{\hyperlink{interface_shopify_1_1_unity_1_1_metafield_parent_resource}{Metafield\+Parent\+Resource}} {\bfseries parent\+Resource} ()
+\begin{DoxyCompactList}\small\item\em The parent object that the metafield belongs to. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_a58e0895ecc64c6664a8d0d9d27c4fff0}\label{class_shopify_1_1_unity_1_1_metafield_a58e0895ecc64c6664a8d0d9d27c4fff0} 
+string {\bfseries value} ()
+\begin{DoxyCompactList}\small\item\em The value of a metafield. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_ad537b0f0e41cbb0dcbb781ccd8b49e68}\label{class_shopify_1_1_unity_1_1_metafield_ad537b0f0e41cbb0dcbb781ccd8b49e68} 
+\mbox{\hyperlink{namespace_shopify_1_1_unity_ab6c9fffcdf14ce85e1276f1b81baba4e}{Metafield\+Value\+Type}} {\bfseries value\+Type} ()
+\begin{DoxyCompactList}\small\item\em Represents the metafield value type. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_ae9ebe3e252630d80049ce9104b9cef9a}\label{class_shopify_1_1_unity_1_1_metafield_ae9ebe3e252630d80049ce9104b9cef9a} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Metafields represent custom metadata attached to a resource. Metafields can be sorted into namespaces and are comprised of keys, values, and value types. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_ac016eb72d79d63bfed37dd71376bc6bc}\label{class_shopify_1_1_unity_1_1_metafield_ac016eb72d79d63bfed37dd71376bc6bc} 
+\index{Shopify.Unity.Metafield@{Shopify.Unity.Metafield}!Metafield@{Metafield}}
+\index{Metafield@{Metafield}!Shopify.Unity.Metafield@{Shopify.Unity.Metafield}}
+\doxysubsubsection{\texorpdfstring{Metafield()}{Metafield()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Metafield.\+Metafield (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Metafield\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_metafield_a7aaa1b821c37726be1fe96f7001a9ae8}\label{class_shopify_1_1_unity_1_1_metafield_a7aaa1b821c37726be1fe96f7001a9ae8} 
+\index{Shopify.Unity.Metafield@{Shopify.Unity.Metafield}!id@{id}}
+\index{id@{id}!Shopify.Unity.Metafield@{Shopify.Unity.Metafield}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily string Shopify.\+Unity.\+Metafield.\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Globally unique identifier. 
+
+
+
+Implements \mbox{\hyperlink{interface_shopify_1_1_unity_1_1_node_a791c3610014f425751769e184cde779c}{Shopify.\+Unity.\+Node}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Metafield.\+cs\end{DoxyCompactItemize}

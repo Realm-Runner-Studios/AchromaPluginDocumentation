@@ -1,0 +1,779 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 3730.964355
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.134014 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 147 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text 'arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col 'arg1' to 'arg2' of row 'arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(Shopify.Unity.SDK.AbstractResponse) cw
+(Shopify.Unity.ApiVersion) cw
+(Shopify.Unity.AppliedGiftCard) cw
+(Shopify.Unity.Article) cw
+(Shopify.Unity.ArticleAuthor) cw
+(Shopify.Unity.ArticleConnection) cw
+(Shopify.Unity.ArticleEdge) cw
+(Shopify.Unity.Attribute) cw
+(Shopify.Unity.AutomaticDiscountApplication) cw
+(Shopify.Unity.AvailableShippingRates) cw
+(Shopify.Unity.Blog) cw
+(Shopify.Unity.BlogConnection) cw
+(Shopify.Unity.BlogEdge) cw
+(Shopify.Unity.Checkout) cw
+(Shopify.Unity.CheckoutAttributesUpdatePayload) cw
+(Shopify.Unity.CheckoutAttributesUpdateV2payload) cw
+(Shopify.Unity.CheckoutCompleteFreePayload) cw
+(Shopify.Unity.CheckoutCompleteWithCreditCardPayload) cw
+(Shopify.Unity.CheckoutCompleteWithCreditCardV2payload) cw
+(Shopify.Unity.CheckoutCompleteWithTokenizedPaymentPayload) cw
+(Shopify.Unity.CheckoutCompleteWithTokenizedPaymentV2payload) cw
+(Shopify.Unity.CheckoutCreatePayload) cw
+(Shopify.Unity.CheckoutCustomerAssociatePayload) cw
+(Shopify.Unity.CheckoutCustomerAssociateV2payload) cw
+(Shopify.Unity.CheckoutCustomerDisassociatePayload) cw
+(Shopify.Unity.CheckoutCustomerDisassociateV2payload) cw
+(Shopify.Unity.CheckoutDiscountCodeApplyPayload) cw
+(Shopify.Unity.CheckoutDiscountCodeApplyV2payload) cw
+(Shopify.Unity.CheckoutDiscountCodeRemovePayload) cw
+(Shopify.Unity.CheckoutEmailUpdatePayload) cw
+(Shopify.Unity.CheckoutEmailUpdateV2payload) cw
+(Shopify.Unity.CheckoutGiftCardApplyPayload) cw
+(Shopify.Unity.CheckoutGiftCardRemovePayload) cw
+(Shopify.Unity.CheckoutGiftCardRemoveV2payload) cw
+(Shopify.Unity.CheckoutGiftCardsAppendPayload) cw
+(Shopify.Unity.CheckoutLineItem) cw
+(Shopify.Unity.CheckoutLineItemConnection) cw
+(Shopify.Unity.CheckoutLineItemEdge) cw
+(Shopify.Unity.CheckoutLineItemsAddPayload) cw
+(Shopify.Unity.CheckoutLineItemsRemovePayload) cw
+(Shopify.Unity.CheckoutLineItemsReplacePayload) cw
+(Shopify.Unity.CheckoutLineItemsUpdatePayload) cw
+(Shopify.Unity.CheckoutShippingAddressUpdatePayload) cw
+(Shopify.Unity.CheckoutShippingAddressUpdateV2payload) cw
+(Shopify.Unity.CheckoutShippingLineUpdatePayload) cw
+(Shopify.Unity.CheckoutUserError) cw
+(Shopify.Unity.Collection) cw
+(Shopify.Unity.CollectionConnection) cw
+(Shopify.Unity.CollectionEdge) cw
+(Shopify.Unity.Comment) cw
+(Shopify.Unity.CommentAuthor) cw
+(Shopify.Unity.CommentConnection) cw
+(Shopify.Unity.CommentEdge) cw
+(Shopify.Unity.CreditCard) cw
+(Shopify.Unity.Customer) cw
+(Shopify.Unity.CustomerAccessToken) cw
+(Shopify.Unity.CustomerAccessTokenCreatePayload) cw
+(Shopify.Unity.CustomerAccessTokenDeletePayload) cw
+(Shopify.Unity.CustomerAccessTokenRenewPayload) cw
+(Shopify.Unity.CustomerActivatePayload) cw
+(Shopify.Unity.CustomerAddressCreatePayload) cw
+(Shopify.Unity.CustomerAddressDeletePayload) cw
+(Shopify.Unity.CustomerAddressUpdatePayload) cw
+(Shopify.Unity.CustomerCreatePayload) cw
+(Shopify.Unity.CustomerDefaultAddressUpdatePayload) cw
+(Shopify.Unity.CustomerRecoverPayload) cw
+(Shopify.Unity.CustomerResetByUrlPayload) cw
+(Shopify.Unity.CustomerResetPayload) cw
+(Shopify.Unity.CustomerUpdatePayload) cw
+(Shopify.Unity.CustomerUserError) cw
+(Shopify.Unity.DiscountAllocation) cw
+(Shopify.Unity.DiscountApplicationConnection) cw
+(Shopify.Unity.DiscountApplicationEdge) cw
+(Shopify.Unity.DiscountCodeApplication) cw
+(Shopify.Unity.Domain) cw
+(Shopify.Unity.ExternalVideo) cw
+(Shopify.Unity.Fulfillment) cw
+(Shopify.Unity.FulfillmentLineItem) cw
+(Shopify.Unity.FulfillmentLineItemConnection) cw
+(Shopify.Unity.FulfillmentLineItemEdge) cw
+(Shopify.Unity.FulfillmentTrackingInfo) cw
+(Shopify.Unity.Image) cw
+(Shopify.Unity.ImageConnection) cw
+(Shopify.Unity.ImageEdge) cw
+(Shopify.Unity.MailingAddress) cw
+(Shopify.Unity.MailingAddressConnection) cw
+(Shopify.Unity.MailingAddressEdge) cw
+(Shopify.Unity.ManualDiscountApplication) cw
+(Shopify.Unity.MediaConnection) cw
+(Shopify.Unity.MediaEdge) cw
+(Shopify.Unity.MediaImage) cw
+(Shopify.Unity.Metafield) cw
+(Shopify.Unity.MetafieldConnection) cw
+(Shopify.Unity.MetafieldEdge) cw
+(Shopify.Unity.Model3d) cw
+(Shopify.Unity.Model3dSource) cw
+(Shopify.Unity.MoneyV2) cw
+(Shopify.Unity.MoneyV2connection) cw
+(Shopify.Unity.MoneyV2edge) cw
+(Shopify.Unity.Mutation) cw
+(Shopify.Unity.Order) cw
+(Shopify.Unity.OrderConnection) cw
+(Shopify.Unity.OrderEdge) cw
+(Shopify.Unity.OrderLineItem) cw
+(Shopify.Unity.OrderLineItemConnection) cw
+(Shopify.Unity.OrderLineItemEdge) cw
+(Shopify.Unity.Page) cw
+(Shopify.Unity.PageConnection) cw
+(Shopify.Unity.PageEdge) cw
+(Shopify.Unity.PageInfo) cw
+(Shopify.Unity.Payment) cw
+(Shopify.Unity.PaymentSettings) cw
+(Shopify.Unity.PricingPercentageValue) cw
+(Shopify.Unity.Product) cw
+(Shopify.Unity.ProductConnection) cw
+(Shopify.Unity.ProductEdge) cw
+(Shopify.Unity.ProductOption) cw
+(Shopify.Unity.ProductPriceRange) cw
+(Shopify.Unity.ProductPriceRangeConnection) cw
+(Shopify.Unity.ProductPriceRangeEdge) cw
+(Shopify.Unity.ProductVariant) cw
+(Shopify.Unity.ProductVariantConnection) cw
+(Shopify.Unity.ProductVariantEdge) cw
+(Shopify.Unity.ProductVariantPricePair) cw
+(Shopify.Unity.ProductVariantPricePairConnection) cw
+(Shopify.Unity.ProductVariantPricePairEdge) cw
+(Shopify.Unity.QueryRoot) cw
+(Shopify.Unity.ScriptDiscountApplication) cw
+(Shopify.Unity.SelectedOption) cw
+(Shopify.Unity.Seo) cw
+(Shopify.Unity.ShippingRate) cw
+(Shopify.Unity.Shop) cw
+(Shopify.Unity.ShopPolicy) cw
+(Shopify.Unity.StringConnection) cw
+(Shopify.Unity.StringEdge) cw
+(Shopify.Unity.Transaction) cw
+(Shopify.Unity.UnitPriceMeasurement) cw
+(Shopify.Unity.UnknownDiscountApplication) cw
+(Shopify.Unity.UnknownDisplayableError) cw
+(Shopify.Unity.UnknownHasMetafields) cw
+(Shopify.Unity.UnknownMedia) cw
+(Shopify.Unity.UnknownMetafieldParentResource) cw
+(Shopify.Unity.UnknownNode) cw
+(Shopify.Unity.UnknownPricingValue) cw
+(Shopify.Unity.UserError) cw
+(Shopify.Unity.Video) cw
+(Shopify.Unity.VideoSource) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (Shopify.Unity.SDK.AbstractResponse) 0.000000 146.000000 box
+ (Shopify.Unity.ApiVersion) 1.000000 145.000000 box
+ (Shopify.Unity.AppliedGiftCard) 1.000000 144.000000 box
+ (Shopify.Unity.Article) 1.000000 143.000000 box
+ (Shopify.Unity.ArticleAuthor) 1.000000 142.000000 box
+ (Shopify.Unity.ArticleConnection) 1.000000 141.000000 box
+ (Shopify.Unity.ArticleEdge) 1.000000 140.000000 box
+ (Shopify.Unity.Attribute) 1.000000 139.000000 box
+ (Shopify.Unity.AutomaticDiscountApplication) 1.000000 138.000000 box
+ (Shopify.Unity.AvailableShippingRates) 1.000000 137.000000 box
+ (Shopify.Unity.Blog) 1.000000 136.000000 box
+ (Shopify.Unity.BlogConnection) 1.000000 135.000000 box
+ (Shopify.Unity.BlogEdge) 1.000000 134.000000 box
+ (Shopify.Unity.Checkout) 1.000000 133.000000 box
+ (Shopify.Unity.CheckoutAttributesUpdatePayload) 1.000000 132.000000 box
+ (Shopify.Unity.CheckoutAttributesUpdateV2payload) 1.000000 131.000000 box
+ (Shopify.Unity.CheckoutCompleteFreePayload) 1.000000 130.000000 box
+ (Shopify.Unity.CheckoutCompleteWithCreditCardPayload) 1.000000 129.000000 box
+ (Shopify.Unity.CheckoutCompleteWithCreditCardV2payload) 1.000000 128.000000 box
+ (Shopify.Unity.CheckoutCompleteWithTokenizedPaymentPayload) 1.000000 127.000000 box
+ (Shopify.Unity.CheckoutCompleteWithTokenizedPaymentV2payload) 1.000000 126.000000 box
+ (Shopify.Unity.CheckoutCreatePayload) 1.000000 125.000000 box
+ (Shopify.Unity.CheckoutCustomerAssociatePayload) 1.000000 124.000000 box
+ (Shopify.Unity.CheckoutCustomerAssociateV2payload) 1.000000 123.000000 box
+ (Shopify.Unity.CheckoutCustomerDisassociatePayload) 1.000000 122.000000 box
+ (Shopify.Unity.CheckoutCustomerDisassociateV2payload) 1.000000 121.000000 box
+ (Shopify.Unity.CheckoutDiscountCodeApplyPayload) 1.000000 120.000000 box
+ (Shopify.Unity.CheckoutDiscountCodeApplyV2payload) 1.000000 119.000000 box
+ (Shopify.Unity.CheckoutDiscountCodeRemovePayload) 1.000000 118.000000 box
+ (Shopify.Unity.CheckoutEmailUpdatePayload) 1.000000 117.000000 box
+ (Shopify.Unity.CheckoutEmailUpdateV2payload) 1.000000 116.000000 box
+ (Shopify.Unity.CheckoutGiftCardApplyPayload) 1.000000 115.000000 box
+ (Shopify.Unity.CheckoutGiftCardRemovePayload) 1.000000 114.000000 box
+ (Shopify.Unity.CheckoutGiftCardRemoveV2payload) 1.000000 113.000000 box
+ (Shopify.Unity.CheckoutGiftCardsAppendPayload) 1.000000 112.000000 box
+ (Shopify.Unity.CheckoutLineItem) 1.000000 111.000000 box
+ (Shopify.Unity.CheckoutLineItemConnection) 1.000000 110.000000 box
+ (Shopify.Unity.CheckoutLineItemEdge) 1.000000 109.000000 box
+ (Shopify.Unity.CheckoutLineItemsAddPayload) 1.000000 108.000000 box
+ (Shopify.Unity.CheckoutLineItemsRemovePayload) 1.000000 107.000000 box
+ (Shopify.Unity.CheckoutLineItemsReplacePayload) 1.000000 106.000000 box
+ (Shopify.Unity.CheckoutLineItemsUpdatePayload) 1.000000 105.000000 box
+ (Shopify.Unity.CheckoutShippingAddressUpdatePayload) 1.000000 104.000000 box
+ (Shopify.Unity.CheckoutShippingAddressUpdateV2payload) 1.000000 103.000000 box
+ (Shopify.Unity.CheckoutShippingLineUpdatePayload) 1.000000 102.000000 box
+ (Shopify.Unity.CheckoutUserError) 1.000000 101.000000 box
+ (Shopify.Unity.Collection) 1.000000 100.000000 box
+ (Shopify.Unity.CollectionConnection) 1.000000 99.000000 box
+ (Shopify.Unity.CollectionEdge) 1.000000 98.000000 box
+ (Shopify.Unity.Comment) 1.000000 97.000000 box
+ (Shopify.Unity.CommentAuthor) 1.000000 96.000000 box
+ (Shopify.Unity.CommentConnection) 1.000000 95.000000 box
+ (Shopify.Unity.CommentEdge) 1.000000 94.000000 box
+ (Shopify.Unity.CreditCard) 1.000000 93.000000 box
+ (Shopify.Unity.Customer) 1.000000 92.000000 box
+ (Shopify.Unity.CustomerAccessToken) 1.000000 91.000000 box
+ (Shopify.Unity.CustomerAccessTokenCreatePayload) 1.000000 90.000000 box
+ (Shopify.Unity.CustomerAccessTokenDeletePayload) 1.000000 89.000000 box
+ (Shopify.Unity.CustomerAccessTokenRenewPayload) 1.000000 88.000000 box
+ (Shopify.Unity.CustomerActivatePayload) 1.000000 87.000000 box
+ (Shopify.Unity.CustomerAddressCreatePayload) 1.000000 86.000000 box
+ (Shopify.Unity.CustomerAddressDeletePayload) 1.000000 85.000000 box
+ (Shopify.Unity.CustomerAddressUpdatePayload) 1.000000 84.000000 box
+ (Shopify.Unity.CustomerCreatePayload) 1.000000 83.000000 box
+ (Shopify.Unity.CustomerDefaultAddressUpdatePayload) 1.000000 82.000000 box
+ (Shopify.Unity.CustomerRecoverPayload) 1.000000 81.000000 box
+ (Shopify.Unity.CustomerResetByUrlPayload) 1.000000 80.000000 box
+ (Shopify.Unity.CustomerResetPayload) 1.000000 79.000000 box
+ (Shopify.Unity.CustomerUpdatePayload) 1.000000 78.000000 box
+ (Shopify.Unity.CustomerUserError) 1.000000 77.000000 box
+ (Shopify.Unity.DiscountAllocation) 1.000000 76.000000 box
+ (Shopify.Unity.DiscountApplicationConnection) 1.000000 75.000000 box
+ (Shopify.Unity.DiscountApplicationEdge) 1.000000 74.000000 box
+ (Shopify.Unity.DiscountCodeApplication) 1.000000 73.000000 box
+ (Shopify.Unity.Domain) 1.000000 72.000000 box
+ (Shopify.Unity.ExternalVideo) 1.000000 71.000000 box
+ (Shopify.Unity.Fulfillment) 1.000000 70.000000 box
+ (Shopify.Unity.FulfillmentLineItem) 1.000000 69.000000 box
+ (Shopify.Unity.FulfillmentLineItemConnection) 1.000000 68.000000 box
+ (Shopify.Unity.FulfillmentLineItemEdge) 1.000000 67.000000 box
+ (Shopify.Unity.FulfillmentTrackingInfo) 1.000000 66.000000 box
+ (Shopify.Unity.Image) 1.000000 65.000000 box
+ (Shopify.Unity.ImageConnection) 1.000000 64.000000 box
+ (Shopify.Unity.ImageEdge) 1.000000 63.000000 box
+ (Shopify.Unity.MailingAddress) 1.000000 62.000000 box
+ (Shopify.Unity.MailingAddressConnection) 1.000000 61.000000 box
+ (Shopify.Unity.MailingAddressEdge) 1.000000 60.000000 box
+ (Shopify.Unity.ManualDiscountApplication) 1.000000 59.000000 box
+ (Shopify.Unity.MediaConnection) 1.000000 58.000000 box
+ (Shopify.Unity.MediaEdge) 1.000000 57.000000 box
+ (Shopify.Unity.MediaImage) 1.000000 56.000000 box
+ (Shopify.Unity.Metafield) 1.000000 55.000000 box
+ (Shopify.Unity.MetafieldConnection) 1.000000 54.000000 box
+ (Shopify.Unity.MetafieldEdge) 1.000000 53.000000 box
+ (Shopify.Unity.Model3d) 1.000000 52.000000 box
+ (Shopify.Unity.Model3dSource) 1.000000 51.000000 box
+ (Shopify.Unity.MoneyV2) 1.000000 50.000000 box
+ (Shopify.Unity.MoneyV2connection) 1.000000 49.000000 box
+ (Shopify.Unity.MoneyV2edge) 1.000000 48.000000 box
+ (Shopify.Unity.Mutation) 1.000000 47.000000 box
+ (Shopify.Unity.Order) 1.000000 46.000000 box
+ (Shopify.Unity.OrderConnection) 1.000000 45.000000 box
+ (Shopify.Unity.OrderEdge) 1.000000 44.000000 box
+ (Shopify.Unity.OrderLineItem) 1.000000 43.000000 box
+ (Shopify.Unity.OrderLineItemConnection) 1.000000 42.000000 box
+ (Shopify.Unity.OrderLineItemEdge) 1.000000 41.000000 box
+ (Shopify.Unity.Page) 1.000000 40.000000 box
+ (Shopify.Unity.PageConnection) 1.000000 39.000000 box
+ (Shopify.Unity.PageEdge) 1.000000 38.000000 box
+ (Shopify.Unity.PageInfo) 1.000000 37.000000 box
+ (Shopify.Unity.Payment) 1.000000 36.000000 box
+ (Shopify.Unity.PaymentSettings) 1.000000 35.000000 box
+ (Shopify.Unity.PricingPercentageValue) 1.000000 34.000000 box
+ (Shopify.Unity.Product) 1.000000 33.000000 box
+ (Shopify.Unity.ProductConnection) 1.000000 32.000000 box
+ (Shopify.Unity.ProductEdge) 1.000000 31.000000 box
+ (Shopify.Unity.ProductOption) 1.000000 30.000000 box
+ (Shopify.Unity.ProductPriceRange) 1.000000 29.000000 box
+ (Shopify.Unity.ProductPriceRangeConnection) 1.000000 28.000000 box
+ (Shopify.Unity.ProductPriceRangeEdge) 1.000000 27.000000 box
+ (Shopify.Unity.ProductVariant) 1.000000 26.000000 box
+ (Shopify.Unity.ProductVariantConnection) 1.000000 25.000000 box
+ (Shopify.Unity.ProductVariantEdge) 1.000000 24.000000 box
+ (Shopify.Unity.ProductVariantPricePair) 1.000000 23.000000 box
+ (Shopify.Unity.ProductVariantPricePairConnection) 1.000000 22.000000 box
+ (Shopify.Unity.ProductVariantPricePairEdge) 1.000000 21.000000 box
+ (Shopify.Unity.QueryRoot) 1.000000 20.000000 box
+ (Shopify.Unity.ScriptDiscountApplication) 1.000000 19.000000 box
+ (Shopify.Unity.SelectedOption) 1.000000 18.000000 box
+ (Shopify.Unity.Seo) 1.000000 17.000000 box
+ (Shopify.Unity.ShippingRate) 1.000000 16.000000 box
+ (Shopify.Unity.Shop) 1.000000 15.000000 box
+ (Shopify.Unity.ShopPolicy) 1.000000 14.000000 box
+ (Shopify.Unity.StringConnection) 1.000000 13.000000 box
+ (Shopify.Unity.StringEdge) 1.000000 12.000000 box
+ (Shopify.Unity.Transaction) 1.000000 11.000000 box
+ (Shopify.Unity.UnitPriceMeasurement) 1.000000 10.000000 box
+ (Shopify.Unity.UnknownDiscountApplication) 1.000000 9.000000 box
+ (Shopify.Unity.UnknownDisplayableError) 1.000000 8.000000 box
+ (Shopify.Unity.UnknownHasMetafields) 1.000000 7.000000 box
+ (Shopify.Unity.UnknownMedia) 1.000000 6.000000 box
+ (Shopify.Unity.UnknownMetafieldParentResource) 1.000000 5.000000 box
+ (Shopify.Unity.UnknownNode) 1.000000 4.000000 box
+ (Shopify.Unity.UnknownPricingValue) 1.000000 3.000000 box
+ (Shopify.Unity.UserError) 1.000000 2.000000 box
+ (Shopify.Unity.Video) 1.000000 1.000000 box
+ (Shopify.Unity.VideoSource) 1.000000 0.000000 box
+
+% ----- relations -----
+
+solid
+1 0.000000 145.250000 out
+solid
+0 0.000000 145.500000 hedge
+solid
+0 0.000000 144.500000 hedge
+solid
+0 0.000000 143.500000 hedge
+solid
+0 0.000000 142.500000 hedge
+solid
+0 0.000000 141.500000 hedge
+solid
+0 0.000000 140.500000 hedge
+solid
+0 0.000000 139.500000 hedge
+solid
+0 0.000000 138.500000 hedge
+solid
+0 0.000000 137.500000 hedge
+solid
+0 0.000000 136.500000 hedge
+solid
+0 0.000000 135.500000 hedge
+solid
+0 0.000000 134.500000 hedge
+solid
+0 0.000000 133.500000 hedge
+solid
+0 0.000000 132.500000 hedge
+solid
+0 0.000000 131.500000 hedge
+solid
+0 0.000000 130.500000 hedge
+solid
+0 0.000000 129.500000 hedge
+solid
+0 0.000000 128.500000 hedge
+solid
+0 0.000000 127.500000 hedge
+solid
+0 0.000000 126.500000 hedge
+solid
+0 0.000000 125.500000 hedge
+solid
+0 0.000000 124.500000 hedge
+solid
+0 0.000000 123.500000 hedge
+solid
+0 0.000000 122.500000 hedge
+solid
+0 0.000000 121.500000 hedge
+solid
+0 0.000000 120.500000 hedge
+solid
+0 0.000000 119.500000 hedge
+solid
+0 0.000000 118.500000 hedge
+solid
+0 0.000000 117.500000 hedge
+solid
+0 0.000000 116.500000 hedge
+solid
+0 0.000000 115.500000 hedge
+solid
+0 0.000000 114.500000 hedge
+solid
+0 0.000000 113.500000 hedge
+solid
+0 0.000000 112.500000 hedge
+solid
+0 0.000000 111.500000 hedge
+solid
+0 0.000000 110.500000 hedge
+solid
+0 0.000000 109.500000 hedge
+solid
+0 0.000000 108.500000 hedge
+solid
+0 0.000000 107.500000 hedge
+solid
+0 0.000000 106.500000 hedge
+solid
+0 0.000000 105.500000 hedge
+solid
+0 0.000000 104.500000 hedge
+solid
+0 0.000000 103.500000 hedge
+solid
+0 0.000000 102.500000 hedge
+solid
+0 0.000000 101.500000 hedge
+solid
+0 0.000000 100.500000 hedge
+solid
+0 0.000000 99.500000 hedge
+solid
+0 0.000000 98.500000 hedge
+solid
+0 0.000000 97.500000 hedge
+solid
+0 0.000000 96.500000 hedge
+solid
+0 0.000000 95.500000 hedge
+solid
+0 0.000000 94.500000 hedge
+solid
+0 0.000000 93.500000 hedge
+solid
+0 0.000000 92.500000 hedge
+solid
+0 0.000000 91.500000 hedge
+solid
+0 0.000000 90.500000 hedge
+solid
+0 0.000000 89.500000 hedge
+solid
+0 0.000000 88.500000 hedge
+solid
+0 0.000000 87.500000 hedge
+solid
+0 0.000000 86.500000 hedge
+solid
+0 0.000000 85.500000 hedge
+solid
+0 0.000000 84.500000 hedge
+solid
+0 0.000000 83.500000 hedge
+solid
+0 0.000000 82.500000 hedge
+solid
+0 0.000000 81.500000 hedge
+solid
+0 0.000000 80.500000 hedge
+solid
+0 0.000000 79.500000 hedge
+solid
+0 0.000000 78.500000 hedge
+solid
+0 0.000000 77.500000 hedge
+solid
+0 0.000000 76.500000 hedge
+solid
+0 0.000000 75.500000 hedge
+solid
+0 0.000000 74.500000 hedge
+solid
+0 0.000000 73.500000 hedge
+solid
+0 0.000000 72.500000 hedge
+solid
+0 0.000000 71.500000 hedge
+solid
+0 0.000000 70.500000 hedge
+solid
+0 0.000000 69.500000 hedge
+solid
+0 0.000000 68.500000 hedge
+solid
+0 0.000000 67.500000 hedge
+solid
+0 0.000000 66.500000 hedge
+solid
+0 0.000000 65.500000 hedge
+solid
+0 0.000000 64.500000 hedge
+solid
+0 0.000000 63.500000 hedge
+solid
+0 0.000000 62.500000 hedge
+solid
+0 0.000000 61.500000 hedge
+solid
+0 0.000000 60.500000 hedge
+solid
+0 0.000000 59.500000 hedge
+solid
+0 0.000000 58.500000 hedge
+solid
+0 0.000000 57.500000 hedge
+solid
+0 0.000000 56.500000 hedge
+solid
+0 0.000000 55.500000 hedge
+solid
+0 0.000000 54.500000 hedge
+solid
+0 0.000000 53.500000 hedge
+solid
+0 0.000000 52.500000 hedge
+solid
+0 0.000000 51.500000 hedge
+solid
+0 0.000000 50.500000 hedge
+solid
+0 0.000000 49.500000 hedge
+solid
+0 0.000000 48.500000 hedge
+solid
+0 0.000000 47.500000 hedge
+solid
+0 0.000000 46.500000 hedge
+solid
+0 0.000000 45.500000 hedge
+solid
+0 0.000000 44.500000 hedge
+solid
+0 0.000000 43.500000 hedge
+solid
+0 0.000000 42.500000 hedge
+solid
+0 0.000000 41.500000 hedge
+solid
+0 0.000000 40.500000 hedge
+solid
+0 0.000000 39.500000 hedge
+solid
+0 0.000000 38.500000 hedge
+solid
+0 0.000000 37.500000 hedge
+solid
+0 0.000000 36.500000 hedge
+solid
+0 0.000000 35.500000 hedge
+solid
+0 0.000000 34.500000 hedge
+solid
+0 0.000000 33.500000 hedge
+solid
+0 0.000000 32.500000 hedge
+solid
+0 0.000000 31.500000 hedge
+solid
+0 0.000000 30.500000 hedge
+solid
+0 0.000000 29.500000 hedge
+solid
+0 0.000000 28.500000 hedge
+solid
+0 0.000000 27.500000 hedge
+solid
+0 0.000000 26.500000 hedge
+solid
+0 0.000000 25.500000 hedge
+solid
+0 0.000000 24.500000 hedge
+solid
+0 0.000000 23.500000 hedge
+solid
+0 0.000000 22.500000 hedge
+solid
+0 0.000000 21.500000 hedge
+solid
+0 0.000000 20.500000 hedge
+solid
+0 0.000000 19.500000 hedge
+solid
+0 0.000000 18.500000 hedge
+solid
+0 0.000000 17.500000 hedge
+solid
+0 0.000000 16.500000 hedge
+solid
+0 0.000000 15.500000 hedge
+solid
+0 0.000000 14.500000 hedge
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
+solid
+0 0.000000 11.500000 hedge
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 146.000000 0.500000 vedge

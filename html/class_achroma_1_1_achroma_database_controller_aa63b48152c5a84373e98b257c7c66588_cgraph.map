@@ -1,0 +1,9 @@
+<map id="Achroma.AchromaDatabaseController.RefreshMatch" name="Achroma.AchromaDatabaseController.RefreshMatch">
+<area shape="rect" id="Node000001" title="Forces an update to the local match data by retrieving it from the database." alt="" coords="5,71,250,111"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_firebase_controller.html#af26f0efa5f2b9be6502515156efb3d56" title="Gets the json of a match given the session id." alt="" coords="298,5,536,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,67,309,47,310,52,221,73"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_u_i_controller.html#a4f97bc2bbf977d72c33ab1e96d288158" title="This method cancel and closes the loading screen." alt="" coords="316,71,518,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,88,301,88,301,94,250,94"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_u_i_controller.html#a3c7be0cda2d569b14f41c8eb8fbc8206" title="This method shows the loading screen." alt="" coords="316,136,518,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,109,310,130,309,135,220,115"/>
+</map>

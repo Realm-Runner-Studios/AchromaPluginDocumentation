@@ -1,0 +1,625 @@
+.TH "Achroma.AchromaFirebaseController" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AchromaFirebaseController
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, and MonoBehaviour\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBFirebaseGeneralDatabaseState\fP { \fBError\fP = -1, \fBIdle\fP = 0, \fBInitialized\fP = 1 }"
+.br
+.ti -1c
+.RI "enum \fBDefaultDatabaseState\fP { \fBError\fP = -1, \fBIdle\fP = 0, \fBInitialized\fP = 1, \fBAuthenticating\fP = 2, \fBAuthenticated\fP = 4, \fBLoadingDatabase\fP = 5, \fBDatabaseLoaded\fP = 6, \fBDataUpdated\fP = 7 }"
+.br
+.ti -1c
+.RI "enum \fBFirebaseAuthType\fP { \fBEmailPassword\fP, \fBApple\fP, \fBGoogle\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAppleSignInFromiOS\fP (\fBUserInfo\fP userInfo, UnityAction< bool, String, String > result=null)"
+.br
+.RI "Method that signs in to Apple from an Apple device\&. "
+.ti -1c
+.RI "void \fBAppleSignInFromAndroid\fP (UnityAction< bool, String, String > result=null)"
+.br
+.RI "Signs in to Apple from an Android device\&. "
+.ti -1c
+.RI "void \fBGetCustomToken\fP (string uid, UnityAction< bool, string, string > callback)"
+.br
+.ti -1c
+.RI "void \fBGetAllCards\fP (UnityAction< \fBCardCollection\fP, bool, string > finished)"
+.br
+.RI "Returns a collection of all the cards from Firebase\&. "
+.ti -1c
+.RI "void \fBEmailSignIn\fP (String email, String password, UnityAction< bool, String, String, String > result=null)"
+.br
+.RI "This method calls the login method using email and password\&. "
+.ti -1c
+.RI "void \fBForgotPassword\fP (String email, UnityAction< bool, String > result=null)"
+.br
+.RI "In case the user forgot the password\&. "
+.ti -1c
+.RI "void \fBStopForgotPassword\fP ()"
+.br
+.RI "Method to interrupt the action of asking for a new password\&. "
+.ti -1c
+.RI "void \fBEmailSignUp\fP (String username, String email, String password, String passwordConfirmation, UnityAction< bool, String, String > result=null)"
+.br
+.RI "Function for the register button\&. "
+.ti -1c
+.RI "void \fBStopEmailSignUp\fP ()"
+.br
+.RI "Method to interrupt the action of Signing up by email\&. "
+.ti -1c
+.RI "void \fBGetFriendsData\fP (UnityAction< bool, string, string > result)"
+.br
+.ti -1c
+.RI "void \fBStopGetFriendsRequestData\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetFriendsData\fP (\fBFriendsData\fP friendsData, UnityAction< bool, string > result)"
+.br
+.ti -1c
+.RI "void \fBStopSetFriendsRequestData\fP ()"
+.br
+.ti -1c
+.RI "void \fBAddFriendsChangedListener\fP (UnityAction< string > friendsChanged)"
+.br
+.RI "Attaches the listener to the friends table and allows the listener to trigger events when a new request arrives or when the friends list has been updated\&. "
+.ti -1c
+.RI "void \fBRemoveFriendsChangedListener\fP ()"
+.br
+.RI "Detaches the listener\&. "
+.ti -1c
+.RI "void \fBInitializeDatabase\fP ()"
+.br
+.ti -1c
+.RI "void \fBGoogleSignIn\fP (string googleAccessToken, string googleIdToken, UnityAction< bool, String, String > result=null)"
+.br
+.ti -1c
+.RI "void \fBAddMatchChangedListener\fP (string sessionName, UnityAction< string > matchChanged)"
+.br
+.RI "Adds a listener to a match\&. "
+.ti -1c
+.RI "void \fBRemoveMatchChangedListener\fP (string sessionName)"
+.br
+.RI "Removes the listener from the match\&. "
+.ti -1c
+.RI "void \fBGetMatchData\fP (string sessionName, UnityAction< bool, string, string > result)"
+.br
+.RI "Gets the json of a match given the session id\&. "
+.ti -1c
+.RI "void \fBStopGetMatchData\fP ()"
+.br
+.RI "Stops the coroutine that's getting the match data\&. "
+.ti -1c
+.RI "void \fBSetMatchData\fP (string session, \fBMatchData\fP matchData, UnityAction< bool, string > result)"
+.br
+.RI "Saves data to the match table\&. "
+.ti -1c
+.RI "void \fBStopSetMatchData\fP ()"
+.br
+.RI "Interupts saving the matchdata\&. "
+.ti -1c
+.RI "void \fBGetMatchCode\fP (UnityAction< string > callback)"
+.br
+.RI "Gets a new match code\&. "
+.ti -1c
+.RI "void \fBGetNews\fP (UnityAction< bool, string, \fBNewsCollection\fP > result)"
+.br
+.ti -1c
+.RI "void \fBGetGlobalAchrometer\fP (UnityAction< IDictionary > callback)"
+.br
+.ti -1c
+.RI "void \fBGetCurrentSeasonName\fP (UnityAction< string > callback)"
+.br
+.ti -1c
+.RI "void \fBGetAchrometerTier\fP (int totalChromaWins, int totalAchromWins, int storyAchrometer, UnityAction< bool, int, int > result)"
+.br
+.ti -1c
+.RI "void \fBGetRanking\fP (int hero, bool currentSeason, string userId, UnityAction< List< IDictionary >, bool > ranking)"
+.br
+.ti -1c
+.RI "void \fBGetStoryRanking\fP (string userId, UnityAction< List< IDictionary >, bool > ranking)"
+.br
+.ti -1c
+.RI "void \fBGetRankingPositionForUserById\fP (int hero, string userId, UnityAction< int > ranking)"
+.br
+.ti -1c
+.RI "void \fBGetStoryRankingPositionForUserById\fP (string userId, UnityAction< int > ranking)"
+.br
+.ti -1c
+.RI "void \fBRemoteConfigSettingsFetch\fP (UnityAction< bool, String > result=null)"
+.br
+.ti -1c
+.RI "void \fBSetUserData\fP (\fBUserData\fP userData, UnityAction< bool, string > result)"
+.br
+.RI "Method to push the user data to Firebase using Json serialization\&. "
+.ti -1c
+.RI "void \fBStopSetUserData\fP ()"
+.br
+.RI "Method to interrupt an update to the user's table\&. "
+.ti -1c
+.RI "void \fBAddUserChangedListener\fP (string userId, UnityAction< string > userChanged)"
+.br
+.RI "Adds the listener to the user record\&. "
+.ti -1c
+.RI "void \fBRemoveUserChangedListener\fP (string userId)"
+.br
+.RI "Removes the listener from the user record\&. "
+.ti -1c
+.RI "void \fBGetUserData\fP (UnityAction< bool, string, string > result, string customUserId='')"
+.br
+.RI "Method to get current user data and store it to a UserData variable\&. "
+.ti -1c
+.RI "void \fBStopGetUserData\fP ()"
+.br
+.RI "Interrupt the get user data method\&. "
+.ti -1c
+.RI "void \fBGetAuthToken\fP (UnityAction< string > callback)"
+.br
+.ti -1c
+.RI "void \fBGetUserById\fP (string id, UnityAction< bool, string, object > callback)"
+.br
+.RI "Gets the user by their id\&. "
+.ti -1c
+.RI "void \fBGetUserIdByUniqueNumber\fP (string uniqueNumber, UnityAction< bool, string, object > callback)"
+.br
+.RI "Gets the user by their id\&. "
+.ti -1c
+.RI "void \fBCancelSignIn\fP ()"
+.br
+.RI "If the user decides to cancel login\&. "
+.ti -1c
+.RI "void \fBSignOut\fP ()"
+.br
+.RI "This method logs out of the firebase and set the state to the previous state, initialized\&. "
+.ti -1c
+.RI "void \fBInitialize\fP (UnityAction< bool, string > result)"
+.br
+.RI "Method to initialize Firebase\&. "
+.ti -1c
+.RI "void \fBStopInitialize\fP ()"
+.br
+.RI "Method to interrupt the initialization if the user likes\&. "
+.ti -1c
+.RI "void \fBLoadDatabase\fP (UnityAction< bool, string > result)"
+.br
+.RI "Loads the references to the used tables in the app\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "FirebaseGeneralDatabaseState \fBgeneralState\fP = FirebaseGeneralDatabaseState\&.Idle"
+.br
+.ti -1c
+.RI "DefaultDatabaseState \fBdefaultState\fP = DefaultDatabaseState\&.Idle"
+.br
+.ti -1c
+.RI "DependencyStatus \fBdependencyStatus\fP"
+.br
+.ti -1c
+.RI "FirebaseAuth \fBauth\fP"
+.br
+.ti -1c
+.RI "FirebaseUser \fBUser\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "IEnumerator \fBGetCustomTokenTask\fP (string uid, UnityAction< bool, string, string > callback)"
+.br
+.ti -1c
+.RI "IEnumerator \fBGetAllCardsTask\fP (UnityAction< IDictionary, bool, string > callback)"
+.br
+.RI "Task to call the Get All Cards Cloud Function on Firebase\&. "
+.ti -1c
+.RI "IEnumerator \fBGetMatchCodeTask\fP (UnityAction< string > callback)"
+.br
+.RI "Gets a new match code\&. "
+.ti -1c
+.RI "IEnumerator \fBGetGlobalAchrometerTask\fP (UnityAction< IDictionary > callback)"
+.br
+.ti -1c
+.RI "IEnumerator \fBGetCurrentSeasonNameTask\fP (UnityAction< string > callback)"
+.br
+.ti -1c
+.RI "IEnumerator \fBGetAchrometerTierTask\fP (int totalChromaWins, int totalAchromWins, int storyAchrometer, UnityAction< bool, int, int > callback)"
+.br
+.ti -1c
+.RI "IEnumerator \fBGetRankingTask\fP (int hero, bool currentSeason, UnityAction< IDictionary, bool > callback)"
+.br
+.ti -1c
+.RI "IEnumerator \fBGetStoryRankingTask\fP (string userId, UnityAction< IDictionary, bool > callback)"
+.br
+.ti -1c
+.RI "IEnumerator \fBGetRankingPositionForUserByIdTask\fP (int hero, string user, UnityAction< IDictionary > callback)"
+.br
+.ti -1c
+.RI "IEnumerator \fBGetStoryRankingPositionForUserByIdTask\fP (string userId, UnityAction< IDictionary > callback)"
+.br
+.ti -1c
+.RI "IEnumerator \fBGetRankingForUserFriendsTask\fP (int hero, bool currentSeason, string userId, UnityAction< IDictionary, bool > callback)"
+.br
+.ti -1c
+.RI "IEnumerator \fBGetUserByIdTask\fP (string id, UnityAction< bool, string, object > callback)"
+.br
+.RI "Gets the user by their id\&. "
+.ti -1c
+.RI "IEnumerator \fBGetUserIdByUniqueNumberTask\fP (string uniqueNumber, UnityAction< bool, string, object > callback)"
+.br
+.RI "Gets the user by their id\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "DatabaseReference \fBnewsDataReference\fP"
+.br
+.ti -1c
+.RI "DatabaseReference \fBuserDataReference\fP"
+.br
+.ti -1c
+.RI "DatabaseReference \fBmatchesReference\fP"
+.br
+.ti -1c
+.RI "DatabaseReference \fBfriendsReference\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "FirebaseGeneralDatabaseState \fBGeneralState\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "static bool \fBGeneralDatabaseIsLoaded\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "DefaultDatabaseState \fBDefaultState\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "static \fBAchromaFirebaseController\fP \fBInstance\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void Achroma\&.AchromaFirebaseController\&.AddMatchChangedListener (string sessionName, UnityAction< string > matchChanged)"
+
+.PP
+Adds a listener to a match\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsessionName\fP session id of the match to be watched
+.br
+\fImatchChanged\fP callback with the json of the match
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.AddUserChangedListener (string userId, UnityAction< string > userChanged)"
+
+.PP
+Adds the listener to the user record\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserId\fP 
+.br
+\fIuserChanged\fP 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.AppleSignInFromAndroid (UnityAction< bool, String, String > result = \fCnull\fP)"
+
+.PP
+Signs in to Apple from an Android device\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP Returns a success flag, an error message (if any) and the user id (in case of success)
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.AppleSignInFromiOS (\fBUserInfo\fP userInfo, UnityAction< bool, String, String > result = \fCnull\fP)"
+
+.PP
+Method that signs in to Apple from an Apple device\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserInfo\fP credential data collected previously from GetCredential
+.br
+\fIresult\fP Resul with bool flag, message (if any error) and user id (if successful) 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.EmailSignIn (String email, String password, UnityAction< bool, String, String, String > result = \fCnull\fP)"
+
+.PP
+This method calls the login method using email and password\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIemail\fP User's email
+.br
+\fIpassword\fP User's password
+.br
+\fIresult\fP callback function that returns: success, field name (when an error occurs, it returns which field was wrong), message (the error message) and user (user id from Firebase)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.EmailSignUp (String username, String email, String password, String passwordConfirmation, UnityAction< bool, String, String > result = \fCnull\fP)"
+
+.PP
+Function for the register button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIusername\fP the user name (nick name)
+.br
+\fIemail\fP e-mail address
+.br
+\fIpassword\fP password
+.br
+\fIpasswordConfirmation\fP password confirmation
+.br
+\fIresult\fP callback function, returns success flag, field name (in case of error) and error message (if any)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.ForgotPassword (String email, UnityAction< bool, String > result = \fCnull\fP)"
+
+.PP
+In case the user forgot the password\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIemail\fP User's email
+.br
+\fIresult\fP callback function that returns: success, message (the error message)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.GetAllCards (UnityAction< \fBCardCollection\fP, bool, string > finished)"
+
+.PP
+Returns a collection of all the cards from Firebase\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfinished\fP Returns a dictionary with the result of function, a success flag and an error message (if any)
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "IEnumerator Achroma\&.AchromaFirebaseController\&.GetAllCardsTask (UnityAction< IDictionary, bool, string > callback)\fC [protected]\fP"
+
+.PP
+Task to call the Get All Cards Cloud Function on Firebase\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP Returns a dictionary with the result of function, a success flag and an error message (if any)
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.GetMatchCode (UnityAction< string > callback)"
+
+.PP
+Gets a new match code\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP success/failure response
+.RE
+.PP
+
+.SS "IEnumerator Achroma\&.AchromaFirebaseController\&.GetMatchCodeTask (UnityAction< string > callback)\fC [protected]\fP"
+
+.PP
+Gets a new match code\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP success/failure response
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.GetMatchData (string sessionName, UnityAction< bool, string, string > result)"
+
+.PP
+Gets the json of a match given the session id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsessionName\fP session id
+.br
+\fIresult\fP success/failure feedback
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.GetUserById (string id, UnityAction< bool, string, object > callback)"
+
+.PP
+Gets the user by their id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP User id
+.br
+\fIcallback\fP Success/Failure feedback
+.RE
+.PP
+
+.SS "IEnumerator Achroma\&.AchromaFirebaseController\&.GetUserByIdTask (string id, UnityAction< bool, string, object > callback)\fC [protected]\fP"
+
+.PP
+Gets the user by their id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP User id
+.br
+\fIcallback\fP Success/Failure feedback
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.GetUserData (UnityAction< bool, string, string > result, string customUserId = \fC''\fP)"
+
+.PP
+Method to get current user data and store it to a UserData variable\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP callback that returns success flag, message and the json file with the user data
+.br
+\fIcustomUserId\fP This is just for testing using a custom user id
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.GetUserIdByUniqueNumber (string uniqueNumber, UnityAction< bool, string, object > callback)"
+
+.PP
+Gets the user by their id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP User id
+.br
+\fIcallback\fP Success/Failure feedback
+.RE
+.PP
+
+.SS "IEnumerator Achroma\&.AchromaFirebaseController\&.GetUserIdByUniqueNumberTask (string uniqueNumber, UnityAction< bool, string, object > callback)\fC [protected]\fP"
+
+.PP
+Gets the user by their id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP User id
+.br
+\fIcallback\fP Success/Failure feedback
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.Initialize (UnityAction< bool, string > result)"
+
+.PP
+Method to initialize Firebase\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP Returns the success or failure with a message
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.LoadDatabase (UnityAction< bool, string > result)"
+
+.PP
+Loads the references to the used tables in the app\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP Returns success flag and message describing error, if any
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.RemoveMatchChangedListener (string sessionName)"
+
+.PP
+Removes the listener from the match\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsessionName\fP 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.RemoveUserChangedListener (string userId)"
+
+.PP
+Removes the listener from the user record\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserId\fP 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.SetMatchData (string session, \fBMatchData\fP matchData, UnityAction< bool, string > result)"
+
+.PP
+Saves data to the match table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsession\fP Session id 
+.br
+\fImatchData\fP The Match Data object
+.br
+\fIresult\fP success/failure feedback
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.SetUserData (\fBUserData\fP userData, UnityAction< bool, string > result)"
+
+.PP
+Method to push the user data to Firebase using Json serialization\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserData\fP 
+.br
+\fIresult\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

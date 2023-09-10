@@ -1,0 +1,207 @@
+.TH "Achroma.FriendCard" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.FriendCard
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBAchroma\&.AchromaFlippableCard\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBFriendCardType\fP { \fBMe\fP, \fBFriend\fP }"
+.br
+.in -1c
+
+Public Types inherited from \fBAchroma\&.AchromaFlippableCard\fP
+.in +1c
+.ti -1c
+.RI "enum \fBFlipCardState\fP { \fBFront\fP, \fBBack\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBUpdateFriendData\fP (UnityAction result)"
+.br
+.ti -1c
+.RI "void \fBUpdateCharacter\fP (UnityAction result)"
+.br
+.ti -1c
+.RI "void \fBCardFlippedFront\fP ()"
+.br
+.ti -1c
+.RI "void \fBCardFlippedBack\fP ()"
+.br
+.ti -1c
+.RI "void \fBRefresh\fP ()"
+.br
+.ti -1c
+.RI "void \fBRemoveFriend\fP ()"
+.br
+.ti -1c
+.RI "void \fBConfirmFriend\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBAchroma\&.AchromaFlippableCard\fP
+.in +1c
+.ti -1c
+.RI "void \fBResetToFront\fP ()"
+.br
+.ti -1c
+.RI "void \fBFlipCard\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "FriendCardType \fBfriendCardType\fP = FriendCardType\&.Friend"
+.br
+.ti -1c
+.RI "Image \fBbackgroundImage\fP"
+.br
+.ti -1c
+.RI "Image \fBcharacterImage\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBfriendName\fP"
+.br
+.ti -1c
+.RI "InputField \fBplayerName\fP"
+.br
+.ti -1c
+.RI "Text \fBfrontAchrometerText\fP"
+.br
+.ti -1c
+.RI "Text \fBbackAchrometerText\fP"
+.br
+.ti -1c
+.RI "RadialSlider \fBfrontAchrometer\fP"
+.br
+.ti -1c
+.RI "Slider \fBbackAchrometer\fP"
+.br
+.ti -1c
+.RI "GameObject \fBmedalPrefab\fP"
+.br
+.ti -1c
+.RI "GameObject \fBmedalContainer\fP"
+.br
+.ti -1c
+.RI "GameObject \fBmedalHolder\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBtotalMatchesText\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBtotalWinsText\fP"
+.br
+.ti -1c
+.RI "Image \fBcanvasRankingLoadingImage\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBcanvasRankingText\fP"
+.br
+.ti -1c
+.RI "Image \fBheroRankingLoadingImage\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBheroRankingText\fP"
+.br
+.ti -1c
+.RI "Image \fBstoryRankingLoadingImage\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBstoryRankingText\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBtotalAchromWinsText\fP"
+.br
+.ti -1c
+.RI "Slider \fBachromWinsSlider\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBtotalChromaWinsText\fP"
+.br
+.ti -1c
+.RI "Slider \fBchromaWinsSlider\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBbioText\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBuniqueId\fP"
+.br
+.ti -1c
+.RI "\fBUserData\fP \fBcurrentUser\fP"
+.br
+.ti -1c
+.RI "GameObject \fBwaitingForConfirmation\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBwaitingForConfirmationPlayerName\fP"
+.br
+.ti -1c
+.RI "GameObject \fBwaitingForConfirmationCancel\fP"
+.br
+.ti -1c
+.RI "GameObject \fBwaitingForConfirmationConfirm\fP"
+.br
+.ti -1c
+.RI "\fBAchromaStoryDependency\fP[] \fBseparator\fP"
+.br
+.ti -1c
+.RI "GameObject \fBloadingGameObject\fP"
+.br
+.ti -1c
+.RI "Slider \fBstoryAchrometer\fP"
+.br
+.ti -1c
+.RI "Text \fBstoryAchrometerText\fP"
+.br
+.ti -1c
+.RI "string \fB_userId\fP"
+.br
+.ti -1c
+.RI "int \fB_character\fP"
+.br
+.in -1c
+
+Public Attributes inherited from \fBAchroma\&.AchromaFlippableCard\fP
+.in +1c
+.ti -1c
+.RI "FlipCardState \fBflipCardState\fP = FlipCardState\&.Front"
+.br
+.ti -1c
+.RI "GameObject \fBfrontCard\fP"
+.br
+.ti -1c
+.RI "UnityEvent \fBOnFlipFront\fP"
+.br
+.ti -1c
+.RI "GameObject \fBbackCard\fP"
+.br
+.ti -1c
+.RI "UnityEvent \fBOnFlipBack\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBUserId\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBCharacter\fP\fC [get, set]\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

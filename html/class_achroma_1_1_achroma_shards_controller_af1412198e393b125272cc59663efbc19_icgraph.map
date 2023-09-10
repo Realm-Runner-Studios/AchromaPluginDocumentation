@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaShardsController.ShowShardsGained" name="Achroma.AchromaShardsController.ShowShardsGained">
+<area shape="rect" id="Node000001" title="Shows the animation of shards being added to the user." alt="" coords="255,5,484,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_shards.html#abdd1fee5e3ae06bd5cfc173240a8b269" title="Shows the animation of the shards being gained (moving from the top&#45;down)" alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,28,207,28,207,23,240,23"/>
+</map>

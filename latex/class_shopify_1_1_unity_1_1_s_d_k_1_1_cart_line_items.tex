@@ -1,0 +1,387 @@
+\doxysection{Shopify.\+Unity.\+SDK.\+Cart\+Line\+Items Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items}{}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items}\index{Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}}
+
+
+Is used to add, update, or delete line items in a Cart 
+
+.  
+
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a2851b70956b26bca81e0337fbbb656a2}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a2851b70956b26bca81e0337fbbb656a2} 
+enum {\bfseries Line\+Item\+Change\+Type} \{ {\bfseries Add}
+, {\bfseries Remove}
+, {\bfseries Update}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a59b0634c3fbfc0b093819a06f9cdb697}{Add\+Or\+Update}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant}{Product\+Variant}} variant, long? quantity=null, Dictionary$<$ string, string $>$ custom\+Attributes=null)
+\begin{DoxyCompactList}\small\item\em Adds or updates a line item using a Product\+Variant 
+
+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a7283bb4d1e802609c5e91e533158eab2}{Add\+Or\+Update}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}} product, Dictionary$<$ string, string $>$ selected\+Options, long? quantity=null, Dictionary$<$ string, string $>$ custom\+Attributes=null)
+\begin{DoxyCompactList}\small\item\em Adds a new line item using a Product 
+
+and selected options. If an existing line item exists for the variant id, then that line item will be updated. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}} $>$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ae4c3c61f96bddec6c76c330d1a06371d}{All}} ()
+\begin{DoxyCompactList}\small\item\em Returns all Line Items 
+
+that have been created. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a06ccbe1299e5654bebff6e74a706062f}{Get}} (string variant\+Id)
+\begin{DoxyCompactList}\small\item\em Returns one Line Item 
+
+based on a variant id. If no line item exists for the variant id {\ttfamily null} will be returned. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a56862962255f483374a4206688a67e86}{Get}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant}{Product\+Variant}} variant)
+\begin{DoxyCompactList}\small\item\em Returns one Line Item 
+
+based on a Product\+Variant 
+
+. If no line item exists for the variant, {\ttfamily null} will be returned. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}} \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ad410975c21ec92b56175af30a7c361ff}{Get}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}} product, Dictionary$<$ string, string $>$ selected\+Options)
+\begin{DoxyCompactList}\small\item\em Returns one Line Item 
+
+based on a product 
+
+and selected options. If no line item exists for the matching variant, {\ttfamily null} will be returned. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a8ec2ef3989e2815d5473956259f3e171}{Delete}} (string variant\+Id)
+\begin{DoxyCompactList}\small\item\em Deletes one Line Item 
+
+based on a variant id. If a line item was deleted, {\ttfamily true} will be returned. If no line items were deleted, {\ttfamily false} will be returned. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a9abcc878f0682cfde6ffa90a86178e47}{Delete}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant}{Product\+Variant}} variant)
+\begin{DoxyCompactList}\small\item\em Deletes one Line Item 
+
+based on a Product\+Variant 
+
+. If a line item was deleted, {\ttfamily true} will be returned. If no line items were deleted, {\ttfamily false} will be returned. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ac185b209f71eeb77745637e03a319533}{Delete}} (\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}} product, Dictionary$<$ string, string $>$ selected\+Options)
+\begin{DoxyCompactList}\small\item\em Deletes one Line Item 
+
+based on a Product 
+
+and selected options. If a line item was deleted, {\ttfamily true} will be returned. If no line item was deleted, {\ttfamily false} will be returned. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ab130b44e6142d7277d4b0110f4e7847a}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ab130b44e6142d7277d4b0110f4e7847a} 
+void {\bfseries Reset} ()
+\begin{DoxyCompactList}\small\item\em Deletes all line items. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ab13078d07df4cc4e3ebf42c35421394a}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ab13078d07df4cc4e3ebf42c35421394a} 
+void {\bfseries Update\+Line\+Items\+From\+Checkout\+Line\+Items} (List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item}{Checkout\+Line\+Item}} $>$ checkout\+Line\+Items)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a0b4e563ebd4571ef6546e31bc3b02ba0}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a0b4e563ebd4571ef6546e31bc3b02ba0} 
+static List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_checkout_line_item_input}{Checkout\+Line\+Item\+Input}} $>$ {\bfseries Convert\+To\+Checkout\+Line\+Item\+Input} (List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}} $>$ line\+Items)
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_aa1e9d2705d74cbe3db0063a70667a2ca}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_aa1e9d2705d74cbe3db0063a70667a2ca} 
+static List$<$ string $>$ {\bfseries Convert\+To\+Line\+Item\+Ids} (List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}} $>$ line\+Items)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_afd9be0fba50b7981cb8d6088e44cadc1}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_afd9be0fba50b7981cb8d6088e44cadc1} 
+bool {\bfseries Is\+Saved}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_afc90f1772e7c45783e796f9fd4637fdb}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_afc90f1772e7c45783e796f9fd4637fdb} 
+decimal {\bfseries Subtotal}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a27f8a8628dac4835f7c4ac93809332fb}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a27f8a8628dac4835f7c4ac93809332fb} 
+Line\+Item\+Change\+Handler {\bfseries On\+Change}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is used to add, update, or delete line items in a Cart 
+
+. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a7283bb4d1e802609c5e91e533158eab2}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a7283bb4d1e802609c5e91e533158eab2} 
+\index{Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}!AddOrUpdate@{AddOrUpdate}}
+\index{AddOrUpdate@{AddOrUpdate}!Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}}
+\doxysubsubsection{\texorpdfstring{AddOrUpdate()}{AddOrUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+SDK.\+Cart\+Line\+Items.\+Add\+Or\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}}}]{product,  }\item[{Dictionary$<$ string, string $>$}]{selected\+Options,  }\item[{long?}]{quantity = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$}]{custom\+Attributes = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Adds a new line item using a Product 
+
+and selected options. If an existing line item exists for the variant id, then that line item will be updated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em product} & product to check selected options against\\
+\hline
+{\em selected\+Options} & a Dictionary used to define user selected options\\
+\hline
+{\em quantity} & the number of items you\textquotesingle{}d like to order for variant\+Id\\
+\hline
+{\em custom\+Attributes} & custom\+Attributes can be used to define extra information for this line item\\
+\hline
+\end{DoxyParams}
+Throws when no matching variant could be found for selected options in product
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ updates\ the\ quantity\ of\ items\ to\ be\ purchased\ to\ 3.}}
+\DoxyCodeLine{\textcolor{comment}{//\ If\ no\ line\ item\ exists\ for\ \`{}variantId`,\ then\ a\ new\ line\ item\ is\ created}}
+\DoxyCodeLine{Cart\ cart\ =\ ShopifyBuy.Client().Cart();}
+\DoxyCodeLine{}
+\DoxyCodeLine{Dictionary<string,\ string>\ selectedOptions\ =\ \textcolor{keyword}{new}\ Dictionary<string,\ string>()\ \{}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}Size"{}},\ \textcolor{stringliteral}{"{}Small"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}Color"{}},\ \textcolor{stringliteral}{"{}Red"{}}\}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{cart.LineItems.AddOrUpdate(product,\ selectedOptions,\ 3);}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 0
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a59b0634c3fbfc0b093819a06f9cdb697}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a59b0634c3fbfc0b093819a06f9cdb697} 
+\index{Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}!AddOrUpdate@{AddOrUpdate}}
+\index{AddOrUpdate@{AddOrUpdate}!Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}}
+\doxysubsubsection{\texorpdfstring{AddOrUpdate()}{AddOrUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shopify.\+Unity.\+SDK.\+Cart\+Line\+Items.\+Add\+Or\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant}{Product\+Variant}}}]{variant,  }\item[{long?}]{quantity = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$}]{custom\+Attributes = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Adds or updates a line item using a Product\+Variant 
+
+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variant} & Product\+Variant whose id will be used to create or update a line item\\
+\hline
+{\em quantity} & the number of items you\textquotesingle{}d like to order for variant\+Id\\
+\hline
+{\em custom\+Attributes} & can be used to define extra information for this line item\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ updates\ the\ quantity\ of\ items\ to\ be\ purchased\ to\ 3.}}
+\DoxyCodeLine{\textcolor{comment}{//\ If\ no\ line\ item\ exists\ for\ \`{}variantId`,\ then\ a\ new\ line\ item\ is\ created}}
+\DoxyCodeLine{Cart\ cart\ =\ ShopifyBuy.Client().Cart();}
+\DoxyCodeLine{}
+\DoxyCodeLine{cart.LineItems.AddOrUpdate(variant,\ 3);}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ae4c3c61f96bddec6c76c330d1a06371d}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ae4c3c61f96bddec6c76c330d1a06371d} 
+\index{Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}!All@{All}}
+\index{All@{All}!Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}}
+\doxysubsubsection{\texorpdfstring{All()}{All()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}} $>$ Shopify.\+Unity.\+SDK.\+Cart\+Line\+Items.\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns all Line Items 
+
+that have been created. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ checks\ how\ many\ line\ items\ the\ cart\ contains}}
+\DoxyCodeLine{Cart\ cart\ =\ ShopifyBuy.Client().Cart();}
+\DoxyCodeLine{}
+\DoxyCodeLine{Debug.Log(\textcolor{stringliteral}{"{}The\ cart\ has\ "{}}\ +\ cart.LineItems.All().Count\ +\ \textcolor{stringliteral}{"{}\ line\ items"{}});}
+
+\end{DoxyCode}
+ \Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ac185b209f71eeb77745637e03a319533}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ac185b209f71eeb77745637e03a319533} 
+\index{Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}!Delete@{Delete}}
+\index{Delete@{Delete}!Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Shopify.\+Unity.\+SDK.\+Cart\+Line\+Items.\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}}}]{product,  }\item[{Dictionary$<$ string, string $>$}]{selected\+Options }\end{DoxyParamCaption})}
+
+
+
+Deletes one Line Item 
+
+based on a Product 
+
+and selected options. If a line item was deleted, {\ttfamily true} will be returned. If no line item was deleted, {\ttfamily false} will be returned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em product} & product whose options will be used to determine which line item is deleted\\
+\hline
+{\em selected\+Options} & a Dictionary used to define user selected options\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ deletes\ a\ line\ item\ based\ on\ a\ product\ and\ selected\ options}}
+\DoxyCodeLine{Cart\ cart\ =\ ShopifyBuy.Client().Cart();}
+\DoxyCodeLine{}
+\DoxyCodeLine{Dictionary<string,\ string>\ selectedOptions\ =\ \textcolor{keyword}{new}\ Dictionary<string,\ string>()\ \{}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}Size"{}},\ \textcolor{stringliteral}{"{}Small"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}Color"{}},\ \textcolor{stringliteral}{"{}Red"{}}\}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{Debug.Log(\textcolor{stringliteral}{"{}Did\ delete?\ "{}}\ +\ cart.LineItems.Delete(product,\ selectedOptions));}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 3
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a9abcc878f0682cfde6ffa90a86178e47}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a9abcc878f0682cfde6ffa90a86178e47} 
+\index{Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}!Delete@{Delete}}
+\index{Delete@{Delete}!Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Shopify.\+Unity.\+SDK.\+Cart\+Line\+Items.\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant}{Product\+Variant}}}]{variant }\end{DoxyParamCaption})}
+
+
+
+Deletes one Line Item 
+
+based on a Product\+Variant 
+
+. If a line item was deleted, {\ttfamily true} will be returned. If no line items were deleted, {\ttfamily false} will be returned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variant} & variant to provide the ID to delete a line item\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ deletes\ a\ line\ item\ based\ on\ a\ product\ variant}}
+\DoxyCodeLine{Cart\ cart\ =\ ShopifyBuy.Client().Cart();}
+\DoxyCodeLine{}
+\DoxyCodeLine{Debug.Log(\textcolor{stringliteral}{"{}Did\ delete?\ "{}}\ +\ cart.LineItems.Delete(variant));}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 4
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a8ec2ef3989e2815d5473956259f3e171}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a8ec2ef3989e2815d5473956259f3e171} 
+\index{Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}!Delete@{Delete}}
+\index{Delete@{Delete}!Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Shopify.\+Unity.\+SDK.\+Cart\+Line\+Items.\+Delete (\begin{DoxyParamCaption}\item[{string}]{variant\+Id }\end{DoxyParamCaption})}
+
+
+
+Deletes one Line Item 
+
+based on a variant id. If a line item was deleted, {\ttfamily true} will be returned. If no line items were deleted, {\ttfamily false} will be returned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variant\+Id} & variant id used to delete a line item\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ deletes\ a\ line\ item\ based\ on\ variantId}}
+\DoxyCodeLine{Cart\ cart\ =\ ShopifyBuy.Client().Cart();}
+\DoxyCodeLine{}
+\DoxyCodeLine{Debug.Log(\textcolor{stringliteral}{"{}Did\ delete?\ "{}}\ +\ cart.LineItems.Delete(variantId));}
+
+\end{DoxyCode}
+ Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ad410975c21ec92b56175af30a7c361ff}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_ad410975c21ec92b56175af30a7c361ff} 
+\index{Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}!Get@{Get}}
+\index{Get@{Get}!Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}} Shopify.\+Unity.\+SDK.\+Cart\+Line\+Items.\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product}{Product}}}]{product,  }\item[{Dictionary$<$ string, string $>$}]{selected\+Options }\end{DoxyParamCaption})}
+
+
+
+Returns one Line Item 
+
+based on a product 
+
+and selected options. If no line item exists for the matching variant, {\ttfamily null} will be returned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em product} & product whose options will be selected\\
+\hline
+{\em selected\+Options} & a Dictionary used to define user selected options\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ checks\ the\ quantity\ of\ a\ line\ item\ based\ on\ a\ product\ and\ selected\ options}}
+\DoxyCodeLine{Cart\ cart\ =\ ShopifyBuy.Client().Cart();}
+\DoxyCodeLine{}
+\DoxyCodeLine{Dictionary<string,\ string>\ selectedOptions\ =\ \textcolor{keyword}{new}\ Dictionary<string,\ string>()\ \{}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}Size"{}},\ \textcolor{stringliteral}{"{}Small"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}Color"{}},\ \textcolor{stringliteral}{"{}Red"{}}\}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{Debug.Log(cart.LineItems.Get(product,\ selectedOptions).quantity);}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 6
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a56862962255f483374a4206688a67e86}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a56862962255f483374a4206688a67e86} 
+\index{Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}!Get@{Get}}
+\index{Get@{Get}!Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}} Shopify.\+Unity.\+SDK.\+Cart\+Line\+Items.\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant}{Product\+Variant}}}]{variant }\end{DoxyParamCaption})}
+
+
+
+Returns one Line Item 
+
+based on a Product\+Variant 
+
+. If no line item exists for the variant, {\ttfamily null} will be returned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variant} & variant whose variant id used to create a line item\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ checks\ the\ quantity\ of\ a\ line\ item\ based\ on\ a\ variant}}
+\DoxyCodeLine{Cart\ cart\ =\ ShopifyBuy.Client().Cart();}
+\DoxyCodeLine{}
+\DoxyCodeLine{Debug.Log(cart.LineItems.Get(variant).quantity);}
+
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+% FIG 7
+\Hypertarget{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a06ccbe1299e5654bebff6e74a706062f}\label{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_items_a06ccbe1299e5654bebff6e74a706062f} 
+\index{Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}!Get@{Get}}
+\index{Get@{Get}!Shopify.Unity.SDK.CartLineItems@{Shopify.Unity.SDK.CartLineItems}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_cart_line_item}{Cart\+Line\+Item}} Shopify.\+Unity.\+SDK.\+Cart\+Line\+Items.\+Get (\begin{DoxyParamCaption}\item[{string}]{variant\+Id }\end{DoxyParamCaption})}
+
+
+
+Returns one Line Item 
+
+based on a variant id. If no line item exists for the variant id {\ttfamily null} will be returned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variant\+Id} & variant id used to create a line item\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ that\ checks\ the\ quantity\ of\ a\ line\ item\ based\ on\ variantId}}
+\DoxyCodeLine{Cart\ cart\ =\ ShopifyBuy.Client().Cart();}
+\DoxyCodeLine{}
+\DoxyCodeLine{Debug.Log(cart.LineItems.Get(variantId).quantity);}
+
+\end{DoxyCode}
+ Here is the caller graph for this function\+:
+% FIG 8
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+SDK/Cart\+Line\+Items.\+cs\end{DoxyCompactItemize}

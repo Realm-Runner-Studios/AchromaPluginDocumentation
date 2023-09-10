@@ -1,0 +1,80 @@
+\doxysection{Shopify.\+Unity.\+Order\+Line\+Item Class Reference}
+\hypertarget{class_shopify_1_1_unity_1_1_order_line_item}{}\label{class_shopify_1_1_unity_1_1_order_line_item}\index{Shopify.Unity.OrderLineItem@{Shopify.Unity.OrderLineItem}}
+
+
+Represents a single line in an order. There is one line item for each distinct product variant.  
+
+
+
+
+Inheritance diagram for Shopify.\+Unity.\+Order\+Line\+Item\+:
+% FIG 0
+
+
+Collaboration diagram for Shopify.\+Unity.\+Order\+Line\+Item\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_order_line_item_aade6758b4c458551420312ad8d99a995}{Order\+Line\+Item}} (Dictionary$<$ string, object $>$ data\+JSON)
+\begin{DoxyCompactList}\small\item\em Accepts deserialized json data.  Will further parse passed in data. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_line_item_a7c6dd03ee607b07621889b3c2a4c4418}\label{class_shopify_1_1_unity_1_1_order_line_item_a7c6dd03ee607b07621889b3c2a4c4418} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_attribute}{Attribute}} $>$ {\bfseries custom\+Attributes} ()
+\begin{DoxyCompactList}\small\item\em List of custom attributes associated to the line item. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_line_item_afad93f430beab382e3bd4d7d220de560}\label{class_shopify_1_1_unity_1_1_order_line_item_afad93f430beab382e3bd4d7d220de560} 
+List$<$ \mbox{\hyperlink{class_shopify_1_1_unity_1_1_discount_allocation}{Discount\+Allocation}} $>$ {\bfseries discount\+Allocations} ()
+\begin{DoxyCompactList}\small\item\em The discounts that have been allocated onto the order line item by discount applications. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_line_item_a75b21e43a4b9b09cf265f1957b71787e}\label{class_shopify_1_1_unity_1_1_order_line_item_a75b21e43a4b9b09cf265f1957b71787e} 
+long {\bfseries quantity} ()
+\begin{DoxyCompactList}\small\item\em The number of products variants associated to the line item. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_line_item_a87c2b9f9d9d23701046c78caf7a8481d}\label{class_shopify_1_1_unity_1_1_order_line_item_a87c2b9f9d9d23701046c78caf7a8481d} 
+string {\bfseries title} ()
+\begin{DoxyCompactList}\small\item\em The title of the product combined with title of the variant. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_line_item_afc7e5f56140b61ca92df1867844a1f38}\label{class_shopify_1_1_unity_1_1_order_line_item_afc7e5f56140b61ca92df1867844a1f38} 
+\mbox{\hyperlink{class_shopify_1_1_unity_1_1_product_variant}{Product\+Variant}} {\bfseries variant} ()
+\begin{DoxyCompactList}\small\item\em The product variant object associated to the line item. \end{DoxyCompactList}\item 
+\Hypertarget{class_shopify_1_1_unity_1_1_order_line_item_ad07ff00a97b473eabc8699c71a02672a}\label{class_shopify_1_1_unity_1_1_order_line_item_ad07ff00a97b473eabc8699c71a02672a} 
+object {\bfseries Clone} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries Get$<$ T $>$} (string field, string alias=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_shopify_1_1_unity_1_1_s_d_k_1_1_abstract_response}{Shopify.\+Unity.\+SDK.\+Abstract\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Data\+JSON}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a single line in an order. There is one line item for each distinct product variant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopify_1_1_unity_1_1_order_line_item_aade6758b4c458551420312ad8d99a995}\label{class_shopify_1_1_unity_1_1_order_line_item_aade6758b4c458551420312ad8d99a995} 
+\index{Shopify.Unity.OrderLineItem@{Shopify.Unity.OrderLineItem}!OrderLineItem@{OrderLineItem}}
+\index{OrderLineItem@{OrderLineItem}!Shopify.Unity.OrderLineItem@{Shopify.Unity.OrderLineItem}}
+\doxysubsubsection{\texorpdfstring{OrderLineItem()}{OrderLineItem()}}
+{\footnotesize\ttfamily Shopify.\+Unity.\+Order\+Line\+Item.\+Order\+Line\+Item (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{data\+JSON }\end{DoxyParamCaption})}
+
+
+
+Accepts deserialized json data.  Will further parse passed in data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+JSON} & Deserialized JSON data for Order\+Line\+Item\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Shopify/\+Unity/\+Generated/Order\+Line\+Item.\+cs\end{DoxyCompactItemize}

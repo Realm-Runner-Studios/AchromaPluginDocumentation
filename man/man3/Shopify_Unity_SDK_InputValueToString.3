@@ -1,0 +1,52 @@
+.TH "Shopify.Unity.SDK.InputValueToString" 3 "Achroma" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shopify.Unity.SDK.InputValueToString \- Converts C# values to GraphQL strings for queries\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static string \fBGetList\fP (IList value)"
+.br
+.RI "Returns a string representing a GraphQL list from a C# iteratable object implementing IList\&. "
+.ti -1c
+.RI "static string \fBGet\fP (object value)"
+.br
+.RI "Converts a C# value/object to a GraphQL string value/object\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Converts C# values to GraphQL strings for queries\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static string Shopify\&.Unity\&.SDK\&.InputValueToString\&.Get (object value)\fC [static]\fP"
+
+.PP
+Converts a C# value/object to a GraphQL string value/object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP a C# object to be converted to a GraphQL string value
+.RE
+.PP
+
+.SS "static string Shopify\&.Unity\&.SDK\&.InputValueToString\&.GetList (IList value)\fC [static]\fP"
+
+.PP
+Returns a string representing a GraphQL list from a C# iteratable object implementing IList\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP a C# IList which will be converted to a GraphQL list string
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma from the source code\&.

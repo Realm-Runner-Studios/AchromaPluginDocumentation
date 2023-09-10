@@ -1,0 +1,7 @@
+<map id="Achroma.AchromaFirebaseController.GetAllCardsTask" name="Achroma.AchromaFirebaseController.GetAllCardsTask">
+<area shape="rect" id="Node000001" title="Task to call the Get All Cards Cloud Function on Firebase." alt="" coords="584,5,822,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_firebase_controller.html#aa761dbb9fcee9b07ed3b2942a6ae2b2f" title="Returns a collection of all the cards from Firebase." alt="" coords="298,5,536,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="569,28,536,28,536,23,569,23"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_database_controller.html#ab015604a046b96ae466b9945c2b05a6e" title="Gets a list of cards from the database." alt="" coords="5,5,250,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="283,28,250,28,250,23,283,23"/>
+</map>
