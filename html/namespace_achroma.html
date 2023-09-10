@@ -200,6 +200,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_1_1_all_users.html">AllUsers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_1_1_audio_controller.html">AudioController</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton responsible for playing.  <a href="class_achroma_1_1_audio_controller.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_1_1_card_collection.html">CardCollection</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_1_1_card_collection_item.html">CardCollectionItem</a></td></tr>
@@ -247,6 +250,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_1_1_power_up_type_descriptiopn.html">PowerUpTypeDescriptiopn</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_1_1_power_up_type_enum.html">PowerUpTypeEnum</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_1_1_ranking_u_i.html">RankingUI</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_1_1_ranking_user.html">RankingUser</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_1_1_ranking_user_comparer.html">RankingUserComparer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_1_1_remote_config_manager.html">RemoteConfigManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -364,58 +373,63 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a12c56b88c08fc0b8f136b8f9f2093f71" id="r_a12c56b88c08fc0b8f136b8f9f2093f71"><td class="memItemLeft" align="right" valign="top"><a id="a12c56b88c08fc0b8f136b8f9f2093f71" name="a12c56b88c08fc0b8f136b8f9f2093f71"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AchromaError</b> { <br />
 &#160;&#160;<b>ERR_ASSIGN_USERCHANGE_LISTENER</b>
 , <b>ERR_USER_NOT_AUTHENTICATED</b>
-, <b>ERR_USER_NOT_SIGNED_IN</b>
+, <b>ERR_ASSIGN_USERSIGNIN_LISTENER</b>
+, <b>ERR_ASSIGN_USERSIGNOUT_LISTENER</b>
+, <br />
+&#160;&#160;<b>ERR_USER_NOT_SIGNED_IN</b>
 , <b>ERR_DATABASE_INITIALIZATON</b>
-, <br />
-&#160;&#160;<b>ERR_DATABASE_INITIALIZATON_FIREBASE_NOT_READY</b>
+, <b>ERR_DATABASE_INITIALIZATON_FIREBASE_NOT_READY</b>
 , <b>ERR_DATABASE_INITIALIZATON_CANCELLED</b>
-, <b>ERR_DATABASE_INITIALIZATON_FAULTED</b>
+, <br />
+&#160;&#160;<b>ERR_DATABASE_INITIALIZATON_FAULTED</b>
 , <b>ERR_DATABASE_INITIALIZATON_TIMEOUT</b>
-, <br />
-&#160;&#160;<b>ERR_APPLELOGIN_ACCOUNT_DOESNT_EXIST</b>
+, <b>ERR_APPLELOGIN_ACCOUNT_DOESNT_EXIST</b>
 , <b>ERR_APPLELOGIN_CANCELLED</b>
-, <b>ERR_APPLELOGIN_FAULTED</b>
+, <br />
+&#160;&#160;<b>ERR_APPLELOGIN_FAULTED</b>
 , <b>ERR_APPLELOGIN_TIMEOUT</b>
-, <br />
-&#160;&#160;<b>ERR_APPLELOGIN_GENERIC</b>
+, <b>ERR_APPLELOGIN_GENERIC</b>
 , <b>ERR_GOOGLELOGIN_ACCOUNT_DOESNT_EXIST</b>
-, <b>ERR_GOOGLELOGIN_CANCELLED</b>
+, <br />
+&#160;&#160;<b>ERR_GOOGLELOGIN_CANCELLED</b>
 , <b>ERR_GOOGLELOGIN_FAULTED</b>
-, <br />
-&#160;&#160;<b>ERR_GOOGLELOGIN_TIMEOUT</b>
+, <b>ERR_GOOGLELOGIN_TIMEOUT</b>
 , <b>ERR_GOOGLELOGIN_GENERIC</b>
-, <b>ERR_EMAILLOGIN_EMAIL_NOT_VERIFIED</b>
+, <br />
+&#160;&#160;<b>ERR_EMAILLOGIN_EMAIL_NOT_VERIFIED</b>
 , <b>ERR_EMAILLOGIN_CANCELLED</b>
-, <br />
-&#160;&#160;<b>ERR_EMAILLOGIN_FAULTED</b>
+, <b>ERR_EMAILLOGIN_FAULTED</b>
 , <b>ERR_EMAILLOGIN_TIMEOUT</b>
-, <b>ERR_EMAILLOGIN_GENERIC</b>
+, <br />
+&#160;&#160;<b>ERR_EMAILLOGIN_GENERIC</b>
 , <b>ERR_EMAILLOGIN_ACCOUNT_DOESNT_EXIST</b>
-, <br />
-&#160;&#160;<b>ERR_FORGOTPASSWORD_CANCELLED</b>
+, <b>ERR_FORGOTPASSWORD_CANCELLED</b>
 , <b>ERR_FORGOTPASSWORD_FAULTED</b>
-, <b>ERR_FORGOTPASSWORD_TIMEOUT</b>
+, <br />
+&#160;&#160;<b>ERR_FORGOTPASSWORD_TIMEOUT</b>
 , <b>ERR_EMAILREGISTRATION_CANCELLED</b>
-, <br />
-&#160;&#160;<b>ERR_EMAILREGISTRATION_FAULTED</b>
+, <b>ERR_EMAILREGISTRATION_FAULTED</b>
 , <b>ERR_EMAILREGISTRATION_TIMEOUT</b>
-, <b>ERR_EMAILREGISTRATION_GENERIC</b>
+, <br />
+&#160;&#160;<b>ERR_EMAILREGISTRATION_GENERIC</b>
 , <b>ERR_AUTH_GET_CUSTOM_TOKEN</b>
-, <br />
-&#160;&#160;<b>ERR_FILE_DOWNLOAD</b>
+, <b>ERR_FILE_DOWNLOAD</b>
 , <b>ERR_ASSETBUNDLE_DOWNLOAD</b>
-, <b>ERR_ASSETBUNDLE_DOWNLOAD_REQUEST</b>
+, <br />
+&#160;&#160;<b>ERR_ASSETBUNDLE_DOWNLOAD_REQUEST</b>
 , <b>ERR_REMOTE_CONFIG_FETCH</b>
-, <br />
-&#160;&#160;<b>ERR_SHOP_NOT_INITIALIZED</b>
+, <b>ERR_SHOP_NOT_INITIALIZED</b>
 , <b>ERR_SHOP_FAIL_TO_GET_PRICE</b>
-, <b>ERR_SHOP_FAILED_TO_PURCHASE</b>
-, <b>ERR_CARDS_RETRIEVE</b>
 , <br />
-&#160;&#160;<b>ERR_COULD_NOT_LOAD_SEPARATORS</b>
+&#160;&#160;<b>ERR_SHOP_FAILED_TO_PURCHASE</b>
+, <b>ERR_CARDS_RETRIEVE</b>
+, <b>ERR_COULD_NOT_LOAD_SEPARATORS</b>
 , <b>ERR_COULD_NOT_ADD_SHARDS</b>
-, <b>ERR_COULD_NOT_GO_BACK_IN_TIME</b>
+, <br />
+&#160;&#160;<b>ERR_COULD_NOT_GO_BACK_IN_TIME</b>
 , <b>ERR_TRANSACTION_ALREADY_FOUND</b>
+, <b>ERR_GETTING_RPG_CHARACTERS</b>
+, <b>ERR_SETTING_RPG_CHARACTERS</b>
 <br />
  }</td></tr>
 <tr class="separator:a12c56b88c08fc0b8f136b8f9f2093f71"><td class="memSeparator" colspan="2">&#160;</td></tr>

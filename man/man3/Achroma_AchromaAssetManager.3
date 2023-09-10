@@ -46,6 +46,10 @@ Inherits MonoBehaviour\&.
 .br
 .RI "Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the object\&. "
 .ti -1c
+.RI "void \fBInstantiateAudioClipFromBundle\fP (string assetBundleName, string assetName, UnityAction< bool, string, AudioClip > callback=null)"
+.br
+.RI "Instantiate an AudioClip from an Asset Bundle, given the name of the asset bundle and the name of the AudioClip\&. "
+.ti -1c
 .RI "void \fBUnloadAssetBundles\fP ()"
 .br
 .in -1c
@@ -112,6 +116,21 @@ Method to download text files that usually need the download token after alt?med
 \fIlocalFile\fP The location of the file on the local disk
 .br
 \fIresult\fP callback function, returns success flag, an error message (if any) and a string with the file content (if the file is text type) 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaAssetManager\&.InstantiateAudioClipFromBundle (string assetBundleName, string assetName, UnityAction< bool, string, AudioClip > callback = \fCnull\fP)"
+
+.PP
+Instantiate an AudioClip from an Asset Bundle, given the name of the asset bundle and the name of the AudioClip\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIassetBundleName\fP Name of the asset bundle that will be added to the bucket URL
+.br
+\fIassetName\fP The name of the object to be instantiated
+.br
+\fIcallback\fP The result of the the method, that will return a success flag, an error message (if any) and a Sprite (if successful)
 .RE
 .PP
 

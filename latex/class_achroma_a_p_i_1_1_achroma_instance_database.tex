@@ -13,6 +13,10 @@ static bool {\bfseries Database\+Is\+Loaded} ()
 \begin{DoxyCompactList}\small\item\em This returns to the host application the state of the database. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_a92a8f292805bb1af7da03f3bb691779c}{Add\+User\+Data\+Change\+Listener}} (Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ listener, Unity\+Action$<$ bool, string $>$ callback=null)
 \begin{DoxyCompactList}\small\item\em This adds a listener to the changes on the user data. If something happens to the user, this change is replicated on this method. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60}{Add\+User\+Signed\+In\+Listener}} (Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ listener, Unity\+Action$<$ bool, string $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em This adds a listener to the sign in. Every time the user signs in, an event will get triggered. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476}{Add\+User\+Signed\+Out\+Listener}} (Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ listener, Unity\+Action$<$ bool, string $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em This adds a listener to the sign in. Every time the user signs out, an event will get triggered. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_database_a06d8415725f98f27646452e958e5255d}{Remove\+User\+Data\+Change\+Listener}} (Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ listener, Unity\+Action$<$ bool, string $>$ callback=null)
 \begin{DoxyCompactList}\small\item\em This removes the user data listener to avoid accessing destroyed objects. \end{DoxyCompactList}\item 
 \Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a5d08674ffd55794719163c0ae0dc0313}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a5d08674ffd55794719163c0ae0dc0313} 
@@ -77,11 +81,84 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_a92a8f292805bb1af7da03f3bb691779c_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_a92a8f292805bb1af7da03f3bb691779c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!AddUserSignedInListener@{AddUserSignedInListener}}
+\index{AddUserSignedInListener@{AddUserSignedInListener}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{AddUserSignedInListener()}{AddUserSignedInListener()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Database.\+Add\+User\+Signed\+In\+Listener (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$}]{listener,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This adds a listener to the sign in. Every time the user signs in, an event will get triggered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener method will be called back to the host application when user signs in\\
+\hline
+\end{DoxyParams}
+/// 
+\begin{DoxyParams}{Parameters}
+{\em callback} & The success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476} 
+\index{AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}!AddUserSignedOutListener@{AddUserSignedOutListener}}
+\index{AddUserSignedOutListener@{AddUserSignedOutListener}!AchromaAPI.AchromaInstanceDatabase@{AchromaAPI.AchromaInstanceDatabase}}
+\doxysubsubsection{\texorpdfstring{AddUserSignedOutListener()}{AddUserSignedOutListener()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Database.\+Add\+User\+Signed\+Out\+Listener (\begin{DoxyParamCaption}\item[{Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$}]{listener,  }\item[{Unity\+Action$<$ bool, string $>$}]{callback = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This adds a listener to the sign in. Every time the user signs out, an event will get triggered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener method will be called back to the host application when user signs out\\
+\hline
+\end{DoxyParams}
+/// 
+\begin{DoxyParams}{Parameters}
+{\em callback} & The success/failure feedback\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_database_a383d3e0516dc9cf1d3932b6c7f1c0ddf}\label{class_achroma_a_p_i_1_1_achroma_instance_database_a383d3e0516dc9cf1d3932b6c7f1c0ddf} 

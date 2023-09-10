@@ -20,7 +20,9 @@ var hierarchy =
     [ "AchromaAPI.AchromaInstanceControl", "class_achroma_a_p_i_1_1_achroma_instance_control.html", null ],
     [ "AchromaAPI.AchromaInstanceDatabase", "class_achroma_a_p_i_1_1_achroma_instance_database.html", null ],
     [ "AchromaAPI.AchromaInstanceMatch", "class_achroma_a_p_i_1_1_achroma_instance_match.html", null ],
+    [ "AchromaAPI.AchromaInstanceRPG", "class_achroma_a_p_i_1_1_achroma_instance_r_p_g.html", null ],
     [ "AchromaAPI.AchromaInstanceShards", "class_achroma_a_p_i_1_1_achroma_instance_shards.html", null ],
+    [ "AchromaAPI.AchromaInstanceSounds", "class_achroma_a_p_i_1_1_achroma_instance_sounds.html", null ],
     [ "AchromaAPI.AchromaInstanceStory", "class_achroma_a_p_i_1_1_achroma_instance_story.html", null ],
     [ "AchromaAPI.AchromaInstanceUI", "class_achroma_a_p_i_1_1_achroma_instance_u_i.html", null ],
     [ "Achroma.AchromaItem", "class_achroma_1_1_achroma_item.html", null ],
@@ -28,6 +30,7 @@ var hierarchy =
     [ "Achroma.AchromaLocation", "class_achroma_1_1_achroma_location.html", null ],
     [ "Achroma.AchromaPurchaseOption", "class_achroma_1_1_achroma_purchase_option.html", null ],
     [ "Achroma.AchromaSceneController", "class_achroma_1_1_achroma_scene_controller.html", null ],
+    [ "AchromaAPI.AchromaInstanceSounds.AchromaSoundEffectEnum", "class_achroma_a_p_i_1_1_achroma_instance_sounds_1_1_achroma_sound_effect_enum.html", null ],
     [ "Achroma.AchromaStoryProgress", "class_achroma_1_1_achroma_story_progress.html", null ],
     [ "Achroma.AchromaUtils", "class_achroma_1_1_achroma_utils.html", null ],
     [ "Achroma.AchrometerTier", "struct_achroma_1_1_achrometer_tier.html", null ],
@@ -42,7 +45,8 @@ var hierarchy =
     [ "System.Attribute", null, [
       [ "Achroma.AchromaErrorDescription", "class_achroma_1_1_achroma_error_description.html", null ],
       [ "Achroma.PowerUpTypeDescriptiopn", "class_achroma_1_1_power_up_type_descriptiopn.html", null ],
-      [ "Achroma.StoryDescription", "class_achroma_1_1_story_description.html", null ]
+      [ "Achroma.StoryDescription", "class_achroma_1_1_story_description.html", null ],
+      [ "AchromaAPI.AchromaInstanceSounds.AchromaSoundEffectDescription", "class_achroma_a_p_i_1_1_achroma_instance_sounds_1_1_achroma_sound_effect_description.html", null ]
     ] ],
     [ "Achroma.CardCollection", "class_achroma_1_1_card_collection.html", null ],
     [ "Achroma.CardCollectionItem", "class_achroma_1_1_card_collection_item.html", null ],
@@ -57,6 +61,9 @@ var hierarchy =
     [ "GoogleSignInHandler", "interface_google_sign_in_handler.html", null ],
     [ "Achroma.History", "struct_achroma_1_1_history.html", null ],
     [ "Achroma.HistoryStep", "struct_achroma_1_1_history_step.html", null ],
+    [ "IComparer", null, [
+      [ "Achroma.RankingUserComparer", "class_achroma_1_1_ranking_user_comparer.html", null ]
+    ] ],
     [ "IDetailedStoreListener", null, [
       [ "Achroma.IAPManager", "class_achroma_1_1_i_a_p_manager.html", null ]
     ] ],
@@ -94,7 +101,9 @@ var hierarchy =
       [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
       [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
       [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
+      [ "Achroma.AchromaDatabaseController", "class_achroma_1_1_achroma_database_controller.html", null ],
       [ "Achroma.AchromaFadeIn", "class_achroma_1_1_achroma_fade_in.html", null ],
+      [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
       [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
       [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
       [ "Achroma.AchromaFirebaseController", "class_achroma_1_1_achroma_firebase_controller.html", null ],
@@ -125,6 +134,8 @@ var hierarchy =
         [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
         [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
         [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
+        [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
+        [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ],
         [ "Achroma.AchromaUIController", "class_achroma_1_1_achroma_u_i_controller.html", null ]
       ] ],
       [ "Achroma.AchromaRemoteConfigDependency", "class_achroma_1_1_achroma_remote_config_dependency.html", null ],
@@ -139,7 +150,9 @@ var hierarchy =
       [ "Achroma.AchromaShopItem", "class_achroma_1_1_achroma_shop_item.html", null ],
       [ "Achroma.AchromaStoryDependency", "class_achroma_1_1_achroma_story_dependency.html", null ],
       [ "Achroma.AchromaTrueParallax", "class_achroma_1_1_achroma_true_parallax.html", null ],
+      [ "Achroma.AudioController", "class_achroma_1_1_audio_controller.html", null ],
       [ "Achroma.IAPManager", "class_achroma_1_1_i_a_p_manager.html", null ],
+      [ "Achroma.RankingUser", "class_achroma_1_1_ranking_user.html", null ],
       [ "AchromaFormField", "class_achroma_form_field.html", null ],
       [ "AchromaLoadingUI", "class_achroma_loading_u_i.html", null ],
       [ "AchromaPlugin", "class_achroma_plugin.html", null ],
@@ -149,7 +162,9 @@ var hierarchy =
         [ "Achroma.AchromaSignInUI", "class_achroma_1_1_achroma_sign_in_u_i.html", null ],
         [ "Achroma.AchromaSignInUI", "class_achroma_1_1_achroma_sign_in_u_i.html", null ],
         [ "Achroma.AchromaSignInUI", "class_achroma_1_1_achroma_sign_in_u_i.html", null ],
-        [ "Achroma.AchromaSignInUI", "class_achroma_1_1_achroma_sign_in_u_i.html", null ]
+        [ "Achroma.AchromaSignInUI", "class_achroma_1_1_achroma_sign_in_u_i.html", null ],
+        [ "Achroma.RankingUI", "class_achroma_1_1_ranking_u_i.html", null ],
+        [ "CharacterSelectorAvatarList", "class_character_selector_avatar_list.html", null ]
       ] ],
       [ "AnimationCanvas", "class_animation_canvas.html", null ],
       [ "CFX_AutoDestructShuriken", "class_c_f_x___auto_destruct_shuriken.html", null ],
@@ -162,6 +177,11 @@ var hierarchy =
       [ "CFX_Demo_Translate", "class_c_f_x___demo___translate.html", null ],
       [ "CFX_LightFlicker", "class_c_f_x___light_flicker.html", null ],
       [ "CFX_LightIntensityFade", "class_c_f_x___light_intensity_fade.html", null ],
+      [ "CharacterSelector", "class_character_selector.html", null ],
+      [ "CharacterSelectorAvatar", "class_character_selector_avatar.html", null ],
+      [ "CharacterSelectorChapter", "class_character_selector_chapter.html", null ],
+      [ "CharacterSelectorGrid", "class_character_selector_grid.html", null ],
+      [ "CharacterSelectorStory", "class_character_selector_story.html", null ],
       [ "ChatController", "class_chat_controller.html", null ],
       [ "ContextMenuTrigger", "class_context_menu_trigger.html", null ],
       [ "Cooldown", "class_cooldown.html", null ],
@@ -169,7 +189,8 @@ var hierarchy =
         [ "DevionGames.UIWidgets.UIWidget", null, [
           [ "DevionGames.UIWidgets.DialogBox", null, [
             [ "Achroma.AchromaShardShopDialogBox", "class_achroma_1_1_achroma_shard_shop_dialog_box.html", null ],
-            [ "Achroma.FriendVisualizer", "class_achroma_1_1_friend_visualizer.html", null ]
+            [ "Achroma.FriendVisualizer", "class_achroma_1_1_friend_visualizer.html", null ],
+            [ "CharacterSelectorDialogBox", "class_character_selector_dialog_box.html", null ]
           ] ]
         ] ]
       ] ],
@@ -183,12 +204,14 @@ var hierarchy =
       [ "UniWebView", "class_uni_web_view.html", null ],
       [ "UniWebViewAndroidStaticListener", "class_uni_web_view_android_static_listener.html", null ],
       [ "UniWebViewNativeListener", "class_uni_web_view_native_listener.html", null ],
-      [ "UniWebViewSafeBrowingComponent", "class_uni_web_view_safe_browing_component.html", null ]
+      [ "UniWebViewSafeBrowingComponent", "class_uni_web_view_safe_browing_component.html", null ],
+      [ "VibrationExample", "class_vibration_example.html", null ]
     ] ],
     [ "Achroma.NewsCollection", "class_achroma_1_1_news_collection.html", null ],
     [ "Achroma.NewsItem", "class_achroma_1_1_news_item.html", null ],
     [ "NSObject", null, [
-      [ "UnitySignInWithApple", "interface_unity_sign_in_with_apple.html", null ]
+      [ "UnitySignInWithApple", "interface_unity_sign_in_with_apple.html", null ],
+      [ "Vibration", "interface_vibration.html", null ]
     ] ],
     [ "UnityEngine.Object", null, [
       [ "UniWebViewSafeBrowsing", "class_uni_web_view_safe_browsing.html", null ]
@@ -232,5 +255,7 @@ var hierarchy =
     [ "Achroma.UserMatchData", "struct_achroma_1_1_user_match_data.html", null ],
     [ "Achroma.Value", "class_achroma_1_1_value.html", null ],
     [ "Achroma.Variable", "class_achroma_1_1_variable.html", null ],
+    [ "Vibration()", "category_vibration_07_08.html", null ],
+    [ "VibrationController", "class_vibration_controller.html", null ],
     [ "WindowsRuntimeExtension", "class_windows_runtime_extension.html", null ]
 ];

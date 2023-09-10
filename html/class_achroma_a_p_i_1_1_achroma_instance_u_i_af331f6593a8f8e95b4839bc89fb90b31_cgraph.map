@@ -1,0 +1,5 @@
+<map id="AchromaAPI.AchromaInstanceUI.RemoveEventFromSideOption" name="AchromaAPI.AchromaInstanceUI.RemoveEventFromSideOption">
+<area shape="rect" id="Node000001" title="Removes the host app action attached to the button." alt="" coords="5,5,222,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_u_i_controller.html#aac2e72d669cc689a8d6038f039ad6a5a" title="Removes the host app action attached to the button." alt="" coords="270,5,472,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,23,255,23,255,28,222,28"/>
+</map>

@@ -1,6 +1,8 @@
-\chapter{README}
-\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e}{}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e}\index{README@{README}}
-\doxylink{namespace_achroma}{Achroma} Plugin\#\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md0}{}\doxysubsection{\texorpdfstring{1. Install dependencies}{1. Install dependencies}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md0}
+\chapter{Achroma Plugin}
+\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e}{}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e}\index{Achroma Plugin@{Achroma Plugin}}
+\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md0}%
+ \hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{1. Install dependencies}{1. Install dependencies}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md1}
 First of all, under Build Settings, choose Android platform
 
 
@@ -14,12 +16,17 @@ First of all, under Build Settings, choose Android platform
 \item Firebase\+Database
 \item Firebase\+Functions
 \item Firebase\+Messaging
+\item Firebase\+Storage
 \item Firebase\+Remote\+Config
 \end{DoxyItemize}
 \item Copy the Firebase config files "{}google-\/services.\+json"{} and "{}\+Google\+Service-\/\+Info.\+plist"{} to the Assets/\+Firebase folder
 \item Upgrade the External Dependency Manager by downloading the package from \href{https://github.com/googlesamples/unity-jar-resolver/blob/master/external-dependency-manager-latest.unitypackage}{\texttt{ https\+://github.\+com/googlesamples/unity-\/jar-\/resolver/blob/master/external-\/dependency-\/manager-\/latest.\+unitypackage}}
 \item Inside the folder Assets/\+Parse/\+Plugins remove everything (Unity.\+Compat.\+dll and Unity.\+Tasks.\+dll) from the root and keep just the folder dot\+Net45
-\end{DoxyEnumerate}\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md1}{}\doxysubsection{\texorpdfstring{2. Firebase Android setup}{2. Firebase Android setup}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md1}
+\item Install the package Unity UI Extensions from \href{https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git}{\texttt{ https\+://github.\+com/\+Unity-\/\+UI-\/\+Extensions/com.\+unity.\+uiextensions.\+git}} on Package Manager
+\item Activate the In-\/app purchase under Project Settings
+\item Upgrade the package In App Purchase to 4.\+9.\+4 at least
+\item Add 2D animation and 2D sprite packages
+\end{DoxyEnumerate}\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{2. Firebase Android setup}{2. Firebase Android setup}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md2}
 
 \begin{DoxyItemize}
 \item Switch platform to Android
@@ -27,15 +34,15 @@ First of all, under Build Settings, choose Android platform
 \item Make sure "{}\+User Jetifier"{} is deactivated
 \item Run Assets -\/\texorpdfstring{$>$}{>} External Dependency Manager -\/\texorpdfstring{$>$}{>} Android Resolver -\/\texorpdfstring{$>$}{>} Force Resolve
 \item Inside Unity, go to Menu \doxylink{namespace_achroma}{Achroma} -\/\texorpdfstring{$>$}{>} Copy Google Sign In Files. This is needed to to make Google Sign In work.
-\end{DoxyItemize}\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{\texorpdfstring{3. Project setup}{3. Project setup}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md2}
+\end{DoxyItemize}\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{3. Project setup}{3. Project setup}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md3}
 
 \begin{DoxyItemize}
 \item Add the \doxylink{namespace_achroma}{Achroma} Plugin to the project by adding it by git URL\+: \href{https://github.com/Realm-Runner-Studios/Achroma-Unity-Plugin.git}{\texttt{ https\+://github.\+com/\+Realm-\/\+Runner-\/\+Studios/\+Achroma-\/\+Unity-\/\+Plugin.\+git}}
 \item Go to Edit -\/\texorpdfstring{$>$}{>} Project Settings. On the left side, under "{}\+Services"{}, select "{}\+In-\/\+App Purchasing"{} and click on the switch button on the top right corner
-\end{DoxyItemize}\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md3}{}\doxysubsubsection{\texorpdfstring{3.\+1 Firebase setup}{3.1 Firebase setup}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md3}
+\end{DoxyItemize}\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{\texorpdfstring{3.\+1 Firebase setup}{3.1 Firebase setup}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md4}
 In Firebase, make sure that under "{}\+Remote Config"{} there\textquotesingle{}s a parameter with the name of the app + "{}\+Last\+Version"{} + platform. For example, if the bundle identifier on Android is com.\+realmrunnerstudios.\+achroma\+Adenture, a parameter must be third element of the bundle identifier (achroma\+Adventure) + "{}\+Last\+Version\+Android"{}. The result would be "{}achroma\+Adventure\+Last\+Version\+Android"{} For i\+OS, if the bundle identifier is "{}com.\+realmrunnerstudios.\+achroma-\/adventure"{}, the result would "{}achromadventure\+Last\+Versioni\+OS"{} (the hiphen is not accepted on Firebase)
 
-Do the same for the "{}\+Last\+Version"{} parameters. You must also add two parameters for the app store address, like\+: achroma\+Adventure\+Link\+Store\+Android achromaadenture\+Link\+Storei\+OS These parameters will contain a link to the App Store or Google Play store where the user will be taken to to download a new version.\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{\texorpdfstring{4. Usage}{4. Usage}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md4}
+Do the same for the "{}\+Last\+Version"{} parameters. You must also add two parameters for the app store address, like\+: achroma\+Adventure\+Link\+Store\+Android achromaadenture\+Link\+Storei\+OS These parameters will contain a link to the App Store or Google Play store where the user will be taken to to download a new version.\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md5}{}\doxysection{\texorpdfstring{4. Usage}{4. Usage}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md5}
 To use the plugin, add {\ttfamily using \doxylink{namespace_achroma_a_p_i}{Achroma\+API};} to the head of your script.
 
 This plugin has areas of usage depending on what you need todo\+:
@@ -75,6 +82,6 @@ You can use the plugin as follows. Everything starts with the \doxylink{namespac
 \DoxyCodeLine{\}}
 
 \end{DoxyCode}
-\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Android build}{Android build}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md5}
-When building for Android, make sure a folder with the name Firebase\+App.\+androidlib is created inside Assets/\+Plugins/\+Android. If it\textquotesingle{}s not created, run Assets -\/\texorpdfstring{$>$}{>} External Dependency Manager -\/\texorpdfstring{$>$}{>} Android Resolver -\/\texorpdfstring{$>$}{>} Forse Resolve\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{\texorpdfstring{i\+OS build}{iOS build}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md6}
+\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md6}{}\doxysection{\texorpdfstring{Android build}{Android build}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md6}
+When building for Android, make sure a folder with the name Firebase\+App.\+androidlib is created inside Assets/\+Plugins/\+Android. If it\textquotesingle{}s not created, run Assets -\/\texorpdfstring{$>$}{>} External Dependency Manager -\/\texorpdfstring{$>$}{>} Android Resolver -\/\texorpdfstring{$>$}{>} Forse Resolve\hypertarget{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md7}{}\doxysection{\texorpdfstring{i\+OS build}{iOS build}}\label{md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e_autotoc_md7}
 When building for i\+OS, inside Xcode make sure Bitcode is disabled for the Unity\+Framework package 

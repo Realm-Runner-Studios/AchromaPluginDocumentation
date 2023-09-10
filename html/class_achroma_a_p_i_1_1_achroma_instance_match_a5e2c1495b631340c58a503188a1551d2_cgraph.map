@@ -1,0 +1,5 @@
+<map id="AchromaAPI.AchromaInstanceMatch.QueryRankingCloud" name="AchromaAPI.AchromaInstanceMatch.QueryRankingCloud">
+<area shape="rect" id="Node000001" title="Returns a list with the ranking list for a certain type of game." alt="" coords="5,5,207,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#a47e5b60b208ce8178279085c74086f02" title="Returns a list with the ranking list for a certain type of game." alt="" coords="255,5,499,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,23,240,23,240,28,207,28"/>
+</map>

@@ -108,6 +108,12 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>DatabaseIsLoad
 <tr class="memitem:a92a8f292805bb1af7da03f3bb691779c" id="r_a92a8f292805bb1af7da03f3bb691779c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_a_p_i_1_1_achroma_instance_database.html#a92a8f292805bb1af7da03f3bb691779c">AddUserDataChangeListener</a> (UnityAction&lt; <a class="el" href="class_achroma_1_1_user_data.html">UserData</a> &gt; listener, UnityAction&lt; bool, string &gt; callback=null)</td></tr>
 <tr class="memdesc:a92a8f292805bb1af7da03f3bb691779c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This adds a listener to the changes on the user data. If something happens to the user, this change is replicated on this method.  <br /></td></tr>
 <tr class="separator:a92a8f292805bb1af7da03f3bb691779c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8a014a629616f59729d7892fcaac60" id="r_a3c8a014a629616f59729d7892fcaac60"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_a_p_i_1_1_achroma_instance_database.html#a3c8a014a629616f59729d7892fcaac60">AddUserSignedInListener</a> (UnityAction&lt; <a class="el" href="class_achroma_1_1_user_data.html">UserData</a> &gt; listener, UnityAction&lt; bool, string &gt; callback=null)</td></tr>
+<tr class="memdesc:a3c8a014a629616f59729d7892fcaac60"><td class="mdescLeft">&#160;</td><td class="mdescRight">This adds a listener to the sign in. Every time the user signs in, an event will get triggered.  <br /></td></tr>
+<tr class="separator:a3c8a014a629616f59729d7892fcaac60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2e22bd962964e7b7198302a9807476" id="r_a3a2e22bd962964e7b7198302a9807476"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_a_p_i_1_1_achroma_instance_database.html#a3a2e22bd962964e7b7198302a9807476">AddUserSignedOutListener</a> (UnityAction&lt; <a class="el" href="class_achroma_1_1_user_data.html">UserData</a> &gt; listener, UnityAction&lt; bool, string &gt; callback=null)</td></tr>
+<tr class="memdesc:a3a2e22bd962964e7b7198302a9807476"><td class="mdescLeft">&#160;</td><td class="mdescRight">This adds a listener to the sign in. Every time the user signs out, an event will get triggered.  <br /></td></tr>
+<tr class="separator:a3a2e22bd962964e7b7198302a9807476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06d8415725f98f27646452e958e5255d" id="r_a06d8415725f98f27646452e958e5255d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_a_p_i_1_1_achroma_instance_database.html#a06d8415725f98f27646452e958e5255d">RemoveUserDataChangeListener</a> (UnityAction&lt; <a class="el" href="class_achroma_1_1_user_data.html">UserData</a> &gt; listener, UnityAction&lt; bool, string &gt; callback=null)</td></tr>
 <tr class="memdesc:a06d8415725f98f27646452e958e5255d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This removes the user data listener to avoid accessing destroyed objects.  <br /></td></tr>
 <tr class="separator:a06d8415725f98f27646452e958e5255d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,7 +228,151 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_achroma_a_p_i_1_1_achroma_instance_database_a92a8f292805bb1af7da03f3bb691779c_icgraph.png" border="0" usemap="#aclass_achroma_a_p_i_1_1_achroma_instance_database_a92a8f292805bb1af7da03f3bb691779c_icgraph" alt=""/></div>
 <map name="aclass_achroma_a_p_i_1_1_achroma_instance_database_a92a8f292805bb1af7da03f3bb691779c_icgraph" id="aclass_achroma_a_p_i_1_1_achroma_instance_database_a92a8f292805bb1af7da03f3bb691779c_icgraph">
 <area shape="rect" title="This adds a listener to the changes on the user data. If something happens to the user,..." alt="" coords="259,5,510,46"/>
-<area shape="rect" href="class_achroma_a_p_i_1_1_achroma_instance.html#a4717d0a22f9bc3c8284bcb808f631163" title="This will initialize all the assets needed to use the plugin, like database layer UI,..." alt="" coords="5,5,211,46"/>
+<area shape="rect" href="class_achroma_a_p_i_1_1_achroma_instance.html#a54369979ac7e5d1f31a960e4fadf2418" title="This will initialize all the assets needed to use the plugin, like database layer UI,..." alt="" coords="5,5,211,46"/>
+<area shape="poly" title=" " alt="" coords="244,28,211,28,211,23,244,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3c8a014a629616f59729d7892fcaac60" name="a3c8a014a629616f59729d7892fcaac60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8a014a629616f59729d7892fcaac60">&#9670;&#160;</a></span>AddUserSignedInListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AchromaAPI.AchromaInstanceDatabase.AddUserSignedInListener </td>
+          <td>(</td>
+          <td class="paramtype">UnityAction&lt; <a class="el" href="class_achroma_1_1_user_data.html">UserData</a> &gt;&#160;</td>
+          <td class="paramname"><em>listener</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UnityAction&lt; bool, string &gt;&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This adds a listener to the sign in. Every time the user signs in, an event will get triggered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>The listener method will be called back to the host application when user signs in</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>/// </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>The success/failure feedback</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60_cgraph.png" border="0" usemap="#aclass_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60_cgraph" alt=""/></div>
+<map name="aclass_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60_cgraph" id="aclass_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60_cgraph">
+<area shape="rect" title="This adds a listener to the sign in. Every time the user signs in, an event will get triggered." alt="" coords="5,5,235,46"/>
+<area shape="rect" href="class_achroma_1_1_achroma_manager.html#a9da982e1b6bb0676daa31316949e642a" title="Method to load everything that&#39;s needed to call Achroma plugin features." alt="" coords="283,5,493,46"/>
+<area shape="poly" title=" " alt="" coords="235,23,268,23,268,28,235,28"/>
+<area shape="rect" href="class_achroma_1_1_achroma_parent_controller.html#a9b7cd6b8a910602b1472e2d5be3b8bf8" title="This method loads a scene synchronously and returns a callback when the scene is ended loading." alt="" coords="541,5,767,46"/>
+<area shape="poly" title=" " alt="" coords="493,23,526,23,526,28,493,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60_icgraph.png" border="0" usemap="#aclass_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60_icgraph" alt=""/></div>
+<map name="aclass_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60_icgraph" id="aclass_achroma_a_p_i_1_1_achroma_instance_database_a3c8a014a629616f59729d7892fcaac60_icgraph">
+<area shape="rect" title="This adds a listener to the sign in. Every time the user signs in, an event will get triggered." alt="" coords="259,5,488,46"/>
+<area shape="rect" href="class_achroma_a_p_i_1_1_achroma_instance.html#a54369979ac7e5d1f31a960e4fadf2418" title="This will initialize all the assets needed to use the plugin, like database layer UI,..." alt="" coords="5,5,211,46"/>
+<area shape="poly" title=" " alt="" coords="244,28,211,28,211,23,244,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3a2e22bd962964e7b7198302a9807476" name="a3a2e22bd962964e7b7198302a9807476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2e22bd962964e7b7198302a9807476">&#9670;&#160;</a></span>AddUserSignedOutListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AchromaAPI.AchromaInstanceDatabase.AddUserSignedOutListener </td>
+          <td>(</td>
+          <td class="paramtype">UnityAction&lt; <a class="el" href="class_achroma_1_1_user_data.html">UserData</a> &gt;&#160;</td>
+          <td class="paramname"><em>listener</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UnityAction&lt; bool, string &gt;&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This adds a listener to the sign in. Every time the user signs out, an event will get triggered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>The listener method will be called back to the host application when user signs out</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>/// </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>The success/failure feedback</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476_cgraph.png" border="0" usemap="#aclass_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476_cgraph" alt=""/></div>
+<map name="aclass_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476_cgraph" id="aclass_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476_cgraph">
+<area shape="rect" title="This adds a listener to the sign in. Every time the user signs out, an event will get triggered." alt="" coords="5,5,245,46"/>
+<area shape="rect" href="class_achroma_1_1_achroma_manager.html#a9da982e1b6bb0676daa31316949e642a" title="Method to load everything that&#39;s needed to call Achroma plugin features." alt="" coords="293,5,503,46"/>
+<area shape="poly" title=" " alt="" coords="245,23,278,23,278,28,245,28"/>
+<area shape="rect" href="class_achroma_1_1_achroma_parent_controller.html#a9b7cd6b8a910602b1472e2d5be3b8bf8" title="This method loads a scene synchronously and returns a callback when the scene is ended loading." alt="" coords="551,5,777,46"/>
+<area shape="poly" title=" " alt="" coords="503,23,536,23,536,28,503,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476_icgraph.png" border="0" usemap="#aclass_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476_icgraph" alt=""/></div>
+<map name="aclass_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476_icgraph" id="aclass_achroma_a_p_i_1_1_achroma_instance_database_a3a2e22bd962964e7b7198302a9807476_icgraph">
+<area shape="rect" title="This adds a listener to the sign in. Every time the user signs out, an event will get triggered." alt="" coords="259,5,498,46"/>
+<area shape="rect" href="class_achroma_a_p_i_1_1_achroma_instance.html#a54369979ac7e5d1f31a960e4fadf2418" title="This will initialize all the assets needed to use the plugin, like database layer UI,..." alt="" coords="5,5,211,46"/>
 <area shape="poly" title=" " alt="" coords="244,28,211,28,211,23,244,23"/>
 </map>
 </div>

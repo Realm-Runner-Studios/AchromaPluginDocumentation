@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Achroma Plugin: README</title>
+<title>Achroma Plugin: Achroma Plugin</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,12 +89,12 @@ $(document).ready(function(){initNavTree('md__2_users_2diego_2_documents_2_unity
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">README</div></div>
+  <div class="headertitle"><div class="title">Achroma Plugin</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="el" href="namespace_achroma.html">Achroma</a> Plugin#</p>
-<h2><a class="anchor" id="autotoc_md0"></a>
-1. Install dependencies</h2>
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> </p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+1. Install dependencies</h1>
 <p>First of all, under Build Settings, choose Android platform</p>
 <ol type="1">
 <li>Create an empty project</li>
@@ -105,15 +105,20 @@ $(document).ready(function(){initNavTree('md__2_users_2diego_2_documents_2_unity
 <li>FirebaseDatabase</li>
 <li>FirebaseFunctions</li>
 <li>FirebaseMessaging</li>
+<li>FirebaseStorage</li>
 <li>FirebaseRemoteConfig</li>
 </ul>
 </li>
 <li>Copy the Firebase config files "google-services.json" and "GoogleService-Info.plist" to the Assets/Firebase folder</li>
 <li>Upgrade the External Dependency Manager by downloading the package from <a href="https://github.com/googlesamples/unity-jar-resolver/blob/master/external-dependency-manager-latest.unitypackage">https://github.com/googlesamples/unity-jar-resolver/blob/master/external-dependency-manager-latest.unitypackage</a></li>
 <li>Inside the folder Assets/Parse/Plugins remove everything (Unity.Compat.dll and Unity.Tasks.dll) from the root and keep just the folder dotNet45</li>
+<li>Install the package Unity UI Extensions from <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git">https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git</a> on Package Manager</li>
+<li>Activate the In-app purchase under Project Settings</li>
+<li>Upgrade the package In App Purchase to 4.9.4 at least</li>
+<li>Add 2D animation and 2D sprite packages</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md1"></a>
-2. Firebase Android setup</h2>
+<h1><a class="anchor" id="autotoc_md2"></a>
+2. Firebase Android setup</h1>
 <ul>
 <li>Switch platform to Android</li>
 <li>Go to Assets -&gt; External Dependency Manager -&gt; Android Resolver -&gt; Settings</li>
@@ -121,18 +126,18 @@ $(document).ready(function(){initNavTree('md__2_users_2diego_2_documents_2_unity
 <li>Run Assets -&gt; External Dependency Manager -&gt; Android Resolver -&gt; Force Resolve</li>
 <li>Inside Unity, go to Menu <a class="el" href="namespace_achroma.html">Achroma</a> -&gt; Copy Google Sign In Files. This is needed to to make Google Sign In work.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md2"></a>
-3. Project setup</h2>
+<h1><a class="anchor" id="autotoc_md3"></a>
+3. Project setup</h1>
 <ul>
 <li>Add the <a class="el" href="namespace_achroma.html">Achroma</a> Plugin to the project by adding it by git URL: <a href="https://github.com/Realm-Runner-Studios/Achroma-Unity-Plugin.git">https://github.com/Realm-Runner-Studios/Achroma-Unity-Plugin.git</a></li>
 <li>Go to Edit -&gt; Project Settings. On the left side, under "Services", select "In-App Purchasing" and click on the switch button on the top right corner</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md3"></a>
-3.1 Firebase setup</h3>
+<h2><a class="anchor" id="autotoc_md4"></a>
+3.1 Firebase setup</h2>
 <p>In Firebase, make sure that under "Remote Config" there's a parameter with the name of the app + "LastVersion" + platform. For example, if the bundle identifier on Android is com.realmrunnerstudios.achromaAdenture, a parameter must be third element of the bundle identifier (achromaAdventure) + "LastVersionAndroid". The result would be "achromaAdventureLastVersionAndroid" For iOS, if the bundle identifier is "com.realmrunnerstudios.achroma-adventure", the result would "achromadventureLastVersioniOS" (the hiphen is not accepted on Firebase)</p>
 <p>Do the same for the "LastVersion" parameters. You must also add two parameters for the app store address, like: achromaAdventureLinkStoreAndroid achromaadentureLinkStoreiOS These parameters will contain a link to the App Store or Google Play store where the user will be taken to to download a new version.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
-4. Usage</h2>
+<h1><a class="anchor" id="autotoc_md5"></a>
+4. Usage</h1>
 <p>To use the plugin, add <code>using <a class="el" href="namespace_achroma_a_p_i.html">AchromaAPI</a>;</code> to the head of your script.</p>
 <p>This plugin has areas of usage depending on what you need todo:</p>
 <p><code>AchromaInstanceAssets</code> for anything related to Assets like Characters, Locations, Objects and Actions.</p>
@@ -158,11 +163,11 @@ $(document).ready(function(){initNavTree('md__2_users_2diego_2_documents_2_unity
 <div class="line"> </div>
 <div class="line">    });</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
-Android build</h2>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
+Android build</h1>
 <p>When building for Android, make sure a folder with the name FirebaseApp.androidlib is created inside Assets/Plugins/Android. If it's not created, run Assets -&gt; External Dependency Manager -&gt; Android Resolver -&gt; Forse Resolve</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
-iOS build</h2>
+<h1><a class="anchor" id="autotoc_md7"></a>
+iOS build</h1>
 <p>When building for iOS, inside Xcode make sure Bitcode is disabled for the UnityFramework package </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

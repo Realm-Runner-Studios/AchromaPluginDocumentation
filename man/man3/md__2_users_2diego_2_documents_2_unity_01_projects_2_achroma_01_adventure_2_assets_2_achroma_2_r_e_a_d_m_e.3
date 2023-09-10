@@ -2,10 +2,11 @@
 .ad l
 .nh
 .SH NAME
-md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e \- README 
+md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e \- \fBAchroma\fP Plugin 
 .PP
-\fBAchroma\fP Plugin#
-.SS "1\&. Install dependencies"
+ 
+.SH "1\&. Install dependencies"
+.PP
 First of all, under Build Settings, choose Android platform
 .PP
 .IP "1." 4
@@ -25,6 +26,8 @@ FirebaseFunctions
 .IP "  \(bu" 4
 FirebaseMessaging
 .IP "  \(bu" 4
+FirebaseStorage
+.IP "  \(bu" 4
 FirebaseRemoteConfig
 .PP
 
@@ -34,8 +37,17 @@ Copy the Firebase config files 'google-services\&.json' and 'GoogleService-Info\
 Upgrade the External Dependency Manager by downloading the package from https://github.com/googlesamples/unity-jar-resolver/blob/master/external-dependency-manager-latest.unitypackage
 .IP "7." 4
 Inside the folder Assets/Parse/Plugins remove everything (Unity\&.Compat\&.dll and Unity\&.Tasks\&.dll) from the root and keep just the folder dotNet45
+.IP "8." 4
+Install the package Unity UI Extensions from https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git on Package Manager
+.IP "9." 4
+Activate the In-app purchase under Project Settings
+.IP "10." 4
+Upgrade the package In App Purchase to 4\&.9\&.4 at least
+.IP "11." 4
+Add 2D animation and 2D sprite packages
 .PP
-.SS "2\&. Firebase Android setup"
+.SH "2\&. Firebase Android setup"
+.PP
 .IP "\(bu" 2
 Switch platform to Android
 .IP "\(bu" 2
@@ -47,7 +59,8 @@ Run Assets -> External Dependency Manager -> Android Resolver -> Force Resolve
 .IP "\(bu" 2
 Inside Unity, go to Menu \fBAchroma\fP -> Copy Google Sign In Files\&. This is needed to to make Google Sign In work\&.
 .PP
-.SS "3\&. Project setup"
+.SH "3\&. Project setup"
+.PP
 .IP "\(bu" 2
 Add the \fBAchroma\fP Plugin to the project by adding it by git URL: https://github.com/Realm-Runner-Studios/Achroma-Unity-Plugin.git
 .IP "\(bu" 2
@@ -57,7 +70,8 @@ Go to Edit -> Project Settings\&. On the left side, under 'Services', select 'In
 In Firebase, make sure that under 'Remote Config' there's a parameter with the name of the app + 'LastVersion' + platform\&. For example, if the bundle identifier on Android is com\&.realmrunnerstudios\&.achromaAdenture, a parameter must be third element of the bundle identifier (achromaAdventure) + 'LastVersionAndroid'\&. The result would be 'achromaAdventureLastVersionAndroid' For iOS, if the bundle identifier is 'com\&.realmrunnerstudios\&.achroma-adventure', the result would 'achromadventureLastVersioniOS' (the hiphen is not accepted on Firebase)
 .PP
 Do the same for the 'LastVersion' parameters\&. You must also add two parameters for the app store address, like: achromaAdventureLinkStoreAndroid achromaadentureLinkStoreiOS These parameters will contain a link to the App Store or Google Play store where the user will be taken to to download a new version\&.
-.SS "4\&. Usage"
+.SH "4\&. Usage"
+.PP
 To use the plugin, add \fCusing \fBAchromaAPI\fP;\fP to the head of your script\&.
 .PP
 This plugin has areas of usage depending on what you need todo:
@@ -99,7 +113,9 @@ public void SignIn()
 
 .fi
 .PP
-.SS "Android build"
+.SH "Android build"
+.PP
 When building for Android, make sure a folder with the name FirebaseApp\&.androidlib is created inside Assets/Plugins/Android\&. If it's not created, run Assets -> External Dependency Manager -> Android Resolver -> Forse Resolve
-.SS "iOS build"
+.SH "iOS build"
+.PP
 When building for iOS, inside Xcode make sure Bitcode is disabled for the UnityFramework package 

@@ -149,6 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a419fc2d427990cc742d38f80b677cb5c" id="r_a419fc2d427990cc742d38f80b677cb5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_1_1_achroma_asset_manager.html#a419fc2d427990cc742d38f80b677cb5c">InstantiateObjectFromBundle</a> (string assetBundleName, string assetName, UnityAction&lt; bool, string, GameObject &gt; callback=null)</td></tr>
 <tr class="memdesc:a419fc2d427990cc742d38f80b677cb5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the object.  <br /></td></tr>
 <tr class="separator:a419fc2d427990cc742d38f80b677cb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf22f6586b9a56599b8718264c19fa23" id="r_acf22f6586b9a56599b8718264c19fa23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_achroma_1_1_achroma_asset_manager.html#acf22f6586b9a56599b8718264c19fa23">InstantiateAudioClipFromBundle</a> (string assetBundleName, string assetName, UnityAction&lt; bool, string, AudioClip &gt; callback=null)</td></tr>
+<tr class="memdesc:acf22f6586b9a56599b8718264c19fa23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate an AudioClip from an Asset Bundle, given the name of the asset bundle and the name of the AudioClip.  <br /></td></tr>
+<tr class="separator:acf22f6586b9a56599b8718264c19fa23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a306d564a8382658d7512962a9e49cb5a" id="r_a306d564a8382658d7512962a9e49cb5a"><td class="memItemLeft" align="right" valign="top"><a id="a306d564a8382658d7512962a9e49cb5a" name="a306d564a8382658d7512962a9e49cb5a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UnloadAssetBundles</b> ()</td></tr>
 <tr class="separator:a306d564a8382658d7512962a9e49cb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,6 +298,50 @@ static <a class="el" href="class_achroma_1_1_achroma_asset_manager.html">Achroma
 
 </div>
 </div>
+<a id="acf22f6586b9a56599b8718264c19fa23" name="acf22f6586b9a56599b8718264c19fa23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf22f6586b9a56599b8718264c19fa23">&#9670;&#160;</a></span>InstantiateAudioClipFromBundle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Achroma.AchromaAssetManager.InstantiateAudioClipFromBundle </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>assetBundleName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>assetName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UnityAction&lt; bool, string, AudioClip &gt;&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instantiate an AudioClip from an Asset Bundle, given the name of the asset bundle and the name of the AudioClip. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">assetBundleName</td><td>Name of the asset bundle that will be added to the bucket URL</td></tr>
+    <tr><td class="paramname">assetName</td><td>The name of the object to be instantiated</td></tr>
+    <tr><td class="paramname">callback</td><td>The result of the the method, that will return a success flag, an error message (if any) and a Sprite (if successful)</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a419fc2d427990cc742d38f80b677cb5c" name="a419fc2d427990cc742d38f80b677cb5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a419fc2d427990cc742d38f80b677cb5c">&#9670;&#160;</a></span>InstantiateObjectFromBundle()</h2>
 
@@ -341,27 +388,29 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_achroma_1_1_achroma_asset_manager_a419fc2d427990cc742d38f80b677cb5c_icgraph.png" border="0" usemap="#aclass_achroma_1_1_achroma_asset_manager_a419fc2d427990cc742d38f80b677cb5c_icgraph" alt=""/></div>
 <map name="aclass_achroma_1_1_achroma_asset_manager_a419fc2d427990cc742d38f80b677cb5c_icgraph" id="aclass_achroma_1_1_achroma_asset_manager_a419fc2d427990cc742d38f80b677cb5c_icgraph">
-<area shape="rect" title="Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the obj..." alt="" coords="572,149,788,190"/>
-<area shape="rect" href="class_achroma_1_1_achroma_character.html#a732c4e1ee57babf1f51bf17810bbfb4b" title="Gets the sprite animation for a given avatar id in the array." alt="" coords="325,12,516,53"/>
-<area shape="poly" title=" " alt="" coords="636,143,583,109,523,75,480,56,482,51,525,70,586,104,639,139"/>
-<area shape="rect" href="class_achroma_1_1_achroma_location.html#aba0c162f59ffcb788d6dc5b863015073" title="Gets the sprite for a given location id in the array." alt="" coords="329,84,512,125"/>
-<area shape="poly" title=" " alt="" coords="582,148,503,128,505,123,583,143"/>
-<area shape="rect" href="class_achroma_1_1_achroma_location.html#a755564db259bd4bdcf1d3b7a51e759f9" title="Gets the sprite for a given location name in the array." alt="" coords="329,149,512,190"/>
-<area shape="poly" title=" " alt="" coords="557,172,512,172,512,167,557,167"/>
-<area shape="rect" href="class_achroma_1_1_achroma_u_i_controller.html#acf9d4186ff833707ce0a49c1ada21631" title="This will load the background from the asset bundle to avoid embedding the background images to the p..." alt="" coords="319,215,522,255"/>
-<area shape="poly" title=" " alt="" coords="583,197,505,217,503,211,582,192"/>
-<area shape="rect" href="class_achroma_1_1_achroma_u_i_controller.html#a49da583bb70d45edcb880d567efafb54" title="This will create the separator for the Message Dialog from Asset Bundles." alt="" coords="317,280,524,321"/>
-<area shape="poly" title=" " alt="" coords="640,201,587,236,525,269,495,282,493,277,523,265,584,231,637,197"/>
+<area shape="rect" title="Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the obj..." alt="" coords="589,183,805,223"/>
+<area shape="rect" href="class_achroma_1_1_achroma_character.html#a732c4e1ee57babf1f51bf17810bbfb4b" title="Gets the sprite animation for a given avatar id in the array." alt="" coords="333,5,525,46"/>
+<area shape="poly" title=" " alt="" coords="668,173,613,115,578,86,540,60,517,49,519,44,542,55,581,81,617,112,672,170"/>
+<area shape="rect" href="class_achroma_a_p_i_1_1_achroma_instance_match.html#a60f9d4f6bee53658f00a186a1c3ff597" title="Returns tutorial video object for the companion. This object contains videos for all the steps in the..." alt="" coords="317,70,541,126"/>
+<area shape="poly" title=" " alt="" coords="634,179,540,140,509,128,511,124,542,135,636,174"/>
+<area shape="rect" href="class_achroma_1_1_achroma_location.html#aba0c162f59ffcb788d6dc5b863015073" title="Gets the sprite for a given location id in the array." alt="" coords="338,149,520,190"/>
+<area shape="poly" title=" " alt="" coords="574,190,520,184,521,178,574,185"/>
+<area shape="rect" href="class_achroma_1_1_achroma_location.html#a755564db259bd4bdcf1d3b7a51e759f9" title="Gets the sprite for a given location name in the array." alt="" coords="338,215,520,255"/>
+<area shape="poly" title=" " alt="" coords="574,220,521,227,520,221,574,215"/>
+<area shape="rect" href="class_achroma_1_1_achroma_u_i_controller.html#acf9d4186ff833707ce0a49c1ada21631" title="This will load the background from the asset bundle to avoid embedding the background images to the p..." alt="" coords="328,280,530,321"/>
+<area shape="poly" title=" " alt="" coords="636,232,542,270,504,282,502,277,540,264,634,227"/>
+<area shape="rect" href="class_achroma_1_1_achroma_u_i_controller.html#a49da583bb70d45edcb880d567efafb54" title="This will create the separator for the Message Dialog from Asset Bundles." alt="" coords="325,345,533,386"/>
+<area shape="poly" title=" " alt="" coords="668,236,613,286,578,312,542,335,514,347,512,342,540,330,575,308,609,282,665,232"/>
 <area shape="rect" href="class_achroma_a_p_i_1_1_achroma_instance_assets.html#a0d01cfb09606fe1787a121d22336d5d6" title="Returns character sprite animation by giving an id." alt="" coords="5,5,269,46"/>
-<area shape="poly" title=" " alt="" coords="310,32,269,31,269,26,310,27"/>
-<area shape="rect" href="class_achroma_a_p_i_1_1_achroma_instance_assets.html#ad8a328a6bcc5ebcd1c7ed5b3b639b4aa" title="Returns location sprite animation by giving an id." alt="" coords="9,71,265,111"/>
-<area shape="poly" title=" " alt="" coords="314,102,265,100,265,94,314,97"/>
-<area shape="rect" href="class_achroma_a_p_i_1_1_achroma_instance_assets.html#a2fcccb14a0e1e88fabcb53cae0963c72" title="Returns location sprite animation by giving a name." alt="" coords="23,135,251,191"/>
-<area shape="poly" title=" " alt="" coords="315,129,252,142,251,137,314,124"/>
-<area shape="rect" href="class_achroma_a_p_i_1_1_achroma_instance_u_i.html#a29cb5418a29491f2c88bc6bbd743d94b" title="This will create a menu background." alt="" coords="36,215,238,255"/>
-<area shape="poly" title=" " alt="" coords="305,238,238,238,238,232,305,232"/>
-<area shape="rect" href="class_achroma_1_1_achroma_u_i_controller.html#a488d782b3fd2d3f50cfb0d63eb532ae5" title="This will update all the UI components using Asset Bundles from Google Bucket." alt="" coords="36,280,238,321"/>
-<area shape="poly" title=" " alt="" coords="302,303,238,303,238,298,302,298"/>
+<area shape="poly" title=" " alt="" coords="318,28,269,28,269,23,318,23"/>
+<area shape="rect" href="class_achroma_a_p_i_1_1_achroma_instance_assets.html#ad8a328a6bcc5ebcd1c7ed5b3b639b4aa" title="Returns location sprite animation by giving an id." alt="" coords="9,107,265,147"/>
+<area shape="poly" title=" " alt="" coords="323,157,265,148,265,143,323,152"/>
+<area shape="rect" href="class_achroma_a_p_i_1_1_achroma_instance_assets.html#a2fcccb14a0e1e88fabcb53cae0963c72" title="Returns location sprite animation by giving a name." alt="" coords="23,171,251,227"/>
+<area shape="poly" title=" " alt="" coords="323,183,252,190,251,185,323,178"/>
+<area shape="rect" href="class_achroma_a_p_i_1_1_achroma_instance_u_i.html#a29cb5418a29491f2c88bc6bbd743d94b" title="This will create a menu background." alt="" coords="36,280,238,321"/>
+<area shape="poly" title=" " alt="" coords="313,303,238,303,238,298,313,298"/>
+<area shape="rect" href="class_achroma_1_1_achroma_u_i_controller.html#a488d782b3fd2d3f50cfb0d63eb532ae5" title="This will update all the UI components using Asset Bundles from Google Bucket." alt="" coords="36,345,238,386"/>
+<area shape="poly" title=" " alt="" coords="310,368,239,368,239,363,310,363"/>
 </map>
 </div>
 

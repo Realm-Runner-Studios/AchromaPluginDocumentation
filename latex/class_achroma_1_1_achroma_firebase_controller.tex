@@ -2,7 +2,8 @@
 \hypertarget{class_achroma_1_1_achroma_firebase_controller}{}\label{class_achroma_1_1_achroma_firebase_controller}\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
 
 
-Inheritance diagram for Achroma.\+Achroma\+Firebase\+Controller\+:\nopagebreak
+Inheritance diagram for Achroma.\+Achroma\+Firebase\+Controller\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +12,8 @@ Inheritance diagram for Achroma.\+Achroma\+Firebase\+Controller\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Achroma.\+Achroma\+Firebase\+Controller\+:\nopagebreak
+Collaboration diagram for Achroma.\+Achroma\+Firebase\+Controller\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -137,6 +139,16 @@ void {\bfseries Get\+Story\+Ranking\+Position\+For\+User\+By\+Id} (string user\+
 \Hypertarget{class_achroma_1_1_achroma_firebase_controller_a0268abe682c82fc0442207675c66c097}\label{class_achroma_1_1_achroma_firebase_controller_a0268abe682c82fc0442207675c66c097} 
 void {\bfseries Remote\+Config\+Settings\+Fetch} (Unity\+Action$<$ bool, String $>$ result=null)
 \item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a7b8aa3c038cc69e13f107db261d5917a}{Get\+User\+RPGCharacters}} (string user\+Id, Unity\+Action$<$ bool, string, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Gets the json with the user\textquotesingle{}s RPG characters. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a70ffb273dd22b38fbded6c0623809a1f}\label{class_achroma_1_1_achroma_firebase_controller_a70ffb273dd22b38fbded6c0623809a1f} 
+void {\bfseries Stop\+Get\+User\+RPGCharacters} ()
+\begin{DoxyCompactList}\small\item\em Stops the coroutine that\textquotesingle{}s getting the user\textquotesingle{}s RPG characters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_a900de98a7edacd018deb708bd1e33ec3}{Set\+User\+RPGCharacters}} (string user\+Id, string json, Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Sets the json with the user\textquotesingle{}s RPG characters. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a018521e01140ae151e1cb75310f59b2f}\label{class_achroma_1_1_achroma_firebase_controller_a018521e01140ae151e1cb75310f59b2f} 
+void {\bfseries Stop\+Set\+User\+RPGCharacters} ()
+\begin{DoxyCompactList}\small\item\em Interupts saving the matchdata. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_achroma_1_1_achroma_firebase_controller_aeaebd8d6f8b4ae1933dded34b8c18a61}{Set\+User\+Data}} (\mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} user\+Data, Unity\+Action$<$ bool, string $>$ result)
 \begin{DoxyCompactList}\small\item\em Method to push the user data to Firebase using Json serialization. \end{DoxyCompactList}\item 
 \Hypertarget{class_achroma_1_1_achroma_firebase_controller_aefaf1468bcd75aec1daf6533b5dd0841}\label{class_achroma_1_1_achroma_firebase_controller_aefaf1468bcd75aec1daf6533b5dd0841} 
@@ -238,6 +250,9 @@ Database\+Reference {\bfseries user\+Data\+Reference}
 \item 
 \Hypertarget{class_achroma_1_1_achroma_firebase_controller_ac2c71fe049f3dcc43f92fbc8fb16725e}\label{class_achroma_1_1_achroma_firebase_controller_ac2c71fe049f3dcc43f92fbc8fb16725e} 
 Database\+Reference {\bfseries matches\+Reference}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a514a03bed0b09d5c1316a731caecd6a5}\label{class_achroma_1_1_achroma_firebase_controller_a514a03bed0b09d5c1316a731caecd6a5} 
+Database\+Reference {\bfseries rpg\+Reference}
 \item 
 \Hypertarget{class_achroma_1_1_achroma_firebase_controller_a766ffeb4e115aebf4ed85fb6034fa608}\label{class_achroma_1_1_achroma_firebase_controller_a766ffeb4e115aebf4ed85fb6034fa608} 
 Database\+Reference {\bfseries friends\+Reference}
@@ -698,6 +713,34 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a7466f4dbe007e0b9a2b173227f1df19c_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a7b8aa3c038cc69e13f107db261d5917a}\label{class_achroma_1_1_achroma_firebase_controller_a7b8aa3c038cc69e13f107db261d5917a} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!GetUserRPGCharacters@{GetUserRPGCharacters}}
+\index{GetUserRPGCharacters@{GetUserRPGCharacters}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{GetUserRPGCharacters()}{GetUserRPGCharacters()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Get\+User\+RPGCharacters (\begin{DoxyParamCaption}\item[{string}]{user\+Id,  }\item[{Unity\+Action$<$ bool, string, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Gets the json with the user\textquotesingle{}s RPG characters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user/param\texorpdfstring{$>$}{>} 
+\begin{DoxyParams}{Parameters}
+{\em result} & success/failure feedback\\
+\hline
+\end{DoxyParams}
+\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a7b8aa3c038cc69e13f107db261d5917a_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_achroma_1_1_achroma_firebase_controller_a4c57ab20c42decb71d88600f0fe29485}\label{class_achroma_1_1_achroma_firebase_controller_a4c57ab20c42decb71d88600f0fe29485} 
 \index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!Initialize@{Initialize}}
 \index{Initialize@{Initialize}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
@@ -842,6 +885,34 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_aeaebd8d6f8b4ae1933dded34b8c18a61_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{class_achroma_1_1_achroma_firebase_controller_a900de98a7edacd018deb708bd1e33ec3}\label{class_achroma_1_1_achroma_firebase_controller_a900de98a7edacd018deb708bd1e33ec3} 
+\index{Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}!SetUserRPGCharacters@{SetUserRPGCharacters}}
+\index{SetUserRPGCharacters@{SetUserRPGCharacters}!Achroma.AchromaFirebaseController@{Achroma.AchromaFirebaseController}}
+\doxysubsubsection{\texorpdfstring{SetUserRPGCharacters()}{SetUserRPGCharacters()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Firebase\+Controller.\+Set\+User\+RPGCharacters (\begin{DoxyParamCaption}\item[{string}]{user\+Id,  }\item[{string}]{json,  }\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Sets the json with the user\textquotesingle{}s RPG characters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user/param\texorpdfstring{$>$}{>} 
+\begin{DoxyParams}{Parameters}
+{\em result} & success/failure feedback\\
+\hline
+\end{DoxyParams}
+\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_firebase_controller_a900de98a7edacd018deb708bd1e33ec3_icgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
@@ -853,6 +924,7 @@ The documentation for this class was generated from the following files\+:\begin
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+Match.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+News.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+Remote\+Config.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+RPG.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+User.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/\+Firebase/Achroma\+Firebase\+Controller+\+Auth.\+cs\item 

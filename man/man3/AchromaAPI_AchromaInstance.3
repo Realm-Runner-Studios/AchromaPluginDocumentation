@@ -15,7 +15,7 @@ AchromaAPI.AchromaInstance \- Main Singleton responsible for initializing the \f
 .br
 .RI "Checks if the user has the latest version installed\&. If the user has an outdated version, the app will take them to the app store and force the update\&. "
 .ti -1c
-.RI "static void \fBInitialize\fP (List< \fBAchromaPurchaseOption\fP > purchaseOptions, UnityAction< \fBUserData\fP > userDataChanged=null, UnityAction< bool, string > callback=null)"
+.RI "static void \fBInitialize\fP (List< \fBAchromaPurchaseOption\fP > purchaseOptions, UnityAction< \fBUserData\fP > userDataChanged=null, UnityAction< \fBUserData\fP > userSignedIn=null, UnityAction< \fBUserData\fP > userSignedOut=null, UnityAction< bool, string > callback=null)"
 .br
 .RI "This will initialize all the assets needed to use the plugin, like database layer UI, etc This should be called after the app is initialized\&. Don't use this on Awake or Start\&. "
 .in -1c

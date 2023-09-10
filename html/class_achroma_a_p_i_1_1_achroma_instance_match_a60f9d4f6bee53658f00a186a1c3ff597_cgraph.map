@@ -1,0 +1,5 @@
+<map id="AchromaAPI.AchromaInstanceMatch.GetCompanionTutorialVideoObject" name="AchromaAPI.AchromaInstanceMatch.GetCompanionTutorialVideoObject">
+<area shape="rect" id="Node000001" title="Returns tutorial video object for the companion. This object contains videos for all the steps in the..." alt="" coords="5,5,230,61"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_asset_manager.html#a419fc2d427990cc742d38f80b677cb5c" title="Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the obj..." alt="" coords="278,13,494,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,31,263,31,263,36,230,36"/>
+</map>

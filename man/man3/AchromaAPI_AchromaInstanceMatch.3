@@ -66,6 +66,26 @@ AchromaAPI.AchromaInstanceMatch \- Singleton with methods related to the Compani
 .RI "static void \fBUpdateUserWins\fP (string winner, string winType, UnityAction callback)"
 .br
 .RI "Updates the user's gameStats with the win\&. "
+.ti -1c
+.RI "static void \fBGetCompanionTutorialVideoObject\fP (string name, UnityAction< GameObject > callback)"
+.br
+.RI "Returns tutorial video object for the companion\&. This object contains videos for all the steps in the turn summary\&. "
+.ti -1c
+.RI "static void \fBQueryRankingCloud\fP (int hero=\-1, string userId=null, bool currentSeason=false, bool showLoading=true, UnityAction< List< IDictionary >, bool > result=null)"
+.br
+.RI "Returns a list with the ranking list for a certain type of game\&. "
+.ti -1c
+.RI "static void \fBQueryStoryRankingCloud\fP (bool showLoading=true, string userId='', UnityAction< List< IDictionary >, bool > result=null)"
+.br
+.RI "Returns the ranking for story mode\&. "
+.ti -1c
+.RI "static void \fBShowRanking\fP (int type)"
+.br
+.RI "Shows the Raknking UI based on type\&. "
+.ti -1c
+.RI "static void \fBHideRanking\fP ()"
+.br
+.RI "Hides the Ranking screen\&. "
 .in -1c
 .SS "Properties"
 
@@ -94,6 +114,19 @@ Adds the local player to the match\&.
 \fIgameType\fP The type of match in question
 .br
 \fIresult\fP The callback with success feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.GetCompanionTutorialVideoObject (string name, UnityAction< GameObject > callback)\fC [static]\fP"
+
+.PP
+Returns tutorial video object for the companion\&. This object contains videos for all the steps in the turn summary\&. /// 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the object
+.br
+\fIcallback\fP callback with the GameObject
 .RE
 .PP
 
@@ -156,6 +189,40 @@ Adds a new match to Firebase's match table\&.
 .RE
 .PP
 
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.QueryRankingCloud (int hero = \fC\-1\fP, string userId = \fCnull\fP, bool currentSeason = \fCfalse\fP, bool showLoading = \fCtrue\fP, UnityAction< List< IDictionary >, bool > result = \fCnull\fP)\fC [static]\fP"
+
+.PP
+Returns a list with the ranking list for a certain type of game\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhero\fP if == 1 it will return only the hero ranking
+.br
+\fIuserId\fP if informed, will give the ranking for just the friends of the user
+.br
+\fIcurrentSeason\fP if true, it will give the ranking just for the current season
+.br
+\fIshowLoading\fP if true, shows the loading screen
+.br
+\fIresult\fP success feedback and list with all the users
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.QueryStoryRankingCloud (bool showLoading = \fCtrue\fP, string userId = \fC''\fP, UnityAction< List< IDictionary >, bool > result = \fCnull\fP)\fC [static]\fP"
+
+.PP
+Returns the ranking for story mode\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshowLoading\fP if true, shows the loading screen
+.br
+\fIuserId\fP if true, shows only the ranking for the user's friends
+.br
+\fIresult\fP 
+.RE
+.PP
+
 .SS "static void AchromaAPI\&.AchromaInstanceMatch\&.RefreshMatch (string sessionName, bool showLoading = \fCtrue\fP, UnityAction< bool, string, string > callback = \fCnull\fP)\fC [static]\fP"
 
 .PP
@@ -192,6 +259,17 @@ Pushes the match data to Firebase\&.
 \fIsessionName\fP Session Id, if null, will use the matchData object in memory
 .br
 \fIresult\fP Success/failure feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceMatch\&.ShowRanking (int type)\fC [static]\fP"
+
+.PP
+Shows the Raknking UI based on type\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItype\fP 0: Canvas, 1: Hero, 2: Story
 .RE
 .PP
 

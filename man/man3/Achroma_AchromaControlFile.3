@@ -59,6 +59,10 @@ Achroma.AchromaControlFile
 .RI "static List< \fBAchromaFileStory\fP > \fBGetListOfStories\fP ()"
 .br
 .RI "Returns a distinct descendant list of stories\&. "
+.ti -1c
+.RI "static string \fBGetStoryBackgroundMusic\fP (string storyPrefix)"
+.br
+.RI "Returns the intro music file name for the story\&. "
 .in -1c
 .SS "Static Public Attributes"
 
@@ -232,6 +236,22 @@ Returns the character from the Control File with all its data\&.
 \fBReturns\fP
 .RS 4
 Returns the Location type with all the related data to the Location
+.RE
+.PP
+
+.SS "static string Achroma\&.AchromaControlFile\&.GetStoryBackgroundMusic (string storyPrefix)\fC [static]\fP"
+
+.PP
+Returns the intro music file name for the story\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstoryPrefix\fP CH, DR, FL, WW, CC
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The file name
 .RE
 .PP
 

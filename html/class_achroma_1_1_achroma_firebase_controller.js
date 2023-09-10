@@ -19,6 +19,7 @@ var class_achroma_1_1_achroma_firebase_controller =
     [ "GetUserData", "class_achroma_1_1_achroma_firebase_controller.html#aa082ff5778b71f9a5788ec3f7a7d7d1c", null ],
     [ "GetUserIdByUniqueNumber", "class_achroma_1_1_achroma_firebase_controller.html#aa58994ef9d7ebad43178e2adf6023b7f", null ],
     [ "GetUserIdByUniqueNumberTask", "class_achroma_1_1_achroma_firebase_controller.html#a7466f4dbe007e0b9a2b173227f1df19c", null ],
+    [ "GetUserRPGCharacters", "class_achroma_1_1_achroma_firebase_controller.html#a7b8aa3c038cc69e13f107db261d5917a", null ],
     [ "Initialize", "class_achroma_1_1_achroma_firebase_controller.html#a4c57ab20c42decb71d88600f0fe29485", null ],
     [ "LoadDatabase", "class_achroma_1_1_achroma_firebase_controller.html#aacb8303ac3668e017ae46483eef84f15", null ],
     [ "RemoveFriendsChangedListener", "class_achroma_1_1_achroma_firebase_controller.html#a205bb95aca86be078e16cc9e61262c15", null ],
@@ -26,12 +27,15 @@ var class_achroma_1_1_achroma_firebase_controller =
     [ "RemoveUserChangedListener", "class_achroma_1_1_achroma_firebase_controller.html#a72ec14ffe315fc1c1d4cd1598eb3abea", null ],
     [ "SetMatchData", "class_achroma_1_1_achroma_firebase_controller.html#a2bc45fdb6cdbbbf0effc45f4a94ab6cc", null ],
     [ "SetUserData", "class_achroma_1_1_achroma_firebase_controller.html#aeaebd8d6f8b4ae1933dded34b8c18a61", null ],
+    [ "SetUserRPGCharacters", "class_achroma_1_1_achroma_firebase_controller.html#a900de98a7edacd018deb708bd1e33ec3", null ],
     [ "SignOut", "class_achroma_1_1_achroma_firebase_controller.html#ab1a4c8b4d4acbdd21908bfc279c4e62d", null ],
     [ "StopEmailSignUp", "class_achroma_1_1_achroma_firebase_controller.html#ac45f001dc775dbc194fb27b7fdb1d9f8", null ],
     [ "StopForgotPassword", "class_achroma_1_1_achroma_firebase_controller.html#a8d51368e906ba8a4515f2ec76146068a", null ],
     [ "StopGetMatchData", "class_achroma_1_1_achroma_firebase_controller.html#ab45f377674ecba0af1f3574bff1c2420", null ],
     [ "StopGetUserData", "class_achroma_1_1_achroma_firebase_controller.html#aabf4ef89e3ed0fcab3b7965f086cb97a", null ],
+    [ "StopGetUserRPGCharacters", "class_achroma_1_1_achroma_firebase_controller.html#a70ffb273dd22b38fbded6c0623809a1f", null ],
     [ "StopInitialize", "class_achroma_1_1_achroma_firebase_controller.html#afc176219d1e4a4035cfa6cff7f487459", null ],
     [ "StopSetMatchData", "class_achroma_1_1_achroma_firebase_controller.html#a9764545c4eff437151a9186f6392d106", null ],
-    [ "StopSetUserData", "class_achroma_1_1_achroma_firebase_controller.html#aefaf1468bcd75aec1daf6533b5dd0841", null ]
+    [ "StopSetUserData", "class_achroma_1_1_achroma_firebase_controller.html#aefaf1468bcd75aec1daf6533b5dd0841", null ],
+    [ "StopSetUserRPGCharacters", "class_achroma_1_1_achroma_firebase_controller.html#a018521e01140ae151e1cb75310f59b2f", null ]
 ];

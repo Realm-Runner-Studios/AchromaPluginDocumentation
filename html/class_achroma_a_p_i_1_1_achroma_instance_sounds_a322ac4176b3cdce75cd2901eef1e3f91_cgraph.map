@@ -1,0 +1,7 @@
+<map id="AchromaAPI.AchromaInstanceSounds.PlayMainTheme" name="AchromaAPI.AchromaInstanceSounds.PlayMainTheme">
+<area shape="rect" id="Node000001" title="Plays the main theme for the story associated with the user." alt="" coords="5,5,207,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_character.html#acb0c81122ed86c0e758c6f329ecff0ac" title="Returns the story linked to the character." alt="" coords="255,5,444,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,23,240,23,240,28,207,28"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_control_file.html#a1ea313946783cbc2c9125d755c56957c" title="Returns the character from the Control File with all its data." alt="" coords="492,5,688,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="444,23,477,23,477,28,444,28"/>
+</map>

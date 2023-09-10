@@ -1,15 +1,17 @@
 <map id="Achroma.AchromaShardShopUI.ShowShardsPurchaseDetails" name="Achroma.AchromaShardShopUI.ShowShardsPurchaseDetails">
-<area shape="rect" id="Node000001" title="Shows the purchase details for items that can be purchased using shards Used for the purchase of avat..." alt="" coords="5,183,215,223"/>
+<area shape="rect" id="Node000001" title="Shows the purchase details for items that can be purchased using shards Used for the purchase of avat..." alt="" coords="5,216,215,257"/>
 <area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_character.html#ae0bb3153584b5096635a78883a46ba25" title="Returns the name of the character." alt="" coords="569,5,758,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,180,191,141,262,103,336,78,412,58,553,34,554,39,413,63,337,83,264,108,194,145,139,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,214,183,158,220,128,261,103,334,74,411,53,486,38,554,30,554,35,487,44,412,58,336,79,264,108,223,132,186,162,131,217"/>
 <area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_character.html#a7ef8b65d41f7bcb62dcbd31a498dbee7" title="Gets the sprite for a given avatar id in the array." alt="" coords="290,117,480,158"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="198,179,282,159,283,165,199,185"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,213,262,168,287,160,289,165,264,174,156,218"/>
 <area shape="rect" id="Node000007" href="$class_achroma_1_1_achroma_database_controller.html#a7cfebd0f96cd1f112131a4971b9c21e5" title="Gets the hero power from the database based on an avatar." alt="" coords="263,183,507,223"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="215,200,248,200,248,206,215,206"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="215,221,248,217,248,222,215,226"/>
 <area shape="rect" id="Node000009" href="$class_achroma_1_1_achroma_u_i_controller.html#a4f97bc2bbf977d72c33ab1e96d288158" title="This method cancel and closes the loading screen." alt="" coords="284,248,486,289"/>
-<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="199,221,283,241,282,247,198,227"/>
-<area shape="rect" id="Node000010" href="$class_achroma_1_1_achroma_u_i_controller.html#a3c7be0cda2d569b14f41c8eb8fbc8206" title="This method shows the loading screen." alt="" coords="284,313,486,354"/>
-<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="140,222,195,260,264,298,283,306,281,311,262,303,193,265,137,226"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="215,246,269,252,269,258,215,251"/>
+<area shape="rect" id="Node000010" href="$class_achroma_a_p_i_1_1_achroma_instance_sounds.html#ac1c105015faf991ffacde8be8200c07d" title="Plays a sound effect with the sound enum as a parameter." alt="" coords="284,313,486,354"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="157,255,264,298,289,306,287,311,262,303,155,260"/>
+<area shape="rect" id="Node000011" href="$class_achroma_1_1_achroma_u_i_controller.html#a3c7be0cda2d569b14f41c8eb8fbc8206" title="This method shows the loading screen." alt="" coords="284,379,486,419"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="132,255,188,309,224,338,264,363,279,371,277,375,261,368,221,343,184,313,128,259"/>
 <area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_control_file.html#a1ea313946783cbc2c9125d755c56957c" title="Returns the character from the Control File with all its data." alt="" coords="819,71,1016,111"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="746,44,822,64,821,69,744,49"/>
 <area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_character.html#a110f23f5cb117b579984558ba507eb6e" title="Returns character sprite name to be found in the asset bundle." alt="" coords="569,71,758,111"/>

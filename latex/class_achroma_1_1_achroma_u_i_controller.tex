@@ -2,7 +2,8 @@
 \hypertarget{class_achroma_1_1_achroma_u_i_controller}{}\label{class_achroma_1_1_achroma_u_i_controller}\index{Achroma.AchromaUIController@{Achroma.AchromaUIController}}
 
 
-Inheritance diagram for Achroma.\+Achroma\+UIController\+:\nopagebreak
+Inheritance diagram for Achroma.\+Achroma\+UIController\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +12,8 @@ Inheritance diagram for Achroma.\+Achroma\+UIController\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Achroma.\+Achroma\+UIController\+:\nopagebreak
+Collaboration diagram for Achroma.\+Achroma\+UIController\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -29,6 +31,18 @@ void \mbox{\hyperlink{class_achroma_1_1_achroma_u_i_controller_acf9d4186ff833707
 \Hypertarget{class_achroma_1_1_achroma_u_i_controller_a488d782b3fd2d3f50cfb0d63eb532ae5}\label{class_achroma_1_1_achroma_u_i_controller_a488d782b3fd2d3f50cfb0d63eb532ae5} 
 void {\bfseries Initialize\+UIAsset\+Bundles} ()
 \begin{DoxyCompactList}\small\item\em This will update all the UI components using Asset Bundles from Google Bucket. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_u_i_controller_a8a78e1b322920c5b2c6525bb3ab920ca}\label{class_achroma_1_1_achroma_u_i_controller_a8a78e1b322920c5b2c6525bb3ab920ca} 
+void {\bfseries Close\+Character\+Selector} (bool Go\+Back)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_u_i_controller_acad80272e3650f12439139660a8f16a5}\label{class_achroma_1_1_achroma_u_i_controller_acad80272e3650f12439139660a8f16a5} 
+void {\bfseries Show\+Character\+Dialog\+Box} (string title, string text, int avatar)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_u_i_controller_a49c4ad9886eb34a2feca40b17cdb28ea}\label{class_achroma_1_1_achroma_u_i_controller_a49c4ad9886eb34a2feca40b17cdb28ea} 
+void {\bfseries Close\+Character\+Dialog\+Box} ()
+\item 
+\Hypertarget{class_achroma_1_1_achroma_u_i_controller_a46abf8e9cbd5c1c730da49a7a18d5258}\label{class_achroma_1_1_achroma_u_i_controller_a46abf8e9cbd5c1c730da49a7a18d5258} 
+void {\bfseries Show\+Character\+Selector} (bool hero, Unity\+Action$<$ int $>$ character\+Selected, Unity\+Action quit\+Selection)
+\item 
 \Hypertarget{class_achroma_1_1_achroma_u_i_controller_ac9231b05b903b6f95ab1fad3d45573da}\label{class_achroma_1_1_achroma_u_i_controller_ac9231b05b903b6f95ab1fad3d45573da} 
 void {\bfseries Show\+Friend\+Requested} (string id)
 \item 
@@ -44,6 +58,10 @@ void {\bfseries Show\+Home\+Button} ()
 \Hypertarget{class_achroma_1_1_achroma_u_i_controller_af212f90f23c7b3f9586d503b80ca1990}\label{class_achroma_1_1_achroma_u_i_controller_af212f90f23c7b3f9586d503b80ca1990} 
 void {\bfseries Hide\+Home\+Button} ()
 \begin{DoxyCompactList}\small\item\em Method to hide the Home button from the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_u_i_controller_abef7a08cbd3ac33a1874f5d78b7abd81}{Add\+Event\+To\+Side\+Option}} (\mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button.\+Achroma\+Home\+Button\+Option}} option, Unity\+Action event\+Action)
+\begin{DoxyCompactList}\small\item\em The host app can add a custom method the side option button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_u_i_controller_aac2e72d669cc689a8d6038f039ad6a5a}{Remove\+Event\+From\+Side\+Option}} (\mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button.\+Achroma\+Home\+Button\+Option}} option, Unity\+Action event\+Action)
+\begin{DoxyCompactList}\small\item\em Removes the host app action attached to the button. \end{DoxyCompactList}\item 
 \Hypertarget{class_achroma_1_1_achroma_u_i_controller_ab83448b3151bee2d1b3cf828e0ff8100}\label{class_achroma_1_1_achroma_u_i_controller_ab83448b3151bee2d1b3cf828e0ff8100} 
 void {\bfseries Close\+Sign\+In\+UI} ()
 \begin{DoxyCompactList}\small\item\em This method will close the UI with Login/\+Register information. \end{DoxyCompactList}\item 
@@ -70,6 +88,15 @@ void \mbox{\hyperlink{class_achroma_1_1_achroma_u_i_controller_a1eeff72d40c3cc21
 \Hypertarget{class_achroma_1_1_achroma_u_i_controller_afde0a9de15ecf6ba52c2885348f579a4}\label{class_achroma_1_1_achroma_u_i_controller_afde0a9de15ecf6ba52c2885348f579a4} 
 void {\bfseries Show\+Saving\+Indicator} ()
 \begin{DoxyCompactList}\small\item\em Shows the floppy disk indicative to saving data. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_u_i_controller_a1a175ba1196dc3229caf86911f88a30b}\label{class_achroma_1_1_achroma_u_i_controller_a1a175ba1196dc3229caf86911f88a30b} 
+void {\bfseries Show\+Ranking} (int type)
+\item 
+\Hypertarget{class_achroma_1_1_achroma_u_i_controller_a892d4fe38f1f262e9d543b6d6e74444d}\label{class_achroma_1_1_achroma_u_i_controller_a892d4fe38f1f262e9d543b6d6e74444d} 
+void {\bfseries Hide\+Ranking} ()
+\item 
+\Hypertarget{class_achroma_1_1_achroma_u_i_controller_a59b482fec1df4bb0dea157889d8d2f55}\label{class_achroma_1_1_achroma_u_i_controller_a59b482fec1df4bb0dea157889d8d2f55} 
+void {\bfseries Hide\+Ranking} (Unity\+Action result)
+\item 
 \Hypertarget{class_achroma_1_1_achroma_u_i_controller_af136137c853cce9c9926a8e78d19013c}\label{class_achroma_1_1_achroma_u_i_controller_af136137c853cce9c9926a8e78d19013c} 
 void {\bfseries Close\+Shard\+Shop\+UI} ()
 \item 
@@ -119,6 +146,12 @@ void \mbox{\hyperlink{class_achroma_1_1_achroma_parent_controller_a5a2862ca45481
 \Hypertarget{class_achroma_1_1_achroma_u_i_controller_a9b3c258d8fbec5320fa8d767ea5d031d}\label{class_achroma_1_1_achroma_u_i_controller_a9b3c258d8fbec5320fa8d767ea5d031d} 
 Transform {\bfseries message\+Header\+Content}
 \item 
+\Hypertarget{class_achroma_1_1_achroma_u_i_controller_ac3f73ba331b551c0c407a9f6de6a5168}\label{class_achroma_1_1_achroma_u_i_controller_ac3f73ba331b551c0c407a9f6de6a5168} 
+\mbox{\hyperlink{class_character_selector_avatar_list}{Character\+Selector\+Avatar\+List}} {\bfseries character\+List}
+\item 
+\Hypertarget{class_achroma_1_1_achroma_u_i_controller_a47c0e4bf59b1cdd4d7ecafb9dfcc72c4}\label{class_achroma_1_1_achroma_u_i_controller_a47c0e4bf59b1cdd4d7ecafb9dfcc72c4} 
+\mbox{\hyperlink{class_character_selector_dialog_box}{Character\+Selector\+Dialog\+Box}} {\bfseries character\+Selector\+Dialog\+Box}
+\item 
 \Hypertarget{class_achroma_1_1_achroma_u_i_controller_a5df358d3c8125f70cc152e520b404f81}\label{class_achroma_1_1_achroma_u_i_controller_a5df358d3c8125f70cc152e520b404f81} 
 TMP\+\_\+\+Input\+Field {\bfseries friend\+Id\+Input}
 \item 
@@ -167,6 +200,31 @@ bool {\bfseries Is\+Showing\+Loading}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{
 
 
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_1_1_achroma_u_i_controller_abef7a08cbd3ac33a1874f5d78b7abd81}\label{class_achroma_1_1_achroma_u_i_controller_abef7a08cbd3ac33a1874f5d78b7abd81} 
+\index{Achroma.AchromaUIController@{Achroma.AchromaUIController}!AddEventToSideOption@{AddEventToSideOption}}
+\index{AddEventToSideOption@{AddEventToSideOption}!Achroma.AchromaUIController@{Achroma.AchromaUIController}}
+\doxysubsubsection{\texorpdfstring{AddEventToSideOption()}{AddEventToSideOption()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+UIController.\+Add\+Event\+To\+Side\+Option (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button\+::\+Achroma\+Home\+Button\+Option}}}]{option,  }\item[{Unity\+Action}]{event\+Action }\end{DoxyParamCaption})}
+
+
+
+The host app can add a custom method the side option button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & The enum value for the option\\
+\hline
+{\em event\+Action} & The action to be called when clicking the button\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_u_i_controller_abef7a08cbd3ac33a1874f5d78b7abd81_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_achroma_1_1_achroma_u_i_controller_aeb9c26d1cfe7cd7c62357f6edcaa986d}\label{class_achroma_1_1_achroma_u_i_controller_aeb9c26d1cfe7cd7c62357f6edcaa986d} 
 \index{Achroma.AchromaUIController@{Achroma.AchromaUIController}!AddNotification@{AddNotification}}
 \index{AddNotification@{AddNotification}!Achroma.AchromaUIController@{Achroma.AchromaUIController}}
@@ -301,6 +359,31 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_achroma_1_1_achroma_u_i_controller_aad66560c74192bc128ebe181c5568c36_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{class_achroma_1_1_achroma_u_i_controller_aac2e72d669cc689a8d6038f039ad6a5a}\label{class_achroma_1_1_achroma_u_i_controller_aac2e72d669cc689a8d6038f039ad6a5a} 
+\index{Achroma.AchromaUIController@{Achroma.AchromaUIController}!RemoveEventFromSideOption@{RemoveEventFromSideOption}}
+\index{RemoveEventFromSideOption@{RemoveEventFromSideOption}!Achroma.AchromaUIController@{Achroma.AchromaUIController}}
+\doxysubsubsection{\texorpdfstring{RemoveEventFromSideOption()}{RemoveEventFromSideOption()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+UIController.\+Remove\+Event\+From\+Side\+Option (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button\+::\+Achroma\+Home\+Button\+Option}}}]{option,  }\item[{Unity\+Action}]{event\+Action }\end{DoxyParamCaption})}
+
+
+
+Removes the host app action attached to the button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & The enum value for the option\\
+\hline
+{\em event\+Action} & The action to be called when clicking the button\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_u_i_controller_aac2e72d669cc689a8d6038f039ad6a5a_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_achroma_1_1_achroma_u_i_controller_a3c7be0cda2d569b14f41c8eb8fbc8206}\label{class_achroma_1_1_achroma_u_i_controller_a3c7be0cda2d569b14f41c8eb8fbc8206} 
 \index{Achroma.AchromaUIController@{Achroma.AchromaUIController}!ShowLoading@{ShowLoading}}
 \index{ShowLoading@{ShowLoading}!Achroma.AchromaUIController@{Achroma.AchromaUIController}}
@@ -347,7 +430,8 @@ Shows the login UI ~\newline
 {\em callback} & Saves the login callback reference. This callback will be triggered when the login succeeds\\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -388,10 +472,12 @@ Here is the caller graph for this function\+:\nopagebreak
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Controller/Achroma\+UIController+\+Asset\+Bundle.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Controller/Achroma\+UIController+\+Character\+Selector.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Controller/Achroma\+UIController+\+Friends.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Controller/Achroma\+UIController+\+Home.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Controller/Achroma\+UIController+\+News.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Controller/Achroma\+UIController+\+Noitification.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Controller/Achroma\+UIController+\+Ranking.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Controller/Achroma\+UIController+\+Shop.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Controller/Achroma\+UIController.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Controller/Achroma\+UIController+\+Login.\+cs\item 

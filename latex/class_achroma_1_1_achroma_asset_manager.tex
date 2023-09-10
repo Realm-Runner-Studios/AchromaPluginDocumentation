@@ -44,6 +44,8 @@ void \mbox{\hyperlink{class_achroma_1_1_achroma_asset_manager_aaca5b4e4b5dace44e
 \begin{DoxyCompactList}\small\item\em Instantiate a sprite from an Asset Bundle, given the name of the asset bundle and the name of the object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_achroma_1_1_achroma_asset_manager_a419fc2d427990cc742d38f80b677cb5c}{Instantiate\+Object\+From\+Bundle}} (string asset\+Bundle\+Name, string asset\+Name, Unity\+Action$<$ bool, string, Game\+Object $>$ callback=null)
 \begin{DoxyCompactList}\small\item\em Instantiate a object from an Asset Bundle, given the name of the asset bundle and the name of the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_asset_manager_acf22f6586b9a56599b8718264c19fa23}{Instantiate\+Audio\+Clip\+From\+Bundle}} (string asset\+Bundle\+Name, string asset\+Name, Unity\+Action$<$ bool, string, Audio\+Clip $>$ callback=null)
+\begin{DoxyCompactList}\small\item\em Instantiate an Audio\+Clip from an Asset Bundle, given the name of the asset bundle and the name of the Audio\+Clip. \end{DoxyCompactList}\item 
 \Hypertarget{class_achroma_1_1_achroma_asset_manager_a306d564a8382658d7512962a9e49cb5a}\label{class_achroma_1_1_achroma_asset_manager_a306d564a8382658d7512962a9e49cb5a} 
 void {\bfseries Unload\+Asset\+Bundles} ()
 \end{DoxyCompactItemize}
@@ -123,6 +125,25 @@ Method to download text files that usually need the download token after alt?med
 {\em result} & callback function, returns success flag, an error message (if any) and a string with the file content (if the file is text type) \\
 \hline
 \end{DoxyParams}
+\Hypertarget{class_achroma_1_1_achroma_asset_manager_acf22f6586b9a56599b8718264c19fa23}\label{class_achroma_1_1_achroma_asset_manager_acf22f6586b9a56599b8718264c19fa23} 
+\index{Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}!InstantiateAudioClipFromBundle@{InstantiateAudioClipFromBundle}}
+\index{InstantiateAudioClipFromBundle@{InstantiateAudioClipFromBundle}!Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}}
+\doxysubsubsection{\texorpdfstring{InstantiateAudioClipFromBundle()}{InstantiateAudioClipFromBundle()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Asset\+Manager.\+Instantiate\+Audio\+Clip\+From\+Bundle (\begin{DoxyParamCaption}\item[{string}]{asset\+Bundle\+Name,  }\item[{string}]{asset\+Name,  }\item[{Unity\+Action$<$ bool, string, Audio\+Clip $>$}]{callback = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Instantiate an Audio\+Clip from an Asset Bundle, given the name of the asset bundle and the name of the Audio\+Clip. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em asset\+Bundle\+Name} & Name of the asset bundle that will be added to the bucket URL\\
+\hline
+{\em asset\+Name} & The name of the object to be instantiated\\
+\hline
+{\em callback} & The result of the the method, that will return a success flag, an error message (if any) and a Sprite (if successful)\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_achroma_1_1_achroma_asset_manager_a419fc2d427990cc742d38f80b677cb5c}\label{class_achroma_1_1_achroma_asset_manager_a419fc2d427990cc742d38f80b677cb5c} 
 \index{Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}!InstantiateObjectFromBundle@{InstantiateObjectFromBundle}}
 \index{InstantiateObjectFromBundle@{InstantiateObjectFromBundle}!Achroma.AchromaAssetManager@{Achroma.AchromaAssetManager}}
@@ -142,7 +163,8 @@ Instantiate a object from an Asset Bundle, given the name of the asset bundle an
 {\em callback} & The result of the the method, that will return a success flag, an error message (if any) and a Sprite (if successful)\\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

@@ -19,6 +19,14 @@ AchromaAPI.AchromaInstanceDatabase \- Database Singleton responsible with all th
 .br
 .RI "This adds a listener to the changes on the user data\&. If something happens to the user, this change is replicated on this method\&. "
 .ti -1c
+.RI "static void \fBAddUserSignedInListener\fP (UnityAction< \fBUserData\fP > listener, UnityAction< bool, string > callback=null)"
+.br
+.RI "This adds a listener to the sign in\&. Every time the user signs in, an event will get triggered\&. "
+.ti -1c
+.RI "static void \fBAddUserSignedOutListener\fP (UnityAction< \fBUserData\fP > listener, UnityAction< bool, string > callback=null)"
+.br
+.RI "This adds a listener to the sign in\&. Every time the user signs out, an event will get triggered\&. "
+.ti -1c
 .RI "static void \fBRemoveUserDataChangeListener\fP (UnityAction< \fBUserData\fP > listener, UnityAction< bool, string > callback=null)"
 .br
 .RI "This removes the user data listener to avoid accessing destroyed objects\&. "
@@ -88,6 +96,42 @@ This adds a listener to the changes on the user data\&. If something happens to 
 \fBParameters\fP
 .RS 4
 \fIlistener\fP The listener method will be called back to the host application with the changes
+.RE
+.PP
+/// 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP The success/failure feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceDatabase\&.AddUserSignedInListener (UnityAction< \fBUserData\fP > listener, UnityAction< bool, string > callback = \fCnull\fP)\fC [static]\fP"
+
+.PP
+This adds a listener to the sign in\&. Every time the user signs in, an event will get triggered\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlistener\fP The listener method will be called back to the host application when user signs in
+.RE
+.PP
+/// 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcallback\fP The success/failure feedback
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceDatabase\&.AddUserSignedOutListener (UnityAction< \fBUserData\fP > listener, UnityAction< bool, string > callback = \fCnull\fP)\fC [static]\fP"
+
+.PP
+This adds a listener to the sign in\&. Every time the user signs out, an event will get triggered\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlistener\fP The listener method will be called back to the host application when user signs out
 .RE
 .PP
 /// 

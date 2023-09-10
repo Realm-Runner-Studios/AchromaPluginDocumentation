@@ -7,7 +7,7 @@ Achroma.AchromaFirebaseController
 .br
 .PP
 .PP
-Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, and MonoBehaviour\&.
+Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, and MonoBehaviour\&.
 .SS "Public Types"
 
 .in +1c
@@ -141,6 +141,22 @@ Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehavio
 .RI "void \fBRemoteConfigSettingsFetch\fP (UnityAction< bool, String > result=null)"
 .br
 .ti -1c
+.RI "void \fBGetUserRPGCharacters\fP (string userId, UnityAction< bool, string, string > result)"
+.br
+.RI "Gets the json with the user's RPG characters\&. "
+.ti -1c
+.RI "void \fBStopGetUserRPGCharacters\fP ()"
+.br
+.RI "Stops the coroutine that's getting the user's RPG characters\&. "
+.ti -1c
+.RI "void \fBSetUserRPGCharacters\fP (string userId, string json, UnityAction< bool, string > result)"
+.br
+.RI "Sets the json with the user's RPG characters\&. "
+.ti -1c
+.RI "void \fBStopSetUserRPGCharacters\fP ()"
+.br
+.RI "Interupts saving the matchdata\&. "
+.ti -1c
 .RI "void \fBSetUserData\fP (\fBUserData\fP userData, UnityAction< bool, string > result)"
 .br
 .RI "Method to push the user data to Firebase using Json serialization\&. "
@@ -273,6 +289,9 @@ Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehavio
 .br
 .ti -1c
 .RI "DatabaseReference \fBmatchesReference\fP"
+.br
+.ti -1c
+.RI "DatabaseReference \fBrpgReference\fP"
 .br
 .ti -1c
 .RI "DatabaseReference \fBfriendsReference\fP"
@@ -539,6 +558,23 @@ Gets the user by their id\&.
 .RE
 .PP
 
+.SS "void Achroma\&.AchromaFirebaseController\&.GetUserRPGCharacters (string userId, UnityAction< bool, string, string > result)"
+
+.PP
+Gets the json with the user's RPG characters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserId\fP The user/param> 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP success/failure feedback
+.RE
+.PP
+.RE
+.PP
+
 .SS "void Achroma\&.AchromaFirebaseController\&.Initialize (UnityAction< bool, string > result)"
 
 .PP
@@ -616,6 +652,23 @@ Method to push the user data to Firebase using Json serialization\&.
 .PP
 \fBReturns\fP
 .RS 4
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaFirebaseController\&.SetUserRPGCharacters (string userId, string json, UnityAction< bool, string > result)"
+
+.PP
+Sets the json with the user's RPG characters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserId\fP The user/param> 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP success/failure feedback
+.RE
+.PP
 .RE
 .PP
 

@@ -1,7 +1,9 @@
 <map id="Achroma.AchromaUIController.ShowSignInUI" name="Achroma.AchromaUIController.ShowSignInUI">
-<area shape="rect" id="Node000001" title="Shows the login UI" alt="" coords="5,27,208,68"/>
-<area shape="rect" id="Node000002" href="$class_achroma_popup_window.html#a3cb1fb3d0c913c93434876bbea59f19b" title="The method that will move the UI element up." alt="" coords="256,5,455,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,33,240,29,241,34,209,38"/>
-<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_sign_in_u_i.html#a84df5dd0f80cc231d74771fddb002dde" title="This method will show the Sign In section when the user is not new." alt="" coords="263,55,448,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,56,249,61,248,66,208,62"/>
+<area shape="rect" id="Node000001" title="Shows the login UI" alt="" coords="5,55,208,96"/>
+<area shape="rect" id="Node000002" href="$class_achroma_popup_window.html#a3cb1fb3d0c913c93434876bbea59f19b" title="The method that will move the UI element up." alt="" coords="257,5,456,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,52,282,32,283,38,199,57"/>
+<area shape="rect" id="Node000003" href="$class_achroma_a_p_i_1_1_achroma_instance_sounds.html#ac1c105015faf991ffacde8be8200c07d" title="Plays a sound effect with the sound enum as a parameter." alt="" coords="256,55,457,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,73,241,73,241,78,208,78"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_sign_in_u_i.html#a84df5dd0f80cc231d74771fddb002dde" title="This method will show the Sign In section when the user is not new." alt="" coords="264,121,449,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="188,94,263,114,261,119,186,99"/>
 </map>

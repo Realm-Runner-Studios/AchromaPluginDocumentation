@@ -1,5 +1,6 @@
 var class_achroma_1_1_achroma_u_i_controller =
 [
+    [ "AddEventToSideOption", "class_achroma_1_1_achroma_u_i_controller.html#abef7a08cbd3ac33a1874f5d78b7abd81", null ],
     [ "AddNotification", "class_achroma_1_1_achroma_u_i_controller.html#aeb9c26d1cfe7cd7c62357f6edcaa986d", null ],
     [ "AddNotification", "class_achroma_1_1_achroma_u_i_controller.html#a10150e25d517b372ef139483e3cd50e8", null ],
     [ "AddShardNotification", "class_achroma_1_1_achroma_u_i_controller.html#a1eeff72d40c3cc21a08f77647d00a5d5", null ],
@@ -11,6 +12,7 @@ var class_achroma_1_1_achroma_u_i_controller =
     [ "LoadMenuBackground", "class_achroma_1_1_achroma_u_i_controller.html#acf9d4186ff833707ce0a49c1ada21631", null ],
     [ "LoadMessageHeaderSeparators", "class_achroma_1_1_achroma_u_i_controller.html#a49da583bb70d45edcb880d567efafb54", null ],
     [ "LoadUserAvatar", "class_achroma_1_1_achroma_u_i_controller.html#aad66560c74192bc128ebe181c5568c36", null ],
+    [ "RemoveEventFromSideOption", "class_achroma_1_1_achroma_u_i_controller.html#aac2e72d669cc689a8d6038f039ad6a5a", null ],
     [ "ShowHomeButton", "class_achroma_1_1_achroma_u_i_controller.html#a5f6e6c337a25f1bd1de111182f9a367d", null ],
     [ "ShowLoading", "class_achroma_1_1_achroma_u_i_controller.html#a3c7be0cda2d569b14f41c8eb8fbc8206", null ],
     [ "ShowSavingIndicator", "class_achroma_1_1_achroma_u_i_controller.html#afde0a9de15ecf6ba52c2885348f579a4", null ],

@@ -1,0 +1,13 @@
+<map id="AchromaAPI.AchromaInstanceSounds.PlayEffect" name="AchromaAPI.AchromaInstanceSounds.PlayEffect">
+<area shape="rect" id="Node000001" title="Plays a sound effect with the sound enum as a parameter." alt="" coords="263,136,464,177"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_sign_in_u_i.html#a6f3163791d675c4f2fd6a1a797de0f07" title="This method will ask for another password." alt="" coords="18,5,202,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,129,272,94,213,61,184,49,186,44,216,57,275,90,326,125"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_achroma_sign_in_u_i.html#a21cceb3c00842102faa86f7957e5a703" title="This method calls the login method using Apple." alt="" coords="18,71,202,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,134,191,115,192,109,268,129"/>
+<area shape="rect" id="Node000004" href="$class_achroma_1_1_achroma_shard_shop_u_i.html#a90050f207842d87dcac06edca2cbc2f8" title="Buys using money. It&#39;s used to buy shard packs with." alt="" coords="6,136,214,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="248,159,214,159,214,154,248,154"/>
+<area shape="rect" id="Node000005" href="$class_achroma_1_1_achroma_shard_shop_u_i.html#ac6b5ed4a7e8df9d1280c3f9686f0f47b" title="Shows the purchase details for items that can be purchased using shards Used for the purchase of avat..." alt="" coords="5,201,215,242"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="268,184,192,203,191,198,267,178"/>
+<area shape="rect" id="Node000006" href="$class_achroma_1_1_achroma_u_i_controller.html#a994100a07b0d048658262ae59cb469f8" title="Shows the login UI" alt="" coords="9,267,211,307"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="326,188,275,223,216,256,186,269,184,264,213,251,272,218,323,183"/>
+</map>

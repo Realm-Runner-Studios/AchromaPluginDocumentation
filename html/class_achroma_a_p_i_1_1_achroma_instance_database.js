@@ -1,6 +1,8 @@
 var class_achroma_a_p_i_1_1_achroma_instance_database =
 [
     [ "AddUserDataChangeListener", "class_achroma_a_p_i_1_1_achroma_instance_database.html#a92a8f292805bb1af7da03f3bb691779c", null ],
+    [ "AddUserSignedInListener", "class_achroma_a_p_i_1_1_achroma_instance_database.html#a3c8a014a629616f59729d7892fcaac60", null ],
+    [ "AddUserSignedOutListener", "class_achroma_a_p_i_1_1_achroma_instance_database.html#a3a2e22bd962964e7b7198302a9807476", null ],
     [ "AmIFriendsWith", "class_achroma_a_p_i_1_1_achroma_instance_database.html#a383d3e0516dc9cf1d3932b6c7f1c0ddf", null ],
     [ "DatabaseIsLoaded", "class_achroma_a_p_i_1_1_achroma_instance_database.html#a571db3347bbadd19cc7f56b9cc0498da", null ],
     [ "GetAchievementCompletionPct", "class_achroma_a_p_i_1_1_achroma_instance_database.html#ade3f60faee09880766f2cd688600676b", null ],

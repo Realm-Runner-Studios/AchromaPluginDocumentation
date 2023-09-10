@@ -103,6 +103,8 @@ class \mbox{\hyperlink{class_achroma_1_1_all_matches}{All\+Matches}}
 \item 
 class \mbox{\hyperlink{class_achroma_1_1_all_users}{All\+Users}}
 \item 
+class \mbox{\hyperlink{class_achroma_1_1_audio_controller}{Audio\+Controller}}
+\begin{DoxyCompactList}\small\item\em Singleton responsible for playing. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_achroma_1_1_card_collection}{Card\+Collection}}
 \item 
 class \mbox{\hyperlink{class_achroma_1_1_card_collection_item}{Card\+Collection\+Item}}
@@ -150,6 +152,12 @@ class \mbox{\hyperlink{class_achroma_1_1_power_up}{Power\+Up}}
 class \mbox{\hyperlink{class_achroma_1_1_power_up_type_descriptiopn}{Power\+Up\+Type\+Descriptiopn}}
 \item 
 class \mbox{\hyperlink{class_achroma_1_1_power_up_type_enum}{Power\+Up\+Type\+Enum}}
+\item 
+class \mbox{\hyperlink{class_achroma_1_1_ranking_u_i}{Ranking\+UI}}
+\item 
+class \mbox{\hyperlink{class_achroma_1_1_ranking_user}{Ranking\+User}}
+\item 
+class \mbox{\hyperlink{class_achroma_1_1_ranking_user_comparer}{Ranking\+User\+Comparer}}
 \item 
 class \mbox{\hyperlink{class_achroma_1_1_remote_config_manager}{Remote\+Config\+Manager}}
 \item 
@@ -270,57 +278,62 @@ enum \mbox{\hyperlink{namespace_achroma_ab448d2a296cc3b8f0b41535d4cdad679}{Achro
 enum {\bfseries Achroma\+Error} \{ \newline
 {\bfseries ERR\+\_\+\+ASSIGN\+\_\+\+USERCHANGE\+\_\+\+LISTENER}
 , {\bfseries ERR\+\_\+\+USER\+\_\+\+NOT\+\_\+\+AUTHENTICATED}
-, {\bfseries ERR\+\_\+\+USER\+\_\+\+NOT\+\_\+\+SIGNED\+\_\+\+IN}
+, {\bfseries ERR\+\_\+\+ASSIGN\+\_\+\+USERSIGNIN\+\_\+\+LISTENER}
+, {\bfseries ERR\+\_\+\+ASSIGN\+\_\+\+USERSIGNOUT\+\_\+\+LISTENER}
+, \newline
+{\bfseries ERR\+\_\+\+USER\+\_\+\+NOT\+\_\+\+SIGNED\+\_\+\+IN}
 , {\bfseries ERR\+\_\+\+DATABASE\+\_\+\+INITIALIZATON}
-, \newline
-{\bfseries ERR\+\_\+\+DATABASE\+\_\+\+INITIALIZATON\+\_\+\+FIREBASE\+\_\+\+NOT\+\_\+\+READY}
+, {\bfseries ERR\+\_\+\+DATABASE\+\_\+\+INITIALIZATON\+\_\+\+FIREBASE\+\_\+\+NOT\+\_\+\+READY}
 , {\bfseries ERR\+\_\+\+DATABASE\+\_\+\+INITIALIZATON\+\_\+\+CANCELLED}
-, {\bfseries ERR\+\_\+\+DATABASE\+\_\+\+INITIALIZATON\+\_\+\+FAULTED}
+, \newline
+{\bfseries ERR\+\_\+\+DATABASE\+\_\+\+INITIALIZATON\+\_\+\+FAULTED}
 , {\bfseries ERR\+\_\+\+DATABASE\+\_\+\+INITIALIZATON\+\_\+\+TIMEOUT}
-, \newline
-{\bfseries ERR\+\_\+\+APPLELOGIN\+\_\+\+ACCOUNT\+\_\+\+DOESNT\+\_\+\+EXIST}
+, {\bfseries ERR\+\_\+\+APPLELOGIN\+\_\+\+ACCOUNT\+\_\+\+DOESNT\+\_\+\+EXIST}
 , {\bfseries ERR\+\_\+\+APPLELOGIN\+\_\+\+CANCELLED}
-, {\bfseries ERR\+\_\+\+APPLELOGIN\+\_\+\+FAULTED}
+, \newline
+{\bfseries ERR\+\_\+\+APPLELOGIN\+\_\+\+FAULTED}
 , {\bfseries ERR\+\_\+\+APPLELOGIN\+\_\+\+TIMEOUT}
-, \newline
-{\bfseries ERR\+\_\+\+APPLELOGIN\+\_\+\+GENERIC}
+, {\bfseries ERR\+\_\+\+APPLELOGIN\+\_\+\+GENERIC}
 , {\bfseries ERR\+\_\+\+GOOGLELOGIN\+\_\+\+ACCOUNT\+\_\+\+DOESNT\+\_\+\+EXIST}
-, {\bfseries ERR\+\_\+\+GOOGLELOGIN\+\_\+\+CANCELLED}
+, \newline
+{\bfseries ERR\+\_\+\+GOOGLELOGIN\+\_\+\+CANCELLED}
 , {\bfseries ERR\+\_\+\+GOOGLELOGIN\+\_\+\+FAULTED}
-, \newline
-{\bfseries ERR\+\_\+\+GOOGLELOGIN\+\_\+\+TIMEOUT}
+, {\bfseries ERR\+\_\+\+GOOGLELOGIN\+\_\+\+TIMEOUT}
 , {\bfseries ERR\+\_\+\+GOOGLELOGIN\+\_\+\+GENERIC}
-, {\bfseries ERR\+\_\+\+EMAILLOGIN\+\_\+\+EMAIL\+\_\+\+NOT\+\_\+\+VERIFIED}
+, \newline
+{\bfseries ERR\+\_\+\+EMAILLOGIN\+\_\+\+EMAIL\+\_\+\+NOT\+\_\+\+VERIFIED}
 , {\bfseries ERR\+\_\+\+EMAILLOGIN\+\_\+\+CANCELLED}
-, \newline
-{\bfseries ERR\+\_\+\+EMAILLOGIN\+\_\+\+FAULTED}
+, {\bfseries ERR\+\_\+\+EMAILLOGIN\+\_\+\+FAULTED}
 , {\bfseries ERR\+\_\+\+EMAILLOGIN\+\_\+\+TIMEOUT}
-, {\bfseries ERR\+\_\+\+EMAILLOGIN\+\_\+\+GENERIC}
+, \newline
+{\bfseries ERR\+\_\+\+EMAILLOGIN\+\_\+\+GENERIC}
 , {\bfseries ERR\+\_\+\+EMAILLOGIN\+\_\+\+ACCOUNT\+\_\+\+DOESNT\+\_\+\+EXIST}
-, \newline
-{\bfseries ERR\+\_\+\+FORGOTPASSWORD\+\_\+\+CANCELLED}
+, {\bfseries ERR\+\_\+\+FORGOTPASSWORD\+\_\+\+CANCELLED}
 , {\bfseries ERR\+\_\+\+FORGOTPASSWORD\+\_\+\+FAULTED}
-, {\bfseries ERR\+\_\+\+FORGOTPASSWORD\+\_\+\+TIMEOUT}
+, \newline
+{\bfseries ERR\+\_\+\+FORGOTPASSWORD\+\_\+\+TIMEOUT}
 , {\bfseries ERR\+\_\+\+EMAILREGISTRATION\+\_\+\+CANCELLED}
-, \newline
-{\bfseries ERR\+\_\+\+EMAILREGISTRATION\+\_\+\+FAULTED}
+, {\bfseries ERR\+\_\+\+EMAILREGISTRATION\+\_\+\+FAULTED}
 , {\bfseries ERR\+\_\+\+EMAILREGISTRATION\+\_\+\+TIMEOUT}
-, {\bfseries ERR\+\_\+\+EMAILREGISTRATION\+\_\+\+GENERIC}
+, \newline
+{\bfseries ERR\+\_\+\+EMAILREGISTRATION\+\_\+\+GENERIC}
 , {\bfseries ERR\+\_\+\+AUTH\+\_\+\+GET\+\_\+\+CUSTOM\+\_\+\+TOKEN}
-, \newline
-{\bfseries ERR\+\_\+\+FILE\+\_\+\+DOWNLOAD}
+, {\bfseries ERR\+\_\+\+FILE\+\_\+\+DOWNLOAD}
 , {\bfseries ERR\+\_\+\+ASSETBUNDLE\+\_\+\+DOWNLOAD}
-, {\bfseries ERR\+\_\+\+ASSETBUNDLE\+\_\+\+DOWNLOAD\+\_\+\+REQUEST}
+, \newline
+{\bfseries ERR\+\_\+\+ASSETBUNDLE\+\_\+\+DOWNLOAD\+\_\+\+REQUEST}
 , {\bfseries ERR\+\_\+\+REMOTE\+\_\+\+CONFIG\+\_\+\+FETCH}
-, \newline
-{\bfseries ERR\+\_\+\+SHOP\+\_\+\+NOT\+\_\+\+INITIALIZED}
+, {\bfseries ERR\+\_\+\+SHOP\+\_\+\+NOT\+\_\+\+INITIALIZED}
 , {\bfseries ERR\+\_\+\+SHOP\+\_\+\+FAIL\+\_\+\+TO\+\_\+\+GET\+\_\+\+PRICE}
-, {\bfseries ERR\+\_\+\+SHOP\+\_\+\+FAILED\+\_\+\+TO\+\_\+\+PURCHASE}
-, {\bfseries ERR\+\_\+\+CARDS\+\_\+\+RETRIEVE}
 , \newline
-{\bfseries ERR\+\_\+\+COULD\+\_\+\+NOT\+\_\+\+LOAD\+\_\+\+SEPARATORS}
+{\bfseries ERR\+\_\+\+SHOP\+\_\+\+FAILED\+\_\+\+TO\+\_\+\+PURCHASE}
+, {\bfseries ERR\+\_\+\+CARDS\+\_\+\+RETRIEVE}
+, {\bfseries ERR\+\_\+\+COULD\+\_\+\+NOT\+\_\+\+LOAD\+\_\+\+SEPARATORS}
 , {\bfseries ERR\+\_\+\+COULD\+\_\+\+NOT\+\_\+\+ADD\+\_\+\+SHARDS}
-, {\bfseries ERR\+\_\+\+COULD\+\_\+\+NOT\+\_\+\+GO\+\_\+\+BACK\+\_\+\+IN\+\_\+\+TIME}
+, \newline
+{\bfseries ERR\+\_\+\+COULD\+\_\+\+NOT\+\_\+\+GO\+\_\+\+BACK\+\_\+\+IN\+\_\+\+TIME}
 , {\bfseries ERR\+\_\+\+TRANSACTION\+\_\+\+ALREADY\+\_\+\+FOUND}
+, {\bfseries ERR\+\_\+\+GETTING\+\_\+\+RPG\+\_\+\+CHARACTERS}
+, {\bfseries ERR\+\_\+\+SETTING\+\_\+\+RPG\+\_\+\+CHARACTERS}
  \}
 \end{DoxyCompactItemize}

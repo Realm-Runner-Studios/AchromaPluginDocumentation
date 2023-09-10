@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$class_uni_web_view_logger.html" title="A leveled logger which could log UniWebView related messages in both development environment and fina..." alt="" coords="5,5,141,31"/>
+<area shape="rect" id="Node000000" href="$class_uni_web_view_gradle_node.html" title=" " alt="" coords="5,31,171,56"/>
+<area shape="rect" id="Node000001" href="$class_uni_web_view_gradle_comment_node.html" title=" " alt="" coords="219,5,441,31"/>
+<area shape="poly" id="edge96_Node000000_Node000001" title=" " alt="" coords="185,31,218,27,219,32,186,36"/>
+<area shape="rect" id="Node000002" href="$class_uni_web_view_gradle_content_node.html" title=" " alt="" coords="224,55,436,80"/>
+<area shape="poly" id="edge97_Node000000_Node000002" title=" " alt="" coords="186,51,224,54,224,60,186,56"/>
 </map>

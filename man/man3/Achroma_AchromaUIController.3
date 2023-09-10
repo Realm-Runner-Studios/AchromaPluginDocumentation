@@ -7,7 +7,7 @@ Achroma.AchromaUIController
 .br
 .PP
 .PP
-Inherits \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, and \fBAchroma\&.AchromaParentController\fP\&.
+Inherits \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentController\fP, and \fBAchroma\&.AchromaParentController\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -23,6 +23,18 @@ Inherits \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentCont
 .RI "void \fBInitializeUIAssetBundles\fP ()"
 .br
 .RI "This will update all the UI components using Asset Bundles from Google Bucket\&. "
+.ti -1c
+.RI "void \fBCloseCharacterSelector\fP (bool GoBack)"
+.br
+.ti -1c
+.RI "void \fBShowCharacterDialogBox\fP (string title, string text, int avatar)"
+.br
+.ti -1c
+.RI "void \fBCloseCharacterDialogBox\fP ()"
+.br
+.ti -1c
+.RI "void \fBShowCharacterSelector\fP (bool hero, UnityAction< int > characterSelected, UnityAction quitSelection)"
+.br
 .ti -1c
 .RI "void \fBShowFriendRequested\fP (string id)"
 .br
@@ -40,6 +52,14 @@ Inherits \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentCont
 .RI "void \fBHideHomeButton\fP ()"
 .br
 .RI "Method to hide the Home button from the screen\&. "
+.ti -1c
+.RI "void \fBAddEventToSideOption\fP (\fBAchromaHomeButton\&.AchromaHomeButtonOption\fP option, UnityAction eventAction)"
+.br
+.RI "The host app can add a custom method the side option button\&. "
+.ti -1c
+.RI "void \fBRemoveEventFromSideOption\fP (\fBAchromaHomeButton\&.AchromaHomeButtonOption\fP option, UnityAction eventAction)"
+.br
+.RI "Removes the host app action attached to the button\&. "
 .ti -1c
 .RI "void \fBCloseSignInUI\fP ()"
 .br
@@ -80,6 +100,15 @@ Inherits \fBAchroma\&.AchromaParentController\fP, \fBAchroma\&.AchromaParentCont
 .RI "void \fBShowSavingIndicator\fP ()"
 .br
 .RI "Shows the floppy disk indicative to saving data\&. "
+.ti -1c
+.RI "void \fBShowRanking\fP (int type)"
+.br
+.ti -1c
+.RI "void \fBHideRanking\fP ()"
+.br
+.ti -1c
+.RI "void \fBHideRanking\fP (UnityAction result)"
+.br
 .ti -1c
 .RI "void \fBCloseShardShopUI\fP ()"
 .br
@@ -144,6 +173,12 @@ Public Member Functions inherited from \fBAchroma\&.AchromaParentController\fP
 .RI "Transform \fBmessageHeaderContent\fP"
 .br
 .ti -1c
+.RI "\fBCharacterSelectorAvatarList\fP \fBcharacterList\fP"
+.br
+.ti -1c
+.RI "\fBCharacterSelectorDialogBox\fP \fBcharacterSelectorDialogBox\fP"
+.br
+.ti -1c
 .RI "TMP_InputField \fBfriendIdInput\fP"
 .br
 .ti -1c
@@ -194,6 +229,19 @@ Public Member Functions inherited from \fBAchroma\&.AchromaParentController\fP
 .in -1c
 .SH "Member Function Documentation"
 .PP 
+.SS "void Achroma\&.AchromaUIController\&.AddEventToSideOption (\fBAchromaHomeButton::AchromaHomeButtonOption\fP option, UnityAction eventAction)"
+
+.PP
+The host app can add a custom method the side option button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIoption\fP The enum value for the option
+.br
+\fIeventAction\fP The action to be called when clicking the button
+.RE
+.PP
+
 .SS "void Achroma\&.AchromaUIController\&.AddNotification (string message)"
 
 .PP
@@ -256,6 +304,19 @@ Loader user sprite into the home button\&.
 \fBParameters\fP
 .RS 4
 \fIcallback\fP returns a success flag and an error message (if any)
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaUIController\&.RemoveEventFromSideOption (\fBAchromaHomeButton::AchromaHomeButtonOption\fP option, UnityAction eventAction)"
+
+.PP
+Removes the host app action attached to the button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIoption\fP The enum value for the option
+.br
+\fIeventAction\fP The action to be called when clicking the button
 .RE
 .PP
 

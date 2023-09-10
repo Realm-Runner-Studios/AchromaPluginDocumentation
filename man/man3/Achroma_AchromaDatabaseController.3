@@ -7,7 +7,7 @@ Achroma.AchromaDatabaseController
 .br
 .PP
 .PP
-Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, and MonoBehaviour\&.
+Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, and MonoBehaviour\&.
 .SS "Public Types"
 
 .in +1c
@@ -114,6 +114,9 @@ Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehavio
 .RI "void \fBUnWatchFriends\fP ()"
 .br
 .ti -1c
+.RI "bool \fBAmIFriendsWith\fP (string id)"
+.br
+.ti -1c
 .RI "void \fBGoogleGetAuthToken\fP (UnityAction< bool, string > result)"
 .br
 .RI "Collects the auth token using the Google Sign in plugin\&. "
@@ -169,14 +172,6 @@ Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehavio
 .br
 .RI "Gets a unique match code\&. "
 .ti -1c
-.RI "void \fBQueryRankingCloud\fP (int hero=\-1, string userId=null, bool currentSeason=false, bool showLoading=true, UnityAction< List< IDictionary >, bool > result=null)"
-.br
-.RI "Returns a list with the ranking list for a certain type of game\&. "
-.ti -1c
-.RI "void \fBQueryStoryRankingCloud\fP (bool showLoading=true, string userId='', UnityAction< List< IDictionary >, bool > result=null)"
-.br
-.RI "Returns the ranking for story mode\&. "
-.ti -1c
 .RI "void \fBGetAchrometerTier\fP (int totalChromaWins, int totalAchromWins, int storyAchrometer, UnityAction< bool, int, int > callback)"
 .br
 .RI "Gets the Achrometer tier (-6 \&.\&. 6) "
@@ -192,6 +187,14 @@ Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehavio
 .RI "void \fBGetNews\fP (UnityAction< bool, string > result)"
 .br
 .ti -1c
+.RI "void \fBQueryRankingCloud\fP (int hero=\-1, string userId=null, bool currentSeason=false, bool showLoading=true, UnityAction< List< IDictionary >, bool > result=null)"
+.br
+.RI "Returns a list with the ranking list for a certain type of game\&. "
+.ti -1c
+.RI "void \fBQueryStoryRankingCloud\fP (bool showLoading=true, string userId='', UnityAction< List< IDictionary >, bool > result=null)"
+.br
+.RI "Returns the ranking for story mode\&. "
+.ti -1c
 .RI "void \fBGoToAddress\fP ()"
 .br
 .RI "Opens the App store address to allow the user to update the app\&. "
@@ -205,6 +208,14 @@ Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehavio
 .ti -1c
 .RI "bool \fBGetBooleanConfig\fP (string name)"
 .br
+.ti -1c
+.RI "void \fBGetUserRPGCharacters\fP (string userId, UnityAction< bool, string, string > result)"
+.br
+.RI "Gets the json with the user's RPG characters\&. "
+.ti -1c
+.RI "void \fBSetUserRPGCharacters\fP (string userId, string json, UnityAction< bool, string > result)"
+.br
+.RI "Sets the json with the user's RPG characters\&. "
 .ti -1c
 .RI "int \fBGetVariableValue\fP (string Story, string Name)"
 .br
@@ -286,9 +297,6 @@ Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehavio
 .RI "void \fBLoadDatabase\fP (UnityAction< bool, string > result)"
 .br
 .RI "Loads the database references to the tables the app uses\&. "
-.ti -1c
-.RI "bool \fBAmIFriendsWith\fP (string id)"
-.br
 .in -1c
 .SS "Public Attributes"
 
@@ -324,6 +332,14 @@ Inherits MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehaviour, MonoBehavio
 .RI "UnityAction< \fBUserData\fP > \fBuserDataChanged\fP"
 .br
 .RI "This will be called every time a change to user happens This is a reference to a method created by the host app\&. "
+.ti -1c
+.RI "UnityAction< \fBUserData\fP > \fBuserSignedIn\fP"
+.br
+.RI "This will be called every time the user signs in\&. "
+.ti -1c
+.RI "UnityAction< \fBUserData\fP > \fBuserSigneOut\fP"
+.br
+.RI "This will be called every time the user signs out\&. "
 .ti -1c
 .RI "\fBFriendsData\fP \fBfriendsData\fP"
 .br
@@ -641,6 +657,23 @@ Method to get current user data and store it to a UserData variable\&.
 .RE
 .PP
 
+.SS "void Achroma\&.AchromaDatabaseController\&.GetUserRPGCharacters (string userId, UnityAction< bool, string, string > result)"
+
+.PP
+Gets the json with the user's RPG characters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserId\fP The user/param> 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP success/failure feedback
+.RE
+.PP
+.RE
+.PP
+
 .SS "void Achroma\&.AchromaDatabaseController\&.GetUsersFriends (UnityAction< string, int > result)"
 
 .PP
@@ -879,6 +912,27 @@ Sets the email for Apple login\&.
 \fBParameters\fP
 .RS 4
 \fIuserInfo\fP 
+.RE
+.PP
+
+.SS "void Achroma\&.AchromaDatabaseController\&.SetUserRPGCharacters (string userId, string json, UnityAction< bool, string > result)"
+
+.PP
+Sets the json with the user's RPG characters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserId\fP The user/param> 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP success/failure feedback
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
 .RE
 .PP
 

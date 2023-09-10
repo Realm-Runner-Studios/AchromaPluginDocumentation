@@ -8,6 +8,8 @@ Singleton with standardized UI elements like messages, loading screens, etc.
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_a5ba48d3db5b822f17ae57d4380c26dcb}{Show\+Character\+Selector}} (bool hero, Unity\+Action$<$ int $>$ callback, Unity\+Action user\+Closed\+Selector)
+\begin{DoxyCompactList}\small\item\em Shows Character Selector Screen to allow user to select a character with a custom calback. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_acd3f915e6cce9460bdb1fa1bd1350a1a}{Show\+Success\+Message}} (string message, Unity\+Action$<$ int $>$ result=null)
 \begin{DoxyCompactList}\small\item\em Shows simple message with a success title and an OK button. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_a6cb246984b5f40134e107801a2427e50}{Show\+Error\+Message}} (string message, Unity\+Action$<$ int $>$ result=null)
@@ -39,7 +41,13 @@ static void {\bfseries Hide\+Loading} ()
 \begin{DoxyCompactList}\small\item\em Hides the loading screen. \end{DoxyCompactList}\item 
 \Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_adf78d371cda88e273240ccaa43b11883}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_adf78d371cda88e273240ccaa43b11883} 
 static void {\bfseries Show\+Saving\+Indicator} ()
-\begin{DoxyCompactList}\small\item\em Shows the small floppy disk icon on the top of the screen to indicate data has been saved. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Shows the small floppy disk icon on the top of the screen to indicate data has been saved. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_af39c89c5d6b29f33fe239d55d6b552ae}{Add\+Event\+To\+Side\+Option}} (\mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button.\+Achroma\+Home\+Button\+Option}} option, Unity\+Action event\+Action)
+\begin{DoxyCompactList}\small\item\em The host app can add a custom method the side option button. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_af331f6593a8f8e95b4839bc89fb90b31}{Remove\+Event\+From\+Side\+Option}} (\mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button.\+Achroma\+Home\+Button\+Option}} option, Unity\+Action event\+Action)
+\begin{DoxyCompactList}\small\item\em Removes the host app action attached to the button. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_u_i_a932b7f4b7990b5881e7788da017b83d0}{Open\+URL}} (string url, string loading\+Message="{}Please wait"{})
+\begin{DoxyCompactList}\small\item\em This will load a web page. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -55,6 +63,31 @@ static \mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4
 Singleton with standardized UI elements like messages, loading screens, etc. 
 
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_af39c89c5d6b29f33fe239d55d6b552ae}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_af39c89c5d6b29f33fe239d55d6b552ae} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!AddEventToSideOption@{AddEventToSideOption}}
+\index{AddEventToSideOption@{AddEventToSideOption}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{AddEventToSideOption()}{AddEventToSideOption()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Add\+Event\+To\+Side\+Option (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button\+::\+Achroma\+Home\+Button\+Option}}}]{option,  }\item[{Unity\+Action}]{event\+Action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The host app can add a custom method the side option button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & The enum value for the option\\
+\hline
+{\em event\+Action} & The action to be called when clicking the button\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_af39c89c5d6b29f33fe239d55d6b552ae_cgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a1ccf60994d29191786c4659a4bc9c177}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a1ccf60994d29191786c4659a4bc9c177} 
 \index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!AddNotification@{AddNotification}}
 \index{AddNotification@{AddNotification}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
@@ -149,6 +182,73 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_a29cb5418a29491f2c88bc6bbd743d94b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a932b7f4b7990b5881e7788da017b83d0}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a932b7f4b7990b5881e7788da017b83d0} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!OpenURL@{OpenURL}}
+\index{OpenURL@{OpenURL}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{OpenURL()}{OpenURL()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Open\+URL (\begin{DoxyParamCaption}\item[{string}]{url,  }\item[{string}]{loading\+Message = {\ttfamily "{}Please~wait"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This will load a web page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The url ot be loaded\\
+\hline
+{\em loading\+Message} & The string that will appear in the loading screen\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_af331f6593a8f8e95b4839bc89fb90b31}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_af331f6593a8f8e95b4839bc89fb90b31} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!RemoveEventFromSideOption@{RemoveEventFromSideOption}}
+\index{RemoveEventFromSideOption@{RemoveEventFromSideOption}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{RemoveEventFromSideOption()}{RemoveEventFromSideOption()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Remove\+Event\+From\+Side\+Option (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_achroma_1_1_achroma_home_button_a537d7225dc7a739f4e245af49af23702}{Achroma\+Home\+Button\+::\+Achroma\+Home\+Button\+Option}}}]{option,  }\item[{Unity\+Action}]{event\+Action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Removes the host app action attached to the button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & The enum value for the option\\
+\hline
+{\em event\+Action} & The action to be called when clicking the button\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_af331f6593a8f8e95b4839bc89fb90b31_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a5ba48d3db5b822f17ae57d4380c26dcb}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a5ba48d3db5b822f17ae57d4380c26dcb} 
+\index{AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}!ShowCharacterSelector@{ShowCharacterSelector}}
+\index{ShowCharacterSelector@{ShowCharacterSelector}!AchromaAPI.AchromaInstanceUI@{AchromaAPI.AchromaInstanceUI}}
+\doxysubsubsection{\texorpdfstring{ShowCharacterSelector()}{ShowCharacterSelector()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+UI.\+Show\+Character\+Selector (\begin{DoxyParamCaption}\item[{bool}]{hero,  }\item[{Unity\+Action$<$ int $>$}]{callback,  }\item[{Unity\+Action}]{user\+Closed\+Selector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows Character Selector Screen to allow user to select a character with a custom calback. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero} & If true, it will show only hero character\\
+\hline
+{\em callback} & Will return the avatar id in the control file\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_u_i_a5ba48d3db5b822f17ae57d4380c26dcb_cgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_u_i_a6cb246984b5f40134e107801a2427e50}\label{class_achroma_a_p_i_1_1_achroma_instance_u_i_a6cb246984b5f40134e107801a2427e50} 
@@ -306,6 +406,7 @@ Here is the call graph for this function\+:\nopagebreak
 \end{figure}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Character\+Selector.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+UI.\+cs\end{DoxyCompactItemize}

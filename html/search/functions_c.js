@@ -6,5 +6,6 @@ var searchData=
   ['onuserchange_3',['OnUserChange',['../class_achroma_1_1_achroma_database_controller.html#ac843e0393854c7257993d2373d4eceed',1,'Achroma::AchromaDatabaseController']]],
   ['onwebcontentprocessterminateddelegate_4',['OnWebContentProcessTerminatedDelegate',['../class_uni_web_view.html#a8a02a2c576d338456c7b309733c2b754',1,'UniWebView']]],
   ['open_5',['Open',['../class_achroma_1_1_achroma_home_button.html#a867a85f3bee83771b4a861a7ec6ad0f3',1,'Achroma::AchromaHomeButton']]],
-  ['orientationchangeddelegate_6',['OrientationChangedDelegate',['../class_uni_web_view.html#a4612a1570570293cb815a476f0957858',1,'UniWebView']]]
+  ['openurl_6',['OpenURL',['../class_achroma_a_p_i_1_1_achroma_instance_u_i.html#a932b7f4b7990b5881e7788da017b83d0',1,'AchromaAPI::AchromaInstanceUI']]],
+  ['orientationchangeddelegate_7',['OrientationChangedDelegate',['../class_uni_web_view.html#a4612a1570570293cb815a476f0957858',1,'UniWebView']]]
 ];

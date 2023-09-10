@@ -1,0 +1,64 @@
+.TH "AchromaAPI.AchromaInstanceRPG" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AchromaAPI.AchromaInstanceRPG \- Singleton with methods related to the Companion match\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBGetUserRPGCharacters\fP (string userId, UnityAction< bool, string, string > result)"
+.br
+.RI "Adds a new match to Firebase's match table\&. "
+.ti -1c
+.RI "static void \fBSetUserRPGCharacters\fP (string userId, string json, UnityAction< bool, string > result)"
+.br
+.RI "Sets the json with the user's RPG characters\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Singleton with methods related to the Companion match\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static void AchromaAPI\&.AchromaInstanceRPG\&.GetUserRPGCharacters (string userId, UnityAction< bool, string, string > result)\fC [static]\fP"
+
+.PP
+Adds a new match to Firebase's match table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsessionName\fP The unique match id
+.br
+\fIgameType\fP The type of match in question
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceRPG\&.SetUserRPGCharacters (string userId, string json, UnityAction< bool, string > result)\fC [static]\fP"
+
+.PP
+Sets the json with the user's RPG characters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserId\fP The user/param> 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP success/failure feedback
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

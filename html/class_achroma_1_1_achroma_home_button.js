@@ -15,5 +15,6 @@ var class_achroma_1_1_achroma_home_button =
     [ "Open", "class_achroma_1_1_achroma_home_button.html#a867a85f3bee83771b4a861a7ec6ad0f3", null ],
     [ "SetAvatarSprite", "class_achroma_1_1_achroma_home_button.html#acd186e1fc47cf6fbe3eec792c673d9f5", null ],
     [ "Show", "class_achroma_1_1_achroma_home_button.html#aa82607ddadb4b96512ae26bce955e7a2", null ],
-    [ "ShowLarge", "class_achroma_1_1_achroma_home_button.html#abf13735013991c7bf9276dd3b91b4fa3", null ]
+    [ "ShowLarge", "class_achroma_1_1_achroma_home_button.html#abf13735013991c7bf9276dd3b91b4fa3", null ],
+    [ "ShowOptions", "class_achroma_1_1_achroma_home_button.html#aeb90fcd132c2af560566963fe9fae943", null ]
 ];

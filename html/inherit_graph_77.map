@@ -1,5 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,140,31"/>
-<area shape="rect" id="Node000001" href="$class_uni_web_view_safe_browsing.html" title="UniWebView Safe Browsing provides a way for browsing the web content in a more browser&#45;like way,..." alt="" coords="188,5,365,31"/>
-<area shape="poly" id="edge81_Node000000_Node000001" title=" " alt="" coords="155,16,187,16,187,21,155,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,80,125,106"/>
+<area shape="rect" id="Node000001" href="$class_achroma_1_1_achroma_error_description.html" title=" " alt="" coords="191,5,414,31"/>
+<area shape="poly" id="edge90_Node000000_Node000001" title=" " alt="" coords="102,70,172,40,212,29,213,34,174,45,104,75"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_power_up_type_descriptiopn.html" title=" " alt="" coords="186,55,419,80"/>
+<area shape="poly" id="edge91_Node000000_Node000002" title=" " alt="" coords="139,82,186,77,186,83,140,88"/>
+<area shape="rect" id="Node000003" href="$class_achroma_1_1_story_description.html" title=" " alt="" coords="215,104,390,130"/>
+<area shape="poly" id="edge92_Node000000_Node000003" title=" " alt="" coords="140,98,215,105,215,111,139,103"/>
+<area shape="rect" id="Node000004" href="$class_achroma_a_p_i_1_1_achroma_instance_sounds_1_1_achroma_sound_effect_description.html" title=" " alt="" coords="173,154,432,195"/>
+<area shape="poly" id="edge93_Node000000_Node000004" title=" " alt="" coords="106,110,174,140,209,151,207,156,172,145,103,115"/>
 </map>

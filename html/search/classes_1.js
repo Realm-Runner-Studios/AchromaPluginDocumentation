@@ -14,7 +14,14 @@ var searchData=
   ['cfx_5flightflicker_11',['CFX_LightFlicker',['../class_c_f_x___light_flicker.html',1,'']]],
   ['cfx_5flightintensityfade_12',['CFX_LightIntensityFade',['../class_c_f_x___light_intensity_fade.html',1,'']]],
   ['characteravatar_13',['CharacterAvatar',['../struct_achroma_1_1_character_avatar.html',1,'Achroma']]],
-  ['chatcontroller_14',['ChatController',['../class_chat_controller.html',1,'']]],
-  ['contextmenutrigger_15',['ContextMenuTrigger',['../class_context_menu_trigger.html',1,'']]],
-  ['cooldown_16',['Cooldown',['../class_cooldown.html',1,'']]]
+  ['characterselector_14',['CharacterSelector',['../class_character_selector.html',1,'']]],
+  ['characterselectoravatar_15',['CharacterSelectorAvatar',['../class_character_selector_avatar.html',1,'']]],
+  ['characterselectoravatarlist_16',['CharacterSelectorAvatarList',['../class_character_selector_avatar_list.html',1,'']]],
+  ['characterselectorchapter_17',['CharacterSelectorChapter',['../class_character_selector_chapter.html',1,'']]],
+  ['characterselectordialogbox_18',['CharacterSelectorDialogBox',['../class_character_selector_dialog_box.html',1,'']]],
+  ['characterselectorgrid_19',['CharacterSelectorGrid',['../class_character_selector_grid.html',1,'']]],
+  ['characterselectorstory_20',['CharacterSelectorStory',['../class_character_selector_story.html',1,'']]],
+  ['chatcontroller_21',['ChatController',['../class_chat_controller.html',1,'']]],
+  ['contextmenutrigger_22',['ContextMenuTrigger',['../class_context_menu_trigger.html',1,'']]],
+  ['cooldown_23',['Cooldown',['../class_cooldown.html',1,'']]]
 ];

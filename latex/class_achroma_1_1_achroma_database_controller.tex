@@ -2,7 +2,8 @@
 \hypertarget{class_achroma_1_1_achroma_database_controller}{}\label{class_achroma_1_1_achroma_database_controller}\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
 
 
-Inheritance diagram for Achroma.\+Achroma\+Database\+Controller\+:\nopagebreak
+Inheritance diagram for Achroma.\+Achroma\+Database\+Controller\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +12,8 @@ Inheritance diagram for Achroma.\+Achroma\+Database\+Controller\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Achroma.\+Achroma\+Database\+Controller\+:\nopagebreak
+Collaboration diagram for Achroma.\+Achroma\+Database\+Controller\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -95,6 +97,8 @@ void {\bfseries Remove\+Friendship} (string requesting\+User, string requested\+
 \Hypertarget{class_achroma_1_1_achroma_database_controller_a82c3c416d05bc3cf09070f002e9184f5}\label{class_achroma_1_1_achroma_database_controller_a82c3c416d05bc3cf09070f002e9184f5} 
 void {\bfseries Un\+Watch\+Friends} ()
 \item 
+bool \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_af892aac6d5f552024bfc18098ec0f612}{Am\+IFriends\+With}} (string id)
+\item 
 void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a5ba4615b0513b0a5fce16a82adc45f47}{Google\+Get\+Auth\+Token}} (Unity\+Action$<$ bool, string $>$ result)
 \begin{DoxyCompactList}\small\item\em Collects the auth token using the Google Sign in plugin. \end{DoxyCompactList}\item 
 \Hypertarget{class_achroma_1_1_achroma_database_controller_ac371a8afa04f4ca351976a29eacc2604}\label{class_achroma_1_1_achroma_database_controller_ac371a8afa04f4ca351976a29eacc2604} 
@@ -125,10 +129,6 @@ void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a6277b697b97
 \begin{DoxyCompactList}\small\item\em Gets the current season name from the seasons table. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_ac8f647abd3d62aeb99276847e391eeeb}{Get\+Match\+Code}} (Unity\+Action$<$ string $>$ callback)
 \begin{DoxyCompactList}\small\item\em Gets a unique match code. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a47e5b60b208ce8178279085c74086f02}{Query\+Ranking\+Cloud}} (int hero=-\/1, string user\+Id=null, bool current\+Season=false, bool show\+Loading=true, Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$ result=null)
-\begin{DoxyCompactList}\small\item\em Returns a list with the ranking list for a certain type of game. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a7463418c27b769cfcd731335300077be}{Query\+Story\+Ranking\+Cloud}} (bool show\+Loading=true, string user\+Id="{}"{}, Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$ result=null)
-\begin{DoxyCompactList}\small\item\em Returns the ranking for story mode. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a5da47b29fb19dc245f218dbab1c92fec}{Get\+Achrometer\+Tier}} (int total\+Chroma\+Wins, int total\+Achrom\+Wins, int story\+Achrometer, Unity\+Action$<$ bool, int, int $>$ callback)
 \begin{DoxyCompactList}\small\item\em Gets the Achrometer tier (-\/6 .. 6) \end{DoxyCompactList}\item 
 \Hypertarget{class_achroma_1_1_achroma_database_controller_ac794c39313a6321ddd57268908da0f60}\label{class_achroma_1_1_achroma_database_controller_ac794c39313a6321ddd57268908da0f60} 
@@ -139,6 +139,10 @@ void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a017c91c4bb2
 \Hypertarget{class_achroma_1_1_achroma_database_controller_a96a5db42984320000ab41b3773be571d}\label{class_achroma_1_1_achroma_database_controller_a96a5db42984320000ab41b3773be571d} 
 void {\bfseries Get\+News} (Unity\+Action$<$ bool, string $>$ result)
 \item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a47e5b60b208ce8178279085c74086f02}{Query\+Ranking\+Cloud}} (int hero=-\/1, string user\+Id=null, bool current\+Season=false, bool show\+Loading=true, Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Returns a list with the ranking list for a certain type of game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a7463418c27b769cfcd731335300077be}{Query\+Story\+Ranking\+Cloud}} (bool show\+Loading=true, string user\+Id="{}"{}, Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Returns the ranking for story mode. \end{DoxyCompactList}\item 
 \Hypertarget{class_achroma_1_1_achroma_database_controller_a80d74680852fff23abc3a4fb12a57e16}\label{class_achroma_1_1_achroma_database_controller_a80d74680852fff23abc3a4fb12a57e16} 
 void {\bfseries Go\+To\+Address} ()
 \begin{DoxyCompactList}\small\item\em Opens the App store address to allow the user to update the app. \end{DoxyCompactList}\item 
@@ -150,6 +154,10 @@ string {\bfseries Get\+String\+Config} (string name)
 \Hypertarget{class_achroma_1_1_achroma_database_controller_a6aecd8897e6260ff1f6c3574141b656f}\label{class_achroma_1_1_achroma_database_controller_a6aecd8897e6260ff1f6c3574141b656f} 
 bool {\bfseries Get\+Boolean\+Config} (string name)
 \item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_aff2e67e328832a3ca3faf3392c2435c5}{Get\+User\+RPGCharacters}} (string user\+Id, Unity\+Action$<$ bool, string, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Gets the json with the user\textquotesingle{}s RPG characters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_ab5981d1684b6d8557c32c1f45a5b25ef}{Set\+User\+RPGCharacters}} (string user\+Id, string json, Unity\+Action$<$ bool, string $>$ result)
+\begin{DoxyCompactList}\small\item\em Sets the json with the user\textquotesingle{}s RPG characters. \end{DoxyCompactList}\item 
 \Hypertarget{class_achroma_1_1_achroma_database_controller_a4410f7bca0960b3b3302d3d656a76ae0}\label{class_achroma_1_1_achroma_database_controller_a4410f7bca0960b3b3302d3d656a76ae0} 
 int {\bfseries Get\+Variable\+Value} (string Story, string Name)
 \item 
@@ -205,9 +213,7 @@ void {\bfseries Cancel\+Operations} ()
 void {\bfseries Sign\+Out} ()
 \begin{DoxyCompactList}\small\item\em This method will log out. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_a87a74899ec8cdf24cbba363b4762c3b3}{Load\+Database}} (Unity\+Action$<$ bool, string $>$ result)
-\begin{DoxyCompactList}\small\item\em Loads the database references to the tables the app uses. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_achroma_1_1_achroma_database_controller_af892aac6d5f552024bfc18098ec0f612}{Am\+IFriends\+With}} (string id)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Loads the database references to the tables the app uses. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -241,6 +247,12 @@ string {\bfseries Current\+Story\+Id}
 \Hypertarget{class_achroma_1_1_achroma_database_controller_abc1a3d32c8491950dc81e86a1cfc6f7e}\label{class_achroma_1_1_achroma_database_controller_abc1a3d32c8491950dc81e86a1cfc6f7e} 
 Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ {\bfseries user\+Data\+Changed}
 \begin{DoxyCompactList}\small\item\em This will be called every time a change to user happens This is a reference to a method created by the host app. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a4a4480e67d9146af33e34d943052ee6f}\label{class_achroma_1_1_achroma_database_controller_a4a4480e67d9146af33e34d943052ee6f} 
+Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ {\bfseries user\+Signed\+In}
+\begin{DoxyCompactList}\small\item\em This will be called every time the user signs in. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_achroma_database_controller_a221193a9a1475c80c1e65d29e9440960}\label{class_achroma_1_1_achroma_database_controller_a221193a9a1475c80c1e65d29e9440960} 
+Unity\+Action$<$ \mbox{\hyperlink{class_achroma_1_1_user_data}{User\+Data}} $>$ {\bfseries user\+Signe\+Out}
+\begin{DoxyCompactList}\small\item\em This will be called every time the user signs out. \end{DoxyCompactList}\item 
 \Hypertarget{class_achroma_1_1_achroma_database_controller_a8949945c6f407cda27241325583ed02e}\label{class_achroma_1_1_achroma_database_controller_a8949945c6f407cda27241325583ed02e} 
 \mbox{\hyperlink{class_achroma_1_1_friends_data}{Friends\+Data}} {\bfseries friends\+Data}
 \end{DoxyCompactItemize}
@@ -834,6 +846,42 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a85e4fb83fbe91c323abe7155581beb72_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_aff2e67e328832a3ca3faf3392c2435c5}\label{class_achroma_1_1_achroma_database_controller_aff2e67e328832a3ca3faf3392c2435c5} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetUserRPGCharacters@{GetUserRPGCharacters}}
+\index{GetUserRPGCharacters@{GetUserRPGCharacters}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{GetUserRPGCharacters()}{GetUserRPGCharacters()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Get\+User\+RPGCharacters (\begin{DoxyParamCaption}\item[{string}]{user\+Id,  }\item[{Unity\+Action$<$ bool, string, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Gets the json with the user\textquotesingle{}s RPG characters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user/param\texorpdfstring{$>$}{>} 
+\begin{DoxyParams}{Parameters}
+{\em result} & success/failure feedback\\
+\hline
+\end{DoxyParams}
+\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_aff2e67e328832a3ca3faf3392c2435c5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_aff2e67e328832a3ca3faf3392c2435c5_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_achroma_1_1_achroma_database_controller_a44a2efb93a1f57d09b08ad5c7a3854dd}\label{class_achroma_1_1_achroma_database_controller_a44a2efb93a1f57d09b08ad5c7a3854dd} 
 \index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!GetUsersFriends@{GetUsersFriends}}
 \index{GetUsersFriends@{GetUsersFriends}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
@@ -972,7 +1020,8 @@ This is called if something wrong happens during Apple sign in.
 {\em args} & \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -994,7 +1043,8 @@ This is called after a successful Apple sign in happns.
 {\em args} & \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1164,6 +1214,14 @@ Returns a list with the ranking list for a certain type of game.
 {\em result} & success feedback and list with all the users\\
 \hline
 \end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a47e5b60b208ce8178279085c74086f02_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_achroma_1_1_achroma_database_controller_a7463418c27b769cfcd731335300077be}\label{class_achroma_1_1_achroma_database_controller_a7463418c27b769cfcd731335300077be} 
 \index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!QueryStoryRankingCloud@{QueryStoryRankingCloud}}
 \index{QueryStoryRankingCloud@{QueryStoryRankingCloud}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
@@ -1183,6 +1241,14 @@ Returns the ranking for story mode.
 {\em result} & \\
 \hline
 \end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_a7463418c27b769cfcd731335300077be_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_achroma_1_1_achroma_database_controller_aa63b48152c5a84373e98b257c7c66588}\label{class_achroma_1_1_achroma_database_controller_aa63b48152c5a84373e98b257c7c66588} 
 \index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!RefreshMatch@{RefreshMatch}}
 \index{RefreshMatch@{RefreshMatch}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
@@ -1289,6 +1355,45 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_ab5da1f53e571d5a2cd734bc09e2c4f6f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_1_1_achroma_database_controller_ab5981d1684b6d8557c32c1f45a5b25ef}\label{class_achroma_1_1_achroma_database_controller_ab5981d1684b6d8557c32c1f45a5b25ef} 
+\index{Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}!SetUserRPGCharacters@{SetUserRPGCharacters}}
+\index{SetUserRPGCharacters@{SetUserRPGCharacters}!Achroma.AchromaDatabaseController@{Achroma.AchromaDatabaseController}}
+\doxysubsubsection{\texorpdfstring{SetUserRPGCharacters()}{SetUserRPGCharacters()}}
+{\footnotesize\ttfamily void Achroma.\+Achroma\+Database\+Controller.\+Set\+User\+RPGCharacters (\begin{DoxyParamCaption}\item[{string}]{user\+Id,  }\item[{string}]{json,  }\item[{Unity\+Action$<$ bool, string $>$}]{result }\end{DoxyParamCaption})}
+
+
+
+Sets the json with the user\textquotesingle{}s RPG characters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user/param\texorpdfstring{$>$}{>} 
+\begin{DoxyParams}{Parameters}
+{\em result} & success/failure feedback\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_ab5981d1684b6d8557c32c1f45a5b25ef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_achroma_database_controller_ab5981d1684b6d8557c32c1f45a5b25ef_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_achroma_1_1_achroma_database_controller_a5c0ae8cd96efac1ba1fc06ac1a40f57f}\label{class_achroma_1_1_achroma_database_controller_a5c0ae8cd96efac1ba1fc06ac1a40f57f} 
@@ -1413,5 +1518,6 @@ The documentation for this class was generated from the following files\+:\begin
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+User.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller.\+cs\item 
 /\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+Email\+Auth.\+cs\item 
-/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+Story.\+cs\item 
-/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller1.\+cs\end{DoxyCompactItemize}
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+Ranking.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+RPG.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+Database/Achroma\+Database\+Controller+\+Story.\+cs\end{DoxyCompactItemize}

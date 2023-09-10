@@ -39,7 +39,9 @@ static \mbox{\hyperlink{struct_achroma_1_1_location}{Location}} \mbox{\hyperlink
 static List$<$ \mbox{\hyperlink{struct_achroma_1_1_achroma_file_story}{Achroma\+File\+Story}} $>$ \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_adc0f76ef40eb8f326e907b8e863516cf}{Get\+List\+Of\+Chapters}} ()
 \begin{DoxyCompactList}\small\item\em Returns a distinct descendant list of chapters. \end{DoxyCompactList}\item 
 static List$<$ \mbox{\hyperlink{struct_achroma_1_1_achroma_file_story}{Achroma\+File\+Story}} $>$ \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_ab550fbce17df1ebe8c103aa0adad8180}{Get\+List\+Of\+Stories}} ()
-\begin{DoxyCompactList}\small\item\em Returns a distinct descendant list of stories. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns a distinct descendant list of stories. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_achroma_1_1_achroma_control_file_a82fe84ca8c179485a48b5d385298d7b2}{Get\+Story\+Background\+Music}} (string story\+Prefix)
+\begin{DoxyCompactList}\small\item\em Returns the intro music file name for the story. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -117,7 +119,8 @@ Returns the character from the Control File with all its data.
 \begin{DoxyReturn}{Returns}
 Returns the Characater\+Avatar type with all the related data to the Character
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -307,6 +310,24 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_achroma_1_1_achroma_control_file_a0069242c5acc2e083dbf822e6b51f4f2_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{class_achroma_1_1_achroma_control_file_a82fe84ca8c179485a48b5d385298d7b2}\label{class_achroma_1_1_achroma_control_file_a82fe84ca8c179485a48b5d385298d7b2} 
+\index{Achroma.AchromaControlFile@{Achroma.AchromaControlFile}!GetStoryBackgroundMusic@{GetStoryBackgroundMusic}}
+\index{GetStoryBackgroundMusic@{GetStoryBackgroundMusic}!Achroma.AchromaControlFile@{Achroma.AchromaControlFile}}
+\doxysubsubsection{\texorpdfstring{GetStoryBackgroundMusic()}{GetStoryBackgroundMusic()}}
+{\footnotesize\ttfamily static string Achroma.\+Achroma\+Control\+File.\+Get\+Story\+Background\+Music (\begin{DoxyParamCaption}\item[{string}]{story\+Prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the intro music file name for the story. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em story\+Prefix} & CH, DR, FL, WW, CC\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file name
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

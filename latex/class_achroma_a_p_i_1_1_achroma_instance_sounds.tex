@@ -1,0 +1,145 @@
+\doxysection{Achroma\+API.\+Achroma\+Instance\+Sounds Class Reference}
+\hypertarget{class_achroma_a_p_i_1_1_achroma_instance_sounds}{}\label{class_achroma_a_p_i_1_1_achroma_instance_sounds}\index{AchromaAPI.AchromaInstanceSounds@{AchromaAPI.AchromaInstanceSounds}}
+
+
+Singleton with the methods to instantiate assets like Characters, Locations, Objects, Actions.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_sounds_1_1_achroma_sound_effect_description}{Achroma\+Sound\+Effect\+Description}}
+\item 
+class \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_sounds_1_1_achroma_sound_effect_enum}{Achroma\+Sound\+Effect\+Enum}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_sounds_a5496cb25e59ce89a7cee132c94e153b5}\label{class_achroma_a_p_i_1_1_achroma_instance_sounds_a5496cb25e59ce89a7cee132c94e153b5} 
+enum {\bfseries Achroma\+Sound\+Effect} \{ \newline
+{\bfseries Shop\+Show\+Character}
+, {\bfseries Open\+Shard\+Pack}
+, {\bfseries Close\+Shard\+Pack}
+, {\bfseries Open\+Shard\+Pack\+\_\+2}
+, \newline
+{\bfseries Open\+Character\+Purchase}
+, {\bfseries Purchase\+Shard}
+, {\bfseries Tutorial\+Mode\+Show}
+, {\bfseries Adventure\+Mode\+Shows}
+, \newline
+{\bfseries Close\+Character\+Purchase}
+, {\bfseries Show\+Character\+Selection}
+, {\bfseries Flip\+Card}
+, {\bfseries Flip\+Card\+Play\+Button}
+, \newline
+{\bfseries ARMode}
+, {\bfseries Adventure\+Mode\+Hides}
+, {\bfseries Adventure\+Mode\+Start\+Game}
+, {\bfseries Companion\+Mode\+Open}
+, \newline
+{\bfseries Locked2}
+, {\bfseries Open\+Dialog}
+, {\bfseries Close\+Dialog}
+, {\bfseries Open\+Window}
+, \newline
+{\bfseries Close\+Window}
+, {\bfseries Locked}
+, {\bfseries Button\+Pressed}
+, {\bfseries Button\+Pressed\+\_\+2}
+, \newline
+{\bfseries Shard\+Win}
+, {\bfseries Shard\+Win2}
+, {\bfseries Tutorial\+Mode\+Interaction\+Required}
+, {\bfseries Buy\+Character}
+, \newline
+{\bfseries Reveal}
+, {\bfseries Achrom\+Surge}
+, {\bfseries Revive}
+, {\bfseries Chroma\+Flare}
+, \newline
+{\bfseries Chromatic\+Shield}
+, {\bfseries Time\+Step}
+, {\bfseries Show\+Relic\+Options}
+, {\bfseries Show\+Relic\+Options\+\_\+2}
+, \newline
+{\bfseries Death\+Stinger}
+, {\bfseries Menu\+Error}
+, {\bfseries Notication}
+, {\bfseries Game\+Over}
+, \newline
+{\bfseries Dice}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_sounds_a322ac4176b3cdce75cd2901eef1e3f91}{Play\+Main\+Theme}} ()
+\begin{DoxyCompactList}\small\item\em Plays the main theme for the story associated with the user. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_sounds_ac1c105015faf991ffacde8be8200c07d}{Play\+Effect}} (Achroma\+Sound\+Effect sound\+Effect)
+\begin{DoxyCompactList}\small\item\em Plays a sound effect with the sound enum as a parameter. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_sounds_a824836da8ccc432a021ae1c5d64d0ea1}\label{class_achroma_a_p_i_1_1_achroma_instance_sounds_a824836da8ccc432a021ae1c5d64d0ea1} 
+static void {\bfseries Stop\+All\+Sounds} ()
+\begin{DoxyCompactList}\small\item\em Stops all audio sources in Audio\+COntroller. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_sounds_a098aafd169f913543eb07413fdbbd1ac}\label{class_achroma_a_p_i_1_1_achroma_instance_sounds_a098aafd169f913543eb07413fdbbd1ac} 
+static void {\bfseries Pause\+All\+Sounds} ()
+\begin{DoxyCompactList}\small\item\em Pauses all audio sources in Audio\+COntroller. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_sounds_afd47316ab91781746d9514f567c8d9e3}\label{class_achroma_a_p_i_1_1_achroma_instance_sounds_afd47316ab91781746d9514f567c8d9e3} 
+static void {\bfseries Resume\+All\+Sounds} ()
+\begin{DoxyCompactList}\small\item\em Resumes all audio sources in Audio\+COntroller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton with the methods to instantiate assets like Characters, Locations, Objects, Actions. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_sounds_ac1c105015faf991ffacde8be8200c07d}\label{class_achroma_a_p_i_1_1_achroma_instance_sounds_ac1c105015faf991ffacde8be8200c07d} 
+\index{AchromaAPI.AchromaInstanceSounds@{AchromaAPI.AchromaInstanceSounds}!PlayEffect@{PlayEffect}}
+\index{PlayEffect@{PlayEffect}!AchromaAPI.AchromaInstanceSounds@{AchromaAPI.AchromaInstanceSounds}}
+\doxysubsubsection{\texorpdfstring{PlayEffect()}{PlayEffect()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Sounds.\+Play\+Effect (\begin{DoxyParamCaption}\item[{Achroma\+Sound\+Effect}]{sound\+Effect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Plays a sound effect with the sound enum as a parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound\+Effect} & The Enum value of the sound\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_sounds_ac1c105015faf991ffacde8be8200c07d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_sounds_a322ac4176b3cdce75cd2901eef1e3f91}\label{class_achroma_a_p_i_1_1_achroma_instance_sounds_a322ac4176b3cdce75cd2901eef1e3f91} 
+\index{AchromaAPI.AchromaInstanceSounds@{AchromaAPI.AchromaInstanceSounds}!PlayMainTheme@{PlayMainTheme}}
+\index{PlayMainTheme@{PlayMainTheme}!AchromaAPI.AchromaInstanceSounds@{AchromaAPI.AchromaInstanceSounds}}
+\doxysubsubsection{\texorpdfstring{PlayMainTheme()}{PlayMainTheme()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Sounds.\+Play\+Main\+Theme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Plays the main theme for the story associated with the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chapter} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_sounds_a322ac4176b3cdce75cd2901eef1e3f91_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Sounds.\+cs\end{DoxyCompactItemize}

@@ -25,7 +25,16 @@
 var NAVTREE =
 [
   [ "Achroma Plugin", "index.html", [
-    [ "README", "md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e.html", null ],
+    [ "Achroma Plugin", "md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e.html", [
+      [ "1. Install dependencies", "md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "2. Firebase Android setup", "md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "3. Project setup", "md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e.html#autotoc_md3", [
+        [ "3.1 Firebase setup", "md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e.html#autotoc_md4", null ]
+      ] ],
+      [ "4. Usage", "md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e.html#autotoc_md5", null ],
+      [ "Android build", "md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e.html#autotoc_md6", null ],
+      [ "iOS build", "md__2_users_2diego_2_documents_2_unity_01_projects_2_achroma_01_adventure_2_assets_2_achroma_2_r_e_a_d_m_e.html#autotoc_md7", null ]
+    ] ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ],
       [ "Package Members", "namespacemembers.html", [
@@ -55,10 +64,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_google_sign_in_8h_source.html",
-"class_achroma_1_1_achroma_firebase_controller.html#ab45f377674ecba0af1f3574bff1c2420",
-"class_achroma_1_1_friend_request_data.html",
-"class_achroma_a_p_i_1_1_achroma_instance_u_i.html#a29cb5418a29491f2c88bc6bbd743d94b",
-"functions_func_e.html"
+"class_achroma_1_1_achroma_firebase_controller.html#a80982f8eef057d3f128c663794ff71f8",
+"class_achroma_1_1_achroma_u_i_controller.html#af212f90f23c7b3f9586d503b80ca1990",
+"class_achroma_a_p_i_1_1_achroma_instance_match.html#ae94ac4598da87453659daafbc74751d7",
+"class_uni_web_view.html#ae0e17778a582e4d984e7728d2429928f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,0 +1,81 @@
+.TH "AchromaAPI.AchromaInstanceSounds" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AchromaAPI.AchromaInstanceSounds \- Singleton with the methods to instantiate assets like Characters, Locations, Objects, Actions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAchromaSoundEffectDescription\fP"
+.br
+.ti -1c
+.RI "class \fBAchromaSoundEffectEnum\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAchromaSoundEffect\fP { \fBShopShowCharacter\fP, \fBOpenShardPack\fP, \fBCloseShardPack\fP, \fBOpenShardPack_2\fP, \fBOpenCharacterPurchase\fP, \fBPurchaseShard\fP, \fBTutorialModeShow\fP, \fBAdventureModeShows\fP, \fBCloseCharacterPurchase\fP, \fBShowCharacterSelection\fP, \fBFlipCard\fP, \fBFlipCardPlayButton\fP, \fBARMode\fP, \fBAdventureModeHides\fP, \fBAdventureModeStartGame\fP, \fBCompanionModeOpen\fP, \fBLocked2\fP, \fBOpenDialog\fP, \fBCloseDialog\fP, \fBOpenWindow\fP, \fBCloseWindow\fP, \fBLocked\fP, \fBButtonPressed\fP, \fBButtonPressed_2\fP, \fBShardWin\fP, \fBShardWin2\fP, \fBTutorialModeInteractionRequired\fP, \fBBuyCharacter\fP, \fBReveal\fP, \fBAchromSurge\fP, \fBRevive\fP, \fBChromaFlare\fP, \fBChromaticShield\fP, \fBTimeStep\fP, \fBShowRelicOptions\fP, \fBShowRelicOptions_2\fP, \fBDeathStinger\fP, \fBMenuError\fP, \fBNotication\fP, \fBGameOver\fP, \fBDice\fP }"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBPlayMainTheme\fP ()"
+.br
+.RI "Plays the main theme for the story associated with the user\&. "
+.ti -1c
+.RI "static void \fBPlayEffect\fP (AchromaSoundEffect soundEffect)"
+.br
+.RI "Plays a sound effect with the sound enum as a parameter\&. "
+.ti -1c
+.RI "static void \fBStopAllSounds\fP ()"
+.br
+.RI "Stops all audio sources in AudioCOntroller\&. "
+.ti -1c
+.RI "static void \fBPauseAllSounds\fP ()"
+.br
+.RI "Pauses all audio sources in AudioCOntroller\&. "
+.ti -1c
+.RI "static void \fBResumeAllSounds\fP ()"
+.br
+.RI "Resumes all audio sources in AudioCOntroller\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Singleton with the methods to instantiate assets like Characters, Locations, Objects, Actions\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static void AchromaAPI\&.AchromaInstanceSounds\&.PlayEffect (AchromaSoundEffect soundEffect)\fC [static]\fP"
+
+.PP
+Plays a sound effect with the sound enum as a parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsoundEffect\fP The Enum value of the sound
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceSounds\&.PlayMainTheme ()\fC [static]\fP"
+
+.PP
+Plays the main theme for the story associated with the user\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIchapter\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

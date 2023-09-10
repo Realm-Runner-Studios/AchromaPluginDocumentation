@@ -1,0 +1,11 @@
+<map id="CharacterSelectorDialogBox" name="CharacterSelectorDialogBox">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,300,192,326"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="58,226,139,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,267,101,300,96,300,96,267"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="60,153,137,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,193,101,226,96,226,96,193"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="40,79,157,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="101,119,101,152,96,152,96,119"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="43,5,154,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="101,46,101,79,96,79,96,46"/>
+</map>

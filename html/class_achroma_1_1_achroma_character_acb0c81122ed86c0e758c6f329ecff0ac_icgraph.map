@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaCharacter.GetCharacterStory" name="Achroma.AchromaCharacter.GetCharacterStory">
+<area shape="rect" id="Node000001" title="Returns the story linked to the character." alt="" coords="255,5,444,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_sounds.html#a322ac4176b3cdce75cd2901eef1e3f91" title="Plays the main theme for the story associated with the user." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,28,207,28,207,23,240,23"/>
+</map>

@@ -1,0 +1,151 @@
+\doxysection{Achroma.\+Ranking\+UI Class Reference}
+\hypertarget{class_achroma_1_1_ranking_u_i}{}\label{class_achroma_1_1_ranking_u_i}\index{Achroma.RankingUI@{Achroma.RankingUI}}
+
+
+Inheritance diagram for Achroma.\+Ranking\+UI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_achroma_1_1_ranking_u_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Achroma.\+Ranking\+UI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_1_1_ranking_u_i__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_a72e004616a54541f3e60af6e86ccab46}\label{class_achroma_1_1_ranking_u_i_a72e004616a54541f3e60af6e86ccab46} 
+enum {\bfseries Ranking\+Type} \{ {\bfseries Canvas} = 0
+, {\bfseries Hero} = 1
+, {\bfseries Story} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_ae0d23ad67a57693505a3de173276e90d}\label{class_achroma_1_1_ranking_u_i_ae0d23ad67a57693505a3de173276e90d} 
+void {\bfseries Show\+Combined} ()
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_aae823568c0ab924816b87656998b91a0}\label{class_achroma_1_1_ranking_u_i_aae823568c0ab924816b87656998b91a0} 
+void {\bfseries Show\+Only\+Chroma} ()
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_af6b2acb976019ebc5884dfd36559757d}\label{class_achroma_1_1_ranking_u_i_af6b2acb976019ebc5884dfd36559757d} 
+void {\bfseries Show\+Only\+Achrom} ()
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_adbae89df4d96ab03a9a98d9c71afa80b}\label{class_achroma_1_1_ranking_u_i_adbae89df4d96ab03a9a98d9c71afa80b} 
+void {\bfseries Show\+Friends} ()
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_ae02ba673cacc091b03de92bd4b015d2e}\label{class_achroma_1_1_ranking_u_i_ae02ba673cacc091b03de92bd4b015d2e} 
+void {\bfseries Show} (Unity\+Action result, bool friends, bool current\+Season, int chroma\+Achrom\+Type=-\/1)
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_a561623e9642109055802c536de93efb0}\label{class_achroma_1_1_ranking_u_i_a561623e9642109055802c536de93efb0} 
+void {\bfseries Close} ()
+\item 
+override void \mbox{\hyperlink{class_achroma_1_1_ranking_u_i_a512054042993cafc952daa42377b1289}{Fade\+In}} (Unity\+Action result)
+\begin{DoxyCompactList}\small\item\em The method that will move the UI element up. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_achroma_1_1_ranking_u_i_ac71c6e724b33d3b69a54e2dba8581d24}{Fade\+Out}} (Unity\+Action result)
+\begin{DoxyCompactList}\small\item\em The Coroutine that will move the UI element down. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_abbc22160210940fd23737a1717f79a14}\label{class_achroma_1_1_ranking_u_i_abbc22160210940fd23737a1717f79a14} 
+void {\bfseries Select\+All\+Time} ()
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_a30d1d9ac720c410f38b52b0b1369112c}\label{class_achroma_1_1_ranking_u_i_a30d1d9ac720c410f38b52b0b1369112c} 
+void {\bfseries Select\+Current\+Season} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_achroma_popup_window}{Achroma\+Popup\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Hide} ()
+\begin{DoxyCompactList}\small\item\em This will set the element position to the bottom, making it disappear from the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_a47af05bc02329817dc8481f2b1bd42c8}\label{class_achroma_1_1_ranking_u_i_a47af05bc02329817dc8481f2b1bd42c8} 
+Rect\+Transform {\bfseries scroll\+Content}
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_a5f0bb794569c5d970b6b93177271bd24}\label{class_achroma_1_1_ranking_u_i_a5f0bb794569c5d970b6b93177271bd24} 
+Game\+Object {\bfseries User\+Prefab}
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_a56f0796da31bf38294e826856e70888b}\label{class_achroma_1_1_ranking_u_i_a56f0796da31bf38294e826856e70888b} 
+Rect\+Transform {\bfseries user\+Content}
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_ad672526e1166ac250d682603528cfefe}\label{class_achroma_1_1_ranking_u_i_ad672526e1166ac250d682603528cfefe} 
+Text {\bfseries Ranking\+Type\+Text}
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_ac5219b2f82168a96ad0b65cfc3bf5ece}\label{class_achroma_1_1_ranking_u_i_ac5219b2f82168a96ad0b65cfc3bf5ece} 
+Tab {\bfseries Combined}
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_a0f36036011a4a886bfc4e4ca347adeec}\label{class_achroma_1_1_ranking_u_i_a0f36036011a4a886bfc4e4ca347adeec} 
+Scroll\+Rect {\bfseries menu\+Holder}
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_a99e9ffa374c4569b4ae5b347cb53e94d}\label{class_achroma_1_1_ranking_u_i_a99e9ffa374c4569b4ae5b347cb53e94d} 
+Image {\bfseries more\+Left}
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_a4c327b3e7ac679aa3032ea14c73794e7}\label{class_achroma_1_1_ranking_u_i_a4c327b3e7ac679aa3032ea14c73794e7} 
+Image {\bfseries more\+Right}
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_a7fb3e6ce71cc9c0ac19e462cba3f3d85}\label{class_achroma_1_1_ranking_u_i_a7fb3e6ce71cc9c0ac19e462cba3f3d85} 
+TMP\+\_\+\+Text {\bfseries Current\+Season\+Name}
+\item 
+\Hypertarget{class_achroma_1_1_ranking_u_i_a157e953cff996d77fd2aebf1ad81f710}\label{class_achroma_1_1_ranking_u_i_a157e953cff996d77fd2aebf1ad81f710} 
+Ranking\+Type {\bfseries ranking\+Type} = Ranking\+Type.\+Canvas
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_achroma_popup_window}{Achroma\+Popup\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries speed}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_achroma_1_1_ranking_u_i_a512054042993cafc952daa42377b1289}\label{class_achroma_1_1_ranking_u_i_a512054042993cafc952daa42377b1289} 
+\index{Achroma.RankingUI@{Achroma.RankingUI}!FadeIn@{FadeIn}}
+\index{FadeIn@{FadeIn}!Achroma.RankingUI@{Achroma.RankingUI}}
+\doxysubsubsection{\texorpdfstring{FadeIn()}{FadeIn()}}
+{\footnotesize\ttfamily override void Achroma.\+Ranking\+UI.\+Fade\+In (\begin{DoxyParamCaption}\item[{Unity\+Action}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The method that will move the UI element up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resukt} & The callback method that will be called once the element is on the top position\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_achroma_popup_window_a3cb1fb3d0c913c93434876bbea59f19b}{Achroma\+Popup\+Window}}.
+
+\Hypertarget{class_achroma_1_1_ranking_u_i_ac71c6e724b33d3b69a54e2dba8581d24}\label{class_achroma_1_1_ranking_u_i_ac71c6e724b33d3b69a54e2dba8581d24} 
+\index{Achroma.RankingUI@{Achroma.RankingUI}!FadeOut@{FadeOut}}
+\index{FadeOut@{FadeOut}!Achroma.RankingUI@{Achroma.RankingUI}}
+\doxysubsubsection{\texorpdfstring{FadeOut()}{FadeOut()}}
+{\footnotesize\ttfamily override void Achroma.\+Ranking\+UI.\+Fade\+Out (\begin{DoxyParamCaption}\item[{Unity\+Action}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The Coroutine that will move the UI element down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resukt} & The callback method that will be called once the element is on the bottom position\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_achroma_popup_window_a4ac6afb2fe9e1c4362775117db24605b}{Achroma\+Popup\+Window}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+Ranking/Ranking\+UI.\+cs\end{DoxyCompactItemize}

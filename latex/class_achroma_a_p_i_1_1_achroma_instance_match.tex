@@ -37,7 +37,18 @@ static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_a60b
 static void {\bfseries Add\+To\+User\+Total\+Matches} ()
 \begin{DoxyCompactList}\small\item\em Adds to the number of matches played by the user. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_aba7338c56c330122af2a01fbc8d0e68c}{Update\+User\+Wins}} (string winner, string win\+Type, Unity\+Action callback)
-\begin{DoxyCompactList}\small\item\em Updates the user\textquotesingle{}s game\+Stats with the win. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Updates the user\textquotesingle{}s game\+Stats with the win. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_a60f9d4f6bee53658f00a186a1c3ff597}{Get\+Companion\+Tutorial\+Video\+Object}} (string name, Unity\+Action$<$ Game\+Object $>$ callback)
+\begin{DoxyCompactList}\small\item\em Returns tutorial video object for the companion. This object contains videos for all the steps in the turn summary. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_a5e2c1495b631340c58a503188a1551d2}{Query\+Ranking\+Cloud}} (int hero=-\/1, string user\+Id=null, bool current\+Season=false, bool show\+Loading=true, Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Returns a list with the ranking list for a certain type of game. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_ae94ac4598da87453659daafbc74751d7}{Query\+Story\+Ranking\+Cloud}} (bool show\+Loading=true, string user\+Id="{}"{}, Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$ result=null)
+\begin{DoxyCompactList}\small\item\em Returns the ranking for story mode. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_achroma_a_p_i_1_1_achroma_instance_match_af25784095f265952f2e08d66d7922ee4}{Show\+Ranking}} (int type)
+\begin{DoxyCompactList}\small\item\em Shows the Raknking UI based on type. \end{DoxyCompactList}\item 
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a1e10a4b0bf67d65c8cf6ae2133a36fff}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a1e10a4b0bf67d65c8cf6ae2133a36fff} 
+static void {\bfseries Hide\+Ranking} ()
+\begin{DoxyCompactList}\small\item\em Hides the Ranking screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -75,6 +86,31 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a05381755bae7b8695ef90599f9259980_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a60f9d4f6bee53658f00a186a1c3ff597}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a60f9d4f6bee53658f00a186a1c3ff597} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!GetCompanionTutorialVideoObject@{GetCompanionTutorialVideoObject}}
+\index{GetCompanionTutorialVideoObject@{GetCompanionTutorialVideoObject}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{GetCompanionTutorialVideoObject()}{GetCompanionTutorialVideoObject()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Get\+Companion\+Tutorial\+Video\+Object (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{Unity\+Action$<$ Game\+Object $>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns tutorial video object for the companion. This object contains videos for all the steps in the turn summary. 
+
+/// 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the object\\
+\hline
+{\em callback} & callback with the Game\+Object\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a60f9d4f6bee53658f00a186a1c3ff597_cgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a1ea02aa26e5ecc62bb25a90252134e6d}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a1ea02aa26e5ecc62bb25a90252134e6d} 
@@ -189,6 +225,64 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a188b25cfcd07b36fd79aecfbd085f014_cgraph}
 \end{center}
 \end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a5e2c1495b631340c58a503188a1551d2}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a5e2c1495b631340c58a503188a1551d2} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!QueryRankingCloud@{QueryRankingCloud}}
+\index{QueryRankingCloud@{QueryRankingCloud}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{QueryRankingCloud()}{QueryRankingCloud()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Query\+Ranking\+Cloud (\begin{DoxyParamCaption}\item[{int}]{hero = {\ttfamily -\/1},  }\item[{string}]{user\+Id = {\ttfamily null},  }\item[{bool}]{current\+Season = {\ttfamily false},  }\item[{bool}]{show\+Loading = {\ttfamily true},  }\item[{Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a list with the ranking list for a certain type of game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero} & if == 1 it will return only the hero ranking\\
+\hline
+{\em user\+Id} & if informed, will give the ranking for just the friends of the user\\
+\hline
+{\em current\+Season} & if true, it will give the ranking just for the current season\\
+\hline
+{\em show\+Loading} & if true, shows the loading screen\\
+\hline
+{\em result} & success feedback and list with all the users\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a5e2c1495b631340c58a503188a1551d2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_ae94ac4598da87453659daafbc74751d7}\label{class_achroma_a_p_i_1_1_achroma_instance_match_ae94ac4598da87453659daafbc74751d7} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!QueryStoryRankingCloud@{QueryStoryRankingCloud}}
+\index{QueryStoryRankingCloud@{QueryStoryRankingCloud}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{QueryStoryRankingCloud()}{QueryStoryRankingCloud()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Query\+Story\+Ranking\+Cloud (\begin{DoxyParamCaption}\item[{bool}]{show\+Loading = {\ttfamily true},  }\item[{string}]{user\+Id = {\ttfamily "{}"{}},  }\item[{Unity\+Action$<$ List$<$ IDictionary $>$, bool $>$}]{result = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the ranking for story mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em show\+Loading} & if true, shows the loading screen\\
+\hline
+{\em user\+Id} & if true, shows only the ranking for the user\textquotesingle{}s friends\\
+\hline
+{\em result} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_ae94ac4598da87453659daafbc74751d7_cgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_a4fe70e7b7909bfa5fc13f54d46867bbd}\label{class_achroma_a_p_i_1_1_achroma_instance_match_a4fe70e7b7909bfa5fc13f54d46867bbd} 
 \index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!RefreshMatch@{RefreshMatch}}
 \index{RefreshMatch@{RefreshMatch}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
@@ -261,6 +355,21 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_achroma_a_p_i_1_1_achroma_instance_match_a49e6fd762c14137bd545bcb860db07bf_cgraph}
 \end{center}
 \end{figure}
+\Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_af25784095f265952f2e08d66d7922ee4}\label{class_achroma_a_p_i_1_1_achroma_instance_match_af25784095f265952f2e08d66d7922ee4} 
+\index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!ShowRanking@{ShowRanking}}
+\index{ShowRanking@{ShowRanking}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
+\doxysubsubsection{\texorpdfstring{ShowRanking()}{ShowRanking()}}
+{\footnotesize\ttfamily static void Achroma\+API.\+Achroma\+Instance\+Match.\+Show\+Ranking (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows the Raknking UI based on type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & 0\+: Canvas, 1\+: Hero, 2\+: Story\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_achroma_a_p_i_1_1_achroma_instance_match_aaa3647eb1e2ce7940c1167ef94f1e616}\label{class_achroma_a_p_i_1_1_achroma_instance_match_aaa3647eb1e2ce7940c1167ef94f1e616} 
 \index{AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}!UpdatePlayerCharacter@{UpdatePlayerCharacter}}
 \index{UpdatePlayerCharacter@{UpdatePlayerCharacter}!AchromaAPI.AchromaInstanceMatch@{AchromaAPI.AchromaInstanceMatch}}
@@ -333,6 +442,7 @@ Here is the call graph for this function\+:\nopagebreak
 \end{figure}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Match.\+cs\end{DoxyCompactItemize}
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Match.\+cs\item 
+/\+Users/diego/\+Documents/\+Unity Projects/\+Achroma Adventure/\+Assets/\+Achroma/\+Runtime/\+Scripts/\+UI/\+API/Achroma\+API+\+Ranking.\+cs\end{DoxyCompactItemize}

@@ -11,6 +11,10 @@ AchromaAPI.AchromaInstanceUI \- Singleton with standardized UI elements like mes
 
 .in +1c
 .ti -1c
+.RI "static void \fBShowCharacterSelector\fP (bool hero, UnityAction< int > callback, UnityAction userClosedSelector)"
+.br
+.RI "Shows Character Selector Screen to allow user to select a character with a custom calback\&. "
+.ti -1c
 .RI "static void \fBShowSuccessMessage\fP (string message, UnityAction< int > result=null)"
 .br
 .RI "Shows simple message with a success title and an OK button\&. "
@@ -65,6 +69,18 @@ AchromaAPI.AchromaInstanceUI \- Singleton with standardized UI elements like mes
 .RI "static void \fBShowSavingIndicator\fP ()"
 .br
 .RI "Shows the small floppy disk icon on the top of the screen to indicate data has been saved\&. "
+.ti -1c
+.RI "static void \fBAddEventToSideOption\fP (\fBAchromaHomeButton\&.AchromaHomeButtonOption\fP option, UnityAction eventAction)"
+.br
+.RI "The host app can add a custom method the side option button\&. "
+.ti -1c
+.RI "static void \fBRemoveEventFromSideOption\fP (\fBAchromaHomeButton\&.AchromaHomeButtonOption\fP option, UnityAction eventAction)"
+.br
+.RI "Removes the host app action attached to the button\&. "
+.ti -1c
+.RI "static void \fBOpenURL\fP (string url, string loadingMessage='Please wait')"
+.br
+.RI "This will load a web page\&. "
 .in -1c
 .SS "Properties"
 
@@ -82,6 +98,19 @@ AchromaAPI.AchromaInstanceUI \- Singleton with standardized UI elements like mes
 Singleton with standardized UI elements like messages, loading screens, etc\&. 
 .SH "Member Function Documentation"
 .PP 
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.AddEventToSideOption (\fBAchromaHomeButton::AchromaHomeButtonOption\fP option, UnityAction eventAction)\fC [static]\fP"
+
+.PP
+The host app can add a custom method the side option button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIoption\fP The enum value for the option
+.br
+\fIeventAction\fP The action to be called when clicking the button
+.RE
+.PP
+
 .SS "static void AchromaAPI\&.AchromaInstanceUI\&.AddNotification (string message, Color color, \fBAchromaNotificationSprite\fP sprite)\fC [static]\fP"
 
 .PP
@@ -131,6 +160,45 @@ This will create a menu background\&.
 \fIparent\fP The parent to which the object will be created on
 .br
 \fIcallback\fP Callback with a success flag and error message (if any)
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.OpenURL (string url, string loadingMessage = \fC'Please wait'\fP)\fC [static]\fP"
+
+.PP
+This will load a web page\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIurl\fP The url ot be loaded
+.br
+\fIloadingMessage\fP The string that will appear in the loading screen
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.RemoveEventFromSideOption (\fBAchromaHomeButton::AchromaHomeButtonOption\fP option, UnityAction eventAction)\fC [static]\fP"
+
+.PP
+Removes the host app action attached to the button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIoption\fP The enum value for the option
+.br
+\fIeventAction\fP The action to be called when clicking the button
+.RE
+.PP
+
+.SS "static void AchromaAPI\&.AchromaInstanceUI\&.ShowCharacterSelector (bool hero, UnityAction< int > callback, UnityAction userClosedSelector)\fC [static]\fP"
+
+.PP
+Shows Character Selector Screen to allow user to select a character with a custom calback\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhero\fP If true, it will show only hero character
+.br
+\fIcallback\fP Will return the avatar id in the control file
 .RE
 .PP
 

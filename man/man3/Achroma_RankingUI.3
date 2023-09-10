@@ -1,0 +1,134 @@
+.TH "Achroma.RankingUI" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.RankingUI
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBAchromaPopupWindow\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBRankingType\fP { \fBCanvas\fP = 0, \fBHero\fP = 1, \fBStory\fP = 2 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBShowCombined\fP ()"
+.br
+.ti -1c
+.RI "void \fBShowOnlyChroma\fP ()"
+.br
+.ti -1c
+.RI "void \fBShowOnlyAchrom\fP ()"
+.br
+.ti -1c
+.RI "void \fBShowFriends\fP ()"
+.br
+.ti -1c
+.RI "void \fBShow\fP (UnityAction result, bool friends, bool currentSeason, int chromaAchromType=\-1)"
+.br
+.ti -1c
+.RI "void \fBClose\fP ()"
+.br
+.ti -1c
+.RI "override void \fBFadeIn\fP (UnityAction result)"
+.br
+.RI "The method that will move the UI element up\&. "
+.ti -1c
+.RI "override void \fBFadeOut\fP (UnityAction result)"
+.br
+.RI "The Coroutine that will move the UI element down\&. "
+.ti -1c
+.RI "void \fBSelectAllTime\fP ()"
+.br
+.ti -1c
+.RI "void \fBSelectCurrentSeason\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBAchromaPopupWindow\fP
+.in +1c
+.ti -1c
+.RI "void \fBHide\fP ()"
+.br
+.RI "This will set the element position to the bottom, making it disappear from the screen\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "RectTransform \fBscrollContent\fP"
+.br
+.ti -1c
+.RI "GameObject \fBUserPrefab\fP"
+.br
+.ti -1c
+.RI "RectTransform \fBuserContent\fP"
+.br
+.ti -1c
+.RI "Text \fBRankingTypeText\fP"
+.br
+.ti -1c
+.RI "Tab \fBCombined\fP"
+.br
+.ti -1c
+.RI "ScrollRect \fBmenuHolder\fP"
+.br
+.ti -1c
+.RI "Image \fBmoreLeft\fP"
+.br
+.ti -1c
+.RI "Image \fBmoreRight\fP"
+.br
+.ti -1c
+.RI "TMP_Text \fBCurrentSeasonName\fP"
+.br
+.ti -1c
+.RI "RankingType \fBrankingType\fP = RankingType\&.Canvas"
+.br
+.in -1c
+
+Public Attributes inherited from \fBAchromaPopupWindow\fP
+.in +1c
+.ti -1c
+.RI "float \fBspeed\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "override void Achroma\&.RankingUI\&.FadeIn (UnityAction result)\fC [virtual]\fP"
+
+.PP
+The method that will move the UI element up\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresukt\fP The callback method that will be called once the element is on the top position
+.RE
+.PP
+
+.PP
+Reimplemented from \fBAchromaPopupWindow\fP\&.
+.SS "override void Achroma\&.RankingUI\&.FadeOut (UnityAction result)\fC [virtual]\fP"
+
+.PP
+The Coroutine that will move the UI element down\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresukt\fP The callback method that will be called once the element is on the bottom position
+.RE
+.PP
+
+.PP
+Reimplemented from \fBAchromaPopupWindow\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

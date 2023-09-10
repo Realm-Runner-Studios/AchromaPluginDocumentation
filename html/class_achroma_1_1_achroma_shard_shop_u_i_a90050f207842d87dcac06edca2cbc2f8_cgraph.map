@@ -1,0 +1,5 @@
+<map id="Achroma.AchromaShardShopUI.ShowMoneyPurchaseDetails" name="Achroma.AchromaShardShopUI.ShowMoneyPurchaseDetails">
+<area shape="rect" id="Node000001" title="Buys using money. It&#39;s used to buy shard packs with." alt="" coords="5,5,213,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_a_p_i_1_1_achroma_instance_sounds.html#ac1c105015faf991ffacde8be8200c07d" title="Plays a sound effect with the sound enum as a parameter." alt="" coords="261,5,462,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,23,246,23,246,28,213,28"/>
+</map>

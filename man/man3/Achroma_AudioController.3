@@ -1,0 +1,97 @@
+.TH "Achroma.AudioController" 3 "Achroma Plugin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Achroma.AudioController \- Singleton responsible for playing\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBChangeMusicVol\fP (float vol)"
+.br
+.ti -1c
+.RI "void \fBChangeSfxVol\fP (float vol)"
+.br
+.ti -1c
+.RI "void \fBPlayEffect\fP (string audioName)"
+.br
+.ti -1c
+.RI "void \fBStopEffect\fP ()"
+.br
+.ti -1c
+.RI "void \fBPlayMainTheme\fP (string story)"
+.br
+.ti -1c
+.RI "void \fBStopMainScreen\fP ()"
+.br
+.ti -1c
+.RI "void \fBStopAllSounds\fP ()"
+.br
+.ti -1c
+.RI "void \fBPauseAllSounds\fP ()"
+.br
+.ti -1c
+.RI "void \fBResumeAllSounds\fP ()"
+.br
+.ti -1c
+.RI "void \fBPlayBackground\fP (string audioName)"
+.br
+.ti -1c
+.RI "void \fBStopBackground\fP ()"
+.br
+.ti -1c
+.RI "void \fBPlayDrone\fP (string audioName)"
+.br
+.ti -1c
+.RI "void \fBStopDrone\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "AudioSource \fBsoundEffectAudioSource\fP"
+.br
+.ti -1c
+.RI "AudioSource \fBbackgroundAudioSource\fP"
+.br
+.ti -1c
+.RI "AudioSource \fBdroneAudioSource\fP"
+.br
+.ti -1c
+.RI "AudioSource \fBmainAudioSource\fP"
+.br
+.ti -1c
+.RI "AudioMixer \fBmixer\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static \fBAudioController\fP \fBInstance\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Singleton responsible for playing\&. 
+
+
+.IP "\(bu" 2
+Sound Effects
+.IP "\(bu" 2
+Intro Music
+.IP "\(bu" 2
+Backgrounds for Story mode 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Achroma Plugin from the source code\&.

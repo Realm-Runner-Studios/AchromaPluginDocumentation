@@ -1,0 +1,7 @@
+<map id="Achroma.AchromaFirebaseController.GetUserRPGCharacters" name="Achroma.AchromaFirebaseController.GetUserRPGCharacters">
+<area shape="rect" id="Node000001" title="Gets the json with the user&#39;s RPG characters." alt="" coords="547,5,785,46"/>
+<area shape="rect" id="Node000002" href="$class_achroma_1_1_achroma_database_controller.html#aff2e67e328832a3ca3faf3392c2435c5" title="Gets the json with the user&#39;s RPG characters." alt="" coords="255,5,499,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="532,28,499,28,499,23,532,23"/>
+<area shape="rect" id="Node000003" href="$class_achroma_a_p_i_1_1_achroma_instance_r_p_g.html#afe9519fa23a28dce21e348dbeff91ed4" title="Adds a new match to Firebase&#39;s match table." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="240,28,207,28,207,23,240,23"/>
+</map>
